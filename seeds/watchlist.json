@@ -1,0 +1,25 @@
+{
+  "_note": "Manually curated seed list. Edit freely between scan runs. These are source_bucket=seed in Stage A scans — curated inputs, not discovered names.",
+  "seeds": [
+    { "ticker": "MSFT",   "company": "Microsoft Corp.",           "sector": "Technology",    "industry": "Enterprise Software / Cloud" },
+    { "ticker": "GOOG",   "company": "Alphabet Inc.",             "sector": "Technology",    "industry": "Internet / Search / Cloud" },
+    { "ticker": "META",   "company": "Meta Platforms Inc.",       "sector": "Technology",    "industry": "Social Media / Digital Ads" },
+    { "ticker": "V",      "company": "Visa Inc.",                 "sector": "Financials",    "industry": "Payment Networks" },
+    { "ticker": "MA",     "company": "Mastercard Inc.",           "sector": "Financials",    "industry": "Payment Networks" },
+    { "ticker": "BRK-B",  "company": "Berkshire Hathaway B",      "sector": "Financials",    "industry": "Diversified Conglomerate" },
+    { "ticker": "CSU.TO", "company": "Constellation Software",    "sector": "Technology",    "industry": "Vertical Market Software" },
+    { "ticker": "DHR",    "company": "Danaher Corp.",             "sector": "Industrials",   "industry": "Life Sciences Tools" },
+    { "ticker": "MCO",    "company": "Moody's Corp.",             "sector": "Financials",    "industry": "Credit Ratings / Analytics" },
+    { "ticker": "SPGI",   "company": "S&P Global Inc.",           "sector": "Financials",    "industry": "Credit Ratings / Data" },
+    { "ticker": "FICO",   "company": "Fair Isaac Corp.",          "sector": "Technology",    "industry": "Analytics / Credit Scoring" },
+    { "ticker": "ROP",    "company": "Roper Technologies",        "sector": "Industrials",   "industry": "Diversified Industrial Software" },
+    { "ticker": "IDXX",   "company": "IDEXX Laboratories",        "sector": "Healthcare",    "industry": "Veterinary Diagnostics" },
+    { "ticker": "TDG",    "company": "TransDigm Group",           "sector": "Industrials",   "industry": "Aerospace Components" },
+    { "ticker": "ODFL",   "company": "Old Dominion Freight Line", "sector": "Industrials",   "industry": "LTL Trucking" },
+    { "ticker": "SHW",    "company": "Sherwin-Williams Co.",      "sector": "Consumer",      "industry": "Specialty Coatings" },
+    { "ticker": "FAST",   "company": "Fastenal Co.",              "sector": "Industrials",   "industry": "Industrial Distribution" },
+    { "ticker": "POOL",   "company": "Pool Corp.",                "sector": "Consumer",      "industry": "Pool Supplies Distribution" },
+    { "ticker": "MTD",    "company": "Mettler-Toledo Intl.",      "sector": "Industrials",   "industry": "Precision Instruments" },
+    { "ticker": "WST",    "company": "West Pharmaceutical Services", "sector": "Healthcare", "industry": "Drug Delivery Components" }
+  ]
+}

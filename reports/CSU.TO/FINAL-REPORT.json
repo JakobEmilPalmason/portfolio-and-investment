@@ -1,0 +1,54 @@
+{
+  "ticker": "CSU.TO",
+  "company": "Constellation Software Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Own",
+  "average_score": 7.75,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 9,
+    "management": 9,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 6,
+    "margin_of_safety": 7,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "75% recurring revenue from mission-critical VMS customers with near-zero historical churn",
+    "Switching costs embedded in 1,000+ niche software products — organizational lock-in, not contractual",
+    "Decentralized meta-moat: 100+ verticals, no single competitor can attack all simultaneously",
+    "Exceptional capital allocation discipline: 20–30% IRR hurdle rates held through multiple rate cycles",
+    "Asset-light model with capex under 0.2% of revenue; FCFA2S compounded at 16–18% CAGR for a decade",
+    "Mandatory insider share purchase program aligns executives with shareholders at every level",
+    "No meaningful customer concentration: 100,000+ end customers across six operating groups globally"
+  ],
+  "key_risks": [
+    "Mark Leonard's September 2025 health departure — first real succession test of capital allocation culture under Mark Miller",
+    "Q4 2025 FCFA2S declined 12% YoY — deceleration may extend into H1 2026, expanding the forward multiple",
+    "AI disruption of VMS end markets over a 5–10 year horizon, particularly Vela group (~30% of revenues)",
+    "Acquisition quality erosion as deal sizes increase to $100M+, reducing addressable universe and information advantage",
+    "Revolving credit facility ($1.085B) matures November 2026 — requires renewal under prevailing market conditions",
+    "PEMS minority investment strategy introduces new risk vector outside CSU's controlled full-acquisition model"
+  ],
+  "red_flags": [
+    "Q4 2025 FCFA2S declined 12% YoY — first actual quarterly FCF contraction on record",
+    "GAAP net income fell 30% in FY2025 ($512M vs $731M) — headline figure will continue to depress sentiment",
+    "Mark Miller unproven as independent capital allocator at scale — conviction relies on track record, not new data",
+    "PEMS strategy (minority stakes) departs from CSU's historically controlled full-acquisition model"
+  ],
+  "buy_triggers": [
+    "Q1 or Q2 2026 FCFA2S growth returns to 15%+ YoY, confirming Q4 2025 deceleration was transient",
+    "Stock falls to CAD 2,200–2,500 with no new fundamental deterioration, increasing price discount to 35–45%",
+    "Mark Miller's spring 2026 shareholder letter demonstrates capital allocation discipline consistent with Leonard's framework"
+  ],
+  "sell_triggers": [
+    "Organic maintenance and recurring revenue turns negative on a constant-currency basis for two consecutive quarters",
+    "FCFA2S declines for three consecutive quarters without a credible management explanation",
+    "Acquisition multiples paid rise materially to 3–4x revenue, suggesting hurdle-rate discipline has been quietly abandoned"
+  ],
+  "valuation_summary": "At CAD 2,939, CSU trades at ~37x trailing FCFA2S and ~26x forward FCFA2S (projected CAD 2.4B for 2026), representing a ~23% discount to Alpha Spread's base-case DCF of CAD 3,616 and ~30–35% below analyst consensus targets of CAD 4,200–4,365; the current price implies only 10–11% annual FCFA2S growth for 10 years — well below the 16–18% historical rate — suggesting the market is pricing in meaningful deceleration that may not materialize.",
+  "source_summary": "Primary sources: GlobeNewswire Q4 2025 earnings release (March 9, 2026), Q4 2024 audited shareholder report (March 2025), Alpha Spread DCF, MarketBeat/TipRanks consensus, GuruFocus/StockAnalysis.com ratios, PortfoliosLab drawdown data; balance sheet figures are as of December 31, 2024 (latest audited), FY2025 income/FCF figures from unaudited press release.",
+  "confidence": "medium",
+  "change_notes": ""
+}

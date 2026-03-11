@@ -1,0 +1,54 @@
+{
+  "ticker": "GOOG",
+  "company": "Alphabet Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Watch",
+  "average_score": 7.25,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 10,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "~90% global search market share backed by a 25-year data flywheel that cannot be replicated",
+    "Structural distribution control through Android (72% of smartphones) and Chrome (65% of desktops)",
+    "$80 billion net cash position with 218x interest coverage — one of the strongest balance sheets in corporate history",
+    "Google Cloud growing 48% YoY to $70B+ annualized run rate with $240B contracted backlog",
+    "FY2025 operating cash flow of $164.7B and FCF of $73.3B demonstrate exceptional underlying earnings power",
+    "29% ROIC and 31.6% operating margins despite elevated AI infrastructure investment"
+  ],
+  "key_risks": [
+    "Search market share erosion: declined from 92.9% to 89.6% since January 2023; eMarketer forecasts below 50% of U.S. search ad market in 2026",
+    "$175–185B 2026 capex program (nearly double 2025) will compress FCF potentially to near zero; ROI unproven",
+    "Two active major US antitrust cases (search default distribution + ad tech monopoly); ad tech structural divestiture remains a tail risk",
+    "Advertising revenue (~79% of total) is cyclically sensitive; 44% stock drawdown in 2022 on ad slowdown",
+    "EU Digital Markets Act enforcement already in force; could restrict Google's default distribution in Europe"
+  ],
+  "red_flags": [
+    "Base-case DCF implies ~$258/share, 16% below current price of $308.45",
+    "Bear-case DCF implies ~$155/share — ~50% below current price with no price margin of safety under stress",
+    "FCF yield of 1.93% is historically low; FCF conversion compressed from ~85% to ~55% of net income",
+    "Sundar Pichai $692M pay package (March 2026) introduces incentives to prioritize Other Bets over core capital discipline",
+    "Founders' 51.4% voting control means public shareholders cannot influence governance or strategy",
+    "Other Bets have consumed tens of billions in capital with limited commercial validation"
+  ],
+  "buy_triggers": [
+    "Stock declines to $195–220, approaching base-case DCF intrinsic value with a meaningful margin of safety",
+    "Ad tech antitrust remedies resolved with purely behavioral penalties (no divestiture), removing a significant overhanging tail risk",
+    "Google Cloud growth sustains above 40% for two consecutive quarters in 2026, validating the AI infrastructure thesis"
+  ],
+  "sell_triggers": [
+    "Google Search global market share falls below 85% for two consecutive quarters",
+    "Google Cloud revenue growth decelerates below 20% for two consecutive quarters while $175–185B capex remains in place",
+    "Stock price exceeds $420–440 (25% premium to bull-case DCF), indicating the market has priced in perfection"
+  ],
+  "valuation_summary": "At $308.45, GOOG trades at 28x trailing P/E and 51x P/FCF. Base-case 5-year DCF (13% revenue CAGR, 30% margins, 23x terminal multiple, 10% discount rate) yields ~$258/share — 16% below current price. Bull case yields ~$391 (+27%); bear case yields ~$155 (−50%). Owner earnings yield is approximately 2.9% on FY2025 figures, falling below 2.2% on forward 2026 estimates given the capex surge. Fair value range estimated at $220–345; current price sits in the upper half.",
+  "source_summary": "Primary sources: Alphabet Q4/FY 2025 earnings release (SEC filing, February 2026) for all financial figures. Market share data from StatCounter/eMarketer (August 2025). DOJ antitrust ruling (September 2025). Analyst consensus from MarketBeat/StockAnalysis. Insider ownership from GuruFocus. CEO pay package from Fortune (March 2026). DCF scenarios constructed by analysts using verified FY2025 base data.",
+  "confidence": "medium",
+  "change_notes": "Initial analysis as of 2026-03-11. No prior report to compare. Key near-term watch items: Google Cloud Q1 2026 growth rate, ad tech antitrust remedies resolution, and 2026 FCF trajectory vs. capex."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "dominant moat, FCF machine, not yet analyzed"
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "membership moat, consistent compounder, not yet analyzed"
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "AI compute monopoly; recent price dislocation worth review"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "dominant insurer + Optum moat; 52wk low is catalyst"
+  }
+]

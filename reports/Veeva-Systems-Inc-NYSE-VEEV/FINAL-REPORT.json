@@ -1,0 +1,52 @@
+{
+  "ticker": "VEEV",
+  "company": "Veeva Systems Inc",
+  "analysis_date": "2026-03-11",
+  "verdict": "Watch",
+  "average_score": 7.75,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 9,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Dominant vertical SaaS platform for life sciences with near-irreplaceable regulatory and clinical workflow embedding — switching costs are existential, not merely inconvenient",
+    "Exceptional business economics: 31–36% ROIC vs 11% WACC, 74%+ gross margins, 45% non-GAAP operating margins, $1.42B operating cash flow on $3.2B revenue",
+    "Fortress balance sheet: zero financial debt, $5B+ in cash and investments, $1.4B annual OCF — complete immunity to capital market disruption",
+    "Founder-CEO Peter Gassner holds $2.2–2.7B in personal equity, takes no cash bonus or RSU grants, and launched a $2B buyback near 52-week lows — compensation and capital allocation are owner-aligned",
+    "9 of top 20 global biopharma companies committed to Vault CRM vs Salesforce's 3 — the most important competitive battleground currently favors Veeva",
+    "84% subscription revenue under multi-year contracts with land-and-expand dynamics across clinical, regulatory, quality, and commercial cloud modules"
+  ],
+  "key_risks": [
+    "Salesforce has signed 40+ life sciences CRM customers including Pfizer, Takeda, and Boehringer Ingelheim — commercial CRM moat is under its first serious test in 15 years",
+    "No price margin of safety at $190: stock trades 45–58% above bear-case intrinsic value (~$120–130); base case offers only ~5–10% buffer (~$200–210)",
+    "Vault CRM migration to 200 live customers by May 2026 is a near-term binary — failure would validate Salesforce's competitive narrative and trigger a material re-rating",
+    "100% life sciences revenue concentration with no diversification offset; FDA restructuring or pharma R&D budget cuts directly impact Veeva with no hedge",
+    "No public CEO succession plan for founder Peter Gassner — key-person risk is unaddressed"
+  ],
+  "red_flags": [
+    "Active competitive threat confirmed: Salesforce signed 40+ life sciences CRM customers, including at least one top-3 global pharma — not a theoretical risk",
+    "GAAP vs non-GAAP operating margin gap is ~20 percentage points — SBC of ~$440M annually represents real shareholder dilution",
+    "Vault CRM milestone (200 live customers by May 2026) is a binary event that could sharply move the stock in either direction within 2 months",
+    "Stock down ~39% from 52-week high of $310.50 — further downside is plausible and within historical norms (worst prior drawdown: -55.7%)"
+  ],
+  "buy_triggers": [
+    "Stock declines to $155–175 (10–20% discount to base-case intrinsic value of ~$200–210), providing the price margin of safety currently absent",
+    "May 2026 Vault CRM milestone (200 live customers) is met or exceeded, materially reducing migration execution risk",
+    "Salesforce competitive threat demonstrably stalls: no new top-20 pharma wins for two consecutive quarters and Veeva reports commercial cloud NRR holding above 100%"
+  ],
+  "sell_triggers": [
+    "More than 5 of the top-20 global biopharma companies publicly announce migration to Salesforce Life Sciences Cloud by end of 2026",
+    "Vault CRM net new ARR growth turns negative for two consecutive quarters — confirming commercial moat breach, not temporary friction",
+    "Stock re-rates above 50x FCF without commensurate acceleration in FCF growth — valuation excess justifying redeployment into a higher-margin-of-safety alternative"
+  ],
+  "valuation_summary": "At ~$190/share, VEEV trades at 22–24x trailing owner earnings and a forward P/E of ~21.9x — near multi-year lows. Base-case DCF intrinsic value is ~$200–210/share (roughly at current prices); bear case is ~$120–130/share (no margin of safety); bull case is ~$300–350/share (+58–68% upside). The market is pricing in 10–12% annual FCF growth — roughly half the recent rate — implying Salesforce wins a meaningful fraction of the CRM migration. Independent DCF models cluster at $203–297. The stock is approximately fairly valued under a base case but offers no cushion against adversity.",
+  "source_summary": "Analysis based on Veeva FY2026 earnings release (March 4, 2026), FY2025 10-K, SEC proxy filings, GuruFocus/Alpha Spread/Simply Wall St DCF models, PortfoliosLab drawdown data, MarketBeat analyst consensus, and IntuitionLabs/Morningstar competitive analysis. All financial figures from official Veeva press releases where available; aggregator data used for trend history. Confidence is high on business quality, financial metrics, and balance sheet; medium on forward competitive dynamics (Vault CRM migration outcome unresolved).",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Vault CRM migration and Salesforce competitive response are the primary unresolved variables. Re-analyze after May 2026 CRM milestone announcement and following Q1 FY2027 earnings (expected June 2026)."
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "MSFT",
+  "company": "Microsoft Corporation",
+  "analysis_date": "2026-03-11",
+  "verdict": "Own",
+  "average_score": 8.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 6,
+    "margin_of_safety": 6,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Multi-layered enterprise moat: switching costs, network effects, and scale economics produce 60%+ operating margins in core Productivity segment",
+    "85% recurring revenue base with $625B commercial RPO providing ~2.5 years of forward revenue visibility",
+    "Fortress balance sheet: 54x interest coverage, Aaa/AAA rating, $136B annual operating cash flow covering all capital needs internally",
+    "45.6% operating margin in FY2025, up from 37% in FY2021, demonstrating durable operating leverage from cloud mix shift",
+    "Azure growing 39% constant currency; AI services contributed 16 percentage points to Azure growth in Q3 FY2025",
+    "16 consecutive years of dividend growth; $42.5B returned to shareholders in FY2025 with declining net share count"
+  ],
+  "key_risks": [
+    "AI capex cycle ($83B TTM) must convert to durable Azure/AI revenue — if monetization disappoints, FCF stays suppressed and normalized earnings thesis breaks",
+    "FTC antitrust probe into software licensing is active; forced unbundling of Teams, Copilot, or Azure-Office integration would erode integration moat",
+    "OpenAI partnership concentration: meaningful portion of $625B RPO is OpenAI-linked; partnership deterioration or OpenAI licensing to competitors narrows AI differentiation",
+    "ROIC declining trend (28% 5-year avg to ~22% current) from Activision acquisition and AI capex; continued drift toward 15% would erode capital allocation thesis",
+    "Thin price-based margin of safety: base-case discounted intrinsic value of $270-290 is below current $405, requiring base-case execution to avoid multi-year underperformance"
+  ],
+  "red_flags": [
+    "No price-based margin of safety vs. conservative DCF; reliance on business quality rather than price discount",
+    "OpenAI friction (IP disputes, independence push) is an active and unresolved strategic tension",
+    "GAAP EPS heavily distorted by OpenAI fair-value marks (-$3.1B Q1 FY2026, +$7.6B Q2 FY2026), obscuring underlying performance",
+    "Combined CEO/Chairman role (Nadella) reduces board independence",
+    "Activision Blizzard ($69B) integration progress not yet visible in segment economics"
+  ],
+  "buy_triggers": [
+    "Stock revisits $320-360 range on macro selloff, creating genuine price-based margin of safety and improving upside/downside asymmetry",
+    "Azure growth re-accelerates above 40% constant currency for two consecutive quarters, confirming AI demand absorption",
+    "FY2027 capex guidance signals moderation below $75B, confirming path to normalized FCF of $100B+"
+  ],
+  "sell_triggers": [
+    "Azure growth decelerates sustainably below 20% year-over-year for three consecutive quarters",
+    "OpenAI formally terminates exclusive partnership or announces equivalent licensing to AWS or Google",
+    "Antitrust ruling forces structural separation of cloud and software divisions"
+  ],
+  "valuation_summary": "At $405, MSFT trades at 26x trailing P/E and 15-16x EV/EBITDA — both 20%+ below Microsoft's own 10-year medians — with normalized owner earnings of $110-120B implying the market requires only 8-10% annual earnings growth; base-case discounted intrinsic value of $270-290 suggests the stock is roughly fairly valued, with no price-based margin of safety but compelling relative valuation versus its own history.",
+  "source_summary": "Analysis based on Microsoft FY2025 10-K (SEC filing July 30, 2025), FY2026 Q1 and Q2 earnings releases (October 2025 and January 2026), and web search for current price and multiples as of March 2026; all financial data is current within the last 2-3 months.",
+  "confidence": "high",
+  "change_notes": ""
+}

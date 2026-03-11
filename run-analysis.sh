@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# DEPRECATED: Use ./run.sh instead.
+# run-analysis.sh handles analyze only. run.sh dispatches all four commands:
+#   ./run.sh scan
+#   ./run.sh triage [latest|DATE]
+#   ./run.sh analyze TICKER
+#   ./run.sh monitor TICKER
+#
 # Investment Analysis Orchestrator
 # Usage:
 #   ./run-analysis.sh TICKER           # Full analysis (all umbrellas + assembly)
@@ -121,23 +128,38 @@ $extra_context}
 Analyze $TICKER now. Write your complete analysis following the format exactly. Output ONLY the analysis content — no preamble, no meta-commentary." \
         > "$output_file"
 
-    echo "  -> Wrote $output_file"
+    # Pass/fail check: output must exist and be non-empty
+    if [ ! -s "$output_file" ]; then
+        echo "ERROR: umbrella $num produced empty output: $output_file" >&2
+        exit 1
+    fi
+    echo "  -> Wrote $output_file ($(wc -c < "$output_file") bytes)"
 }
 
 run_assembler() {
     echo "Assembling final report..."
 
+    # Fail hard on any missing section — do not silently produce a partial report
+    local missing=0
+    for i in $(seq 1 9); do
+        local section_file="$REPORTS_DIR/$TICKER/${UMBRELLA_FILES[$i]}.md"
+        if [ ! -s "$section_file" ]; then
+            echo "  ERROR: Missing or empty section $i (${UMBRELLA_FILES[$i]}): $section_file" >&2
+            missing=$((missing + 1))
+        fi
+    done
+    if [ "$missing" -gt 0 ]; then
+        echo "ERROR: $missing section(s) missing. Run full analysis or fix missing sections before assembling." >&2
+        exit 1
+    fi
+
     local sections=""
     for i in $(seq 1 9); do
         local section_file="$REPORTS_DIR/$TICKER/${UMBRELLA_FILES[$i]}.md"
-        if [ -f "$section_file" ]; then
-            sections="$sections
+        sections="$sections
 
 --- Section ${UMBRELLA_FILES[$i]} ---
 $(cat "$section_file")"
-        else
-            echo "  WARNING: Missing section $i (${UMBRELLA_FILES[$i]})"
-        fi
     done
 
     local assembler_prompt=$(cat "$PROMPTS_DIR/assembler.md")
@@ -156,7 +178,36 @@ $sections
 Produce the final report now. Output ONLY the report content — no preamble." \
         > "$REPORTS_DIR/$TICKER/FINAL-REPORT.md"
 
+    # Pass/fail: both output files must exist and be non-empty
+    if [ ! -s "$REPORTS_DIR/$TICKER/FINAL-REPORT.md" ]; then
+        echo "ERROR: FINAL-REPORT.md is empty or missing" >&2
+        exit 1
+    fi
+    if [ ! -s "$REPORTS_DIR/$TICKER/FINAL-REPORT.json" ]; then
+        echo "ERROR: FINAL-REPORT.json is empty or missing — assembler must write both files" >&2
+        exit 1
+    fi
+    # Validate FINAL-REPORT.json schema
+    if ! jq empty "$REPORTS_DIR/$TICKER/FINAL-REPORT.json" 2>/dev/null; then
+        echo "ERROR: FINAL-REPORT.json is not valid JSON" >&2
+        exit 1
+    fi
+    local missing_fields
+    missing_fields=$(jq -r '
+        [ "ticker","company","analysis_date","verdict","average_score",
+          "umbrella_scores","key_strengths","key_risks","buy_triggers","sell_triggers" ]
+        | map(select(. as $k | (input? // {}) | has($k) | not))
+        | join(", ")
+    ' /dev/null 2>/dev/null || true)
+    # Simpler field check
+    local verdict
+    verdict=$(jq -r '.verdict // empty' "$REPORTS_DIR/$TICKER/FINAL-REPORT.json" 2>/dev/null || true)
+    if [ -z "$verdict" ]; then
+        echo "ERROR: FINAL-REPORT.json missing 'verdict' field" >&2
+        exit 1
+    fi
     echo "  -> Wrote reports/$TICKER/FINAL-REPORT.md"
+    echo "  -> Wrote reports/$TICKER/FINAL-REPORT.json (verdict: $verdict)"
 }
 
 # Execute based on mode

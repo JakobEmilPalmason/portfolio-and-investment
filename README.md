@@ -1,6 +1,6 @@
 # Investment Analysis Workbench
 
-A Buffett-style investment analysis system powered by Claude Code agents. Each "umbrella" of analysis is handled by a specialized agent role, producing structured markdown reports.
+A Buffett-style investment analysis system powered by Claude Code agents. Each "umbrella" of analysis is handled by a specialized agent role, producing structured markdown and JSON reports.
 
 ## Philosophy
 
@@ -21,39 +21,60 @@ The analysis is organized into 8 umbrellas, each answering a core question:
 
 Plus a **compact checklist** -- 8 forced sentences every investor should be able to recite about any position they own.
 
-## Quick Start
+## Commands
 
 ### Option 1: Inside Claude Code (Primary)
 
-Open this project in Claude Code and say:
+Open this project in Claude Code and say natural phrases. Claude Code dispatches the correct pipeline stage automatically.
 
 ```
+# Full pipeline: universe → candidates → triage → analyze
+run scan
+triage latest
 analyze AAPL
+
+# Individual stages
+run A1
+run A2
+run B1
+run B2
+triage 2026-03-11
+analyze MSFT
 ```
-
-This spawns specialized agents in parallel:
-- **Business Analyst** -- umbrellas 1-3 (competence, moat, management)
-- **Financial Analyst** -- umbrellas 4-5 (economics, balance sheet)
-- **Valuation Analyst** -- umbrellas 6-8 (valuation, safety, temperament)
-- **Checklist Agent** -- synthesizes the 8-sentence checklist
-- **Synthesis Agent** -- assembles the final report
-
-Results land in `reports/{TICKER}/`.
 
 ### Option 2: Shell Script (Batch/CI)
 
 ```bash
-# Full analysis
-./run-analysis.sh AAPL
+# Build universe and filter candidates (A1 + A2)
+./run.sh scan
 
-# Single umbrella only
-./run-analysis.sh AAPL 3
+# Triage candidates (B1 + B2, ≤8 deep_dives)
+./run.sh triage latest
+./run.sh triage 2026-03-11
 
-# Re-assemble final report from existing sections
-./run-analysis.sh AAPL assemble
+# Full 8-umbrella analysis for a ticker
+./run.sh analyze AAPL
+
+# Change detection — not yet implemented
+./run.sh monitor AAPL
 ```
 
 Requires `claude` CLI installed and authenticated.
+
+## Pipeline
+
+```
+scan         →  scans/YYYY-MM-DD/universe.json          (A1: raw universe)
+             →  scans/YYYY-MM-DD/candidates.json         (A2: filtered + ranked)
+
+triage       →  triage/YYYY-MM-DD/b1-advance.json        (B1: advance set)
+             →  triage/YYYY-MM-DD/triage.json             (B2: ≤8 deep_dives + monitor)
+
+analyze      →  reports/TICKER/FINAL-REPORT.md            (narrative report)
+             →  reports/TICKER/FINAL-REPORT.json           (structured summary)
+
+queue        →  queue/queue.json                          (living state — updated by triage + analyze)
+```
 
 ## Adding Context
 
@@ -82,7 +103,8 @@ reports/AAPL/
   07-margin-of-safety.md
   08-temperament-time-horizon.md
   09-compact-checklist.md
-  FINAL-REPORT.md              <- Start here
+  FINAL-REPORT.md              <- narrative report
+  FINAL-REPORT.json            <- structured summary (verdict, scores, flags, triggers)
 ```
 
 Every section (01-08) follows the same format:
@@ -98,6 +120,18 @@ The **FINAL-REPORT.md** includes:
 - Compact checklist (8 forced sentences)
 - Full analysis sections
 - Buy/sell triggers
+
+The **FINAL-REPORT.json** includes the same data in structured form: umbrella scores, key strengths, key risks, red flags, buy/sell triggers, valuation summary. Used by the queue and future monitor/diff engine.
+
+## Research Queue
+
+`queue/queue.json` tracks the state of every ticker the pipeline has touched.
+
+States: `inbox` / `triage` / `watchlist` / `deep_research` / `approved` / `owned` / `monitor_only` / `rejected`
+
+The queue is updated automatically after triage (B2) and after analyze (assembler). `approved` and `owned` states require manual update.
+
+Human-readable view: `queue/queue.md`
 
 ## Verdicts
 

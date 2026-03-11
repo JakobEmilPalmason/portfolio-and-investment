@@ -1,0 +1,54 @@
+{
+  "ticker": "ADI",
+  "company": "Analog Devices, Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Pass",
+  "average_score": 6.5,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Design-win switching costs create 5–15 year revenue tails with minimal churn",
+    "70%+ adjusted gross margins sustained across full cycles including the 2023–2024 trough",
+    "39% FCF margin generating $4.3–4.6B annually — net debt retirable in under 2 years of FCF",
+    "22 consecutive years of dividend growth with 96% of FY2025 FCF returned to shareholders",
+    "Full signal-chain breadth (sensor, amplifier, converter, power management) enables systems-level selling competitors cannot replicate",
+    "60 years of analog IP depth and application engineering relationships that compound over time"
+  ],
+  "key_risks": [
+    "Semiconductor inventory cycle correction: revenue could fall 15–25% in FY2027 if customers over-ordered; bear-case implies ~55% stock downside",
+    "China export control escalation: ~25–30% of revenue from China with limited near-term offset if BIS rules expand to analog/mixed-signal ICs",
+    "Multiple compression: at 32–34x forward earnings/FCF, stock is acutely sensitive to rate expectations and sector sentiment",
+    "Taiwan foundry supply chain: TSMC reliance creates catastrophic tail risk in a geopolitical escalation scenario",
+    "Custom ASIC integration at hyperscalers: gradual but real risk to the communications/data center segment (~13% of revenue) over a 5–10 year horizon"
+  ],
+  "red_flags": [
+    "No margin of safety at current price: ~120% above conservative intrinsic value, ~40% above base-case 10%-return value",
+    "3:1 downside-to-upside asymmetry at $318.81 — unfavorable for a Buffett-style investor",
+    "61.5% 12-month price surge embeds cyclical recovery and AI re-rating; momentum can reverse sharply",
+    "GAAP ROIC of 3–7% is distorted by $20B+ Maxim goodwill — requires investor to adjust mentally",
+    "Dual Chair/CEO role reduces independent board oversight",
+    "Gross debt of ~$8.6B is Maxim acquisition legacy; deleveraging in progress but not complete"
+  ],
+  "buy_triggers": [
+    "Stock corrects to $200–230 (base-case 10%-return zone per Umbrella 6 DCF analysis)",
+    "Stock corrects to $180–200 on cycle scare with near-term earnings confirming industrial/automotive design-win base is structurally intact",
+    "Material earnings upgrade driven by confirmed AI/data-center content wins closes the intrinsic value gap to the current price"
+  ],
+  "sell_triggers": [
+    "Structural market share loss in precision analog to TI, Renesas, or a credible new entrant at scale",
+    "US export controls expand to cover high-performance analog/mixed-signal ICs, materially impairing the ~25–30% China revenue base",
+    "Acquisition announcement exceeding $5B at cycle-peak multiples, signaling return to leverage-heavy empire-building"
+  ],
+  "valuation_summary": "At $318.81/share (34x trailing FCF, 32x forward adjusted EPS), ADI's current price requires the bull case to be fully realized — FY2028 FCF of $6B+ on ~$15B revenue — just to return 10% annually; the base-case discounted intrinsic value is ~$225 and the conservative value is ~$140–145, creating 3:1 downside-to-upside asymmetry with no margin of safety.",
+  "source_summary": "Analysis based on ADI Q1 FY2026 earnings release (Feb 2026), FY2025 Q4 press release (Nov 2025), MacroTrends/GuruFocus financial data, StockAnalysis statistics, MarketBeat/Nasdaq analyst consensus, and ADI SEC filings; all data from primary sources dated within 60 days of analysis date.",
+  "confidence": "high",
+  "change_notes": ""
+}

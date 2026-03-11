@@ -1,0 +1,70 @@
+{
+  "run_date": "2026-03-11",
+  "total_candidates": 227,
+  "buckets_used": [
+    "52wk_high",
+    "52wk_low",
+    "consumer_quality",
+    "fcf_roic",
+    "financial_quality",
+    "healthcare_quality",
+    "industrial_compounders",
+    "large_cap_europe_quality",
+    "large_cap_us_quality",
+    "post_earnings",
+    "sector_leader",
+    "seed",
+    "semis_and_infra",
+    "tracked"
+  ],
+  "counts_by_bucket": {
+    "tracked": 19,
+    "semis_and_infra": 16,
+    "large_cap_europe_quality": 40,
+    "seed": 20,
+    "healthcare_quality": 13,
+    "industrial_compounders": 15,
+    "consumer_quality": 15,
+    "large_cap_us_quality": 30,
+    "financial_quality": 15,
+    "post_earnings": 5,
+    "sector_leader": 58,
+    "52wk_low": 10,
+    "52wk_high": 6,
+    "fcf_roic": 8
+  },
+  "counts_by_sector": {
+    "Technology": 58,
+    "Industrials": 40,
+    "Healthcare": 37,
+    "Utilities": 4,
+    "Consumer": 32,
+    "Communication Services": 7,
+    "Financials": 35,
+    "Real Estate": 4,
+    "Materials": 6,
+    "Energy": 4
+  },
+  "counts_by_geography": {
+    "US": 176,
+    "Europe": 43,
+    "Asia": 6,
+    "Other": 2
+  },
+  "mkt_cap_distribution": {
+    "mega": 107,
+    "large": 114,
+    "mid": 6
+  },
+  "already_analyzed_count": 19,
+  "tracked_plus_seed_pct": 17.2,
+  "web_queries_run": [
+    "notable US earnings beats misses large cap March 2026",
+    "quality large cap stocks near 52-week low March 2026",
+    "quality large cap stocks near 52-week high momentum March 2026",
+    "highest free cash flow yield large cap stocks 2026",
+    "dominant sector leader stocks by market cap 2026",
+    "quality European large cap stocks 2026"
+  ],
+  "stage": "A1"
+}

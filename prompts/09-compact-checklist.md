@@ -24,6 +24,10 @@ Do NOT use the standard format. Output ONLY this:
 8. **Thesis breaker**: {What specific fact would make you sell? — ONE sentence}
 ```
 
+## Data Sources
+
+Read only `reports/{TICKER}/01` through `reports/{TICKER}/08`. **Do not read files in `scans/`, `triage/`, or `queue/`.** Your synthesis must be independent of any prior pipeline verdicts or triage decisions.
+
 ## Rules
 
 - Each answer is exactly ONE sentence. Not two. Not a paragraph. One.

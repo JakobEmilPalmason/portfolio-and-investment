@@ -1,0 +1,53 @@
+{
+  "ticker": "IQV",
+  "company": "IQVIA Holdings",
+  "analysis_date": "2026-03-11",
+  "verdict": "Watch",
+  "average_score": 6.25,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 5,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Irreplaceable 68-petabyte proprietary health dataset covering 1.2B patient records across 100+ countries — no competitor has replicated at scale",
+    "Self-reinforcing data + CRO flywheel: each trial run enriches analytics, which attracts more sponsors",
+    "$32.4B contracted R&DS backlog with 1.12x book-to-bill provides exceptional multi-year revenue visibility",
+    "$2.05B FCF in 2025 at 99% adjusted net income conversion — high-quality earnings",
+    "Trading at 11.3x trailing EV/EBITDA vs. 13-year median of 18.75x — historically cheap multiple",
+    "16-year CEO tenure with disciplined bolt-on M&A track record and honest communication style"
+  ],
+  "key_risks": [
+    "CRO cancellations in 2024 ran ~50% above 3-year average; normalization is not within management's direct control",
+    "Net debt of $13.7B at 3.63x EBITDA — rising year-over-year — amplifies downside in any revenue shortfall",
+    "Bear case DCF of ~$112/share implies 35% downside with no price margin of safety at $171.60",
+    "AI-driven pricing pressure on CRO services is a slow-burn secular risk that could compress margins structurally",
+    "CEO sold $20.6M in shares over 6 months with zero open-market purchases — negative alignment signal"
+  ],
+  "red_flags": [
+    "Net leverage increased from 3.33x to 3.63x in 2025 — moving in the wrong direction",
+    "Interest expense guided to increase ~$80M in 2026, compressing EBIT coverage below 3.5x",
+    "Combined Chairman/CEO role limits board independence",
+    "R&DS constant-currency growth of ~3.5% in 2025 is below CRO market expected CAGR of 7.4% — potential market share loss",
+    "Bear case (~$112) is 35% below current price with unfavorable 1.6:1 risk-reward ratio"
+  ],
+  "buy_triggers": [
+    "Stock falls to $135–$150, providing 15–20% margin of safety against base-case DCF",
+    "Two consecutive quarters of normalized book-to-bill above 1.0x with declining cancellation rates confirming CRO cycle inflection",
+    "Net leverage begins clear downward path toward 3.0x from FCF deleveraging without new large acquisitions"
+  ],
+  "sell_triggers": [
+    "Book-to-bill falls below 0.9x for two or more consecutive quarters with no credible recovery narrative",
+    "Net leverage rises above 4.5x with no near-term deleveraging path",
+    "Adjusted EBITDA margins decline below 21% for two consecutive quarters while revenue grows — signals secular AI margin compression"
+  ],
+  "valuation_summary": "At $171.60/share, IQV trades at 11.3x trailing EV/EBITDA (vs. 13-year median 18.75x) with a base-case DCF of ~$169 and a bear-case DCF of ~$112, implying no price margin of safety; the stock is roughly fairly valued assuming 5–6% revenue growth and stable margins, but offers no discount for the uncertainty around CRO cycle normalization and elevated 3.63x net leverage.",
+  "source_summary": "Analysis draws on IQVIA Q4/FY2025 earnings press release (Feb 2026), Q4 2025 earnings call transcript, proxy filings (DEF14A Feb 2026), segment disclosures, MacroTrends/StockAnalysis/Yahoo Finance financial data, GuruFocus/Seeking Alpha analyst research, and TipRanks/WallStreetZen consensus estimates — all sourced as of March 2026.",
+  "confidence": "medium",
+  "change_notes": ""
+}

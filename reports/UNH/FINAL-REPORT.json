@@ -1,0 +1,53 @@
+{
+  "ticker": "UNH",
+  "company": "UnitedHealth Group",
+  "analysis_date": "2026-03-11",
+  "verdict": "Watch",
+  "average_score": 5.5,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 7,
+    "management": 5,
+    "business_economics": 6,
+    "balance_sheet": 6,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "Largest US managed care organization with $447.6B revenue and unmatched provider contracting leverage across 50M members",
+    "Optum platform (pharmacy, care delivery, analytics) creates compounding vertical integration flywheel with deep institutional switching costs",
+    "Exceptional FCF durability: $19-20B annually even through 2024-2025 crisis, converting at 1.5-1.6x GAAP net income",
+    "Dividend growth for 17 consecutive years at ~12% CAGR; Hemsley $25M open-market purchase signals insider conviction",
+    "Investment-grade balance sheet with $21B revolving credit facility and no near-term solvency risk"
+  ],
+  "key_risks": [
+    "Active DOJ criminal and civil investigation into Medicare Advantage billing fraud — unquantified penalty exposure potentially $10-30B+, no disclosed timeline",
+    "Medical loss ratio at 88.9% FY2025 and 91.5% Q4 2025 — two consecutive years of deterioration with no confirmed turn; each 1% MCR increase costs ~$2.9B annually",
+    "Medicare Advantage reimbursement pressure causing 3M+ member exits in 2026 — rare guided top-line revenue decline",
+    "Governance deficiencies: combined Chairman/CEO role, undisclosed Cloverfields Capital investment conflict, 45% miss to FY2025 EPS guidance ($16.35 vs. $29.50-$30.00)",
+    "Elevated leverage: $78.4B total debt, 44.1% debt/capital exceeding 40% target, interest coverage at 4.7x below 5x comfort threshold, AM Best Negative outlook"
+  ],
+  "red_flags": [
+    "DOJ criminal and civil investigation into Medicare Advantage in-home assessment diagnosis coding — active and unresolved as of March 2026",
+    "Q4 2025 MCR of 91.5% is not consistent with management's 'trough and recover' narrative",
+    "Two CEO changes in under 12 months (Thompson murdered December 2024, Witty resigned May 2025) — unprecedented leadership instability",
+    "Undisclosed Cloverfields Capital private investment firm conflict while Hemsley served as board chairman",
+    "2026 revenue guided to decline year-over-year — first such guided decline in the company's modern history",
+    "Base case intrinsic value (~$230-245) is below current price ($282) — no margin of safety even in the base scenario"
+  ],
+  "buy_triggers": [
+    "DOJ civil investigation resolves via settlement of $5B or less with no criminal charges filed",
+    "Q2 or Q3 2026 MCR prints below 88.5%, providing first concrete evidence of medical cost normalization",
+    "Stock declines to $200-220, where price approaches base case intrinsic value and margin of safety improves materially"
+  ],
+  "sell_triggers": [
+    "DOJ announces criminal charges against UNH or individual executives, or civil settlement exceeding $15B that materially impairs future earnings",
+    "2027 MCR guidance does not show improvement toward 87-88%, confirming structural rather than cyclical cost elevation",
+    "Another senior executive resignation (CEO, CFO, or Optum CEO) within the next 12 months"
+  ],
+  "valuation_summary": "At $282/share (55% below November 2024 all-time high of $603), UNH trades at 16x forward 2026 adjusted EPS of $17.75 — historically cheap versus the 5-year average of ~22x. However, base case intrinsic value of ~$230-245 is below the current price, requiring bull case assumptions (favorable DOJ resolution, MCR normalization, Optum re-rating) to justify $282. Bear case intrinsic value of $110-130 implies 54-61% further downside if DOJ penalties are severe and MCR remains structurally elevated. EV/EBITDA of ~13.7x is near the 10-year median. Wide dispersion ($110-$400) makes a confident valuation call impossible pending regulatory clarity.",
+  "source_summary": "Primary sources: UNH FY2025 earnings release (January 2026), UNH FY2024 annual results, SEC 10-K filings, AM Best and Moody's rating announcements, DOJ investigation reporting (STAT News, Bloomberg), GuruFocus financial aggregator, MacroTrends, StockAnalysis. Web searches conducted March 2026. Confidence in financial data is high; confidence in DOJ outcome and MCR trajectory is low by nature of uncertainty.",
+  "confidence": "medium",
+  "change_notes": "First full analysis. Business in acute distress phase following concurrent crises: Change Healthcare cyberattack (2024), CEO murder (December 2024), MCR spike (2024-2025), guidance suspension (May 2025), CEO resignation (May 2025), DOJ investigation (ongoing). Hemsley returned as CEO May 2025. 2026 is the first year of attempted normalization. Monitor quarterly MCR prints and DOJ developments as primary thesis catalysts."
+}

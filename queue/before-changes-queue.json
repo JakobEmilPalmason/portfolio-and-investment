@@ -1,0 +1,3738 @@
+[
+  {
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "ARM",
+    "company": "Arm Holdings plc",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "ASML",
+    "company": "ASML Holding N.V.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "Previously analyzed: Watch verdict; monopoly intact, monitor",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch",
+      "ticker_alias_ASML.AS"
+    ]
+  },
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "current_state": "monitor_only",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Own",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_own"
+    ]
+  },
+  {
+    "ticker": "ALAB",
+    "company": "Astera Labs Inc.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "CAT",
+    "company": "Caterpillar Inc.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce Inc.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "CVS",
+    "company": "CVS Health Corp.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "DSV.CO",
+    "company": "DSV A/S",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "HIMS",
+    "company": "Hims & Hers Health Inc.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "MAERSK-B.CO",
+    "company": "A.P. Moller-Maersk A/S",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "MMM",
+    "company": "3M Co.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow Inc.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "NOVO-B.CO",
+    "company": "Novo Nordisk A/S",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "ORCL",
+    "company": "Oracle Corp.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "ORSTED.CO",
+    "company": "Orsted A/S",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm Inc.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "RDDT",
+    "company": "Reddit Inc.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "RKLB",
+    "company": "Rocket Lab USA Inc.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla Inc.",
+    "current_state": "monitor_only",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Pass",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_pass"
+    ]
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing Co.",
+    "current_state": "monitor_only",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": "2026-03-11",
+    "last_triage_date": "2026-03-11",
+    "current_verdict": "Watch",
+    "thesis_status": "intact",
+    "next_required_action": "monitor",
+    "owner_notes": "",
+    "tags": [
+      "previously_analyzed",
+      "verdict_watch"
+    ]
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Highest quality business in the universe, not yet analyzed; broad tech selloff creates first reasonable entry setup in 18 months.",
+    "tags": [
+      "b2_deep_dive",
+      "dominant_ecosystem"
+    ]
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Not yet analyzed; cheapest mega-cap on FCF basis; antitrust and AI disruption fears create an entry setup not seen since 2022.",
+    "tags": [
+      "b2_deep_dive",
+      "search_monopoly_plus_cloud"
+    ]
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Not yet analyzed; dominant ad platform with improving AI tools and expanding FCF margins; tech selloff creates compelling entry.",
+    "tags": [
+      "b2_deep_dive",
+      "social_ad_duopoly_plus_ai"
+    ]
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Not yet analyzed; canonical quality compounder with irreplaceable network; antitrust concern creates a modest dislocation worth investigating.",
+    "tags": [
+      "b2_deep_dive",
+      "payment_monopoly_compounder"
+    ]
+  },
+  {
+    "ticker": "CSU.TO",
+    "company": "Constellation Software Inc.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Not yet analyzed; arguably best capital allocator outside Berkshire; rare quality at any reasonable price deserves full analysis.",
+    "tags": [
+      "b2_deep_dive",
+      "vms_serial_acquirer"
+    ]
+  },
+  {
+    "ticker": "LLY",
+    "company": "Eli Lilly and Co.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Not yet analyzed; GLP-1 obesity is a once-per-decade secular growth story; Lilly's superior efficacy data and deep pipeline justify urgent analysis.",
+    "tags": [
+      "b2_deep_dive",
+      "glp1_obesity_secular_leader"
+    ]
+  },
+  {
+    "ticker": "ABBV",
+    "company": "AbbVie Inc.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Not yet analyzed; Humira transition executing ahead of expectations; FCF yield 5%+ with growing successor products at below-market pharma valuation.",
+    "tags": [
+      "b2_deep_dive",
+      "humira_successor_high_yield"
+    ]
+  },
+  {
+    "ticker": "VEEV",
+    "company": "Veeva Systems Inc.",
+    "current_state": "deep_research",
+    "priority": "high",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "analyze",
+    "owner_notes": "Not yet analyzed; near-monopoly vertical SaaS with >95% retention; Salesforce transition risk was the bear case \u2014 its completion removes the primary overhang.",
+    "tags": [
+      "b2_deep_dive",
+      "life_sciences_vertical_monopoly"
+    ]
+  },
+  {
+    "ticker": "HD",
+    "company": "Home Depot Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: High quality at a reasonable price with a genuine entry setup. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "duopoly_compounder"
+    ]
+  },
+  {
+    "ticker": "GILD",
+    "company": "Gilead Sciences Inc.",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Quality franchise at a value price with real FCF yield and pipeline optionality. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "durable_franchise_plus_pipeline"
+    ]
+  },
+  {
+    "ticker": "TEAM",
+    "company": "Atlassian Corp.",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality sticky SaaS at high valuation; no near-term price dislocation sufficient to offset premium multiple.",
+    "tags": [
+      "b2_monitor",
+      "sticky_developer_ecosystem"
+    ]
+  },
+  {
+    "ticker": "FLUT",
+    "company": "Flutter Entertainment plc",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Interesting inflection story but circle of competence limited on regulatory evolution; monitor for cleaner entry and better US margin visibility.",
+    "tags": [
+      "b2_monitor",
+      "us_market_leader_inflecting"
+    ]
+  },
+  {
+    "ticker": "NOVN.SW",
+    "company": "Novartis AG",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Quality biopharma with FCF yield and reasonable valuation; not analyzed; European listing reduces competition for US-focused analysts. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "focused_biopharma_compounder"
+    ]
+  },
+  {
+    "ticker": "SAN.PA",
+    "company": "Sanofi S.A.",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: FCF yield, Dupixent durability, and European valuation discount make this compelling; analyze next cycle after budget names complete.",
+    "tags": [
+      "b2_monitor",
+      "dupixent_plus_rare_disease"
+    ]
+  },
+  {
+    "ticker": "DIS",
+    "company": "Walt Disney Co.",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Genuine quality with improving earnings power but linear TV overhang and valuation suggest watching for better entry.",
+    "tags": [
+      "b2_monitor",
+      "streaming_profitability_inflection"
+    ]
+  },
+  {
+    "ticker": "AMGN",
+    "company": "Amgen Inc.",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: High FCF yield, durable franchise, and obesity optionality; Horizon debt manageable but balance sheet less clean. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "durable_biotech_plus_obesity"
+    ]
+  },
+  {
+    "ticker": "HUM",
+    "company": "Humana Inc.",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality_score 6 below deep_dive threshold; Stars and medical cost trajectories too uncertain; watch for confirmation before acting.",
+    "tags": [
+      "b2_monitor",
+      "ma_repricing_recovery"
+    ]
+  },
+  {
+    "ticker": "MA",
+    "company": "Mastercard Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Identical quality to V which is already in the deep_dive list; V covers the thesis this cycle; analyze MA in the following cycle.",
+    "tags": [
+      "b2_monitor",
+      "payment_rail_duopoly"
+    ]
+  },
+  {
+    "ticker": "BRK-B",
+    "company": "Berkshire Hathaway B",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Exceptional quality and current valuation; succession concern limits near-term conviction; monitor for deeper discount to intrinsic value.",
+    "tags": [
+      "b2_monitor",
+      "capital_allocation_machine"
+    ]
+  },
+  {
+    "ticker": "DHR",
+    "company": "Danaher Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "High quality business exiting an inventory cycle trough but full analysis not yet warranted; watch for stronger recovery confirmation.",
+    "tags": [
+      "b2_monitor",
+      "dbs_recurring_revenue_compounder"
+    ]
+  },
+  {
+    "ticker": "MCO",
+    "company": "Moody's Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Oligopoly with structural pricing power; issuance cycle at mid-cycle levels limits setup urgency. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "rating_agency_oligopoly"
+    ]
+  },
+  {
+    "ticker": "SPGI",
+    "company": "S&P Global Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Equivalent to MCO with more diversification; same cycle timing; analyze alongside MCO next cycle.",
+    "tags": [
+      "b2_monitor",
+      "multi_segment_compounding_moat"
+    ]
+  },
+  {
+    "ticker": "FICO",
+    "company": "Fair Isaac Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Exceptional moat but valuation (70x+ earnings) prices perfection and regulatory mandate risk is a genuine disqualifier; watch for reset.",
+    "tags": [
+      "b2_monitor",
+      "credit_monopoly_pricing_power"
+    ]
+  },
+  {
+    "ticker": "IDXX",
+    "company": "IDEXX Laboratories",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Premium quality but valuation does not yet reflect the vet volume normalization headwind; watch for vet spend recovery confirmation.",
+    "tags": [
+      "b2_monitor",
+      "consumable_installed_base_moat"
+    ]
+  },
+  {
+    "ticker": "TDG",
+    "company": "TransDigm Group",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Exceptional business but balance_sheet_score of 3 reflects extreme leverage; risk/reward depends entirely on commercial aviation staying healthy.",
+    "tags": [
+      "b2_monitor",
+      "sole_source_pricing_power"
+    ]
+  },
+  {
+    "ticker": "SHW",
+    "company": "Sherwin-Williams Co.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "High quality with durable moat but housing exposure and full valuation suggest waiting for housing recovery catalyst.",
+    "tags": [
+      "b2_monitor",
+      "pro_channel_dominance"
+    ]
+  },
+  {
+    "ticker": "WST",
+    "company": "West Pharmaceutical Services",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality business at fair-to-full valuation; GLP-1 tailwind not yet fully priced but entry setup not compelling enough for this cycle.",
+    "tags": [
+      "b2_monitor",
+      "biologics_recurring_components"
+    ]
+  },
+  {
+    "ticker": "CPRT",
+    "company": "Copart Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Excellent business but priced for perfection; autonomous vehicle long-term risk and premium valuation suggest waiting for pullback.",
+    "tags": [
+      "b2_monitor",
+      "network_and_land_barrier_moat"
+    ]
+  },
+  {
+    "ticker": "BR",
+    "company": "Broadridge Financial Solutions",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality infrastructure business at reasonable valuation; no event catalyst makes this a patient hold rather than immediate analysis priority.",
+    "tags": [
+      "b2_monitor",
+      "b2b_switching_cost_monopoly"
+    ]
+  },
+  {
+    "ticker": "MKTX",
+    "company": "MarketAxess Holdings",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "High quality network-effects business at fair valuation; Tradeweb competition is real; watch for clearer market share trajectory before committing.",
+    "tags": [
+      "b2_monitor",
+      "bond_market_network_effects"
+    ]
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality platform but 35x+ earnings valuation with content cost uncertainty makes the risk/reward unattractive at current price.",
+    "tags": [
+      "b2_monitor",
+      "global_streaming_leader_margin_expansion"
+    ]
+  },
+  {
+    "ticker": "VRSK",
+    "company": "Verisk Analytics Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Near-perfect moat characteristics; narrower post-divestiture business reduces growth rate; analyze alongside MCO/SPGI in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "insurance_data_monopoly"
+    ]
+  },
+  {
+    "ticker": "ICE",
+    "company": "Intercontinental Exchange Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality exchange with growing recurring revenues but Black Knight integration still absorbing capital; watch for completion milestone.",
+    "tags": [
+      "b2_monitor",
+      "exchange_plus_recurring_data"
+    ]
+  },
+  {
+    "ticker": "CME",
+    "company": "CME Group Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Exceptional monopoly characteristics; current high-volatility macro environment is actually favorable; analyze in next cycle alongside exchange peers.",
+    "tags": [
+      "b2_monitor",
+      "derivatives_monopoly"
+    ]
+  },
+  {
+    "ticker": "MSCI",
+    "company": "MSCI Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Automatic compounding from AUM linkage is rare; full valuation and limited near-term catalyst. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "aum_linked_fee_compounder"
+    ]
+  },
+  {
+    "ticker": "MCD",
+    "company": "McDonald's Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Classic franchise compounder but debt-heavy balance sheet and current valuation don't offer enough margin of safety; watch for pullback.",
+    "tags": [
+      "b2_monitor",
+      "global_franchise_real_estate"
+    ]
+  },
+  {
+    "ticker": "HSY",
+    "company": "Hershey Co.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Quality brand at multi-year lows with improving input costs; GLP-1 secular risk makes this a monitor rather than urgent deep dive.",
+    "tags": [
+      "b2_monitor",
+      "confectionery_pricing_power"
+    ]
+  },
+  {
+    "ticker": "EL",
+    "company": "Est\u00e9e Lauder Companies",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Low confidence on China recovery timeline and new CEO execution; quality brand but turnaround thesis requires more certainty before committing capital.",
+    "tags": [
+      "b2_monitor",
+      "prestige_beauty_recovery"
+    ]
+  },
+  {
+    "ticker": "IQV",
+    "company": "IQVIA Holdings",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "High quality with structural tailwinds but biotech funding cycle and NIH uncertainty create near-term overhang; watch for end-market stabilization.",
+    "tags": [
+      "b2_monitor",
+      "cro_data_platform_compounder"
+    ]
+  },
+  {
+    "ticker": "ISRG",
+    "company": "Intuitive Surgical Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Exceptional business with irreplaceable installed base but 65x+ earnings valuation with competitive entry limits margin of safety; wait for better setup.",
+    "tags": [
+      "b2_monitor",
+      "robotic_installed_base_razor_blade"
+    ]
+  },
+  {
+    "ticker": "MC.PA",
+    "company": "LVMH Mo\u00ebt Hennessy Louis Vuitton",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Best luxury conglomerate globally; near-compelling valuation but European listing and China uncertainty need more clarity. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "irreplaceable_luxury_portfolio"
+    ]
+  },
+  {
+    "ticker": "RMS.PA",
+    "company": "Herm\u00e8s International",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Best quality business in Europe but valuation (50x+ earnings) offers no margin of safety; monitor for a significant dislocation before considering.",
+    "tags": [
+      "b2_monitor",
+      "scarcity_model_unconstrained"
+    ]
+  },
+  {
+    "ticker": "SAP.DE",
+    "company": "SAP SE",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality ERP monopoly migrating to cloud but high valuation and German-listed complexity suggest waiting for clearer FCF conversion signal.",
+    "tags": [
+      "b2_monitor",
+      "erp_system_of_record_cloud_migration"
+    ]
+  },
+  {
+    "ticker": "CFR.SW",
+    "company": "Compagnie Financi\u00e8re Richemont",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: High quality at below-normal valuation; China recovery timing uncertain; LVMH covers similar thesis in the current cycle.",
+    "tags": [
+      "b2_monitor",
+      "jewelry_pricing_power_china_optionality"
+    ]
+  },
+  {
+    "ticker": "ADYEN.AS",
+    "company": "Adyen N.V.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "High quality payment platform recovering from 2023 growth scare; not at compelling valuation vs Visa/MA quality floor; V deep_dive covers payments thesis.",
+    "tags": [
+      "b2_monitor",
+      "enterprise_payment_platform"
+    ]
+  },
+  {
+    "ticker": "EL.PA",
+    "company": "EssilorLuxottica S.A.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Near-monopoly in eyewear but smart glasses disruption risk from Apple/Meta is real; watch for clearer outcome before committing to full analysis.",
+    "tags": [
+      "b2_monitor",
+      "eyewear_platform_monopoly"
+    ]
+  },
+  {
+    "ticker": "LONN.SW",
+    "company": "Lonza Group AG",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: High quality CDMO at reasonable valuation with structural GLP-1 demand. Prioritize in next cycle after healthcare deep_dives complete.",
+    "tags": [
+      "b2_monitor",
+      "cdmo_glp1_manufacturing_growth"
+    ]
+  },
+  {
+    "ticker": "KLAC",
+    "company": "KLA Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Near-monopoly in essential semi equipment; China revenue risk creates uncertainty that reduces conviction for immediate deep dive.",
+    "tags": [
+      "b2_monitor",
+      "process_control_monopoly"
+    ]
+  },
+  {
+    "ticker": "TXN",
+    "company": "Texas Instruments Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Not yet analyzed; analog franchise with structural capital return discipline entering a cycle trough that creates multi-year entry windows. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "analog_capital_return_compounder"
+    ]
+  },
+  {
+    "ticker": "AZN",
+    "company": "AstraZeneca plc",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Outstanding oncology pipeline but LLY covers the priority healthcare deep dive; AZN analyze in the following cycle.",
+    "tags": [
+      "b2_monitor",
+      "oncology_pipeline_compounder"
+    ]
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Highest quality managed care but DOJ antitrust investigation and CEO succession uncertainty argue for waiting. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "optum_vertical_integration_moat"
+    ]
+  },
+  {
+    "ticker": "BSX",
+    "company": "Boston Scientific Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Strong EP ablation thesis but competitive dynamics in PFA need watching; ISRG and SYK cover robotic MedTech theme with cleaner moats.",
+    "tags": [
+      "b2_monitor",
+      "ep_ablation_structural_growth"
+    ]
+  },
+  {
+    "ticker": "CSX",
+    "company": "CSX Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality railroad but UNP covers the rails thesis with a cleaner western footprint; coal overhang and intermodal dynamics need monitoring before acting.",
+    "tags": [
+      "b2_monitor",
+      "eastern_rail_pricing_power"
+    ]
+  },
+  {
+    "ticker": "UNP",
+    "company": "Union Pacific Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Best railroad franchise in North America; fair valuation with good capital return; analyze after technology and healthcare deep dives complete.",
+    "tags": [
+      "b2_monitor",
+      "western_rail_monopoly"
+    ]
+  },
+  {
+    "ticker": "JPM",
+    "company": "JPMorgan Chase & Co.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Best bank but banking analysis requires specialized framework for capital adequacy; monitor at 1.5x book for potential entry.",
+    "tags": [
+      "b2_monitor",
+      "best_managed_us_bank"
+    ]
+  },
+  {
+    "ticker": "CB",
+    "company": "Chubb Ltd.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Best underwriter globally; Berkshire's major equity stake validates quality thesis; analyze in next cycle alongside insurance peers.",
+    "tags": [
+      "b2_monitor",
+      "underwriting_excellence_compounder"
+    ]
+  },
+  {
+    "ticker": "AJG",
+    "company": "Arthur J. Gallagher & Co.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality compounder but full valuation and acquisition integration risk suggest waiting; CB covers insurance theme with cleaner moat for immediate analysis.",
+    "tags": [
+      "b2_monitor",
+      "insurance_broker_organic_plus_acquisitive"
+    ]
+  },
+  {
+    "ticker": "MKL",
+    "company": "Markel Group Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Compelling Berkshire-like model at reasonable valuation; BRK-B covers the float/equity holding model with more certainty. Analyze after BRK.",
+    "tags": [
+      "b2_monitor",
+      "mini_berkshire_float_venture"
+    ]
+  },
+  {
+    "ticker": "BX",
+    "company": "Blackstone Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality alt manager but carried interest opacity and BREIT gate overhang limit confidence; watch for perpetual capital to stabilize before committing.",
+    "tags": [
+      "b2_monitor",
+      "perpetual_capital_fee_stream"
+    ]
+  },
+  {
+    "ticker": "AMZN",
+    "company": "Amazon.com Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Excellent quality at reasonable valuation but MSFT/GOOG deep dives cover cloud thesis; analyze Amazon next cycle for the retail and ad angle.",
+    "tags": [
+      "b2_monitor",
+      "aws_ad_ecosystem_dominant"
+    ]
+  },
+  {
+    "ticker": "WMT",
+    "company": "Walmart Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality retailer with growing ad layer but premium valuation for a grocery business; wait for better entry point.",
+    "tags": [
+      "b2_monitor",
+      "grocery_dominance_plus_ad_layer"
+    ]
+  },
+  {
+    "ticker": "SPOT",
+    "company": "Spotify Technology S.A.",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Interesting margin expansion story but label leverage and Apple competition make the moat fragile; quality_score at boundary; wait for clearer profitability trend.",
+    "tags": [
+      "b2_monitor",
+      "audio_platform_margin_expansion"
+    ]
+  },
+  {
+    "ticker": "INTU",
+    "company": "Intuit Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Best-in-class SMB financial software with durable moats; IRS Direct File risk is real but addressable; analyze in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "smb_financial_os"
+    ]
+  },
+  {
+    "ticker": "CDNS",
+    "company": "Cadence Design Systems",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: EDA monopoly qualities but SNPS covers the same thesis; premium valuation limits setup; analyze alongside SNPS after budget names complete.",
+    "tags": [
+      "b2_monitor",
+      "eda_duopoly_monopoly"
+    ]
+  },
+  {
+    "ticker": "SNPS",
+    "company": "Synopsys Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Near-monopoly EDA with irreplaceable position; Ansys block removes a growth driver but core remains exceptional; analyze CDNS/SNPS together next cycle.",
+    "tags": [
+      "b2_monitor",
+      "eda_plus_ip_plus_simulation"
+    ]
+  },
+  {
+    "ticker": "RACE",
+    "company": "Ferrari N.V.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Exceptional quality but 50x+ earnings valuation offers no margin of safety; the business is right, the price is not.",
+    "tags": [
+      "b2_monitor",
+      "demand_scarcity_model"
+    ]
+  },
+  {
+    "ticker": "AIR.PA",
+    "company": "Airbus SE",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Compelling quality business at reasonable valuation with structural Boeing tailwind; supply chain recovery is the catalyst to watch. Prioritize next cycle.",
+    "tags": [
+      "b2_monitor",
+      "aviation_duopoly_backlog"
+    ]
+  },
+  {
+    "ticker": "ROG.SW",
+    "company": "Roche Holding AG",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Pharma + diagnostics duality is unique but biosimilar erosion overhang needs clearer resolution; LLY/ABBV cover the priority pharma deep dives.",
+    "tags": [
+      "b2_monitor",
+      "pharma_diagnostics_duality"
+    ]
+  },
+  {
+    "ticker": "ALV.DE",
+    "company": "Allianz SE",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality European insurer but CB covers underwriting excellence with cleaner track record; watch for PIMCO stabilization before committing.",
+    "tags": [
+      "b2_monitor",
+      "insurance_asset_management_compounder"
+    ]
+  },
+  {
+    "ticker": "MUV2.DE",
+    "company": "Munich Re",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Best reinsurer globally with consistent discipline; CB covers the underwriting quality thesis; monitor for catastrophe dislocation entry. Prioritize in next cycle.",
+    "tags": [
+      "b2_monitor",
+      "reinsurance_pricing_discipline"
+    ]
+  },
+  {
+    "ticker": "RHM.DE",
+    "company": "Rheinmetall AG",
+    "current_state": "watchlist",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Defense rearming thesis is real but circle of competence on defense cycles is limited; stock has tripled already, limiting margin of safety.",
+    "tags": [
+      "b2_monitor",
+      "european_defense_rearming"
+    ]
+  },
+  {
+    "ticker": "TTD",
+    "company": "The Trade Desk Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality platform with CTV tailwind but premium valuation (80x earnings) and Google Privacy Sandbox overhang limit conviction for immediate deep dive.",
+    "tags": [
+      "b2_monitor",
+      "buyside_dsp_ctv_dominance"
+    ]
+  },
+  {
+    "ticker": "DE",
+    "company": "Deere & Company",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Compelling ag cycle entry thesis but precision ag OS differentiation still developing; UNP covers the industrial theme better for this cycle.",
+    "tags": [
+      "b2_monitor",
+      "precision_ag_os_stickiness"
+    ]
+  },
+  {
+    "ticker": "RTX",
+    "company": "RTX Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Good quality with long aftermarket tail but GTF inspection costs still uncertain; GD covers the defense theme with a cleaner FCF story.",
+    "tags": [
+      "b2_monitor",
+      "pratt_aftermarket_plus_defense"
+    ]
+  },
+  {
+    "ticker": "GD",
+    "company": "General Dynamics Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality defense plus aerospace at reasonable valuation but defense budget risk under current administration limits near-term conviction.",
+    "tags": [
+      "b2_monitor",
+      "gulfstream_plus_defense_cash_return"
+    ]
+  },
+  {
+    "ticker": "SYK",
+    "company": "Stryker Corp.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Good MedTech business with robotics moat but ISRG covers the surgical robotics theme with a stronger installed base thesis; analyze after ISRG.",
+    "tags": [
+      "b2_monitor",
+      "mako_robotic_installed_base"
+    ]
+  },
+  {
+    "ticker": "ZTS",
+    "company": "Zoetis Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Exceptional animal health business but 35x+ earnings valuation provides limited entry; recession sensitivity of pet spending is underappreciated risk.",
+    "tags": [
+      "b2_monitor",
+      "pet_humanization_pricing_power"
+    ]
+  },
+  {
+    "ticker": "TMO",
+    "company": "Thermo Fisher Scientific",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Above-budget: Best-in-class life sciences infrastructure but Lonza covers CDMO theme more directly; TMO analyze alongside DHR next cycle.",
+    "tags": [
+      "b2_monitor",
+      "life_sciences_tools_plus_cdmo"
+    ]
+  },
+  {
+    "ticker": "EQIX",
+    "company": "Equinix Inc.",
+    "current_state": "watchlist",
+    "priority": "medium",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "watch price",
+    "owner_notes": "Quality data center network but heavy leverage and hyperscaler build-out risk at high REIT valuation limit margin of safety; watch for rate compression catalyst.",
+    "tags": [
+      "b2_monitor",
+      "network_density_data_center_moat"
+    ]
+  },
+  {
+    "ticker": "MU",
+    "company": "Micron Technology Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Memory commodity with no durable pricing power; deep cyclical",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "COHR",
+    "company": "Coherent Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Execution history poor; margin recovery unproven; medium confidence",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "VZ",
+    "company": "Verizon Communications Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "High FCF yield but heavy debt and no revenue growth engine",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "APP",
+    "company": "AppLovin Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Fast-growing but AI-driven revenue concentrated; valuation stretched",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PFE",
+    "company": "Pfizer Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "COVID revenue cliff deep; pipeline needs to deliver; watch only",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "MDT",
+    "company": "Medtronic plc",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Turnaround slow; China VBP risk; not enough thesis change",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "BIIB",
+    "company": "Biogen Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Leqembi uptake slow; payer coverage uncertainty; binary risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ROP",
+    "company": "Roper Technologies",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Quality acquirer but organic growth declining; expensive",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ODFL",
+    "company": "Old Dominion Freight Line",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Best LTL operator but freight cycle turning; watch for entry",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "FAST",
+    "company": "Fastenal Co.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Good business but cyclical end markets; no compelling entry",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "POOL",
+    "company": "Pool Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Durable aftermarket business but housing slowdown headwind",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "MTD",
+    "company": "Mettler-Toledo Intl.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Quality instruments; pharma capex weakness and China drag",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Exceptional business; premium valuation limits margin of safety",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ADP",
+    "company": "Automatic Data Processing Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Sticky payroll but mature growth; fintech nibbling at edges",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "CTAS",
+    "company": "Cintas Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Route density moat but expensive; low-growth mature market",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ROL",
+    "company": "Rollins Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Recurring pest control but slow organic growth; not compelling",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PAYX",
+    "company": "Paychex Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "SMB payroll sticky but ADP/Gusto competition; rate sensitivity",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "SSNC",
+    "company": "SS&C Technologies Holdings",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Fund admin sticky but heavy acquisition debt; medium confidence",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "CSGP",
+    "company": "CoStar Group Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "CRE data moat real but Homes.com investment depressing margins",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "FDS",
+    "company": "FactSet Research Systems",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Financial terminal sticky but Bloomberg/Refinitiv cap growth",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "CBOE",
+    "company": "Cboe Global Markets",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "VIX franchise quality but volatility-dependent revenue cyclical",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "NDAQ",
+    "company": "Nasdaq Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Adenza integration risk; listings cyclical; watch fintech pivot",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "NKE",
+    "company": "Nike Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Brand reset underway; On/Hoka share gains unclear if temporary",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "SBUX",
+    "company": "Starbucks Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "China deteriorating; turnaround thesis not yet proven",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "YUM",
+    "company": "Yum! Brands Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Asset-light franchise fine; medium confidence in emerging market growth",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "CHD",
+    "company": "Church & Dwight Co.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Quality staples but premium valuation; limited re-rating potential",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "TPX",
+    "company": "Tempur Sealy International",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Medium confidence; housing cycle sensitive; thin signal",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "MCK",
+    "company": "McKesson Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Thin margins; Amazon Pharmacy long-term threat; not compelling",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "EW",
+    "company": "Edwards Lifesciences Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "TAVR market maturing; Medtronic/Abbott entering; watch entry",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "WKL.AS",
+    "company": "Wolters Kluwer N.V.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "B2B subscription quality but slow organic growth; European niche",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "OR.PA",
+    "company": "L'Or\u00e9al S.A.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Global beauty leader but Asia weakness and premium valuation",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "DSY.PA",
+    "company": "Dassault Syst\u00e8mes SE",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "PLM software sticky but slow growth cycle; Ansys blocked",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "KER.PA",
+    "company": "Kering S.A.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Gucci brand equity damaged; recovery timeline too uncertain",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "STMN.SW",
+    "company": "Straumann Holding AG",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Dental implant leader but market cycle soft; China pricing risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ICG.L",
+    "company": "InterContinental Hotels Group",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Asset-light franchise fine; leisure travel cyclical; watch price",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "AMAT",
+    "company": "Applied Materials Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Largest WFE supplier quality but semi equipment cycle concern",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "LRCX",
+    "company": "Lam Research Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Etch/deposition leader but memory capex volatile; China risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "MRVL",
+    "company": "Marvell Technology Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Custom ASIC wins real but non-AI still weak; execution risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ADI",
+    "company": "Analog Devices Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Quality analog franchise; inventory correction still dragging",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "MPWR",
+    "company": "Monolithic Power Systems",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "High quality power management but valuation stretched",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ON",
+    "company": "ON Semiconductor Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "EV cycle weakness; inventory normalization slow; thin signal",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "STE",
+    "company": "STERIS plc",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Sterilization recurring spend quality but slow growth profile",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "DOCS",
+    "company": "Doximity Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Small scale; network defensibility unclear long-term; medium conf",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ITW",
+    "company": "Illinois Tool Works Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "80/20 margin excellence but industrial cyclicality; expensive",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "EMR",
+    "company": "Emerson Electric Co.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Aspen integration complexity; software transition adds risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PH",
+    "company": "Parker Hannifin Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Motion control quality; aerospace aftermarket cycle dependency",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "AME",
+    "company": "AMETEK Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Niche acquirer quality; premium valuation; execution risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "WCN",
+    "company": "Waste Connections Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Waste moat real but premium valuation vs WM/RSG; watch only",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "RSG",
+    "company": "Republic Services Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Waste management quality; limited pricing differentiation from WM",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "GWW",
+    "company": "W.W. Grainger Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "MRO distribution with online moat; Amazon Business long-term risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "NSC",
+    "company": "Norfolk Southern Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Derailment liability tail risk; volume recovery still slow",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "XPO",
+    "company": "XPO Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "LTL restructuring unproven franchise; execution risk remains",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "EXPD",
+    "company": "Expeditors International of Washington",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Asset-light logistics fine but freight forwarding commoditizing",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "AFL",
+    "company": "Aflac Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Japan FX exposure; low growth domestic; income but not compounder",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "KKR",
+    "company": "KKR & Co. Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Alt asset quality; KKR insurance integration still maturing",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "GS",
+    "company": "Goldman Sachs Group Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Cyclical IB revenue; capital markets dependent; not a compounder",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PG",
+    "company": "Procter & Gamble Co.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Household staples quality; volume elasticity risk as pricing fades",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "KO",
+    "company": "Coca-Cola Co.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Beverage moat excellent; slow growth and health headwinds; hold",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PEP",
+    "company": "PepsiCo Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Snacks + beverages dual engine; PBNA margin drag; no catalyst",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "DXCM",
+    "company": "DexCom Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "CGM leadership but Abbott Libre competition intensifying",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "SIE.DE",
+    "company": "Siemens AG",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Industrial automation quality; energy business drag; complex",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "WM",
+    "company": "Waste Management Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Waste monopoly quality; slow growth; environmental compliance cost",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "LOW",
+    "company": "Lowe's Companies Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Home improvement duopoly participant; weaker Pro mix than HD",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "TGT",
+    "company": "Target Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Inventory rightsized but shrink and trade-down risk remain",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "UBER",
+    "company": "Uber Technologies Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Network effects real but Waymo AV risk to core is unresolved",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "WDAY",
+    "company": "Workday Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "HR/finance cloud sticky but SAP/Oracle competition; slowing",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "NESN.SW",
+    "company": "Nestl\u00e9 S.A.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Food/beverage brand moat; volume declining as pricing normalizes",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ULVR.L",
+    "company": "Unilever plc",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Portfolio rationalization underway; slow growth; EM FX drag",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "GSK.L",
+    "company": "GSK plc",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Vaccines + specialty quality; Shingrix slowdown; binary pipeline",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "CS.PA",
+    "company": "AXA S.A.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Insurance + asset management quality; European regulatory complex",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PANW",
+    "company": "Palo Alto Networks Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Platformization strategy sticky but rich valuation; watch",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Falcon dominance real but incident reputational risk; expensive",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ZS",
+    "company": "Zscaler Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Zero Trust leader but high valuation; PANW/Microsoft competitive",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "FTNT",
+    "company": "Fortinet Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Firewall leader; SASE transition slower than cloud-native peers",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "DDOG",
+    "company": "Datadog Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Observability quality but high valuation; multi-cloud risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "MDB",
+    "company": "MongoDB Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Developer-first moat; PostgreSQL substitution risk; expensive",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "HUBS",
+    "company": "HubSpot Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "SMB CRM platform; Salesforce push and high valuation",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PYPL",
+    "company": "PayPal Holdings Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Branded checkout defending; Apple Pay/Stripe competition real",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "BAC",
+    "company": "Bank of America Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "NII leverage quality; consumer credit cycle risk; rate sensitive",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "WFC",
+    "company": "Wells Fargo & Co.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Asset cap still constrains growth; reputational risk persists",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "UPS",
+    "company": "United Parcel Service Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Amazon insourcing secular headwind; ground network repricing slow",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "FDX",
+    "company": "FedEx Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "DRIVE cost cuts real but structural volume loss to USPS/Amazon",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "HON",
+    "company": "Honeywell International Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Portfolio simplification multiple execution risks; slow near-term",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "LMT",
+    "company": "Lockheed Martin Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "F-35 sustainment durable but defense budget cuts risk looming",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "NOC",
+    "company": "Northrop Grumman Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "B-21 bomber strategic; cost-plus limits upside; budget dependent",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "SONY",
+    "company": "Sony Group Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Gaming + sensors diversified; console cycle and film volatile",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "TM",
+    "company": "Toyota Motor Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Hybrid dominance solid; EV transition and Japan FX uncertainty",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "A",
+    "company": "Agilent Technologies",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Post-COVID instrument normalization; pharma capex still weak",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "REGN",
+    "company": "Regeneron Pharmaceuticals",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Eylea biosimilar pressure imminent; Dupixent competition rising",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "CI",
+    "company": "Cigna Group",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "PBM legislative risk; Medicare Advantage repricing overhang",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "AMT",
+    "company": "American Tower Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "5G tailwind real but high leverage; carrier consolidation risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "PLD",
+    "company": "Prologis Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Industrial REIT quality; rate sensitive; vacancy rising",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "APD",
+    "company": "Air Products and Chemicals",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "CEO departure overhang; hydrogen mega-project execution risk",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "ECL",
+    "company": "Ecolab Inc.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Water treatment embedded recurring; slow margin recovery pace",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "RLI",
+    "company": "RLI Corp.",
+    "current_state": "inbox",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "re-triage next cycle",
+    "owner_notes": "Specialty insurer underwriting discipline good; small scale",
+    "tags": [
+      "b1_hold"
+    ]
+  },
+  {
+    "ticker": "INTC",
+    "company": "Intel Corp.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Extreme execution risk; AMD/TSMC dominance entrenched; speculative",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "RKT.L",
+    "company": "Reckitt Benckiser Group",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Weak brand investment history; volume declining; no moat",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "SQ",
+    "company": "Block Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "No clear durable moat; Stripe/PayPal competition; speculative",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "BABA",
+    "company": "Alibaba Group Holding",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "VIE structure risk; China regulatory risk; outside circle of competence",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "TCEHY",
+    "company": "Tencent Holdings Ltd.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "VIE structure; China regulatory risk; geopolitical exposure",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "CRH",
+    "company": "CRH plc",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Building materials commodity-like; cyclical construction exposure",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "ACLS",
+    "company": "Axcelis Technologies Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Small customer base; semi cycle highly exposed; mid-cap thin moat",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "ONTO",
+    "company": "Onto Innovation Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Small scale; semi equipment cycle risk; no durable moat visible",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "MSC",
+    "company": "MSC Industrial Direct Co.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Amazon Business threat; slow growth; mid-cap industrial distribution",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "T",
+    "company": "AT&T Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "High debt; commodity telecom; no durable competitive advantage",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "UCG.MI",
+    "company": "UniCredit S.p.A.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "European banking systemic risk; VIE-like regulatory complexity",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "CNQ",
+    "company": "Canadian Natural Resources Ltd.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Commodity oil; no pricing power; pure cyclical",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "ABI.BR",
+    "company": "Anheuser-Busch InBev S.A.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Heavy debt; beer volume structurally declining in developed markets",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "DBK.DE",
+    "company": "Deutsche Bank AG",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "European banking systemic risk; litigation tail; no durable moat",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "BAS.DE",
+    "company": "BASF SE",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Commodity chemicals; limited moat; China competition intensifying",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "BARC.L",
+    "company": "Barclays plc",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "European banking systemic risk; UK macro exposure",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "BNP.PA",
+    "company": "BNP Paribas S.A.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Sovereign debt exposure; European banking systemic risk",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "BBVA.MC",
+    "company": "Banco Bilbao Vizcaya Argentaria",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Turkey hyperinflation risk; EM currency volatility; outside CoC",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "COIN",
+    "company": "Coinbase Global Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Crypto cycle volatility; no durable moat; speculative",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "BIDU",
+    "company": "Baidu Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "VIE structure; China tech regulation; outside circle of competence",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "MRNA",
+    "company": "Moderna Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Revenue cliff post-COVID; mRNA pipeline unproven; speculative",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "CVX",
+    "company": "Chevron Corp.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Commodity oil; no durable moat; cyclical FCF",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "XOM",
+    "company": "Exxon Mobil Corp.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Commodity oil; no durable moat; carbon transition risk",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "COP",
+    "company": "ConocoPhillips",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "E&P commodity; no durable moat; oil price dependent",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "NEE",
+    "company": "NextEra Energy Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Highly leveraged; no pricing power; rate-sensitive utility",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "AEP",
+    "company": "American Electric Power",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Regulated utility; limited pricing power; income only",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "SO",
+    "company": "Southern Company",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Regulated utility; limited returns above cost of capital",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "NEM",
+    "company": "Newmont Corp.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Commodity gold miner; no pricing power or moat",
+    "tags": [
+      "b1_reject"
+    ]
+  },
+  {
+    "ticker": "FCX",
+    "company": "Freeport-McMoRan Inc.",
+    "current_state": "rejected",
+    "priority": "low",
+    "source_batch": "2026-03-11",
+    "last_analysis_date": null,
+    "last_triage_date": "2026-03-11",
+    "current_verdict": null,
+    "thesis_status": "unknown",
+    "next_required_action": "none",
+    "owner_notes": "Pure commodity cyclical copper miner; no moat",
+    "tags": [
+      "b1_reject"
+    ]
+  }
+]

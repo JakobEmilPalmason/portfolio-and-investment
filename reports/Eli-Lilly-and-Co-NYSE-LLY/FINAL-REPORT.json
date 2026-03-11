@@ -1,0 +1,56 @@
+{
+  "ticker": "LLY",
+  "company": "Eli Lilly and Company",
+  "analysis_date": "2026-03-11",
+  "verdict": "Pass",
+  "average_score": 6.5,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Tirzepatide patents protected through 2036–2041 providing a 10–15 year legal moat",
+    "$50B manufacturing investment creating a structural supply barrier competitors cannot quickly replicate",
+    "83% gross margins and 40% operating margins — world-class even among premium pharma",
+    "ROIC of 25%+ in FY2025 with exceptional operating leverage (307% operating income growth on 91% revenue growth 2023–2025)",
+    "CEO David Ricks owns ~$683M of personal stock and has delivered 571% TSR since 2017",
+    "Pipeline depth: orforglipron (oral GLP-1), retatrutide (triple agonist), Kisunla (Alzheimer's) extend franchise beyond tirzepatide",
+    "Balance sheet manages $42.5B debt safely: net debt/EBITDA ~1.2x, interest coverage ~14–19x"
+  ],
+  "key_risks": [
+    "No price margin of safety at ~$1,001 — stock priced at base-case intrinsic value (~$960–1,025); bear case implies 30–55% downside",
+    "IRA Medicare drug pricing: Jardiance already cut January 2026; tirzepatide is a logical next negotiation target",
+    "Tirzepatide at 56% of 2025 revenue creates extreme single-product concentration risk",
+    "Oral GLP-1 competitive wave: Novo Nordisk next-gen oral, Pfizer danuglipron, Viking Therapeutics pipeline could erode Zepbound market share",
+    "Manufacturing capex cycle ($7.8B in FY2025) becomes stranded asset if GLP-1 demand disappoints",
+    "Compounding pharmacy litigation outcome uncertain — adverse ruling could re-introduce large-scale lower-cost competition"
+  ],
+  "red_flags": [
+    "Margin of safety score 3/10 — no price cushion at current entry",
+    "Risk/reward ratio ~1.5–2:1 (bull upside vs. bear downside) — below 3:1 threshold",
+    "IRA headwind already live: Jardiance cut January 2026; tirzepatide exposure high",
+    "Bear case intrinsic value ~$447 implies 55% downside from current price",
+    "FCF conversion 43% (FY2025) due to massive growth capex — normalized earnings trust required",
+    "Total debt grew 152% in four years to $42.5B"
+  ],
+  "buy_triggers": [
+    "Stock declines to $700–750 (~25–30% below current), approximately pricing in the bear case",
+    "Stock declines to $600–650 (near 52-week low) with thesis intact — exceptional value entry",
+    "Orforglipron obesity FDA approval confirmed AND Medicare Part D obesity coverage expansion finalized — both de-risk the growth trajectory and raise intrinsic value range"
+  ],
+  "sell_triggers": [
+    "IRA selects Mounjaro or Zepbound for Medicare negotiation AND Lilly guides 2026 revenue below $80B — simultaneous price and volume pressure",
+    "Tirzepatide safety signal requiring FDA black-box warning or market withdrawal — catastrophic thesis break",
+    "Stock re-rates to 40x+ forward earnings (above ~$1,350) without a new major pipeline catalyst — trim on valuation extreme"
+  ],
+  "valuation_summary": "At ~$1,001/share, LLY is roughly fairly valued in the base case (5-year DCF intrinsic value ~$960–1,025 at 10% discount rate) and materially overvalued in the bear case (~$447); the bull case (~$1,710–1,865) requires near-perfect GLP-1 execution; there is effectively no margin of safety at the current price.",
+  "source_summary": "FY2021–2025 financial data sourced from stockanalysis.com and Lilly Q4 2025 earnings press release (Feb 4, 2026); product revenue breakdown from widely reported analyst data; price history and pipeline data from March 2026 web searches; interest expense and debt maturity details partially estimated from training knowledge pending 10-K confirmation.",
+  "confidence": "medium",
+  "change_notes": ""
+}

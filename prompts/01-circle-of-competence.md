@@ -30,11 +30,12 @@ Answer each of these directly:
 - Don't mistake revenue growth for a clear business model. Fast growth can mask complexity.
 - Be honest: if after research you still can't clearly explain the model, that IS the answer — score low and say why.
 
-## Data Gathering
+## Data Sources
 
 1. Check `context/{TICKER}/` for user-provided files first.
 2. Use web search to find: company overview, latest annual report summary, revenue breakdown by segment.
 3. Flag any areas where you had to rely on potentially stale training data.
+4. **Do not read files in `scans/`, `triage/`, or `queue/`.** Your analysis must be independent of any prior pipeline verdicts or triage decisions.
 
 ## Output
 

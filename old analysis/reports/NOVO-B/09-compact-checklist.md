@@ -1,0 +1,12 @@
+# Compact Checklist — NOVO-B
+
+**Date:** 2026-03-05
+
+1. **Business**: Novo Nordisk sells weekly semaglutide injections (Ozempic, Wegovy) and a new oral pill for chronic diabetes and obesity, generating DKK 309 billion in 2025 revenue from patients who stay on therapy indefinitely because these conditions are managed, not cured.
+2. **Moat**: Manufacturing scale (DKK 60 billion in 2025 capex, 3-5 years for a competitor to replicate) and US patent protection through 2032 are real, but Eli Lilly has already taken 57-60% US GLP-1 share with a clinically superior drug, CagriSema failed to beat tirzepatide head-to-head, and semaglutide patents expire in 2026 across China, Canada, Brazil, and India.
+3. **Economics**: Gross margins of 81%, operating margins of 41%, and DKK 119 billion in operating cash flow are elite, but ROIC has fallen from 41% to 25% in two years as DKK 90 billion in annual capex consumed cash flow and drove FCF conversion down to 28%.
+4. **Management**: The Novo Nordisk Foundation forced out the entire board and CEO in 2025, installed untested CEO Doustdar who cut 9,000 jobs to save DKK 8 billion annually, and no insider bought shares during a 60%+ stock decline — executive comp fell 38% (real pay-for-performance) but minority shareholders have zero governance power against the Foundation's 77% voting control.
+5. **Debt risk**: Total debt rose from near-zero to DKK 122 billion for the Catalent acquisition, but 40x+ interest coverage, an AA credit rating, well-laddered fixed-rate maturities, and DKK 119 billion in operating cash flow mean the company survives a 30% revenue decline without issuing equity.
+6. **Price**: At ~11x trough earnings and 60% below its 52-week high, the market prices Novo as ex-growth pharma with zero future value creation — for that to be correct, the entire GLP-1 obesity market (still in early global innings) must flow to competitors while DKK 90 billion in annual capex earns subpar returns.
+7. **Margin of safety**: The 10-11x PE on depressed earnings and 2:1 upside/downside asymmetry provide a thin but real cushion, though extreme semaglutide concentration means one molecule going wrong destroys the thesis — this is a starter position (1-3% of portfolio), not a fat pitch.
+8. **Thesis breaker**: Sell if Eli Lilly's oral GLP-1 (orforglipron) wins FDA approval with superior efficacy AND captures majority oral obesity share, confirming Novo is permanently second-best in both injectable and oral formats with no pipeline answer until amycretin in 2030 at the earliest.

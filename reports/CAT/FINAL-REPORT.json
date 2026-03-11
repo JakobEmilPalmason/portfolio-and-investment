@@ -1,0 +1,51 @@
+{
+  "ticker": "CAT",
+  "company": "Caterpillar Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Pass",
+  "average_score": 5.75,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 3,
+    "margin_of_safety": 2,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "Irreplicable 150+ dealer network spanning ~2,800 global facilities built over a century",
+    "Services revenue $24B (~39% of ME&T) growing from $14B in 2016 — recurring, anti-cyclical flywheel",
+    "ROIC expanded from 6.2% (2020) to 18.2% (2024) — structural improvement, not a fluke",
+    "ME&T industrial entity net cash ~$5B with 22x interest coverage — fortress balance sheet",
+    "30 consecutive years of dividend growth; share count reduced ~14% (2020-2025)"
+  ],
+  "key_risks": [
+    "Valuation at 37-41x trailing P/E (~2x historical average) — severe multiple compression risk",
+    "Management-disclosed $2.6B tariff headwind for 2026 against ~$11B operating profit base",
+    "Cyclical leverage: 4% revenue growth in FY2025 produced 15% operating profit decline",
+    "China market share erosion by XCMG/SANY — structural, not cyclical",
+    "Cat Financial's $35B+ debt requires continuous capital market access — 2008-style risk in a credit crunch"
+  ],
+  "red_flags": [
+    "All three DCF scenarios (bear $151, base $272, bull $377) produce intrinsic value below current ~$705 price",
+    "Buybacks executed mechanically — $7.7B repurchased in 2025 when FCF was only $7.5B",
+    "New CEO Joe Creed appointed May 2025 — no track record as CEO",
+    "Historical max drawdown of 73% when entering at elevated multiples"
+  ],
+  "buy_triggers": [
+    "Price falls to $250-350 range (50-65% correction) restoring base-to-bull intrinsic value with margin of safety",
+    "Forward P/E compresses to 14-18x on sustained earnings power",
+    "Confirmed cycle trough with backlog still intact and services buffer demonstrated"
+  ],
+  "sell_triggers": [
+    "Order backlog declines quarter-over-quarter for two consecutive quarters",
+    "Energy & Transportation data center generator demand shows material deceleration",
+    "Trailing FCF yield falls below 2.5% or forward P/E rises above 35x with no new growth acceleration"
+  ],
+  "valuation_summary": "All three DCF scenarios (bear ~$151, base ~$272, bull ~$377) produce intrinsic values materially below the current price of ~$705; the stock trades at 37-41x trailing earnings, roughly 2x its own 5-year historical average and >2x the industry median forward P/E, offering no margin of safety at any reasonable set of assumptions.",
+  "source_summary": "Web search (Caterpillar Q4/FY2025 earnings releases, investor relations, MacroTrends, StockAnalysis, FinancialContent, Seeking Alpha) plus training knowledge for historical context; all 2025 full-year results confirmed, segment data may have minor rounding differences from official filings.",
+  "confidence": "high",
+  "change_notes": ""
+}

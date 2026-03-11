@@ -1,0 +1,53 @@
+{
+  "ticker": "V",
+  "company": "Visa Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Own",
+  "average_score": 8.1,
+  "umbrella_scores": {
+    "circle_of_competence": 10,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 10,
+    "balance_sheet": 9,
+    "valuation": 5,
+    "margin_of_safety": 6,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Pure toll-road model with zero credit risk: earns transaction fees on $14T annual payment volume",
+    "Two-sided network moat with ~70% global card volume share, stable for a decade despite fintech competition",
+    "Exceptional economics: ~28% ROIC, ~54% FCF margin, ~60% non-GAAP operating margin, only $1.5B capex",
+    "Fortress balance sheet: ~0.2x net debt/EBITDA, 45x interest coverage, $20B liquid assets",
+    "Disciplined capital return: $18.3B in buybacks in FY2025, 12% share count reduction over five years",
+    "Secular tailwind: cash-to-digital payment shift globally remains incomplete (~20% of spending still cash)"
+  ],
+  "key_risks": [
+    "DOJ antitrust case targeting US debit monopoly — motion to dismiss denied June 2025, trial expected 2027–2028; structural remedy could remove $2–3B+ in annual debit revenue",
+    "Client incentives ($15.8B, +14% YoY) growing faster than net revenue — structural margin compression risk if trend persists",
+    "A2A real-time payment adoption (FedNow, UPI, Pix, stablecoins) bypasses card rails; 37% of merchants accepting RTP as of 2025",
+    "Cross-border revenue (~29% of net revenue, highest-yield segment) exposed to geopolitical disruption and travel slowdowns",
+    "Credit Card Competition Act (CCCA) tail risk: if passed, would extend routing competition to credit cards — more severe than DOJ debit case"
+  ],
+  "red_flags": [
+    "DOJ motion to dismiss denied June 2025; no settlement signals; trial 2027–2028 with structural remedy risk",
+    "Client incentive growth (+14% YoY) outpacing net revenue growth (+11% YoY) — multi-year trend not reversed",
+    "Gross debt up 20.8% YoY to $25.2B — rising leverage trend warrants monitoring",
+    "GAAP operating expenses +30% YoY due to $2.7B+ litigation provision — litigation overhang persistent",
+    "Insider ownership at 0.09% — C-suite are stewards, not owner-operators"
+  ],
+  "buy_triggers": [
+    "Stock declines to $280–$295 (forward P/E ~22x), improving base-case margin of safety materially",
+    "DOJ case settles or is dismissed with no structural remedy to debit routing, removing primary multiple-discount overhang",
+    "Value-Added Services growth sustains above 25% for two or more consecutive quarters, resetting long-term earnings expectations"
+  ],
+  "sell_triggers": [
+    "DOJ trial produces structural remedy that management guides will reduce annual revenue by more than $3B",
+    "Net revenue growth falls below 6% for two consecutive quarters with simultaneous FCF margin compression below 45%",
+    "Valuation reaches 35x+ forward P/E on full-value earnings (trim to rebalance)"
+  ],
+  "valuation_summary": "At ~$314/share (~24x forward EPS of ~$13.10), Visa is fairly valued near the midpoint of the $300–$340 base-case intrinsic value range; base-case DCF (9% discount rate, 10% earnings growth) yields ~$264–$302/share, while the bull case reaches $382+; the stock is below its 10-year average forward P/E of ~33x but the DOJ tail risk and higher discount rates justify the discount.",
+  "source_summary": "Analysis based on Visa FY2025 annual results (fiscal year ending September 30, 2025) and Q1 FY2026 earnings (January 29, 2026); financial data cross-referenced across investor.visa.com, MacroTrends, GuruFocus, StockAnalysis, and MarketBeat; DOJ case status from Payments Dive and PYMNTS as of early 2026.",
+  "confidence": "medium",
+  "change_notes": ""
+}

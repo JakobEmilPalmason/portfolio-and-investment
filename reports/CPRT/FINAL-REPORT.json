@@ -1,0 +1,53 @@
+{
+  "ticker": "CPRT",
+  "company": "Copart, Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Own",
+  "average_score": 8.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 6,
+    "margin_of_safety": 6,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "10,000+ acres of owned, permitted salvage yards — a physical moat that took decades to build and cannot be quickly replicated",
+    "Self-reinforcing two-sided network effect connecting 170+ country buyer base with dominant insurance carrier supply",
+    "Fortress balance sheet: $5.2B net cash, zero financial debt, $1.8B annual operating cash flow",
+    "~30% ROIC (5-year average) with 34%+ net margins — among the highest sustained margins in US commercial services",
+    "Secular tailwind: total-loss frequency rising from 4% in 1980 to 22.6% in FY2025 as modern vehicles become increasingly expensive to repair",
+    "Founder Willis Johnson holds ~7.72% equity (~$4B stake) with compensation tied entirely to real stock appreciation"
+  ],
+  "key_risks": [
+    "Two consecutive quarters of declining insurance unit volumes (Q2 FY2026: -9% globally) — cyclical vs. structural uncertainty is the pivotal open question",
+    "Supply-side concentration: ~80% of vehicle volume from auto insurance carriers; top carriers likely represent 40-50% of supply",
+    "IAA/RB Global market share pressure acknowledged in Q2 FY2026 earnings — duopoly is not static",
+    "Bear-case valuation implies 37-50% downside from current price if volume decline proves structural",
+    "AV adoption could reduce accident frequency over a 10-year horizon, compressing the long-term volume growth assumption"
+  ],
+  "red_flags": [
+    "Q2 FY2026 revenue -3.6% YoY; EPS -10% — two consecutive quarterly declines unusual for Copart",
+    "CEO Jeff Liaw sold 43% of personal holdings (July 2025), reducing his stake to 31,527 shares",
+    "No price margin of safety at ~$36: stock trades near base-case intrinsic value, not at a meaningful discount",
+    "Capex ($569M FY2025) is 2.8x D&A (~$200M) — maintenance vs. growth split not disclosed, introducing owner earnings uncertainty",
+    "SBC as percentage of revenue not confirmed from available data; requires 10-K verification"
+  ],
+  "buy_triggers": [
+    "Stock declines to $26-30 range, creating genuine price margin of safety with base-case intrinsic value estimated at $32-37",
+    "Two to three consecutive quarters of recovering insurance unit volumes confirm the current soft patch is cyclical",
+    "Major catastrophe event (hurricane/flood season) provides volume surge demonstrating underlying leverage in the model"
+  ],
+  "sell_triggers": [
+    "Two or more major insurance carriers (State Farm, Allstate, GEICO, Progressive) announce material and durable volume reductions or shifts to IAA/RB Global",
+    "Net margins sustain below 25% for four consecutive quarters, indicating structural pricing pressure",
+    "Management takes on significant debt (>$2B) for an acquisition, breaking the balance-sheet-fortress principle"
+  ],
+  "valuation_summary": "At ~$36/share (~23x trailing P/E, ~20% below 10-year average multiple of 29x), CPRT trades near base-case intrinsic value of $32-37B; the bear case implies $18-22B (37-50% downside) and the bull case implies $50-53B (43-52% upside), making the risk/reward approximately symmetric rather than asymmetric at current levels.",
+  "source_summary": "Analysis based on Copart Q1 and Q2 FY2026 earnings releases (November 2025 and March 2026), FY2025 10-K (filed September 2025), and web searches conducted March 2026; financial data current as of January 31, 2026 balance sheet date.",
+  "confidence": "medium",
+  "change_notes": ""
+}

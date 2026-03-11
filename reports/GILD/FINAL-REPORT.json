@@ -1,0 +1,52 @@
+{
+  "ticker": "GILD",
+  "company": "Gilead Sciences",
+  "analysis_date": "2026-03-11",
+  "verdict": "Own",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Biktarvy holds ~51% of the U.S. HIV treatment market with generic exclusivity contractually locked until April 2036 — one of the clearest multi-year earnings floors in large-cap pharma",
+    "HIV franchise converts ~$29B revenue to ~$9.5B in annual FCF at ~2% capital intensity — exceptional capital efficiency for a business of this scale",
+    "Morningstar wide-moat rating supported by 86% non-GAAP gross margins, stable-to-growing market share, and a first-mover position in HIV prevention (Yeztugo/lenacapavir)",
+    "10 consecutive years of dividend growth; $10.6B in cash/securities provides fortress-level liquidity",
+    "Lenacapavir (Yeztugo) positions Gilead at the front of the next HIV prevention cycle — the company owns both the incumbent product and its successor"
+  ],
+  "key_risks": [
+    "HIV competitive disruption: ViiV/GSK developing long-acting injectable HIV treatments targeting 2028–2030 launch; could erode Biktarvy market share before 2036 generic entry",
+    "Drug pricing regulation: IRA Medicare negotiation and executive drug-pricing orders represent structural headwind to net realized prices; management flagged ~2% 2026 HIV revenue drag",
+    "Oncology M&A track record: $21B Immunomedics acquisition led to $4.2B impairment in 2024; $7.8B Arcellx acquisition (2026) carries December 2026 FDA PDUFA binary risk",
+    "Trodelvy commercial uncertainty: ASCENT-07 miss narrowed addressable market; datroway competition from Daiichi/AstraZeneca caps upside in TNBC",
+    "Lenacapavir ramp uncertainty: Yeztugo launched at $28,218/year against generic oral PrEP competition; $2B+ peak sales is the bull case, not a base case"
+  ],
+  "red_flags": [
+    "Single-product concentration: Biktarvy ~49% of total product revenue",
+    "Immunomedics acquisition is a permanent capital loss: $21B paid, $4.2B impaired in 2024",
+    "CEO compensation $23.7M is 79% above peer median — full proxy not available to verify performance hurdle adequacy",
+    "Upside/downside asymmetry at current price (~1.4–1.8x) is below the desired 2–3x threshold",
+    "Non-GAAP adjustments are large and persistent: GAAP EPS $6.78 vs non-GAAP $8.15 (20% gap) requires ongoing investor trust in management's classification of charges"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $125–130/share improving FCF yield above 6.5% and upside/downside asymmetry to 2.5–3x",
+    "Yeztugo Q1/Q2 2026 prescription trends clearly on track for $800M+ full-year, validating lenacapavir as a multi-billion-dollar PrEP platform",
+    "FDA approval of anito-cel (CAR-T) in December 2026, de-risking the Arcellx acquisition and confirming improved oncology execution"
+  ],
+  "sell_triggers": [
+    "Biktarvy U.S. market share declines more than 5 percentage points within any 12-month period — signals HIV franchise disruption before 2036",
+    "HIV revenue guidance cut to flat or negative, indicating IRA/Medicaid pricing pressure overwhelming volume growth",
+    "Management announces acquisition greater than $10B financed primarily by debt, repeating Immunomedics capital destruction pattern"
+  ],
+  "valuation_summary": "At $146.52/share (16.7x forward P/E, 5.2% FCF yield, 13.9x EV/EBITDA), GILD trades at a material discount to large-cap pharma peers averaging 18–22x forward P/E. Base-case 10-year DCF (5% FCF growth, 2.5% terminal, 9% WACC) implies intrinsic value of $150–165/share — 2–13% upside. Bear case $100–120/share (18–32% downside); bull case $195–210/share (33–44% upside). Market is pricing GILD as a slow-growth cash cow with zero credit for lenacapavir PrEP or Trodelvy expansion; the required FCF growth rate to justify current price is only ~3–4%, well below management guidance.",
+  "source_summary": "Primary: Gilead FY2025 earnings press release (February 10, 2026); Q3 2025 earnings press release. Secondary: MacroTrends historical margins; GuruFocus ROIC; stockanalysis.com financials; MarketBeat/TipRanks analyst consensus; Morningstar moat ratings; BioPharma Dive; Fierce Pharma; DrugPatentWatch patent data; simplywall.st balance sheet metrics. Training knowledge used for pharma comparables, competitive landscape context, and DCF framework. Confidence note: full 2025 10-K not yet indexed at time of analysis; capex and D&A are estimated from prior-year trends and press release data.",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. No prior report to compare against."
+}

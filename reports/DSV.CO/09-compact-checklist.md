@@ -1,0 +1,12 @@
+# Compact Checklist — DSV.CO
+
+**Date:** 2026-03-09
+
+1. **Business**: DSV is the world's largest asset-light freight forwarder, buying shipping capacity in bulk from carriers and reselling end-to-end logistics services to businesses across 90+ countries, earning the spread plus fees for customs, warehousing, and supply chain management.
+2. **Moat**: DSV's scale — now handling ~2.4 million tonnes of airfreight annually post-Schenker, more than any competitor — gives it structurally lower carrier buying costs than any rival, a self-reinforcing cost advantage that widens with every incremental shipment.
+3. **Economics**: Adjusted FCF surged to DKK 16,335m in 2025 (from DKK 5,550m in 2024) confirming real cash generation, but ROIC on the post-Schenker invested capital base has compressed to ~6% TTM — below cost of capital and requiring DKK 9bn of annual synergies by 2027 to recover to acceptable levels.
+4. **Management**: Jens H. Lund and the Executive Board have executed four consecutive, increasingly large acquisitions (UTi, Panalpina, Agility GIL, DB Schenker) each time restoring or exceeding pre-acquisition margins, and the new CEO bought DKK 10 million of stock on the open market before his appointment was formalised.
+5. **Debt risk**: At 2.8x EBITDA net debt (DKK 86.6bn including lease liabilities) with S&P on a negative outlook, DSV could survive a 30% revenue shock and remain EBIT-positive and cash-generative, but leverage would widen to ~3.5–4x and credit ratings would face downgrade pressure — uncomfortable, not existential.
+6. **Price**: At DKK 1,669/share, the market is pricing in EBIT of approximately DKK 35–38bn by 2030 (roughly double 2025's DKK 19.6bn) at a sustained 18–20x EV/EBIT multiple, which requires flawless execution on Schenker synergies but is not an implausible scenario given DSV's track record.
+7. **Margin of safety**: The business model's asset-light structure (no stranded ships or planes in a downturn) and DSV's proven acquisition integration playbook provide strong business-level protection, but the price margin of safety is thin — bear-case intrinsic value of DKK 1,200–1,400 is only 16–28% below the current price.
+8. **Thesis breaker**: Sell if management reduces the total Schenker synergy target below DKK 6bn (from the current DKK 9bn target), as that would invalidate the core bull case and confirm that the DKK 14.3bn acquisition has permanently destroyed rather than created per-share value.

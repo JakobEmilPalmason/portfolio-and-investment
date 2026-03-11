@@ -1,0 +1,1364 @@
+[
+  {
+    "ticker": "CAT",
+    "company": "Caterpillar Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Quality franchise but deep cyclical; no margin of safety signal"
+  },
+  {
+    "ticker": "ORCL",
+    "company": "Oracle Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Cloud infrastructure moat building; AI data demand accelerating"
+  },
+  {
+    "ticker": "HD",
+    "company": "Home Depot Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Home improvement duopoly; near 52-week low creates entry point"
+  },
+  {
+    "ticker": "MU",
+    "company": "Micron Technology Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Memory commodity with no durable pricing power; deep cyclical"
+  },
+  {
+    "ticker": "COHR",
+    "company": "Coherent Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Execution history poor; margin recovery unproven; medium confidence"
+  },
+  {
+    "ticker": "VZ",
+    "company": "Verizon Communications Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "High FCF yield but heavy debt and no revenue growth engine"
+  },
+  {
+    "ticker": "GILD",
+    "company": "Gilead Sciences Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "HIV franchise durable; oncology diversifying; high FCF yield"
+  },
+  {
+    "ticker": "TEAM",
+    "company": "Atlassian Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Dev tools sticky; cloud migration complete; new pricing phase"
+  },
+  {
+    "ticker": "FLUT",
+    "company": "Flutter Entertainment plc",
+    "b1_verdict": "advance",
+    "b1_reason": "FanDuel US market leader; profitability inflecting; not yet analyzed"
+  },
+  {
+    "ticker": "RDDT",
+    "company": "Reddit Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Moat premature; ad targeting weaker than Meta; medium confidence"
+  },
+  {
+    "ticker": "NOVN.SW",
+    "company": "Novartis AG",
+    "b1_verdict": "advance",
+    "b1_reason": "Focused biopharma post-Sandoz; FCF yield attractive; not analyzed"
+  },
+  {
+    "ticker": "SAN.PA",
+    "company": "Sanofi S.A.",
+    "b1_verdict": "advance",
+    "b1_reason": "Dupixent blockbuster plus rare disease; high FCF yield"
+  },
+  {
+    "ticker": "APP",
+    "company": "AppLovin Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Fast-growing but AI-driven revenue concentrated; valuation stretched"
+  },
+  {
+    "ticker": "MMM",
+    "company": "3M Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Litigation tail risk remains; core organic growth still weak"
+  },
+  {
+    "ticker": "CVS",
+    "company": "CVS Health Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Integration complexity; PBM legislative risk overhang persists"
+  },
+  {
+    "ticker": "INTC",
+    "company": "Intel Corp.",
+    "b1_verdict": "reject",
+    "b1_reason": "Extreme execution risk; AMD/TSMC dominance entrenched; speculative"
+  },
+  {
+    "ticker": "PFE",
+    "company": "Pfizer Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "COVID revenue cliff deep; pipeline needs to deliver; watch only"
+  },
+  {
+    "ticker": "DIS",
+    "company": "Walt Disney Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Streaming profitable; parks resilient; linear TV decline quantifiable"
+  },
+  {
+    "ticker": "MDT",
+    "company": "Medtronic plc",
+    "b1_verdict": "hold",
+    "b1_reason": "Turnaround slow; China VBP risk; not enough thesis change"
+  },
+  {
+    "ticker": "BIIB",
+    "company": "Biogen Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Leqembi uptake slow; payer coverage uncertainty; binary risk"
+  },
+  {
+    "ticker": "AMGN",
+    "company": "Amgen Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Biosimilar + obesity pipeline; high FCF yield; durable business"
+  },
+  {
+    "ticker": "HUM",
+    "company": "Humana Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "MA repricing pain mostly taken; Stars recovery path plausible"
+  },
+  {
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; thesis intact, valuation still full"
+  },
+  {
+    "ticker": "ARM",
+    "company": "Arm Holdings plc",
+    "b1_verdict": "reject",
+    "b1_reason": "Previously analyzed: Pass verdict; valuation still extreme"
+  },
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Own verdict; thesis intact, monitor position"
+  },
+  {
+    "ticker": "ALAB",
+    "company": "Astera Labs Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Previously analyzed: Pass verdict; pre-mature moat, no thesis change"
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; thesis intact, monitor"
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; Agentforce thesis developing"
+  },
+  {
+    "ticker": "DSV.CO",
+    "company": "DSV A/S",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; Schenker integration ongoing"
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; AI platform thesis intact"
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; valuation still demands perfection"
+  },
+  {
+    "ticker": "NOVO-B.CO",
+    "company": "Novo Nordisk A/S",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; GLP-1 thesis intact, monitor"
+  },
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; Apple modem risk still looming"
+  },
+  {
+    "ticker": "RKLB",
+    "company": "Rocket Lab USA Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Previously analyzed: Pass verdict; pre-profit, speculative, no change"
+  },
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; competition intensifying"
+  },
+  {
+    "ticker": "ASML.AS",
+    "company": "ASML Holding N.V.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; monopoly intact, monitor"
+  },
+  {
+    "ticker": "ORSTED.CO",
+    "company": "Ørsted A/S",
+    "b1_verdict": "reject",
+    "b1_reason": "Previously analyzed: Pass verdict; no pricing power, capex risk"
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Previously analyzed: Watch verdict; geopolitical risk unchanged"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Cloud + Copilot AI dominant moat; not yet analyzed"
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Search monopoly plus cloud; cheap vs mega-cap peers; not analyzed"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Social ad duopoly; Llama AI cost moat; not yet analyzed"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Payment network monopoly; zero marginal cost; not analyzed"
+  },
+  {
+    "ticker": "MA",
+    "company": "Mastercard Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Payments rail duopoly; fee model scales without capital risk"
+  },
+  {
+    "ticker": "BRK-B",
+    "company": "Berkshire Hathaway B",
+    "b1_verdict": "advance",
+    "b1_reason": "Capital allocation machine; float + equity; not yet analyzed"
+  },
+  {
+    "ticker": "CSU.TO",
+    "company": "Constellation Software Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "VMS serial acquirer; >20% ROIC consistently; not yet analyzed"
+  },
+  {
+    "ticker": "DHR",
+    "company": "Danaher Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Life sciences tools; sticky reagent recurring revenue"
+  },
+  {
+    "ticker": "MCO",
+    "company": "Moody's Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Rating agency oligopoly; mandatory for debt issuance"
+  },
+  {
+    "ticker": "SPGI",
+    "company": "S&P Global Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Ratings + indices + data multi-segment compounding moat"
+  },
+  {
+    "ticker": "FICO",
+    "company": "Fair Isaac Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Credit score monopoly embedded in US mortgage; pricing power"
+  },
+  {
+    "ticker": "ROP",
+    "company": "Roper Technologies",
+    "b1_verdict": "hold",
+    "b1_reason": "Quality acquirer but organic growth declining; expensive"
+  },
+  {
+    "ticker": "IDXX",
+    "company": "IDEXX Laboratories",
+    "b1_verdict": "advance",
+    "b1_reason": "Vet diagnostics consumable lock-in; durable installed base moat"
+  },
+  {
+    "ticker": "TDG",
+    "company": "TransDigm Group",
+    "b1_verdict": "advance",
+    "b1_reason": "Sole-source aerospace parts; 80%+ gross margins; pricing power"
+  },
+  {
+    "ticker": "ODFL",
+    "company": "Old Dominion Freight Line",
+    "b1_verdict": "hold",
+    "b1_reason": "Best LTL operator but freight cycle turning; watch for entry"
+  },
+  {
+    "ticker": "SHW",
+    "company": "Sherwin-Williams Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Pro painter channel dominance; pricing power in coatings"
+  },
+  {
+    "ticker": "FAST",
+    "company": "Fastenal Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Good business but cyclical end markets; no compelling entry"
+  },
+  {
+    "ticker": "POOL",
+    "company": "Pool Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Durable aftermarket business but housing slowdown headwind"
+  },
+  {
+    "ticker": "MTD",
+    "company": "Mettler-Toledo Intl.",
+    "b1_verdict": "hold",
+    "b1_reason": "Quality instruments; pharma capex weakness and China drag"
+  },
+  {
+    "ticker": "WST",
+    "company": "West Pharmaceutical Services",
+    "b1_verdict": "advance",
+    "b1_reason": "Injectable biologics components; durable recurring demand"
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Exceptional business; premium valuation limits margin of safety"
+  },
+  {
+    "ticker": "ADP",
+    "company": "Automatic Data Processing Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Sticky payroll but mature growth; fintech nibbling at edges"
+  },
+  {
+    "ticker": "CTAS",
+    "company": "Cintas Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Route density moat but expensive; low-growth mature market"
+  },
+  {
+    "ticker": "CPRT",
+    "company": "Copart Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Vehicle auction network moat; land-based barrier to entry"
+  },
+  {
+    "ticker": "ROL",
+    "company": "Rollins Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Recurring pest control but slow organic growth; not compelling"
+  },
+  {
+    "ticker": "BR",
+    "company": "Broadridge Financial Solutions",
+    "b1_verdict": "advance",
+    "b1_reason": "Proxy processing near-monopoly; B2B switching costs extreme"
+  },
+  {
+    "ticker": "PAYX",
+    "company": "Paychex Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "SMB payroll sticky but ADP/Gusto competition; rate sensitivity"
+  },
+  {
+    "ticker": "SSNC",
+    "company": "SS&C Technologies Holdings",
+    "b1_verdict": "hold",
+    "b1_reason": "Fund admin sticky but heavy acquisition debt; medium confidence"
+  },
+  {
+    "ticker": "MKTX",
+    "company": "MarketAxess Holdings",
+    "b1_verdict": "advance",
+    "b1_reason": "Electronic bond trading network effects; dealer penetration growing"
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Global streaming leadership; ad tier expanding profitability"
+  },
+  {
+    "ticker": "VRSK",
+    "company": "Verisk Analytics Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Insurance analytics data monopoly; no substitutes exist"
+  },
+  {
+    "ticker": "CSGP",
+    "company": "CoStar Group Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "CRE data moat real but Homes.com investment depressing margins"
+  },
+  {
+    "ticker": "FDS",
+    "company": "FactSet Research Systems",
+    "b1_verdict": "hold",
+    "b1_reason": "Financial terminal sticky but Bloomberg/Refinitiv cap growth"
+  },
+  {
+    "ticker": "ICE",
+    "company": "Intercontinental Exchange Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Exchange + mortgage data; recurring revenue growing durably"
+  },
+  {
+    "ticker": "CME",
+    "company": "CME Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Derivatives exchange monopoly; volumes surge in high volatility"
+  },
+  {
+    "ticker": "CBOE",
+    "company": "Cboe Global Markets",
+    "b1_verdict": "hold",
+    "b1_reason": "VIX franchise quality but volatility-dependent revenue cyclical"
+  },
+  {
+    "ticker": "NDAQ",
+    "company": "Nasdaq Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Adenza integration risk; listings cyclical; watch fintech pivot"
+  },
+  {
+    "ticker": "MSCI",
+    "company": "MSCI Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Index licensing with AUM-linked fees compounds automatically"
+  },
+  {
+    "ticker": "NKE",
+    "company": "Nike Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Brand reset underway; On/Hoka share gains unclear if temporary"
+  },
+  {
+    "ticker": "SBUX",
+    "company": "Starbucks Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "China deteriorating; turnaround thesis not yet proven"
+  },
+  {
+    "ticker": "MCD",
+    "company": "McDonald's Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Franchise + real estate model; global brand durability proven"
+  },
+  {
+    "ticker": "YUM",
+    "company": "Yum! Brands Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Asset-light franchise fine; medium confidence in emerging market growth"
+  },
+  {
+    "ticker": "HSY",
+    "company": "Hershey Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Confectionery moat; pricing power demonstrated; cocoa now receding"
+  },
+  {
+    "ticker": "CHD",
+    "company": "Church & Dwight Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Quality staples but premium valuation; limited re-rating potential"
+  },
+  {
+    "ticker": "EL",
+    "company": "Estée Lauder Companies",
+    "b1_verdict": "advance",
+    "b1_reason": "Prestige beauty near multi-year lows; Asia recovery thesis plausible"
+  },
+  {
+    "ticker": "TPX",
+    "company": "Tempur Sealy International",
+    "b1_verdict": "hold",
+    "b1_reason": "Medium confidence; housing cycle sensitive; thin signal"
+  },
+  {
+    "ticker": "MCK",
+    "company": "McKesson Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Thin margins; Amazon Pharmacy long-term threat; not compelling"
+  },
+  {
+    "ticker": "IQV",
+    "company": "IQVIA Holdings",
+    "b1_verdict": "advance",
+    "b1_reason": "CRO + data platform; clinical trials structurally growing"
+  },
+  {
+    "ticker": "ISRG",
+    "company": "Intuitive Surgical Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Robotic surgery installed base; consumable razor/blade moat"
+  },
+  {
+    "ticker": "EW",
+    "company": "Edwards Lifesciences Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "TAVR market maturing; Medtronic/Abbott entering; watch entry"
+  },
+  {
+    "ticker": "MC.PA",
+    "company": "LVMH Moët Hennessy Louis Vuitton",
+    "b1_verdict": "advance",
+    "b1_reason": "Irreplaceable luxury brand portfolio; pricing power across cycles"
+  },
+  {
+    "ticker": "RMS.PA",
+    "company": "Hermès International",
+    "b1_verdict": "advance",
+    "b1_reason": "Scarcity model unmatched; demand always exceeds supply"
+  },
+  {
+    "ticker": "SAP.DE",
+    "company": "SAP SE",
+    "b1_verdict": "advance",
+    "b1_reason": "ERP system of record; S/4HANA cloud migration sticky"
+  },
+  {
+    "ticker": "WKL.AS",
+    "company": "Wolters Kluwer N.V.",
+    "b1_verdict": "hold",
+    "b1_reason": "B2B subscription quality but slow organic growth; European niche"
+  },
+  {
+    "ticker": "OR.PA",
+    "company": "L'Oréal S.A.",
+    "b1_verdict": "hold",
+    "b1_reason": "Global beauty leader but Asia weakness and premium valuation"
+  },
+  {
+    "ticker": "CFR.SW",
+    "company": "Compagnie Financière Richemont",
+    "b1_verdict": "advance",
+    "b1_reason": "Cartier/Van Cleef jewelry pricing power; China recovery potential"
+  },
+  {
+    "ticker": "ADYEN.AS",
+    "company": "Adyen N.V.",
+    "b1_verdict": "advance",
+    "b1_reason": "Single-platform payments moat; enterprise client wins accelerating"
+  },
+  {
+    "ticker": "DSY.PA",
+    "company": "Dassault Systèmes SE",
+    "b1_verdict": "hold",
+    "b1_reason": "PLM software sticky but slow growth cycle; Ansys blocked"
+  },
+  {
+    "ticker": "EL.PA",
+    "company": "EssilorLuxottica S.A.",
+    "b1_verdict": "advance",
+    "b1_reason": "Eyewear platform monopoly; Essilor/Luxottica integration upside"
+  },
+  {
+    "ticker": "KER.PA",
+    "company": "Kering S.A.",
+    "b1_verdict": "hold",
+    "b1_reason": "Gucci brand equity damaged; recovery timeline too uncertain"
+  },
+  {
+    "ticker": "STMN.SW",
+    "company": "Straumann Holding AG",
+    "b1_verdict": "hold",
+    "b1_reason": "Dental implant leader but market cycle soft; China pricing risk"
+  },
+  {
+    "ticker": "LONN.SW",
+    "company": "Lonza Group AG",
+    "b1_verdict": "advance",
+    "b1_reason": "CDMO with GLP-1 manufacturing demand; structural growth"
+  },
+  {
+    "ticker": "RKT.L",
+    "company": "Reckitt Benckiser Group",
+    "b1_verdict": "reject",
+    "b1_reason": "Weak brand investment history; volume declining; no moat"
+  },
+  {
+    "ticker": "ICG.L",
+    "company": "InterContinental Hotels Group",
+    "b1_verdict": "hold",
+    "b1_reason": "Asset-light franchise fine; leisure travel cyclical; watch price"
+  },
+  {
+    "ticker": "AMAT",
+    "company": "Applied Materials Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Largest WFE supplier quality but semi equipment cycle concern"
+  },
+  {
+    "ticker": "LRCX",
+    "company": "Lam Research Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Etch/deposition leader but memory capex volatile; China risk"
+  },
+  {
+    "ticker": "KLAC",
+    "company": "KLA Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Process control monopoly; quality inspection has no substitutes"
+  },
+  {
+    "ticker": "MRVL",
+    "company": "Marvell Technology Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Custom ASIC wins real but non-AI still weak; execution risk"
+  },
+  {
+    "ticker": "ADI",
+    "company": "Analog Devices Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Quality analog franchise; inventory correction still dragging"
+  },
+  {
+    "ticker": "TXN",
+    "company": "Texas Instruments Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Analog/embedded; 14-year capital return discipline; not analyzed"
+  },
+  {
+    "ticker": "MPWR",
+    "company": "Monolithic Power Systems",
+    "b1_verdict": "hold",
+    "b1_reason": "High quality power management but valuation stretched"
+  },
+  {
+    "ticker": "ON",
+    "company": "ON Semiconductor Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "EV cycle weakness; inventory normalization slow; thin signal"
+  },
+  {
+    "ticker": "LLY",
+    "company": "Eli Lilly and Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "GLP-1 obesity leader; capacity expanding; not yet analyzed"
+  },
+  {
+    "ticker": "AZN",
+    "company": "AstraZeneca plc",
+    "b1_verdict": "advance",
+    "b1_reason": "Oncology pipeline depth; double-digit growth sustained"
+  },
+  {
+    "ticker": "ABBV",
+    "company": "AbbVie Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Skyrizi/Rinvoq replacing Humira; high FCF yield; not analyzed"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Optum data platform + managed care vertical integration moat"
+  },
+  {
+    "ticker": "BSX",
+    "company": "Boston Scientific Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "EP ablation structural growth; MedTech innovation pipeline"
+  },
+  {
+    "ticker": "STE",
+    "company": "STERIS plc",
+    "b1_verdict": "hold",
+    "b1_reason": "Sterilization recurring spend quality but slow growth profile"
+  },
+  {
+    "ticker": "VEEV",
+    "company": "Veeva Systems Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Life sciences CRM/vault monopoly; 95%+ retention; not analyzed"
+  },
+  {
+    "ticker": "DOCS",
+    "company": "Doximity Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Small scale; network defensibility unclear long-term; medium conf"
+  },
+  {
+    "ticker": "ITW",
+    "company": "Illinois Tool Works Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "80/20 margin excellence but industrial cyclicality; expensive"
+  },
+  {
+    "ticker": "EMR",
+    "company": "Emerson Electric Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Aspen integration complexity; software transition adds risk"
+  },
+  {
+    "ticker": "PH",
+    "company": "Parker Hannifin Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Motion control quality; aerospace aftermarket cycle dependency"
+  },
+  {
+    "ticker": "AME",
+    "company": "AMETEK Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Niche acquirer quality; premium valuation; execution risk"
+  },
+  {
+    "ticker": "WCN",
+    "company": "Waste Connections Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Waste moat real but premium valuation vs WM/RSG; watch only"
+  },
+  {
+    "ticker": "RSG",
+    "company": "Republic Services Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Waste management quality; limited pricing differentiation from WM"
+  },
+  {
+    "ticker": "GWW",
+    "company": "W.W. Grainger Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "MRO distribution with online moat; Amazon Business long-term risk"
+  },
+  {
+    "ticker": "CSX",
+    "company": "CSX Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Eastern US railroad with intermodal pricing power; not analyzed"
+  },
+  {
+    "ticker": "NSC",
+    "company": "Norfolk Southern Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Derailment liability tail risk; volume recovery still slow"
+  },
+  {
+    "ticker": "UNP",
+    "company": "Union Pacific Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Western US rail monopoly; pricing power over trucking secular"
+  },
+  {
+    "ticker": "XPO",
+    "company": "XPO Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "LTL restructuring unproven franchise; execution risk remains"
+  },
+  {
+    "ticker": "EXPD",
+    "company": "Expeditors International of Washington",
+    "b1_verdict": "hold",
+    "b1_reason": "Asset-light logistics fine but freight forwarding commoditizing"
+  },
+  {
+    "ticker": "JPM",
+    "company": "JPMorgan Chase & Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Best-managed diversified bank; Dimon capital discipline"
+  },
+  {
+    "ticker": "CB",
+    "company": "Chubb Ltd.",
+    "b1_verdict": "advance",
+    "b1_reason": "P&C underwriting excellence; global diversification; not analyzed"
+  },
+  {
+    "ticker": "AJG",
+    "company": "Arthur J. Gallagher & Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Insurance broker compounding organic + M&A; durable model"
+  },
+  {
+    "ticker": "AFL",
+    "company": "Aflac Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Japan FX exposure; low growth domestic; income but not compounder"
+  },
+  {
+    "ticker": "MKL",
+    "company": "Markel Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Mini-Berkshire float + venture; not yet analyzed"
+  },
+  {
+    "ticker": "BX",
+    "company": "Blackstone Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Alt asset management; perpetual capital fee stream growing"
+  },
+  {
+    "ticker": "KKR",
+    "company": "KKR & Co. Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Alt asset quality; KKR insurance integration still maturing"
+  },
+  {
+    "ticker": "GS",
+    "company": "Goldman Sachs Group Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Cyclical IB revenue; capital markets dependent; not a compounder"
+  },
+  {
+    "ticker": "PG",
+    "company": "Procter & Gamble Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Household staples quality; volume elasticity risk as pricing fades"
+  },
+  {
+    "ticker": "KO",
+    "company": "Coca-Cola Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Beverage moat excellent; slow growth and health headwinds; hold"
+  },
+  {
+    "ticker": "PEP",
+    "company": "PepsiCo Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Snacks + beverages dual engine; PBNA margin drag; no catalyst"
+  },
+  {
+    "ticker": "DXCM",
+    "company": "DexCom Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "CGM leadership but Abbott Libre competition intensifying"
+  },
+  {
+    "ticker": "SIE.DE",
+    "company": "Siemens AG",
+    "b1_verdict": "hold",
+    "b1_reason": "Industrial automation quality; energy business drag; complex"
+  },
+  {
+    "ticker": "AMZN",
+    "company": "Amazon.com Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "AWS reaccelerating; ad business profitable; dominant ecosystem"
+  },
+  {
+    "ticker": "WM",
+    "company": "Waste Management Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Waste monopoly quality; slow growth; environmental compliance cost"
+  },
+  {
+    "ticker": "LOW",
+    "company": "Lowe's Companies Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Home improvement duopoly participant; weaker Pro mix than HD"
+  },
+  {
+    "ticker": "TGT",
+    "company": "Target Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Inventory rightsized but shrink and trade-down risk remain"
+  },
+  {
+    "ticker": "WMT",
+    "company": "Walmart Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Grocery dominance plus ad/fintech layer; durable ecosystem"
+  },
+  {
+    "ticker": "UBER",
+    "company": "Uber Technologies Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Network effects real but Waymo AV risk to core is unresolved"
+  },
+  {
+    "ticker": "SPOT",
+    "company": "Spotify Technology S.A.",
+    "b1_verdict": "advance",
+    "b1_reason": "Audio platform margin expansion; podcast moat building"
+  },
+  {
+    "ticker": "INTU",
+    "company": "Intuit Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "TurboTax/QuickBooks ecosystem; SMB financial OS switching costs"
+  },
+  {
+    "ticker": "CDNS",
+    "company": "Cadence Design Systems",
+    "b1_verdict": "advance",
+    "b1_reason": "EDA duopoly; semiconductor design tool monopoly; not analyzed"
+  },
+  {
+    "ticker": "SNPS",
+    "company": "Synopsys Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "EDA + IP; Ansys adds simulation; monopoly with scale"
+  },
+  {
+    "ticker": "WDAY",
+    "company": "Workday Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "HR/finance cloud sticky but SAP/Oracle competition; slowing"
+  },
+  {
+    "ticker": "RACE",
+    "company": "Ferrari N.V.",
+    "b1_verdict": "advance",
+    "b1_reason": "Demand exceeds supply permanently; unconstrained pricing power"
+  },
+  {
+    "ticker": "AIR.PA",
+    "company": "Airbus SE",
+    "b1_verdict": "advance",
+    "b1_reason": "Commercial aviation duopoly; 12,000+ aircraft backlog"
+  },
+  {
+    "ticker": "NESN.SW",
+    "company": "Nestlé S.A.",
+    "b1_verdict": "hold",
+    "b1_reason": "Food/beverage brand moat; volume declining as pricing normalizes"
+  },
+  {
+    "ticker": "ROG.SW",
+    "company": "Roche Holding AG",
+    "b1_verdict": "advance",
+    "b1_reason": "Diagnostics + pharma duality; consistent cash generation"
+  },
+  {
+    "ticker": "ULVR.L",
+    "company": "Unilever plc",
+    "b1_verdict": "hold",
+    "b1_reason": "Portfolio rationalization underway; slow growth; EM FX drag"
+  },
+  {
+    "ticker": "GSK.L",
+    "company": "GSK plc",
+    "b1_verdict": "hold",
+    "b1_reason": "Vaccines + specialty quality; Shingrix slowdown; binary pipeline"
+  },
+  {
+    "ticker": "ALV.DE",
+    "company": "Allianz SE",
+    "b1_verdict": "advance",
+    "b1_reason": "Insurance + asset management; consistent combined ratio"
+  },
+  {
+    "ticker": "MUV2.DE",
+    "company": "Munich Re",
+    "b1_verdict": "advance",
+    "b1_reason": "Reinsurance pricing power; discipline through the cycle"
+  },
+  {
+    "ticker": "RHM.DE",
+    "company": "Rheinmetall AG",
+    "b1_verdict": "advance",
+    "b1_reason": "European defense rearming secular; Leopard tank demand real"
+  },
+  {
+    "ticker": "CS.PA",
+    "company": "AXA S.A.",
+    "b1_verdict": "hold",
+    "b1_reason": "Insurance + asset management quality; European regulatory complex"
+  },
+  {
+    "ticker": "PANW",
+    "company": "Palo Alto Networks Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Platformization strategy sticky but rich valuation; watch"
+  },
+  {
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Falcon dominance real but incident reputational risk; expensive"
+  },
+  {
+    "ticker": "ZS",
+    "company": "Zscaler Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Zero Trust leader but high valuation; PANW/Microsoft competitive"
+  },
+  {
+    "ticker": "FTNT",
+    "company": "Fortinet Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Firewall leader; SASE transition slower than cloud-native peers"
+  },
+  {
+    "ticker": "DDOG",
+    "company": "Datadog Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Observability quality but high valuation; multi-cloud risk"
+  },
+  {
+    "ticker": "MDB",
+    "company": "MongoDB Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Developer-first moat; PostgreSQL substitution risk; expensive"
+  },
+  {
+    "ticker": "HUBS",
+    "company": "HubSpot Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "SMB CRM platform; Salesforce push and high valuation"
+  },
+  {
+    "ticker": "TTD",
+    "company": "The Trade Desk Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Buy-side DSP; CTV dominance; Kokai AI monetization building"
+  },
+  {
+    "ticker": "SQ",
+    "company": "Block Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "No clear durable moat; Stripe/PayPal competition; speculative"
+  },
+  {
+    "ticker": "PYPL",
+    "company": "PayPal Holdings Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Branded checkout defending; Apple Pay/Stripe competition real"
+  },
+  {
+    "ticker": "BAC",
+    "company": "Bank of America Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "NII leverage quality; consumer credit cycle risk; rate sensitive"
+  },
+  {
+    "ticker": "WFC",
+    "company": "Wells Fargo & Co.",
+    "b1_verdict": "hold",
+    "b1_reason": "Asset cap still constrains growth; reputational risk persists"
+  },
+  {
+    "ticker": "UPS",
+    "company": "United Parcel Service Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Amazon insourcing secular headwind; ground network repricing slow"
+  },
+  {
+    "ticker": "FDX",
+    "company": "FedEx Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "DRIVE cost cuts real but structural volume loss to USPS/Amazon"
+  },
+  {
+    "ticker": "DE",
+    "company": "Deere & Company",
+    "b1_verdict": "advance",
+    "b1_reason": "Precision agriculture OS stickiness; ag cycle correction = entry"
+  },
+  {
+    "ticker": "HON",
+    "company": "Honeywell International Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Portfolio simplification multiple execution risks; slow near-term"
+  },
+  {
+    "ticker": "RTX",
+    "company": "RTX Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Pratt jet engine aftermarket + defense; GTF resolution path"
+  },
+  {
+    "ticker": "LMT",
+    "company": "Lockheed Martin Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "F-35 sustainment durable but defense budget cuts risk looming"
+  },
+  {
+    "ticker": "NOC",
+    "company": "Northrop Grumman Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "B-21 bomber strategic; cost-plus limits upside; budget dependent"
+  },
+  {
+    "ticker": "GD",
+    "company": "General Dynamics Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Gulfstream jets + defense mix; cash return discipline strong"
+  },
+  {
+    "ticker": "BABA",
+    "company": "Alibaba Group Holding",
+    "b1_verdict": "reject",
+    "b1_reason": "VIE structure risk; China regulatory risk; outside circle of competence"
+  },
+  {
+    "ticker": "TCEHY",
+    "company": "Tencent Holdings Ltd.",
+    "b1_verdict": "reject",
+    "b1_reason": "VIE structure; China regulatory risk; geopolitical exposure"
+  },
+  {
+    "ticker": "SONY",
+    "company": "Sony Group Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Gaming + sensors diversified; console cycle and film volatile"
+  },
+  {
+    "ticker": "TM",
+    "company": "Toyota Motor Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Hybrid dominance solid; EV transition and Japan FX uncertainty"
+  },
+  {
+    "ticker": "SYK",
+    "company": "Stryker Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Mako robotic surgery installed base; MedTech innovation pipeline"
+  },
+  {
+    "ticker": "ZTS",
+    "company": "Zoetis Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Animal health pricing power; pet humanization structural tailwind"
+  },
+  {
+    "ticker": "TMO",
+    "company": "Thermo Fisher Scientific",
+    "b1_verdict": "advance",
+    "b1_reason": "Life sciences tools + CDMO; recurring consumable revenue"
+  },
+  {
+    "ticker": "A",
+    "company": "Agilent Technologies",
+    "b1_verdict": "hold",
+    "b1_reason": "Post-COVID instrument normalization; pharma capex still weak"
+  },
+  {
+    "ticker": "REGN",
+    "company": "Regeneron Pharmaceuticals",
+    "b1_verdict": "hold",
+    "b1_reason": "Eylea biosimilar pressure imminent; Dupixent competition rising"
+  },
+  {
+    "ticker": "CI",
+    "company": "Cigna Group",
+    "b1_verdict": "hold",
+    "b1_reason": "PBM legislative risk; Medicare Advantage repricing overhang"
+  },
+  {
+    "ticker": "AMT",
+    "company": "American Tower Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "5G tailwind real but high leverage; carrier consolidation risk"
+  },
+  {
+    "ticker": "PLD",
+    "company": "Prologis Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Industrial REIT quality; rate sensitive; vacancy rising"
+  },
+  {
+    "ticker": "EQIX",
+    "company": "Equinix Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Data center REIT with network density moat; AI demand structural"
+  },
+  {
+    "ticker": "APD",
+    "company": "Air Products and Chemicals",
+    "b1_verdict": "hold",
+    "b1_reason": "CEO departure overhang; hydrogen mega-project execution risk"
+  },
+  {
+    "ticker": "ECL",
+    "company": "Ecolab Inc.",
+    "b1_verdict": "hold",
+    "b1_reason": "Water treatment embedded recurring; slow margin recovery pace"
+  },
+  {
+    "ticker": "HIMS",
+    "company": "Hims & Hers Health Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Previously analyzed: Pass verdict; regulatory risk on compounded GLP-1"
+  },
+  {
+    "ticker": "MAERSK-B.CO",
+    "company": "A.P. Møller-Mærsk A/S",
+    "b1_verdict": "reject",
+    "b1_reason": "Previously analyzed: Pass verdict; pure cyclical, no durable moat"
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Previously analyzed: Pass verdict; brand damage, Musk distraction"
+  },
+  {
+    "ticker": "CRH",
+    "company": "CRH plc",
+    "b1_verdict": "reject",
+    "b1_reason": "Building materials commodity-like; cyclical construction exposure"
+  },
+  {
+    "ticker": "ACLS",
+    "company": "Axcelis Technologies Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Small customer base; semi cycle highly exposed; mid-cap thin moat"
+  },
+  {
+    "ticker": "ONTO",
+    "company": "Onto Innovation Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Small scale; semi equipment cycle risk; no durable moat visible"
+  },
+  {
+    "ticker": "MSC",
+    "company": "MSC Industrial Direct Co.",
+    "b1_verdict": "reject",
+    "b1_reason": "Amazon Business threat; slow growth; mid-cap industrial distribution"
+  },
+  {
+    "ticker": "RLI",
+    "company": "RLI Corp.",
+    "b1_verdict": "hold",
+    "b1_reason": "Specialty insurer underwriting discipline good; small scale"
+  },
+  {
+    "ticker": "T",
+    "company": "AT&T Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "High debt; commodity telecom; no durable competitive advantage"
+  },
+  {
+    "ticker": "UCG.MI",
+    "company": "UniCredit S.p.A.",
+    "b1_verdict": "reject",
+    "b1_reason": "European banking systemic risk; VIE-like regulatory complexity"
+  },
+  {
+    "ticker": "CNQ",
+    "company": "Canadian Natural Resources Ltd.",
+    "b1_verdict": "reject",
+    "b1_reason": "Commodity oil; no pricing power; pure cyclical"
+  },
+  {
+    "ticker": "ABI.BR",
+    "company": "Anheuser-Busch InBev S.A.",
+    "b1_verdict": "reject",
+    "b1_reason": "Heavy debt; beer volume structurally declining in developed markets"
+  },
+  {
+    "ticker": "DBK.DE",
+    "company": "Deutsche Bank AG",
+    "b1_verdict": "reject",
+    "b1_reason": "European banking systemic risk; litigation tail; no durable moat"
+  },
+  {
+    "ticker": "BAS.DE",
+    "company": "BASF SE",
+    "b1_verdict": "reject",
+    "b1_reason": "Commodity chemicals; limited moat; China competition intensifying"
+  },
+  {
+    "ticker": "BARC.L",
+    "company": "Barclays plc",
+    "b1_verdict": "reject",
+    "b1_reason": "European banking systemic risk; UK macro exposure"
+  },
+  {
+    "ticker": "BNP.PA",
+    "company": "BNP Paribas S.A.",
+    "b1_verdict": "reject",
+    "b1_reason": "Sovereign debt exposure; European banking systemic risk"
+  },
+  {
+    "ticker": "BBVA.MC",
+    "company": "Banco Bilbao Vizcaya Argentaria",
+    "b1_verdict": "reject",
+    "b1_reason": "Turkey hyperinflation risk; EM currency volatility; outside CoC"
+  },
+  {
+    "ticker": "COIN",
+    "company": "Coinbase Global Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Crypto cycle volatility; no durable moat; speculative"
+  },
+  {
+    "ticker": "BIDU",
+    "company": "Baidu Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "VIE structure; China tech regulation; outside circle of competence"
+  },
+  {
+    "ticker": "MRNA",
+    "company": "Moderna Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Revenue cliff post-COVID; mRNA pipeline unproven; speculative"
+  },
+  {
+    "ticker": "CVX",
+    "company": "Chevron Corp.",
+    "b1_verdict": "reject",
+    "b1_reason": "Commodity oil; no durable moat; cyclical FCF"
+  },
+  {
+    "ticker": "XOM",
+    "company": "Exxon Mobil Corp.",
+    "b1_verdict": "reject",
+    "b1_reason": "Commodity oil; no durable moat; carbon transition risk"
+  },
+  {
+    "ticker": "COP",
+    "company": "ConocoPhillips",
+    "b1_verdict": "reject",
+    "b1_reason": "E&P commodity; no durable moat; oil price dependent"
+  },
+  {
+    "ticker": "NEE",
+    "company": "NextEra Energy Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Highly leveraged; no pricing power; rate-sensitive utility"
+  },
+  {
+    "ticker": "AEP",
+    "company": "American Electric Power",
+    "b1_verdict": "reject",
+    "b1_reason": "Regulated utility; limited pricing power; income only"
+  },
+  {
+    "ticker": "SO",
+    "company": "Southern Company",
+    "b1_verdict": "reject",
+    "b1_reason": "Regulated utility; limited returns above cost of capital"
+  },
+  {
+    "ticker": "NEM",
+    "company": "Newmont Corp.",
+    "b1_verdict": "reject",
+    "b1_reason": "Commodity gold miner; no pricing power or moat"
+  },
+  {
+    "ticker": "FCX",
+    "company": "Freeport-McMoRan Inc.",
+    "b1_verdict": "reject",
+    "b1_reason": "Pure commodity cyclical copper miner; no moat"
+  }
+]

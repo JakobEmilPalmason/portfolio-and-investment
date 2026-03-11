@@ -1,0 +1,26 @@
+{
+  "ticker": "MSFT",
+  "company": "Microsoft Corp.",
+  "analysis_date": "2026-01-01",
+  "verdict": "Buy",
+  "average_score": 8.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 6,
+    "margin_of_safety": 6,
+    "temperament": 8
+  },
+  "key_strengths": ["Great business"],
+  "key_risks": ["Valuation"],
+  "red_flags": [],
+  "buy_triggers": ["Price drops"],
+  "sell_triggers": ["Growth slows"],
+  "valuation_summary": "Fairly valued.",
+  "source_summary": "Web search.",
+  "confidence": "high",
+  "change_notes": ""
+}

@@ -1,0 +1,52 @@
+{
+  "ticker": "ABBV",
+  "company": "AbbVie Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Watch",
+  "average_score": 5.75,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 5,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "Skyrizi ($17.6B) and Rinvoq ($8.3B) growing 29-32% annually with patent protection to 2033 and 2037 respectively, already surpassing Humira's peak combined revenues two years ahead of management targets",
+    "Exceptional cash generation — $17.8B FCF in 2024 on $56.3B revenue (~32% FCF conversion) with only ~1.7% capex/revenue, confirming a truly asset-light business model",
+    "Proven management track record: navigated the world's largest pharma patent cliff (Humira), vindicated the $63B Allergan acquisition (now $10.8B neuroscience revenue), and delivered transparent multi-year guidance with accuracy",
+    "~84% adjusted gross margins across 2024-2025 confirm pricing power within patent-protected windows, among the highest in large-cap pharma",
+    "Investment-grade credit ratings (S&P A-, Moody's A3, both stable) and $13.5B combined liquidity provide resilience and capital markets access"
+  ],
+  "key_risks": [
+    "No price margin of safety at ~$234 — all three DCF scenarios (bear ~$90, base ~$119, bull ~$177) produce intrinsic values materially below current price; base case implies 49% downside",
+    "IRA drug pricing: Skyrizi and Rinvoq will likely enter Medicare price negotiations in the late 2020s, potentially reducing peak owner earnings by $2-4B annually",
+    "Immunology concentration: Skyrizi + Rinvoq = ~42% of 2025 revenue and virtually all near-term growth; a class-wide safety event or competitive displacement by Lilly/Pfizer/UCB pipeline could hit both simultaneously",
+    "Balance sheet leverage: ~$67B total debt, net debt/EBITDA ~3.5x from serial large acquisitions (Allergan, ImmunoGen, Cerevel); $7.5B annual dividend is the first item at risk in a stress scenario",
+    "Pipeline dependency post-2030: neuroscience pipeline (tavapadon, emraclidine) must deliver commercially to bridge the eventual Skyrizi/Rinvoq exclusivity cliff in 2033-2037; pipeline failure is the statistical norm in pharma"
+  ],
+  "red_flags": [
+    "Current price ($234) exceeds all three DCF intrinsic value scenarios including the bull case ($177) — market requires above-bull-case execution to justify the entry price",
+    "GAAP interest coverage of ~2.3x is formally below the 3x warning threshold; GAAP-to-adjusted gap is large and requires investor judgment on accounting legitimacy",
+    "CEO-Chairman duality following July 2025 transition concentrates power and reduces board independence",
+    "Rinvoq carries FDA black box warning for serious infections, malignancies, and cardiovascular events — creates a ceiling on market expansion and ongoing regulatory/litigation risk",
+    "Historical maximum drawdown of -45% with a ~35-month recovery period; a buyer at $234 could plausibly see the stock at $129 before recovery given the overvalued entry"
+  ],
+  "buy_triggers": [
+    "Stock corrects to $150-160 range (near base-case DCF intrinsic value), offering a genuine margin of safety and improving risk-reward to at least 2:1 in favor of the buyer",
+    "Positive Phase 3 data on both tavapadon and emraclidine simultaneously re-rates the neuroscience franchise and materially upgrades the long-term earnings trajectory, pushing the bull-case intrinsic value above $220-230",
+    "IRA drug pricing negotiations formally exclude Skyrizi/Rinvoq from Medicare negotiation until after 2030, removing the largest near-term tail risk and justifying a higher terminal multiple"
+  ],
+  "sell_triggers": [
+    "Rinvoq or Skyrizi face FDA class label restriction or market withdrawal due to new safety signal — these two drugs are ~42% of revenue with no near-term replacement; exit regardless of price",
+    "Net debt increases rather than decreases over two consecutive years, signaling management capital discipline is failing and the deleveraging thesis is broken",
+    "Adjusted operating margin trends below 44% for two or more consecutive quarters, indicating core business economics are deteriorating beyond acquisition accounting noise"
+  ],
+  "valuation_summary": "At ~$234/share (~$407B market cap, ~$469B EV), ABBV trades at ~16x forward adjusted EPS ($14.47 guidance midpoint) and ~22x adjusted FCF — reasonable multiples in isolation, but the DCF analysis produces a bear/base/bull intrinsic value range of $90/$119/$177, all below current price; the market is pricing in owner earnings of $25-27B by 2030 (7-9% annual growth) with no margin for error.",
+  "source_summary": "Analysis based on AbbVie Q4 2025 earnings release (Feb 4, 2026), full-year 2024 and 2025 actuals from SEC filings and press releases, 2026 management guidance, analyst consensus from MarketBeat/StockAnalysis (46 analysts), patent data from DrugPatentWatch, credit ratings from S&P/Moody's, and historical volatility data from PortfoliosLab.",
+  "confidence": "Medium-High — Business quality, patent runway, and near-term financials are well-documented with current data through February 2026 earnings; valuation judgment carries medium confidence as DCF outcomes depend on pipeline execution and IRA pricing impact that cannot be known with certainty; the absence of a price margin of safety is the most robust finding.",
+  "change_notes": ""
+}
