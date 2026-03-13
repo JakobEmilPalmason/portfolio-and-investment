@@ -1,0 +1,51 @@
+{
+  "ticker": "RDDT",
+  "company": "Reddit Inc",
+  "analysis_date": "2026-03-11",
+  "verdict": "Pass",
+  "average_score": 6.0,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 7,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "91% gross margins with $684M in free cash flow and near-zero capex",
+    "Fortress balance sheet: zero long-term debt, $2.5B cash, 12x current ratio",
+    "Unique 20-year non-replicable human-content corpus central to AI training pipelines",
+    "Strong network effects across 100,000+ self-sustaining subreddits",
+    "AI data licensing revenue stream (~$140M in 2025) with major contracts with Google and OpenAI"
+  ],
+  "key_risks": [
+    "No margin of safety at ~$135 — bear-case DCF (~$78) is 42% below current price",
+    "SBC at 18% of revenue ($387M) materially overstates shareholder economics; true P/E closer to 67-77x",
+    "Active FTC investigation and EU AI Act enforcement exposure threaten data licensing stream",
+    "Platform dependency on Google for new user discovery creates single-point vulnerability",
+    "Revenue growth decelerating (70% Q4 2025 → 52-54% guided Q1 2026) at a demanding multiple"
+  ],
+  "red_flags": [
+    "Only one year of profitability — insufficient capital allocation track record",
+    "Dual-class voting structure with no time-based sunset",
+    "Bear-case intrinsic value (~$78) is below current trading price (~$135)",
+    "Upside-to-downside ratio of only 1.4x ($213 base vs. $78 bear)"
+  ],
+  "buy_triggers": [
+    "Price declines to $90-110, bringing the stock into base-case margin-of-safety territory",
+    "FTC formally clears Reddit's data licensing practices and/or EU AI Act enforcement does not impair Google/OpenAI contracts",
+    "Two or three consecutive quarters of US logged-in DAU reacceleration and international ARPU gap beginning to visibly close"
+  ],
+  "sell_triggers": [
+    "Two consecutive quarters of revenue growth below 40% without an adequate structural explanation",
+    "FTC issues a formal complaint or EU enforcement authority issues an order restricting Reddit's data licensing practices",
+    "Stock re-rates to $250+ without commensurate earnings improvement (multiple expands back toward 60-70x forward P/E without acceleration)"
+  ],
+  "valuation_summary": "Base-case DCF yields ~$213 (implying ~58% upside from ~$135), but the bear-case DCF of ~$78 sits 42% below the current price, and achieving the base case requires sustaining 40-50% revenue CAGR through 2028-2029 with EBITDA margins expanding to 38-42% — achievable but not conservative assumptions. At ~$135, there is no margin of safety; the stock becomes attractive in the $90-110 range where the bear-case downside narrows to 15-29%.",
+  "source_summary": "Analysis draws on Reddit Q4 2025 earnings release (BusinessWire, Feb 5 2026), Q4 2025 earnings call transcript, full-year 2025 financials via MacroTrends, DemandSage user statistics, GuruFocus, CNBC coverage, and supplementary sources for valuation, balance sheet, and regulatory context.",
+  "confidence": "medium",
+  "change_notes": ""
+}

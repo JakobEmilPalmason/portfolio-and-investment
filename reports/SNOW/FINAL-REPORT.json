@@ -1,0 +1,53 @@
+{
+  "ticker": "SNOW",
+  "company": "Snowflake Inc.",
+  "analysis_date": "2026-03-06",
+  "verdict": "Watch",
+  "average_score": 5.25,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 6,
+    "management": 5,
+    "business_economics": 4,
+    "balance_sheet": 7,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "125% net revenue retention with 733 customers spending $1M+ annually, demonstrating strong expansion economics",
+    "$9.77B contracted backlog (RPO) growing 42% YoY provides durable forward revenue visibility",
+    "76% gross margins and $1.19B adjusted free cash flow (25.5% margin) reflect a high-quality product economics profile",
+    "Net cash position of $1.7B with zero-coupon convertible debt and ample liquidity for a multi-year downturn",
+    "Multi-cloud data gravity and workflow-level switching costs create genuine, if narrowing, competitive moat"
+  ],
+  "key_risks": [
+    "Stock-based compensation at 34% of revenue ($1.6B annually) makes GAAP profitability impossible today and dilutes shareholders structurally",
+    "Databricks growing at 57% vs. Snowflake's 29%, with ~40% of Snowflake accounts already running Databricks in parallel",
+    "Apache Iceberg open-format standard eroding storage-layer lock-in and commoditizing a key moat pillar",
+    "Consumption-based revenue model creates volatility risk in macro slowdowns or enterprise cloud optimization cycles",
+    "Active securities fraud class action and zero insider buying over 18 months erode management alignment confidence",
+    "At 12.5x EV/Revenue on a GAAP-unprofitable company, valuation leaves no room for execution error"
+  ],
+  "red_flags": [
+    "Zero insider open-market purchases in 18 months despite CEO receiving $101M in total compensation",
+    "SBC at 34% of revenue is 2-3x the level of mature software peers with no credible near-term path to sub-20%",
+    "Withdrawal of $10B FY2029 revenue target undermines long-term guidance credibility",
+    "Active securities class action alleging management misled investors about product efficiency revenue impacts",
+    "GAAP ROIC deeply negative at -16% to -27% despite strong non-GAAP metrics"
+  ],
+  "buy_triggers": [
+    "Stock price falls to $120-130 with NRR above 120% and RPO growing above 30%, creating genuine 2x+ upside-to-downside asymmetry",
+    "Credible path to GAAP profitability within 12-18 months with SBC declining below 25% of revenue and real owner earnings turning positive",
+    "AI consumption becomes a clearly breakout revenue driver with management disclosing AI-specific metrics showing 50%+ growth contribution"
+  ],
+  "sell_triggers": [
+    "Net revenue retention drops below 110%, signaling customers are actively shrinking Snowflake usage",
+    "Stock-based compensation remains above 30% of revenue through FY2028, proving dilution is structural rather than transitional",
+    "A hyperscaler launches a directly competitive multi-cloud data platform at materially lower pricing, or Databricks captures dominant share of AI workloads"
+  ],
+  "valuation_summary": "At $168/share (12.5x EV/Revenue), Snowflake is roughly fairly valued against a base-case intrinsic value of $165-180, but requires near-perfect execution on growth, margin expansion, and SBC reduction simultaneously with no margin of safety; the stock needs to fall to $120-130 before offering a compelling entry point with 2x+ asymmetry.",
+  "source_summary": "Analysis based on web searches conducted March 6, 2026 covering Snowflake's Q4 FY2026 earnings (reported February 25, 2026), public filings, investor presentations, and financial data aggregators; no user-provided context files were used.",
+  "confidence": "medium",
+  "change_notes": ""
+}

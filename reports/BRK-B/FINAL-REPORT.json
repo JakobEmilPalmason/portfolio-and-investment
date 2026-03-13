@@ -1,0 +1,55 @@
+{
+  "ticker": "BRK-B",
+  "company": "Berkshire Hathaway Inc.",
+  "analysis_date": "2026-03-13",
+  "verdict": "Own",
+  "average_score": 7.88,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 9,
+    "management": 9,
+    "business_economics": 7,
+    "balance_sheet": 10,
+    "valuation": 6,
+    "margin_of_safety": 6,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "$176B insurance float funded at zero or negative cost — the largest in the world and near-irreplicable",
+    "60-year compounding record at 19.7% annually vs. 10.5% S&P 500 — longest sustained outperformance in public markets",
+    "$373B cash fortress covering total debt nearly 3x — the most secure large-cap balance sheet in existence",
+    "Greg Abel compensation: entire $15M after-tax salary committed to BRK share purchases annually, zero SBC",
+    "BNSF and BHE are individually moated, essential-infrastructure businesses with durable regulated earnings",
+    "FY2025 operating earnings of $44.49B and $25.1B FCF across a diversified empire of moat businesses",
+    "Beta of ~0.65 — exceptional capital preservation profile for a $1T+ conglomerate",
+    "Preferred acquirer status for private businesses provides proprietary deal pipeline unavailable to financial buyers"
+  ],
+  "key_risks": [
+    "Greg Abel unproven as capital allocator at Berkshire's scale — only 10 weeks into the role as of this analysis",
+    "$373B cash hoard earns T-bill returns; if rates fall to 2%, investment income drops ~$8-9B annually",
+    "BHE PacifiCorp wildfire liability ($8B+ in claims, potential trebling) — ring-fenced but book value impairment risk is real",
+    "Insurance underwriting profit declined 19% to $7.26B in 2025; management is deliberately reducing P&C volume further",
+    "Multiple simultaneous transitions: new CEO (Abel), CFO retiring 2027, Todd Combs departed to JPMorgan"
+  ],
+  "red_flags": [
+    "No share repurchases during all of 2025 — management's revealed preference showed no cheap entry until $492 in March 2026",
+    "BNSF operating ratio materially worse than Union Pacific — Abel called the gap 'unacceptable' but fixes take years",
+    "GEICO underwriting profit under pressure from rising acquisition costs as Progressive gains market share",
+    "Apple position (~$85-90B, ~32% of equity portfolio) still dominant despite substantial trimming"
+  ],
+  "buy_triggers": [
+    "Stock falls to 1.2-1.3x book (~$399-432), restoring the margin of safety Berkshire's own repurchase history defines as cheap",
+    "Abel completes a large, clearly value-accretive acquisition demonstrating capital allocation judgment",
+    "Insurance underwriting normalizes after a quiet catastrophe year, restoring operating earnings to $50B+"
+  ],
+  "sell_triggers": [
+    "Abel introduces stock-based compensation or discretionary bonuses, signaling cultural drift from the owner-operator model",
+    "Abel executes a large acquisition at clearly excessive multiples, prioritizing empire-building over per-share value",
+    "Insurance float shows a multi-year pattern of underwriting losses structurally reversing the negative-cost float model",
+    "Stock reaches 2.0x book (~$665) without commensurate intrinsic value growth — trim at that level"
+  ],
+  "valuation_summary": "At $492/BRK-B and 1.48x book, sum-of-parts analysis ($369B cash + $264B equity portfolio + operating businesses at 13-15x ex-investment income) supports a fair-value range of $456-$501/share, placing the current price near the midpoint of intrinsic value with thin price margin of safety but exceptional business margin of safety from the fortress balance sheet; the buyback resumption in March 2026 provides a soft management-endorsed floor near $492.",
+  "source_summary": "Web search results (March 2026) for current price, P/B ratio, and FY2025/Q4 2025 earnings data; Berkshire Hathaway FY2025 annual report press release (Feb 28, 2026) and Q3 2025 10-Q for balance sheet and segment data; Greg Abel's 2025 shareholder letter and CNBC coverage of Abel's personal stock purchase and buyback restart (March 5-7, 2026); GuruFocus, MacroTrends, StockAnalysis, and Morningstar for valuation multiples; training knowledge for structural analysis of the float model and historical capital allocation record.",
+  "confidence": "medium",
+  "change_notes": ""
+}

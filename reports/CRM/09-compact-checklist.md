@@ -1,19 +1,12 @@
 # Compact Checklist — CRM
 
-**Date:** 2026-03-10
+**Date:** 2026-03-12
 
-1. **Business**: Salesforce sells cloud-based CRM software to enterprises under multi-year subscription contracts, generating $41.5B in FY2026 revenue with 94% recurring — customers keep buying because years of customer data, workflows, and integrations are embedded in the platform, making switching a multi-year operational project rather than a software decision.
-
-2. **Moat**: 12 consecutive years of global CRM market leadership at ~21% share (triple Microsoft's 6%) is sustained by switching costs deep enough that even a technically superior competitor cannot easily displace an enterprise account — the data, customizations, API integrations, and user muscle memory inside Salesforce are effectively non-portable.
-
-3. **Economics**: FY2026 free cash flow of $14.4B on $41.5B in revenue (35% FCF margin) with capex under 5% of operating cash flow confirms this is an asset-light business generating real owner cash, though goodwill-burdened ROIC of 8-11% and $3.8B/year in stock-based compensation dilute the headline numbers.
-
-4. **Management**: Post-2023 capital discipline (activated by activist investors Starboard and Elliott, not by management voluntarily) has produced $9.3B in buybacks and dividends in FY2025 and a $50B repurchase authorization in February 2026, but the prior decade's M&A track record — including a $27.7B Slack acquisition that has not demonstrated proportional revenue payback — was value-destructive and the discipline shift is too recent to call permanent.
-
-5. **Debt risk**: Salesforce carries $8.4B in long-term debt against $14B in gross cash and $13B in annual operating cash flow, giving 28x interest coverage and the ability to repay all debt from a single year's cash generation — the balance sheet is near-fortress territory and the company would survive a 30% revenue decline without a capital raise.
-
-6. **Price**: At ~$198/share and 13x FY2026 FCF of $14.4B, the market is pricing in flat-to-low-single-digit FCF growth for years — a scenario inconsistent with $72B in contracted remaining performance obligations and management guidance of 10-11% revenue growth, meaning you are paying below-S&P-average multiples for a business with demonstrably above-average predictability.
-
-7. **Margin of safety**: The business has real downside protection — $72.4B in contracted backlog, 20+ consecutive years of revenue growth, and 90%+ gross renewal rates — but the price does not: the bear case discounted intrinsic value of ~$144/share is only 27% below today's price, the upside/downside asymmetry is roughly 1.3:1, and the stock demands the base case to be approximately correct rather than offering room to be wrong.
-
-8. **Thesis breaker**: Sell if net revenue retention falls below 105% for two consecutive quarters, because that is the single number that would confirm AI competition (Microsoft Dynamics + Copilot, ServiceNow) is causing real installed-base churn rather than merely slowing new customer acquisition at the margin.
+1. **Business**: Salesforce sells cloud-based CRM software subscriptions to 150,000+ enterprise and mid-market customers at 94% recurring revenue, generating $41.5B in FY2026 revenue — a business any employee understands in two minutes.
+2. **Moat**: Twelve years of #1 market share at 21% global CRM — triple Microsoft's 6% — anchored by switching costs so severe that migrating a large enterprise deployment is a multi-year operational project, not a software decision.
+3. **Economics**: FY2026 FCF of $14.4B at a 35% margin on asset-light operations (capex under 5% of revenue), with non-GAAP operating margins expanding from 18% in FY2021 to 34.1% in FY2026, confirms durable, compounding cash generation.
+4. **Management**: Post-2023 capital discipline is real — $9.3B returned to shareholders in FY2025 and a $50B buyback authorized — but the $27.7B Slack acquisition produced no demonstrable revenue payback, and financial discipline was imposed by activists, not chosen voluntarily.
+5. **Debt risk**: The March 2026 $20–25B bond offering to fund buybacks transformed the balance sheet from near-net-cash to approximately $21–26B net debt, cutting interest coverage from 28x to ~5–6x, though $14.4B in annual FCF still services the debt at roughly 2x Debt/FCF.
+6. **Price**: At $198 (~15x FCF), the market is pricing 4–6% long-term FCF growth — approximately GDP-rate — for the dominant global CRM platform growing revenue at 10%+ with an AI monetization layer (Agentforce) at $800M ARR and accelerating 169% year-over-year.
+7. **Margin of safety**: The business has deep structural protection — $63B in contracted RPO, <5% gross churn, and $14.4B FCF annually — but the price offers no safety margin in the bear case, sitting 57% above the ~$125 bear-case intrinsic value.
+8. **Thesis breaker**: Agentforce ARR fails to reach $1.5B by end of FY2027, or two consecutive quarters of revenue guidance cuts below 8% growth — either signals that the re-acceleration thesis is wrong and the compressed multiple is justified.

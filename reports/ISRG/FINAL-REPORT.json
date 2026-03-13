@@ -1,0 +1,51 @@
+{
+  "ticker": "ISRG",
+  "company": "Intuitive Surgical",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 7.4,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 4,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Dominant ~80% global market share in robotic surgery with 25 years of clinical data and interlocking switching costs",
+    "Razor/blade model with 75-80% recurring revenue from 11,106 installed systems and 3.15M annual procedures",
+    "Fortress balance sheet: zero debt, $5.9B cash, $2.5B annual FCF, 4.87x current ratio",
+    "Elite business economics: 27% ROIC, 66%+ gross margins, revenue compounding at 15% CAGR since 2018",
+    "Highly understandable business model with transparent key drivers and minimal customer concentration"
+  ],
+  "key_risks": [
+    "Valuation demands near-perfection: 62-67x trailing P/E with only ~8% upside to probability-weighted intrinsic value of ~$530",
+    "Medtronic Hugo received FDA clearance for urology (Dec 2025) — first credible U.S. competitive threat in 20+ years",
+    "Procedure growth guided to decelerate from 18% (2025) to 13-15% (2026); further slowdown would compress multiples",
+    "Chinese competitors advancing rapidly in international markets where ISRG has less switching cost lock-in",
+    "Gross margin pressure from da Vinci 5 ramp costs and tariff headwinds (1.2% guided impact in 2026)"
+  ],
+  "red_flags": [
+    "No Buffett-style price margin of safety at ~$490; would need ~25% pullback to ~$370 for traditional entry",
+    "Base case scenario offers only ~6% total return — barely above risk-free rate",
+    "Stock-based compensation gap: GAAP operating margin 29.3% vs pro forma 37% partly reflects SBC adjustments",
+    "Buybacks only barely offset SBC dilution (0.4% net share reduction in FY2025)"
+  ],
+  "buy_triggers": [
+    "Share price pullback to ~$370-420 providing meaningful margin of safety",
+    "Procedure growth re-accelerates above 18% driven by cardiac indication or da Vinci 5 adoption surge",
+    "Competitive threat from Medtronic Hugo proves less impactful than feared with ISRG maintaining 75%+ market share"
+  ],
+  "sell_triggers": [
+    "Quarterly da Vinci procedure growth drops below 8% for two consecutive quarters",
+    "Medtronic Hugo or another competitor captures >15% of new U.S. system placements for two consecutive years",
+    "Management makes a large dilutive acquisition outside core surgical robotics competency"
+  ],
+  "valuation_summary": "At ~$490 per share, ISRG trades at 62-67x trailing earnings and ~43-46x owner earnings. Probability-weighted intrinsic value is ~$530 (bear $340, base $520, bull $730), offering only ~8% upside. The market implies 16-18% annual earnings growth for 5+ years. This is a fair price for a world-class business, not a bargain.",
+  "source_summary": "Q4 2025 earnings release (Jan 22, 2026), SEC filings, MacroTrends, Yahoo Finance, StockAnalysis.com, Seeking Alpha, TIKR.com, GuruFocus, Simply Wall St, MedTech Dive, PortfoliosLab, company investor relations",
+  "confidence": "High on business quality (9/10 conviction); Medium on valuation (the tension between exceptional business and demanding price is the central question)",
+  "change_notes": "Initial analysis. ISRG scores exceptionally on business quality metrics (competence, moat, economics, balance sheet) but the premium valuation leaves no margin of safety for a new buyer. Watch for a meaningful pullback to $370-420 range."
+}

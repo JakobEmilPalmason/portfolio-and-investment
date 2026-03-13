@@ -1,0 +1,52 @@
+{
+  "ticker": "SNPS",
+  "company": "Synopsys, Inc.",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 6.4,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 5,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "EDA duopoly with Cadence controlling ~60% of the market, reinforced by extreme switching costs and 30+ years of cumulative R&D",
+    "~77% recurring revenue with $11B+ backlog providing exceptional predictability and visibility",
+    "Organic business economics are world-class: 80% gross margins, 35% non-GAAP operating margins, asset-light model",
+    "Ansys acquisition creates unique chip-to-system design platform, roughly doubling TAM to ~$31B",
+    "Secular AI tailwind drives chip complexity and EDA spending growth independent of macro conditions"
+  ],
+  "key_risks": [
+    "$13.5B acquisition debt at 8.4x EBITDA with GAAP interest coverage of just 2.0x leaves minimal margin for error",
+    "China export controls can suspend 12-16% of revenue overnight, as demonstrated in May 2025",
+    "Ansys integration risk: $35B bet on cross-sell synergies is unproven; former Ansys CEO already departing board",
+    "GAAP vs non-GAAP earnings gap is 10x ($0.34 vs $3.77 Q1 EPS), obscuring true economics",
+    "Valuation compression risk: at 30x forward P/E, stock prices in flawless execution with no discount for uncertainty"
+  ],
+  "red_flags": [
+    "CEO has made zero open-market stock purchases in 5 years; all 9 transactions were sales",
+    "$4.2B in buybacks over 5 years merely offset SBC dilution — share count flat",
+    "GAAP ROIC collapsed to ~2-4% from ~20%+ pre-Ansys acquisition",
+    "Class-action lawsuit filed in late 2025 related to Ansys deal disclosures",
+    "10% workforce reduction as part of Ansys synergy realization introduces cultural risk"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $350-370 range providing 15-20% margin of safety vs conservative fair value",
+    "FY2026 FCF comes in at $2.0B+ and term loan is fully retired on schedule",
+    "Ansys cross-sell revenue synergies materially exceed $400M target"
+  ],
+  "sell_triggers": [
+    "Synopsys misses FY2026 FCF guidance of $1.9B or fails to retire $2.55B term loan on schedule",
+    "China revenue permanently lost to export controls with no recovery path",
+    "EDA duopoly structurally disrupted — open-source tools capture >20% share at leading-edge nodes"
+  ],
+  "valuation_summary": "At ~$433, SNPS trades at ~30x forward non-GAAP EPS, below its 5-year average of ~37x but still pricing in 13-15% annual earnings growth for 5 years. Conservative DCF models ($296-$370) suggest 15-30% overvaluation. Base case discounted value ~$369 implies ~15% downside. No price margin of safety at current levels.",
+  "source_summary": "Synopsys Q4 FY2025 and Q1 FY2026 earnings releases, FY2025 10-K, SEC proxy filings, AlphaSpread DCF models, Mordor Intelligence EDA market report, S&P Global Market Intelligence, MacroTrends, StockAnalysis.com, GuruFocus, Yahoo Finance, MarketBeat, PortfoliosLab",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. The $35B Ansys acquisition (July 2025) is the defining event — it transformed SNPS from a clean capital-light compounder into a leveraged platform bet. Business quality remains exceptional but price margin of safety is absent."
+}

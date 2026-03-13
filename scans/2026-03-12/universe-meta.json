@@ -1,0 +1,97 @@
+{
+  "run_date": "2026-03-12",
+  "total_candidates": 151,
+  "buckets_used": [
+    "tracked",
+    "seed",
+    "large_cap_us_quality",
+    "large_cap_europe_quality",
+    "semis_and_infra",
+    "healthcare_quality",
+    "industrial_compounders",
+    "financial_quality",
+    "consumer_quality",
+    "post_earnings",
+    "52wk_low",
+    "52wk_high",
+    "fcf_roic",
+    "sector_leader"
+  ],
+  "counts_by_bucket": {
+    "tracked": 49,
+    "seed": 20,
+    "large_cap_us_quality": 29,
+    "large_cap_europe_quality": 21,
+    "semis_and_infra": 16,
+    "healthcare_quality": 18,
+    "industrial_compounders": 16,
+    "financial_quality": 16,
+    "consumer_quality": 15,
+    "post_earnings": 2,
+    "52wk_low": 7,
+    "52wk_high": 2,
+    "fcf_roic": 4,
+    "sector_leader": 12
+  },
+  "counts_by_sector": {
+    "Technology": 44,
+    "Industrials": 28,
+    "Healthcare": 26,
+    "Financials": 23,
+    "Consumer": 22,
+    "Communication Services": 4,
+    "Utilities": 2,
+    "Materials": 2
+  },
+  "counts_by_geography": {
+    "US": 124,
+    "Europe": 25,
+    "Asia": 1,
+    "Other": 1
+  },
+  "mkt_cap_distribution": {
+    "mega": 99,
+    "large": 48,
+    "mid": 4
+  },
+  "already_analyzed_count": 30,
+  "tracked_plus_seed_pct": 41.1,
+  "web_queries_run": [
+    {
+      "query": "notable US earnings beats misses large cap March 2026",
+      "bucket": "post_earnings",
+      "names_added": ["CAT", "ORCL"]
+    },
+    {
+      "query": "quality large cap stocks near 52-week low March 2026",
+      "bucket": "52wk_low",
+      "names_added": ["BRK-B", "V", "HD", "CRM", "NOW", "BSX", "NOVO-B.CO"]
+    },
+    {
+      "query": "quality large cap stocks near 52-week high momentum March 2026",
+      "bucket": "52wk_high",
+      "names_added": ["NVDA", "MU"]
+    },
+    {
+      "query": "highest free cash flow yield large cap stocks 2026",
+      "bucket": "fcf_roic",
+      "names_added": ["NVS", "GILD", "CRM", "AMAT"]
+    },
+    {
+      "query": "dominant sector leader stocks by market cap 2026",
+      "bucket": "sector_leader",
+      "names_added": ["GOOG", "META", "MSFT", "NVDA", "AMZN", "TSLA", "DIS", "TMUS", "NEE", "WDAY"]
+    },
+    {
+      "query": "quality European large cap stocks 2026",
+      "bucket": "large_cap_europe_quality",
+      "names_added": ["ABB"]
+    }
+  ],
+  "concentration_warnings": [
+    "tracked_plus_seed_pct > 20%: actual 41.1% — all 8 curated sector buckets are fully populated; high share reflects active pipeline with 49 existing reports and 20 curated seeds, not under-representation of sector lists",
+    "bucket 'tracked' exceeds 25%: actual 32.5% — expected given mature pipeline; all curated sector lists were fully populated and contributed material new names"
+  ],
+  "stage": "A1",
+  "notes": "151 unique tickers. No duplicates. NVO (Novo Nordisk ADR) retained as separate entry from NOVO-B.CO (Copenhagen primary listing). ALMU retained as tracked directory exists; mid-cap. All 8 curated sector buckets fully represented. Web searches contributed additional bucket-tags and 6 net-new names (ABB, NVS, HD, MU, DIS, TMUS, NEE, WDAY, AMZN). OTIS, WAT, EFX added to round out Industrials/Healthcare/Financials coverage to reach 150+ target."
+}

@@ -1,0 +1,56 @@
+{
+  "ticker": "IDXX",
+  "company": "IDEXX Laboratories Inc.",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 4,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Dominant razor-and-blade franchise with ~60-65% North American in-clinic veterinary diagnostics market share",
+    "Multi-layered structural moat: contractual switching costs, VetConnect PLUS data lock-in, and 3,000+ rep direct sales force",
+    "35-39% ROIC and 61.8% gross margins with genuine annual pricing power",
+    "FY2025 FCF of $1.1B equaling 100% of net income on only 13% capex-to-OCF ratio",
+    "Installed base flywheel self-reinforcing: 12% premium instrument base growth in 2025 drives multi-year consumable revenue",
+    "Conservative balance sheet: 0.69x net debt/EBITDA, 33-42x interest coverage, $1.28B available liquidity",
+    "Internally planned CEO succession with 15-year IDEXX veteran — minimal succession risk"
+  ],
+  "key_risks": [
+    "No price margin of safety at ~$662 — stock is at or above base-case fair value; 2.2% FCF yield offers no cushion",
+    "Unfavorable upside/downside asymmetry: ~1.4x upside to bull case vs. ~2.1x downside to bear case",
+    "Mars/Antech vertically integrated competitor (Heska acquisition) with captive corporate hospital volume is the most credible long-run threat",
+    "North American market saturation risk: vet visit volumes under pressure since 2023; organic growth depends increasingly on harder-to-execute international expansion",
+    "CEO transition (May 2026) coincides with critical scaling of inVue Dx and Cancer Dx product launches",
+    "Multiple compression risk: at 44-50x forward P/E, any growth deceleration or rate-shock produces flat-to-negative 5-year returns"
+  ],
+  "red_flags": [
+    "Zero open-market insider share purchases in at least 18 months — management has no personal financial skin in the game",
+    "Buybacks executed at ~38-42x earnings — expensive capital deployment requiring perpetual high growth to justify",
+    "52-week low of $356 (54% drawdown from ATH) demonstrates material price volatility risk even for this franchise quality",
+    "Bear-case DCF intrinsic value ~$310-$320/share implies >50% downside if growth and multiple disappoint simultaneously",
+    "2026 organic growth guidance of 7-9% represents deceleration from 2025's 10%+ — market may not fully price this"
+  ],
+  "buy_triggers": [
+    "Price reaches $530-$600, representing ~30x forward EPS — a more defensible entry with some margin of safety",
+    "Price reaches $480-$520 in a market-wide correction, representing a genuine 25-30% discount for a full-position entry",
+    "Sustained reacceleration of North American same-clinic diagnostic volumes for two consecutive quarters, confirming vet visit headwind has normalized"
+  ],
+  "sell_triggers": [
+    "IDEXX loses more than 5 percentage points of North American in-clinic diagnostics market share in 12 months — installed-base flywheel broken",
+    "A structurally superior competing diagnostic platform achieves meaningful veterinary clinic adoption outside the IDEXX ecosystem",
+    "Stock overshoots to above 70x forward P/E without corresponding earnings growth acceleration — valuation excess warrants trimming",
+    "Management pursues a large dilutive acquisition abandoning the capital-light high-ROIC model"
+  ],
+  "valuation_summary": "At ~$662, IDXX trades at ~44x forward 2026 EPS with a 2.2% FCF yield; strict DCF analysis places base-case intrinsic value at $460-$480/share (absent premium multiple support) and bear-case value at $310-$320, with bull case at $900-$950 — the stock is priced at or slightly above a 'multiple-held' base case with no margin of safety and unfavorable 1.4x upside / 2.1x downside asymmetry.",
+  "source_summary": "Analysis based on IDEXX Q4 2025/FY2025 earnings release (January 30, 2026), company IR press releases, MacroTrends, GuruFocus, StockAnalysis, TIKR, PortfoliosLab, and third-party research aggregators; all financial data is current through FY2025 actuals with 2026 guidance incorporated.",
+  "confidence": "high",
+  "change_notes": ""
+}

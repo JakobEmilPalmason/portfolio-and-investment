@@ -1,8 +1,8 @@
 # Valuation vs Intrinsic Value — V
 
 **Analyst Role:** Valuation Analyst
-**Date:** 2026-03-11
-**Data Sources:** Visa Q1 FY2026 earnings release (Jan 29, 2026); Visa FY2025 annual results (Oct 2025); StockAnalysis.com valuation statistics; MarketBeat analyst consensus; Yahoo Finance key statistics; GuruFocus; FinanceCharts.com P/E and EV/EBITDA data; WebSearch for current price and forward estimates
+**Date:** 2026-03-12
+**Data Sources:** Visa Q1 FY2026 earnings release (Jan 29, 2026); Visa FY2025 annual results (Oct 2025); StockAnalysis.com valuation statistics; MarketBeat analyst consensus; Yahoo Finance key statistics; GuruFocus DCF ($277.91 intrinsic value as of Feb 13, 2026); Alpha Spread DCF ($233.42, stock overvalued 27%); Acquirer's Multiple DCF ($279.08, margin of safety -25%); FinanceCharts.com P/E and EV/EBITDA data; WebSearch for current price ($310.05 on March 12, 2026) and forward estimates
 
 ---
 
@@ -10,9 +10,9 @@
 
 | # | Finding | Significance (1-5) |
 |---|---------|-------------------|
-| 1 | At ~$314/share, Visa trades at ~30x trailing GAAP earnings and ~24x forward consensus EPS of ~$13.10 — near the lower end of its 5-year historical forward P/E average of ~28x | 4 |
+| 1 | At ~$310/share (March 12, 2026), Visa trades at ~30x trailing GAAP earnings and ~24x forward consensus EPS of ~$13.10 — near the lower end of its 5-year historical forward P/E average of ~28x | 4 |
 | 2 | FY2025 free cash flow was $21.6B on $40.0B revenue (54% FCF margin), making Visa one of the highest-quality cash generators in the S&P 500 | 5 |
-| 3 | Owner earnings are approximately $21B today; at a conservative 5% long-term growth rate and 9% discount rate, intrinsic value is roughly $280–$380/share depending on terminal multiple assumptions | 4 |
+| 3 | Owner earnings are approximately $21B today; multiple independent DCF models (GuruFocus $277.91, Alpha Spread $233.42, Acquirer's Multiple $279.08) cluster intrinsic value in the $233–$280 range — all below the current price | 4 |
 | 4 | The implied growth rate embedded in today's $314 price is approximately 8–10% annual owner earnings growth — consistent with Visa's recent track record, but not a demanding bar | 3 |
 | 5 | Analyst consensus price target of ~$400 implies ~27% upside; the 52-week high was $375, suggesting the market has already priced in more optimism at prior peaks | 3 |
 | 6 | EV/EBITDA of ~21x is elevated but below Visa's own historical premium range of 25–35x seen in 2020–2022; the stock has de-rated meaningfully | 3 |
@@ -41,7 +41,7 @@ EV/EBITDA of ~21x reflects the same modestly de-rated picture. In 2021, this rat
 
 **What Must Be True for Today's Price to Be Justified?**
 
-At $314/share and approximately $11 in trailing non-GAAP EPS, the stock requires roughly 8–10% annual EPS growth over 10 years with a terminal multiple of 20–22x to produce a 9–10% IRR. Visa has grown EPS at 13–15% compounded over the prior decade. The bar today is meaningfully lower than what Visa has historically delivered, which is why the stock does not appear to be pricing in perfection. It is pricing in a modest slowdown from recent trends — a reasonable expectation but one the company has repeatedly surprised to the upside.
+At $310/share and approximately $11 in trailing non-GAAP EPS (TTM EPS $10.66 per current data), the stock requires roughly 8–10% annual EPS growth over 10 years with a terminal multiple of 20–22x to produce a 9–10% IRR. Visa has grown EPS at 13–15% compounded over the prior decade. The bar today is meaningfully lower than what Visa has historically delivered, which is why the stock does not appear to be pricing in perfection. It is pricing in a modest slowdown from recent trends — a reasonable expectation but one the company has repeatedly surprised to the upside.
 
 **Is the Market Pricing Perfection or Disaster?**
 
@@ -60,9 +60,10 @@ Neither. The current valuation is in a "fair to modestly undervalued" zone. The 
 ## Red Flags
 
 - EV/EBITDA and P/E are still above market averages despite de-rating — not cheap in absolute terms
-- Base-case DCF at 9% discount rate produces intrinsic value below current price; a positive IRR at $314 requires either growth outperformance or multiple stability
+- Three independent DCF sources (GuruFocus, Alpha Spread, Acquirer's Multiple) all place intrinsic value below the current $310 price; the most bearish (Alpha Spread at $233) implies 27% overvaluation
 - DOJ case not yet reflected in consensus estimates; if a structural remedy is imposed on debit routing, the bear case valuation drops materially
 - Management has been aggressive on buybacks at $335/share average in FY2025 — buying above intrinsic value on some scenarios
+- Current price of $310 is ~16% below the all-time closing high of $371 (June 2025), providing some historical entry improvement but still above base-case intrinsic value
 
 ---
 

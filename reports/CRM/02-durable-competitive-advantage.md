@@ -1,8 +1,8 @@
 # Durable Competitive Advantage — CRM
 
 **Analyst Role:** Moat Analyst
-**Date:** 2026-03-10
-**Data Sources:** Web search results (6sense market share data, GuruFocus moat score, AlphaSpread, Morningstar, Macrotrends operating margin data, Salesforce investor relations Q4 FY2026 press release); training knowledge for competitive context. Market share and segment data current as of late 2025/early 2026.
+**Date:** 2026-03-12
+**Data Sources:** Web search results (6sense market share data, IDC CRM market share report 2025, GuruFocus moat score, AlphaSpread, Morningstar, Macrotrends operating margin data, Salesforce investor relations Q4 FY2026 press release, GeekWire on Microsoft AI agents, SuperAGI competitive analysis); training knowledge for competitive context. Market share and segment data current as of late 2025/early 2026.
 
 ## Key Findings
 

@@ -1,0 +1,52 @@
+{
+  "ticker": "NOW",
+  "company": "ServiceNow, Inc.",
+  "analysis_date": "2026-03-10",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 8,
+    "balance_sheet": 10,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "98% subscription renewal rate with 85% of Fortune 500 as customers, demonstrating deep switching-cost moat",
+    "Fortress balance sheet: $10.1B liquid assets vs. $1.5B debt, generating $5.4B annual operating cash flow",
+    "35% FCF margin and 125% net revenue retention — existing customers alone grow base 25% annually",
+    "cRPO of $12.85B (+25% YoY) provides high near-term revenue visibility",
+    "Now Assist AI suite crossed $600M ACV in 2025, doubling YoY, with $1B target for 2026"
+  ],
+  "key_risks": [
+    "AI-driven demand destruction: Microsoft Agent 365 bundles AI workflow automation into existing M365 enterprise agreements, directly threatening ServiceNow's pricing power",
+    "$12B M&A cycle in 2025 — including $7.75B Armis acquisition — is a dramatic break from organic growth model with unproven integration execution",
+    "Federal government revenue exposure (~10–15% of revenue) faces DOGE-driven IT budget cuts documented in early 2026",
+    "Stock-based compensation of ~$2.4B annually (~16% of revenue) is a persistent structural tax on owner earnings",
+    "$7.9B in non-cancellable cloud infrastructure commitments creates rigid cost floor if revenue growth disappoints"
+  ],
+  "red_flags": [
+    "Stock fell ~50% from January 2025 all-time high despite consistently beating earnings, suggesting structural re-rating rather than sentiment alone",
+    "SBC of ~$2.4B annually exceeds GAAP net income of $1.75B — GAAP earnings dramatically understate real shareholder dilution",
+    "Microsoft Agent 365 directly targets enterprise workflow automation, with potential to erode ServiceNow pricing power via bundling",
+    "GAAP P/E of ~69x means any FCF growth slowdown could trigger further multiple compression even if the business remains healthy",
+    "FY2026 guidance includes ~100bps contribution from Moveworks acquisition — organic growth ex-acquisition is slower, and integration risk is real"
+  ],
+  "buy_triggers": [
+    "cRPO growth holds at or above 20% in Q1 2026 earnings (April/May), confirming AI disruption is not slowing bookings",
+    "Now Assist AI revenue hits $750M+ in ACV by mid-2026, demonstrating AI as net new revenue rather than zero-sum substitution",
+    "Stock declines another 15–20% to the $95–$105 range on sentiment rather than fundamentals, widening the gap between bear-case intrinsic value and market price"
+  ],
+  "sell_triggers": [
+    "cRPO growth decelerates below 15% for two consecutive quarters — the single most reliable leading indicator of competitive or AI-driven demand destruction",
+    "Net revenue retention falls below 110%, signaling existing customers are contracting rather than expanding",
+    "Evidence of specific, material customer churn caused by Microsoft M365 bundling or open-source substitution disclosed in investor communications"
+  ],
+  "valuation_summary": "At ~$121/share (~$120B market cap), NOW trades at ~26x trailing FCF — its lowest FCF multiple in years, compressed from a historical range of 60–80x. Bear-case DCF (~10% growth, 28% FCF margin) yields ~$91B intrinsic value approximating current market cap, while base case (18% growth, 35% FCF margin) implies ~$170B; the stock represents fair-to-good value rather than a deep discount, with the multiple compression itself serving as the margin of safety.",
+  "source_summary": "Analysis draws on web search results from March 2026 including ServiceNow Q4 2025 earnings press release, investor relations newsroom, Yahoo Finance, MarketBeat, StockAnalysis, GuruFocus, CNBC, Bloomberg, Motley Fool, Seeking Alpha, MacroTrends, and analyst research notes, supplemented by training knowledge on enterprise software dynamics.",
+  "confidence": "medium",
+  "change_notes": ""
+}

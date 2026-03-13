@@ -1,0 +1,12 @@
+# Compact Checklist — FICO
+
+**Date:** 2026-03-12
+
+1. **Business**: FICO operates a near-monopoly credit scoring toll-booth (59% of revenue, ~88% operating margins) charging per-inquiry royalties on every US loan origination, plus a transitioning enterprise decision-management software segment (~41% of revenue) with $263.6M Platform ARR growing 16%.
+2. **Moat**: The regulatory-enforced GSE monopoly that was FICO's deepest protection is now formally cracked — FHFA's July 2025 lender choice model allows VantageScore 4.0 as a mortgage alternative, and the bureaus are weaponizing it at $0.99/score to seed lender adoption against FICO's multi-dollar fees.
+3. **Economics**: ROIC of ~48–54%, gross margins of 82%, FCF of $770M on just $8.9M capex, and 118% FCF-to-net-income conversion confirm an extraordinary royalty-like business that drops nearly every incremental Scores dollar to the bottom line.
+4. **Management**: CEO Lansing has reduced shares outstanding 48% since 2010 via buybacks funded by $739M FY2025 FCF, but simultaneously sold ~$32M in personal shares over six months while the board authorized a new $1.5B corporate repurchase program during a live competitive inflection — an optics conflict that warrants scrutiny.
+5. **Debt risk**: Net debt of ~$2.94B (3.3x EBITDA) with interest coverage of 6.3x is manageable given $770M FCF, and the March 2026 $1B refinancing at 6.25% extends all major maturities to 2033–2034, but a 30% Scores revenue shock would compress coverage to ~3.9x and force a halt to buybacks.
+6. **Price**: At ~$1,285 post-9% drop, FICO trades at 43x trailing P/E and ~41x P/FCF — base-case intrinsic value is $1,350–1,500 (5–17% upside) while the bear case of coordinated VantageScore adoption implies $650–750 (42–49% downside), leaving probability-weighted fair value near or slightly below the current price.
+7. **Margin of safety**: There is no margin of safety at $1,285 — the stock requires 13–14% FCF CAGR for 10 years to justify current price, the upside/downside ratio is at least 1:3 in a realistic bear scenario, and a genuine entry with 25–30% discount to base-case intrinsic value would require the stock to fall to ~$950–1,050.
+8. **Thesis breaker**: If VantageScore 4.0 captures more than 25–30% of conforming mortgage origination volume within three years — enabled by the $0.99 bureau pricing and FHFA lender choice — FICO will be forced into structural Scores fee rollbacks that permanently impair the pricing model driving 60% of revenue and the majority of FCF.

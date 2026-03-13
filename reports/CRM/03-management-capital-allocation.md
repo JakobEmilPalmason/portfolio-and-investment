@@ -1,8 +1,8 @@
 # Management & Capital Allocation — CRM
 
 **Analyst Role:** Stewardship Analyst
-**Date:** 2026-03-10
-**Data Sources:** Web search results (Salesforce investor relations Q4 FY2026, 247WallSt, MarketScreener, Investing.com insider trading, GuruFocus insider data, Nasdaq, TIKR, Macrotrends SBC data, WallStreetZen ownership data); training knowledge for context on M&A track record. Compensation data is for FY2025 proxy. Buyback data current as of February 2026 announcement.
+**Date:** 2026-03-12
+**Data Sources:** Web search results (Salesforce investor relations Q4 FY2025 and Q4 FY2026, 247WallSt, MarketScreener, Investing.com insider trading Oct 2025, GuruFocus insider data, CNBC shareholder compensation vote July 2024, Nasdaq, TIKR, Macrotrends SBC data, WallStreetZen ownership data, SEC EDGAR crm-20250424 proxy); training knowledge for context on M&A track record. Compensation data is for FY2025 proxy. Buyback data current as of February 2026 announcement.
 
 ## Key Findings
 

@@ -1,0 +1,52 @@
+{
+  "ticker": "ALAB",
+  "company": "Astera Labs, Inc.",
+  "analysis_date": "2026-03-06",
+  "verdict": "Pass",
+  "average_score": 5.6,
+  "umbrella_scores": {
+    "circle_of_competence": 6,
+    "competitive_advantage": 6,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 10,
+    "valuation": 3,
+    "margin_of_safety": 3,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "Fortress balance sheet: zero debt, $1.19B cash, 10.2x current ratio",
+    "Excellent unit economics: 75%+ gross margins, asset-light fabless model, strong operating leverage",
+    "Founder-led management with ~$900M in skin-in-the-game ownership",
+    "Real switching costs from 12-18 month design-win qualification cycles and COSMOS software platform",
+    "115% YoY revenue growth in FY2025 driven by AI infrastructure buildout"
+  ],
+  "key_risks": [
+    "Amazon dependency: 70%+ of FY2025 revenue from one customer with no contractual purchase obligation",
+    "Valuation leaves zero room for error: ~86x forward P/E, 30-45% above DCF fair value estimates",
+    "AI capex cycle deceleration risk: zero business diversification outside AI data center connectivity",
+    "Competitive encirclement: Broadcom, Marvell (XConn acquisition), and Credo entering retimer/switch markets",
+    "Gross margin erosion already underway: guided ~74% for Q1 2026, down from 76.4% in Q3 2025"
+  ],
+  "red_flags": [
+    "No insider open-market purchases since IPO; $87M in insider selling",
+    "CFO Mike Tate departed shortly after Q4 earnings",
+    "Share count grew 27% in one year due to excessive SBC ($160M annually, 19% of revenue)",
+    "$6.5B Amazon warrant agreement deepens single-customer dependency rather than diversifying it",
+    "Decelerating sequential revenue growth: 20% (Q3) to 17% (Q4) to guided 6-10% (Q1 2026)"
+  ],
+  "buy_triggers": [
+    "Stock declines to $60-80 range (forward P/E 25-35x), aligning with DCF fair value estimates",
+    "Second hyperscaler reaches 15%+ of revenue, reducing Amazon below 50% concentration",
+    "Demonstrated moat durability through a full PCIe standards cycle transition with growing COSMOS software recurring revenue"
+  ],
+  "sell_triggers": [
+    "Amazon announces in-house connectivity silicon development or materially reduces quarterly orders",
+    "Gross margins fall below 70% for two consecutive quarters",
+    "Second senior executive departure within 12 months, or evidence management is obscuring competitive deterioration behind non-GAAP adjustments"
+  ],
+  "valuation_summary": "Multiple DCF models place fair value at $80-93 versus the current ~$120 price; at ~86x forward P/E and ~69x FCF, the market prices in ~37% annual earnings growth for five years to reach $3.5-4.0B in revenue by 2030. The stock is 30-45% above conservative intrinsic value with no margin of safety.",
+  "source_summary": "Analysis based on web searches conducted 2026-03-06 covering Astera Labs Q4/FY2025 earnings (reported 2026-02-10), SEC filings, StockAnalysis.com, MacroTrends, Yahoo Finance, MarketBeat, Seeking Alpha, CNBC, and company investor relations; no user-provided context files.",
+  "confidence": "medium",
+  "change_notes": ""
+}

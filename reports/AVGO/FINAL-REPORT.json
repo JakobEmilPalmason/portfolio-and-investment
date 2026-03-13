@@ -1,0 +1,52 @@
+{
+  "ticker": "AVGO",
+  "company": "Broadcom Inc",
+  "analysis_date": "2026-03-09",
+  "verdict": "Watch",
+  "average_score": 6.5,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "~90% market share in cloud data center switching ASICs and near-monopoly networking ASIC position",
+    "48% FCF margins and sub-1% capex intensity — one of the most capital-efficient semiconductor businesses in history",
+    "VMware switched to 77% operating margins despite 150–1,500% price increases, proving extraordinary switching costs",
+    "$27B annual free cash flow with rapid deleveraging (Debt/EBITDA at 1.5x, down from 3.5x)",
+    "Multi-year co-design lock-in with 5 confirmed hyperscaler XPU customers and $100B+ AI chip revenue guidance for FY2027"
+  ],
+  "key_risks": [
+    "Customer concentration: Google's TPU reportedly ~78% of ASIC revenue; loss of one hyperscaler would be catastrophic",
+    "AI infrastructure spending cyclicality: entire growth narrative depends on hyperscaler capex continuing at current pace",
+    "VMware franchise erosion: Gartner projects market share falling from 70% to 40% by 2029; Nutanix added 2,700 customers in FY2025",
+    "Geopolitical risk: ~20% China revenue exposure, 125% retaliatory tariffs, and Taiwan TSMC manufacturing dependency",
+    "Valuation leaves no room for error at 58x trailing owner earnings; even modest growth miss could trigger severe multiple compression"
+  ],
+  "red_flags": [
+    "Google TPU reportedly ~78% of ASIC revenue — single-point-of-failure customer concentration",
+    "CEO Hock Tan zero insider purchases in 5 years despite $205M pay package and $5.7B SBC (11% of revenue)",
+    "AT&T lawsuit and European regulatory scrutiny of VMware pricing practices",
+    "Non-AI semiconductor revenue flat YoY — entire growth story rests on AI capex continuation",
+    "$65B absolute debt despite rapid deleveraging pace"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $250–270 range (~20x forward earnings), providing genuine margin of safety against AI spending deceleration",
+    "Broadcom secures 3+ additional hyperscaler ASIC customers, meaningfully reducing Google concentration risk",
+    "VMware customer churn data stabilizes and renewal rates exceed 90%, confirming the pricing strategy is sustainable"
+  ],
+  "sell_triggers": [
+    "Hyperscaler AI capex spending declines for two consecutive quarters, signaling the AI infrastructure buildout is maturing",
+    "Google, Meta, or another major customer announces in-house ASIC design capability that reduces Broadcom's role",
+    "VMware market share drops below 50% as tracked by Gartner, indicating the harvest strategy has passed the point of no return"
+  ],
+  "valuation_summary": "At $331/share, Broadcom trades at ~58x trailing owner earnings and 37–39x EV/EBITDA — roughly 2x the semiconductor peer median — pricing in ~19% revenue CAGR for five years. Base-case intrinsic value is approximately $415/share by FY2030 (~25% upside), bear case is ~$220 (~33% downside), and bull case is ~$650 (~95% upside), yielding roughly even downside/upside asymmetry with no meaningful margin of safety at today's price.",
+  "source_summary": "Analysis based on web searches from March 2026 covering Broadcom Q1 FY2026 earnings (March 4, 2026), FY2025 annual results, SEC filings, investor relations press releases, and financial data from Yahoo Finance, StockAnalysis, MacroTrends, GuruFocus, CNBC, Seeking Alpha, and industry analysts including Gartner and HSBC; no user-provided context files.",
+  "confidence": "medium",
+  "change_notes": ""
+}

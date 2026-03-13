@@ -1,0 +1,53 @@
+{
+  "ticker": "AMZN",
+  "company": "Amazon.com Inc.",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 7.4,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "AWS #1 cloud provider at ~30% global market share with decade-deep enterprise switching costs",
+    "Retail flywheel (consumers → merchants → logistics → Prime → consumers) took 25 years to build and cannot be replicated quickly",
+    "Advertising business ($68.5B, growing 22%) built on unique first-party purchase-intent data with no direct substitute",
+    "Operating income expanded from $24.9B (2022) to $80.0B (2025) — proven operating leverage at scale",
+    "Fortress balance sheet: net financial debt essentially zero, $123B liquid assets, 35x interest coverage, $200B capex self-funded",
+    "ROIC recovered to ~14% (3.4x retail sector median) and trending upward ex-capex cycle"
+  ],
+  "key_risks": [
+    "FTC antitrust trial confirmed for October 2026 — live binary event; structural remedy could reduce marketplace operating income $8-12B annually",
+    "$200B 2026 capex (up 53% from 2025) with near-zero FCF visibility — if AI infrastructure returns disappoint, ROIC stays depressed for 3-5 years",
+    "AWS market share erosion: Azure (+35%) and Google Cloud (+36%) growing faster in percentage terms, especially for AI-native workloads",
+    "AI compute oversupply risk in 2027-2028 if hyperscaler spending collectively exceeds enterprise demand — could deflate cloud pricing",
+    "High beta (1.42) means 40-55% drawdowns are historically normal; beta amplifies any macro risk-off event"
+  ],
+  "red_flags": [
+    "Zero price margin of safety at $210 — bear-case DCF of $130-145 is 38-45% below current price",
+    "$22B/year SBC with no meaningful buyback program creates persistent shareholder dilution; diluted share count grew 1% in 2025",
+    "International retail has been a capital sink for 15+ years without reaching consistent profitability",
+    "P/FCF of 293x technically accurate but reflects growth capex supercycle — misleading in isolation but worth monitoring",
+    "No return of capital (no dividend, minimal buybacks) — shareholders depend entirely on price appreciation"
+  ],
+  "buy_triggers": [
+    "Stock declines to $155-175 (25-35% below current price), establishing a genuine margin of safety vs. bear-case DCF of $130-145",
+    "FTC case resolved with a narrow, non-structural consent decree — removes the October 2026 antitrust overhang",
+    "AWS growth re-accelerates to 23-25%+ for two consecutive quarters, validating the $200B AI capex investment thesis"
+  ],
+  "sell_triggers": [
+    "AWS market share falls below 27% for two consecutive quarters, signaling structural (not cyclical) share loss to Azure or Google Cloud",
+    "FTC imposes structural separation of marketplace from fulfillment infrastructure — changes the fundamental business economics",
+    "Operating income growth turns negative for reasons other than one-time items, suggesting capex cycle returns are below cost of capital"
+  ],
+  "valuation_summary": "At $209.73/share ($2.25T market cap), AMZN trades at ~24x normalized owner earnings and ~15.8x EV/EBITDA — near 5-year lows — and is roughly fairly valued in the base case (DCF $210-230), with a bear case of $130-145 and bull case of $310-360; there is zero price margin of safety at current levels, making this a Watch pending a 15-25% pullback.",
+  "source_summary": "Analysis based on web searches for Amazon FY2025 earnings release (IR, February 2026), StockAnalysis and MacroTrends financial data, Synergy Research Group cloud market share, Alpha Spread and GuruFocus DCF estimates, and CNBC/FTC sources for management and regulatory context; all data current as of early March 2026.",
+  "confidence": "medium",
+  "change_notes": ""
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "ORCL",
+  "company": "Oracle Corporation",
+  "analysis_date": "2026-03-11",
+  "verdict": "Pass",
+  "average_score": 5.5,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 6,
+    "balance_sheet": 4,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "Database switching-cost moat with 40%+ market share sustained across decades of open-source competition",
+    "$553B contracted RPO backlog representing extraordinary AI infrastructure demand pipeline",
+    "77% recurring revenue base with $23.5B TTM operating cash flow and 30.8% GAAP operating margins",
+    "Larry Ellison 41% ownership stake providing strong founder alignment",
+    "Multicloud database strategy (Oracle Database@AWS, @Azure, @Google) converting threats into revenue streams"
+  ],
+  "key_risks": [
+    "AI infrastructure demand softening or commoditization — entire growth thesis rests on $553B RPO converting to revenue",
+    "Balance sheet and refinancing stress — $45-50B capital raise required in calendar 2026 with explicit dependence on credit markets",
+    "FY2027 revenue guidance miss (~30-40% likelihood) — Q3 FY2026 already missed consensus despite 22% growth",
+    "Legacy database erosion accelerating — greenfield workloads default to open-source alternatives",
+    "Cerner/Oracle Health drag — $28.3B acquisition unproven, Epic continues to win new hospital deals"
+  ],
+  "red_flags": [
+    "Free cash flow deeply negative (-$13B to -$27B TTM) due to $50B FY2026 capex program",
+    "Total debt of $108B with Net Debt/EBITDA of ~3.5-4x — extraordinary leverage for a software company",
+    "Planned $45-50B fundraise in calendar 2026 represents explicit dependence on capital markets remaining open",
+    "S&P BBB rating with negative outlook — one downgrade from edge of investment grade",
+    "Q3 FY2026 revenue of $17.2B missed analyst consensus of ~$17.6B, triggering significant stock decline",
+    "Ellison has pledged ~277 million shares as loan collateral — forced selling risk on sharp decline",
+    "Buybacks were heaviest at peak valuations (FY2021) and minimal now — wrong-way timing",
+    "SBC growing at 17.6% YoY, faster than revenue growth — dilution risk increasing"
+  ],
+  "buy_triggers": [
+    "Stock declines to $115-125 range (genuine margin of safety, ~25-30% discount to current price) with no deterioration in RPO trajectory or credit quality",
+    "Q4 FY2026 results confirm FY2027 $90B revenue trajectory on track AND management provides credible evidence capex normalizes below $30B in FY2028",
+    "Credit rating stabilizes (S&P removes negative outlook) alongside RPO crossing $650-700B, signaling both business and balance sheet risks are receding"
+  ],
+  "sell_triggers": [
+    "FY2027 revenue guidance reduced below $82B — signals AI infrastructure demand thesis is impaired",
+    "RPO growth stalls for two consecutive quarters — breaks fundamental premise of visible forward revenue",
+    "Credit rating downgrade below investment grade (to BB or lower) — would widen spreads, raise funding costs, potentially trigger covenant issues"
+  ],
+  "valuation_summary": "At $164/share, Oracle trades at base-case fair value with a bear-case intrinsic value of $75-90/share (45-54% downside) and a bull-case of $275-340/share; the base case yields roughly fair value, not a margin of safety, and the stock must deliver $90B FY2027 revenue, sustained 12-15% growth, and capex normalization to $10-15B by FY2028-2029 for the current price to be justified.",
+  "source_summary": "Analysis based on Oracle Q3 FY2026 earnings press release (March 10, 2026), investor relations data, web search results from stockanalysis.com, macrotrends.net, gurufocus.com, companiesmarketcap.com, Futurum Group, Morningstar, and S&P Global Ratings, with training knowledge used for structural and historical context.",
+  "confidence": "medium",
+  "change_notes": ""
+}

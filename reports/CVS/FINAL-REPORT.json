@@ -1,0 +1,52 @@
+{
+  "ticker": "CVS",
+  "company": "CVS Health Corporation",
+  "analysis_date": "2026-03-11",
+  "verdict": "Pass",
+  "average_score": 4.75,
+  "umbrella_scores": {
+    "circle_of_competence": 5,
+    "competitive_advantage": 4,
+    "management": 4,
+    "business_economics": 4,
+    "balance_sheet": 4,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "$7.8B annual free cash flow from three durable recurring-revenue businesses",
+    "Caremark PBM serves 100M+ members with high switching costs",
+    "Aetna insurance platform with ~25M members and recurring premium income",
+    "Largest US pharmacy chain with 9,900+ locations providing physical distribution moat",
+    "New CEO focused on debt paydown, operational discipline, and integration over acquisition"
+  ],
+  "key_risks": [
+    "Medicare Advantage reimbursement deterioration — primary earnings recovery driver entirely outside CVS's control",
+    "Leverage and refinancing stress — $60-65B gross debt, ~4-5x Debt/EBITDA, interest coverage touched 3.1x in 2024",
+    "PBM structural disruption — PBM Reform Act of 2026, FTC enforcement, and antitrust scrutiny dismantling rebate-retention economics",
+    "Sustained medical cost trend acceleration — MLR could stay elevated regardless of management execution",
+    "Capital allocation and governance concentration — CEO/Board Chair combined in single person, weakening independent oversight"
+  ],
+  "red_flags": [
+    "$5.7B goodwill impairment on Oak Street Health within two years of acquisition — confirmed capital destruction",
+    "~$90B acquisition spree by prior leadership produced confirmed write-downs and halved the stock 2022-2025",
+    "ROIC of ~5.2% below cost of capital despite $402B in revenue",
+    "Combination of CEO and Board Chair roles in David Joyner effective January 2026 — governance concentration",
+    "Large gap between GAAP net income ($1.8B) and adjusted EPS ($8.8B equivalent) requires trusting $7B+ in adjustments"
+  ],
+  "buy_triggers": [
+    "Stock retreats to $60-65 (9-10x forward earnings), widening margin of safety to closer to 3:1 risk/reward",
+    "April 2026 final Medicare Advantage rate announcement is materially better than January draft, confirming 2028 margin recovery path",
+    "Net debt declines below $45B with a credible path to 3x EBITDA leverage, meaningfully reducing equity compression risk"
+  ],
+  "sell_triggers": [
+    "April 2026 final MA rate announcement is punitive, extending margin recovery beyond 2028 and confirming thesis failure",
+    "Adjusted EPS guidance cut more than 15% in a single year, confirming operating earnings insufficient to service debt",
+    "Net debt begins increasing again above $55B, signaling FCF is not translating into deleveraging"
+  ],
+  "valuation_summary": "At ~$78/share (~11x 2026 forward EPS of $7.00-$7.20), CVS is near a 10-year valuation low, but the $52B net debt load makes equity value highly sensitive to enterprise assumptions. A base-case DCF net of debt yields equity value of $41-62/share, suggesting the stock is fairly valued to modestly overvalued with almost no margin of safety at current prices.",
+  "source_summary": "Analysis draws on CVS Health Q4 and full-year 2025 earnings releases (February 2026), SEC filings, analyst consensus from MarketBeat and StockAnalysis.com, Morningstar and Alpha Spread DCF models, MacroTrends margin history, GuruFocus ROIC and balance sheet data, FTC/House Judiciary antitrust reports, and Healthcare Dive turnaround coverage.",
+  "confidence": "medium",
+  "change_notes": ""
+}

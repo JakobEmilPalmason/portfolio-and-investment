@@ -1,0 +1,78 @@
+{
+  "scan_date": "2026-03-12",
+  "universe_date": "2026-03-12",
+  "total_candidates": 151,
+  "buckets_used": [
+    "52wk_high",
+    "52wk_low",
+    "consumer_quality",
+    "fcf_roic",
+    "financial_quality",
+    "healthcare_quality",
+    "industrial_compounders",
+    "large_cap_europe_quality",
+    "large_cap_us_quality",
+    "post_earnings",
+    "sector_leader",
+    "seed",
+    "semis_and_infra",
+    "tracked"
+  ],
+  "counts_by_bucket": {
+    "tracked": 49,
+    "large_cap_us_quality": 29,
+    "large_cap_europe_quality": 21,
+    "seed": 20,
+    "healthcare_quality": 18,
+    "semis_and_infra": 16,
+    "financial_quality": 16,
+    "industrial_compounders": 16,
+    "consumer_quality": 15,
+    "sector_leader": 12,
+    "52wk_low": 7,
+    "fcf_roic": 4,
+    "post_earnings": 2,
+    "52wk_high": 2
+  },
+  "counts_by_sector": {
+    "Technology": 44,
+    "Industrials": 28,
+    "Healthcare": 26,
+    "Financials": 23,
+    "Consumer": 22,
+    "Communication Services": 4,
+    "Materials": 2,
+    "Utilities": 2
+  },
+  "counts_by_priority": {
+    "high": 33,
+    "medium": 106,
+    "low": 12
+  },
+  "triage_yes_count": 13,
+  "triage_maybe_count": 20,
+  "triage_no_count": 118,
+  "concentration_warnings": [
+    "tracked_plus_seed_pct > 20%: actual 41.1% \u2014 all 8 curated sector buckets are fully populated; high share reflects active pipeline with 49 existing reports and 20 curated seeds, not under-representation of sector lists",
+    "bucket 'tracked' exceeds 25%: actual 32.5% \u2014 expected given mature pipeline; all curated sector lists were fully populated and contributed material new names"
+  ],
+  "ranking_rules_version": "v2",
+  "ranking_rules": {
+    "priority_high": [
+      "post_earnings|52wk_low|52wk_high|fcf_roic in source_bucket AND mkt_cap_tier in {mega,large}",
+      "already_analyzed=true AND thesis_tag in {dominant_ecosystem,quality_compounder,secular_growth}"
+    ],
+    "priority_medium": [
+      "any curated sector bucket in source_bucket (no high trigger)",
+      "seed|sector_leader in source_bucket (no high trigger)"
+    ],
+    "triage_yes": [
+      "already_analyzed=false AND priority=high AND confidence in {high,medium}",
+      "already_analyzed=true AND post_earnings|52wk_low|52wk_high in source_bucket"
+    ],
+    "triage_maybe": [
+      "priority=high but no fresh event catalyst"
+    ]
+  },
+  "stage": "A2"
+}

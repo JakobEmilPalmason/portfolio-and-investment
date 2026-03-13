@@ -1,0 +1,53 @@
+{
+  "ticker": "ORSTED.CO",
+  "company": "Orsted A/S",
+  "analysis_date": "2026-03-10",
+  "verdict": "Pass",
+  "average_score": 4.4,
+  "umbrella_scores": {
+    "circle_of_competence": 6,
+    "competitive_advantage": 5,
+    "management": 4,
+    "business_economics": 3,
+    "balance_sheet": 3,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "World's largest offshore wind developer outside China with ~24% global ex-China market share and 30+ years of execution experience",
+    "10.2 GW European operating fleet generating ~DKK 25 billion annual EBITDA under long-term government CfD contracts and corporate PPAs",
+    "Revenue predictability from 20-25 year contracted power sales to electricity grids and large industrial counterparties",
+    "Danish state 50.1% ownership provides implicit sovereign backstop against capital markets disruptions",
+    "Post-rights-issue balance sheet repair and restored liquidity following DKK 60 billion rights issue in late 2025"
+  ],
+  "key_risks": [
+    "Construction execution on the 8.1 GW pipeline — repeating pattern of optimistic underwriting and impairments (DKK 50 billion cumulative 2023-2025)",
+    "Credit rating one notch above junk (BBB-) with FFO/debt at 13.9% vs S&P's 25% investment-grade floor",
+    "Residual US political risk and demonstrated vulnerability to regulatory/macroeconomic assumption failures",
+    "European auction pipeline deterioration — shut out of UK CfD Allocation Round 7 with zero awards while RWE won 6.9 GW",
+    "Insider CEO succession with no financial clawback and permanent structural discount from state ownership misalignment"
+  ],
+  "red_flags": [
+    "DKK 28.4 billion impairment in 2023 and additional DKK 15.6 billion in 2024 from a single geography (US)",
+    "ROIC of 1.67% against WACC of 7.4% — deeply sub-par, value-destroying capital allocation at the corporate level",
+    "Three successive credit downgrades from BBB+ to BBB- in three years",
+    "Reported net income zero or negative for multiple consecutive years — only adjusted earnings are meaningful",
+    "New CEO (Errboe) was Deputy CEO during the US expansion decisions; no clawback mechanism for those responsible",
+    "Business requires continuous capital markets access at scale — any credit deterioration creates acute funding risk"
+  ],
+  "buy_triggers": [
+    "Share price declines to DKK 100-110, providing genuine discount to base-case intrinsic value and shifting risk-reward to at least 3:1",
+    "2026 EBITDA delivered above DKK 28 billion guidance with no new construction impairments and S&P credit outlook revised to stable",
+    "Two or more major new European CfD contract awards in 2026 auctions confirming AR7 shutout was a pricing anomaly"
+  ],
+  "sell_triggers": [
+    "Any new impairment of DKK 5 billion or more on the 8.1 GW construction portfolio — confirms optimistic underwriting pattern has not been corrected",
+    "2026 EBITDA guidance revised materially downward, or any signal of an additional equity raise in 2026-2027",
+    "S&P downgrades Orsted to BB+ (sub-investment-grade), triggering forced bond selling and structurally higher funding costs"
+  ],
+  "valuation_summary": "At DKK 139, Orsted trades roughly at base-case fair value with an EV/EBITDA of ~9x on 2026 guidance; Morningstar's fair value of DKK 160 implies only ~15% upside while the discounted bear-case intrinsic value is DKK 62-91 per share, meaning the current price already sits above the pessimistic-but-plausible scenario with no meaningful margin of safety.",
+  "source_summary": "Analysis based on web search results covering Orsted annual reports 2024-2025, Q4 2025 investor presentations, S&P Global Ratings, Morningstar research, analyst price targets from multiple financial data providers, and company announcements through February 2026.",
+  "confidence": "low",
+  "change_notes": ""
+}

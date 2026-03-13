@@ -1,0 +1,54 @@
+{
+  "ticker": "KLAC",
+  "company": "KLA Corporation",
+  "analysis_date": "2026-03-12",
+  "verdict": "Pass",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "50–63% global market share in semiconductor process control — a near-monopoly position",
+    "Switching costs among the highest in semiconductor equipment; mid-node replacement is prohibitively costly",
+    "60%+ gross margins sustained through a full semiconductor cycle including the 2023 downturn",
+    "ROIC of 37–42% through full cycles; $3.7B+ annual FCF on only ~3% capex intensity",
+    "17 consecutive annual dividend increases at ~16% CAGR; $11B total buyback capacity as of March 2026",
+    "AI-enhanced defect classification flywheel compounds competitive advantage with installed base growth",
+    "Stress-test survivor: FCF remains positive and dividend sustainable even in a sustained 30% revenue decline"
+  ],
+  "key_risks": [
+    "WFE cycle downturn: semiconductor capex cycles are normal; prior corrections caused 40–55% stock drawdowns",
+    "China export controls: China was ~30% of FY2025 revenue ($3.6B); further U.S.-China tech decoupling is structural",
+    "Multiple compression: trailing P/E of ~43x is 93% above 10-year average; mean reversion alone implies 30–35% downside",
+    "Taiwan concentration: ~25–27% of revenue from Taiwan (TSMC); Taiwan Strait tail risk is extreme if realized",
+    "Chinese domestic competitors: state-backed NAURA and SMEE are funded to develop process control alternatives"
+  ],
+  "red_flags": [
+    "All three DCF scenarios (bear $500, base $850, bull $1,280) imply downside from current ~$1,465 price",
+    "Risk asymmetry is ~6:1 unfavorable: bear-case loss (~63%) vastly exceeds bull-case gain (~nil)",
+    "360% stock appreciation from end-2022 to early 2026 driven partly by P/E multiple expansion, not just earnings growth",
+    "Taiwan + China combined represent ~55–57% of revenue — both geographies carry elevated geopolitical risk",
+    "CEO insider ownership of only 0.017%; no publicly visible succession planning for 20-year CEO"
+  ],
+  "buy_triggers": [
+    "Price declines to ~$850–900 (base case DCF intrinsic value, ~40% below current price)",
+    "Price declines to ~$650–700 (genuine margin of safety entry, ~55% below current price)",
+    "Severe WFE cycle downturn causes panic selling below intrinsic value while moat remains structurally intact"
+  ],
+  "sell_triggers": [
+    "KLA loses a design-in at any leading-edge fab node (TSMC, Samsung, SK Hynix) to any competitor",
+    "China export controls expand to cover all KLA product categories, permanently removing >$2B annual revenue",
+    "EPS grows into valuation but stock still trades at 35x+ forward earnings in FY2028 or beyond — trim on multiple failure to compress"
+  ],
+  "valuation_summary": "At ~$1,465/share, KLAC trades at ~43x trailing P/E and ~34x forward P/E — roughly double its 10-year historical average of ~22x; all three DCF scenarios (bear $500, base $850, bull $1,280) imply downside from the current price, with the probability-weighted intrinsic value approximately ~$860, suggesting ~41% downside; a genuine margin-of-safety entry requires a price of approximately $650–700.",
+  "source_summary": "Analysis based on web search results from March 2026, KLA Corporation IR press releases (FY2025 Q4 earnings, March 2026 Investor Day), KLA Q2 FY2026 10-Q, MacroTrends, GuruFocus, StockAnalysis, and PortfoliosLab; all financial data is current as of March 12, 2026 with FY2025 figures for the fiscal year ended June 30, 2025.",
+  "confidence": "high",
+  "change_notes": ""
+}

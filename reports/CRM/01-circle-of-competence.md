@@ -1,8 +1,8 @@
 # Circle of Competence — CRM
 
 **Analyst Role:** Business Clarity Analyst
-**Date:** 2026-03-10
-**Data Sources:** Web search results (Salesforce investor relations press releases Q4 FY2026, Macrotrends, Backlinko, Statista, Bullfincher segment data); training knowledge for business model context. FY2026 full-year results reported February 25, 2026. Segment revenue figures from FY2025 (ended January 31, 2025) — the most recently available full-year breakdown.
+**Date:** 2026-03-12
+**Data Sources:** Web search results (Salesforce investor relations press releases Q4 FY2025 and Q4 FY2026, Q3 FY2026 press release December 2025, Macrotrends, Backlinko, Statista, Bullfincher segment data, Futurum Group Q3 FY2026 analysis); training knowledge for business model context. FY2026 full-year results reported February 25, 2026. Segment revenue figures from FY2025 (ended January 31, 2025) — the most recently available full-year breakdown.
 
 ## Key Findings
 
@@ -10,7 +10,7 @@
 |---|---------|-------------------|
 | 1 | Salesforce generated $41.5 billion in total revenue in FY2026 (ended January 31, 2026), up 10% year-over-year, with subscription and support comprising roughly 94% of revenue. | 5 |
 | 2 | Revenue is distributed across five cloud segments: Service Cloud ($9.1B in FY2025), Sales Cloud ($8.3B), Platform & Other ($7.2B), Integration & Analytics ($5.8B), and Marketing & Commerce ($5.3B) — no single segment exceeds 25% of total revenue. | 4 |
-| 3 | Agentforce (AI agent platform) reached approximately $540 million in ARR by Q3 FY2026, with 29,000 deals closed in its first 15 months — a new and meaningful revenue layer now forming on top of the legacy subscription base. | 4 |
+| 3 | Agentforce (AI agent platform) reached approximately $540 million in standalone ARR by Q3 FY2026 (29,000+ deals); combined Agentforce and Data Cloud ARR was $1.4B — up 114% YoY — a new and meaningful revenue layer forming on top of the legacy subscription base. | 4 |
 | 4 | Salesforce sells exclusively to businesses (B2B), predominantly large enterprises, under multi-year subscription contracts — making revenue highly predictable and sticky. | 5 |
 | 5 | The company has grown revenue from approximately $17B in FY2020 to $41.5B in FY2026, a compound growth rate of roughly 16%, while simultaneously expanding free cash flow margin from low-teens to 32%. | 4 |
 | 6 | 50% of new Agentforce and Data 360 bookings came from existing customers expanding their subscriptions, confirming a land-and-expand motion that is core to the revenue model. | 3 |

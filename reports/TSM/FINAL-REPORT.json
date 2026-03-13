@@ -1,0 +1,52 @@
+{
+  "ticker": "TSM",
+  "company": "Taiwan Semiconductor Manufacturing Company",
+  "analysis_date": "2026-03-07",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "72% global foundry market share and 90%+ at leading-edge nodes with no viable alternative",
+    "Exceptional economics: 49% ROIC, 60% gross margins, $31B free cash flow in 2025",
+    "Fortress balance sheet: $95B cash, $31B debt, 0.34x debt-to-EBITDA, AA-/Aa3 ratings",
+    "Decade-wide moat through mutually reinforcing technology leadership, switching costs, and ecosystem lock-in",
+    "Disciplined management: near-zero dilution, no empire-building M&A, 28% dividend increase"
+  ],
+  "key_risks": [
+    "Geopolitical concentration: 90%+ of advanced chip production on Taiwan, 100 miles from China — existential, unhedgeable tail risk",
+    "Valuation demands near-perfect execution: 34x trailing P/E (53% above 10-year average), base-case DCF ~$290 vs ~$339 market price",
+    "AI spending concentration: HPC grew to 58% of revenue; NVIDIA alone is 19% — cyclical demand cliff risk if hyperscaler capex slows",
+    "Record capex ($52-56B in 2026, $165B Arizona commitment) creates overcapacity risk if demand disappoints",
+    "Overseas fabs cost 30-50% more than Taiwan equivalents, creating structural margin pressure as geographic diversification grows"
+  ],
+  "red_flags": [
+    "Warren Buffett sold entire TSM position within six months specifically due to geopolitical risk",
+    "Upside-to-downside asymmetry approximately 1:1 (bull ~$450-500, bear ~$160-260) — far short of 2-3x required",
+    "Minimal insider ownership means management personal wealth not deeply at risk",
+    "Japan fab losses tripled to NT$9.8B in 2025",
+    "Trailing P/E 53% above 10-year historical average"
+  ],
+  "buy_triggers": [
+    "Forward P/E compresses below 20x (~$260/ADR) on market-wide or sector pullback while business thesis remains intact",
+    "Meaningful geopolitical de-escalation across the Taiwan Strait (diplomatic breakthrough, sustained reduction in military activity)",
+    "Arizona 2nm fabs reach yields and cost parity within 20% of Taiwan operations"
+  ],
+  "sell_triggers": [
+    "Taiwan Strait crisis moves from theoretical to operational — military mobilization, naval blockade, or sustained disruption to shipping lanes",
+    "Samsung or Intel closes yield gap at leading-edge nodes to within 10 percentage points of TSMC",
+    "AI capex spending by hyperscalers declines for two consecutive quarters while TSMC is mid-ramp on record capacity expansion"
+  ],
+  "valuation_summary": "Base-case DCF yields approximately $290/ADR versus a ~$339 market price, offering no margin of safety; at 34x trailing earnings (53% above the 10-year average of 22x), the stock requires roughly 20% annual earnings growth through 2030 just to deliver a 10% annualized return.",
+  "source_summary": "Analysis based on web searches conducted 2026-03-07 covering TSMC Q4 2025 earnings, FY2025 financials, foundry market share data, technology roadmap updates, and geopolitical risk analyses from TSMC investor relations, Investing.com, CNBC, TrendForce, and other sources.",
+  "confidence": "high",
+  "change_notes": ""
+}

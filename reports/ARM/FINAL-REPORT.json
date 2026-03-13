@@ -1,0 +1,52 @@
+{
+  "ticker": "ARM",
+  "company": "Arm Holdings plc",
+  "analysis_date": "2026-03-10",
+  "verdict": "Pass",
+  "average_score": 5.25,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 8,
+    "management": 4,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 2,
+    "margin_of_safety": 2,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "97% gross margins and accelerating operating leverage from Armv9/CSS royalty step-up",
+    "30-year ecosystem moat: 22M developers, every major OS and toolchain optimized for ARM",
+    "Powers 99% of smartphones and ~50% of hyperscaler data center CPUs",
+    "Fortress balance sheet: ~$2.5B net cash, ~5x current ratio, zero financial debt",
+    "Structural royalty rate expansion via Armv9 (~5% of ASP) and CSS (>10% of ASP)"
+  ],
+  "key_risks": [
+    "Valuation embeds 25-28% revenue CAGR for five years with no margin for error; 50-60% downside on multiple reversion alone",
+    "China revenue (~19% of FY2025 revenue) growing only 7.5% YoY amid active RISC-V promotion by Chinese government",
+    "RISC-V institutional momentum: 20B+ deployed cores, Qualcomm acquired Ventana Micro Systems, Meta integrating RISC-V into MTIA v3",
+    "SoftBank 87% control exempts ARM from Nasdaq independence requirements; annual SBC of $700M-$1B+ dilutes public shareholders",
+    "ARM's undisclosed chip-building pivot risks trust with major licensees who may accelerate RISC-V investment in response"
+  ],
+  "red_flags": [
+    "SoftBank 87% ownership with CEO Haas on SoftBank board — direct conflict of interest",
+    "Annual SBC of $700M-$1B+ (15-20% of revenue) with no stated plan to reduce",
+    "Chip-building pivot disclosed via press leaks rather than investor communications",
+    "Failed Qualcomm litigation pursued and lost",
+    "GAAP FCF collapsed to $178M in FY2025 despite exceptional IP economics"
+  ],
+  "buy_triggers": [
+    "Price corrects to $55-80 range (30-40% discount to base-case DCF of $65-85/share)",
+    "SBC as percentage of revenue declines below 10% for two consecutive fiscal years",
+    "ARM China returns to double-digit revenue growth with no new RISC-V licensing announcements from major Chinese OEMs"
+  ],
+  "sell_triggers": [
+    "China revenue declines year-over-year for any single quarter",
+    "Non-GAAP operating margins fall below 35% (down from ~41% in Q3 FY2026)",
+    "SoftBank announces plans to monetize any significant portion of its ~87% stake via secondary offering"
+  ],
+  "valuation_summary": "All credible DCF models cluster at $22-70/share (base case $65-85/share); at ~$124/share (~$130B market cap) the stock is priced for 25-28% revenue CAGR over five years with zero margin for error, representing 40-80% overvaluation and a loss-to-gain ratio of approximately 2-3x unfavorable.",
+  "source_summary": "Analysis draws on ARM Q3 FY2026 earnings releases and transcripts, ARM FY2025 Annual Report, StockAnalysis, GuruFocus, Alpha Spread, MacroTrends, Simply Wall St, TIKR, Morningstar, and multiple analyst consensus sources; financials current through Q3 FY2026 (quarter ended December 31, 2025).",
+  "confidence": "medium",
+  "change_notes": ""
+}

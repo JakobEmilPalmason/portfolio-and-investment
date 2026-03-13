@@ -1,0 +1,54 @@
+{
+  "ticker": "RKLB",
+  "company": "Rocket Lab Corporation",
+  "analysis_date": "2026-03-10",
+  "verdict": "Pass",
+  "average_score": 3.9,
+  "umbrella_scores": {
+    "circle_of_competence": 6,
+    "competitive_advantage": 5,
+    "management": 5,
+    "business_economics": 3,
+    "balance_sheet": 5,
+    "valuation": 2,
+    "margin_of_safety": 2,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "World's most-flown small-lift rocket outside SpaceX: 75+ Electron missions, 21 launches in 2025 at 100% mission success rate",
+    "Vertically integrated space company with launch, satellite manufacturing, and components under one roof — rare competitive position",
+    "Strong backlog visibility: $1.85B backlog (+73% YoY), ~3x annual revenue, with multi-year SDA government contracts anchoring Space Systems",
+    "Record FY2025 revenue of $602M (+38% YoY) with GAAP gross margin expanding to 38% in Q4 2025",
+    "Founder-led with candid operator: Peter Beck discloses failures plainly and communicates engineering reality without spin"
+  ],
+  "key_risks": [
+    "Neutron program failure or continued delay: already slipped to Q4 2026 after stage-1 tank test failure; 30-40% probability of further setback with catastrophic valuation impact",
+    "Multiple compression risk: trading at 66x trailing revenue (top 3-4% most expensive in global A&D); any sentiment shift or guidance miss could reset share price to $22-25",
+    "Government contract concentration: SDA Tranche 3 ($816M) represents 44% of backlog; any scope cut or cancellation would materially impair forward revenue",
+    "SpaceX structural competitive pressure: Transporter rideshare at $5,500/kg vs. Electron's ~$25,000/kg permanently limits commercial market; Falcon 9 dominates medium-lift that Neutron targets",
+    "Capital markets dependency: burns $300-400M/year in FCF with no self-funding capability; survival through 2029 depends on continued access to equity and debt markets"
+  ],
+  "red_flags": [
+    "ROIC deeply negative (-30%) across entire public operating history — no demonstrated capital efficiency",
+    "FY2025 FCF of -$321M is an acceleration from -$103M in FY2024, not improvement",
+    "SBC running ~30% of trailing revenue — among the highest in aerospace sector, ongoing shareholder dilution",
+    "CEO Peter Beck sold hundreds of millions in stock throughout 2025 at elevated prices, reducing direct ownership",
+    "Neutron development cost overrun: original $250-300M budget exceeded at ~$360M cumulative through 2025 with first launch still a year away",
+    "SDA single-customer concentration: one program represents ~44% of $1.85B backlog",
+    "Q4 2025 raised $280.6M via ATM equity offering — further diluting shareholders to fund operations"
+  ],
+  "buy_triggers": [
+    "Stock declines to $25-35 range, where bear-case intrinsic value begins to offer protection and risk/reward inverts to ~2-3x upside vs. 30-40% downside",
+    "Neutron successfully completes first orbital flight, establishing reliability track record and de-risking the primary thesis before valuation fully re-rates",
+    "GAAP gross margin reaches and sustains 40%+ for two consecutive quarters while quarterly FCF burn narrows toward $50M, demonstrating core business approaching self-funding"
+  ],
+  "sell_triggers": [
+    "Neutron suffers first- or second-flight failure extending commercial timeline by two or more years, eliminating medium-lift market entry and triggering cash-burn crisis",
+    "SDA Tranche 3 contract cancelled, significantly reduced in scope, or delayed more than 18 months due to government budget pressure",
+    "RKLB reaches $120-140/share without achieving GAAP profitability — valuation premium becomes indefensible on any fundamental framework"
+  ],
+  "valuation_summary": "At $69.70/share (~$40B market cap, 66x trailing revenue), today's price requires Neutron to successfully launch, ramp to commercial cadence, and drive revenue to $10B+ over 15 years at 15%+ net margins — a conjunction of five demanding assumptions that must all hold simultaneously. Bear-case intrinsic value of $20-35/share implies 50-70% downside, while realistic bull-case upside is only 30-43%, creating a 2:1 to 3:1 downside-to-upside ratio that is the inverse of sound investment logic.",
+  "source_summary": "Analysis based on web search results (Feb-Mar 2026), Rocket Lab Q4 2025 earnings release (Feb 26, 2026), Q3 2025 earnings release, SEC filings, MacroTrends/GuruFocus/StockAnalysis financial data, and insider transaction disclosures; no user-provided context files were present.",
+  "confidence": "medium",
+  "change_notes": ""
+}

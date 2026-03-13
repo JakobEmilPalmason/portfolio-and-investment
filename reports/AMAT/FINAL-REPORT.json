@@ -1,0 +1,53 @@
+{
+  "ticker": "AMAT",
+  "company": "Applied Materials Inc.",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 6,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Morningstar wide-moat designation; unique portfolio breadth across deposition, etch, and process control — no competitor matches all three",
+    "Best-in-25-year non-GAAP gross margins of 48.8% with ROIC of 27-34% — structurally elite for an industrial-technology company",
+    "Near-fortress balance sheet: net cash of $1.9B, 32x interest coverage, Altman Z-Score 9.74",
+    "Nearly 90% of FCF returned to shareholders over the past decade with consistent share count reduction (~8.5% over 3 years)",
+    "Growing $6.4B+ annual recurring AGS revenue base (2/3 from subscriptions) that floors earnings through capex downturns",
+    "Severe switching costs at leading-edge nodes — re-qualification costs millions and takes months, making customer defection economically irrational"
+  ],
+  "key_risks": [
+    "China export restriction escalation: revenue already collapsed from ~40% to ~25% of systems revenue; further BIS restrictions could cut EPS 30%+",
+    "AI capex cycle normalization: WFE demand relies on hyperscaler spend continuing; a plateau in 2027-2028 flows through to equipment orders with 12-18 month lag",
+    "Semiconductor equipment cycle trough: 2-4 year peak-to-trough cycles regularly produce 40-55% stock drawdowns even when the business is intact",
+    "Customer concentration: TSMC, Samsung, SK Hynix, Intel represent ~50-60% of WFE spend; Samsung and Intel are both currently in strategic difficulty",
+    "Thin price margin of safety: stock at or above base-case intrinsic value (~$123-130) with unfavorable 0.4:1 upside/downside ratio at ~$150"
+  ],
+  "red_flags": [
+    "Price trades above base-case intrinsic value; upside/downside ratio ~0.4:1 is well below the 2-3x Buffett threshold",
+    "China revenue structural loss (~40% to ~25% in two years) is not a temporary headwind — export restrictions appear permanent",
+    "Beta 1.69 and historical max drawdown 85%; cycle drawdowns of 55-76% are normal operating experience",
+    "$253M BIS export controls settlement in Q1 FY2026 confirms ongoing compliance risk",
+    "CEO insider ownership ~0.16% — management incentive is compensation structure, not equity co-ownership"
+  ],
+  "buy_triggers": [
+    "Stock declines to $110-120/share with business thesis intact (cycle/market driven, not fundamental), improving upside/downside ratio to ~1.5:1 or better",
+    "AI-driven WFE demand demonstrably absorbs China revenue loss faster than consensus — SEMI book-to-bill turns strongly positive and TSMC N2/A16 ramp accelerates",
+    "China restriction fears cause temporary overreaction below intrinsic value while non-China customer base is growing"
+  ],
+  "sell_triggers": [
+    "US BIS export restrictions expand to cover all Chinese customers, permanently eliminating China revenue recovery and cutting EPS by 30%+",
+    "AMAT loses meaningful deposition market share at gate-all-around node transition to a competitor (evidenced by customer qualification data)",
+    "Operating margins compress sustainably below 24%, indicating genuine pricing power erosion rather than temporary R&D investment"
+  ],
+  "valuation_summary": "At ~$150/share (forward P/E ~16-17x on FY2026E EPS of ~$8.80), AMAT sits above its base-case intrinsic value of ~$123-130/share and below the bull-case of ~$183; the bear-case DCF yields ~$69/share implying 54% downside, and the stock does not offer a meaningful margin of safety at current prices — a compelling entry requires a decline to $110-120.",
+  "source_summary": "Analysis based on Applied Materials Q4 FY2025 and Q1 FY2026 earnings releases, SEC 10-K FY2025, GuruFocus, MacroTrends, StockAnalysis, Yahoo Finance, PortfoliosLab, Morningstar, and multiple independent research sources as of March 2026; all data current as of report date.",
+  "confidence": "medium",
+  "change_notes": ""
+}

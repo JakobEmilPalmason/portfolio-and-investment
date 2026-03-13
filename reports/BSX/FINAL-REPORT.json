@@ -1,0 +1,53 @@
+{
+  "ticker": "BSX",
+  "company": "Boston Scientific Corporation",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "FARAPULSE holds ~58% PFA market share with multi-year procedural adoption tailwind as global PFA penetration targets 80% by 2028",
+    "WATCHMAN is the dominant LAA closure device growing 35% annually against a 5M underpenetrated patient TAM",
+    "$3.66B free cash flow in 2025 (80% FCF conversion) on $20.1B revenue — a cash engine that services debt and funds M&A",
+    "70%+ gross margins and 28% adjusted operating margins expanding 100 bps/year demonstrate durable pricing power",
+    "Multi-dimensional moat: physician switching costs, 15+ years WATCHMAN clinical data, integrated AF ecosystem (ablate + close LAA)",
+    "Investment-grade (A-) balance sheet with 16.5x interest coverage and $5B liquidity; resilient to 30% revenue shock"
+  ],
+  "key_risks": [
+    "Active securities fraud class action filed March 2026 alleging management concealed EP growth unsustainability — settlement exposure $800M–$1.5B",
+    "FARAPULSE market share eroding from ~58% to guided ~48% as J&J Varipulse, Medtronic PulseSelect, and Abbott Volt scale",
+    "$14.5B Penumbra acquisition (funded by $6B term loan) is the largest in BSX history; integration alongside Axonics adds execution risk",
+    "No price margin of safety: stock at ~$69 prices in the base case DCF (~$68) with the bear-case floor at ~$45",
+    "GAAP EPS ($1.94) substantially below adjusted EPS ($3.06) due to $1.5B+ intangible amortization — serial acquirer ROIC obscured"
+  ],
+  "red_flags": [
+    "Securities fraud class action filed March 2026 — multiple law firms, lead plaintiff deadline May 4, 2026",
+    "Stock at new 12-month low in early March 2026; negative price momentum signals continued institutional selling",
+    "ACURATE neo2 TAVI discontinued and AXIOS GI franchise headwind cited in Q1 2026 guidance",
+    "Penumbra deal adds $6B term loan to existing $12B gross debt; leverage spikes before FCF deleverages it",
+    "CEO insider sales of $16.4M in late 2025 while executing a transformational acquisition"
+  ],
+  "buy_triggers": [
+    "Stock trades to ~$50–55 (bear-case intrinsic value range), providing 30%+ discount to base-case intrinsic value",
+    "Q1 2026 earnings confirm FARAPULSE U.S. revenue growth stabilizing at 15%+ with share above 45%",
+    "Securities fraud class action dismissed at motion-to-dismiss stage, removing the primary litigation tail risk"
+  ],
+  "sell_triggers": [
+    "EP revenue growth falls below 10% for two consecutive quarters with management acknowledging structural share loss to Abbott Volt or Medtronic PulseSelect",
+    "Securities fraud litigation proceeds to trial without dismissal and claimed damages exceed $1.5B",
+    "Full-year organic revenue growth guidance revised below 8%, confirming deceleration more severe than guided"
+  ],
+  "valuation_summary": "At ~$69/share (~$104B market cap), BSX trades at the base-case DCF (~$68), implying 10% organic growth decelerating to 7–8% by 2030 — fairly valued with no margin of safety; bear-case floor is ~$45 (EP share erosion + litigation costs $1B+), bull-case is ~$93 (EP leadership retained, litigation resolved favorably).",
+  "source_summary": "Analysis based on Q4/FY2025 earnings release (Feb 4, 2026), Investor Day 2025 slides/transcript, GuruFocus financial metrics, MacroTrends historical data, SEC filings, S&P rating agency reports, and securities class action filings (March 2026); all data current as of March 12, 2026.",
+  "confidence": "medium",
+  "change_notes": ""
+}

@@ -1,0 +1,52 @@
+{
+  "ticker": "CRM",
+  "company": "Salesforce Inc.",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 6.75,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 6,
+    "valuation": 7,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "12 consecutive years of global CRM market leadership at ~21% share — triple Microsoft's 6% — with a wide switching-cost moat that is structural, not execution-dependent",
+    "$14.4B annual free cash flow at 35% FCF margin from 94% recurring subscription revenue on near-zero capex intensity",
+    "$72.4B in contracted remaining performance obligations providing extraordinary forward revenue visibility",
+    "Agentforce AI platform at $800M ARR (+169% YoY) opening a potential consumption-based third revenue engine on top of the core subscription base",
+    "Demonstrated operating leverage: GAAP operating income grew ~8x from FY2023 to FY2026 on only 32% revenue growth"
+  ],
+  "key_risks": [
+    "Agentforce fails to achieve material monetization — plateaus below $2B ARR, collapsing the entire re-rating thesis and leaving the compressed 15x FCF multiple permanently justified",
+    "Debt-funded buyback timing risk: $25B ASR launched near $185–198; if stock falls to $140–150 the buyback destroys value while $800M–$1.1B in annual interest expense is now permanent",
+    "Microsoft Dynamics + Copilot bundling erodes new customer acquisition over a 3–5 year horizon — a structural pricing advantage Salesforce cannot replicate",
+    "Revenue growth permanently in 8–10% range with no re-acceleration, keeping the multiple compressed and delivering mediocre returns even with buyback support",
+    "SBC dilution of ~$8B annually (~19% of revenue) is a real persistent cost; if buyback pace slows post-ASR completion, net dilution resumes"
+  ],
+  "red_flags": [
+    "Slack acquisition ($27.7B, 2021) has not demonstrated proportional revenue payback — standalone revenue undisclosed, making payback assessment impossible",
+    "Post-2023 capital allocation discipline was externally imposed by activist investors (Starboard, Elliott), not voluntarily adopted",
+    "March 2026 $20–25B bond offering transforms balance sheet from near-net-cash to ~$21–26B net debt — Moody's downgraded to A2 and S&P outlook negative",
+    "Benioff executing 87 insider sales under 10b5-1 plan while simultaneously framing the stock as cheap and announcing largest buyback in company history",
+    "Bear-case intrinsic value of ~$125 means stock is 57% above downside scenario at $198 — no price margin of safety in bear case"
+  ],
+  "buy_triggers": [
+    "Stock declines to $155–165 (P/FCF below 12x), where bear case is approximately break-even and base/bull cases offer 45–140% upside",
+    "Agentforce ARR crosses $1.5B by end of FY2027 (Q1 FY2028 earnings), confirming product-market fit at scale and validating the re-acceleration thesis",
+    "Non-GAAP operating margin reaches 35%+ in any quarterly print, confirming FCF growth trajectory and Rule of 50 framework achievability"
+  ],
+  "sell_triggers": [
+    "Agentforce ARR fails to reach $1.5B by end of FY2027 with no credible path to $3B+ — re-rating catalyst is off the table",
+    "Two consecutive quarters of revenue guidance cuts below 8% growth — signals structural deceleration beyond thesis assumptions",
+    "Net debt exceeds $25B with no credible FCF path to deleveraging within 3 years, or an acquisition above $5B is announced"
+  ],
+  "valuation_summary": "At ~$198/share, CRM trades at ~15x FY2026 FCF of $14.4B — a steep discount to its own 3-year average of 30–45x and SaaS peers at 25–50x. Base-case intrinsic value is ~$239 (+21% upside); bull case ~$396 (+100%); bear case ~$125 (-37%). Probability-weighted expected value at 40/40/20 bear/base/bull weighting is approximately $192 — roughly in line with current price, meaning the market has the distribution approximately right. The $25B debt-funded ASR adds ~$800M–$1.1B in permanent annual interest expense and reduces financial flexibility but also retires ~8–10% of shares at today's price.",
+  "source_summary": "Analysis based on web search results covering Salesforce Q4 FY2026 earnings (released February 25, 2026), Bloomberg/Investing.com coverage of the March 10–11 bond offering, Salesforce investor relations, MacroTrends, StockAnalysis, GuruFocus, Morningstar (Wide Moat rating), IDC CRM market share data, SEC EDGAR proxy filings, and GuruFocus insider trading data. All financial figures are from the official FY2026 Q4 earnings release unless otherwise noted. Post-bond-offering balance sheet estimates are based on Bloomberg reporting as of March 12, 2026 (offering not yet closed).",
+  "confidence": "medium",
+  "change_notes": "Updated from 2026-03-10 report. Key score changes from prior run: Balance Sheet lowered from 8 to 6 (reflects March 2026 $20–25B bond offering announced after prior report date); Valuation raised from 6 to 7 (reflects more precise FCF-based scenario analysis with post-ASR share count); Temperament raised from 6 to 7 (reflects clearer thesis milestone framework and catalyst timeline). Net average score unchanged at 6.75. Verdict unchanged at Watch."
+}

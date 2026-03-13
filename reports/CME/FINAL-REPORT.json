@@ -1,0 +1,54 @@
+{
+  "ticker": "CME",
+  "company": "CME Group Inc.",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 7.4,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 9,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World's largest derivatives exchange with irreplaceable liquidity network effects — two-sided market self-reinforces against all competitors",
+    "Exceptional economics: 65% GAAP operating margin, near-100% FCF conversion, $83.5M capex on $6.5B revenue",
+    "Fortress balance sheet: net cash positive ($4.6B cash vs. $3.4B debt), 24x interest coverage, Aa3/AA- rated",
+    "Moat stress-tested: FMX volume collapsed >two-thirds during April 2025 tariff volatility as traders reverted to CME liquidity",
+    "~$20B cross-margining capital savings for clients creates profound switching costs that make competitor migration economically irrational",
+    "Four consecutive years of record revenue and adjusted EPS; 14.7% annualized 10-year return vs. 10.9% for S&P 500",
+    "One of the lowest-beta large-caps (~0.28) — genuine portfolio diversification benefit"
+  ],
+  "key_risks": [
+    "Sustained low-volatility macro regime (Likelihood: 30%): prolonged Fed stability would reduce interest rate derivatives volumes 20-30%, compressing earnings against fixed cost base",
+    "Valuation multiple compression (Likelihood: 40%): at 3.7% FCF yield, rising bond yields increase opportunity cost and could compress multiples 10-20% with no fundamental deterioration",
+    "FMX competitive erosion in rate futures (Likelihood: 20%): major-bank-backed competitor remains operational and could resume gaining share in SOFR/Treasury futures",
+    "Governance friction: persistent say-on-pay failures (ISS/Glass Lewis recommending against in multiple cycles), combined Chairman/CEO structure, CEO net selling of shares",
+    "Google Cloud migration execution risk: multi-year infrastructure transition creates operational vulnerability window"
+  ],
+  "red_flags": [
+    "Margin of safety score 4/10 — price offers no meaningful discount to base-case intrinsic value at $314",
+    "Analyst consensus price target ($260-$286) is 9-17% below current stock price",
+    "Upside/downside ratio below 1:1: bear downside (~38%) as large as bull upside (~40%) with unfavorable base-case probability weighting",
+    "Persistent say-on-pay failures with less than one-third approval in 2023 cycle; ISS and Glass Lewis both recommend against",
+    "CEO Terry Duffy net seller of 55,000 shares over past year with no purchases; combined Chairman/CEO role"
+  ],
+  "buy_triggers": [
+    "Stock retraces to $220-$250 (~20-30% below current), establishing genuine discount to base-case intrinsic value",
+    "Renewed Fed rate cycle (rate hikes or cuts after pause) drives ADV acceleration and earnings beats with modest price pullback restoring margin of safety",
+    "Crypto derivatives revenue reaches 10%+ of total revenue, signaling structural growth re-rating not in consensus estimates"
+  ],
+  "sell_triggers": [
+    "FMX or competitor captures >10% open interest in CME US rate futures complex over any 24-month window — moat fracture signal in the half of revenue dependent on rates",
+    "Three consecutive quarters of ADV decline not attributable to cyclical low-volatility environment — structural vs. cyclical volume deterioration",
+    "Valuation extreme: stock reaches P/owner-earnings above 35x (~$400+) in absence of accelerating underlying growth"
+  ],
+  "valuation_summary": "At ~$314, CME trades at ~27.7x P/owner-earnings and ~19.5x EV/EBITDA — modestly above its 10-year median of 17.9x; base-case perpetuity intrinsic value is approximately $270-$310, placing the stock at or slightly above fair value with no meaningful margin of safety; a buyer requires ~5-6% annual earnings growth in perpetuity to justify today's price, while bear-case DCF at $155 implies 51% downside if the macro environment shifts structurally toward sustained low volatility.",
+  "source_summary": "Analysis is based on CME Group's FY2025 earnings press release (February 2026), Q4 2025 and Q4 2024 press releases, SEC proxy filings, Moody's and S&P credit rating affirmations (May 2025), GuruFocus ROIC/EV/EBITDA data, MacroTrends margin history, StockAnalysis.com, analyst consensus from FinancialContent/Barchart, and web searches for competitive data on FMX; all fundamental data is current as of February 2026 with stock price as of March 2026.",
+  "confidence": "high",
+  "change_notes": ""
+}

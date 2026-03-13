@@ -1,0 +1,52 @@
+{
+  "ticker": "ASML",
+  "company": "ASML Holding N.V.",
+  "analysis_date": "2026-03-10",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 10,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 9,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Complete monopoly on EUV lithography — sole supplier of machines required to manufacture every advanced chip on earth",
+    "27% ROIC, 51–53% gross margins, and €11B in free cash flow sustained across semiconductor cycles",
+    "€38.8B order backlog (~1.2x annual revenue) with EUV capacity fully booked through 2027",
+    "Fortress balance sheet: net cash ~€10B+, Debt/EBITDA below 0.3x, A1 credit rating",
+    "30-year technology lead embedded in physics, supplier ecosystems, and customer process dependencies — no credible rival before 2028–2030"
+  ],
+  "key_risks": [
+    "China DUV export ban risk: China was ~25–30% of 2025 revenue; a blanket ban would remove ~€8B annually with no near-term substitute",
+    "Valuation compression: stock trades at ~48–52x trailing earnings, 40–45% above 10-year historical average P/E of 36x",
+    "Semiconductor capex cycle downturn: correlated cuts by TSMC, Samsung, and Intel would compress order intake sharply beyond the 12–18 month backlog buffer",
+    "High-NA EUV ramp execution risk: margin expansion thesis depends on adoption scaling to 20+ units/year by 2027; any delay would hit revenue and margins",
+    "Geopolitical tail risk: TSMC (~33% of EUV demand) exposure to Taiwan Strait disruption; China rare-earth supply controls add supply-side vulnerability"
+  ],
+  "red_flags": [
+    "Customer concentration extreme: ~60–75% of revenue from three customers (TSMC, Samsung, Intel); TSMC capex pause would be immediately painful",
+    "China revenue structurally declining due to export restrictions; must be replaced by growth elsewhere",
+    "Stock rose ~50% in 2025; momentum-driven positioning increases risk of sharp sentiment-driven reversals",
+    "High correlation with AI/semiconductor theme adds portfolio concentration risk rather than diversification",
+    "China EUV prototype development reported December 2025 — earlier-stage than feared but warrants monitoring through 2026–2028"
+  ],
+  "buy_triggers": [
+    "Price declines 30–40% to approximately $950–1,050 (NASDAQ), bringing forward P/E to ~28–32x and creating a plausible base-case return of 8–12% annually",
+    "Semiconductor capex downturn creates a sentiment-driven drawdown with no change to ASML's monopoly position or long-term demand trajectory",
+    "China DUV risk formally clarified and priced in (e.g., blanket ban announced, stock re-rates to €700–800/share, remaining ~75% of revenue revalued on its own merits)"
+  ],
+  "sell_triggers": [
+    "Blanket DUV export ban materializes AND TSMC or Samsung simultaneously reduces EUV capex guidance by more than 20% — breaking the thesis from both sides",
+    "ASML moat shows credible deterioration: Chinese EUV prototype achieves yields above 50% on sub-10nm nodes, or High-NA EUV adoption stalls with shipment guidance cut below 20 units/year by 2027",
+    "Stock trades above 60x forward earnings while ASML's 2030 revenue trajectory is tracking the bull case — multiple pricing near-perfection on already-optimistic execution"
+  ],
+  "valuation_summary": "Conservative intrinsic value estimates land at €500–800/share versus a current price of ~€1,260/share (~$1,368 NASDAQ); the base case barely justifies today's price and only the bull case produces meaningful upside, with bear-case downside of 55–60% and no margin of safety at current levels.",
+  "source_summary": "Analysis based on web search results (January–March 2026) including ASML Q4 2025 press release, ASML investor relations, MacroTrends, StockAnalysis, Morningstar, GuruFocus, analyst price targets from MarketBeat/TipRanks, and China export control news coverage; training knowledge used for technical and governance context.",
+  "confidence": "high",
+  "change_notes": ""
+}

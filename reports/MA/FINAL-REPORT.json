@@ -1,0 +1,51 @@
+{
+  "ticker": "MA",
+  "company": "Mastercard Incorporated",
+  "analysis_date": "2026-03-12",
+  "verdict": "Own",
+  "average_score": 8.25,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 10,
+    "management": 8,
+    "business_economics": 10,
+    "balance_sheet": 9,
+    "valuation": 6,
+    "margin_of_safety": 6,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Two-sided network moat entrenched across 200+ countries with 50+ years of compounding — unreplicable without pre-existing global scale",
+    "44%+ ROIC sustained over a decade; 56%+ operating margins consistent across recessions and regulatory headwinds",
+    "Capital-light toll-road model: $1.2B capex against $17.6B operating cash flow; zero credit risk on own balance sheet",
+    "Escalating buyback program ($9B → $11B → $12B → $14B successive authorizations) returning nearly all FCF to shareholders",
+    "Value-Added Services segment (38% of revenue, growing 26% in 2025) deepens network stickiness and diversifies revenue away from pure volume"
+  ],
+  "key_risks": [
+    "Two active merchant swipe-fee jury trials in April and September 2026; adverse verdicts could force sustained interchange rate cuts reducing revenue 10–15%",
+    "DOJ debit-card antitrust probe open; London CAT ruled in June 2025 that multilateral interchange fees violated EU competition law",
+    "Government-mandated real-time A2A payment rails (UPI, Pix, FedNow) could structurally displace card volume in key markets",
+    "Base case intrinsic value ~$530–$550 is barely above the current ~$522 price — no price margin of safety for new entrants",
+    "High correlation with Visa means regulatory pressure hits both simultaneously, offering no competitive refuge within the duopoly"
+  ],
+  "red_flags": [
+    "Price margin of safety is effectively zero at current entry — base case fair value and market price are coincident",
+    "Upside/downside asymmetry is approximately 1:1 at $522 — ~25–30% upside vs ~30–35% downside",
+    "2025 OCF ($11.7B in earnings release) appears inconsistent with 2024 ($17.6B) — reporting definition discrepancy should be verified against 10-K",
+    "Debt-to-equity ~245–281% is buyback-driven but will mechanically worsen as repurchases continue shrinking the equity base"
+  ],
+  "buy_triggers": [
+    "Price pulls back to $420–$460, providing a genuine 15–20% price margin of safety consistent with business quality",
+    "Favorable resolution of 2026 merchant litigation trials removes regulatory overhang and creates re-rating catalyst toward 35–38x earnings",
+    "Sustained FCF growth of 13–15%+ in 2025–2026 results validates the bull case and justifies adding to existing position"
+  ],
+  "sell_triggers": [
+    "US or EU ruling permanently caps card interchange at or below the EU's current 0.3% rate, structurally impairing core revenue yields and margins",
+    "DOJ debit probe concludes with structural network separation remedy, severing a major revenue stream",
+    "Valuation returns to 40–45x earnings without a step-change in growth — trim back toward minimal core position"
+  ],
+  "valuation_summary": "Base case DCF intrinsic value is ~$530–$550/share (9% discount rate, 12% FCF growth for 5 years, 25x terminal multiple), essentially coincident with the current price of ~$522; bull case at 13–15% growth reaches $650–$680 (~27% upside) while bear case at 6–7% growth implies $340–$360 (~33% downside), making the risk-reward approximately neutral at current entry.",
+  "source_summary": "Data sourced from Mastercard Q4 2025 earnings release (Feb 2026), SEC 10-K filings through FY2024, MacroTrends, StockAnalysis, GuruFocus, SimplyWallSt, and Yahoo Finance as of early March 2026; all key financial figures are from company filings with minor aggregation differences across third-party sources.",
+  "confidence": "high",
+  "change_notes": "Initial analysis — no prior report to compare against."
+}

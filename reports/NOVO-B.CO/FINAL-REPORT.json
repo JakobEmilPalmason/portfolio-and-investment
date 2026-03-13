@@ -1,0 +1,52 @@
+{
+  "ticker": "NOVO-B.CO",
+  "company": "Novo Nordisk A/S",
+  "analysis_date": "2026-03-05",
+  "verdict": "Watch",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 7,
+    "management": 5,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Elite margins: 81% gross, 41% operating, DKK 119B operating cash flow",
+    "Manufacturing scale moat with DKK 60B in 2025 capex; 3-5 years for a competitor to replicate",
+    "US patent protection on semaglutide through 2031-2032",
+    "59.6% branded GLP-1 obesity volume share; recurring revenue from chronic-disease patients who stay on therapy indefinitely",
+    "AA credit rating, 40x+ interest coverage, well-laddered fixed-rate maturities — balance sheet survives a 30% revenue decline without equity issuance"
+  ],
+  "key_risks": [
+    "Eli Lilly competitive dominance: Lilly holds 57-60% US GLP-1 market share with clinically superior tirzepatide; CagriSema failed to beat tirzepatide head-to-head",
+    "US pricing destruction: MFN deal cuts Ozempic/Wegovy from ~$1,000-1,350/month to ~$350/month; IRA Medicare negotiation cuts Ozempic a further 71% starting 2027",
+    "Single-molecule concentration: semaglutide accounts for vast majority of company value; international patents expire 2026 across China, Canada, Brazil, India",
+    "Governance and management uncertainty: new untested CEO Doustdar, no insider buying during 60%+ decline, Foundation holds 77% voting control with no minority protection",
+    "Product liability litigation: 3,100+ lawsuits in federal MDL related to GLP-1 side effects; estimated ~$2B exposure with potential for expansion"
+  ],
+  "red_flags": [
+    "No insider buying during a 60%+ stock decline; multiple executives were net sellers",
+    "Foundation forced out entire board and CEO in 2025 — unprecedented intervention suggesting the strategic situation is worse than previously acknowledged",
+    "CagriSema failed to demonstrate non-inferiority against tirzepatide — Novo currently lacks a best-in-class next-gen product",
+    "2026 guidance range of -5% to -13% is unusually wide, reflecting genuine uncertainty about pricing and volume",
+    "ROIC has fallen from 41% to 25% in two years as DKK 90B in annual capex consumed free cash flow"
+  ],
+  "buy_triggers": [
+    "Wegovy pill prescriptions exceed 100,000 weekly and continue accelerating, demonstrating oral format can meaningfully offset injectable pricing pressure",
+    "CagriSema receives FDA approval (expected late 2026) AND early commercial uptake shows it can carve out meaningful share despite clinical inferiority to tirzepatide on weight loss",
+    "2026 actual results come in better than guided -5% to -13% range, signaling the pricing trough is shallower than feared"
+  ],
+  "sell_triggers": [
+    "Eli Lilly's orforglipron wins FDA approval with superior efficacy AND captures majority oral obesity share, confirming Novo is permanently second-best in both injectable and oral formats",
+    "Restructuring fails to stabilize operating margins by 2027, indicating the cost structure cannot adapt to the new pricing reality",
+    "A safety signal on semaglutide leads to FDA black-box warning or class action expansion well beyond the current $2B estimated litigation exposure"
+  ],
+  "valuation_summary": "At ~11x trough earnings and 60% below its 52-week high, the market prices Novo as ex-growth pharma with zero future value creation. Probability-weighted intrinsic value suggests ~20% upside with a 2:1 upside/downside asymmetry, but the margin of safety is thin given extreme semaglutide concentration risk.",
+  "source_summary": "Analysis based on web searches conducted 2026-03-05 covering Novo Nordisk Annual Report 2025, Q4 2025 earnings, 2026 guidance, GLP-1 competitive landscape, and analyst estimates; sources include novonordisk.com, CNBC, PharmExec, BioPharma Dive, Fierce Pharma, IQVIA, MacroTrends, StockAnalysis, and rating agency data.",
+  "confidence": "medium",
+  "change_notes": ""
+}

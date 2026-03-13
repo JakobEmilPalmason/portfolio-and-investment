@@ -1,0 +1,57 @@
+{
+  "ticker": "NVDA",
+  "company": "NVIDIA Corporation",
+  "analysis_date": "2026-03-06",
+  "verdict": "Watch",
+  "average_score": 6.75,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 4,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Dominant AI accelerator GPU market share (~80%+) with CUDA ecosystem locking in 4M+ developers through high switching costs",
+    "Extraordinary business economics: 145% ROIC, 56% net margins, $97B free cash flow on a fabless hardware model",
+    "Fortress balance sheet: $54B net cash, 503x interest coverage, $8.5B debt at sub-3% fixed rates",
+    "Mellanox acquisition ($6.9B in 2020) now generating $10B+/quarter in networking revenue — one of the best tech acquisitions in a decade",
+    "Annual architecture cadence (Blackwell → Rubin → Feynman) forces competitors to hit a moving target and compounds the CUDA moat"
+  ],
+  "key_risks": [
+    "Customer-as-competitor concentration: top 4 customers represent 61% of revenue (up from 36% a year ago) and are simultaneously building custom AI silicon (Google TPU, Amazon Trainium, Microsoft Maia, Meta)",
+    "Custom ASIC erosion of inference market: ASIC shipments growing at 44.6% vs. 16.1% for GPUs; analysts project ASICs could capture 70-75% of inference workloads by 2028, attacking the majority of current revenue",
+    "AI capex cycle deceleration: revenue is entirely capex-driven with no recurring contractual floor; FY2023 proved operating income can fall 58% in a single year",
+    "Valuation leaves no room for error: stock trades above most base-case DCF estimates ($124-$165) with bear-case downside ($68) larger than bull-case upside ($260) relative to today's price",
+    "China and geopolitical risk: export restrictions already caused a $4.5B inventory write-down and zeroed out China revenue; TSMC single-source manufacturing is a tail risk"
+  ],
+  "red_flags": [
+    "Customer concentration worsened dramatically: from 36% to 61% of revenue from top 4 customers in one year",
+    "Revenue is entirely capex-driven and non-recurring — there is no contractual floor if hyperscaler spending pauses",
+    "Largest customers (hyperscalers) are simultaneously the most motivated competitors, actively developing custom AI silicon",
+    "China revenue effectively zeroed out due to export controls, eliminating what was 13-26% of revenue in prior years",
+    "TSMC single-source manufacturing dependency — any disruption would halt production",
+    "Buybacks of $40.6B in FY2026 at trailing P/E ratios of 30-50x — not buying cheaply",
+    "No publicly disclosed CEO succession plan for a 63-year-old founder who is the company's public face and strategic architect",
+    "Stock trades above most base-case DCF estimates; market is pricing in the bull case as the base case",
+    "Only insider selling, no insider buying, in the past 3 months"
+  ],
+  "buy_triggers": [
+    "Stock price declines 25-30% to the $125-$140 range, bringing it in line with base-case DCF intrinsic value and providing a genuine margin of safety",
+    "NVIDIA demonstrates sustained pricing power through a full product transition cycle (Blackwell to Rubin) without meaningful gross margin compression, proving the moat is durable beyond supply constraints",
+    "Custom ASIC adoption stalls or disappoints, with hyperscalers recommitting to GPU-based infrastructure at scale"
+  ],
+  "sell_triggers": [
+    "Two or more hyperscalers materially cut AI capex guidance, confirming the cyclical risk that current revenue has no contractual floor",
+    "Custom ASIC market share gains accelerate and NVIDIA's Data Center revenue growth stalls for two consecutive quarters",
+    "Gross margins decline below 60% on a sustained basis, indicating structural loss of pricing power",
+    "CUDA's moat shows cracks with developers migrating meaningfully to competing frameworks (Triton, ROCm, TorchTPU)"
+  ],
+  "valuation_summary": "At $183/share ($4.45T market cap), NVIDIA trades at ~37x trailing earnings and above most base-case DCF estimates ($124-$165/share), implying 10-32% overvaluation on base-case assumptions. The bear case ($68) implies 63% downside while the bull case ($260) implies 42% upside — unfavorable asymmetry that offers no margin of safety at current prices.",
+  "source_summary": "Analysis based on web searches conducted March 2026 covering NVIDIA FY2026 earnings (reported Feb 25, 2026), SEC filings, NVIDIA investor relations, MacroTrends, StockAnalysis, GuruFocus, Yahoo Finance, CNBC, TrendForce, SemiAnalysis, and multiple financial data aggregators; no user-provided context files.",
+  "confidence": "medium",
+  "change_notes": ""
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "HIMS",
+  "company": "Hims & Hers Health, Inc.",
+  "analysis_date": "2026-03-10",
+  "verdict": "Pass",
+  "average_score": 4.0,
+  "umbrella_scores": {
+    "circle_of_competence": 5,
+    "competitive_advantage": 4,
+    "management": 4,
+    "business_economics": 4,
+    "balance_sheet": 5,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "2.5 million U.S. subscribers on a recurring subscription model across chronic conditions (ED, hair loss, skincare, mental health)",
+    "Most recognized direct-to-consumer telehealth brand with demonstrated platform stickiness",
+    "74% gross margins and $2.35B in 2025 revenue reflecting real scale",
+    "$630M cash and zero-coupon 2030 convertible notes provide near-term liquidity runway",
+    "Novo Nordisk distribution partnership creates a path to remain in the GLP-1 weight-loss market post-compounding ban"
+  ],
+  "key_risks": [
+    "DOJ criminal referral from HHS General Counsel — existential tail risk with 30-40% estimated probability and no known timeline",
+    "GLP-1 compounding revenue (~31% of 2025 revenue) eliminated by FDA ban with no proven replacement model",
+    "Free cash flow collapsed from $198M to $57M despite 59% revenue growth as capex surged 5x to $226M",
+    "Active SEC disclosure investigation into whether CEO's public characterizations of GLP-1 revenue were materially misleading",
+    "Amazon Pharmacy entered weight-loss clinical services in January 2026, commoditizing HIMS's primary remaining growth driver"
+  ],
+  "red_flags": [
+    "CEO sold $33M in stock in August 2025 at near-peak prices shortly before GLP-1 regulatory and SEC scrutiny became public",
+    "CEO publicly described GLP-1 as serving 'a small minority' of subscribers while it represented 38% of H1 2025 revenue",
+    "FCF collapsed from $198M to $57M on 59% revenue growth — FCF conversion fell below 50% of net income warning threshold",
+    "Net debt of ~$341M against $57M FCF equals ~6x net debt/FCF — company cannot repay 2030 convertible notes from current operations",
+    "DOJ referral from HHS General Counsel is not a routine inquiry — scope and timeline unknown",
+    "Business model that underpins the 2026 thesis (Novo partnership) did not exist 30 days before this analysis"
+  ],
+  "buy_triggers": [
+    "DOJ investigation resolves without criminal charges or material operational restrictions",
+    "Two consecutive quarters of post-compounding 'clean' revenue confirm mid-teens organic growth in legacy segments (hair loss, ED, skincare, mental health)",
+    "2026 capex guidance comes in below $100M, demonstrating FCF will converge toward EBITDA"
+  ],
+  "sell_triggers": [
+    "DOJ announces criminal charges against executives — breaks consumer trust thesis permanently; exit regardless of price",
+    "Novo Nordisk re-files patent infringement lawsuit and obtains injunctive relief restricting HIMS from GLP-1 distribution",
+    "Two consecutive quarters of declining subscriber count — indicates core platform is shrinking, not transitioning"
+  ],
+  "valuation_summary": "At ~$22/share (~$5B market cap, ~39x trailing earnings), the base case intrinsic value is approximately $19–20/share with no margin of safety, while the bear case implies ~$6.60/share (70% downside) carrying a 25–35% probability; justifying today's price requires four independent assumptions to hold simultaneously in a business model that did not exist 30 days ago.",
+  "source_summary": "Analysis draws on web search results from February–March 2026, Hims & Hers Q4/FY2025 investor press releases, SEC EDGAR filings, MacroTrends and StockAnalysis financial data, analyst estimates from MarketBeat and TipRanks, and news coverage from STAT News, Fierce Healthcare, and Bloomberg; no user-provided context files were available.",
+  "confidence": "low",
+  "change_notes": ""
+}

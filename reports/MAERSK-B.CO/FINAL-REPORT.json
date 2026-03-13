@@ -1,0 +1,53 @@
+{
+  "ticker": "MAERSK-B.CO",
+  "company": "A.P. Moller-Maersk A/S",
+  "analysis_date": "2026-03-09",
+  "verdict": "Pass",
+  "average_score": 4.875,
+  "umbrella_scores": {
+    "circle_of_competence": 6,
+    "competitive_advantage": 5,
+    "management": 6,
+    "business_economics": 4,
+    "balance_sheet": 7,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "APM Terminals operates 53 ports in 28 countries — a decades-long infrastructure barrier to replicate",
+    "Gemini Cooperation with Hapag-Lloyd achieving 91.2% schedule reliability vs ~56% industry average",
+    "Net cash position of $7.4bn at end-2024, $29bn gross liquidity, investment-grade ratings (Baa1/BBB+)",
+    "Family-controlled Moller structure provides long-term governance stability",
+    "71% of long-haul Ocean volumes on annual contracts, providing material revenue predictability"
+  ],
+  "key_risks": [
+    "Freight rate collapse: 7 million TEU newbuild orderbook (~20% of global fleet) delivering through 2027 — EBITDA could fall to $3–4bn if spot rates approach 2016 lows",
+    "Logistics transformation failure: after $8–15bn in acquisitions, L&S EBIT margins are 4.9% vs 6% target and organic growth is 3.2% vs 10% target",
+    "Capital cycle timing error: $10–11bn capex on new methanol vessels risks entering service into depressed freight rates",
+    "De-globalization and US-China trade disruption could permanently reduce global container trade volumes",
+    "Balance sheet erosion: net cash fell $4.8bn in nine months; FCF guided negative through 2025–2026; credit downgrade risk if debt/EBITDA approaches 3.0x"
+  ],
+  "red_flags": [
+    "Market share declined five consecutive years from 19.4% to ~14.2%",
+    "EBITDA guided 27–53% below 2025 levels for 2026",
+    "Free cash flow guided negative for 2025",
+    "Buyback program suspended before completion",
+    "Logistics & Services margins below stated 6% floor after 3+ years of integration",
+    "Stock trades 46% above base-case 5-year present value; 12 of 18 analysts rate it a Sell"
+  ],
+  "buy_triggers": [
+    "Price falls to 9,000–11,000 DKK (approaching analyst consensus target of 12,673 DKK and base-case present value of ~11,200 DKK)",
+    "Logistics & Services EBIT margin crosses 6% sustainably and segment contributes 15%+ of group EBIT",
+    "Evidence of freight rate cycle bottoming: SCFI stabilizing above 1,000 points with carriers demonstrating supply discipline through meaningful capacity idling"
+  ],
+  "sell_triggers": [
+    "Logistics & Services EBIT margin still below 6% and below 15% of group EBIT by fiscal year 2028",
+    "Balance sheet deteriorates to near-investment-grade-floor (Moody's Baa3/S&P BBB-) with free cash flow still negative",
+    "Price reaches 25,000 DKK or above without commensurate improvement in normalized earnings"
+  ],
+  "valuation_summary": "At 16,420 DKK (~$36bn market cap), the stock trades 46% above the base-case 5-year present value of ~11,200 DKK; analyst consensus target of 12,673 DKK implies 23% downside, and bear-case intrinsic value of 4,000–7,000 DKK implies 57–76% downside. Through-cycle owner earnings of $2.5–4bn imply 9–14x normalized P/OE at current price, offering no margin of safety.",
+  "source_summary": "Analysis draws on web search results from Maersk investor relations, FY2024 and FY2025 annual results press releases (February 2025 and February 2026), Moody's credit opinion (March 2025), Investing.com and MarketScreener analyst consensus data, FreightWaves, Container News, Yahoo Finance, and training knowledge on container shipping industry structure and economics.",
+  "confidence": "medium",
+  "change_notes": ""
+}

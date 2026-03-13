@@ -1,0 +1,53 @@
+{
+  "ticker": "QCOM",
+  "company": "Qualcomm Inc",
+  "analysis_date": "2026-03-10",
+  "verdict": "Watch",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 7,
+    "management": 6,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "QTL patent portfolio (140,000+ patents, #2 globally in 5G SEPs) is a structural toll-road on global wireless with ~74% operating margins",
+    "Exceptional cash generation: $12.8B FCF on $44.3B revenue (29% FCF margin) with fabless model keeping capex at only 2.7% of revenue",
+    "Strong balance sheet: A/A2-rated, 18.6x interest coverage, 1.06x debt/EBITDA, $13.8B in cash",
+    "Credible diversification into automotive and IoT (combined 27% YoY growth in FY2025, targeting $22B by FY2029)",
+    "Stock down 34% from 52-week high; trading at 12.9x forward earnings and 8.6% FCF yield vs 13-year median EV/EBITDA of 12.8x"
+  ],
+  "key_risks": [
+    "Apple modem exit confirmed — zero Apple chip supply by FY2027, representing $5–7B annual QCT revenue impact",
+    "China concentration at 46% of total revenue — highest among major U.S. semiconductor companies — is a binary risk from trade escalation or 'buy local' mandates",
+    "QTL licensing durability at risk from FRAND court challenges or 6G SEP competition from Huawei; Huawei licensing renewal unconfirmed as of March 2026",
+    "Diversification execution risk — bull case requires automotive ($8B) and IoT ($14B) targets by FY2029, which are plausible but not yet proven",
+    "ARM/RISC-V architecture disruption risk over a 5–10 year horizon; Qualcomm won ARM lawsuit in January 2026 but long-term risk persists"
+  ],
+  "red_flags": [
+    "CEO received a 15% pay raise in a year when GAAP net income fell 45%",
+    "Insider ownership is low — management personal wealth not materially at risk alongside shareholders",
+    "China at 46% of revenue is the highest concentration among major U.S. semiconductor peers",
+    "Apple chip exit is confirmed (not forecast) — $5–7B annual revenue loss by FY2027 with no certainty that diversification absorbs it in time",
+    "No confirmed renewal of Huawei licensing agreement; QTL growth guidance is zero for the near term",
+    "52-week range of $120.80–$205.95 shows extreme volatility; beta of 1.57 amplifies tail risk from China or licensing events"
+  ],
+  "buy_triggers": [
+    "Stock falls to $105–$115 (approximately 10–12x bear-case owner earnings of ~$9B), creating a genuine margin of safety",
+    "Apple modem transition fully absorbed in reported earnings (FY2027+) and automotive achieves $4B+ annual revenue run rate",
+    "Huawei licensing renewal confirmed, adding $1B+ annually back to QTL and signaling China relationship stabilization"
+  ],
+  "sell_triggers": [
+    "China revenue declines more than 25% over any rolling 12-month period without clear offsetting growth elsewhere",
+    "QTL faces a successful legal or regulatory challenge that materially reduces its patent royalty rates",
+    "Automotive revenue misses the $4B annual target by end of FY2026 with no credible revised timeline from management"
+  ],
+  "valuation_summary": "At ~$136, QCOM trades at 12.9x forward earnings, 8.6% FCF yield, and 10.7x EV/EBITDA versus a 13-year median of 12.8x — appearing modestly undervalued in a base case (DCF present value ~$130–$149B) but fairly valued given wide outcome dispersion from Apple exit and China risk. A genuine margin of safety requires a price of $105–$115; downside in the bear case is 30–35%.",
+  "source_summary": "Analysis based on Qualcomm Q4 FY2025 and Q1 FY2026 earnings releases, FY2025 10-K SEC filings, S&P and Moody's credit ratings, patent analytics sources (LexisNexis, GreyB, Lumenci), and web searches from March 2026, supplemented by training knowledge for business model context.",
+  "confidence": "medium",
+  "change_notes": ""
+}

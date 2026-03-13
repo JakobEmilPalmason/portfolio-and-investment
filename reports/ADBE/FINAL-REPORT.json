@@ -1,0 +1,55 @@
+{
+  "ticker": "ADBE",
+  "company": "Adobe Inc.",
+  "analysis_date": "2026-03-09",
+  "verdict": "Own",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 6,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 8,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "96% recurring subscription revenue with $25.2B ARR growing 11.5% YoY and minimal customer concentration",
+    "40% ROIC, 89% gross margins, and $9.85B free cash flow on just $172M capex — exceptional capital efficiency",
+    "Proprietary file formats (PSD, PDF, AI, INDD) and workflow lock-in embedded in 98% of Fortune 500 companies create durable switching costs",
+    "Strong balance sheet: $5.4B cash, all-fixed-rate debt, 33x interest coverage, A+/A2 ratings",
+    "Stock trades at ~12x forward earnings — 60% below 5-year average P/E — pricing in far more disruption than results support"
+  ],
+  "key_risks": [
+    "AI commoditization of creative tools: if generative AI tools reach 80%+ of Adobe's functionality at a fraction of the price, Creative Cloud pricing power erodes structurally",
+    "Competitive erosion from Canva (260M users, free Affinity suite) and Figma ($57B IPO) winning prosumer and UI/UX flanks — pipeline risk for the next generation of professionals",
+    "Management discipline under pressure: failed $20B Figma bid at 50x ARR, $1.94B annual SBC, and CEO net selling of $92.5M in stock",
+    "FTC litigation over deceptive subscription practices could force cancellation/renewal changes, potentially increasing churn by 2-5 percentage points",
+    "Extreme stock volatility with two separate 45-60% drawdowns in five years; beta ~1.5 demands honest assessment of behavioral tolerance"
+  ],
+  "red_flags": [
+    "Stock down 44% from 52-week high; market pricing in structural risk, not a cyclical dip",
+    "AI monetization ($5B AI-influenced ARR) growing slower than investor expectations; standalone AI revenue remains ~$125M quarterly run-rate",
+    "CEO net selling of 172,000 shares ($92.5M) since 2021 — management treats stock as compensation to liquidate, not ownership stake",
+    "Canva's acquisition of Affinity (now free) creates a full-featured, zero-cost alternative for the first time",
+    "Adobe conceded UI/UX design entirely to Figma after shelving XD in 2023",
+    "SBC at ~8% of revenue ($1.94B annually) is a significant ongoing dilution cost",
+    "Non-GAAP operating margins projected to compress from 46% to 45% as AI infrastructure costs rise",
+    "Adobe does not publicly disclose churn rates or net revenue retention"
+  ],
+  "buy_triggers": [
+    "Stock declines to $220-$240 range (8-10x forward earnings), creating a genuinely fat margin of safety",
+    "Q1 FY2026 earnings confirm 10%+ ARR growth with measurable Firefly monetization progress, validating AI is additive rather than destructive",
+    "Creative Cloud net new ARR reaccelerates for two consecutive quarters, confirming professional moat is holding"
+  ],
+  "sell_triggers": [
+    "Creative Cloud ARR growth falls below 5% for two consecutive quarters, confirming AI-native tools are genuinely displacing Adobe from professional workflows",
+    "Management pursues another large, dilutive acquisition at premium valuations (repeating the Figma pattern), signaling panic rather than discipline",
+    "Free cash flow margins compress below 30% on a sustained basis, indicating structural pressure from AI infrastructure costs or competitive pricing"
+  ],
+  "valuation_summary": "At ~$284 and ~12x forward earnings (60% below the 5-year average P/E), Adobe is priced as a no-growth business facing existential AI disruption; intrinsic value is estimated at $450-500 in the bull case vs. $200-220 in the bear case, implying a 2-3x upside/downside ratio and a thin-to-reasonable margin of safety that requires the core professional moat to hold.",
+  "source_summary": "Analysis based on web searches conducted 2026-03-09 covering Adobe FY2025 SEC filings, Q4 FY2025 earnings press releases, proxy statements, MacroTrends, GuruFocus, analyst coverage from TipRanks and Seeking Alpha, and competitive landscape reporting; no user-provided context files were available.",
+  "confidence": "medium",
+  "change_notes": ""
+}

@@ -1,7 +1,7 @@
 # Management & Capital Allocation — V
 
 **Analyst Role:** Stewardship Analyst
-**Date:** 2026-03-11
+**Date:** 2026-03-12
 **Data Sources:** Web search results (paymentsdive.com CEO compensation, marketscreener.com SEC filing, insidermonkey.com buyback analysis, financecharts.com buyback history, ainvest.com insider selling, nasdaq.com institutional holdings, portersfiveforce.com ownership structure, investor.visa.com corporate governance pages). Insider ownership percentage sourced from multiple third-party aggregators citing proxy filings. SBC as % of revenue calculated from compensation and revenue data gathered above. Training knowledge used for governance context.
 
 ## Key Findings

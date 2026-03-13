@@ -1,0 +1,2729 @@
+{
+  "snapshot_date": "2026-03-12",
+  "generated_at": "2026-03-12T10:57:23Z",
+  "provider": "saxo",
+  "prior_decision_file": null,
+  "summary": {
+    "analyzed_count": 42,
+    "long_eligible_count": 23,
+    "short_eligible_count": 27,
+    "market_data_ready_count": 0
+  },
+  "candidates": [
+    {
+      "ticker": "CPRT",
+      "company": "Copart, Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/CPRT/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Own",
+      "verdict": "Own",
+      "average_score": 8.1,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 9,
+        "management": 8,
+        "business_economics": 9,
+        "balance_sheet": 10,
+        "valuation": 6,
+        "margin_of_safety": 6,
+        "temperament": 8
+      },
+      "key_strengths": [
+        "10,000+ acres of owned, permitted salvage yards \u2014 a physical moat that took decades to build and cannot be quickly replicated",
+        "Self-reinforcing two-sided network effect connecting 170+ country buyer base with dominant insurance carrier supply",
+        "Fortress balance sheet: $5.2B net cash, zero financial debt, $1.8B annual operating cash flow",
+        "~30% ROIC (5-year average) with 34%+ net margins \u2014 among the highest sustained margins in US commercial services",
+        "Secular tailwind: total-loss frequency rising from 4% in 1980 to 22.6% in FY2025 as modern vehicles become increasingly expensive to repair",
+        "Founder Willis Johnson holds ~7.72% equity (~$4B stake) with compensation tied entirely to real stock appreciation"
+      ],
+      "key_risks": [
+        "Two consecutive quarters of declining insurance unit volumes (Q2 FY2026: -9% globally) \u2014 cyclical vs. structural uncertainty is the pivotal open question",
+        "Supply-side concentration: ~80% of vehicle volume from auto insurance carriers; top carriers likely represent 40-50% of supply",
+        "IAA/RB Global market share pressure acknowledged in Q2 FY2026 earnings \u2014 duopoly is not static",
+        "Bear-case valuation implies 37-50% downside from current price if volume decline proves structural",
+        "AV adoption could reduce accident frequency over a 10-year horizon, compressing the long-term volume growth assumption"
+      ],
+      "red_flags": [
+        "Q2 FY2026 revenue -3.6% YoY; EPS -10% \u2014 two consecutive quarterly declines unusual for Copart",
+        "CEO Jeff Liaw sold 43% of personal holdings (July 2025), reducing his stake to 31,527 shares",
+        "No price margin of safety at ~$36: stock trades near base-case intrinsic value, not at a meaningful discount",
+        "Capex ($569M FY2025) is 2.8x D&A (~$200M) \u2014 maintenance vs. growth split not disclosed, introducing owner earnings uncertainty",
+        "SBC as percentage of revenue not confirmed from available data; requires 10-K verification"
+      ],
+      "valuation_summary": "At ~$36/share (~23x trailing P/E, ~20% below 10-year average multiple of 29x), CPRT trades near base-case intrinsic value of $32-37B; the bear case implies $18-22B (37-50% downside) and the bull case implies $50-53B (43-52% upside), making the risk/reward approximately symmetric rather than asymmetric at current levels.",
+      "source_summary": "Analysis based on Copart Q1 and Q2 FY2026 earnings releases (November 2025 and March 2026), FY2025 10-K (filed September 2025), and web searches conducted March 2026; financial data current as of January 31, 2026 balance sheet date.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corporation",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/MSFT/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Own",
+      "verdict": "Own",
+      "average_score": 8.1,
+      "confidence": "high",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 9,
+        "management": 8,
+        "business_economics": 9,
+        "balance_sheet": 10,
+        "valuation": 6,
+        "margin_of_safety": 6,
+        "temperament": 8
+      },
+      "key_strengths": [
+        "Multi-layered enterprise moat: switching costs, network effects, and scale economics produce 60%+ operating margins in core Productivity segment",
+        "85% recurring revenue base with $625B commercial RPO providing ~2.5 years of forward revenue visibility",
+        "Fortress balance sheet: 54x interest coverage, Aaa/AAA rating, $136B annual operating cash flow covering all capital needs internally",
+        "45.6% operating margin in FY2025, up from 37% in FY2021, demonstrating durable operating leverage from cloud mix shift",
+        "Azure growing 39% constant currency; AI services contributed 16 percentage points to Azure growth in Q3 FY2025",
+        "16 consecutive years of dividend growth; $42.5B returned to shareholders in FY2025 with declining net share count"
+      ],
+      "key_risks": [
+        "AI capex cycle ($83B TTM) must convert to durable Azure/AI revenue \u2014 if monetization disappoints, FCF stays suppressed and normalized earnings thesis breaks",
+        "FTC antitrust probe into software licensing is active; forced unbundling of Teams, Copilot, or Azure-Office integration would erode integration moat",
+        "OpenAI partnership concentration: meaningful portion of $625B RPO is OpenAI-linked; partnership deterioration or OpenAI licensing to competitors narrows AI differentiation",
+        "ROIC declining trend (28% 5-year avg to ~22% current) from Activision acquisition and AI capex; continued drift toward 15% would erode capital allocation thesis",
+        "Thin price-based margin of safety: base-case discounted intrinsic value of $270-290 is below current $405, requiring base-case execution to avoid multi-year underperformance"
+      ],
+      "red_flags": [
+        "No price-based margin of safety vs. conservative DCF; reliance on business quality rather than price discount",
+        "OpenAI friction (IP disputes, independence push) is an active and unresolved strategic tension",
+        "GAAP EPS heavily distorted by OpenAI fair-value marks (-$3.1B Q1 FY2026, +$7.6B Q2 FY2026), obscuring underlying performance",
+        "Combined CEO/Chairman role (Nadella) reduces board independence",
+        "Activision Blizzard ($69B) integration progress not yet visible in segment economics"
+      ],
+      "valuation_summary": "At $405, MSFT trades at 26x trailing P/E and 15-16x EV/EBITDA \u2014 both 20%+ below Microsoft's own 10-year medians \u2014 with normalized owner earnings of $110-120B implying the market requires only 8-10% annual earnings growth; base-case discounted intrinsic value of $270-290 suggests the stock is roughly fairly valued, with no price-based margin of safety but compelling relative valuation versus its own history.",
+      "source_summary": "Analysis based on Microsoft FY2025 10-K (SEC filing July 30, 2025), FY2026 Q1 and Q2 earnings releases (October 2025 and January 2026), and web search for current price and multiples as of March 2026; all financial data is current within the last 2-3 months.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "V",
+      "company": "Visa Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/V/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Own",
+      "verdict": "Own",
+      "average_score": 8.1,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 10,
+        "competitive_advantage": 9,
+        "management": 8,
+        "business_economics": 10,
+        "balance_sheet": 9,
+        "valuation": 5,
+        "margin_of_safety": 6,
+        "temperament": 8
+      },
+      "key_strengths": [
+        "Pure toll-road model with zero credit risk: earns transaction fees on $14T annual payment volume",
+        "Two-sided network moat with ~70% global card volume share, stable for a decade despite fintech competition",
+        "Exceptional economics: ~28% ROIC, ~54% FCF margin, ~60% non-GAAP operating margin, only $1.5B capex",
+        "Fortress balance sheet: ~0.2x net debt/EBITDA, 45x interest coverage, $20B liquid assets",
+        "Disciplined capital return: $18.3B in buybacks in FY2025, 12% share count reduction over five years",
+        "Secular tailwind: cash-to-digital payment shift globally remains incomplete (~20% of spending still cash)"
+      ],
+      "key_risks": [
+        "DOJ antitrust case targeting US debit monopoly \u2014 motion to dismiss denied June 2025, trial expected 2027\u20132028; structural remedy could remove $2\u20133B+ in annual debit revenue",
+        "Client incentives ($15.8B, +14% YoY) growing faster than net revenue \u2014 structural margin compression risk if trend persists",
+        "A2A real-time payment adoption (FedNow, UPI, Pix, stablecoins) bypasses card rails; 37% of merchants accepting RTP as of 2025",
+        "Cross-border revenue (~29% of net revenue, highest-yield segment) exposed to geopolitical disruption and travel slowdowns",
+        "Credit Card Competition Act (CCCA) tail risk: if passed, would extend routing competition to credit cards \u2014 more severe than DOJ debit case"
+      ],
+      "red_flags": [
+        "DOJ motion to dismiss denied June 2025; no settlement signals; trial 2027\u20132028 with structural remedy risk",
+        "Client incentive growth (+14% YoY) outpacing net revenue growth (+11% YoY) \u2014 multi-year trend not reversed",
+        "Gross debt up 20.8% YoY to $25.2B \u2014 rising leverage trend warrants monitoring",
+        "GAAP operating expenses +30% YoY due to $2.7B+ litigation provision \u2014 litigation overhang persistent",
+        "Insider ownership at 0.09% \u2014 C-suite are stewards, not owner-operators"
+      ],
+      "valuation_summary": "At ~$314/share (~24x forward EPS of ~$13.10), Visa is fairly valued near the midpoint of the $300\u2013$340 base-case intrinsic value range; base-case DCF (9% discount rate, 10% earnings growth) yields ~$264\u2013$302/share, while the bull case reaches $382+; the stock is below its 10-year average forward P/E of ~33x but the DOJ tail risk and higher discount rates justify the discount.",
+      "source_summary": "Analysis based on Visa FY2025 annual results (fiscal year ending September 30, 2025) and Q1 FY2026 earnings (January 29, 2026); financial data cross-referenced across investor.visa.com, MacroTrends, GuruFocus, StockAnalysis, and MarketBeat; DOJ case status from Payments Dive and PYMNTS as of early 2026.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "CSU.TO",
+      "company": "Constellation Software Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/CSU.TO/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Own",
+      "verdict": "Own",
+      "average_score": 7.75,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 9,
+        "management": 9,
+        "business_economics": 8,
+        "balance_sheet": 7,
+        "valuation": 6,
+        "margin_of_safety": 7,
+        "temperament": 8
+      },
+      "key_strengths": [
+        "75% recurring revenue from mission-critical VMS customers with near-zero historical churn",
+        "Switching costs embedded in 1,000+ niche software products \u2014 organizational lock-in, not contractual",
+        "Decentralized meta-moat: 100+ verticals, no single competitor can attack all simultaneously",
+        "Exceptional capital allocation discipline: 20\u201330% IRR hurdle rates held through multiple rate cycles",
+        "Asset-light model with capex under 0.2% of revenue; FCFA2S compounded at 16\u201318% CAGR for a decade",
+        "Mandatory insider share purchase program aligns executives with shareholders at every level",
+        "No meaningful customer concentration: 100,000+ end customers across six operating groups globally"
+      ],
+      "key_risks": [
+        "Mark Leonard's September 2025 health departure \u2014 first real succession test of capital allocation culture under Mark Miller",
+        "Q4 2025 FCFA2S declined 12% YoY \u2014 deceleration may extend into H1 2026, expanding the forward multiple",
+        "AI disruption of VMS end markets over a 5\u201310 year horizon, particularly Vela group (~30% of revenues)",
+        "Acquisition quality erosion as deal sizes increase to $100M+, reducing addressable universe and information advantage",
+        "Revolving credit facility ($1.085B) matures November 2026 \u2014 requires renewal under prevailing market conditions",
+        "PEMS minority investment strategy introduces new risk vector outside CSU's controlled full-acquisition model"
+      ],
+      "red_flags": [
+        "Q4 2025 FCFA2S declined 12% YoY \u2014 first actual quarterly FCF contraction on record",
+        "GAAP net income fell 30% in FY2025 ($512M vs $731M) \u2014 headline figure will continue to depress sentiment",
+        "Mark Miller unproven as independent capital allocator at scale \u2014 conviction relies on track record, not new data",
+        "PEMS strategy (minority stakes) departs from CSU's historically controlled full-acquisition model"
+      ],
+      "valuation_summary": "At CAD 2,939, CSU trades at ~37x trailing FCFA2S and ~26x forward FCFA2S (projected CAD 2.4B for 2026), representing a ~23% discount to Alpha Spread's base-case DCF of CAD 3,616 and ~30\u201335% below analyst consensus targets of CAD 4,200\u20134,365; the current price implies only 10\u201311% annual FCFA2S growth for 10 years \u2014 well below the 16\u201318% historical rate \u2014 suggesting the market is pricing in meaningful deceleration that may not materialize.",
+      "source_summary": "Primary sources: GlobeNewswire Q4 2025 earnings release (March 9, 2026), Q4 2024 audited shareholder report (March 2025), Alpha Spread DCF, MarketBeat/TipRanks consensus, GuruFocus/StockAnalysis.com ratios, PortfoliosLab drawdown data; balance sheet figures are as of December 31, 2024 (latest audited), FY2025 income/FCF figures from unaudited press release.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "ADBE",
+      "company": "Adobe Inc.",
+      "analysis_date": "2026-03-09",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ADBE/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Own",
+      "verdict": "Own",
+      "average_score": 7.5,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 7,
+        "management": 6,
+        "business_economics": 9,
+        "balance_sheet": 8,
+        "valuation": 8,
+        "margin_of_safety": 6,
+        "temperament": 7
+      },
+      "key_strengths": [
+        "96% recurring subscription revenue with $25.2B ARR growing 11.5% YoY and minimal customer concentration",
+        "40% ROIC, 89% gross margins, and $9.85B free cash flow on just $172M capex \u2014 exceptional capital efficiency",
+        "Proprietary file formats (PSD, PDF, AI, INDD) and workflow lock-in embedded in 98% of Fortune 500 companies create durable switching costs",
+        "Strong balance sheet: $5.4B cash, all-fixed-rate debt, 33x interest coverage, A+/A2 ratings",
+        "Stock trades at ~12x forward earnings \u2014 60% below 5-year average P/E \u2014 pricing in far more disruption than results support"
+      ],
+      "key_risks": [
+        "AI commoditization of creative tools: if generative AI tools reach 80%+ of Adobe's functionality at a fraction of the price, Creative Cloud pricing power erodes structurally",
+        "Competitive erosion from Canva (260M users, free Affinity suite) and Figma ($57B IPO) winning prosumer and UI/UX flanks \u2014 pipeline risk for the next generation of professionals",
+        "Management discipline under pressure: failed $20B Figma bid at 50x ARR, $1.94B annual SBC, and CEO net selling of $92.5M in stock",
+        "FTC litigation over deceptive subscription practices could force cancellation/renewal changes, potentially increasing churn by 2-5 percentage points",
+        "Extreme stock volatility with two separate 45-60% drawdowns in five years; beta ~1.5 demands honest assessment of behavioral tolerance"
+      ],
+      "red_flags": [
+        "Stock down 44% from 52-week high; market pricing in structural risk, not a cyclical dip",
+        "AI monetization ($5B AI-influenced ARR) growing slower than investor expectations; standalone AI revenue remains ~$125M quarterly run-rate",
+        "CEO net selling of 172,000 shares ($92.5M) since 2021 \u2014 management treats stock as compensation to liquidate, not ownership stake",
+        "Canva's acquisition of Affinity (now free) creates a full-featured, zero-cost alternative for the first time",
+        "Adobe conceded UI/UX design entirely to Figma after shelving XD in 2023",
+        "SBC at ~8% of revenue ($1.94B annually) is a significant ongoing dilution cost",
+        "Non-GAAP operating margins projected to compress from 46% to 45% as AI infrastructure costs rise",
+        "Adobe does not publicly disclose churn rates or net revenue retention"
+      ],
+      "valuation_summary": "At ~$284 and ~12x forward earnings (60% below the 5-year average P/E), Adobe is priced as a no-growth business facing existential AI disruption; intrinsic value is estimated at $450-500 in the bull case vs. $200-220 in the bear case, implying a 2-3x upside/downside ratio and a thin-to-reasonable margin of safety that requires the core professional moat to hold.",
+      "source_summary": "Analysis based on web searches conducted 2026-03-09 covering Adobe FY2025 SEC filings, Q4 FY2025 earnings press releases, proxy statements, MacroTrends, GuruFocus, analyst coverage from TipRanks and Seeking Alpha, and competitive landscape reporting; no user-provided context files were available.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "GILD",
+      "company": "Gilead Sciences",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/GILD/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Own",
+      "verdict": "Own",
+      "average_score": 7.0,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 8,
+        "management": 6,
+        "business_economics": 7,
+        "balance_sheet": 7,
+        "valuation": 7,
+        "margin_of_safety": 6,
+        "temperament": 7
+      },
+      "key_strengths": [
+        "Biktarvy holds ~51% of the U.S. HIV treatment market with generic exclusivity contractually locked until April 2036 \u2014 one of the clearest multi-year earnings floors in large-cap pharma",
+        "HIV franchise converts ~$29B revenue to ~$9.5B in annual FCF at ~2% capital intensity \u2014 exceptional capital efficiency for a business of this scale",
+        "Morningstar wide-moat rating supported by 86% non-GAAP gross margins, stable-to-growing market share, and a first-mover position in HIV prevention (Yeztugo/lenacapavir)",
+        "10 consecutive years of dividend growth; $10.6B in cash/securities provides fortress-level liquidity",
+        "Lenacapavir (Yeztugo) positions Gilead at the front of the next HIV prevention cycle \u2014 the company owns both the incumbent product and its successor"
+      ],
+      "key_risks": [
+        "HIV competitive disruption: ViiV/GSK developing long-acting injectable HIV treatments targeting 2028\u20132030 launch; could erode Biktarvy market share before 2036 generic entry",
+        "Drug pricing regulation: IRA Medicare negotiation and executive drug-pricing orders represent structural headwind to net realized prices; management flagged ~2% 2026 HIV revenue drag",
+        "Oncology M&A track record: $21B Immunomedics acquisition led to $4.2B impairment in 2024; $7.8B Arcellx acquisition (2026) carries December 2026 FDA PDUFA binary risk",
+        "Trodelvy commercial uncertainty: ASCENT-07 miss narrowed addressable market; datroway competition from Daiichi/AstraZeneca caps upside in TNBC",
+        "Lenacapavir ramp uncertainty: Yeztugo launched at $28,218/year against generic oral PrEP competition; $2B+ peak sales is the bull case, not a base case"
+      ],
+      "red_flags": [
+        "Single-product concentration: Biktarvy ~49% of total product revenue",
+        "Immunomedics acquisition is a permanent capital loss: $21B paid, $4.2B impaired in 2024",
+        "CEO compensation $23.7M is 79% above peer median \u2014 full proxy not available to verify performance hurdle adequacy",
+        "Upside/downside asymmetry at current price (~1.4\u20131.8x) is below the desired 2\u20133x threshold",
+        "Non-GAAP adjustments are large and persistent: GAAP EPS $6.78 vs non-GAAP $8.15 (20% gap) requires ongoing investor trust in management's classification of charges"
+      ],
+      "valuation_summary": "At $146.52/share (16.7x forward P/E, 5.2% FCF yield, 13.9x EV/EBITDA), GILD trades at a material discount to large-cap pharma peers averaging 18\u201322x forward P/E. Base-case 10-year DCF (5% FCF growth, 2.5% terminal, 9% WACC) implies intrinsic value of $150\u2013165/share \u2014 2\u201313% upside. Bear case $100\u2013120/share (18\u201332% downside); bull case $195\u2013210/share (33\u201344% upside). Market is pricing GILD as a slow-growth cash cow with zero credit for lenacapavir PrEP or Trodelvy expansion; the required FCF growth rate to justify current price is only ~3\u20134%, well below management guidance.",
+      "source_summary": "Primary: Gilead FY2025 earnings press release (February 10, 2026); Q3 2025 earnings press release. Secondary: MacroTrends historical margins; GuruFocus ROIC; stockanalysis.com financials; MarketBeat/TipRanks analyst consensus; Morningstar moat ratings; BioPharma Dive; Fierce Pharma; DrugPatentWatch patent data; simplywall.st balance sheet metrics. Training knowledge used for pharma comparables, competitive landscape context, and DCF framework. Confidence note: full 2025 10-K not yet indexed at time of analysis; capex and D&A are estimated from prior-year trends and press release data.",
+      "change_notes": "Initial analysis. No prior report to compare against.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "RMS.PA",
+      "company": "Herm\u00e8s International",
+      "analysis_date": "2026-03-12",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/RMS.PA/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "low",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 8.0,
+      "confidence": "high",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 10,
+        "management": 9,
+        "business_economics": 10,
+        "balance_sheet": 10,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 7
+      },
+      "key_strengths": [
+        "Widest competitive moat in luxury: 190-year brand heritage, deliberate scarcity, artisan workforce, vertical integration, zero wholesale/licensing",
+        "World-class economics: ~49% ROIC, 41% operating margins (expanding), 71% gross margins, EUR 3.9B free cash flow",
+        "Fortress balance sheet: EUR 12.8B net cash, EUR 32M total debt, could survive 30% revenue decline for a decade",
+        "Near-ideal stewardship: 67% family ownership via SCA structure, sixth-generation CEO, zero debt-funded acquisitions",
+        "Highly understandable business with only 3-4 key drivers to monitor"
+      ],
+      "key_risks": [
+        "China/Asia-Pacific revenue concentration (~42-50%) creates significant geographic demand risk",
+        "At 45x trailing earnings, multiple compression to 30-35x on flat earnings would mean 30%+ downside",
+        "Growth deceleration from 13% to 9% organic; if trend continues to mid-single digits, valuation is unsustainable",
+        "CEO succession uncertainty: Axel Dumas in early 60s with no publicly named successor",
+        "Currency headwinds: EUR strength compressed 2025 reported growth from 9% to 5.5%"
+      ],
+      "red_flags": [
+        "No price margin of safety: stock trades at 55% premium to conservative intrinsic value of EUR 1,240/share",
+        "Unfavorable risk-reward asymmetry: ~22% bull-case upside vs ~35% bear-case downside (1:1.6 ratio)",
+        "Stock ranked in bottom 8% for risk-adjusted returns (PortfoliosLab)",
+        "Asia-Pacific growth slowed to 5% in 2025 from double-digit prior years"
+      ],
+      "valuation_summary": "At EUR 1,925/share and 45x trailing earnings, Herm\u00e8s is approximately fairly valued under base-case assumptions (10% earnings growth, 35x terminal multiple = EUR 1,710 intrinsic value). Bear case (6% growth, 30x terminal) implies EUR 1,240 with 35% downside. Bull case (14% growth, 40x terminal) implies EUR 2,340 with 22% upside. Net cash of EUR 12.8B adds ~EUR 120/share. The market is pricing 10-12% annual earnings growth for the next decade with no multiple compression.",
+      "source_summary": "Herm\u00e8s 2025 Full-Year Results (GlobeNewswire, Feb 2026), Herm\u00e8s Finance IR (finance.hermes.com), Yahoo Finance, MarketScreener, CompaniesMarketCap, Investing.com, StockAnalysis.com, PortfoliosLab, Alpha Spread, GuruFocus, Simply Wall St, Seeking Alpha, danielscrivner.com, AMW Group, The Cecily Group, Family Business Magazine, TIKR.com",
+      "change_notes": "Initial analysis. Business quality is exceptional (8.0 average score driven by perfect 10s in moat, economics, and balance sheet), but valuation and margin of safety scores (5 and 4 respectively) prevent an Own verdict. Watch for better entry at EUR 1,400-1,600.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "VEEV",
+      "company": "Veeva Systems Inc",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/VEEV/FINAL-REPORT.json",
+      "queue_state": "watchlist",
+      "queue_priority": "medium",
+      "current_verdict": null,
+      "verdict": "Watch",
+      "average_score": 7.75,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 8,
+        "management": 9,
+        "business_economics": 9,
+        "balance_sheet": 10,
+        "valuation": 6,
+        "margin_of_safety": 5,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Dominant vertical SaaS platform for life sciences with near-irreplaceable regulatory and clinical workflow embedding \u2014 switching costs are existential, not merely inconvenient",
+        "Exceptional business economics: 31\u201336% ROIC vs 11% WACC, 74%+ gross margins, 45% non-GAAP operating margins, $1.42B operating cash flow on $3.2B revenue",
+        "Fortress balance sheet: zero financial debt, $5B+ in cash and investments, $1.4B annual OCF \u2014 complete immunity to capital market disruption",
+        "Founder-CEO Peter Gassner holds $2.2\u20132.7B in personal equity, takes no cash bonus or RSU grants, and launched a $2B buyback near 52-week lows \u2014 compensation and capital allocation are owner-aligned",
+        "9 of top 20 global biopharma companies committed to Vault CRM vs Salesforce's 3 \u2014 the most important competitive battleground currently favors Veeva",
+        "84% subscription revenue under multi-year contracts with land-and-expand dynamics across clinical, regulatory, quality, and commercial cloud modules"
+      ],
+      "key_risks": [
+        "Salesforce has signed 40+ life sciences CRM customers including Pfizer, Takeda, and Boehringer Ingelheim \u2014 commercial CRM moat is under its first serious test in 15 years",
+        "No price margin of safety at $190: stock trades 45\u201358% above bear-case intrinsic value (~$120\u2013130); base case offers only ~5\u201310% buffer (~$200\u2013210)",
+        "Vault CRM migration to 200 live customers by May 2026 is a near-term binary \u2014 failure would validate Salesforce's competitive narrative and trigger a material re-rating",
+        "100% life sciences revenue concentration with no diversification offset; FDA restructuring or pharma R&D budget cuts directly impact Veeva with no hedge",
+        "No public CEO succession plan for founder Peter Gassner \u2014 key-person risk is unaddressed"
+      ],
+      "red_flags": [
+        "Active competitive threat confirmed: Salesforce signed 40+ life sciences CRM customers, including at least one top-3 global pharma \u2014 not a theoretical risk",
+        "GAAP vs non-GAAP operating margin gap is ~20 percentage points \u2014 SBC of ~$440M annually represents real shareholder dilution",
+        "Vault CRM milestone (200 live customers by May 2026) is a binary event that could sharply move the stock in either direction within 2 months",
+        "Stock down ~39% from 52-week high of $310.50 \u2014 further downside is plausible and within historical norms (worst prior drawdown: -55.7%)"
+      ],
+      "valuation_summary": "At ~$190/share, VEEV trades at 22\u201324x trailing owner earnings and a forward P/E of ~21.9x \u2014 near multi-year lows. Base-case DCF intrinsic value is ~$200\u2013210/share (roughly at current prices); bear case is ~$120\u2013130/share (no margin of safety); bull case is ~$300\u2013350/share (+58\u201368% upside). The market is pricing in 10\u201312% annual FCF growth \u2014 roughly half the recent rate \u2014 implying Salesforce wins a meaningful fraction of the CRM migration. Independent DCF models cluster at $203\u2013297. The stock is approximately fairly valued under a base case but offers no cushion against adversity.",
+      "source_summary": "Analysis based on Veeva FY2026 earnings release (March 4, 2026), FY2025 10-K, SEC proxy filings, GuruFocus/Alpha Spread/Simply Wall St DCF models, PortfoliosLab drawdown data, MarketBeat analyst consensus, and IntuitionLabs/Morningstar competitive analysis. All financial figures from official Veeva press releases where available; aggregator data used for trend history. Confidence is high on business quality, financial metrics, and balance sheet; medium on forward competitive dynamics (Vault CRM migration outcome unresolved).",
+      "change_notes": "Initial analysis. Vault CRM migration and Salesforce competitive response are the primary unresolved variables. Re-analyze after May 2026 CRM milestone announcement and following Q1 FY2027 earnings (expected June 2026).",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/GOOG/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 7.25,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 9,
+        "management": 7,
+        "business_economics": 8,
+        "balance_sheet": 10,
+        "valuation": 5,
+        "margin_of_safety": 5,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "~90% global search market share backed by a 25-year data flywheel that cannot be replicated",
+        "Structural distribution control through Android (72% of smartphones) and Chrome (65% of desktops)",
+        "$80 billion net cash position with 218x interest coverage \u2014 one of the strongest balance sheets in corporate history",
+        "Google Cloud growing 48% YoY to $70B+ annualized run rate with $240B contracted backlog",
+        "FY2025 operating cash flow of $164.7B and FCF of $73.3B demonstrate exceptional underlying earnings power",
+        "29% ROIC and 31.6% operating margins despite elevated AI infrastructure investment"
+      ],
+      "key_risks": [
+        "Search market share erosion: declined from 92.9% to 89.6% since January 2023; eMarketer forecasts below 50% of U.S. search ad market in 2026",
+        "$175\u2013185B 2026 capex program (nearly double 2025) will compress FCF potentially to near zero; ROI unproven",
+        "Two active major US antitrust cases (search default distribution + ad tech monopoly); ad tech structural divestiture remains a tail risk",
+        "Advertising revenue (~79% of total) is cyclically sensitive; 44% stock drawdown in 2022 on ad slowdown",
+        "EU Digital Markets Act enforcement already in force; could restrict Google's default distribution in Europe"
+      ],
+      "red_flags": [
+        "Base-case DCF implies ~$258/share, 16% below current price of $308.45",
+        "Bear-case DCF implies ~$155/share \u2014 ~50% below current price with no price margin of safety under stress",
+        "FCF yield of 1.93% is historically low; FCF conversion compressed from ~85% to ~55% of net income",
+        "Sundar Pichai $692M pay package (March 2026) introduces incentives to prioritize Other Bets over core capital discipline",
+        "Founders' 51.4% voting control means public shareholders cannot influence governance or strategy",
+        "Other Bets have consumed tens of billions in capital with limited commercial validation"
+      ],
+      "valuation_summary": "At $308.45, GOOG trades at 28x trailing P/E and 51x P/FCF. Base-case 5-year DCF (13% revenue CAGR, 30% margins, 23x terminal multiple, 10% discount rate) yields ~$258/share \u2014 16% below current price. Bull case yields ~$391 (+27%); bear case yields ~$155 (\u221250%). Owner earnings yield is approximately 2.9% on FY2025 figures, falling below 2.2% on forward 2026 estimates given the capex surge. Fair value range estimated at $220\u2013345; current price sits in the upper half.",
+      "source_summary": "Primary sources: Alphabet Q4/FY 2025 earnings release (SEC filing, February 2026) for all financial figures. Market share data from StatCounter/eMarketer (August 2025). DOJ antitrust ruling (September 2025). Analyst consensus from MarketBeat/StockAnalysis. Insider ownership from GuruFocus. CEO pay package from Fortune (March 2026). DCF scenarios constructed by analysts using verified FY2025 base data.",
+      "change_notes": "Initial analysis as of 2026-03-11. No prior report to compare. Key near-term watch items: Google Cloud Q1 2026 growth rate, ad tech antitrust remedies resolution, and 2026 FCF trajectory vs. capex.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ASML/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 7.1,
+      "confidence": "high",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 10,
+        "management": 7,
+        "business_economics": 9,
+        "balance_sheet": 9,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Complete monopoly on EUV lithography \u2014 sole supplier of machines required to manufacture every advanced chip on earth",
+        "27% ROIC, 51\u201353% gross margins, and \u20ac11B in free cash flow sustained across semiconductor cycles",
+        "\u20ac38.8B order backlog (~1.2x annual revenue) with EUV capacity fully booked through 2027",
+        "Fortress balance sheet: net cash ~\u20ac10B+, Debt/EBITDA below 0.3x, A1 credit rating",
+        "30-year technology lead embedded in physics, supplier ecosystems, and customer process dependencies \u2014 no credible rival before 2028\u20132030"
+      ],
+      "key_risks": [
+        "China DUV export ban risk: China was ~25\u201330% of 2025 revenue; a blanket ban would remove ~\u20ac8B annually with no near-term substitute",
+        "Valuation compression: stock trades at ~48\u201352x trailing earnings, 40\u201345% above 10-year historical average P/E of 36x",
+        "Semiconductor capex cycle downturn: correlated cuts by TSMC, Samsung, and Intel would compress order intake sharply beyond the 12\u201318 month backlog buffer",
+        "High-NA EUV ramp execution risk: margin expansion thesis depends on adoption scaling to 20+ units/year by 2027; any delay would hit revenue and margins",
+        "Geopolitical tail risk: TSMC (~33% of EUV demand) exposure to Taiwan Strait disruption; China rare-earth supply controls add supply-side vulnerability"
+      ],
+      "red_flags": [
+        "Customer concentration extreme: ~60\u201375% of revenue from three customers (TSMC, Samsung, Intel); TSMC capex pause would be immediately painful",
+        "China revenue structurally declining due to export restrictions; must be replaced by growth elsewhere",
+        "Stock rose ~50% in 2025; momentum-driven positioning increases risk of sharp sentiment-driven reversals",
+        "High correlation with AI/semiconductor theme adds portfolio concentration risk rather than diversification",
+        "China EUV prototype development reported December 2025 \u2014 earlier-stage than feared but warrants monitoring through 2026\u20132028"
+      ],
+      "valuation_summary": "Conservative intrinsic value estimates land at \u20ac500\u2013800/share versus a current price of ~\u20ac1,260/share (~$1,368 NASDAQ); the base case barely justifies today's price and only the bull case produces meaningful upside, with bear-case downside of 55\u201360% and no margin of safety at current levels.",
+      "source_summary": "Analysis based on web search results (January\u2013March 2026) including ASML Q4 2025 press release, ASML investor relations, MacroTrends, StockAnalysis, Morningstar, GuruFocus, analyst price targets from MarketBeat/TipRanks, and China export control news coverage; training knowledge used for technical and governance context.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "CDNS",
+      "company": "Cadence Design Systems",
+      "analysis_date": "2026-03-12",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/CDNS/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 7.1,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 9,
+        "management": 8,
+        "business_economics": 8,
+        "balance_sheet": 9,
+        "valuation": 4,
+        "margin_of_safety": 4,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "30-year EDA duopoly with Synopsys, near-100% customer retention, and extreme switching costs",
+        "85%+ gross margins with $1.5B annual FCF at 135% conversion of net income \u2014 elite software economics",
+        "Record $7.8B backlog locking in ~67% of next year's revenue with 91% recurring revenue mix",
+        "Fortress balance sheet: net cash of $451M, 18x interest coverage, could retire all debt in under 2 years",
+        "Secular AI tailwind as chip design complexity and custom silicon proliferation expand EDA addressable market"
+      ],
+      "key_risks": [
+        "Valuation compression: at 50x owner earnings, even modest growth disappointment could trigger 30-40% downside",
+        "China export controls tightening: 12-13% of revenue at risk, compounded by $140M BIS/DOJ penalty history",
+        "AI commoditization of EDA tools: low-medium probability but high severity if open-source or AI-native design gains traction",
+        "Stock-based compensation of $600M+ annually creates meaningful shareholder dilution, flat share count despite buybacks",
+        "Semiconductor cyclical downturn could pressure bookings growth over a 5-year horizon"
+      ],
+      "red_flags": [
+        "$140M BIS/DOJ penalty for illegal exports to Chinese military-linked entities signals past compliance failures",
+        "Stock trades 17% above base-case intrinsic value with 2:1 unfavorable downside/upside asymmetry",
+        "SBC creates ~16 percentage point gap between GAAP and non-GAAP operating margins"
+      ],
+      "valuation_summary": "At ~$293 and ~50x owner earnings ($5.83/share), CDNS is priced for near-perfection. Base-case DCF yields ~$250 (15% overvalued), bear case ~$177 (40% downside), bull case ~$348 (19% upside). Requires 18% annual earnings growth for 5 years to deliver 10% returns. The market is pricing sustained mid-teens growth with premium multiple persistence.",
+      "source_summary": "Cadence Q4/FY2025 earnings release (Feb 2026), 10-K FY2025, Q3 2025 10-Q, DEF 14A 2024 proxy, Yahoo Finance, StockAnalysis, MacroTrends, GuruFocus, Seeking Alpha, Simply Wall St, Mordor Intelligence EDA market report, BIS.gov, DOJ press releases, PortfoliosLab, MarketBeat, CNBC.",
+      "change_notes": "Initial full analysis. Exceptional business quality (avg 8.6 on umbrellas 1-5) offset by premium valuation and negative price margin of safety (avg 4.7 on umbrellas 6-8). Watch for price entry at $220-240.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "NOW",
+      "company": "ServiceNow, Inc.",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/NOW/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 7.1,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 8,
+        "management": 6,
+        "business_economics": 8,
+        "balance_sheet": 10,
+        "valuation": 5,
+        "margin_of_safety": 5,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "98% subscription renewal rate with 85% of Fortune 500 as customers, demonstrating deep switching-cost moat",
+        "Fortress balance sheet: $10.1B liquid assets vs. $1.5B debt, generating $5.4B annual operating cash flow",
+        "35% FCF margin and 125% net revenue retention \u2014 existing customers alone grow base 25% annually",
+        "cRPO of $12.85B (+25% YoY) provides high near-term revenue visibility",
+        "Now Assist AI suite crossed $600M ACV in 2025, doubling YoY, with $1B target for 2026"
+      ],
+      "key_risks": [
+        "AI-driven demand destruction: Microsoft Agent 365 bundles AI workflow automation into existing M365 enterprise agreements, directly threatening ServiceNow's pricing power",
+        "$12B M&A cycle in 2025 \u2014 including $7.75B Armis acquisition \u2014 is a dramatic break from organic growth model with unproven integration execution",
+        "Federal government revenue exposure (~10\u201315% of revenue) faces DOGE-driven IT budget cuts documented in early 2026",
+        "Stock-based compensation of ~$2.4B annually (~16% of revenue) is a persistent structural tax on owner earnings",
+        "$7.9B in non-cancellable cloud infrastructure commitments creates rigid cost floor if revenue growth disappoints"
+      ],
+      "red_flags": [
+        "Stock fell ~50% from January 2025 all-time high despite consistently beating earnings, suggesting structural re-rating rather than sentiment alone",
+        "SBC of ~$2.4B annually exceeds GAAP net income of $1.75B \u2014 GAAP earnings dramatically understate real shareholder dilution",
+        "Microsoft Agent 365 directly targets enterprise workflow automation, with potential to erode ServiceNow pricing power via bundling",
+        "GAAP P/E of ~69x means any FCF growth slowdown could trigger further multiple compression even if the business remains healthy",
+        "FY2026 guidance includes ~100bps contribution from Moveworks acquisition \u2014 organic growth ex-acquisition is slower, and integration risk is real"
+      ],
+      "valuation_summary": "At ~$121/share (~$120B market cap), NOW trades at ~26x trailing FCF \u2014 its lowest FCF multiple in years, compressed from a historical range of 60\u201380x. Bear-case DCF (~10% growth, 28% FCF margin) yields ~$91B intrinsic value approximating current market cap, while base case (18% growth, 35% FCF margin) implies ~$170B; the stock represents fair-to-good value rather than a deep discount, with the multiple compression itself serving as the margin of safety.",
+      "source_summary": "Analysis draws on web search results from March 2026 including ServiceNow Q4 2025 earnings press release, investor relations newsroom, Yahoo Finance, MarketBeat, StockAnalysis, GuruFocus, CNBC, Bloomberg, Motley Fool, Seeking Alpha, MacroTrends, and analyst research notes, supplemented by training knowledge on enterprise software dynamics.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing Company",
+      "analysis_date": "2026-03-07",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/TSM/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 7.1,
+      "confidence": "high",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 9,
+        "management": 8,
+        "business_economics": 8,
+        "balance_sheet": 8,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "72% global foundry market share and 90%+ at leading-edge nodes with no viable alternative",
+        "Exceptional economics: 49% ROIC, 60% gross margins, $31B free cash flow in 2025",
+        "Fortress balance sheet: $95B cash, $31B debt, 0.34x debt-to-EBITDA, AA-/Aa3 ratings",
+        "Decade-wide moat through mutually reinforcing technology leadership, switching costs, and ecosystem lock-in",
+        "Disciplined management: near-zero dilution, no empire-building M&A, 28% dividend increase"
+      ],
+      "key_risks": [
+        "Geopolitical concentration: 90%+ of advanced chip production on Taiwan, 100 miles from China \u2014 existential, unhedgeable tail risk",
+        "Valuation demands near-perfect execution: 34x trailing P/E (53% above 10-year average), base-case DCF ~$290 vs ~$339 market price",
+        "AI spending concentration: HPC grew to 58% of revenue; NVIDIA alone is 19% \u2014 cyclical demand cliff risk if hyperscaler capex slows",
+        "Record capex ($52-56B in 2026, $165B Arizona commitment) creates overcapacity risk if demand disappoints",
+        "Overseas fabs cost 30-50% more than Taiwan equivalents, creating structural margin pressure as geographic diversification grows"
+      ],
+      "red_flags": [
+        "Warren Buffett sold entire TSM position within six months specifically due to geopolitical risk",
+        "Upside-to-downside asymmetry approximately 1:1 (bull ~$450-500, bear ~$160-260) \u2014 far short of 2-3x required",
+        "Minimal insider ownership means management personal wealth not deeply at risk",
+        "Japan fab losses tripled to NT$9.8B in 2025",
+        "Trailing P/E 53% above 10-year historical average"
+      ],
+      "valuation_summary": "Base-case DCF yields approximately $290/ADR versus a ~$339 market price, offering no margin of safety; at 34x trailing earnings (53% above the 10-year average of 22x), the stock requires roughly 20% annual earnings growth through 2030 just to deliver a 10% annualized return.",
+      "source_summary": "Analysis based on web searches conducted 2026-03-07 covering TSMC Q4 2025 earnings, FY2025 financials, foundry market share data, technology roadmap updates, and geopolitical risk analyses from TSMC investor relations, Investing.com, CNBC, TrendForce, and other sources.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "analysis_date": "2026-03-09",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/AAPL/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 7.0,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 9,
+        "management": 8,
+        "business_economics": 9,
+        "balance_sheet": 9,
+        "valuation": 3,
+        "margin_of_safety": 3,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "2.35-billion-device installed base with 92% iPhone retention rate driving sticky recurring revenue",
+        "$107B/year Services segment at ~75% gross margins growing 14% YoY",
+        "$100\u2013123B annual free cash flow at 46.9% gross margins with only $12B in capex",
+        "Negative net debt, AA+ credit rating, and 33\u201344x interest coverage \u2014 fortress balance sheet",
+        "$704B returned to shareholders since 2012 with disciplined, no-empire-building capital allocation"
+      ],
+      "key_risks": [
+        "Google search revenue-sharing deal ($18\u201320B/year, ~20% of EPS) under active DOJ antitrust scrutiny \u2014 30\u201340% probability of material impact",
+        "App Store regulatory dismantling via EU Digital Markets Act and DOJ \u2014 could compress highest-margin Services component",
+        "China revenue (~15% of revenue) and manufacturing (~90%) concentration \u2014 dual exposure to trade conflict or consumer nationalism",
+        "Multiple compression risk: trailing P/E of 32.5x sits ~15% above 5-year average, ~60% probability of crystallizing",
+        "iPhone AI upgrade cycle underwhelm \u2014 Apple Intelligence may prove incremental rather than catalytic for a hardware supercycle"
+      ],
+      "red_flags": [
+        "Valuation score of 3/10 \u2014 base-case DCF implies 16% downside, bear case implies 40% downside at $257/share",
+        "Margin of safety score of 3/10 \u2014 hard-floor violation disqualifies 'Own' verdict despite 7.0 average",
+        "Upside/downside asymmetry approximately 1:3 against the buyer at current price",
+        "DOJ antitrust case threatening termination of Google search deal not adequately discounted in 32.5x P/E multiple"
+      ],
+      "valuation_summary": "Multiple independent DCF models cluster fair value at $140\u2013215; at $257/share the base case implies 16% downside and the bear case implies 40% downside, with no price margin of safety. The stock trades at or above base-case intrinsic value (~$215) with an upside/downside ratio of approximately 1:3 against the buyer.",
+      "source_summary": "Analysis based on web search results (March 2026) drawing on Apple's FY2025 10-K and SEC filings, Q1 FY2026 earnings release, MacroTrends, GuruFocus, StockAnalysis, and multiple third-party valuation models; no user-provided context files were available.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/META/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.9,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 9,
+        "management": 6,
+        "business_economics": 8,
+        "balance_sheet": 9,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "67.3% global social media ad market share sustained through iOS ATT, TikTok competition, and two regulatory regimes",
+        "82% gross margins and ~41% operating margins at $201B revenue scale with near-zero marginal cost per ad impression",
+        "Multidimensional moat: 20-year social graph incumbency, cross-platform ecosystem lock-in (80%+ user overlap across apps), and irreplaceable behavioral data asset",
+        "Fortress balance sheet: ~$49B net cash, ~100x interest coverage, no refinancing risk",
+        "ROIC recovered to ~34% in FY2024 after 2022 trough; Family of Apps standalone margins estimated at 55-60%",
+        "3.35 billion daily active users \u2014 the largest addressable advertising audience on Earth"
+      ],
+      "key_risks": [
+        "AI capex ROI failure: $115-135B 2026 capex program may not generate measurable revenue contribution by 2027-2028 (likelihood: medium, impact: high)",
+        "FTC antitrust appeal: forced divestiture of Instagram or WhatsApp would structurally dismantle the cross-platform ecosystem moat (likelihood: 15-25%, impact: very high)",
+        "FCF compression: reported FCF fell 15% in FY2025 despite 22% revenue growth; 2026 FCF may approach zero as capex nearly doubles again",
+        "EU DMA enforcement: data-sharing restrictions could impair ad targeting effectiveness across ~20-25% of revenue",
+        "Attention erosion among Gen Z: Meta does not own the default entertainment platform for users under 25, risking a long-cycle user base aging dynamic"
+      ],
+      "red_flags": [
+        "No price-based margin of safety at $647 \u2014 base-case DCF yields $430-560; stock is 15-50% above fair value",
+        "Reality Labs: $73B cumulative operating losses with no disclosed path to profitability; $19.2B loss in FY2025 alone",
+        "Dual-class governance: Zuckerberg controls ~58% of votes with ~13.6% economic ownership \u2014 no effective shareholder check on capital allocation",
+        "SBC at $20.4B (10.2% of revenue) \u2014 buybacks are largely dilution offset, not accretive capital return",
+        "Off-balance-sheet uncommenced lease obligations of ~$52.6B not reflected in current balance sheet",
+        "Inverted risk-reward: 1.3-2.9x more downside than upside at current price"
+      ],
+      "valuation_summary": "At $647/share (market cap ~$1,663B), META trades at ~27.6x trailing P/E and ~21.4x forward P/E; base-case DCF analysis yields $430-560 intrinsic value (15-34% overvaluation), with the bull case at ~$818 required to justify current price \u2014 no price-based margin of safety exists, and the forward investment thesis depends on a successful $115-135B AI capex cycle generating measurable returns by 2027-2028.",
+      "source_summary": "Analysis based on FY2025 official earnings release (January 2026), Q4 2024 10-K/press release, Q3 2025 10-Q, SEC filings, and web searches conducted March 2026; FY2025 year-end balance sheet figures are preliminary pending full 10-K; off-balance-sheet lease obligations from mid-2025 10-Q disclosure.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "CRM",
+      "company": "Salesforce Inc.",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/CRM/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.75,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 8,
+        "management": 6,
+        "business_economics": 7,
+        "balance_sheet": 8,
+        "valuation": 6,
+        "margin_of_safety": 5,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "12 consecutive years of global CRM market leadership at ~21% share with wide switching-cost moat",
+        "$14.4B annual free cash flow at 35% FCF margin from 94% recurring subscription revenue",
+        "Near-fortress balance sheet: $14B gross cash, 28x interest coverage, sub-1x Debt/EBITDA",
+        "$72.4B in contracted remaining performance obligations providing extraordinary revenue visibility",
+        "Agentforce AI platform reaching $800M ARR within 15 months, opening a potential third revenue engine"
+      ],
+      "key_risks": [
+        "AI competition from Microsoft Dynamics + Copilot and ServiceNow eroding pricing power and new-customer win rates",
+        "Agentforce fails to achieve material monetization \u2014 plateaus below $2B ARR, collapsing growth re-rating thesis",
+        "Capital allocation regression \u2014 another large value-destructive acquisition above $5B",
+        "Margin expansion stalling or reversing if Salesforce re-accelerates hiring or returns to acquisitions",
+        "Enterprise spending freeze in a macro downturn compressing cRPO growth and net revenue retention"
+      ],
+      "red_flags": [
+        "Post-2023 capital discipline was externally imposed by activist investors (Starboard, Elliott), not voluntary",
+        "Slack acquisition ($27.7B, 2021) has not demonstrated proportional revenue payback \u2014 value-destructive M&A track record",
+        "$3.8B/year in stock-based compensation \u2014 a real cost diluting headline economics",
+        "Goodwill-burdened ROIC of only 8-11% despite strong reported FCF margins"
+      ],
+      "valuation_summary": "At ~$198/share, CRM trades at 13x FY2026 FCF of $14.4B \u2014 below the S&P average \u2014 with a base-case intrinsic value implying ~34% upside but a bear-case discounted value of ~$144/share only 27% below current price; the upside/downside asymmetry is roughly 1.3:1, offering cushion but not a compelling margin of safety.",
+      "source_summary": "Analysis based on web search results covering Salesforce Q4 FY2026 earnings (released February 25, 2026), Salesforce investor relations, MacroTrends, StockAnalysis, GuruFocus, Morningstar, MarketBeat, and SEC filing summaries, supplemented by training knowledge for business model and competitive context.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "analysis_date": "2026-03-06",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/NVDA/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.75,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 7,
+        "management": 7,
+        "business_economics": 9,
+        "balance_sheet": 10,
+        "valuation": 4,
+        "margin_of_safety": 4,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Dominant AI accelerator GPU market share (~80%+) with CUDA ecosystem locking in 4M+ developers through high switching costs",
+        "Extraordinary business economics: 145% ROIC, 56% net margins, $97B free cash flow on a fabless hardware model",
+        "Fortress balance sheet: $54B net cash, 503x interest coverage, $8.5B debt at sub-3% fixed rates",
+        "Mellanox acquisition ($6.9B in 2020) now generating $10B+/quarter in networking revenue \u2014 one of the best tech acquisitions in a decade",
+        "Annual architecture cadence (Blackwell \u2192 Rubin \u2192 Feynman) forces competitors to hit a moving target and compounds the CUDA moat"
+      ],
+      "key_risks": [
+        "Customer-as-competitor concentration: top 4 customers represent 61% of revenue (up from 36% a year ago) and are simultaneously building custom AI silicon (Google TPU, Amazon Trainium, Microsoft Maia, Meta)",
+        "Custom ASIC erosion of inference market: ASIC shipments growing at 44.6% vs. 16.1% for GPUs; analysts project ASICs could capture 70-75% of inference workloads by 2028, attacking the majority of current revenue",
+        "AI capex cycle deceleration: revenue is entirely capex-driven with no recurring contractual floor; FY2023 proved operating income can fall 58% in a single year",
+        "Valuation leaves no room for error: stock trades above most base-case DCF estimates ($124-$165) with bear-case downside ($68) larger than bull-case upside ($260) relative to today's price",
+        "China and geopolitical risk: export restrictions already caused a $4.5B inventory write-down and zeroed out China revenue; TSMC single-source manufacturing is a tail risk"
+      ],
+      "red_flags": [
+        "Customer concentration worsened dramatically: from 36% to 61% of revenue from top 4 customers in one year",
+        "Revenue is entirely capex-driven and non-recurring \u2014 there is no contractual floor if hyperscaler spending pauses",
+        "Largest customers (hyperscalers) are simultaneously the most motivated competitors, actively developing custom AI silicon",
+        "China revenue effectively zeroed out due to export controls, eliminating what was 13-26% of revenue in prior years",
+        "TSMC single-source manufacturing dependency \u2014 any disruption would halt production",
+        "Buybacks of $40.6B in FY2026 at trailing P/E ratios of 30-50x \u2014 not buying cheaply",
+        "No publicly disclosed CEO succession plan for a 63-year-old founder who is the company's public face and strategic architect",
+        "Stock trades above most base-case DCF estimates; market is pricing in the bull case as the base case",
+        "Only insider selling, no insider buying, in the past 3 months"
+      ],
+      "valuation_summary": "At $183/share ($4.45T market cap), NVIDIA trades at ~37x trailing earnings and above most base-case DCF estimates ($124-$165/share), implying 10-32% overvaluation on base-case assumptions. The bear case ($68) implies 63% downside while the bull case ($260) implies 42% upside \u2014 unfavorable asymmetry that offers no margin of safety at current prices.",
+      "source_summary": "Analysis based on web searches conducted March 2026 covering NVIDIA FY2026 earnings (reported Feb 25, 2026), SEC filings, NVIDIA investor relations, MacroTrends, StockAnalysis, GuruFocus, Yahoo Finance, CNBC, TrendForce, SemiAnalysis, and multiple financial data aggregators; no user-provided context files.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "NOVO-B.CO",
+      "company": "Novo Nordisk A/S",
+      "analysis_date": "2026-03-05",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/NOVO-B.CO/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.6,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 7,
+        "management": 5,
+        "business_economics": 7,
+        "balance_sheet": 7,
+        "valuation": 7,
+        "margin_of_safety": 6,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Elite margins: 81% gross, 41% operating, DKK 119B operating cash flow",
+        "Manufacturing scale moat with DKK 60B in 2025 capex; 3-5 years for a competitor to replicate",
+        "US patent protection on semaglutide through 2031-2032",
+        "59.6% branded GLP-1 obesity volume share; recurring revenue from chronic-disease patients who stay on therapy indefinitely",
+        "AA credit rating, 40x+ interest coverage, well-laddered fixed-rate maturities \u2014 balance sheet survives a 30% revenue decline without equity issuance"
+      ],
+      "key_risks": [
+        "Eli Lilly competitive dominance: Lilly holds 57-60% US GLP-1 market share with clinically superior tirzepatide; CagriSema failed to beat tirzepatide head-to-head",
+        "US pricing destruction: MFN deal cuts Ozempic/Wegovy from ~$1,000-1,350/month to ~$350/month; IRA Medicare negotiation cuts Ozempic a further 71% starting 2027",
+        "Single-molecule concentration: semaglutide accounts for vast majority of company value; international patents expire 2026 across China, Canada, Brazil, India",
+        "Governance and management uncertainty: new untested CEO Doustdar, no insider buying during 60%+ decline, Foundation holds 77% voting control with no minority protection",
+        "Product liability litigation: 3,100+ lawsuits in federal MDL related to GLP-1 side effects; estimated ~$2B exposure with potential for expansion"
+      ],
+      "red_flags": [
+        "No insider buying during a 60%+ stock decline; multiple executives were net sellers",
+        "Foundation forced out entire board and CEO in 2025 \u2014 unprecedented intervention suggesting the strategic situation is worse than previously acknowledged",
+        "CagriSema failed to demonstrate non-inferiority against tirzepatide \u2014 Novo currently lacks a best-in-class next-gen product",
+        "2026 guidance range of -5% to -13% is unusually wide, reflecting genuine uncertainty about pricing and volume",
+        "ROIC has fallen from 41% to 25% in two years as DKK 90B in annual capex consumed free cash flow"
+      ],
+      "valuation_summary": "At ~11x trough earnings and 60% below its 52-week high, the market prices Novo as ex-growth pharma with zero future value creation. Probability-weighted intrinsic value suggests ~20% upside with a 2:1 upside/downside asymmetry, but the margin of safety is thin given extreme semaglutide concentration risk.",
+      "source_summary": "Analysis based on web searches conducted 2026-03-05 covering Novo Nordisk Annual Report 2025, Q4 2025 earnings, 2026 guidance, GLP-1 competitive landscape, and analyst estimates; sources include novonordisk.com, CNBC, PharmExec, BioPharma Dive, Fierce Pharma, IQVIA, MacroTrends, StockAnalysis, and rating agency data.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "QCOM",
+      "company": "Qualcomm Inc",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/QCOM/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.6,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 7,
+        "management": 6,
+        "business_economics": 8,
+        "balance_sheet": 8,
+        "valuation": 6,
+        "margin_of_safety": 5,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "QTL patent portfolio (140,000+ patents, #2 globally in 5G SEPs) is a structural toll-road on global wireless with ~74% operating margins",
+        "Exceptional cash generation: $12.8B FCF on $44.3B revenue (29% FCF margin) with fabless model keeping capex at only 2.7% of revenue",
+        "Strong balance sheet: A/A2-rated, 18.6x interest coverage, 1.06x debt/EBITDA, $13.8B in cash",
+        "Credible diversification into automotive and IoT (combined 27% YoY growth in FY2025, targeting $22B by FY2029)",
+        "Stock down 34% from 52-week high; trading at 12.9x forward earnings and 8.6% FCF yield vs 13-year median EV/EBITDA of 12.8x"
+      ],
+      "key_risks": [
+        "Apple modem exit confirmed \u2014 zero Apple chip supply by FY2027, representing $5\u20137B annual QCT revenue impact",
+        "China concentration at 46% of total revenue \u2014 highest among major U.S. semiconductor companies \u2014 is a binary risk from trade escalation or 'buy local' mandates",
+        "QTL licensing durability at risk from FRAND court challenges or 6G SEP competition from Huawei; Huawei licensing renewal unconfirmed as of March 2026",
+        "Diversification execution risk \u2014 bull case requires automotive ($8B) and IoT ($14B) targets by FY2029, which are plausible but not yet proven",
+        "ARM/RISC-V architecture disruption risk over a 5\u201310 year horizon; Qualcomm won ARM lawsuit in January 2026 but long-term risk persists"
+      ],
+      "red_flags": [
+        "CEO received a 15% pay raise in a year when GAAP net income fell 45%",
+        "Insider ownership is low \u2014 management personal wealth not materially at risk alongside shareholders",
+        "China at 46% of revenue is the highest concentration among major U.S. semiconductor peers",
+        "Apple chip exit is confirmed (not forecast) \u2014 $5\u20137B annual revenue loss by FY2027 with no certainty that diversification absorbs it in time",
+        "No confirmed renewal of Huawei licensing agreement; QTL growth guidance is zero for the near term",
+        "52-week range of $120.80\u2013$205.95 shows extreme volatility; beta of 1.57 amplifies tail risk from China or licensing events"
+      ],
+      "valuation_summary": "At ~$136, QCOM trades at 12.9x forward earnings, 8.6% FCF yield, and 10.7x EV/EBITDA versus a 13-year median of 12.8x \u2014 appearing modestly undervalued in a base case (DCF present value ~$130\u2013$149B) but fairly valued given wide outcome dispersion from Apple exit and China risk. A genuine margin of safety requires a price of $105\u2013$115; downside in the bear case is 30\u201335%.",
+      "source_summary": "Analysis based on Qualcomm Q4 FY2025 and Q1 FY2026 earnings releases, FY2025 10-K SEC filings, S&P and Moody's credit ratings, patent analytics sources (LexisNexis, GreyB, Lumenci), and web searches from March 2026, supplemented by training knowledge for business model context.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc",
+      "analysis_date": "2026-03-09",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/AVGO/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.5,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 8,
+        "management": 6,
+        "business_economics": 8,
+        "balance_sheet": 7,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 7
+      },
+      "key_strengths": [
+        "~90% market share in cloud data center switching ASICs and near-monopoly networking ASIC position",
+        "48% FCF margins and sub-1% capex intensity \u2014 one of the most capital-efficient semiconductor businesses in history",
+        "VMware switched to 77% operating margins despite 150\u20131,500% price increases, proving extraordinary switching costs",
+        "$27B annual free cash flow with rapid deleveraging (Debt/EBITDA at 1.5x, down from 3.5x)",
+        "Multi-year co-design lock-in with 5 confirmed hyperscaler XPU customers and $100B+ AI chip revenue guidance for FY2027"
+      ],
+      "key_risks": [
+        "Customer concentration: Google's TPU reportedly ~78% of ASIC revenue; loss of one hyperscaler would be catastrophic",
+        "AI infrastructure spending cyclicality: entire growth narrative depends on hyperscaler capex continuing at current pace",
+        "VMware franchise erosion: Gartner projects market share falling from 70% to 40% by 2029; Nutanix added 2,700 customers in FY2025",
+        "Geopolitical risk: ~20% China revenue exposure, 125% retaliatory tariffs, and Taiwan TSMC manufacturing dependency",
+        "Valuation leaves no room for error at 58x trailing owner earnings; even modest growth miss could trigger severe multiple compression"
+      ],
+      "red_flags": [
+        "Google TPU reportedly ~78% of ASIC revenue \u2014 single-point-of-failure customer concentration",
+        "CEO Hock Tan zero insider purchases in 5 years despite $205M pay package and $5.7B SBC (11% of revenue)",
+        "AT&T lawsuit and European regulatory scrutiny of VMware pricing practices",
+        "Non-AI semiconductor revenue flat YoY \u2014 entire growth story rests on AI capex continuation",
+        "$65B absolute debt despite rapid deleveraging pace"
+      ],
+      "valuation_summary": "At $331/share, Broadcom trades at ~58x trailing owner earnings and 37\u201339x EV/EBITDA \u2014 roughly 2x the semiconductor peer median \u2014 pricing in ~19% revenue CAGR for five years. Base-case intrinsic value is approximately $415/share by FY2030 (~25% upside), bear case is ~$220 (~33% downside), and bull case is ~$650 (~95% upside), yielding roughly even downside/upside asymmetry with no meaningful margin of safety at today's price.",
+      "source_summary": "Analysis based on web searches from March 2026 covering Broadcom Q1 FY2026 earnings (March 4, 2026), FY2025 annual results, SEC filings, investor relations press releases, and financial data from Yahoo Finance, StockAnalysis, MacroTrends, GuruFocus, CNBC, Seeking Alpha, and industry analysts including Gartner and HSBC; no user-provided context files.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "DSV.CO",
+      "company": "DSV A/S",
+      "analysis_date": "2026-03-09",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/DSV.CO/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "low",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.5,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 7,
+        "management": 8,
+        "business_economics": 6,
+        "balance_sheet": 5,
+        "valuation": 6,
+        "margin_of_safety": 5,
+        "temperament": 7
+      },
+      "key_strengths": [
+        "World's largest asset-light freight forwarder with structural scale and network cost advantage post-DB Schenker acquisition",
+        "Exceptional 15-year M&A track record: four consecutive acquisitions (UTi, Panalpina, Agility GIL, DB Schenker) each restoring or exceeding pre-acquisition margins",
+        "Adjusted FCF surged to DKK 16,335m in 2025 (from DKK 5,550m in 2024), confirming strong underlying cash generation",
+        "DKK 9bn annual synergy target from Schenker by 2027 not yet in earnings; significant value creation potential if delivered",
+        "New CEO Jens H. Lund made a DKK 10m voluntary personal share purchase ahead of his formal appointment \u2014 strong alignment signal"
+      ],
+      "key_risks": [
+        "Schenker integration failure or delay: entire bull case rests on DKK 9bn of annual synergies arriving by 2027; at 50% delivery equity value falls DKK 250\u2013350/share",
+        "Balance sheet leverage at 2.8x EBITDA net debt with S&P negative outlook; a 30% revenue shock could push leverage to 3.5\u20134x and pressure credit ratings",
+        "ROIC compressed to ~6% TTM (below cost of capital) post-Schenker; risk of permanent suppression below 10\u201312% if synergies disappoint",
+        "Geopolitical disruption to trade flows: Middle East routing disruptions and US tariff escalation could compress gross profit per shipment and total volumes simultaneously",
+        "Digital disintermediation risk over 5\u201310 year horizon as Maersk, CMA CGM, and digital brokerages target DSV's addressable segments"
+      ],
+      "red_flags": [
+        "Post-Schenker ROIC compressed to ~6% TTM \u2014 below cost of capital; requires full synergy delivery to recover",
+        "Net debt of DKK 86.6bn (incl. lease liabilities) at 2.8x EBITDA with S&P on negative outlook",
+        "Founder-CEO Jens Bj\u00f8rn Andersen departure at peak execution risk during the largest acquisition in company history",
+        "Dilutive equity raise to partially fund Schenker acquisition"
+      ],
+      "valuation_summary": "At DKK 1,669/share, DSV trades at ~16.9x EV/EBITDA (vs its own 5-year average of 19.1x) and is near fair value with base-case intrinsic value of ~DKK 1,950\u20132,200 (~25% upside) and bear-case intrinsic value of DKK 1,200\u20131,400 only 16\u201328% below current price, offering insufficient margin of safety at today's price.",
+      "source_summary": "Analysis draws on DSV A/S 2024 and 2025 Annual Reports, DSV FY2025 investor presentation, Q3 2025 interim report, S&P and Moody's credit opinions, Yahoo Finance, AlphaSpread, MarketScreener analyst consensus, and GuruFocus ROIC data.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "SNPS",
+      "company": "Synopsys, Inc.",
+      "analysis_date": "2026-03-12",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/SNPS/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.4,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 9,
+        "management": 6,
+        "business_economics": 7,
+        "balance_sheet": 5,
+        "valuation": 5,
+        "margin_of_safety": 5,
+        "temperament": 5
+      },
+      "key_strengths": [
+        "EDA duopoly with Cadence controlling ~60% of the market, reinforced by extreme switching costs and 30+ years of cumulative R&D",
+        "~77% recurring revenue with $11B+ backlog providing exceptional predictability and visibility",
+        "Organic business economics are world-class: 80% gross margins, 35% non-GAAP operating margins, asset-light model",
+        "Ansys acquisition creates unique chip-to-system design platform, roughly doubling TAM to ~$31B",
+        "Secular AI tailwind drives chip complexity and EDA spending growth independent of macro conditions"
+      ],
+      "key_risks": [
+        "$13.5B acquisition debt at 8.4x EBITDA with GAAP interest coverage of just 2.0x leaves minimal margin for error",
+        "China export controls can suspend 12-16% of revenue overnight, as demonstrated in May 2025",
+        "Ansys integration risk: $35B bet on cross-sell synergies is unproven; former Ansys CEO already departing board",
+        "GAAP vs non-GAAP earnings gap is 10x ($0.34 vs $3.77 Q1 EPS), obscuring true economics",
+        "Valuation compression risk: at 30x forward P/E, stock prices in flawless execution with no discount for uncertainty"
+      ],
+      "red_flags": [
+        "CEO has made zero open-market stock purchases in 5 years; all 9 transactions were sales",
+        "$4.2B in buybacks over 5 years merely offset SBC dilution \u2014 share count flat",
+        "GAAP ROIC collapsed to ~2-4% from ~20%+ pre-Ansys acquisition",
+        "Class-action lawsuit filed in late 2025 related to Ansys deal disclosures",
+        "10% workforce reduction as part of Ansys synergy realization introduces cultural risk"
+      ],
+      "valuation_summary": "At ~$433, SNPS trades at ~30x forward non-GAAP EPS, below its 5-year average of ~37x but still pricing in 13-15% annual earnings growth for 5 years. Conservative DCF models ($296-$370) suggest 15-30% overvaluation. Base case discounted value ~$369 implies ~15% downside. No price margin of safety at current levels.",
+      "source_summary": "Synopsys Q4 FY2025 and Q1 FY2026 earnings releases, FY2025 10-K, SEC proxy filings, AlphaSpread DCF models, Mordor Intelligence EDA market report, S&P Global Market Intelligence, MacroTrends, StockAnalysis.com, GuruFocus, Yahoo Finance, MarketBeat, PortfoliosLab",
+      "change_notes": "Initial analysis. The $35B Ansys acquisition (July 2025) is the defining event \u2014 it transformed SNPS from a clean capital-light compounder into a leveraged platform bet. Business quality remains exceptional but price margin of safety is absent.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "IQV",
+      "company": "IQVIA Holdings",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/IQV/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 6.25,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 8,
+        "management": 6,
+        "business_economics": 7,
+        "balance_sheet": 5,
+        "valuation": 6,
+        "margin_of_safety": 5,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Irreplaceable 68-petabyte proprietary health dataset covering 1.2B patient records across 100+ countries \u2014 no competitor has replicated at scale",
+        "Self-reinforcing data + CRO flywheel: each trial run enriches analytics, which attracts more sponsors",
+        "$32.4B contracted R&DS backlog with 1.12x book-to-bill provides exceptional multi-year revenue visibility",
+        "$2.05B FCF in 2025 at 99% adjusted net income conversion \u2014 high-quality earnings",
+        "Trading at 11.3x trailing EV/EBITDA vs. 13-year median of 18.75x \u2014 historically cheap multiple",
+        "16-year CEO tenure with disciplined bolt-on M&A track record and honest communication style"
+      ],
+      "key_risks": [
+        "CRO cancellations in 2024 ran ~50% above 3-year average; normalization is not within management's direct control",
+        "Net debt of $13.7B at 3.63x EBITDA \u2014 rising year-over-year \u2014 amplifies downside in any revenue shortfall",
+        "Bear case DCF of ~$112/share implies 35% downside with no price margin of safety at $171.60",
+        "AI-driven pricing pressure on CRO services is a slow-burn secular risk that could compress margins structurally",
+        "CEO sold $20.6M in shares over 6 months with zero open-market purchases \u2014 negative alignment signal"
+      ],
+      "red_flags": [
+        "Net leverage increased from 3.33x to 3.63x in 2025 \u2014 moving in the wrong direction",
+        "Interest expense guided to increase ~$80M in 2026, compressing EBIT coverage below 3.5x",
+        "Combined Chairman/CEO role limits board independence",
+        "R&DS constant-currency growth of ~3.5% in 2025 is below CRO market expected CAGR of 7.4% \u2014 potential market share loss",
+        "Bear case (~$112) is 35% below current price with unfavorable 1.6:1 risk-reward ratio"
+      ],
+      "valuation_summary": "At $171.60/share, IQV trades at 11.3x trailing EV/EBITDA (vs. 13-year median 18.75x) with a base-case DCF of ~$169 and a bear-case DCF of ~$112, implying no price margin of safety; the stock is roughly fairly valued assuming 5\u20136% revenue growth and stable margins, but offers no discount for the uncertainty around CRO cycle normalization and elevated 3.63x net leverage.",
+      "source_summary": "Analysis draws on IQVIA Q4/FY2025 earnings press release (Feb 2026), Q4 2025 earnings call transcript, proxy filings (DEF14A Feb 2026), segment disclosures, MacroTrends/StockAnalysis/Yahoo Finance financial data, GuruFocus/Seeking Alpha analyst research, and TipRanks/WallStreetZen consensus estimates \u2014 all sourced as of March 2026.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": true,
+      "eligible_for_short": false,
+      "long_eligibility_reason": "Eligible for long book",
+      "short_eligibility_reason": "Does not clear short bar"
+    },
+    {
+      "ticker": "ISRG",
+      "company": "Intuitive Surgical",
+      "analysis_date": "2026-03-12",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ISRG/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 7.4,
+      "confidence": "High on business quality (9/10 conviction); Medium on valuation (the tension between exceptional business and demanding price is the central question)",
+      "umbrella_scores": {
+        "circle_of_competence": 9,
+        "competitive_advantage": 9,
+        "management": 8,
+        "business_economics": 9,
+        "balance_sheet": 10,
+        "valuation": 4,
+        "margin_of_safety": 4,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Dominant ~80% global market share in robotic surgery with 25 years of clinical data and interlocking switching costs",
+        "Razor/blade model with 75-80% recurring revenue from 11,106 installed systems and 3.15M annual procedures",
+        "Fortress balance sheet: zero debt, $5.9B cash, $2.5B annual FCF, 4.87x current ratio",
+        "Elite business economics: 27% ROIC, 66%+ gross margins, revenue compounding at 15% CAGR since 2018",
+        "Highly understandable business model with transparent key drivers and minimal customer concentration"
+      ],
+      "key_risks": [
+        "Valuation demands near-perfection: 62-67x trailing P/E with only ~8% upside to probability-weighted intrinsic value of ~$530",
+        "Medtronic Hugo received FDA clearance for urology (Dec 2025) \u2014 first credible U.S. competitive threat in 20+ years",
+        "Procedure growth guided to decelerate from 18% (2025) to 13-15% (2026); further slowdown would compress multiples",
+        "Chinese competitors advancing rapidly in international markets where ISRG has less switching cost lock-in",
+        "Gross margin pressure from da Vinci 5 ramp costs and tariff headwinds (1.2% guided impact in 2026)"
+      ],
+      "red_flags": [
+        "No Buffett-style price margin of safety at ~$490; would need ~25% pullback to ~$370 for traditional entry",
+        "Base case scenario offers only ~6% total return \u2014 barely above risk-free rate",
+        "Stock-based compensation gap: GAAP operating margin 29.3% vs pro forma 37% partly reflects SBC adjustments",
+        "Buybacks only barely offset SBC dilution (0.4% net share reduction in FY2025)"
+      ],
+      "valuation_summary": "At ~$490 per share, ISRG trades at 62-67x trailing earnings and ~43-46x owner earnings. Probability-weighted intrinsic value is ~$530 (bear $340, base $520, bull $730), offering only ~8% upside. The market implies 16-18% annual earnings growth for 5+ years. This is a fair price for a world-class business, not a bargain.",
+      "source_summary": "Q4 2025 earnings release (Jan 22, 2026), SEC filings, MacroTrends, Yahoo Finance, StockAnalysis.com, Seeking Alpha, TIKR.com, GuruFocus, Simply Wall St, MedTech Dive, PortfoliosLab, company investor relations",
+      "change_notes": "Initial analysis. ISRG scores exceptionally on business quality metrics (competence, moat, economics, balance sheet) but the premium valuation leaves no margin of safety for a new buyer. Watch for a meaningful pullback to $370-420 range.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "ADI",
+      "company": "Analog Devices, Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ADI/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 6.5,
+      "confidence": "high",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 8,
+        "management": 7,
+        "business_economics": 8,
+        "balance_sheet": 8,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Design-win switching costs create 5\u201315 year revenue tails with minimal churn",
+        "70%+ adjusted gross margins sustained across full cycles including the 2023\u20132024 trough",
+        "39% FCF margin generating $4.3\u20134.6B annually \u2014 net debt retirable in under 2 years of FCF",
+        "22 consecutive years of dividend growth with 96% of FY2025 FCF returned to shareholders",
+        "Full signal-chain breadth (sensor, amplifier, converter, power management) enables systems-level selling competitors cannot replicate",
+        "60 years of analog IP depth and application engineering relationships that compound over time"
+      ],
+      "key_risks": [
+        "Semiconductor inventory cycle correction: revenue could fall 15\u201325% in FY2027 if customers over-ordered; bear-case implies ~55% stock downside",
+        "China export control escalation: ~25\u201330% of revenue from China with limited near-term offset if BIS rules expand to analog/mixed-signal ICs",
+        "Multiple compression: at 32\u201334x forward earnings/FCF, stock is acutely sensitive to rate expectations and sector sentiment",
+        "Taiwan foundry supply chain: TSMC reliance creates catastrophic tail risk in a geopolitical escalation scenario",
+        "Custom ASIC integration at hyperscalers: gradual but real risk to the communications/data center segment (~13% of revenue) over a 5\u201310 year horizon"
+      ],
+      "red_flags": [
+        "No margin of safety at current price: ~120% above conservative intrinsic value, ~40% above base-case 10%-return value",
+        "3:1 downside-to-upside asymmetry at $318.81 \u2014 unfavorable for a Buffett-style investor",
+        "61.5% 12-month price surge embeds cyclical recovery and AI re-rating; momentum can reverse sharply",
+        "GAAP ROIC of 3\u20137% is distorted by $20B+ Maxim goodwill \u2014 requires investor to adjust mentally",
+        "Dual Chair/CEO role reduces independent board oversight",
+        "Gross debt of ~$8.6B is Maxim acquisition legacy; deleveraging in progress but not complete"
+      ],
+      "valuation_summary": "At $318.81/share (34x trailing FCF, 32x forward adjusted EPS), ADI's current price requires the bull case to be fully realized \u2014 FY2028 FCF of $6B+ on ~$15B revenue \u2014 just to return 10% annually; the base-case discounted intrinsic value is ~$225 and the conservative value is ~$140\u2013145, creating 3:1 downside-to-upside asymmetry with no margin of safety.",
+      "source_summary": "Analysis based on ADI Q1 FY2026 earnings release (Feb 2026), FY2025 Q4 press release (Nov 2025), MacroTrends/GuruFocus financial data, StockAnalysis statistics, MarketBeat/Nasdaq analyst consensus, and ADI SEC filings; all data from primary sources dated within 60 days of analysis date.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly and Company",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/LLY/FINAL-REPORT.json",
+      "queue_state": "watchlist",
+      "queue_priority": "medium",
+      "current_verdict": null,
+      "verdict": "Pass",
+      "average_score": 6.5,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 8,
+        "management": 8,
+        "business_economics": 8,
+        "balance_sheet": 7,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "Tirzepatide patents protected through 2036\u20132041 providing a 10\u201315 year legal moat",
+        "$50B manufacturing investment creating a structural supply barrier competitors cannot quickly replicate",
+        "83% gross margins and 40% operating margins \u2014 world-class even among premium pharma",
+        "ROIC of 25%+ in FY2025 with exceptional operating leverage (307% operating income growth on 91% revenue growth 2023\u20132025)",
+        "CEO David Ricks owns ~$683M of personal stock and has delivered 571% TSR since 2017",
+        "Pipeline depth: orforglipron (oral GLP-1), retatrutide (triple agonist), Kisunla (Alzheimer's) extend franchise beyond tirzepatide",
+        "Balance sheet manages $42.5B debt safely: net debt/EBITDA ~1.2x, interest coverage ~14\u201319x"
+      ],
+      "key_risks": [
+        "No price margin of safety at ~$1,001 \u2014 stock priced at base-case intrinsic value (~$960\u20131,025); bear case implies 30\u201355% downside",
+        "IRA Medicare drug pricing: Jardiance already cut January 2026; tirzepatide is a logical next negotiation target",
+        "Tirzepatide at 56% of 2025 revenue creates extreme single-product concentration risk",
+        "Oral GLP-1 competitive wave: Novo Nordisk next-gen oral, Pfizer danuglipron, Viking Therapeutics pipeline could erode Zepbound market share",
+        "Manufacturing capex cycle ($7.8B in FY2025) becomes stranded asset if GLP-1 demand disappoints",
+        "Compounding pharmacy litigation outcome uncertain \u2014 adverse ruling could re-introduce large-scale lower-cost competition"
+      ],
+      "red_flags": [
+        "Margin of safety score 3/10 \u2014 no price cushion at current entry",
+        "Risk/reward ratio ~1.5\u20132:1 (bull upside vs. bear downside) \u2014 below 3:1 threshold",
+        "IRA headwind already live: Jardiance cut January 2026; tirzepatide exposure high",
+        "Bear case intrinsic value ~$447 implies 55% downside from current price",
+        "FCF conversion 43% (FY2025) due to massive growth capex \u2014 normalized earnings trust required",
+        "Total debt grew 152% in four years to $42.5B"
+      ],
+      "valuation_summary": "At ~$1,001/share, LLY is roughly fairly valued in the base case (5-year DCF intrinsic value ~$960\u20131,025 at 10% discount rate) and materially overvalued in the bear case (~$447); the bull case (~$1,710\u20131,865) requires near-perfect GLP-1 execution; there is effectively no margin of safety at the current price.",
+      "source_summary": "FY2021\u20132025 financial data sourced from stockanalysis.com and Lilly Q4 2025 earnings press release (Feb 4, 2026); product revenue breakdown from widely reported analyst data; price history and pipeline data from March 2026 web searches; interest expense and debt maturity details partially estimated from training knowledge pending 10-K confirmation.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "RDDT",
+      "company": "Reddit Inc",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/RDDT/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 6.0,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 7,
+        "management": 6,
+        "business_economics": 7,
+        "balance_sheet": 9,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 4
+      },
+      "key_strengths": [
+        "91% gross margins with $684M in free cash flow and near-zero capex",
+        "Fortress balance sheet: zero long-term debt, $2.5B cash, 12x current ratio",
+        "Unique 20-year non-replicable human-content corpus central to AI training pipelines",
+        "Strong network effects across 100,000+ self-sustaining subreddits",
+        "AI data licensing revenue stream (~$140M in 2025) with major contracts with Google and OpenAI"
+      ],
+      "key_risks": [
+        "No margin of safety at ~$135 \u2014 bear-case DCF (~$78) is 42% below current price",
+        "SBC at 18% of revenue ($387M) materially overstates shareholder economics; true P/E closer to 67-77x",
+        "Active FTC investigation and EU AI Act enforcement exposure threaten data licensing stream",
+        "Platform dependency on Google for new user discovery creates single-point vulnerability",
+        "Revenue growth decelerating (70% Q4 2025 \u2192 52-54% guided Q1 2026) at a demanding multiple"
+      ],
+      "red_flags": [
+        "Only one year of profitability \u2014 insufficient capital allocation track record",
+        "Dual-class voting structure with no time-based sunset",
+        "Bear-case intrinsic value (~$78) is below current trading price (~$135)",
+        "Upside-to-downside ratio of only 1.4x ($213 base vs. $78 bear)"
+      ],
+      "valuation_summary": "Base-case DCF yields ~$213 (implying ~58% upside from ~$135), but the bear-case DCF of ~$78 sits 42% below the current price, and achieving the base case requires sustaining 40-50% revenue CAGR through 2028-2029 with EBITDA margins expanding to 38-42% \u2014 achievable but not conservative assumptions. At ~$135, there is no margin of safety; the stock becomes attractive in the $90-110 range where the bear-case downside narrows to 15-29%.",
+      "source_summary": "Analysis draws on Reddit Q4 2025 earnings release (BusinessWire, Feb 5 2026), Q4 2025 earnings call transcript, full-year 2025 financials via MacroTrends, DemandSage user statistics, GuruFocus, CNBC coverage, and supplementary sources for valuation, balance sheet, and regulatory context.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "ABBV",
+      "company": "AbbVie Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ABBV/FINAL-REPORT.json",
+      "queue_state": "deep_research",
+      "queue_priority": "high",
+      "current_verdict": null,
+      "verdict": "Watch",
+      "average_score": 5.75,
+      "confidence": "Medium-High \u2014 Business quality, patent runway, and near-term financials are well-documented with current data through February 2026 earnings; valuation judgment carries medium confidence as DCF outcomes depend on pipeline execution and IRA pricing impact that cannot be known with certainty; the absence of a price margin of safety is the most robust finding.",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 7,
+        "management": 7,
+        "business_economics": 8,
+        "balance_sheet": 5,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 4
+      },
+      "key_strengths": [
+        "Skyrizi ($17.6B) and Rinvoq ($8.3B) growing 29-32% annually with patent protection to 2033 and 2037 respectively, already surpassing Humira's peak combined revenues two years ahead of management targets",
+        "Exceptional cash generation \u2014 $17.8B FCF in 2024 on $56.3B revenue (~32% FCF conversion) with only ~1.7% capex/revenue, confirming a truly asset-light business model",
+        "Proven management track record: navigated the world's largest pharma patent cliff (Humira), vindicated the $63B Allergan acquisition (now $10.8B neuroscience revenue), and delivered transparent multi-year guidance with accuracy",
+        "~84% adjusted gross margins across 2024-2025 confirm pricing power within patent-protected windows, among the highest in large-cap pharma",
+        "Investment-grade credit ratings (S&P A-, Moody's A3, both stable) and $13.5B combined liquidity provide resilience and capital markets access"
+      ],
+      "key_risks": [
+        "No price margin of safety at ~$234 \u2014 all three DCF scenarios (bear ~$90, base ~$119, bull ~$177) produce intrinsic values materially below current price; base case implies 49% downside",
+        "IRA drug pricing: Skyrizi and Rinvoq will likely enter Medicare price negotiations in the late 2020s, potentially reducing peak owner earnings by $2-4B annually",
+        "Immunology concentration: Skyrizi + Rinvoq = ~42% of 2025 revenue and virtually all near-term growth; a class-wide safety event or competitive displacement by Lilly/Pfizer/UCB pipeline could hit both simultaneously",
+        "Balance sheet leverage: ~$67B total debt, net debt/EBITDA ~3.5x from serial large acquisitions (Allergan, ImmunoGen, Cerevel); $7.5B annual dividend is the first item at risk in a stress scenario",
+        "Pipeline dependency post-2030: neuroscience pipeline (tavapadon, emraclidine) must deliver commercially to bridge the eventual Skyrizi/Rinvoq exclusivity cliff in 2033-2037; pipeline failure is the statistical norm in pharma"
+      ],
+      "red_flags": [
+        "Current price ($234) exceeds all three DCF intrinsic value scenarios including the bull case ($177) \u2014 market requires above-bull-case execution to justify the entry price",
+        "GAAP interest coverage of ~2.3x is formally below the 3x warning threshold; GAAP-to-adjusted gap is large and requires investor judgment on accounting legitimacy",
+        "CEO-Chairman duality following July 2025 transition concentrates power and reduces board independence",
+        "Rinvoq carries FDA black box warning for serious infections, malignancies, and cardiovascular events \u2014 creates a ceiling on market expansion and ongoing regulatory/litigation risk",
+        "Historical maximum drawdown of -45% with a ~35-month recovery period; a buyer at $234 could plausibly see the stock at $129 before recovery given the overvalued entry"
+      ],
+      "valuation_summary": "At ~$234/share (~$407B market cap, ~$469B EV), ABBV trades at ~16x forward adjusted EPS ($14.47 guidance midpoint) and ~22x adjusted FCF \u2014 reasonable multiples in isolation, but the DCF analysis produces a bear/base/bull intrinsic value range of $90/$119/$177, all below current price; the market is pricing in owner earnings of $25-27B by 2030 (7-9% annual growth) with no margin for error.",
+      "source_summary": "Analysis based on AbbVie Q4 2025 earnings release (Feb 4, 2026), full-year 2024 and 2025 actuals from SEC filings and press releases, 2026 management guidance, analyst consensus from MarketBeat/StockAnalysis (46 analysts), patent data from DrugPatentWatch, credit ratings from S&P/Moody's, and historical volatility data from PortfoliosLab.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "CAT",
+      "company": "Caterpillar Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/CAT/FINAL-REPORT.json",
+      "queue_state": null,
+      "queue_priority": null,
+      "current_verdict": null,
+      "verdict": "Pass",
+      "average_score": 5.75,
+      "confidence": "high",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 8,
+        "management": 7,
+        "business_economics": 7,
+        "balance_sheet": 7,
+        "valuation": 3,
+        "margin_of_safety": 2,
+        "temperament": 4
+      },
+      "key_strengths": [
+        "Irreplicable 150+ dealer network spanning ~2,800 global facilities built over a century",
+        "Services revenue $24B (~39% of ME&T) growing from $14B in 2016 \u2014 recurring, anti-cyclical flywheel",
+        "ROIC expanded from 6.2% (2020) to 18.2% (2024) \u2014 structural improvement, not a fluke",
+        "ME&T industrial entity net cash ~$5B with 22x interest coverage \u2014 fortress balance sheet",
+        "30 consecutive years of dividend growth; share count reduced ~14% (2020-2025)"
+      ],
+      "key_risks": [
+        "Valuation at 37-41x trailing P/E (~2x historical average) \u2014 severe multiple compression risk",
+        "Management-disclosed $2.6B tariff headwind for 2026 against ~$11B operating profit base",
+        "Cyclical leverage: 4% revenue growth in FY2025 produced 15% operating profit decline",
+        "China market share erosion by XCMG/SANY \u2014 structural, not cyclical",
+        "Cat Financial's $35B+ debt requires continuous capital market access \u2014 2008-style risk in a credit crunch"
+      ],
+      "red_flags": [
+        "All three DCF scenarios (bear $151, base $272, bull $377) produce intrinsic value below current ~$705 price",
+        "Buybacks executed mechanically \u2014 $7.7B repurchased in 2025 when FCF was only $7.5B",
+        "New CEO Joe Creed appointed May 2025 \u2014 no track record as CEO",
+        "Historical max drawdown of 73% when entering at elevated multiples"
+      ],
+      "valuation_summary": "All three DCF scenarios (bear ~$151, base ~$272, bull ~$377) produce intrinsic values materially below the current price of ~$705; the stock trades at 37-41x trailing earnings, roughly 2x its own 5-year historical average and >2x the industry median forward P/E, offering no margin of safety at any reasonable set of assumptions.",
+      "source_summary": "Web search (Caterpillar Q4/FY2025 earnings releases, investor relations, MacroTrends, StockAnalysis, FinancialContent, Seeking Alpha) plus training knowledge for historical context; all 2025 full-year results confirmed, segment data may have minor rounding differences from official filings.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "ALAB",
+      "company": "Astera Labs, Inc.",
+      "analysis_date": "2026-03-06",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ALAB/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 5.6,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 6,
+        "competitive_advantage": 6,
+        "management": 6,
+        "business_economics": 7,
+        "balance_sheet": 10,
+        "valuation": 3,
+        "margin_of_safety": 3,
+        "temperament": 4
+      },
+      "key_strengths": [
+        "Fortress balance sheet: zero debt, $1.19B cash, 10.2x current ratio",
+        "Excellent unit economics: 75%+ gross margins, asset-light fabless model, strong operating leverage",
+        "Founder-led management with ~$900M in skin-in-the-game ownership",
+        "Real switching costs from 12-18 month design-win qualification cycles and COSMOS software platform",
+        "115% YoY revenue growth in FY2025 driven by AI infrastructure buildout"
+      ],
+      "key_risks": [
+        "Amazon dependency: 70%+ of FY2025 revenue from one customer with no contractual purchase obligation",
+        "Valuation leaves zero room for error: ~86x forward P/E, 30-45% above DCF fair value estimates",
+        "AI capex cycle deceleration risk: zero business diversification outside AI data center connectivity",
+        "Competitive encirclement: Broadcom, Marvell (XConn acquisition), and Credo entering retimer/switch markets",
+        "Gross margin erosion already underway: guided ~74% for Q1 2026, down from 76.4% in Q3 2025"
+      ],
+      "red_flags": [
+        "No insider open-market purchases since IPO; $87M in insider selling",
+        "CFO Mike Tate departed shortly after Q4 earnings",
+        "Share count grew 27% in one year due to excessive SBC ($160M annually, 19% of revenue)",
+        "$6.5B Amazon warrant agreement deepens single-customer dependency rather than diversifying it",
+        "Decelerating sequential revenue growth: 20% (Q3) to 17% (Q4) to guided 6-10% (Q1 2026)"
+      ],
+      "valuation_summary": "Multiple DCF models place fair value at $80-93 versus the current ~$120 price; at ~86x forward P/E and ~69x FCF, the market prices in ~37% annual earnings growth for five years to reach $3.5-4.0B in revenue by 2030. The stock is 30-45% above conservative intrinsic value with no margin of safety.",
+      "source_summary": "Analysis based on web searches conducted 2026-03-06 covering Astera Labs Q4/FY2025 earnings (reported 2026-02-10), SEC filings, StockAnalysis.com, MacroTrends, Yahoo Finance, MarketBeat, Seeking Alpha, CNBC, and company investor relations; no user-provided context files.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "ORCL",
+      "company": "Oracle Corporation",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ORCL/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 5.5,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 8,
+        "competitive_advantage": 8,
+        "management": 6,
+        "business_economics": 6,
+        "balance_sheet": 4,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 5
+      },
+      "key_strengths": [
+        "Database switching-cost moat with 40%+ market share sustained across decades of open-source competition",
+        "$553B contracted RPO backlog representing extraordinary AI infrastructure demand pipeline",
+        "77% recurring revenue base with $23.5B TTM operating cash flow and 30.8% GAAP operating margins",
+        "Larry Ellison 41% ownership stake providing strong founder alignment",
+        "Multicloud database strategy (Oracle Database@AWS, @Azure, @Google) converting threats into revenue streams"
+      ],
+      "key_risks": [
+        "AI infrastructure demand softening or commoditization \u2014 entire growth thesis rests on $553B RPO converting to revenue",
+        "Balance sheet and refinancing stress \u2014 $45-50B capital raise required in calendar 2026 with explicit dependence on credit markets",
+        "FY2027 revenue guidance miss (~30-40% likelihood) \u2014 Q3 FY2026 already missed consensus despite 22% growth",
+        "Legacy database erosion accelerating \u2014 greenfield workloads default to open-source alternatives",
+        "Cerner/Oracle Health drag \u2014 $28.3B acquisition unproven, Epic continues to win new hospital deals"
+      ],
+      "red_flags": [
+        "Free cash flow deeply negative (-$13B to -$27B TTM) due to $50B FY2026 capex program",
+        "Total debt of $108B with Net Debt/EBITDA of ~3.5-4x \u2014 extraordinary leverage for a software company",
+        "Planned $45-50B fundraise in calendar 2026 represents explicit dependence on capital markets remaining open",
+        "S&P BBB rating with negative outlook \u2014 one downgrade from edge of investment grade",
+        "Q3 FY2026 revenue of $17.2B missed analyst consensus of ~$17.6B, triggering significant stock decline",
+        "Ellison has pledged ~277 million shares as loan collateral \u2014 forced selling risk on sharp decline",
+        "Buybacks were heaviest at peak valuations (FY2021) and minimal now \u2014 wrong-way timing",
+        "SBC growing at 17.6% YoY, faster than revenue growth \u2014 dilution risk increasing"
+      ],
+      "valuation_summary": "At $164/share, Oracle trades at base-case fair value with a bear-case intrinsic value of $75-90/share (45-54% downside) and a bull-case of $275-340/share; the base case yields roughly fair value, not a margin of safety, and the stock must deliver $90B FY2027 revenue, sustained 12-15% growth, and capex normalization to $10-15B by FY2028-2029 for the current price to be justified.",
+      "source_summary": "Analysis based on Oracle Q3 FY2026 earnings press release (March 10, 2026), investor relations data, web search results from stockanalysis.com, macrotrends.net, gurufocus.com, companiesmarketcap.com, Futurum Group, Morningstar, and S&P Global Ratings, with training knowledge used for structural and historical context.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "UNH",
+      "company": "UnitedHealth Group",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/UNH/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "high",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 5.5,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 7,
+        "management": 5,
+        "business_economics": 6,
+        "balance_sheet": 6,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 4
+      },
+      "key_strengths": [
+        "Largest US managed care organization with $447.6B revenue and unmatched provider contracting leverage across 50M members",
+        "Optum platform (pharmacy, care delivery, analytics) creates compounding vertical integration flywheel with deep institutional switching costs",
+        "Exceptional FCF durability: $19-20B annually even through 2024-2025 crisis, converting at 1.5-1.6x GAAP net income",
+        "Dividend growth for 17 consecutive years at ~12% CAGR; Hemsley $25M open-market purchase signals insider conviction",
+        "Investment-grade balance sheet with $21B revolving credit facility and no near-term solvency risk"
+      ],
+      "key_risks": [
+        "Active DOJ criminal and civil investigation into Medicare Advantage billing fraud \u2014 unquantified penalty exposure potentially $10-30B+, no disclosed timeline",
+        "Medical loss ratio at 88.9% FY2025 and 91.5% Q4 2025 \u2014 two consecutive years of deterioration with no confirmed turn; each 1% MCR increase costs ~$2.9B annually",
+        "Medicare Advantage reimbursement pressure causing 3M+ member exits in 2026 \u2014 rare guided top-line revenue decline",
+        "Governance deficiencies: combined Chairman/CEO role, undisclosed Cloverfields Capital investment conflict, 45% miss to FY2025 EPS guidance ($16.35 vs. $29.50-$30.00)",
+        "Elevated leverage: $78.4B total debt, 44.1% debt/capital exceeding 40% target, interest coverage at 4.7x below 5x comfort threshold, AM Best Negative outlook"
+      ],
+      "red_flags": [
+        "DOJ criminal and civil investigation into Medicare Advantage in-home assessment diagnosis coding \u2014 active and unresolved as of March 2026",
+        "Q4 2025 MCR of 91.5% is not consistent with management's 'trough and recover' narrative",
+        "Two CEO changes in under 12 months (Thompson murdered December 2024, Witty resigned May 2025) \u2014 unprecedented leadership instability",
+        "Undisclosed Cloverfields Capital private investment firm conflict while Hemsley served as board chairman",
+        "2026 revenue guided to decline year-over-year \u2014 first such guided decline in the company's modern history",
+        "Base case intrinsic value (~$230-245) is below current price ($282) \u2014 no margin of safety even in the base scenario"
+      ],
+      "valuation_summary": "At $282/share (55% below November 2024 all-time high of $603), UNH trades at 16x forward 2026 adjusted EPS of $17.75 \u2014 historically cheap versus the 5-year average of ~22x. However, base case intrinsic value of ~$230-245 is below the current price, requiring bull case assumptions (favorable DOJ resolution, MCR normalization, Optum re-rating) to justify $282. Bear case intrinsic value of $110-130 implies 54-61% further downside if DOJ penalties are severe and MCR remains structurally elevated. EV/EBITDA of ~13.7x is near the 10-year median. Wide dispersion ($110-$400) makes a confident valuation call impossible pending regulatory clarity.",
+      "source_summary": "Primary sources: UNH FY2025 earnings release (January 2026), UNH FY2024 annual results, SEC 10-K filings, AM Best and Moody's rating announcements, DOJ investigation reporting (STAT News, Bloomberg), GuruFocus financial aggregator, MacroTrends, StockAnalysis. Web searches conducted March 2026. Confidence in financial data is high; confidence in DOJ outcome and MCR trajectory is low by nature of uncertainty.",
+      "change_notes": "First full analysis. Business in acute distress phase following concurrent crises: Change Healthcare cyberattack (2024), CEO murder (December 2024), MCR spike (2024-2025), guidance suspension (May 2025), CEO resignation (May 2025), DOJ investigation (ongoing). Hemsley returned as CEO May 2025. 2026 is the first year of attempted normalization. Monitor quarterly MCR prints and DOJ developments as primary thesis catalysts.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "ARM",
+      "company": "Arm Holdings plc",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ARM/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "low",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 5.25,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 8,
+        "management": 4,
+        "business_economics": 7,
+        "balance_sheet": 9,
+        "valuation": 2,
+        "margin_of_safety": 2,
+        "temperament": 3
+      },
+      "key_strengths": [
+        "97% gross margins and accelerating operating leverage from Armv9/CSS royalty step-up",
+        "30-year ecosystem moat: 22M developers, every major OS and toolchain optimized for ARM",
+        "Powers 99% of smartphones and ~50% of hyperscaler data center CPUs",
+        "Fortress balance sheet: ~$2.5B net cash, ~5x current ratio, zero financial debt",
+        "Structural royalty rate expansion via Armv9 (~5% of ASP) and CSS (>10% of ASP)"
+      ],
+      "key_risks": [
+        "Valuation embeds 25-28% revenue CAGR for five years with no margin for error; 50-60% downside on multiple reversion alone",
+        "China revenue (~19% of FY2025 revenue) growing only 7.5% YoY amid active RISC-V promotion by Chinese government",
+        "RISC-V institutional momentum: 20B+ deployed cores, Qualcomm acquired Ventana Micro Systems, Meta integrating RISC-V into MTIA v3",
+        "SoftBank 87% control exempts ARM from Nasdaq independence requirements; annual SBC of $700M-$1B+ dilutes public shareholders",
+        "ARM's undisclosed chip-building pivot risks trust with major licensees who may accelerate RISC-V investment in response"
+      ],
+      "red_flags": [
+        "SoftBank 87% ownership with CEO Haas on SoftBank board \u2014 direct conflict of interest",
+        "Annual SBC of $700M-$1B+ (15-20% of revenue) with no stated plan to reduce",
+        "Chip-building pivot disclosed via press leaks rather than investor communications",
+        "Failed Qualcomm litigation pursued and lost",
+        "GAAP FCF collapsed to $178M in FY2025 despite exceptional IP economics"
+      ],
+      "valuation_summary": "All credible DCF models cluster at $22-70/share (base case $65-85/share); at ~$124/share (~$130B market cap) the stock is priced for 25-28% revenue CAGR over five years with zero margin for error, representing 40-80% overvaluation and a loss-to-gain ratio of approximately 2-3x unfavorable.",
+      "source_summary": "Analysis draws on ARM Q3 FY2026 earnings releases and transcripts, ARM FY2025 Annual Report, StockAnalysis, GuruFocus, Alpha Spread, MacroTrends, Simply Wall St, TIKR, Morningstar, and multiple analyst consensus sources; financials current through Q3 FY2026 (quarter ended December 31, 2025).",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "MMM",
+      "company": "3M Company",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/MMM/FINAL-REPORT.json",
+      "queue_state": null,
+      "queue_priority": null,
+      "current_verdict": null,
+      "verdict": "Watch",
+      "average_score": 5.25,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 6,
+        "management": 5,
+        "business_economics": 5,
+        "balance_sheet": 4,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "49 proprietary materials science technology platforms",
+        "Specification lock-in in industrial OEM applications",
+        "~$4.9B adjusted FCF at 23.4% adjusted operating margins",
+        "Category-defining consumer brands (Post-it, Scotch)",
+        "CEO Bill Brown early execution credible \u2014 250 new products, margins +200 bps in 2025",
+        "$4.7B cash, 7x interest coverage, investment-grade credit"
+      ],
+      "key_risks": [
+        "PFAS liability not fully bounded \u2014 state-level claims beyond federal settlement remain live",
+        "GAAP FCF (~$1.4B) severely depressed vs. adjusted FCF (~$4.9B) through 2036 settlement drain",
+        "Thin organic revenue growth (~1.2% in 2024, guided 3-4%) highly macro-dependent",
+        "Combined Chairman/CEO structure weakens governance oversight",
+        "Tail risk: undiscovered legacy chemical liability from 120-year manufacturing history"
+      ],
+      "red_flags": [
+        "GAAP operating cash flow of $1.8B in 2024 vs. $6.7B prior year due to $3.1B settlement payments",
+        "Shareholder equity only ~$3.9B against $39.9B total assets \u2014 extremely thin cushion",
+        "53.6% dividend cut in 2024 ended 66-year dividend growth streak",
+        "Credit ratings under pressure: Moody's A3 negative, S&P BBB+ CreditWatch negative",
+        "Historical buybacks at 2015\u20132019 peak prices destroyed capital"
+      ],
+      "valuation_summary": "Conservative intrinsic value is $100\u2013$115 (normalized owner earnings ~$9\u201310/share \u00d7 14\u201315x); at ~$153 the stock offers no margin of safety, with probability-weighted fair value ~$147 and a 1:1 upside/downside ratio that does not clear the bar for a high-conviction entry.",
+      "source_summary": "Web search for current financials, settlement details, and price data (March 2026); training knowledge for historical metrics; data for 2025 fiscal year financials may carry some staleness risk.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc.",
+      "analysis_date": "2026-03-06",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/SNOW/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Watch",
+      "verdict": "Watch",
+      "average_score": 5.25,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 7,
+        "competitive_advantage": 6,
+        "management": 5,
+        "business_economics": 4,
+        "balance_sheet": 7,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 4
+      },
+      "key_strengths": [
+        "125% net revenue retention with 733 customers spending $1M+ annually, demonstrating strong expansion economics",
+        "$9.77B contracted backlog (RPO) growing 42% YoY provides durable forward revenue visibility",
+        "76% gross margins and $1.19B adjusted free cash flow (25.5% margin) reflect a high-quality product economics profile",
+        "Net cash position of $1.7B with zero-coupon convertible debt and ample liquidity for a multi-year downturn",
+        "Multi-cloud data gravity and workflow-level switching costs create genuine, if narrowing, competitive moat"
+      ],
+      "key_risks": [
+        "Stock-based compensation at 34% of revenue ($1.6B annually) makes GAAP profitability impossible today and dilutes shareholders structurally",
+        "Databricks growing at 57% vs. Snowflake's 29%, with ~40% of Snowflake accounts already running Databricks in parallel",
+        "Apache Iceberg open-format standard eroding storage-layer lock-in and commoditizing a key moat pillar",
+        "Consumption-based revenue model creates volatility risk in macro slowdowns or enterprise cloud optimization cycles",
+        "Active securities fraud class action and zero insider buying over 18 months erode management alignment confidence",
+        "At 12.5x EV/Revenue on a GAAP-unprofitable company, valuation leaves no room for execution error"
+      ],
+      "red_flags": [
+        "Zero insider open-market purchases in 18 months despite CEO receiving $101M in total compensation",
+        "SBC at 34% of revenue is 2-3x the level of mature software peers with no credible near-term path to sub-20%",
+        "Withdrawal of $10B FY2029 revenue target undermines long-term guidance credibility",
+        "Active securities class action alleging management misled investors about product efficiency revenue impacts",
+        "GAAP ROIC deeply negative at -16% to -27% despite strong non-GAAP metrics"
+      ],
+      "valuation_summary": "At $168/share (12.5x EV/Revenue), Snowflake is roughly fairly valued against a base-case intrinsic value of $165-180, but requires near-perfect execution on growth, margin expansion, and SBC reduction simultaneously with no margin of safety; the stock needs to fall to $120-130 before offering a compelling entry point with 2x+ asymmetry.",
+      "source_summary": "Analysis based on web searches conducted March 6, 2026 covering Snowflake's Q4 FY2026 earnings (reported February 25, 2026), public filings, investor presentations, and financial data aggregators; no user-provided context files were used.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "MAERSK-B.CO",
+      "company": "A.P. Moller-Maersk A/S",
+      "analysis_date": "2026-03-09",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/MAERSK-B.CO/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "low",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 4.875,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 6,
+        "competitive_advantage": 5,
+        "management": 6,
+        "business_economics": 4,
+        "balance_sheet": 7,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 4
+      },
+      "key_strengths": [
+        "APM Terminals operates 53 ports in 28 countries \u2014 a decades-long infrastructure barrier to replicate",
+        "Gemini Cooperation with Hapag-Lloyd achieving 91.2% schedule reliability vs ~56% industry average",
+        "Net cash position of $7.4bn at end-2024, $29bn gross liquidity, investment-grade ratings (Baa1/BBB+)",
+        "Family-controlled Moller structure provides long-term governance stability",
+        "71% of long-haul Ocean volumes on annual contracts, providing material revenue predictability"
+      ],
+      "key_risks": [
+        "Freight rate collapse: 7 million TEU newbuild orderbook (~20% of global fleet) delivering through 2027 \u2014 EBITDA could fall to $3\u20134bn if spot rates approach 2016 lows",
+        "Logistics transformation failure: after $8\u201315bn in acquisitions, L&S EBIT margins are 4.9% vs 6% target and organic growth is 3.2% vs 10% target",
+        "Capital cycle timing error: $10\u201311bn capex on new methanol vessels risks entering service into depressed freight rates",
+        "De-globalization and US-China trade disruption could permanently reduce global container trade volumes",
+        "Balance sheet erosion: net cash fell $4.8bn in nine months; FCF guided negative through 2025\u20132026; credit downgrade risk if debt/EBITDA approaches 3.0x"
+      ],
+      "red_flags": [
+        "Market share declined five consecutive years from 19.4% to ~14.2%",
+        "EBITDA guided 27\u201353% below 2025 levels for 2026",
+        "Free cash flow guided negative for 2025",
+        "Buyback program suspended before completion",
+        "Logistics & Services margins below stated 6% floor after 3+ years of integration",
+        "Stock trades 46% above base-case 5-year present value; 12 of 18 analysts rate it a Sell"
+      ],
+      "valuation_summary": "At 16,420 DKK (~$36bn market cap), the stock trades 46% above the base-case 5-year present value of ~11,200 DKK; analyst consensus target of 12,673 DKK implies 23% downside, and bear-case intrinsic value of 4,000\u20137,000 DKK implies 57\u201376% downside. Through-cycle owner earnings of $2.5\u20134bn imply 9\u201314x normalized P/OE at current price, offering no margin of safety.",
+      "source_summary": "Analysis draws on web search results from Maersk investor relations, FY2024 and FY2025 annual results press releases (February 2025 and February 2026), Moody's credit opinion (March 2025), Investing.com and MarketScreener analyst consensus data, FreightWaves, Container News, Yahoo Finance, and training knowledge on container shipping industry structure and economics.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "CVS",
+      "company": "CVS Health Corporation",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/CVS/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 4.75,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 5,
+        "competitive_advantage": 4,
+        "management": 4,
+        "business_economics": 4,
+        "balance_sheet": 4,
+        "valuation": 6,
+        "margin_of_safety": 5,
+        "temperament": 6
+      },
+      "key_strengths": [
+        "$7.8B annual free cash flow from three durable recurring-revenue businesses",
+        "Caremark PBM serves 100M+ members with high switching costs",
+        "Aetna insurance platform with ~25M members and recurring premium income",
+        "Largest US pharmacy chain with 9,900+ locations providing physical distribution moat",
+        "New CEO focused on debt paydown, operational discipline, and integration over acquisition"
+      ],
+      "key_risks": [
+        "Medicare Advantage reimbursement deterioration \u2014 primary earnings recovery driver entirely outside CVS's control",
+        "Leverage and refinancing stress \u2014 $60-65B gross debt, ~4-5x Debt/EBITDA, interest coverage touched 3.1x in 2024",
+        "PBM structural disruption \u2014 PBM Reform Act of 2026, FTC enforcement, and antitrust scrutiny dismantling rebate-retention economics",
+        "Sustained medical cost trend acceleration \u2014 MLR could stay elevated regardless of management execution",
+        "Capital allocation and governance concentration \u2014 CEO/Board Chair combined in single person, weakening independent oversight"
+      ],
+      "red_flags": [
+        "$5.7B goodwill impairment on Oak Street Health within two years of acquisition \u2014 confirmed capital destruction",
+        "~$90B acquisition spree by prior leadership produced confirmed write-downs and halved the stock 2022-2025",
+        "ROIC of ~5.2% below cost of capital despite $402B in revenue",
+        "Combination of CEO and Board Chair roles in David Joyner effective January 2026 \u2014 governance concentration",
+        "Large gap between GAAP net income ($1.8B) and adjusted EPS ($8.8B equivalent) requires trusting $7B+ in adjustments"
+      ],
+      "valuation_summary": "At ~$78/share (~11x 2026 forward EPS of $7.00-$7.20), CVS is near a 10-year valuation low, but the $52B net debt load makes equity value highly sensitive to enterprise assumptions. A base-case DCF net of debt yields equity value of $41-62/share, suggesting the stock is fairly valued to modestly overvalued with almost no margin of safety at current prices.",
+      "source_summary": "Analysis draws on CVS Health Q4 and full-year 2025 earnings releases (February 2026), SEC filings, analyst consensus from MarketBeat and StockAnalysis.com, Morningstar and Alpha Spread DCF models, MacroTrends margin history, GuruFocus ROIC and balance sheet data, FTC/House Judiciary antitrust reports, and Healthcare Dive turnaround coverage.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "ORSTED.CO",
+      "company": "Orsted A/S",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ORSTED.CO/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "low",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 4.4,
+      "confidence": "low",
+      "umbrella_scores": {
+        "circle_of_competence": 6,
+        "competitive_advantage": 5,
+        "management": 4,
+        "business_economics": 3,
+        "balance_sheet": 3,
+        "valuation": 5,
+        "margin_of_safety": 4,
+        "temperament": 5
+      },
+      "key_strengths": [
+        "World's largest offshore wind developer outside China with ~24% global ex-China market share and 30+ years of execution experience",
+        "10.2 GW European operating fleet generating ~DKK 25 billion annual EBITDA under long-term government CfD contracts and corporate PPAs",
+        "Revenue predictability from 20-25 year contracted power sales to electricity grids and large industrial counterparties",
+        "Danish state 50.1% ownership provides implicit sovereign backstop against capital markets disruptions",
+        "Post-rights-issue balance sheet repair and restored liquidity following DKK 60 billion rights issue in late 2025"
+      ],
+      "key_risks": [
+        "Construction execution on the 8.1 GW pipeline \u2014 repeating pattern of optimistic underwriting and impairments (DKK 50 billion cumulative 2023-2025)",
+        "Credit rating one notch above junk (BBB-) with FFO/debt at 13.9% vs S&P's 25% investment-grade floor",
+        "Residual US political risk and demonstrated vulnerability to regulatory/macroeconomic assumption failures",
+        "European auction pipeline deterioration \u2014 shut out of UK CfD Allocation Round 7 with zero awards while RWE won 6.9 GW",
+        "Insider CEO succession with no financial clawback and permanent structural discount from state ownership misalignment"
+      ],
+      "red_flags": [
+        "DKK 28.4 billion impairment in 2023 and additional DKK 15.6 billion in 2024 from a single geography (US)",
+        "ROIC of 1.67% against WACC of 7.4% \u2014 deeply sub-par, value-destroying capital allocation at the corporate level",
+        "Three successive credit downgrades from BBB+ to BBB- in three years",
+        "Reported net income zero or negative for multiple consecutive years \u2014 only adjusted earnings are meaningful",
+        "New CEO (Errboe) was Deputy CEO during the US expansion decisions; no clawback mechanism for those responsible",
+        "Business requires continuous capital markets access at scale \u2014 any credit deterioration creates acute funding risk"
+      ],
+      "valuation_summary": "At DKK 139, Orsted trades roughly at base-case fair value with an EV/EBITDA of ~9x on 2026 guidance; Morningstar's fair value of DKK 160 implies only ~15% upside while the discounted bear-case intrinsic value is DKK 62-91 per share, meaning the current price already sits above the pessimistic-but-plausible scenario with no meaningful margin of safety.",
+      "source_summary": "Analysis based on web search results covering Orsted annual reports 2024-2025, Q4 2025 investor presentations, S&P Global Ratings, Morningstar research, analyst price targets from multiple financial data providers, and company announcements through February 2026.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla, Inc.",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/TSLA/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "low",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 4.1,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 6,
+        "competitive_advantage": 5,
+        "management": 3,
+        "business_economics": 5,
+        "balance_sheet": 8,
+        "valuation": 2,
+        "margin_of_safety": 2,
+        "temperament": 2
+      },
+      "key_strengths": [
+        "Supercharger network is now the North American charging standard, adopted by Ford, GM, Rivian, and others",
+        "50 billion miles per year of real-world FSD training data represents a genuine and widening data moat",
+        "Energy Generation and Storage (Megapack) growing rapidly \u2014 67% in 2024 to $10.1B with ~26% gross margins",
+        "$23B net cash position with ~20x interest coverage; balance sheet is not at risk under severe stress scenarios",
+        "Vertical integration and in-house AI/software stack create structural cost and capability advantages"
+      ],
+      "key_risks": [
+        "Valuation re-rating risk: stock trades at ~380x trailing P/E and ~237x FCF; any execution delay removes the central bull-case pillar and implies 63\u201375% downside to a generous 40\u201350x multiple",
+        "Competitive erosion: BYD outsells Tesla globally, China market share has collapsed to ~5%, and Chinese OEMs are entering European markets that Tesla depends on for margin",
+        "Key-man and governance failure: Musk's attention is divided across Tesla, SpaceX, xAI, X, and government roles; the board demonstrated it cannot exercise genuine independence",
+        "Regulatory credit elimination and FSD regulatory uncertainty: $2\u20133B annual near-100%-margin credit stream eliminated by 2027; FSD commercialization depends on regulatory approval that DOGE involvement has complicated",
+        "Geopolitical concentration: Shanghai Gigafactory produces ~50% of global deliveries; a Taiwan conflict or escalating U.S.-China tariffs would halt half of Tesla's global production"
+      ],
+      "red_flags": [
+        "Vehicle deliveries declined 8.6% in 2025 \u2014 second consecutive annual decline \u2014 while the global EV market grew 26%",
+        "Automotive gross margin compressed from 25.6% (2022) to ~14% (2025), signaling lost pricing power",
+        "Board publicly denied exploring CEO replacement while simultaneously contacting executive search firms \u2014 documented credibility failure",
+        "~50% of Musk's Tesla shares pledged as loan collateral, creating forced-seller risk in a downturn",
+        "Revenue declined year-over-year for the first time in Tesla's history (FY2025: $94.8B, down 2.9%)",
+        "ROIC collapsed from ~30% (2022) to ~8\u201313% (2024\u20132025)"
+      ],
+      "valuation_summary": "At ~$405/share (~$1.47T market cap), Tesla trades at ~380x trailing earnings and ~237x FCF on a business reporting its first revenue decline. Conservative probability-weighted intrinsic value across bear/base/bull scenarios is approximately $227/share \u2014 roughly 44% below current price \u2014 and even the base case implies a 50\u201359% loss; conservative estimates of $50\u2013210 imply the stock trades at 2\u20138x fair value.",
+      "source_summary": "Analysis based on web search results from multiple financial data providers (MacroTrends, StockAnalysis, Yahoo Finance, GuruFocus), Tesla IR press releases and Q4/FY 2025 earnings release (January 2026), Tesla 10-K for fiscal year 2024, and volatility/drawdown data from PortfoliosLab and MacroAxis \u2014 all sourced through early March 2026; no user-provided context files were present for TSLA.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "HIMS",
+      "company": "Hims & Hers Health, Inc.",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/HIMS/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 4.0,
+      "confidence": "low",
+      "umbrella_scores": {
+        "circle_of_competence": 5,
+        "competitive_advantage": 4,
+        "management": 4,
+        "business_economics": 4,
+        "balance_sheet": 5,
+        "valuation": 4,
+        "margin_of_safety": 3,
+        "temperament": 3
+      },
+      "key_strengths": [
+        "2.5 million U.S. subscribers on a recurring subscription model across chronic conditions (ED, hair loss, skincare, mental health)",
+        "Most recognized direct-to-consumer telehealth brand with demonstrated platform stickiness",
+        "74% gross margins and $2.35B in 2025 revenue reflecting real scale",
+        "$630M cash and zero-coupon 2030 convertible notes provide near-term liquidity runway",
+        "Novo Nordisk distribution partnership creates a path to remain in the GLP-1 weight-loss market post-compounding ban"
+      ],
+      "key_risks": [
+        "DOJ criminal referral from HHS General Counsel \u2014 existential tail risk with 30-40% estimated probability and no known timeline",
+        "GLP-1 compounding revenue (~31% of 2025 revenue) eliminated by FDA ban with no proven replacement model",
+        "Free cash flow collapsed from $198M to $57M despite 59% revenue growth as capex surged 5x to $226M",
+        "Active SEC disclosure investigation into whether CEO's public characterizations of GLP-1 revenue were materially misleading",
+        "Amazon Pharmacy entered weight-loss clinical services in January 2026, commoditizing HIMS's primary remaining growth driver"
+      ],
+      "red_flags": [
+        "CEO sold $33M in stock in August 2025 at near-peak prices shortly before GLP-1 regulatory and SEC scrutiny became public",
+        "CEO publicly described GLP-1 as serving 'a small minority' of subscribers while it represented 38% of H1 2025 revenue",
+        "FCF collapsed from $198M to $57M on 59% revenue growth \u2014 FCF conversion fell below 50% of net income warning threshold",
+        "Net debt of ~$341M against $57M FCF equals ~6x net debt/FCF \u2014 company cannot repay 2030 convertible notes from current operations",
+        "DOJ referral from HHS General Counsel is not a routine inquiry \u2014 scope and timeline unknown",
+        "Business model that underpins the 2026 thesis (Novo partnership) did not exist 30 days before this analysis"
+      ],
+      "valuation_summary": "At ~$22/share (~$5B market cap, ~39x trailing earnings), the base case intrinsic value is approximately $19\u201320/share with no margin of safety, while the bear case implies ~$6.60/share (70% downside) carrying a 25\u201335% probability; justifying today's price requires four independent assumptions to hold simultaneously in a business model that did not exist 30 days ago.",
+      "source_summary": "Analysis draws on web search results from February\u2013March 2026, Hims & Hers Q4/FY2025 investor press releases, SEC EDGAR filings, MacroTrends and StockAnalysis financial data, analyst estimates from MarketBeat and TipRanks, and news coverage from STAT News, Fierce Healthcare, and Bloomberg; no user-provided context files were available.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "RKLB",
+      "company": "Rocket Lab Corporation",
+      "analysis_date": "2026-03-10",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/RKLB/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "medium",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 3.9,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 6,
+        "competitive_advantage": 5,
+        "management": 5,
+        "business_economics": 3,
+        "balance_sheet": 5,
+        "valuation": 2,
+        "margin_of_safety": 2,
+        "temperament": 3
+      },
+      "key_strengths": [
+        "World's most-flown small-lift rocket outside SpaceX: 75+ Electron missions, 21 launches in 2025 at 100% mission success rate",
+        "Vertically integrated space company with launch, satellite manufacturing, and components under one roof \u2014 rare competitive position",
+        "Strong backlog visibility: $1.85B backlog (+73% YoY), ~3x annual revenue, with multi-year SDA government contracts anchoring Space Systems",
+        "Record FY2025 revenue of $602M (+38% YoY) with GAAP gross margin expanding to 38% in Q4 2025",
+        "Founder-led with candid operator: Peter Beck discloses failures plainly and communicates engineering reality without spin"
+      ],
+      "key_risks": [
+        "Neutron program failure or continued delay: already slipped to Q4 2026 after stage-1 tank test failure; 30-40% probability of further setback with catastrophic valuation impact",
+        "Multiple compression risk: trading at 66x trailing revenue (top 3-4% most expensive in global A&D); any sentiment shift or guidance miss could reset share price to $22-25",
+        "Government contract concentration: SDA Tranche 3 ($816M) represents 44% of backlog; any scope cut or cancellation would materially impair forward revenue",
+        "SpaceX structural competitive pressure: Transporter rideshare at $5,500/kg vs. Electron's ~$25,000/kg permanently limits commercial market; Falcon 9 dominates medium-lift that Neutron targets",
+        "Capital markets dependency: burns $300-400M/year in FCF with no self-funding capability; survival through 2029 depends on continued access to equity and debt markets"
+      ],
+      "red_flags": [
+        "ROIC deeply negative (-30%) across entire public operating history \u2014 no demonstrated capital efficiency",
+        "FY2025 FCF of -$321M is an acceleration from -$103M in FY2024, not improvement",
+        "SBC running ~30% of trailing revenue \u2014 among the highest in aerospace sector, ongoing shareholder dilution",
+        "CEO Peter Beck sold hundreds of millions in stock throughout 2025 at elevated prices, reducing direct ownership",
+        "Neutron development cost overrun: original $250-300M budget exceeded at ~$360M cumulative through 2025 with first launch still a year away",
+        "SDA single-customer concentration: one program represents ~44% of $1.85B backlog",
+        "Q4 2025 raised $280.6M via ATM equity offering \u2014 further diluting shareholders to fund operations"
+      ],
+      "valuation_summary": "At $69.70/share (~$40B market cap, 66x trailing revenue), today's price requires Neutron to successfully launch, ramp to commercial cadence, and drive revenue to $10B+ over 15 years at 15%+ net margins \u2014 a conjunction of five demanding assumptions that must all hold simultaneously. Bear-case intrinsic value of $20-35/share implies 50-70% downside, while realistic bull-case upside is only 30-43%, creating a 2:1 to 3:1 downside-to-upside ratio that is the inverse of sound investment logic.",
+      "source_summary": "Analysis based on web search results (Feb-Mar 2026), Rocket Lab Q4 2025 earnings release (Feb 26, 2026), Q3 2025 earnings release, SEC filings, MacroTrends/GuruFocus/StockAnalysis financial data, and insider transaction disclosures; no user-provided context files were present.",
+      "change_notes": "",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    },
+    {
+      "ticker": "ALMU",
+      "company": "Aeluma, Inc.",
+      "analysis_date": "2026-03-11",
+      "report_path": "/Users/jep/Desktop/portfolio-and-investment/reports/ALMU/FINAL-REPORT.json",
+      "queue_state": "monitor_only",
+      "queue_priority": "low",
+      "current_verdict": "Pass",
+      "verdict": "Pass",
+      "average_score": 3.25,
+      "confidence": "medium",
+      "umbrella_scores": {
+        "circle_of_competence": 3,
+        "competitive_advantage": 3,
+        "management": 4,
+        "business_economics": 2,
+        "balance_sheet": 7,
+        "valuation": 2,
+        "margin_of_safety": 2,
+        "temperament": 3
+      },
+      "key_strengths": [
+        "Proprietary MOCVD process for InGaAs-on-12-inch-silicon with 10+ years of UCSB R&D lineage and ~35 patents",
+        "Government validation from DARPA, NASA, U.S. Navy, and DOE \u2014 provides credible third-party endorsement of technology",
+        "Fortress balance sheet: $38.6M cash, zero meaningful debt, 25+ quarters of runway even under stress",
+        "Capital-light fabless model with ~50-60% gross margins suggests attractive unit economics if commercial scale is achieved",
+        "Founder-CEO holds ~10% of shares (~$23.6M stake), providing meaningful incentive alignment"
+      ],
+      "key_risks": [
+        "97% government contract revenue with $41K in commercial product revenue in Q2 FY2026 \u2014 six years post-founding with no commercial traction",
+        "Serial equity dilution: share count grew 45.9% in one year; $100M shelf registration (Form S-3) filed for future issuances",
+        "Single DARPA contract ($11.7M) dominates revenue; one missed technical milestone eliminates the primary revenue source",
+        "All insider transactions in the past 3 months are sales; no open-market purchases by any insider",
+        "Well-capitalized incumbents (Coherent, Lumentum, Hamamatsu, Intel Photonics) can redirect resources to III-V-on-silicon if market proves out"
+      ],
+      "red_flags": [
+        "Bear-case downside is -93% ($1/share) vs bull-case upside of +52% ($23/share) \u2014 deeply asymmetric to the downside",
+        "Stock trades at ~2x probability-weighted intrinsic value (~$7.44/share vs $15.02 market price)",
+        "Q2 FY2026 Adjusted EBITDA swung to -$917K from +$647K year-over-year \u2014 deteriorating near-term economics",
+        "CEO sold $902,500 in stock in same period an equity bonus grant vested \u2014 legal but poor optics",
+        "52-week price range of $5.79-$25.88 (347% spread) reflects venture-stage volatility, not investment-grade stability"
+      ],
+      "valuation_summary": "At $15.02/share and ~$283M market cap, ALMU trades at ~52x EV/FY2025 revenue of $4.7M with zero commercial product revenue. Probability-weighted intrinsic value is approximately $7.44/share (bear: $1.00 at 40%, base: $6.20 at 40%, bull: $22.80 at 20%), implying the stock is roughly 2x overvalued on an expected-value basis. Morningstar fair value is $22.20 but embeds optimistic base-to-bull assumptions. The market is pricing a >50% probability of the bull case when the evidence supports it at under 20%.",
+      "source_summary": "Analysis based on web search results from March 2026 including Aeluma press releases (Q1-Q2 FY2026, FY2025 full year), SEC filings summaries (10-K, 10-Q via StockTitan), Morningstar, StockAnalysis, Yahoo Finance, BeyondSPX, MarketBeat, Nasdaq analyst commentary, Seeking Alpha, and investment thesis Substacks. No user-provided context files. Balance sheet data from December 31, 2025 (Q2 FY2026). Current price reference: ~$15.02 (early March 2026).",
+      "change_notes": "Initial analysis. No prior report to compare against.",
+      "price_snapshot": {
+        "price": null,
+        "currency": null,
+        "as_of": "2026-03-12",
+        "provider": "saxo",
+        "market_data_status": "error",
+        "stale": true,
+        "error": "HTTP Error 400: Bad Request"
+      },
+      "market_metrics": {
+        "return_1w": null,
+        "return_1m": null,
+        "volatility_20d": null
+      },
+      "eligible_for_long": false,
+      "eligible_for_short": true,
+      "long_eligibility_reason": "Does not clear long bar",
+      "short_eligibility_reason": "Eligible for short book"
+    }
+  ]
+}

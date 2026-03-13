@@ -110,6 +110,7 @@ $(cat "$section_file")"
 
     claude --print \
         --allowedTools "WebSearch,WebFetch,Read,Write,Glob,Grep" \
+        -- \
         "You are performing investment analysis on $TICKER.
 Today's date: $TODAY
 
@@ -166,6 +167,7 @@ $(cat "$section_file")"
 
     claude --print \
         --allowedTools "WebSearch,Read,Write,Glob,Grep" \
+        -- \
         "You are assembling the final investment report for $TICKER.
 Today's date: $TODAY
 

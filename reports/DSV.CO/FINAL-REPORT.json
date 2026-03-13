@@ -1,0 +1,51 @@
+{
+  "ticker": "DSV.CO",
+  "company": "DSV A/S",
+  "analysis_date": "2026-03-09",
+  "verdict": "Watch",
+  "average_score": 6.5,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 7,
+    "management": 8,
+    "business_economics": 6,
+    "balance_sheet": 5,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World's largest asset-light freight forwarder with structural scale and network cost advantage post-DB Schenker acquisition",
+    "Exceptional 15-year M&A track record: four consecutive acquisitions (UTi, Panalpina, Agility GIL, DB Schenker) each restoring or exceeding pre-acquisition margins",
+    "Adjusted FCF surged to DKK 16,335m in 2025 (from DKK 5,550m in 2024), confirming strong underlying cash generation",
+    "DKK 9bn annual synergy target from Schenker by 2027 not yet in earnings; significant value creation potential if delivered",
+    "New CEO Jens H. Lund made a DKK 10m voluntary personal share purchase ahead of his formal appointment — strong alignment signal"
+  ],
+  "key_risks": [
+    "Schenker integration failure or delay: entire bull case rests on DKK 9bn of annual synergies arriving by 2027; at 50% delivery equity value falls DKK 250–350/share",
+    "Balance sheet leverage at 2.8x EBITDA net debt with S&P negative outlook; a 30% revenue shock could push leverage to 3.5–4x and pressure credit ratings",
+    "ROIC compressed to ~6% TTM (below cost of capital) post-Schenker; risk of permanent suppression below 10–12% if synergies disappoint",
+    "Geopolitical disruption to trade flows: Middle East routing disruptions and US tariff escalation could compress gross profit per shipment and total volumes simultaneously",
+    "Digital disintermediation risk over 5–10 year horizon as Maersk, CMA CGM, and digital brokerages target DSV's addressable segments"
+  ],
+  "red_flags": [
+    "Post-Schenker ROIC compressed to ~6% TTM — below cost of capital; requires full synergy delivery to recover",
+    "Net debt of DKK 86.6bn (incl. lease liabilities) at 2.8x EBITDA with S&P on negative outlook",
+    "Founder-CEO Jens Bjørn Andersen departure at peak execution risk during the largest acquisition in company history",
+    "Dilutive equity raise to partially fund Schenker acquisition"
+  ],
+  "buy_triggers": [
+    "Price falls to DKK 1,200–1,400, creating genuine margin of safety and 40–60% base-case upside from entry",
+    "Q1 2026 results (April 29, 2026) confirm Schenker integration tracking materially ahead of schedule — management raises synergy guidance above DKK 9bn or brings forward the timeline",
+    "Net debt/EBITDA falls below 2.5x ahead of H1 2027 target and S&P revises outlook from negative to stable"
+  ],
+  "sell_triggers": [
+    "Management reduces total Schenker synergy target below DKK 6bn — single most important thesis-breaker",
+    "NIBD/EBITDA remains above 3.0x at year-end 2026, signalling deleveraging timeline has slipped",
+    "Evidence of sustained market share losses to digital-only freight platforms or carrier-direct models across the enterprise segment"
+  ],
+  "valuation_summary": "At DKK 1,669/share, DSV trades at ~16.9x EV/EBITDA (vs its own 5-year average of 19.1x) and is near fair value with base-case intrinsic value of ~DKK 1,950–2,200 (~25% upside) and bear-case intrinsic value of DKK 1,200–1,400 only 16–28% below current price, offering insufficient margin of safety at today's price.",
+  "source_summary": "Analysis draws on DSV A/S 2024 and 2025 Annual Reports, DSV FY2025 investor presentation, Q3 2025 interim report, S&P and Moody's credit opinions, Yahoo Finance, AlphaSpread, MarketScreener analyst consensus, and GuruFocus ROIC data.",
+  "confidence": "medium",
+  "change_notes": ""
+}

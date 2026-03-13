@@ -1,0 +1,53 @@
+{
+  "ticker": "HD",
+  "company": "The Home Depot, Inc.",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 6.25,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 5,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "World's largest home improvement retailer with 51% specialty channel market share and irreplaceable physical network of ~2,350 stores",
+    "Remarkably stable gross margins of 33-34% for a decade, demonstrating genuine pricing power and operational discipline",
+    "Massive FCF generation ($12-16B annually) providing robust debt service capacity and capital return potential",
+    "SRS/GMS distribution platform adds 750+ branches, 4,000 trucks, and 2,500 sales reps targeting the $450B Pro contractor market",
+    "16 consecutive years of dividend increases; 90%+ variable CEO compensation creates reasonable management alignment",
+    "High Pro contractor switching costs (credit accounts, job-site delivery, procurement integration) creating durable B2B relationships"
+  ],
+  "key_risks": [
+    "Prolonged housing market freeze (mortgage lock-in effect) is a structural headwind that has suppressed comparable sales for 3+ years",
+    "$65B total debt from SRS and GMS acquisitions represents a step-change in leverage, with ROIC compressed from 36% to 18% over 4 years",
+    "SRS/GMS integration is unproven at scale — $23B M&A bet must deliver $500M+ incremental EBITDA to justify the investment",
+    "Tariff risk on imported building materials and appliances could compress gross margins below 32% in an already-weak demand environment",
+    "Lowe's FBM acquisition directly targets HD's Pro moat-building strategy, intensifying competition in the highest-growth segment"
+  ],
+  "red_flags": [
+    "No price margin of safety at $339 — stock trading at or above base-case intrinsic value of $310-360",
+    "Adjusted EPS declined from $15.24 (FY2024) to $14.69 (FY2025) — acquisitions not yet accretive",
+    "FCF declined 22% YoY in FY2025; OCF declined 17.6% — partly acquisition timing but bears watching",
+    "Current ratio tightened to 1.06x with only $1.4B cash on hand — thin near-term liquidity buffer",
+    "Upside/downside ratio at current price is approximately 1:1 — not the asymmetry required for a conviction buy"
+  ],
+  "buy_triggers": [
+    "Stock declines to $270-295 providing a genuine 15-20% discount to base intrinsic value",
+    "30-year mortgage rates decline below 6.0% for two consecutive months, signaling a housing unlock",
+    "Management delivers on FY2026 leverage target (2.0x EBITDA) ahead of schedule with FCF tracking above guidance"
+  ],
+  "sell_triggers": [
+    "Gross margin falls and sustains below 32% for two consecutive years — structural pricing power impairment",
+    "Interest coverage drops below 5x or Moody's/S&P downgrade HD credit rating toward BBB- territory",
+    "Post-integration ROIC confirmed below 15% for two consecutive years — indicating SRS destroyed rather than created value"
+  ],
+  "valuation_summary": "At ~$339, HD trades at approximately 21x trailing owner earnings and near the midpoint of a $310-360 base-case intrinsic value range — fairly valued, not cheap, with a bear-case downside of 28-32% and bull-case upside of 24-33%, yielding an unfavorable 1:1 risk-reward ratio; a compelling entry requires a decline to $270-295.",
+  "source_summary": "Analysis based on web search using Home Depot IR Q4 FY2025 press release (Feb 24 2026), MacroTrends, StockAnalysis.com, GuruFocus, AlphaSpread, and multiple analyst sources; data is current through February 2026 with no material staleness concerns.",
+  "confidence": "medium",
+  "change_notes": ""
+}

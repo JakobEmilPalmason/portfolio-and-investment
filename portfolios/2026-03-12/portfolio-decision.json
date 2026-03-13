@@ -1,0 +1,159 @@
+{
+  "decision_date": "2026-03-12",
+  "generated_at": "2026-03-12T12:00:00Z",
+  "provider": "saxo",
+  "source_candidates_file": "portfolios/2026-03-12/portfolio-candidates.json",
+  "prior_decision_file": null,
+  "portfolio_summary": {
+    "long_exposure": 69.0,
+    "short_exposure": 26.0,
+    "gross_exposure": 95.0,
+    "net_exposure": 43.0,
+    "cash_weight": 5.0,
+    "position_count": 13,
+    "eligible_universe_count": 42
+  },
+  "rationale": "Net 43% long book constructed from quality-at-discount longs (ADBE at 12x forward P/E, CSU.TO at 23% DCF discount, NOW post-50% drawdown, GILD at 5.2% FCF yield with Biktarvy locked through 2036) paired against names where current prices exceed all DCF scenarios including the bull case (ABBV at $234 vs $177 bull-case DCF; CAT at $705 vs $377 bull-case DCF) and extreme-narrative shorts (ALAB at 86x forward P/E, ARM at all DCFs $22-70 vs $124). No market data was available from Saxo for any of the 42 candidates; construction relies entirely on fundamental analysis. The 5% cash reserve reflects the absence of live price confirmation and provides optionality.",
+  "soft_limit_guidance": {
+    "single_name_abs_weight_target": 15.0,
+    "sector_gross_concentration_target": 35.0,
+    "gross_exposure_target": 130.0,
+    "net_exposure_min": -30.0,
+    "net_exposure_max": 100.0,
+    "minimum_breadth_target": 5
+  },
+  "soft_limit_exceptions": [
+    {
+      "limit": "sector_gross_concentration_target",
+      "sector": "Software/Technology",
+      "actual_value": 41.0,
+      "target": 35.0,
+      "reason": "The analyzed universe contains an unusual concentration of quality software businesses trading at material discounts simultaneously: ADBE at 12x forward P/E (60% below 5yr avg), CSU.TO at a 23% DCF discount, and NOW post-50% decline. The opportunity set justifies the overweight. The ARM short (4%) partially hedges the directional exposure. No individual name exceeds the 15% single-name limit."
+    }
+  ],
+  "positions": [
+    {
+      "ticker": "ADBE",
+      "side": "long",
+      "target_weight": 13.0,
+      "expected_holding_horizon": "18-24 months",
+      "thesis": "Own-rated compounder at 12x forward P/E — 60% below 5-year average — with 96% recurring ARR ($25.2B), $9.85B FCF on $172M capex, and format/workflow switching costs embedded in 98% of Fortune 500. AI disruption narrative is priced in while business fundamentals remain intact: two consecutive quarters of 11%+ ARR growth through March 2026.",
+      "key_risk": "Generative AI tools reach 80%+ of Adobe functionality at a fraction of the current price, eroding Creative Cloud pricing power structurally and validating the market's current bear thesis."
+    },
+    {
+      "ticker": "CSU.TO",
+      "side": "long",
+      "target_weight": 11.0,
+      "expected_holding_horizon": "24-36 months",
+      "thesis": "Trades at 23% discount to base-case DCF (CAD 2,939 vs CAD 3,616 fair value) as market prices in Mark Leonard's health departure and a single quarter of FCFA2S decline. 75% recurring revenue across 1,000+ niche VMS products, near-zero historical churn, and 20-30% IRR hurdle rates held through multiple rate cycles. Forward FCFA2S of ~CAD 2.4B for 2026 implies only 26x — reasonable for this compounder.",
+      "key_risk": "FCFA2S deceleration proves structural under new CEO Miller rather than a one-quarter anomaly; Q4 2025 decline extends into H1 2026, expanding the forward multiple and undermining the thesis."
+    },
+    {
+      "ticker": "GILD",
+      "side": "long",
+      "target_weight": 10.0,
+      "expected_holding_horizon": "18-30 months",
+      "thesis": "Biktarvy holds ~51% US HIV market with contractual generic exclusivity through April 2036 — one of the clearest multi-year earnings floors in large-cap pharma. At 16.7x forward P/E and 5.2% FCF yield, the market prices GILD as a slow-growth cash cow with zero credit for lenacapavir (Yeztugo) positioning Gilead at the front of the next HIV prevention cycle.",
+      "key_risk": "ViiV/GSK long-acting injectable erodes Biktarvy market share before the 2036 cliff, or IRA Medicare negotiation compresses net realized prices faster than expected."
+    },
+    {
+      "ticker": "CPRT",
+      "side": "long",
+      "target_weight": 9.0,
+      "expected_holding_horizon": "12-24 months",
+      "thesis": "10,000+ acres of owned, permitted salvage yards form a physical moat that took decades to build and cannot be quickly replicated. $5.2B net cash, zero debt, ~30% ROIC. Two consecutive quarters of declining insurance unit volumes create a cyclical vs. structural question; at ~23x P/E the risk/reward is approximately symmetric — meriting a core position but not maximum weight.",
+      "key_risk": "Q2 FY2026 insurance volume declines prove structural (AV adoption, IAA/RB market share gains) rather than cyclical, driving earnings power to the bear-case valuation range (37-50% downside)."
+    },
+    {
+      "ticker": "NOW",
+      "side": "long",
+      "target_weight": 8.0,
+      "expected_holding_horizon": "12-18 months",
+      "thesis": "Post-50% decline from January 2025 highs, ServiceNow now trades at ~26x trailing FCF versus a historical range of 60-80x, despite a 98% subscription renewal rate, 125% net revenue retention, and $12.85B cRPO growing 25% YoY. The multiple compression itself is the margin of safety; business fundamentals have not deteriorated materially.",
+      "key_risk": "Microsoft Agent 365 erodes ServiceNow pricing power via M365 enterprise bundling, and the $7.75B Armis acquisition fails to integrate — compressing margins while organic growth disappoints, extending the de-rating."
+    },
+    {
+      "ticker": "NOVO-B.CO",
+      "side": "long",
+      "target_weight": 7.0,
+      "expected_holding_horizon": "12-24 months",
+      "thesis": "Priced at ~11x trough earnings following a 60%+ stock decline, with the market assigning near-zero forward value creation. Holds 59.6% branded GLP-1 obesity volume share, US semaglutide patent protection through 2031-2032, AA credit, and $9.5B annual FCF at 2% capital intensity. The 2:1 upside/downside asymmetry is thin but positive at current levels.",
+      "key_risk": "MFN executive order cuts Ozempic/Wegovy to ~$350/month while tirzepatide's clinical superiority drives continued US market share loss, and CagriSema failure leaves no best-in-class next-gen product."
+    },
+    {
+      "ticker": "V",
+      "side": "long",
+      "target_weight": 6.0,
+      "expected_holding_horizon": "24-36 months",
+      "thesis": "Pure toll-road on $14T annual payment volume with zero credit risk. ~70% global card volume share stable for a decade, 28% ROIC, 54% FCF margin, 12% share count reduction over five years. Fairly valued near the midpoint of the $300-340 base-case intrinsic value range. Secular digital payment tailwind ongoing with ~20% of global spending still in cash.",
+      "key_risk": "DOJ antitrust structural remedy on US debit removes $2-3B+ in annual debit revenue; or client incentive growth continues outpacing net revenue growth, compressing margins structurally over a multi-year period."
+    },
+    {
+      "ticker": "MSFT",
+      "side": "long",
+      "target_weight": 5.0,
+      "expected_holding_horizon": "24-36 months",
+      "thesis": "Highest-quality business in the analyzed universe (8.1/10, high confidence): $136B annual OCF, 85% recurring revenue, $625B commercial RPO, Azure growing 39% CC with AI contributing 16pp to growth. Positioned as quality anchor in the long book. No price-based margin of safety at $405, but the 20%+ discount to its own 10-year valuation medians provides a relative cushion.",
+      "key_risk": "AI capex cycle ($83B TTM) fails to convert to durable Azure/AI revenue; normalized FCF thesis breaks and base-case DCF ($270-290) proves optimistic, producing multi-year underperformance."
+    },
+    {
+      "ticker": "CAT",
+      "side": "short",
+      "target_weight": 7.0,
+      "expected_holding_horizon": "6-18 months",
+      "thesis": "All three DCF scenarios (bear $151, base $272, bull $377) are materially below the ~$705 current price. Management guided a $2.6B tariff headwind against an ~$11B operating profit base. Cyclical leverage is extreme: 4% revenue growth in FY2025 produced a 15% operating profit decline. Stock trades at 37-41x P/E, roughly 2x its own 5-year historical average. No margin of safety at any reasonable assumptions.",
+      "key_risk": "Infrastructure stimulus cycle or mining supercycle extends the earnings cycle materially beyond current analyst expectations, delaying valuation reversion past the holding horizon."
+    },
+    {
+      "ticker": "ABBV",
+      "side": "short",
+      "target_weight": 6.0,
+      "expected_holding_horizon": "12-24 months",
+      "thesis": "Current price of ~$234 exceeds all three DCF intrinsic value scenarios including the bull case ($177 bull, $119 base, $90 bear) — the market requires above-bull-case execution. GAAP interest coverage at only 2.3x (below the 3x warning threshold). $67B total debt. Skyrizi + Rinvoq = 42% of 2025 revenue creates concentration risk. IRA pricing headwinds are already live.",
+      "key_risk": "Skyrizi/Rinvoq revenues ramp faster than any modeled scenario and IRA negotiation timelines for these products are pushed well beyond 2028, sustaining the current premium past the holding period."
+    },
+    {
+      "ticker": "ALAB",
+      "side": "short",
+      "target_weight": 5.0,
+      "expected_holding_horizon": "6-12 months",
+      "thesis": "86x forward P/E with 70%+ of FY2025 revenue from a single customer (Amazon) under no contractual purchase obligation. Sequential revenue growth decelerating from 20% (Q3) to 17% (Q4) to guided 6-10% (Q1 2026). CFO departed post-Q4. $6.5B Amazon warrant agreement deepens concentration rather than diversifying. All DCF models place fair value at $80-93 vs ~$120 current price.",
+      "key_risk": "Amazon signals a formal long-term exclusive relationship deepening its ALAB dependency, re-rating the stock on customer certainty and dramatically extending the revenue visibility."
+    },
+    {
+      "ticker": "ARM",
+      "side": "short",
+      "target_weight": 4.0,
+      "expected_holding_horizon": "12-18 months",
+      "thesis": "All credible DCF models cluster at $22-70 per share vs ~$124 current price; priced for 25-28% revenue CAGR for five years. GAAP FCF collapsed to $178M. SoftBank 87% ownership with CEO Haas on SoftBank board creates direct governance conflict. RISC-V at 20B+ deployed cores with Qualcomm (Ventana acquisition) and Meta (MTIA v3) adoption accelerating.",
+      "key_risk": "Armv9 royalty step-up and CSS platform adoption drive revenue significantly above consensus, compressing the forward multiple faster than the stock price declines."
+    },
+    {
+      "ticker": "MAERSK-B.CO",
+      "side": "short",
+      "target_weight": 4.0,
+      "expected_holding_horizon": "6-12 months",
+      "thesis": "2026 EBITDA guided 27-53% below 2025 levels; FCF guided negative. Stock trades ~46% above base-case 5-year present value (~11,200 DKK vs ~16,420 DKK current). 12 of 18 analysts rate Sell. Market share has declined five consecutive years (19.4% to ~14.2%). Logistics & Services margins (4.9%) remain below the stated 6% floor after 3+ years of integration.",
+      "key_risk": "Red Sea or Strait of Hormuz disruption deepens materially, driving spot freight rates above 2025 levels and producing another year of unexpectedly high container shipping earnings."
+    }
+  ],
+  "changes_from_prior": {
+    "added": [
+      "ADBE",
+      "CSU.TO",
+      "GILD",
+      "CPRT",
+      "NOW",
+      "NOVO-B.CO",
+      "V",
+      "MSFT",
+      "CAT",
+      "ABBV",
+      "ALAB",
+      "ARM",
+      "MAERSK-B.CO"
+    ],
+    "removed": [],
+    "resized": []
+  }
+}

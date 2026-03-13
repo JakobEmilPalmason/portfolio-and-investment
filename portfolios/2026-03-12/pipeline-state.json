@@ -1,0 +1,15 @@
+{
+  "run_date": "2026-03-12",
+  "stages": {
+    "D": {
+      "status": "complete",
+      "timestamp": "2026-03-12T10:57:23Z",
+      "record_count": 42
+    },
+    "E": {
+      "status": "complete",
+      "timestamp": "2026-03-12T11:03:49Z",
+      "record_count": 13
+    }
+  }
+}

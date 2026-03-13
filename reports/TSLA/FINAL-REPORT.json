@@ -1,0 +1,53 @@
+{
+  "ticker": "TSLA",
+  "company": "Tesla, Inc.",
+  "analysis_date": "2026-03-10",
+  "verdict": "Pass",
+  "average_score": 4.1,
+  "umbrella_scores": {
+    "circle_of_competence": 6,
+    "competitive_advantage": 5,
+    "management": 3,
+    "business_economics": 5,
+    "balance_sheet": 8,
+    "valuation": 2,
+    "margin_of_safety": 2,
+    "temperament": 2
+  },
+  "key_strengths": [
+    "Supercharger network is now the North American charging standard, adopted by Ford, GM, Rivian, and others",
+    "50 billion miles per year of real-world FSD training data represents a genuine and widening data moat",
+    "Energy Generation and Storage (Megapack) growing rapidly — 67% in 2024 to $10.1B with ~26% gross margins",
+    "$23B net cash position with ~20x interest coverage; balance sheet is not at risk under severe stress scenarios",
+    "Vertical integration and in-house AI/software stack create structural cost and capability advantages"
+  ],
+  "key_risks": [
+    "Valuation re-rating risk: stock trades at ~380x trailing P/E and ~237x FCF; any execution delay removes the central bull-case pillar and implies 63–75% downside to a generous 40–50x multiple",
+    "Competitive erosion: BYD outsells Tesla globally, China market share has collapsed to ~5%, and Chinese OEMs are entering European markets that Tesla depends on for margin",
+    "Key-man and governance failure: Musk's attention is divided across Tesla, SpaceX, xAI, X, and government roles; the board demonstrated it cannot exercise genuine independence",
+    "Regulatory credit elimination and FSD regulatory uncertainty: $2–3B annual near-100%-margin credit stream eliminated by 2027; FSD commercialization depends on regulatory approval that DOGE involvement has complicated",
+    "Geopolitical concentration: Shanghai Gigafactory produces ~50% of global deliveries; a Taiwan conflict or escalating U.S.-China tariffs would halt half of Tesla's global production"
+  ],
+  "red_flags": [
+    "Vehicle deliveries declined 8.6% in 2025 — second consecutive annual decline — while the global EV market grew 26%",
+    "Automotive gross margin compressed from 25.6% (2022) to ~14% (2025), signaling lost pricing power",
+    "Board publicly denied exploring CEO replacement while simultaneously contacting executive search firms — documented credibility failure",
+    "~50% of Musk's Tesla shares pledged as loan collateral, creating forced-seller risk in a downturn",
+    "Revenue declined year-over-year for the first time in Tesla's history (FY2025: $94.8B, down 2.9%)",
+    "ROIC collapsed from ~30% (2022) to ~8–13% (2024–2025)"
+  ],
+  "buy_triggers": [
+    "Price falls to the $100–150 range, where the energy business partially justifies valuation and FSD/robotaxi optionality is effectively free",
+    "Robotaxi generates $5B+ in verified annual revenue from unsupervised paid rides at scale in multiple U.S. cities",
+    "Automotive gross margin stabilizes and recovers above 20% for two consecutive quarters, signaling pricing power is returning"
+  ],
+  "sell_triggers": [
+    "Automotive gross margin falls below 10% for two consecutive quarters, signaling a structural price war Tesla cannot win",
+    "A fatal robotaxi incident triggers a federal regulatory freeze on FSD commercialization, collapsing both the near-term revenue catalyst and long-term platform thesis",
+    "Elon Musk departs as CEO or materially reduces his operational involvement, impairing the significant 'Musk premium' in the stock price"
+  ],
+  "valuation_summary": "At ~$405/share (~$1.47T market cap), Tesla trades at ~380x trailing earnings and ~237x FCF on a business reporting its first revenue decline. Conservative probability-weighted intrinsic value across bear/base/bull scenarios is approximately $227/share — roughly 44% below current price — and even the base case implies a 50–59% loss; conservative estimates of $50–210 imply the stock trades at 2–8x fair value.",
+  "source_summary": "Analysis based on web search results from multiple financial data providers (MacroTrends, StockAnalysis, Yahoo Finance, GuruFocus), Tesla IR press releases and Q4/FY 2025 earnings release (January 2026), Tesla 10-K for fiscal year 2024, and volatility/drawdown data from PortfoliosLab and MacroAxis — all sourced through early March 2026; no user-provided context files were present for TSLA.",
+  "confidence": "medium",
+  "change_notes": ""
+}

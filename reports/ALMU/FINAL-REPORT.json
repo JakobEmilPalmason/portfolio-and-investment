@@ -1,0 +1,52 @@
+{
+  "ticker": "ALMU",
+  "company": "Aeluma, Inc.",
+  "analysis_date": "2026-03-11",
+  "verdict": "Pass",
+  "average_score": 3.25,
+  "umbrella_scores": {
+    "circle_of_competence": 3,
+    "competitive_advantage": 3,
+    "management": 4,
+    "business_economics": 2,
+    "balance_sheet": 7,
+    "valuation": 2,
+    "margin_of_safety": 2,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "Proprietary MOCVD process for InGaAs-on-12-inch-silicon with 10+ years of UCSB R&D lineage and ~35 patents",
+    "Government validation from DARPA, NASA, U.S. Navy, and DOE — provides credible third-party endorsement of technology",
+    "Fortress balance sheet: $38.6M cash, zero meaningful debt, 25+ quarters of runway even under stress",
+    "Capital-light fabless model with ~50-60% gross margins suggests attractive unit economics if commercial scale is achieved",
+    "Founder-CEO holds ~10% of shares (~$23.6M stake), providing meaningful incentive alignment"
+  ],
+  "key_risks": [
+    "97% government contract revenue with $41K in commercial product revenue in Q2 FY2026 — six years post-founding with no commercial traction",
+    "Serial equity dilution: share count grew 45.9% in one year; $100M shelf registration (Form S-3) filed for future issuances",
+    "Single DARPA contract ($11.7M) dominates revenue; one missed technical milestone eliminates the primary revenue source",
+    "All insider transactions in the past 3 months are sales; no open-market purchases by any insider",
+    "Well-capitalized incumbents (Coherent, Lumentum, Hamamatsu, Intel Photonics) can redirect resources to III-V-on-silicon if market proves out"
+  ],
+  "red_flags": [
+    "Bear-case downside is -93% ($1/share) vs bull-case upside of +52% ($23/share) — deeply asymmetric to the downside",
+    "Stock trades at ~2x probability-weighted intrinsic value (~$7.44/share vs $15.02 market price)",
+    "Q2 FY2026 Adjusted EBITDA swung to -$917K from +$647K year-over-year — deteriorating near-term economics",
+    "CEO sold $902,500 in stock in same period an equity bonus grant vested — legal but poor optics",
+    "52-week price range of $5.79-$25.88 (347% spread) reflects venture-stage volatility, not investment-grade stability"
+  ],
+  "buy_triggers": [
+    "Stock price falls to $6-8/share, near the base-case probability-weighted intrinsic value, creating a genuine margin of safety",
+    "A named commercial customer (hyperscaler, defense prime, or major OEM) announces a development agreement or volume purchase order for photonic devices",
+    "DARPA contract milestones confirmed met on schedule AND one or more new government contracts totaling $5M+ awarded in a single quarter"
+  ],
+  "sell_triggers": [
+    "Commercial product revenue has not reached a $1M annualized run-rate by end of Q4 FY2026 (November 2026) — confirms continued commercialization slippage",
+    "Another dilutive equity raise that takes total shares above 20M without corresponding commercial revenue acceleration",
+    "CEO or major insider accelerates stock sales beyond disclosed 10b5-1 plan volumes, or any new insider selling program is filed at current price levels"
+  ],
+  "valuation_summary": "At $15.02/share and ~$283M market cap, ALMU trades at ~52x EV/FY2025 revenue of $4.7M with zero commercial product revenue. Probability-weighted intrinsic value is approximately $7.44/share (bear: $1.00 at 40%, base: $6.20 at 40%, bull: $22.80 at 20%), implying the stock is roughly 2x overvalued on an expected-value basis. Morningstar fair value is $22.20 but embeds optimistic base-to-bull assumptions. The market is pricing a >50% probability of the bull case when the evidence supports it at under 20%.",
+  "source_summary": "Analysis based on web search results from March 2026 including Aeluma press releases (Q1-Q2 FY2026, FY2025 full year), SEC filings summaries (10-K, 10-Q via StockTitan), Morningstar, StockAnalysis, Yahoo Finance, BeyondSPX, MarketBeat, Nasdaq analyst commentary, Seeking Alpha, and investment thesis Substacks. No user-provided context files. Balance sheet data from December 31, 2025 (Q2 FY2026). Current price reference: ~$15.02 (early March 2026).",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. No prior report to compare against."
+}

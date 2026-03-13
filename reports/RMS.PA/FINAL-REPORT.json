@@ -1,0 +1,51 @@
+{
+  "ticker": "RMS.PA",
+  "company": "Hermès International",
+  "analysis_date": "2026-03-12",
+  "verdict": "Watch",
+  "average_score": 8.0,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 10,
+    "management": 9,
+    "business_economics": 10,
+    "balance_sheet": 10,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Widest competitive moat in luxury: 190-year brand heritage, deliberate scarcity, artisan workforce, vertical integration, zero wholesale/licensing",
+    "World-class economics: ~49% ROIC, 41% operating margins (expanding), 71% gross margins, EUR 3.9B free cash flow",
+    "Fortress balance sheet: EUR 12.8B net cash, EUR 32M total debt, could survive 30% revenue decline for a decade",
+    "Near-ideal stewardship: 67% family ownership via SCA structure, sixth-generation CEO, zero debt-funded acquisitions",
+    "Highly understandable business with only 3-4 key drivers to monitor"
+  ],
+  "key_risks": [
+    "China/Asia-Pacific revenue concentration (~42-50%) creates significant geographic demand risk",
+    "At 45x trailing earnings, multiple compression to 30-35x on flat earnings would mean 30%+ downside",
+    "Growth deceleration from 13% to 9% organic; if trend continues to mid-single digits, valuation is unsustainable",
+    "CEO succession uncertainty: Axel Dumas in early 60s with no publicly named successor",
+    "Currency headwinds: EUR strength compressed 2025 reported growth from 9% to 5.5%"
+  ],
+  "red_flags": [
+    "No price margin of safety: stock trades at 55% premium to conservative intrinsic value of EUR 1,240/share",
+    "Unfavorable risk-reward asymmetry: ~22% bull-case upside vs ~35% bear-case downside (1:1.6 ratio)",
+    "Stock ranked in bottom 8% for risk-adjusted returns (PortfoliosLab)",
+    "Asia-Pacific growth slowed to 5% in 2025 from double-digit prior years"
+  ],
+  "buy_triggers": [
+    "Share price decline to EUR 1,400-1,600 range (~35-40x earnings) providing meaningful margin of safety",
+    "China/Asia-Pacific demand re-acceleration to double-digit growth",
+    "Organic revenue growth stabilizing at 10%+ for two consecutive quarters"
+  ],
+  "sell_triggers": [
+    "Organic revenue growth turns negative for two consecutive years",
+    "Operating margins decline below 35% for two consecutive years",
+    "Family control lost or governance structure materially deteriorates"
+  ],
+  "valuation_summary": "At EUR 1,925/share and 45x trailing earnings, Hermès is approximately fairly valued under base-case assumptions (10% earnings growth, 35x terminal multiple = EUR 1,710 intrinsic value). Bear case (6% growth, 30x terminal) implies EUR 1,240 with 35% downside. Bull case (14% growth, 40x terminal) implies EUR 2,340 with 22% upside. Net cash of EUR 12.8B adds ~EUR 120/share. The market is pricing 10-12% annual earnings growth for the next decade with no multiple compression.",
+  "source_summary": "Hermès 2025 Full-Year Results (GlobeNewswire, Feb 2026), Hermès Finance IR (finance.hermes.com), Yahoo Finance, MarketScreener, CompaniesMarketCap, Investing.com, StockAnalysis.com, PortfoliosLab, Alpha Spread, GuruFocus, Simply Wall St, Seeking Alpha, danielscrivner.com, AMW Group, The Cecily Group, Family Business Magazine, TIKR.com",
+  "confidence": "high",
+  "change_notes": "Initial analysis. Business quality is exceptional (8.0 average score driven by perfect 10s in moat, economics, and balance sheet), but valuation and margin of safety scores (5 and 4 respectively) prevent an Own verdict. Watch for better entry at EUR 1,400-1,600."
+}
