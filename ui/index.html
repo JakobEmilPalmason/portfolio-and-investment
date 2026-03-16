@@ -10,96 +10,500 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/ag-grid-community@33/dist/ag-grid-community.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community@33/styles/ag-grid.css"/>
-  <script src="https://cdn.plot.ly/plotly-3.4.0.min.js"></script>
   <style>
-    /* Badges */
-    .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; font-weight:600; line-height:1.6; white-space:nowrap; }
-    .b-deep-research { background:#431407; color:#fdba74; }
-    .b-monitor-only  { background:#14532d; color:#86efac; }
-    .b-watchlist     { background:#431407; color:#fcd34d; }
-    .b-inbox         { background:#1c1917; color:#a8a29e; border:1px solid #44403c; }
-    .b-rejected      { background:#450a0a; color:#fca5a5; }
-    .b-approved      { background:#3b0764; color:#d8b4fe; }
-    .b-owned         { background:#052e16; color:#6ee7b7; }
-    .b-triage        { background:#431407; color:#fdba74; }
-    .b-own           { background:#14532d; color:#86efac; }
-    .b-watch         { background:#431407; color:#fcd34d; }
-    .b-pass          { background:#450a0a; color:#fca5a5; }
-    .b-high          { background:#450a0a; color:#fca5a5; }
-    .b-medium        { background:#431407; color:#fcd34d; }
-    .b-low           { background:#1c1917; color:#a8a29e; border:1px solid #44403c; }
-    .b-deep-dive     { background:#431407; color:#fdba74; }
-    .b-refresh       { background:#3b0764; color:#d8b4fe; }
-    .b-monitor       { background:#14532d; color:#86efac; }
-    .b-discard       { background:#450a0a; color:#fca5a5; }
-    /* Cards */
-    .card { background:#1c1917; border:1px solid #292524; border-radius:8px; }
-    /* Tabs */
-    .tab-btn { padding:10px 16px; font-size:13px; font-weight:500; color:#a8a29e; border-bottom:2px solid transparent; cursor:pointer; transition:all 0.15s; white-space:nowrap; background:transparent; border-top:none; border-left:none; border-right:none; }
-    .tab-btn:hover { color:#fafaf9; }
-    .tab-btn.active { color:#fafaf9; border-bottom-color:#c15f3c; }
-    /* Scrollbar */
-    ::-webkit-scrollbar { width:6px; height:6px; }
-    ::-webkit-scrollbar-track { background:#0c0a09; }
-    ::-webkit-scrollbar-thumb { background:#292524; border-radius:3px; }
-    ::-webkit-scrollbar-thumb:hover { background:#44403c; }
-    /* AG Grid */
-    .ag-theme-alpine-dark {
-      --ag-background-color: #1c1917;
-      --ag-odd-row-background-color: #0c0a09;
-      --ag-header-background-color: #0c0a09;
-      --ag-border-color: #292524;
-      --ag-row-border-color: #292524;
-      --ag-foreground-color: #fafaf9;
-      --ag-secondary-foreground-color: #a8a29e;
-      --ag-header-foreground-color: #a8a29e;
-      --ag-selected-row-background-color: #292524;
-      --ag-row-hover-color: #1c1917;
-      --ag-font-family: inherit;
-      --ag-font-size: 13px;
-      --ag-cell-horizontal-padding: 12px;
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      color-scheme: dark;
+      --bg: #0c0a09;
+      --bg-strong: #1c1917;
+      --surface: #1c1917;
+      --surface-strong: #292524;
+      --surface-soft: rgba(28, 25, 23, 0.92);
+      --border: rgba(68, 64, 60, 0.82);
+      --border-strong: rgba(120, 113, 108, 0.9);
+      --text: #fafaf9;
+      --muted: #a8a29e;
+      --subtle: #78716c;
+      --accent: #c15f3c;
+      --accent-soft: rgba(193, 95, 60, 0.16);
+      --positive: #86efac;
+      --positive-soft: rgba(20, 83, 45, 0.52);
+      --warning: #fbbf24;
+      --warning-soft: rgba(120, 53, 15, 0.48);
+      --danger: #fca5a5;
+      --danger-soft: rgba(127, 29, 29, 0.42);
     }
-    /* Markdown */
-    .md-content h1 { font-size:1.4rem; font-weight:700; margin:1.2rem 0 0.4rem; color:#fafaf9; border-bottom:1px solid #292524; padding-bottom:0.4rem; }
-    .md-content h2 { font-size:1.15rem; font-weight:600; margin:1rem 0 0.3rem; color:#fafaf9; }
-    .md-content h3 { font-size:1rem; font-weight:600; margin:0.75rem 0 0.25rem; color:#cbd5e1; }
-    .md-content p  { margin:0.5rem 0; color:#cbd5e1; line-height:1.65; }
-    .md-content ul { list-style:disc; padding-left:1.5rem; margin:0.5rem 0; }
-    .md-content ol { list-style:decimal; padding-left:1.5rem; margin:0.5rem 0; }
-    .md-content li { margin:0.25rem 0; color:#cbd5e1; line-height:1.5; }
-    .md-content table { width:100%; border-collapse:collapse; margin:0.75rem 0; font-size:0.85rem; }
-    .md-content th { background:#0c0a09; padding:0.4rem 0.65rem; text-align:left; font-size:0.7rem; font-weight:700; text-transform:uppercase; color:#a8a29e; border:1px solid #292524; }
-    .md-content td { padding:0.4rem 0.65rem; border:1px solid #292524; color:#cbd5e1; }
-    .md-content tr:nth-child(even) td { background:#0a0908; }
-    .md-content code { background:#0c0a09; padding:0.1rem 0.3rem; border-radius:3px; font-family:monospace; font-size:0.85em; color:#fdba74; }
-    .md-content pre  { background:#0c0a09; padding:1rem; border-radius:6px; overflow-x:auto; margin:0.75rem 0; }
-    .md-content pre code { background:none; padding:0; }
-    .md-content strong { color:#fafaf9; font-weight:600; }
-    .md-content blockquote { border-left:3px solid #c15f3c; padding-left:1rem; margin:0.5rem 0; color:#a8a29e; }
-    .md-content hr { border:none; border-top:1px solid #292524; margin:1rem 0; }
-    .md-content a { color:#e07a5f; text-decoration:underline; }
-    .search-snippet mark { background:transparent; color:#fbbf24; font-weight:600; }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(193, 95, 60, 0.14), transparent 24%),
+        linear-gradient(180deg, #181311 0%, #100d0b 18%, #0c0a09 46%, #0c0a09 100%);
+      color: var(--text);
+      font-family: 'Manrope', system-ui, sans-serif;
+      letter-spacing: -0.01em;
+    }
+
+    .font-mono,
+    code,
+    pre,
+    #drawer-ticker,
+    #modal-ticker {
+      font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--muted);
+    }
+    .b-deep-research { background: var(--accent-soft); color: var(--accent); border-color: rgba(202, 140, 98, 0.28); }
+    .b-monitor-only,
+    .b-owned,
+    .b-own,
+    .b-monitor { background: var(--positive-soft); color: var(--positive); border-color: rgba(120, 194, 170, 0.28); }
+    .b-watchlist,
+    .b-watch,
+    .b-medium,
+    .b-deep-dive { background: var(--warning-soft); color: var(--warning); border-color: rgba(209, 171, 104, 0.28); }
+    .b-rejected,
+    .b-pass,
+    .b-high,
+    .b-discard { background: var(--danger-soft); color: var(--danger); border-color: rgba(208, 131, 131, 0.28); }
+    .b-approved,
+    .b-refresh { background: rgba(68, 64, 60, 0.42); color: var(--text); border-color: var(--border-strong); }
+    .b-inbox,
+    .b-low,
+    .b-triage { background: rgba(28, 25, 23, 0.7); color: var(--muted); border-color: var(--border); }
+
+    .card {
+      background: linear-gradient(180deg, rgba(28, 25, 23, 0.98), rgba(22, 18, 16, 0.98));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+    .panel { padding: 20px 22px; }
+    .table-shell { padding: 8px; overflow: hidden; }
+    .hero-banner {
+      padding: 22px;
+      overflow: hidden;
+      position: relative;
+      background:
+        linear-gradient(140deg, rgba(255,255,255,0.03), rgba(255,255,255,0)),
+        linear-gradient(180deg, rgba(28, 25, 23, 0.99), rgba(20, 16, 14, 0.99));
+    }
+    .hero-banner::after {
+      content: '';
+      position: absolute;
+      right: -80px;
+      bottom: -120px;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(193, 95, 60, 0.18), transparent 70%);
+      pointer-events: none;
+    }
+    .section-kicker {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--subtle);
+    }
+    .section-title {
+      font-size: 1.18rem;
+      font-weight: 750;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+    .section-subtitle {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+    .metric-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+      gap: 12px;
+    }
+    .metric-tile {
+      min-height: 88px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(41, 37, 36, 0.42);
+      transition: transform 150ms ease, border-color 150ms ease, background 150ms ease;
+    }
+    .metric-tile.clickable { cursor: pointer; }
+    .metric-tile.clickable:hover {
+      transform: translateY(-1px);
+      border-color: var(--border-strong);
+      background: rgba(68, 64, 60, 0.38);
+    }
+    .metric-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--subtle);
+    }
+    .metric-value {
+      margin-top: 8px;
+      font-size: 1.42rem;
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      color: var(--text);
+    }
+    .metric-meta {
+      margin-top: 6px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .tone-accent .metric-value { color: var(--accent); }
+    .tone-positive .metric-value { color: var(--positive); }
+    .tone-warning .metric-value { color: var(--warning); }
+    .tone-danger .metric-value { color: var(--danger); }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 20px;
+    }
+    .split-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+      gap: 20px;
+    }
+    .portfolio-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2.15fr) minmax(320px, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+    .panel-caption {
+      margin-bottom: 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--subtle);
+    }
+    .mini-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .mini-table th {
+      padding: 0 0 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--subtle);
+      text-align: left;
+    }
+    .mini-table td {
+      padding: 11px 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.08);
+      vertical-align: top;
+      color: var(--text);
+    }
+    .queue-table {
+      width: 100%;
+      min-width: 1040px;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    .queue-table thead {
+      background: rgba(12, 10, 9, 0.94);
+    }
+    .queue-table th {
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(68, 64, 60, 0.9);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-align: left;
+      color: var(--subtle);
+      white-space: nowrap;
+    }
+    .queue-table td {
+      padding: 13px 16px;
+      border-bottom: 1px solid rgba(68, 64, 60, 0.46);
+      vertical-align: top;
+      font-size: 12px;
+      line-height: 1.35;
+      color: var(--text);
+      background: transparent;
+    }
+    .queue-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .queue-table tbody tr.is-clickable {
+      cursor: pointer;
+    }
+    .queue-table tbody tr.is-clickable:hover td {
+      background: rgba(41, 37, 36, 0.42);
+    }
+    .queue-table tbody tr.is-muted td {
+      opacity: 0.74;
+    }
+    .queue-table .badge {
+      padding: 2px 8px;
+      font-size: 9px;
+      line-height: 1.35;
+    }
+    .queue-symbol {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .queue-company {
+      max-width: 220px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12.5px;
+      color: #d6d3d1;
+    }
+    .queue-badge-stack {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 6px;
+      min-height: 24px;
+    }
+    .queue-date {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .queue-date.is-empty {
+      color: var(--subtle);
+    }
+    .queue-freshness {
+      margin-top: 5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      line-height: 1.3;
+      color: var(--muted);
+    }
+    .queue-freshness-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .queue-freshness-age {
+      color: var(--subtle);
+    }
+    .queue-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 6px;
+      max-width: 280px;
+    }
+    .queue-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(68, 64, 60, 0.82);
+      background: rgba(28, 25, 23, 0.82);
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .queue-tag-more {
+      display: inline-flex;
+      align-items: center;
+      font-size: 10px;
+      color: var(--subtle);
+    }
+    .queue-empty {
+      color: var(--subtle);
+      font-size: 11px;
+    }
+    .queue-empty-row {
+      padding: 42px 16px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .table-symbol {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .table-meta {
+      margin-top: 2px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .clickable-row { cursor: pointer; }
+    .clickable-row:hover td { background: rgba(41, 37, 36, 0.3); }
+    .bar-stack { display: flex; flex-direction: column; gap: 10px; }
+    .bar-row { display: grid; grid-template-columns: minmax(0, 1fr) 64px; gap: 12px; align-items: center; }
+    .bar-track {
+      height: 7px;
+      border-radius: 999px;
+      background: rgba(41, 37, 36, 0.72);
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+    .warning-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .warning-item {
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(209, 171, 104, 0.2);
+      background: linear-gradient(180deg, rgba(120, 53, 15, 0.38), rgba(69, 26, 3, 0.12));
+      color: var(--warning);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .empty-panel {
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px dashed var(--border);
+      background: rgba(28, 25, 23, 0.64);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .tab-btn {
+      padding: 12px 2px 11px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      border: none;
+      border-bottom: 2px solid transparent;
+      border-radius: 0;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      background: transparent;
+    }
+    .tab-btn:hover {
+      color: var(--text);
+    }
+    .tab-btn.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.18); border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.28); }
+
+    .ag-theme-alpine-dark {
+      --ag-background-color: transparent;
+      --ag-odd-row-background-color: rgba(12, 10, 9, 0.44);
+      --ag-header-background-color: rgba(12, 10, 9, 0.9);
+      --ag-border-color: var(--border);
+      --ag-row-border-color: rgba(68, 64, 60, 0.55);
+      --ag-foreground-color: var(--text);
+      --ag-secondary-foreground-color: var(--muted);
+      --ag-header-foreground-color: var(--subtle);
+      --ag-selected-row-background-color: rgba(193, 95, 60, 0.12);
+      --ag-row-hover-color: rgba(41, 37, 36, 0.5);
+      --ag-font-family: 'Manrope', system-ui, sans-serif;
+      --ag-font-size: 13px;
+      --ag-cell-horizontal-padding: 14px;
+      --ag-row-height: 50px;
+      --ag-header-height: 42px;
+      --ag-wrapper-border-radius: 12px;
+    }
+
+    .md-content h1 { font-size: 1.4rem; font-weight: 700; margin: 1.2rem 0 0.4rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .md-content h2 { font-size: 1.15rem; font-weight: 600; margin: 1rem 0 0.3rem; color: var(--text); }
+    .md-content h3 { font-size: 1rem; font-weight: 600; margin: 0.75rem 0 0.25rem; color: var(--muted); }
+    .md-content p  { margin: 0.5rem 0; color: #cbd5e1; line-height: 1.7; }
+    .md-content ul { list-style: disc; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .md-content ol { list-style: decimal; padding-left: 1.5rem; margin: 0.5rem 0; }
+    .md-content li { margin: 0.25rem 0; color: #cbd5e1; line-height: 1.55; }
+    .md-content table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
+    .md-content th { background: rgba(12, 10, 9, 0.9); padding: 0.4rem 0.65rem; text-align: left; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); }
+    .md-content td { padding: 0.4rem 0.65rem; border: 1px solid var(--border); color: #cbd5e1; }
+    .md-content tr:nth-child(even) td { background: rgba(12, 10, 9, 0.36); }
+    .md-content code { background: rgba(12, 10, 9, 0.7); padding: 0.1rem 0.3rem; border-radius: 5px; font-size: 0.85em; color: var(--warning); }
+    .md-content pre  { background: rgba(12, 10, 9, 0.8); padding: 1rem; border-radius: 12px; overflow-x: auto; margin: 0.75rem 0; }
+    .md-content pre code { background: none; padding: 0; }
+    .md-content strong { color: var(--text); font-weight: 600; }
+    .md-content blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; margin: 0.5rem 0; color: var(--muted); }
+    .md-content hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
+    .md-content a { color: var(--accent); text-decoration: underline; }
+    .search-snippet mark { background: transparent; color: var(--warning); font-weight: 600; }
+
+    @media (max-width: 1100px) {
+      .overview-grid,
+      .split-panel,
+      .portfolio-layout {
+        grid-template-columns: 1fr;
+      }
+    }
     @media (max-width:768px) {
       #ticker-drawer { width:100% !important; }
+      .hero-banner,
+      .panel { padding: 18px; }
+      .metric-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width:560px) {
+      .metric-strip { grid-template-columns: 1fr; }
     }
   </style>
 </head>
-<body class="bg-[#0c0a09] text-slate-100 min-h-screen antialiased">
+<body class="min-h-screen antialiased">
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-40" style="background:#1c1917; border-bottom:1px solid #292524;">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="flex items-center justify-between py-3">
-        <div class="flex items-center gap-3">
-          <span style="color:#c15f3c; font-size:1.25rem;">◈</span>
-          <h1 class="font-semibold tracking-tight" style="font-size:15px;">Investment Pipeline</h1>
-          <span id="header-counts" class="text-xs text-slate-500"></span>
+  <header class="sticky top-0 z-40" style="background:rgba(28,25,23,0.96); border-bottom:1px solid var(--border); box-shadow:0 1px 0 rgba(255,255,255,0.02);">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between gap-4 py-4">
+        <div class="flex items-center gap-4 min-w-0">
+          <span style="color:var(--accent); font-size:1.25rem; line-height:1;">◈</span>
+          <div class="min-w-0">
+            <div class="flex items-center gap-3 flex-wrap">
+              <h1 class="font-semibold tracking-tight" style="font-size:15px;">Investment Pipeline</h1>
+              <span id="header-counts" class="text-xs" style="color:var(--subtle);"></span>
+            </div>
+            <p class="text-[11px] uppercase tracking-[0.16em]" style="color:var(--subtle);">Research Workspace</p>
+          </div>
         </div>
-        <button id="refresh-btn" class="text-xs text-slate-400 hover:text-slate-200 transition-colors px-3 py-1.5 rounded" style="border:1px solid #292524;">
+        <button id="refresh-btn" class="text-xs transition-colors px-3.5 py-2 rounded-lg" style="border:1px solid var(--border); color:var(--muted); background:rgba(41,37,36,0.72);">
           ↻ Refresh
         </button>
       </div>
-      <nav class="flex gap-1 -mb-px overflow-x-auto">
+      <nav class="flex gap-6 overflow-x-auto">
         <button class="tab-btn active" data-tab="overview">Overview</button>
         <button class="tab-btn" data-tab="portfolio">Portfolio</button>
         <button class="tab-btn" data-tab="queue">Queue</button>
@@ -110,7 +514,7 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="max-w-7xl mx-auto px-4 py-6">
+  <main class="max-w-[1440px] mx-auto px-4 sm:px-6 py-6">
     <div id="tab-overview"></div>
     <div id="tab-portfolio" class="hidden"></div>
     <div id="tab-queue"    class="hidden"></div>
@@ -120,34 +524,34 @@
 
   <!-- DRAWER BACKDROP -->
   <div id="drawer-backdrop" class="hidden fixed inset-0 z-40"
-       style="background:rgba(12,10,9,0.5);"
+       style="background:rgba(12,10,9,0.72);"
        onclick="closeDrawer()"></div>
 
   <!-- TICKER DRAWER -->
   <div id="ticker-drawer"
        class="fixed top-0 right-0 h-full z-50 flex flex-col"
-       style="width:520px; background:#1c1917; border-left:1px solid #292524;
+       style="width:520px; background:var(--bg-strong); border-left:1px solid var(--border);
               transform:translateX(100%); transition:transform 250ms ease-out;
-              box-shadow: -16px 0 48px rgba(0,0,0,0.4);">
-    <div id="drawer-header" style="padding:16px 20px; border-bottom:1px solid #292524;
-         display:flex; align-items:center; gap:10px; flex-shrink:0; background:#1c1917;">
-      <span id="drawer-ticker" style="font-family:monospace; font-weight:700; font-size:18px; color:#e07a5f;"></span>
-      <span id="drawer-company" style="color:#a8a29e; font-size:14px;"></span>
+              box-shadow: -24px 0 56px rgba(0,0,0,0.45);">
+    <div id="drawer-header" style="padding:16px 20px; border-bottom:1px solid var(--border);
+         display:flex; align-items:center; gap:10px; flex-shrink:0; background:var(--bg-strong);">
+      <span id="drawer-ticker" style="font-family:monospace; font-weight:700; font-size:18px; color:var(--accent);"></span>
+      <span id="drawer-company" style="color:var(--muted); font-size:14px;"></span>
       <span id="drawer-verdict"></span>
       <button onclick="closeDrawer()"
-              style="margin-left:auto; color:#a8a29e; font-size:22px; line-height:1; background:none; border:none; cursor:pointer;">&times;</button>
+              style="margin-left:auto; color:var(--muted); font-size:22px; line-height:1; background:none; border:none; cursor:pointer;">&times;</button>
     </div>
     <div id="drawer-body" style="flex:1; overflow-y:auto; padding:20px;"></div>
-    <div id="drawer-footer" style="padding:14px 20px; border-top:1px solid #292524; flex-shrink:0; background:#1c1917;"></div>
+    <div id="drawer-footer" style="padding:14px 20px; border-top:1px solid var(--border); flex-shrink:0; background:var(--bg-strong);"></div>
   </div>
 
   <!-- REPORT MODAL -->
-  <div id="report-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.75);">
-    <div class="card w-full flex flex-col" style="max-width:1100px; max-height:92vh; border-color:#44403c;">
+  <div id="report-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(12,10,9,0.82);">
+    <div class="card w-full flex flex-col" style="max-width:1100px; max-height:92vh; border-color:var(--border-strong);">
       <!-- Modal header -->
-      <div id="modal-header" class="flex items-center justify-between px-6 py-4 flex-shrink-0" style="border-bottom:1px solid #292524;">
+      <div id="modal-header" class="flex items-center justify-between px-6 py-4 flex-shrink-0" style="border-bottom:1px solid var(--border);">
         <div class="flex items-center gap-3">
-          <span id="modal-ticker" class="font-mono font-bold text-xl" style="color:#e07a5f;"></span>
+          <span id="modal-ticker" class="font-mono font-bold text-xl" style="color:var(--accent);"></span>
           <span id="modal-company" class="text-slate-300"></span>
           <span id="modal-verdict"></span>
         </div>
@@ -161,9 +565,9 @@
   </div>
 
   <!-- MARKDOWN MODAL -->
-  <div id="md-modal" class="hidden fixed inset-0 z-60 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.85); z-index:60;">
-    <div class="flex flex-col w-full" style="max-width:960px; max-height:94vh; background:#0c0a09; border:1px solid #44403c; border-radius:12px;">
-      <div class="flex items-center justify-between px-6 py-4 flex-shrink-0" style="border-bottom:1px solid #292524;">
+  <div id="md-modal" class="hidden fixed inset-0 z-60 flex items-center justify-center p-4" style="background:rgba(12,10,9,0.88); z-index:60;">
+    <div class="flex flex-col w-full" style="max-width:960px; max-height:94vh; background:var(--bg); border:1px solid var(--border-strong); border-radius:16px;">
+      <div class="flex items-center justify-between px-6 py-4 flex-shrink-0" style="border-bottom:1px solid var(--border);">
         <span id="md-modal-title" class="font-semibold text-slate-200"></span>
         <button onclick="closeMdModal()" class="text-slate-400 hover:text-white text-2xl" style="line-height:1;">&times;</button>
       </div>
@@ -173,21 +577,21 @@
 
   <!-- COMMAND PALETTE -->
   <div id="cmd-palette" class="hidden fixed inset-0 z-50 flex items-start justify-center pt-24"
-       style="background: rgba(12,10,9,0.85); z-index:70;"
+       style="background: rgba(12,10,9,0.88); z-index:70;"
        onclick="if(event.target===this) closeCmdPalette()">
-    <div style="width:600px; background:#1c1917; border:1px solid #44403c; border-radius:10px; overflow:hidden; box-shadow:0 24px 64px rgba(0,0,0,0.6);">
-      <div style="display:flex; align-items:center; padding:14px 16px; border-bottom:1px solid #292524; gap:10px;">
-        <span style="color:#a8a29e; font-size:15px;">&#8984;</span>
+    <div style="width:600px; background:var(--bg-strong); border:1px solid var(--border-strong); border-radius:14px; overflow:hidden; box-shadow:0 24px 64px rgba(0,0,0,0.6);">
+      <div style="display:flex; align-items:center; padding:14px 16px; border-bottom:1px solid var(--border); gap:10px;">
+        <span style="color:var(--muted); font-size:15px;">&#8984;</span>
         <input id="cmd-input" type="text" placeholder="Search tickers, jump to page, run action…"
-               style="flex:1; background:transparent; border:none; outline:none; color:#fafaf9; font-size:14px;"
+               style="flex:1; background:transparent; border:none; outline:none; color:var(--text); font-size:14px;"
                oninput="updateCmdResults(this.value)"
                onkeydown="handleCmdKey(event)">
-        <kbd style="background:#292524; border:1px solid #44403c; border-radius:4px; padding:2px 6px; font-size:11px; color:#a8a29e;">ESC</kbd>
+        <kbd style="background:rgba(255,255,255,0.04); border:1px solid var(--border); border-radius:6px; padding:2px 6px; font-size:11px; color:var(--muted);">ESC</kbd>
       </div>
       <div id="cmd-results" style="max-height:360px; overflow-y:auto; padding:6px;"></div>
-      <div id="cmd-footer" style="padding:8px 12px; border-top:1px solid #292524; font-size:11px; color:#44403c; display:flex; justify-content:space-between;">
+      <div id="cmd-footer" style="padding:8px 12px; border-top:1px solid var(--border); font-size:11px; color:var(--subtle); display:flex; justify-content:space-between;">
         <span id="search-stats"></span>
-        <a href="#" onclick="rebuildSearchIndex(); return false" style="color:#44403c; text-decoration:underline;">Rebuild index</a>
+        <a href="#" onclick="rebuildSearchIndex(); return false" style="color:var(--subtle); text-decoration:underline;">Rebuild index</a>
       </div>
     </div>
   </div>
@@ -215,35 +619,39 @@
     return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')
   }
   function scoreColor(s) {
-    if (s == null) return '#64748b'
-    if (s >= 8)   return '#6ee7b7'
-    if (s >= 6)   return '#fbbf24'
-    return '#ef4444'
+    if (s == null) return 'var(--subtle)'
+    if (s >= 8)   return 'var(--positive)'
+    if (s >= 6)   return 'var(--warning)'
+    return 'var(--danger)'
   }
   function fmtDate(d) { return d ? d.replace(/-/g, '/') : '—' }
+  function priorityRank(p) { return ({ high: 0, medium: 1, low: 2 }[String(p || '').toLowerCase()] ?? 3) }
+  function stateLabel(s) { return s ? s.replace(/_/g, ' ') : '—' }
+  function actionLabel(s) { return s ? s.replace(/_/g, ' ') : 'No next step' }
+  function reportExists(ticker) { return STATE.reports.some(r => r.ticker === ticker) }
 
   function scoreDots(score, size=8) {
-    if (score == null) return '<span style="color:#44403c;font-size:11px">—</span>'
+    if (score == null) return '<span style="color:var(--subtle);font-size:11px">—</span>'
     const c = scoreColor(score)
     return Array.from({length:10},(_,i) =>
-      `<span style="display:inline-block;width:${size}px;height:${size}px;border-radius:50%;margin-right:2px;background:${i<score?c:'#292524'}"></span>`
+      `<span style="display:inline-block;width:${size}px;height:${size}px;border-radius:50%;margin-right:2px;background:${i<score?c:'rgba(255,255,255,0.08)'}"></span>`
     ).join('')
   }
 
   function verdictBadge(v) {
-    if (!v) return '<span style="color:#44403c">—</span>'
+    if (!v) return '<span style="color:var(--subtle)">—</span>'
     const cls = v==='Own' ? 'b-own' : v==='Watch' ? 'b-watch' : v==='Pass' ? 'b-pass' : 'b-inbox'
     return `<span class="badge ${cls}">${esc(v)}</span>`
   }
 
   function stateBadge(s) {
-    if (!s) return '<span style="color:#44403c">—</span>'
+    if (!s) return '<span style="color:var(--subtle)">—</span>'
     const clsMap = {
       deep_research:'b-deep-research', monitor_only:'b-monitor-only',
       watchlist:'b-watchlist', inbox:'b-inbox', rejected:'b-rejected',
       approved:'b-approved', owned:'b-owned', triage:'b-triage',
     }
-    return `<span class="badge ${clsMap[s]||'b-inbox'}">${esc(s.replace(/_/g,' '))}</span>`
+    return `<span class="badge ${clsMap[s]||'b-inbox'}">${esc(stateLabel(s))}</span>`
   }
 
   function priorityBadge(p) {
@@ -254,13 +662,13 @@
 
   function actionBadge(a) {
     const clsMap = { deep_dive:'b-deep-dive', refresh:'b-refresh', monitor:'b-monitor', discard:'b-discard' }
-    return `<span class="badge ${clsMap[a]||'b-inbox'}">${esc(a||'—')}</span>`
+    return `<span class="badge ${clsMap[a]||'b-inbox'}">${esc(actionLabel(a||'—'))}</span>`
   }
 
   function scoreRow(label, score) {
     if (score == null) return ''
     return `
-      <div class="flex items-center justify-between py-1" style="border-bottom:1px solid #1c1917;">
+      <div class="flex items-center justify-between py-1" style="border-bottom:1px solid rgba(148, 163, 184, 0.08);">
         <span class="text-xs text-slate-400">${esc(label)}</span>
         <div class="flex items-center gap-2">
           <span class="text-sm font-mono font-bold" style="color:${scoreColor(score)};min-width:1.5rem;text-align:right;">${score}</span>
@@ -269,7 +677,7 @@
       </div>`
   }
 
-  function listSection(title, items, icon='•', color='#a8a29e') {
+  function listSection(title, items, icon='•', color='var(--muted)') {
     if (!items || items.length===0) return ''
     return `
       <div class="mb-4">
@@ -280,17 +688,48 @@
       </div>`
   }
 
-  function renderFreshness(ticker) {
+  function getFreshnessInfo(ticker) {
     const f = STATE.freshness?.[ticker]
-    if (!f) return '<span style="color:#44403c">—</span>'
-    const colors = { fresh:'#6ee7b7', aging:'#fbbf24', stale:'#f87171', never:'#44403c' }
+    const colors = {
+      fresh: 'var(--positive)',
+      aging: 'var(--warning)',
+      stale: 'var(--danger)',
+      never: 'var(--subtle)',
+    }
     const labels = { fresh:'Fresh', aging:'Aging', stale:'Stale', never:'Never' }
-    const color = colors[f.status]
-    const days = f.days_since != null ? `${f.days_since}d ago` : '—'
-    return `<div style="display:flex;align-items:center;gap:6px;">
-      <span style="width:7px;height:7px;border-radius:50%;background:${color};display:inline-block;flex-shrink:0;"></span>
-      <span style="font-size:12px;color:${color};">${labels[f.status]}</span>
-      <span style="font-size:11px;color:#44403c;">${days}</span>
+    const status = f?.status || 'never'
+    return {
+      color: colors[status] || 'var(--subtle)',
+      label: labels[status] || 'Unknown',
+      age: f?.days_since != null ? `${f.days_since}d ago` : 'No report',
+    }
+  }
+
+  function renderQueueFreshness(ticker) {
+    const info = getFreshnessInfo(ticker)
+    return `<div class="queue-freshness">
+      <span class="queue-freshness-dot" style="background:${info.color};"></span>
+      <span style="color:${info.color};">${esc(info.label)}</span>
+      <span class="queue-freshness-age">${esc(info.age)}</span>
+    </div>`
+  }
+
+  function renderQueueAnalysisCell(q) {
+    const hasDate = Boolean(q.last_analysis_date)
+    return `
+      <div>
+        <div class="queue-date${hasDate ? '' : ' is-empty'}">${esc(fmtDate(q.last_analysis_date))}</div>
+        ${renderQueueFreshness(q.ticker)}
+      </div>`
+  }
+
+  function renderQueueTags(tags) {
+    if (!tags || tags.length === 0) return '<span class="queue-empty">—</span>'
+    const visible = tags.slice(0, 3)
+    const moreCount = tags.length - visible.length
+    return `<div class="queue-tag-list">
+      ${visible.map(tag => `<span class="queue-tag">${esc(tag)}</span>`).join('')}
+      ${moreCount > 0 ? `<span class="queue-tag-more">+${moreCount}</span>` : ''}
     </div>`
   }
 
@@ -319,133 +758,369 @@
     STATE.filters.states = [state]
     STATE.filters.search  = ''
     STATE.filters.verdict = ''
+    STATE.filters.freshness = ''
     STATE.queueInited = false  // force re-init of filter controls
+    switchTab('queue')
+  }
+
+  function filterByFreshness(status) {
+    STATE.filters.states = []
+    STATE.filters.search = ''
+    STATE.filters.verdict = ''
+    STATE.filters.freshness = status
+    STATE.queueInited = false
+    switchTab('queue')
+  }
+
+  function focusQueueTicker(ticker) {
+    STATE.filters.states = []
+    STATE.filters.search = ticker
+    STATE.filters.verdict = ''
+    STATE.filters.freshness = ''
+    STATE.queueInited = false
     switchTab('queue')
   }
 
   // ─── TAB 1: OVERVIEW ─────────────────────────────────────────────────────────
   function renderOverview() {
     const container = document.getElementById('tab-overview')
-
-    const stateDefs = [
-      { key:'deep_research', label:'Deep Research', desc:'Awaiting full analysis',     color:'#e07a5f', bg:'#431407' },
-      { key:'monitor_only',  label:'Monitor Only',  desc:'Analysis complete',          color:'#4ade80', bg:'#14532d' },
-      { key:'watchlist',     label:'Watchlist',     desc:'Waiting on price/catalyst',  color:'#fbbf24', bg:'#431407' },
-      { key:'inbox',         label:'Inbox',         desc:'B1 hold, not yet triaged',   color:'#a8a29e', bg:'#1c1917' },
-      { key:'rejected',      label:'Rejected',      desc:'Eliminated from pipeline',   color:'#f87171', bg:'#450a0a' },
-    ]
     const counts = {}
-    for (const q of STATE.queue) counts[q.current_state] = (counts[q.current_state]||0)+1
+    for (const q of STATE.queue) counts[q.current_state] = (counts[q.current_state] || 0) + 1
 
-    const statCards = stateDefs.map(d => `
-      <div onclick="filterByState('${d.key}')"
-           class="card flex-1 p-4 cursor-pointer transition-opacity hover:opacity-80"
-           style="min-width:120px; border-left:3px solid ${d.color};">
-        <div class="text-3xl font-bold mb-1" style="color:${d.color};">${counts[d.key]||0}</div>
-        <div class="text-xs font-semibold uppercase tracking-wider mb-0.5" style="color:${d.color};">${d.label}</div>
-        <div class="text-xs text-slate-500">${d.desc}</div>
-      </div>`).join('')
+    const freshnessCounts = { fresh: 0, aging: 0, stale: 0, never: 0 }
+    Object.values(STATE.freshness || {}).forEach(f => {
+      freshnessCounts[f.status || 'never'] = (freshnessCounts[f.status || 'never'] || 0) + 1
+    })
 
-    const totalCard = `
-      <div class="card flex-1 p-4" style="min-width:120px; border-left:3px solid #44403c;">
-        <div class="text-3xl font-bold mb-1 text-slate-300">${STATE.queue.length}</div>
-        <div class="text-xs font-semibold uppercase tracking-wider mb-0.5 text-slate-400">Total</div>
-        <div class="text-xs text-slate-500">All tracked tickers</div>
-      </div>`
+    const queueRows = STATE.queue.map(q => {
+      const freshness = STATE.freshness?.[q.ticker] || { status: 'never', days_since: null }
+      let urgency = 0
+      if (q.current_state === 'deep_research') urgency += 120
+      if (q.priority === 'high') urgency += 80
+      if (freshness.status === 'stale') urgency += 60
+      if (freshness.status === 'aging') urgency += 24
+      if (q.current_verdict === 'Own') urgency += 18
+      return { ...q, freshness_status: freshness.status, days_since: freshness.days_since, urgency }
+    })
 
-    // Deep research queue
-    const deepResearch = STATE.queue
-      .filter(q => q.current_state === 'deep_research')
-      .sort((a,b) => ({high:0,medium:1,low:2}[a.priority]??1) - ({high:0,medium:1,low:2}[b.priority]??1))
+    const attentionRows = queueRows
+      .filter(q =>
+        q.current_state !== 'rejected' && (
+          q.current_state === 'deep_research' ||
+          q.priority === 'high' ||
+          q.freshness_status === 'stale' ||
+          (q.freshness_status === 'aging' && q.current_verdict === 'Own')
+        )
+      )
+      .sort((a, b) => b.urgency - a.urgency || priorityRank(a.priority) - priorityRank(b.priority) || (b.days_since || 0) - (a.days_since || 0))
+      .slice(0, 6)
 
-    const deepResearchBody = deepResearch.length === 0
-      ? '<p class="text-sm" style="color:#4ade80;">✓ No tickers pending analysis.</p>'
-      : `<table class="w-full text-sm">
-          <thead><tr class="text-xs text-slate-500 uppercase">
-            <th class="text-left py-1.5 pr-4">Ticker</th>
-            <th class="text-left py-1.5 pr-4">Company</th>
-            <th class="text-left py-1.5 pr-4">Priority</th>
-            <th class="text-left py-1.5">Next Action</th>
-          </tr></thead>
-          <tbody>
-          ${deepResearch.map(q => `
-            <tr style="border-top:1px solid #1c1917;">
-              <td class="py-2 pr-4 font-mono font-semibold" style="color:#e07a5f;">${esc(q.ticker)}</td>
-              <td class="py-2 pr-4 text-slate-300">${esc(q.company||'—')}</td>
-              <td class="py-2 pr-4">${priorityBadge(q.priority)}</td>
-              <td class="py-2 text-slate-400 text-xs">${esc(q.next_required_action||'—')}</td>
-            </tr>`).join('')}
-          </tbody>
-        </table>`
-
-    // Recently analyzed
     const recent = [...STATE.reports]
       .filter(r => r.analysis_date && r.has_json)
-      .sort((a,b) => (b.analysis_date||'').localeCompare(a.analysis_date||''))
-      .slice(0,6)
+      .sort((a, b) => (b.analysis_date || '').localeCompare(a.analysis_date || ''))
+      .slice(0, 7)
 
-    const recentCards = recent.map(r => `
-      <div onclick="openReportModal('${esc(r.ticker)}')"
-           class="card p-4 cursor-pointer hover:border-slate-500 transition-colors">
-        <div class="flex items-start justify-between mb-1.5">
-          <span class="font-mono font-bold text-sm" style="color:#e07a5f;">${esc(r.ticker)}</span>
-          ${verdictBadge(r.verdict)}
-        </div>
-        <div class="text-xs text-slate-400 mb-2 truncate">${esc(r.company||'')}</div>
-        <div class="flex items-center gap-2">
-          ${r.average_score!=null ? `<span class="text-lg font-bold font-mono" style="color:${scoreColor(r.average_score)};">${Number(r.average_score).toFixed(1)}</span>` : ''}
-          <span class="text-xs text-slate-500">${fmtDate(r.analysis_date)}</span>
-        </div>
+    const scan = STATE.pipeline.scan
+    const triage = STATE.pipeline.triage
+    const overviewPortfolio = STATE.portfolio
+    const topHoldings = overviewPortfolio?.positions
+      ? [...overviewPortfolio.positions].sort((a, b) => (b.weight_pct || 0) - (a.weight_pct || 0)).slice(0, 5)
+      : []
+    const largestPosition = topHoldings[0] || null
+    const focusCount = (triage?.b2?.deep_dive || 0) + (triage?.b2?.refresh || 0)
+
+    const heroMetrics = [
+      { label: 'Tracked', value: STATE.queue.length, meta: 'names in the queue', tone: 'tone-accent' },
+      { label: 'Deep Research', value: counts.deep_research || 0, meta: 'awaiting full analysis', tone: 'tone-accent', action: `filterByState('deep_research')` },
+      { label: 'Stale', value: freshnessCounts.stale || 0, meta: 'older than 30 days', tone: 'tone-danger', action: `filterByFreshness('stale')` },
+      { label: 'Reports', value: STATE.reports.length, meta: 'latest final reports', tone: 'tone-positive', action: `switchTab('reports')` },
+      { label: 'Gross Exposure', value: overviewPortfolio ? fmtPct(overviewPortfolio.summary.gross_pct) : '—', meta: overviewPortfolio ? `Net ${fmtPct(overviewPortfolio.summary.net_pct)}` : 'portfolio unavailable', tone: overviewPortfolio && overviewPortfolio.summary.gross_pct > 130 ? 'tone-danger' : 'tone-warning', compact: true, action: overviewPortfolio ? `switchTab('portfolio')` : '' },
+      { label: 'Largest Position', value: largestPosition ? `${largestPosition.ticker} ${fmtPct(largestPosition.weight_pct)}` : '—', meta: largestPosition ? 'highest weight in book' : 'no holdings loaded', tone: 'tone-warning', compact: true, action: largestPosition ? `switchTab('portfolio')` : '' },
+    ].map(m => `
+      <div class="metric-tile ${m.tone} ${m.action ? 'clickable' : ''}" ${m.action ? `onclick="${m.action}"` : ''}>
+        <div class="metric-label">${m.label}</div>
+        <div class="metric-value"${m.compact ? ' style="font-size:1.04rem;line-height:1.35;"' : ''}>${esc(m.value)}</div>
+        <div class="metric-meta">${esc(m.meta)}</div>
       </div>`).join('')
 
-    // Pipeline activity
-    const scan   = STATE.pipeline.scan
-    const triage = STATE.pipeline.triage
-    const pipelineBody = `
-      <div class="grid grid-cols-2 gap-4 text-sm">
-        <div>
-          <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Latest Scan</div>
-          ${scan
-            ? `<div class="text-slate-200 font-medium">${fmtDate(scan.scan_date)}</div>
-               <div class="text-xs text-slate-400">${scan.total_candidates||0} candidates</div>
-               <div class="text-xs text-slate-500 mt-1">${Object.keys(scan.counts_by_bucket||{}).length} buckets</div>`
-            : '<div class="text-slate-500 text-xs">Not yet run</div>'}
+    const stateDefs = [
+      { key: 'deep_research', label: 'Deep research', color: 'var(--accent)' },
+      { key: 'watchlist', label: 'Watchlist', color: 'var(--warning)' },
+      { key: 'monitor_only', label: 'Monitor only', color: 'var(--positive)' },
+      { key: 'inbox', label: 'Inbox', color: 'var(--muted)' },
+      { key: 'rejected', label: 'Rejected', color: 'var(--danger)' },
+    ]
+    const queueMixRows = stateDefs.map(def => {
+      const count = counts[def.key] || 0
+      const pct = STATE.queue.length ? (count / STATE.queue.length) * 100 : 0
+      return `
+        <div class="bar-row" style="cursor:pointer;" onclick="filterByState('${def.key}')">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-2">
+              <span class="text-sm" style="color:var(--text);">${esc(def.label)}</span>
+              <span class="text-xs font-mono" style="color:${def.color};">${fmtPct(pct)}</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width:${pct.toFixed(1)}%; background:${def.color};"></div></div>
+          </div>
+          <div class="text-right text-sm font-semibold" style="color:var(--text);">${count}</div>
+        </div>`
+    }).join('')
+
+    const freshnessDefs = [
+      { key: 'stale', label: 'Stale', color: 'var(--danger)' },
+      { key: 'aging', label: 'Aging', color: 'var(--warning)' },
+      { key: 'fresh', label: 'Fresh', color: 'var(--positive)' },
+      { key: 'never', label: 'Never', color: 'var(--muted)' },
+    ]
+    const freshnessRows = freshnessDefs.map(def => {
+      const count = freshnessCounts[def.key] || 0
+      const pct = STATE.queue.length ? (count / STATE.queue.length) * 100 : 0
+      return `
+        <div class="bar-row" style="cursor:pointer;" onclick="filterByFreshness('${def.key}')">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-2">
+              <span class="text-sm" style="color:var(--text);">${esc(def.label)}</span>
+              <span class="text-xs font-mono" style="color:${def.color};">${count}</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width:${pct.toFixed(1)}%; background:${def.color};"></div></div>
+          </div>
+          <div class="text-right text-xs" style="color:var(--subtle);">${fmtPct(pct)}</div>
+        </div>`
+    }).join('')
+
+    const attentionBody = attentionRows.length
+      ? `<table class="mini-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Why Now</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${attentionRows.map(q => {
+              const action = reportExists(q.ticker)
+                ? `openReportModal('${q.ticker.replace(/'/g,"\\'")}')`
+                : `focusQueueTicker('${q.ticker.replace(/'/g,"\\'")}')`
+              const why = []
+              if (q.current_state === 'deep_research') why.push('deep research')
+              if (q.freshness_status === 'stale' && q.days_since != null) why.push(`${q.days_since}d stale`)
+              else if (q.freshness_status === 'aging' && q.days_since != null) why.push(`${q.days_since}d aging`)
+              if (q.priority === 'high') why.push('high priority')
+              if (q.next_required_action) why.push(actionLabel(q.next_required_action))
+              return `
+                <tr class="clickable-row" onclick="${action}">
+                  <td>
+                    <div class="table-symbol">${esc(q.ticker)}</div>
+                    <div class="table-meta">${esc(q.company || '—')}</div>
+                  </td>
+                  <td>
+                    <div class="flex flex-wrap gap-2">
+                      ${stateBadge(q.current_state)}
+                      ${priorityBadge(q.priority)}
+                    </div>
+                  </td>
+                  <td>
+                    <div class="text-sm" style="color:var(--text);">${esc(why.join(' · ') || 'Needs review')}</div>
+                    <div class="table-meta">${q.last_analysis_date ? `Last analysis ${fmtDate(q.last_analysis_date)}` : 'No report on disk yet'}</div>
+                  </td>
+                </tr>`
+            }).join('')}
+          </tbody>
+        </table>`
+      : '<div class="empty-panel">Nothing urgent surfaced from the queue. The current pipeline is either fresh or already triaged.</div>'
+
+    let portfolioHealthBody = '<div class="empty-panel">Portfolio data is unavailable. The overview still renders pipeline status, but the portfolio health module is waiting for a ledger snapshot.</div>'
+    if (overviewPortfolio) {
+      const overviewWarningBlock = overviewPortfolio.warnings?.length
+        ? `<div class="panel-caption mt-5">Policy watch</div>
+           <div class="warning-stack">${overviewPortfolio.warnings.slice(0, 3).map(w => `<div class="warning-item">${esc(w)}</div>`).join('')}</div>`
+        : ''
+      portfolioHealthBody = `
+        <div class="metric-strip mb-5">
+          <div class="metric-tile tone-${overviewPortfolio.summary.total_pnl > 0 ? 'positive' : overviewPortfolio.summary.total_pnl < 0 ? 'danger' : 'warning'}">
+            <div class="metric-label">Total P&amp;L</div>
+            <div class="metric-value">${esc(fmtMoney(overviewPortfolio.summary.total_pnl))}</div>
+            <div class="metric-meta">${esc(fmtMoney(overviewPortfolio.summary.realized_pnl))} realized</div>
+          </div>
+          <div class="metric-tile tone-warning">
+            <div class="metric-label">Cash</div>
+            <div class="metric-value">${esc(fmtMoney(overviewPortfolio.summary.cash))}</div>
+            <div class="metric-meta">${topHoldings.length} core holdings tracked</div>
+          </div>
+          <div class="metric-tile ${overviewPortfolio.summary.gross_pct > 130 ? 'tone-danger' : 'tone-accent'}">
+            <div class="metric-label">Exposure</div>
+            <div class="metric-value">${esc(fmtPct(overviewPortfolio.summary.gross_pct))}</div>
+            <div class="metric-meta">Net ${esc(fmtPct(overviewPortfolio.summary.net_pct))}</div>
+          </div>
+          <div class="metric-tile tone-warning">
+            <div class="metric-label">Largest</div>
+            <div class="metric-value" style="font-size:1.08rem;line-height:1.35;">${esc(largestPosition ? `${largestPosition.ticker} ${fmtPct(largestPosition.weight_pct)}` : '—')}</div>
+            <div class="metric-meta">${largestPosition ? 'largest weight in book' : 'no positions'}</div>
+          </div>
         </div>
-        <div>
-          <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Latest Triage</div>
-          ${triage
-            ? `<div class="text-slate-200 font-medium">${fmtDate(triage.triage_date)}</div>
-               ${triage.b1 ? `<div class="text-xs text-slate-400">${triage.b1.advance||0} advance · ${triage.b1.hold||0} hold · ${triage.b1.reject||0} reject</div>` : ''}
-               ${triage.b2 ? `<div class="text-xs text-slate-500 mt-1">${triage.b2.deep_dive||0} deep dive · ${triage.b2.monitor||0} monitor</div>` : ''}`
-            : '<div class="text-slate-500 text-xs">Not yet run</div>'}
-        </div>
-      </div>`
+        <div class="panel-caption">Top positions</div>
+        <table class="mini-table">
+          <thead>
+            <tr>
+              <th>Holding</th>
+              <th>Side</th>
+              <th style="text-align:right;">Weight</th>
+              <th style="text-align:right;">Unr. %</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${topHoldings.map(p => `
+              <tr ${reportExists(p.ticker) ? `class="clickable-row" onclick="openReportModal('${p.ticker.replace(/'/g,"\\'")}')"` : ''}>
+                <td>
+                  <div class="table-symbol">${esc(p.ticker)}</div>
+                  <div class="table-meta">${esc(p.sector || p.thesis_tag || '—')}</div>
+                </td>
+                <td>${p.side === 'short'
+                  ? '<span class="badge b-pass">Short</span>'
+                  : '<span class="badge b-monitor-only">Long</span>'}</td>
+                <td style="text-align:right; font-family:\'JetBrains Mono\', ui-monospace, monospace;">${fmtPct(p.weight_pct)}</td>
+                <td style="text-align:right; font-family:\'JetBrains Mono\', ui-monospace, monospace; color:${pnlColor(p.unrealized_pct)};">${fmtPct(p.unrealized_pct)}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+        ${overviewWarningBlock}`
+    }
+
+    const recentBody = recent.length
+      ? `<table class="mini-table">
+          <thead>
+            <tr>
+              <th>Report</th>
+              <th>Verdict</th>
+              <th style="text-align:right;">Score</th>
+              <th style="text-align:right;">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${recent.map(r => `
+              <tr class="clickable-row" onclick="openReportModal('${r.ticker.replace(/'/g,"\\'")}')">
+                <td>
+                  <div class="table-symbol">${esc(r.ticker)}</div>
+                  <div class="table-meta">${esc(r.company || '—')}</div>
+                </td>
+                <td>${verdictBadge(r.verdict)}</td>
+                <td style="text-align:right; font-family:'JetBrains Mono', ui-monospace, monospace; color:${scoreColor(r.average_score)};">${r.average_score != null ? Number(r.average_score).toFixed(1) : '—'}</td>
+                <td style="text-align:right; color:var(--muted);">${fmtDate(r.analysis_date)}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>`
+      : '<div class="empty-panel">No reports are available yet.</div>'
+
+    const pipelineSummary = [
+      { label: 'Latest Scan', value: scan ? scan.total_candidates || 0 : '—', meta: scan ? fmtDate(scan.scan_date) : 'not run', tone: 'tone-accent' },
+      { label: 'B1 Advance', value: triage?.b1?.advance ?? '—', meta: triage ? fmtDate(triage.triage_date) : 'no triage', tone: 'tone-warning' },
+      { label: 'B2 Focus', value: focusCount || '—', meta: triage?.b2 ? `${triage.b2.deep_dive || 0} deep dive · ${triage.b2.refresh || 0} refresh` : 'no focused shortlist', tone: 'tone-positive' },
+    ].map(item => `
+      <div class="metric-tile ${item.tone}">
+        <div class="metric-label">${item.label}</div>
+        <div class="metric-value">${esc(item.value)}</div>
+        <div class="metric-meta">${esc(item.meta)}</div>
+      </div>`).join('')
+
+    const shortlistBody = triage?.deep_dive_shortlist?.length
+      ? `<table class="mini-table">
+          <thead>
+            <tr>
+              <th>Candidate</th>
+              <th>Action</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${triage.deep_dive_shortlist.slice(0, 5).map(e => {
+              const action = reportExists(e.ticker)
+                ? `openReportModal('${e.ticker.replace(/'/g,"\\'")}')`
+                : `focusQueueTicker('${e.ticker.replace(/'/g,"\\'")}')`
+              return `
+                <tr class="clickable-row" onclick="${action}">
+                  <td>
+                    <div class="table-symbol">${esc(e.ticker)}</div>
+                    <div class="table-meta">${esc(e.company || '—')}</div>
+                  </td>
+                  <td>${actionBadge(e.next_action)}</td>
+                  <td>
+                    <div class="text-sm" style="color:var(--text);">${esc(e.reason || '—')}</div>
+                  </td>
+                </tr>`
+            }).join('')}
+          </tbody>
+        </table>`
+      : '<div class="empty-panel">No deep-dive or refresh shortlist was captured in the latest triage output.</div>'
 
     container.innerHTML = `
-      <div class="space-y-6">
-        <div>
-          <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Queue Overview</h2>
-          <div class="flex flex-wrap gap-3">${statCards}${totalCard}</div>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div>
-            <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Deep Research Queue</h2>
-            <div class="card p-4">${deepResearchBody}</div>
+      <div class="space-y-5">
+        <section class="card hero-banner">
+          <div class="flex flex-col xl:flex-row xl:items-end xl:justify-between gap-6">
+            <div class="max-w-2xl">
+              <div class="section-kicker mb-3">Overview</div>
+              <h2 class="section-title" style="font-size:1.68rem;">Research command center</h2>
+              <p class="section-subtitle mt-3">Queue pressure, recent analysis, and portfolio health on one screen. The first viewport should tell you what needs work without wasting space on decorative blocks.</p>
+            </div>
+            <div class="w-full xl:max-w-4xl">
+              <div class="metric-strip">${heroMetrics}</div>
+            </div>
           </div>
-          <div>
-            <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Pipeline Activity</h2>
-            <div class="card p-4">${pipelineBody}</div>
-          </div>
+        </section>
+
+        <div class="overview-grid">
+          <section class="card panel">
+            <div class="section-kicker mb-2">Pipeline Pressure</div>
+            <div class="section-title mb-1">What needs attention now</div>
+            <div class="section-subtitle mb-5">A compact triage board for stale coverage, high-priority names, and current queue mix.</div>
+            <div class="split-panel">
+              <div>
+                <div class="panel-caption">Attention Queue</div>
+                ${attentionBody}
+              </div>
+              <div class="space-y-5">
+                <div>
+                  <div class="panel-caption">Queue Mix</div>
+                  <div class="bar-stack">${queueMixRows}</div>
+                </div>
+                <div>
+                  <div class="panel-caption">Freshness</div>
+                  <div class="bar-stack">${freshnessRows}</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card panel">
+            <div class="section-kicker mb-2">Portfolio Health</div>
+            <div class="section-title mb-1">Holdings at a glance</div>
+            <div class="section-subtitle mb-5">Surface concentration, cash, and current warnings without making charts the main event.</div>
+            ${portfolioHealthBody}
+          </section>
         </div>
-        <div>
-          <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Recently Analyzed</h2>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">${recentCards||'<p class="text-slate-500 text-sm col-span-6">No reports yet.</p>'}</div>
+
+        <div class="overview-grid">
+          <section class="card panel">
+            <div class="section-kicker mb-2">Recent Analysis</div>
+            <div class="section-title mb-1">Newest completed work</div>
+            <div class="section-subtitle mb-5">Fast access to the latest reports, with verdict and score visible before opening the drawer.</div>
+            ${recentBody}
+          </section>
+
+          <section class="card panel">
+            <div class="section-kicker mb-2">Pipeline Activity</div>
+            <div class="section-title mb-1">Scan and triage pulse</div>
+            <div class="section-subtitle mb-5">Latest scan volume, current funnel movement, and the focused shortlist coming out of B2.</div>
+            <div class="metric-strip mb-5">${pipelineSummary}</div>
+            <div class="panel-caption">Focused Shortlist</div>
+            ${shortlistBody}
+          </section>
         </div>
       </div>`
   }
 
   // ─── TAB: PORTFOLIO ──────────────────────────────────────────────────────────
-  function pnlColor(v) { return v > 0 ? '#6ee7b7' : v < 0 ? '#ef4444' : '#a8a29e' }
+  function pnlColor(v) { return v > 0 ? 'var(--positive)' : v < 0 ? 'var(--danger)' : 'var(--muted)' }
   function fmtMoney(v) { return v == null ? '—' : '$' + Number(v).toLocaleString(undefined, {minimumFractionDigits:0, maximumFractionDigits:0}) }
   function fmtPct(v) { return v == null ? '—' : Number(v).toFixed(1) + '%' }
   function fmtPrice(v) { return v == null ? '—' : '$' + Number(v).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) }
@@ -455,196 +1130,210 @@
     if (!data || data.error) return
     const container = document.getElementById('tab-portfolio')
     const s = data.summary
+    const positions = [...data.positions].sort((a, b) => (b.weight_pct || 0) - (a.weight_pct || 0))
+    const sectors = Object.entries(data.sector_exposure).sort((a, b) => b[1].pct_of_capital - a[1].pct_of_capital)
+    const largestPosition = positions[0] || null
+    const longCount = positions.filter(p => p.side === 'long').length
+    const shortCount = positions.length - longCount
+    const livePriceCount = positions.filter(p => p.current_price != null).length
+    const cashPct = s.capital ? (s.cash / s.capital) * 100 : null
 
     // Destroy previous grid
     if (STATE.portfolioGrid) { STATE.portfolioGrid.destroy(); STATE.portfolioGrid = null }
-
-    // Summary strip
     const summaryCards = [
-      { label:'Total P&L',      value: fmtMoney(s.total_pnl),      color: pnlColor(s.total_pnl) },
-      { label:'Unrealized P&L', value: fmtMoney(s.unrealized_pnl), color: pnlColor(s.unrealized_pnl) },
-      { label:'Cash',           value: fmtMoney(s.cash),           color: '#a8a29e' },
-      { label:'Gross Exposure',  value: fmtPct(s.gross_pct),       color: s.gross_pct > 130 ? '#ef4444' : '#a8a29e' },
-      { label:'Net Exposure',    value: fmtPct(s.net_pct),         color: '#a8a29e' },
-      { label:'Last Updated',   value: s.last_updated || '—',     color: '#a8a29e', small: true },
-    ].map(c => `
-      <div class="card flex-1 p-4" style="min-width:130px; border-left:3px solid ${c.color};">
-        <div class="${c.small?'text-sm':'text-xl'} font-bold mb-1" style="color:${c.color};">${esc(c.value)}</div>
-        <div class="text-xs font-semibold uppercase tracking-wider" style="color:#a8a29e;">${c.label}</div>
+      {
+        label: 'Total P&L',
+        value: fmtMoney(s.total_pnl),
+        meta: `${fmtMoney(s.realized_pnl)} realized`,
+        tone: s.total_pnl > 0 ? 'tone-positive' : s.total_pnl < 0 ? 'tone-danger' : 'tone-warning',
+      },
+      {
+        label: 'Unrealized',
+        value: fmtMoney(s.unrealized_pnl),
+        meta: `${livePriceCount}/${positions.length} live prices`,
+        tone: s.unrealized_pnl > 0 ? 'tone-positive' : s.unrealized_pnl < 0 ? 'tone-danger' : 'tone-warning',
+      },
+      {
+        label: 'Cash',
+        value: fmtMoney(s.cash),
+        meta: cashPct == null ? 'cash reserve' : `${fmtPct(cashPct)} reserve`,
+        tone: 'tone-warning',
+      },
+      {
+        label: 'Gross Exposure',
+        value: fmtPct(s.gross_pct),
+        meta: `Net ${fmtPct(s.net_pct)}`,
+        tone: s.gross_pct > 130 ? 'tone-danger' : 'tone-accent',
+      },
+      {
+        label: 'Largest Position',
+        value: largestPosition ? `${largestPosition.ticker} ${fmtPct(largestPosition.weight_pct)}` : '—',
+        meta: `${longCount} long · ${shortCount} short`,
+        tone: 'tone-warning',
+        compact: true,
+      },
+      {
+        label: 'Last Updated',
+        value: s.last_updated || '—',
+        meta: `${positions.length} total holdings`,
+        tone: 'tone-accent',
+        compact: true,
+      },
+    ].map(card => `
+      <div class="metric-tile ${card.tone}">
+        <div class="metric-label">${card.label}</div>
+        <div class="metric-value"${card.compact ? ' style="font-size:1.04rem;line-height:1.35;"' : ''}>${esc(card.value)}</div>
+        <div class="metric-meta">${esc(card.meta)}</div>
       </div>`).join('')
 
-    // Warnings
-    let warningsHtml = ''
-    if (data.warnings && data.warnings.length) {
-      warningsHtml = `
-        <div class="rounded-lg p-3 mb-4" style="background:#431407;border:1px solid #92400e;">
-          ${data.warnings.map(w => `<div class="text-sm" style="color:#fbbf24;">⚠ ${esc(w)}</div>`).join('')}
-        </div>`
-    }
+    const warningsHtml = data.warnings?.length
+      ? `<div class="warning-stack">${data.warnings.slice(0, 5).map(w => `<div class="warning-item">${esc(w)}</div>`).join('')}</div>`
+      : '<div class="empty-panel">No policy warnings in the current ledger snapshot.</div>'
 
-    // Sector exposure table
-    const sectors = Object.entries(data.sector_exposure).sort((a,b) => b[1].pct_of_capital - a[1].pct_of_capital)
-    const sectorRows = sectors.map(([name, d]) => {
-      const pct = d.pct_of_capital || 0
-      const barColor = pct > 35 ? '#ef4444' : pct > 28 ? '#fbbf24' : '#c15f3c'
-      const barWidth = Math.min(pct / 35 * 100, 100)
-      return `<tr style="border-bottom:1px solid #1c1917;">
-        <td class="px-4 py-2.5 text-sm font-medium" style="color:#fafaf9;">${esc(name)}</td>
-        <td class="px-4 py-2.5 text-sm font-mono" style="color:#a8a29e;">${fmtMoney(d.long)}</td>
-        <td class="px-4 py-2.5 text-sm font-mono" style="color:#a8a29e;">${fmtMoney(d.short)}</td>
-        <td class="px-4 py-2.5 text-sm font-mono" style="color:#fafaf9;">${fmtMoney(d.net)}</td>
-        <td class="px-4 py-2.5" style="min-width:140px;">
-          <div class="flex items-center gap-2">
-            <div class="flex-1 rounded-full" style="background:#292524;height:6px;">
-              <div class="rounded-full" style="background:${barColor};height:6px;width:${barWidth.toFixed(0)}%;"></div>
-            </div>
-            <span class="text-xs font-mono" style="color:${barColor};min-width:32px;text-align:right;">${fmtPct(pct)}</span>
-          </div>
+    const topWeightRows = positions.slice(0, 6).map(p => `
+      <tr ${reportExists(p.ticker) ? `class="clickable-row" onclick="openReportModal('${p.ticker.replace(/'/g,"\\'")}')"` : ''}>
+        <td>
+          <div class="table-symbol">${esc(p.ticker)}</div>
+          <div class="table-meta">${esc(p.company || p.sector || '—')}</div>
         </td>
-      </tr>`
-    }).join('')
+        <td>${p.side === 'short'
+          ? '<span class="badge b-pass">Short</span>'
+          : '<span class="badge b-monitor-only">Long</span>'}</td>
+        <td style="text-align:right; font-family:\'JetBrains Mono\', ui-monospace, monospace;">${fmtPct(p.weight_pct)}</td>
+        <td style="text-align:right; font-family:\'JetBrains Mono\', ui-monospace, monospace; color:${pnlColor(p.unrealized_pct)};">${fmtPct(p.unrealized_pct)}</td>
+      </tr>`).join('')
+
+    const sectorRows = sectors.length
+      ? sectors.map(([name, d]) => {
+          const pct = d.pct_of_capital || 0
+          const barColor = pct > 35 ? 'var(--danger)' : pct > 28 ? 'var(--warning)' : 'var(--accent)'
+          const barWidth = Math.min((pct / 35) * 100, 100)
+          return `
+            <div>
+              <div class="flex items-center justify-between gap-3 mb-2">
+                <div>
+                  <div class="text-sm font-medium" style="color:var(--text);">${esc(name)}</div>
+                  <div class="table-meta">${esc(fmtMoney(d.net))} net</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-sm font-mono" style="color:${barColor};">${fmtPct(pct)}</div>
+                  <div class="text-xs" style="color:var(--subtle);">${fmtMoney(d.gross)} gross</div>
+                </div>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width:${barWidth.toFixed(1)}%; background:${barColor};"></div></div>
+            </div>`
+        }).join('')
+      : '<div class="empty-panel">No sector exposure data is available.</div>'
 
     container.innerHTML = `
-      <div class="space-y-6">
-        <div>
-          <h2 class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#a8a29e;">Portfolio Summary</h2>
-          <div class="flex flex-wrap gap-3">${summaryCards}</div>
-        </div>
-        ${warningsHtml}
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-          <div>
-            <h2 class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#a8a29e;">Sector Allocation</h2>
-            <div id="chart-sector-treemap" class="card" style="height:280px;"></div>
+      <div class="space-y-5">
+        <section class="card hero-banner">
+          <div class="flex flex-col xl:flex-row xl:items-end xl:justify-between gap-6">
+            <div class="max-w-2xl">
+              <div class="section-kicker mb-3">Portfolio</div>
+              <h2 class="section-title" style="font-size:1.68rem;">Clean, table-first book view</h2>
+              <p class="section-subtitle mt-3">The portfolio tab now leads with the numbers and the positions table. Graphics are removed unless they genuinely earn space.</p>
+            </div>
+            <div class="w-full xl:max-w-4xl">
+              <div class="metric-strip">${summaryCards}</div>
+            </div>
           </div>
-          <div>
-            <h2 class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#a8a29e;">Position Exposure</h2>
-            <div id="chart-exposure-bar" class="card" style="height:280px;"></div>
-          </div>
-        </div>
-        <div>
-          <h2 class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#a8a29e;">Positions</h2>
-          <div id="portfolio-grid" class="ag-theme-alpine-dark" style="width:100%;"></div>
-        </div>
-        <div>
-          <h2 class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#a8a29e;">Sector Exposure</h2>
-          <div class="card overflow-hidden">
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm">
-                <thead class="text-xs uppercase tracking-wider" style="background:#0c0a09;color:#a8a29e;">
+        </section>
+
+        <div class="portfolio-layout">
+          <section>
+            <div class="flex items-end justify-between gap-4 mb-3">
+              <div>
+                <div class="section-kicker mb-2">Positions</div>
+                <div class="section-title">Primary book</div>
+              </div>
+              <div class="text-sm" style="color:var(--muted);">Click a holding to open its report when available.</div>
+            </div>
+            <div class="card table-shell">
+              <div id="portfolio-grid" class="ag-theme-alpine-dark" style="width:100%; min-height:320px;"></div>
+            </div>
+          </section>
+
+          <div class="space-y-5">
+            <section class="card panel">
+              <div class="section-kicker mb-2">Risk Watch</div>
+              <div class="section-title mb-1">Warnings and concentration</div>
+              <div class="section-subtitle mb-5">Keep policy flags compact and visible without making them a giant alert banner.</div>
+              ${warningsHtml}
+            </section>
+
+            <section class="card panel">
+              <div class="section-kicker mb-2">Top Weights</div>
+              <div class="section-title mb-1">Largest holdings</div>
+              <div class="section-subtitle mb-5">Highest-conviction or highest-risk positions by current weight.</div>
+              <table class="mini-table">
+                <thead>
                   <tr>
-                    <th class="px-4 py-3 text-left">Sector</th>
-                    <th class="px-4 py-3 text-left">Long $</th>
-                    <th class="px-4 py-3 text-left">Short $</th>
-                    <th class="px-4 py-3 text-left">Net $</th>
-                    <th class="px-4 py-3 text-left">Gross %</th>
+                    <th>Holding</th>
+                    <th>Side</th>
+                    <th style="text-align:right;">Weight</th>
+                    <th style="text-align:right;">Unr. %</th>
                   </tr>
                 </thead>
-                <tbody>${sectorRows}</tbody>
+                <tbody>${topWeightRows}</tbody>
               </table>
-            </div>
+            </section>
+
+            <section class="card panel">
+              <div class="section-kicker mb-2">Sector Exposure</div>
+              <div class="section-title mb-1">Allocation by sector</div>
+              <div class="section-subtitle mb-5">A restrained bar treatment replaces the old chart-heavy presentation.</div>
+              <div class="bar-stack">${sectorRows}</div>
+            </section>
           </div>
         </div>
       </div>`
-
-    // ── Plotly: Sector Treemap ──
-    const treemapEl = document.getElementById('chart-sector-treemap')
-    if (treemapEl && sectors.length) {
-      Plotly.purge(treemapEl)
-      const sLabels = sectors.map(([n]) => n)
-      const sValues = sectors.map(([, d]) => d.gross)
-      const sPcts   = sectors.map(([, d]) => d.pct_of_capital || 0)
-      Plotly.newPlot(treemapEl, [{
-        type: 'treemap',
-        labels: sLabels,
-        parents: sLabels.map(() => ''),
-        values: sValues,
-        textinfo: 'label+percent root',
-        hovertemplate: '<b>%{label}</b><br>Gross: $%{value:,.0f}<br>%{percentRoot:.1%} of portfolio<extra></extra>',
-        marker: {
-          colors: sPcts,
-          colorscale: [[0, '#6ee7b7'], [0.6, '#fbbf24'], [1.0, '#ef4444']],
-          cmin: 0,
-          cmax: 35,
-          line: { width: 2, color: '#0c0a09' }
-        }
-      }], {
-        paper_bgcolor: '#1c1917',
-        plot_bgcolor: '#1c1917',
-        font: { color: '#fafaf9', family: 'inherit', size: 12 },
-        margin: { t: 32, b: 8, l: 8, r: 8 },
-        title: { text: 'Sector Allocation', font: { size: 13, color: '#a8a29e' }, x: 0 }
-      }, { displayModeBar: false, responsive: true })
-    }
-
-    // ── Plotly: Exposure Bar ──
-    const barEl = document.getElementById('chart-exposure-bar')
-    if (barEl && data.positions.length) {
-      Plotly.purge(barEl)
-      const sorted = [...data.positions].sort((a, b) => Math.abs(b.market_value) - Math.abs(a.market_value))
-      const tickers = sorted.map(p => p.ticker)
-      const values  = sorted.map(p => p.side === 'short' ? -Math.abs(p.market_value) : p.market_value)
-      const colors  = sorted.map(p => p.side === 'short' ? '#f87171' : '#6ee7b7')
-      Plotly.newPlot(barEl, [{
-        type: 'bar',
-        orientation: 'h',
-        y: tickers,
-        x: values,
-        marker: { color: colors },
-        hovertemplate: '<b>%{y}</b><br>$%{x:,.0f}<extra></extra>'
-      }], {
-        paper_bgcolor: '#1c1917',
-        plot_bgcolor: '#1c1917',
-        font: { color: '#fafaf9', family: 'inherit', size: 12 },
-        margin: { t: 32, b: 8, l: 60, r: 16 },
-        title: { text: 'Position Exposure', font: { size: 13, color: '#a8a29e' }, x: 0 },
-        xaxis: {
-          gridcolor: '#292524',
-          zerolinecolor: '#44403c',
-          zerolinewidth: 2,
-          tickprefix: '$',
-          tickformat: ',.0f'
-        },
-        yaxis: { gridcolor: 'transparent', autorange: 'reversed' },
-        bargap: 0.3
-      }, { displayModeBar: false, responsive: true })
-    }
 
     // ── AG Grid: Positions ──
     const gridDiv = document.getElementById('portfolio-grid')
     if (gridDiv) {
       const columnDefs = [
         { field: 'ticker', headerName: 'Ticker', width: 90, pinned: 'left',
-          cellStyle: { fontFamily: 'monospace', fontWeight: 600, color: '#e07a5f' } },
+          cellStyle: { fontFamily: '\'JetBrains Mono\', ui-monospace, monospace', fontWeight: 700, color: 'var(--accent)' } },
+        { field: 'company', headerName: 'Company', minWidth: 180, flex: 1,
+          valueFormatter: p => p.value || '—' },
         { field: 'side', headerName: 'Side', width: 80,
           cellRenderer: p => p.value === 'long'
-            ? '<span class="badge" style="background:#14532d;color:#86efac;">Long</span>'
-            : '<span class="badge" style="background:#450a0a;color:#fca5a5;">Short</span>' },
+            ? '<span class="badge b-monitor-only">Long</span>'
+            : '<span class="badge b-pass">Short</span>' },
+        { field: 'weight_pct', headerName: 'Weight', width: 90, type: 'rightAligned',
+          valueFormatter: p => p.value != null ? Number(p.value).toFixed(1) + '%' : '—',
+          cellStyle: { fontFamily: '\'JetBrains Mono\', ui-monospace, monospace', color: 'var(--text)' } },
         { field: 'shares', headerName: 'Shares', width: 90, type: 'rightAligned',
           valueFormatter: p => p.value != null ? Number(p.value).toFixed(2) : '—' },
         { field: 'entry_price', headerName: 'Entry', width: 100, type: 'rightAligned',
-          valueFormatter: p => p.value != null ? '$' + Number(p.value).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) : '—' },
+          valueFormatter: p => fmtPrice(p.value),
+          cellStyle: { fontFamily: '\'JetBrains Mono\', ui-monospace, monospace', color: 'var(--muted)' } },
         { field: 'current_price', headerName: 'Current', width: 100, type: 'rightAligned',
-          valueFormatter: p => p.value != null ? '$' + Number(p.value).toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) : '—' },
-        { field: 'market_value', headerName: 'Mkt Value', width: 110, type: 'rightAligned',
-          valueFormatter: p => p.value != null ? '$' + Number(p.value).toLocaleString(undefined, {minimumFractionDigits:0, maximumFractionDigits:0}) : '—' },
+          valueFormatter: p => fmtPrice(p.value),
+          cellStyle: p => ({ fontFamily: '\'JetBrains Mono\', ui-monospace, monospace', color: p.value == null ? 'var(--subtle)' : 'var(--text)' }) },
+        { field: 'market_value', headerName: 'Value', width: 120, type: 'rightAligned',
+          valueFormatter: p => fmtMoney(p.value),
+          cellStyle: { fontFamily: '\'JetBrains Mono\', ui-monospace, monospace', color: 'var(--text)' } },
         { field: 'unrealized_pnl', headerName: 'Unr. P&L', width: 110, type: 'rightAligned',
-          valueFormatter: p => p.value != null ? '$' + Number(p.value).toLocaleString(undefined, {minimumFractionDigits:0, maximumFractionDigits:0}) : '—',
-          cellStyle: p => ({ color: pnlColor(p.value), fontFamily: 'monospace' }) },
+          valueFormatter: p => fmtMoney(p.value),
+          cellStyle: p => ({ color: pnlColor(p.value), fontFamily: '\'JetBrains Mono\', ui-monospace, monospace' }) },
         { field: 'unrealized_pct', headerName: 'Unr. %', width: 90, type: 'rightAligned',
           valueFormatter: p => p.value != null ? Number(p.value).toFixed(1) + '%' : '—',
-          cellStyle: p => ({ color: pnlColor(p.value), fontFamily: 'monospace' }) },
-        { field: 'weight_pct', headerName: 'Weight', width: 80, type: 'rightAligned',
-          valueFormatter: p => p.value != null ? Number(p.value).toFixed(1) + '%' : '—' },
+          cellStyle: p => ({ color: pnlColor(p.value), fontFamily: '\'JetBrains Mono\', ui-monospace, monospace' }) },
+        { field: 'score_at_entry', headerName: 'Score', width: 84, type: 'rightAligned',
+          valueFormatter: p => p.value != null ? Number(p.value).toFixed(1) : '—',
+          cellStyle: p => ({ color: scoreColor(p.value), fontFamily: '\'JetBrains Mono\', ui-monospace, monospace' }) },
         { field: 'sector', headerName: 'Sector', width: 140,
           valueFormatter: p => p.value || '—',
-          cellStyle: { color: '#a8a29e', fontSize: '12px' } },
-        { field: 'thesis_tag', headerName: 'Thesis', width: 160,
+          cellStyle: { color: 'var(--muted)', fontSize: '12px' } },
+        { field: 'thesis_tag', headerName: 'Thesis', width: 120,
           cellRenderer: p => p.value ? verdictBadge(p.value) : '—' },
       ]
 
       const gridOptions = {
         columnDefs,
-        rowData: data.positions,
+        rowData: positions,
         domLayout: 'autoHeight',
         defaultColDef: { sortable: true, resizable: true, suppressMovable: false },
         suppressCellFocus: true,
@@ -664,17 +1353,17 @@
     const container = document.getElementById('tab-portfolio')
     if (!STATE.portfolioInited) {
       STATE.portfolioInited = true
-      container.innerHTML = '<div class="flex items-center justify-center h-48" style="color:#a8a29e;">Loading portfolio…</div>'
+      container.innerHTML = '<div class="flex items-center justify-center h-48" style="color:var(--muted);">Loading portfolio…</div>'
       try {
         const res = await fetch('/api/portfolio')
         const data = await res.json()
         if (data.error) {
-          container.innerHTML = `<div class="card p-6 text-center" style="color:#a8a29e;">${esc(data.error)}</div>`
+          container.innerHTML = `<div class="card p-6 text-center" style="color:var(--muted);">${esc(data.error)}</div>`
           return
         }
         STATE.portfolio = data
       } catch(e) {
-        container.innerHTML = '<div class="card p-6 text-center" style="color:#ef4444;">Failed to load portfolio data.</div>'
+        container.innerHTML = '<div class="card p-6 text-center" style="color:var(--danger);">Failed to load portfolio data.</div>'
         return
       }
     }
@@ -733,37 +1422,34 @@
     }
 
     if (headersEl) headersEl.innerHTML = `
-      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('ticker')">Ticker ${si('ticker')}</th>
-      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('company')">Company ${si('company')}</th>
-      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('current_state')">State ${si('current_state')}</th>
-      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('priority')">Priority ${si('priority')}</th>
-      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('current_verdict')">Verdict ${si('current_verdict')}</th>
-      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('last_analysis_date')">Last Analysis ${si('last_analysis_date')}</th>
-      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('last_triage_date')">Last Triage ${si('last_triage_date')}</th>
-      <th class="px-4 py-3 text-left">Tags</th>`
+      <tr>
+        <th class="cursor-pointer hover:text-slate-200" onclick="sortQueue('ticker')">Ticker ${si('ticker')}</th>
+        <th class="cursor-pointer hover:text-slate-200" onclick="sortQueue('company')">Company ${si('company')}</th>
+        <th class="cursor-pointer hover:text-slate-200" onclick="sortQueue('current_state')">State ${si('current_state')}</th>
+        <th class="cursor-pointer hover:text-slate-200" onclick="sortQueue('priority')">Priority ${si('priority')}</th>
+        <th class="cursor-pointer hover:text-slate-200" onclick="sortQueue('current_verdict')">Verdict ${si('current_verdict')}</th>
+        <th class="cursor-pointer hover:text-slate-200" onclick="sortQueue('last_analysis_date')">Last Analysis ${si('last_analysis_date')}</th>
+        <th class="cursor-pointer hover:text-slate-200" onclick="sortQueue('last_triage_date')">Last Triage ${si('last_triage_date')}</th>
+        <th>Tags</th>
+      </tr>`
 
     if (filtered.length === 0) {
-      bodyEl.innerHTML = '<tr><td colspan="8" class="px-4 py-10 text-center text-slate-500">No results match your filters.</td></tr>'
+      bodyEl.innerHTML = '<tr><td colspan="8" class="queue-empty-row">No results match your filters.</td></tr>'
       return
     }
 
     bodyEl.innerHTML = filtered.map(q => {
       const hasReport = STATE.reports.some(r => r.ticker === q.ticker)
-      const tags = (q.tags||[]).slice(0,3)
-      const moreTags = (q.tags||[]).length > 3 ? `<span style="color:#44403c">+${(q.tags||[]).length-3}</span>` : ''
-      return `<tr class="border-b" style="border-color:#1c1917; ${hasReport?'cursor:pointer;':'opacity:0.65;'}"
-               ${hasReport?`onclick="openReportModal('${q.ticker.replace(/'/g,"\\'")}')"`:''}
-               onmouseover="this.style.background='#1c1917'" onmouseout="this.style.background=''">
-        <td class="px-4 py-2.5 font-mono font-semibold" style="color:#e07a5f;">${esc(q.ticker)}</td>
-        <td class="px-4 py-2.5 text-sm text-slate-300" style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(q.company||'—')}</td>
-        <td class="px-4 py-2.5">${stateBadge(q.current_state)}</td>
-        <td class="px-4 py-2.5">${priorityBadge(q.priority)}</td>
-        <td class="px-4 py-2.5">${verdictBadge(q.current_verdict)}</td>
-        <td class="px-4 py-2.5">${renderFreshness(q.ticker)}</td>
-        <td class="px-4 py-2.5 text-xs text-slate-400">${fmtDate(q.last_triage_date)}</td>
-        <td class="px-4 py-2.5 text-xs">
-          ${tags.map(t=>`<span style="background:#1c1917;border:1px solid #292524;border-radius:4px;padding:1px 6px;margin-right:3px;color:#a8a29e;">${esc(t)}</span>`).join('')}${moreTags}
-        </td>
+      return `<tr class="${hasReport ? 'is-clickable' : 'is-muted'}"
+               ${hasReport ? `onclick="openReportModal('${q.ticker.replace(/'/g,"\\'")}')"` : ''}>
+        <td><div class="queue-symbol">${esc(q.ticker)}</div></td>
+        <td><div class="queue-company">${esc(q.company||'—')}</div></td>
+        <td><div class="queue-badge-stack">${stateBadge(q.current_state)}</div></td>
+        <td><div class="queue-badge-stack">${priorityBadge(q.priority)}</div></td>
+        <td><div class="queue-badge-stack">${verdictBadge(q.current_verdict)}</div></td>
+        <td>${renderQueueAnalysisCell(q)}</td>
+        <td><div class="queue-date${q.last_triage_date ? '' : ' is-empty'}">${esc(fmtDate(q.last_triage_date))}</div></td>
+        <td>${renderQueueTags(q.tags || [])}</td>
       </tr>`
     }).join('')
   }
@@ -802,8 +1488,8 @@
         </div>
         <div class="card overflow-hidden">
           <div class="overflow-x-auto">
-            <table class="w-full text-sm">
-              <thead id="q-table-head" class="text-xs text-slate-500 uppercase tracking-wider" style="background:#0c0a09;"></thead>
+            <table class="queue-table">
+              <thead id="q-table-head"></thead>
               <tbody id="q-table-body"></tbody>
             </table>
           </div>
@@ -1444,16 +2130,21 @@
     STATE.portfolioInited = false
     STATE.portfolio = null
     try {
-      const [qRes, rRes, pRes, fRes] = await Promise.all([
+      const [qRes, rRes, pRes, fRes, portfolioRes] = await Promise.all([
         fetch('/api/queue').then(r=>r.json()),
         fetch('/api/reports').then(r=>r.json()),
         fetch('/api/pipeline').then(r=>r.json()),
         fetch('/api/freshness').then(r=>r.json()),
+        fetch('/api/portfolio')
+          .then(r => r.ok ? r.json() : null)
+          .catch(() => null),
       ])
       STATE.queue     = Array.isArray(qRes) ? qRes : []
       STATE.reports   = rRes.reports || []
       STATE.pipeline  = pRes
       STATE.freshness = fRes || {}
+      STATE.portfolio = portfolioRes && !portfolioRes.error ? portfolioRes : null
+      STATE.portfolioInited = !!STATE.portfolio
 
       const qTotal = STATE.queue.length
       const rTotal = STATE.reports.length

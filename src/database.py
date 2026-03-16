@@ -216,12 +216,46 @@ class Database:
         ).fetchall()
         return [_row_to_dict(r) for r in rows]
 
+    def get_proposal(self, proposal_id: int) -> Optional[dict]:
+        row = self.conn.execute(
+            "SELECT * FROM trade_proposals WHERE id = ?",
+            (proposal_id,),
+        ).fetchone()
+        return _row_to_dict(row) if row else None
+
+    def get_pending_proposal(
+        self,
+        ticker: str,
+        proposed_action: str,
+    ) -> Optional[dict]:
+        row = self.conn.execute(
+            """SELECT * FROM trade_proposals
+               WHERE ticker = ? AND proposed_action = ? AND status = 'PENDING'
+               ORDER BY created_at DESC
+               LIMIT 1""",
+            (ticker, proposed_action),
+        ).fetchone()
+        return _row_to_dict(row) if row else None
+
     def get_cached_price(self, ticker: str, price_date: str) -> Optional[Decimal]:
         row = self.conn.execute(
             "SELECT close_price FROM price_cache WHERE ticker = ? AND price_date = ?",
             (ticker, price_date),
         ).fetchone()
         if row is None:
+            return None
+        return Decimal(str(row["close_price"]))
+
+    def get_latest_cached_price(self, ticker: str) -> Optional[Decimal]:
+        row = self.conn.execute(
+            """SELECT close_price
+               FROM price_cache
+               WHERE ticker = ?
+               ORDER BY price_date DESC
+               LIMIT 1""",
+            (ticker,),
+        ).fetchone()
+        if row is None or row["close_price"] is None:
             return None
         return Decimal(str(row["close_price"]))
 

@@ -382,9 +382,10 @@ Persistent portfolio tracking with transaction history and policy compliance. In
 ### Files
 | file | purpose |
 |------|---------|
-| `portfolio/ledger.json` | Source of truth — positions, transactions, summary |
+| `db/portfolio.db` | Source of truth — SQLite database (positions, lots, transactions) |
 | `portfolio/portfolio-state.md` | Human-readable render, regenerated on every mutation |
-| `scripts/portfolio-ledger.py` | Core script with all subcommands |
+| `scripts/paper_trade.py` | Core script with all subcommands (SQLite-backed) |
+| `scripts/portfolio-ledger.py` | Legacy JSON-backed script (retained as fallback during transition) |
 
 ### How to run
 ```bash
@@ -400,7 +401,8 @@ Persistent portfolio tracking with transaction history and policy compliance. In
 ./run.sh ledger check buy V --price 312 --amount 5000  # Dry-run policy check
 ./run.sh ledger history                            # Transaction log
 ./run.sh ledger history --ticker V --last 10       # Filtered history
-./run.sh ledger bootstrap portfolios/2026-03-12/portfolio-decision.json --capital 100000 --prices portfolios/2026-03-12/entry-prices.json
+./run.sh ledger migrate --from portfolio/ledger.json           # Migrate JSON → SQLite
+./run.sh ledger migrate --from portfolio/ledger.json --dry-run # Preview without writing
 ```
 
 ### Policy rules

@@ -184,8 +184,10 @@ def api_portfolio():
         weight = (cost_basis / capital * 100) if capital else 0
         positions.append({
             'ticker': p.get('ticker', ''),
+            'company': p.get('company', ''),
             'side': p.get('side', 'long'),
             'shares': shares,
+            'entry_date': p.get('entry_date', ''),
             'entry_price': entry_price,
             'current_price': current_price,
             'market_value': market_value,
@@ -193,8 +195,12 @@ def api_portfolio():
             'unrealized_pnl': unrealized,
             'unrealized_pct': p.get('unrealized_pnl_pct') or 0,
             'weight_pct': round(weight, 1),
+            'target_weight_pct': p.get('target_weight_pct'),
+            'score_at_entry': p.get('score_at_entry'),
             'sector': p.get('sector', ''),
             'thesis_tag': p.get('verdict_at_entry', ''),
+            'policy_flags': p.get('policy_flags', []),
+            'report_ref': p.get('report_ref', ''),
         })
 
     total_pnl = realized + total_unrealized
@@ -220,6 +226,7 @@ def api_portfolio():
         'summary': {
             'capital': capital,
             'cash': cash,
+            'cash_pct': summary_raw.get('cash_pct', 0),
             'long_market_value': deployed_long,
             'short_market_value': deployed_short,
             'gross_exposure': gross_exp,
@@ -229,6 +236,11 @@ def api_portfolio():
             'total_pnl': total_pnl,
             'realized_pnl': realized,
             'unrealized_pnl': total_unrealized,
+            'position_count': summary_raw.get('position_count', len(positions_raw)),
+            'long_count': summary_raw.get('long_count', 0),
+            'short_count': summary_raw.get('short_count', 0),
+            'largest_position_ticker': summary_raw.get('largest_position_ticker', ''),
+            'largest_position_pct': summary_raw.get('largest_position_pct', 0),
             'last_updated': meta.get('last_updated', summary_raw.get('as_of', '')),
         },
         'positions': positions,
