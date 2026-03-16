@@ -1,0 +1,52 @@
+{
+  "ticker": "SAP.DE",
+  "company": "SAP SE",
+  "analysis_date": "2026-03-16",
+  "verdict": "Own",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World's largest ERP vendor with ~42,000 customers and 98% renewal rates driven by extraordinary switching costs",
+    "86% predictable revenue with €77B cloud backlog providing multi-year visibility",
+    "Fortress balance sheet: net cash positive, 21.9x interest coverage, 0.6x debt/EBITDA, AA- credit quality",
+    "Cloud transition inflection arrived: operating margins expanded 450bps to 28.3%, FCF nearly doubled to €8.4B",
+    "Morningstar upgraded moat to 'wide' in 2025, citing strengthened switching costs through cloud transition"
+  ],
+  "key_risks": [
+    "AI disruption could erode SAP's pricing power and switching costs over 5-10 years",
+    "Cloud backlog deceleration may prove structural rather than cyclical (Q4 miss at 25% vs prior 28-30%)",
+    "Oracle overtook SAP in ERP revenue and is growing faster (17.7% vs 13.7%), competing aggressively for migration decisions",
+    "Minimal insider ownership — CEO owns negligible 320 net shares, management aligned primarily through SBC",
+    "Extended multiple compression from 'AI is killing software' narrative may suppress valuation for 12-18 months"
+  ],
+  "red_flags": [
+    "Stock-based compensation of €1.7B annually is a material real cost to shareholders",
+    "ROIC at 13.1% remains below the 15%+ expected of a dominant software franchise after four years of depression",
+    "Cloud backlog growth decelerated for 3 consecutive quarters before the Q4 miss",
+    "CEO compensation reached record €19M in 2024, up 165% YoY",
+    "2026 cloud revenue guidance (€25.8-26.2B) disappointed consensus expectations"
+  ],
+  "buy_triggers": [
+    "Cloud backlog growth re-accelerates above 25% for two consecutive quarters, confirming Q4 miss was transient",
+    "Price declines below €150, providing deeper margin of safety at 45%+ from highs",
+    "Operating margins reach 30%+ ahead of 2027 target, confirming profitability inflection"
+  ],
+  "sell_triggers": [
+    "Cloud revenue growth decelerates below 15% for two consecutive quarters",
+    "A credible AI-native ERP competitor signs 5+ Fortune 500 customers",
+    "Management credibility deteriorates through repeated guidance misses or key executive departures"
+  ],
+  "valuation_summary": "At €166, SAP trades at 19.5x forward P/E and 17.2x EV/EBITDA — both 25-35% below 3-year averages. Base-case DCF suggests €200-220 intrinsic value (20-32% upside). Reverse-engineered expectations imply only 5-6% earnings growth vs consensus mid-teens, suggesting embedded pessimism. Bear case floor ~€110-130, bull case ~€240-260.",
+  "source_summary": "Yahoo Finance auto-fetch, SAP Q4/FY2025 earnings release (Jan 2026), SAP 20-F annual report, Morningstar moat analysis, Gartner ERP market estimates, 6sense market share data, Creditreform credit rating, Alpha Spread relative valuation, analyst consensus from SAP Investor Relations, PortfoliosLab historical drawdown data",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. SAP is at the inflection point of its cloud transition with expanding margins and near-doubling FCF, available at a significant discount to historical multiples after a cloud backlog miss and AI disruption fears. The business quality is high but the price margin of safety is modest rather than deep."
+}

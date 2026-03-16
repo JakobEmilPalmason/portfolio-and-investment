@@ -12,7 +12,7 @@ The umbrella prompts (01–09) and `assembler.md` define how deep-dive analysis 
 
 ## Step 1: Read tracked names
 
-List all directories under `reports/` to get currently tracked tickers. Each becomes a candidate with `source_bucket: ["tracked"]` and `already_analyzed: true`.
+List all directories under `runs/*/reports/` to get currently tracked tickers. Each becomes a candidate with `source_bucket: ["tracked"]` and `already_analyzed: true`.
 
 ---
 
@@ -98,7 +98,7 @@ One entry per ticker. If a ticker appears in multiple sources/buckets, create ON
 - `source_bucket` — array of all applicable buckets from the list above
 - `mkt_cap_tier` — `mega` (>$200B) / `large` ($10–200B) / `mid` ($2–10B)
 - `geography` — `US` / `Europe` / `Asia` / `Other`
-- `already_analyzed` — true if ticker directory exists in `reports/`
+- `already_analyzed` — true if ticker directory exists in any `runs/*/reports/`
 - `as_of_date` — today's date (YYYY-MM-DD)
 
 **Do NOT include:** thesis_tag, style_tag, short_reason, possible_disqualifier, priority, triage_rec, confidence — those are added by Stage A2.
@@ -141,9 +141,9 @@ If no thresholds are exceeded, leave the array empty: `[]`
 
 ## Output Paths
 
-Replace `YYYY-MM-DD` with today's date:
-- `scans/YYYY-MM-DD/universe.json`
-- `scans/YYYY-MM-DD/universe-meta.json`
+Write to the current week's scan directory:
+- `runs/{CURRENT_WEEK}/scan/universe.json`
+- `runs/{CURRENT_WEEK}/scan/universe-meta.json`
 
 Create the directory if it does not exist.
 

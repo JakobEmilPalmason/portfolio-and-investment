@@ -2,14 +2,29 @@
 
 This project is a Buffett-style investment analysis system powered by Claude Code agents. Each "umbrella" of analysis is handled by a specialized agent role, all following the same output format.
 
+## Current Pipeline Run
+
+| | |
+|---|---|
+| **Current week** | `week12_16.03` |
+| **Active scan** | `runs/week12_16.03/scan/` |
+| **Active triage** | `runs/week12_16.03/triage/` |
+| **Active reports** | `runs/week12_16.03/reports/` |
+
+**Update `CURRENT_WEEK` in `run.sh` (line ~27) and the table above when a new week begins.**
+
+All pipeline output lives under `runs/`. Each week folder contains `scan/`, `triage/`, and `reports/` — one complete cycle in one place. Global state (`context/`, `queue/`, `seeds/`) lives at repo root.
+
+---
+
 ## How It Works
 
 When a user asks to analyze a stock (e.g., "analyze AAPL" or "run analysis on MSFT"), follow this workflow:
 
 ### Step 1: Setup
-1. Create directory `reports/{TICKER}/` if it doesn't exist.
+1. Create directory `runs/{CURRENT_WEEK}/reports/{TICKER}/` if it doesn't exist.
 2. Read `prompts/_shared-format.md` — this is the output schema all agents must follow.
-3. Check if `context/{TICKER}/` exists. If it does, read all files in it — this is user-provided research (10-K notes, earnings transcripts, financials). Pass this context to every agent.
+3. Financial data is auto-fetched before analysis (see "Financial Data Fetch" section below). Check if `context/{TICKER}/` exists. If it does, read all files in it — this includes auto-fetched financials and any user-provided research (10-K notes, earnings transcripts, etc.). Pass this context to every agent.
 
 ### Step 2: Run Analysis Agents (3 parallel batches)
 Spawn 3 Agent subagents in parallel. Each agent gets:
@@ -21,20 +36,20 @@ Spawn 3 Agent subagents in parallel. Each agent gets:
 
 **Business Analyst Agent** (umbrellas 1-3):
 - Read prompts: `01-circle-of-competence.md`, `02-durable-competitive-advantage.md`, `03-management-capital-allocation.md`
-- Write output to: `reports/{TICKER}/01-circle-of-competence.md`, `reports/{TICKER}/02-durable-competitive-advantage.md`, `reports/{TICKER}/03-management-capital-allocation.md`
+- Write output to: `runs/{CURRENT_WEEK}/reports/{TICKER}/01-circle-of-competence.md`, `…/02-durable-competitive-advantage.md`, `…/03-management-capital-allocation.md`
 
 **Financial Analyst Agent** (umbrellas 4-5):
 - Read prompts: `04-business-economics.md`, `05-balance-sheet-safety.md`
-- Write output to: `reports/{TICKER}/04-business-economics.md`, `reports/{TICKER}/05-balance-sheet-safety.md`
+- Write output to: `runs/{CURRENT_WEEK}/reports/{TICKER}/04-business-economics.md`, `…/05-balance-sheet-safety.md`
 
 **Valuation Analyst Agent** (umbrellas 6-8):
 - Read prompts: `06-valuation-intrinsic-value.md`, `07-margin-of-safety.md`, `08-temperament-time-horizon.md`
-- Write output to: `reports/{TICKER}/06-valuation-intrinsic-value.md`, `reports/{TICKER}/07-margin-of-safety.md`, `reports/{TICKER}/08-temperament-time-horizon.md`
+- Write output to: `runs/{CURRENT_WEEK}/reports/{TICKER}/06-valuation-intrinsic-value.md`, `…/07-margin-of-safety.md`, `…/08-temperament-time-horizon.md`
 
 Each agent should:
 - Use **WebSearch** to find current financial data, recent news, and analyst estimates
 - Follow the shared format EXACTLY for each section
-- Write each section to its own file in `reports/{TICKER}/`
+- Write each section to its own file in `runs/{CURRENT_WEEK}/reports/{TICKER}/`
 - Be honest about data sources and confidence levels
 
 ### Step 3: Compact Checklist
@@ -42,16 +57,16 @@ After all 3 agents complete, spawn one more agent:
 
 **Checklist Agent** (umbrella 9):
 - Read prompt: `09-compact-checklist.md`
-- Read all completed sections from `reports/{TICKER}/` (01-08)
-- Write output to: `reports/{TICKER}/09-compact-checklist.md`
+- Read all completed sections from `runs/{CURRENT_WEEK}/reports/{TICKER}/` (01-08)
+- Write output to: `runs/{CURRENT_WEEK}/reports/{TICKER}/09-compact-checklist.md`
 
 ### Step 4: Final Report Assembly
 Spawn one final agent:
 
 **Synthesis Agent**:
 - Read prompt: `assembler.md`
-- Read ALL section files from `reports/{TICKER}/` (01-09)
-- Write output to: `reports/{TICKER}/FINAL-REPORT.md` AND `reports/{TICKER}/FINAL-REPORT.json`
+- Read ALL section files from `runs/{CURRENT_WEEK}/reports/{TICKER}/` (01-09)
+- Write output to: `runs/{CURRENT_WEEK}/reports/{TICKER}/FINAL-REPORT.md` AND `runs/{CURRENT_WEEK}/reports/{TICKER}/FINAL-REPORT.json`
 - After writing both files, update `queue/queue.json`: set `current_state = monitor_only`, `last_analysis_date = today`, `current_verdict` from FINAL-REPORT.json, `thesis_status = intact`, `next_required_action = monitor`
 
 ### Step 5: Present Results
@@ -59,17 +74,19 @@ After the final report is written, show the user:
 1. The **verdict** (Own / Watch / Pass)
 2. The **score dashboard** (table of all 8 scores)
 3. The **compact checklist** (8 forced sentences)
-4. Let them know the full report is at `reports/{TICKER}/FINAL-REPORT.md`
+4. Let them know the full report is at `runs/{CURRENT_WEEK}/reports/{TICKER}/FINAL-REPORT.md`
 
 ## Pipeline Overview
 
 ```
-Stage A1 (Universe Assembly)  →  scans/YYYY-MM-DD/   (universe.json + universe-meta.json)
-Stage A2 (Candidate Filter)   →  scans/YYYY-MM-DD/   (candidates.json + csv + md + scan-meta.json)
-Stage B1 (Fast Triage)        →  triage/YYYY-MM-DD/b1-*
-Stage B2 (Focused Triage)     →  triage/YYYY-MM-DD/triage.*
-Stage C  (Full Analysis)      →  reports/{TICKER}/
+Stage A1 (Universe Assembly)  →  runs/{week}/scan/    (universe.json + universe-meta.json)
+Stage A2 (Candidate Filter)   →  runs/{week}/scan/    (candidates.json + csv + md + scan-meta.json)
+Stage B1 (Fast Triage)        →  runs/{week}/triage/  (b1-results.json, b1-advance.json, b1-summary.md)
+Stage B2 (Focused Triage)     →  runs/{week}/triage/  (triage.json, triage.md, deep-dive.csv)
+Fetch (Financial Data)        →  context/{TICKER}/financials.md
+Stage C  (Full Analysis)      →  runs/{week}/reports/{TICKER}/
 Queue                         →  queue/queue.json
+Portfolio Simulator           →  stdout (snapshot allocation from queue + FINAL-REPORT.json)
 ```
 
 ---
@@ -85,7 +102,7 @@ Stage A1 builds a broad raw stock universe. Its job is assembly and deduplicatio
 Merge candidates from multiple sources into a single raw universe JSON. Tag each entry with source/category metadata. Produce 150–400 unique names for A2 to filter.
 
 ### Inputs
-1. **Tracked** — `reports/` directories → `source_bucket: tracked`
+1. **Tracked** — `runs/*/reports/` directories → `source_bucket: tracked`
 2. **Seed** — `seeds/watchlist.json` → `source_bucket: seed`
 3. **Built-in curated lists** (embedded in prompt, agent prior knowledge) → sector bucket names
 4. **Web searches** — up to 6 queries for event/signal buckets
@@ -93,7 +110,7 @@ Merge candidates from multiple sources into a single raw universe JSON. Tag each
 ### Source buckets
 | bucket | how to populate |
 |--------|----------------|
-| `tracked` | existing `reports/` directories |
+| `tracked` | existing `runs/*/reports/` directories |
 | `seed` | `seeds/watchlist.json` |
 | `large_cap_us_quality` | built-in list: ~30 US quality compounders |
 | `large_cap_europe_quality` | built-in list: ~20 European quality names |
@@ -111,8 +128,8 @@ Merge candidates from multiple sources into a single raw universe JSON. Tag each
 ### Output files
 | file | purpose |
 |------|---------|
-| `scans/YYYY-MM-DD/universe.json` | source of truth — raw array, minimal schema |
-| `scans/YYYY-MM-DD/universe-meta.json` | run metadata + counts by bucket/sector/geography + concentration_warnings |
+| `runs/{week}/scan/universe.json` | source of truth — raw array, minimal schema |
+| `runs/{week}/scan/universe-meta.json` | run metadata + counts by bucket/sector/geography + concentration_warnings |
 
 ### How to run
 Read `prompts/scan-stage-a1.md` — full execution template. Spawn one general-purpose agent.
@@ -138,28 +155,25 @@ Stage A2 takes the raw A1 universe and applies lightweight filtering, prioritiza
 Reduce the A1 universe (150–400 names) to a manageable candidate set (80–150 names) with enough signal for Stage B to triage. No deep research, no valuation narratives.
 
 ### Inputs
-1. Most recent `scans/YYYY-MM-DD/universe.json` — primary input
+1. Most recent `runs/{week}/scan/universe.json` — primary input
 2. Agent's own knowledge of these businesses (no web search unless critical gap)
 
 ### Output files
 | file | purpose |
 |------|---------|
-| `scans/YYYY-MM-DD/candidates.json` | source of truth — ranked/filtered candidates |
-| `scans/YYYY-MM-DD/candidates.csv` | flat CSV, pipe-delimited source_bucket |
-| `scans/YYYY-MM-DD/candidates.md` | human-readable table + summary stats |
-| `scans/YYYY-MM-DD/scan-meta.json` | run metadata + ranking rules v2 snapshot |
+| `runs/{week}/scan/candidates.json` | source of truth — ranked/filtered candidates |
+| `runs/{week}/scan/candidates.csv` | flat CSV, pipe-delimited source_bucket |
+| `runs/{week}/scan/candidates.md` | human-readable table + summary stats |
+| `runs/{week}/scan/scan-meta.json` | run metadata + ranking rules v2 snapshot |
 
 ### How to run
-Read `prompts/scan-stage-a2.md` — full execution template. Spawn one general-purpose agent with the scan date.
+Read `prompts/scan-stage-a2.md` — full execution template. Spawn one general-purpose agent with the scan week.
 
 ### Constraints
 - No additional web searches (A1 already ran them) unless one critical fact is missing
 - No valuation math. No multi-sentence descriptions.
 - JSON is source of truth. Markdown is a render only.
 - A2 feeds Stage B1 triage — do not skip to full analysis from here.
-
-### Archive convention
-Old scan outputs live in `scans/archive/YYYY-MM-DD/`. The active/latest run is always at `scans/YYYY-MM-DD/`.
 
 ---
 
@@ -174,11 +188,11 @@ Stage B1 is a mechanical filter pass over the A2 candidate list. Harsh, fast, no
 Eliminate obvious no's. Reduce the A2 candidate list to a smaller advance set for B2. B1 hold names auto-become `inbox` (queue state) — they never enter B2.
 
 ### Inputs
-1. Most recent `scans/YYYY-MM-DD/candidates.json` — primary input
+1. Most recent `runs/{week}/scan/candidates.json` — primary input
 2. Agent's prior knowledge only — no web search
 
 ### How to run
-Read `prompts/triage-stage-b1.md` — full execution template. Spawn one general-purpose agent with the scan date.
+Read `prompts/triage-stage-b1.md` — full execution template. Spawn one general-purpose agent with the scan week.
 
 ### B1 verdict values
 - `advance` — quality business, moat demonstrable, worth a real second look in B2
@@ -188,9 +202,9 @@ Read `prompts/triage-stage-b1.md` — full execution template. Spawn one general
 ### Output files
 | file | purpose |
 |------|---------|
-| `triage/YYYY-MM-DD/b1-results.json` | all records (advance + hold + reject) |
-| `triage/YYYY-MM-DD/b1-advance.json` | survivors only — input for B2 |
-| `triage/YYYY-MM-DD/b1-summary.md` | compact one-line table + counts |
+| `runs/{week}/triage/b1-results.json` | all records (advance + hold + reject) |
+| `runs/{week}/triage/b1-advance.json` | survivors only — input for B2 |
+| `runs/{week}/triage/b1-summary.md` | compact one-line table + counts |
 
 ### Constraints
 - No web search
@@ -204,7 +218,7 @@ Read `prompts/triage-stage-b1.md` — full execution template. Spawn one general
 
 **Trigger phrases:** "run B2", "run focused triage"
 **Also triggered by:** "run triage", "run Stage B" — as the second step after B1
-**Date argument:** "triage latest" or "triage YYYY-MM-DD" — not "triage TICKER"
+**Date argument:** "triage latest" or "triage week11_09.03" — not "triage TICKER"
 
 Stage B2 applies thoughtful triage to the B1 advance set. Still not deep research, but a genuine opinion on each name.
 
@@ -212,12 +226,12 @@ Stage B2 applies thoughtful triage to the B1 advance set. Still not deep researc
 Assign a real `next_action` to each B1 survivor. Produce a clean deep-dive shortlist (≤8 names) and monitor/refresh set.
 
 ### Inputs
-1. `triage/YYYY-MM-DD/b1-advance.json` — primary input
-2. `scans/YYYY-MM-DD/scan-meta.json` — supporting context
-3. `reports/{TICKER}/FINAL-REPORT.md` for each already-analyzed ticker
+1. `runs/{week}/triage/b1-advance.json` — primary input
+2. `runs/{week}/scan/scan-meta.json` — supporting context
+3. `runs/*/reports/{TICKER}/FINAL-REPORT.md` for each already-analyzed ticker
 
 ### How to run
-Read `prompts/triage-stage-b2.md` — full execution template. Spawn one general-purpose agent with the triage date.
+Read `prompts/triage-stage-b2.md` — full execution template. Spawn one general-purpose agent with the triage week.
 
 ### next_action values
 - `deep_dive` — new name, high quality, understandable, reasonable valuation setup; run full 8-umbrella pipeline
@@ -241,9 +255,9 @@ After writing triage output files, update `queue/queue.json`:
 ### Output files
 | file | purpose |
 |------|---------|
-| `triage/YYYY-MM-DD/triage.json` | source of truth — one record per B2 candidate |
-| `triage/YYYY-MM-DD/triage.md` | human-readable report + shortlists |
-| `triage/YYYY-MM-DD/deep-dive.csv` | deep dive shortlist export (optional) |
+| `runs/{week}/triage/triage.json` | source of truth — one record per B2 candidate |
+| `runs/{week}/triage/triage.md` | human-readable report + shortlists |
+| `runs/{week}/triage/deep-dive.csv` | deep dive shortlist export (optional) |
 
 ### Constraints
 - No deep analysis. No umbrella writeups. No valuation narratives.
@@ -318,6 +332,47 @@ JSON enables: queue updates, monitor/diff engine, cross-run comparisons, dashboa
 
 ---
 
+## Portfolio Simulator
+
+**Trigger phrases:** "simulate portfolio", "portfolio sim", "what would I hold", "run portfolio", "show me the portfolio"
+**Script:** `scripts/portfolio-sim.py` — no network calls, reads queue + FINAL-REPORT.json locally
+
+A snapshot allocator. Given $X capital, applies the pipeline's own ranking logic (verdict → score → confidence) and deploys equal weight into the top-ranked names. Not a backtest.
+
+### What it shows
+1. **Holdings table** — ranked positions with verdict, score, confidence, weight %, and dollar value
+2. **Sector exposure** — names and $ per sector (derived from queue tags)
+3. **Concentration stats** — top 1/3/5 weight, HHI, total red flags across positions
+
+### How to run
+```bash
+./run.sh portfolio                                           # Own-verdict, $100K, top 20
+./run.sh portfolio 250000                                    # Own-verdict, $250K
+./run.sh portfolio 500000 --min-verdict watch --top 15      # Include Watch, cap at 15
+./run.sh portfolio --output json                            # Machine-readable JSON
+```
+
+Or directly: `python3 scripts/portfolio-sim.py [OPTIONS]`
+
+### Options
+| flag | default | meaning |
+|------|---------|---------|
+| `--capital X` | 100000 | Starting capital in dollars |
+| `--top N` | 20 | Max positions (0 = all eligible) |
+| `--min-verdict` | own | Minimum verdict tier: `own` or `watch` |
+| `--states` | monitor_only,approved,owned | Queue states to draw from |
+| `--output` | table | Output format: `table` or `json` |
+
+### Eligibility and ranking
+- Eligible: `current_state` in allowed states + `current_verdict` meets min-verdict + `FINAL-REPORT.json` exists
+- Ranked: verdict (Own=2 > Watch=1) → `average_score` desc → confidence (high > medium > low) desc
+- Allocation: equal weight across all selected positions
+
+### Sector derivation
+Sector is inferred from queue `tags` using a tag→sector mapping (first matching tag wins). See `scripts/portfolio-sim.py` for the full `TAG_SECTOR` dict. Falls back to `"Other"`.
+
+---
+
 ## Monitor (Stub)
 
 **Trigger phrases:** "monitor TICKER"
@@ -335,15 +390,51 @@ If the user asks to run just one umbrella (e.g., "run umbrella 3 on AAPL" or "ju
 ## Re-Assembly Mode
 If the user asks to reassemble a report (e.g., "reassemble AAPL report"), run only Steps 3-4 using existing section files. Also write FINAL-REPORT.json and update queue.
 
+## Financial Data Fetch
+
+**Trigger phrases:** "fetch TICKER", "fetch financials", "fetch --all-reports"
+
+`scripts/fetch-financials.py` uses yfinance (Yahoo Finance) to pull verified financial data and write it to `context/{TICKER}/financials.md`. This runs automatically before every `analyze` command.
+
+### What it provides
+- Current price, market cap, 52-week range, valuation multiples
+- 4-5 years of income statement, balance sheet, cash flow (annual)
+- Derived metrics: ROIC, ROE, ROA, margins, FCF conversion, owner earnings
+- Debt & safety ratios: debt/EBITDA, interest coverage, current ratio
+- Analyst estimates and price history context
+- Data gaps & warnings section for transparency
+
+### How to run
+```bash
+./run.sh fetch AAPL                       # single ticker
+./run.sh fetch ADBE MSFT V MA             # multiple tickers
+./run.sh fetch --all-reports              # all tickers with existing reports
+./run.sh fetch --all-queue deep_research  # all tickers in a queue state
+```
+
+Or directly: `python3 scripts/fetch-financials.py [OPTIONS] TICKER [TICKER ...]`
+
+### Freshness
+Skips tickers where `context/{TICKER}/financials.md` is less than 24 hours old. Override with `--force`.
+
+### Integration with analyze
+`./run.sh analyze TICKER` auto-fetches before running analysis. If the fetch fails (no internet, invalid ticker), analysis proceeds with web search only.
+
+### Dependencies
+- `yfinance` (listed in `requirements.txt`)
+- No API keys required
+
+---
+
 ## Adding Context
-Users can place supporting documents in `context/{TICKER}/` before running analysis:
+Users can place additional supporting documents in `context/{TICKER}/` alongside the auto-fetched `financials.md`:
 - 10-K excerpts or notes
 - Earnings call transcripts
 - Custom financial spreadsheet exports
 - Industry research
 - Competitor analysis
 
-The more context provided, the better the analysis. Without context, agents rely on web search and training knowledge.
+The more context provided, the better the analysis. Without context, agents rely on the auto-fetched financials and web search.
 
 ## Philosophy
 This is a Buffett-style analysis framework. Key principles:

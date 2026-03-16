@@ -14,7 +14,7 @@ The umbrella prompts (01–09) and `assembler.md` define how deep-dive analysis 
 
 ## Inputs
 
-1. **Candidates** — read `scans/YYYY-MM-DD/candidates.json` directly
+1. **Candidates** — read `runs/{CURRENT_WEEK}/scan/candidates.json` directly
 2. Agent's own knowledge of these businesses — no web search
 
 ---
@@ -91,12 +91,12 @@ One record per candidate. All fields required.
 
 ## Output Files
 
-Replace `YYYY-MM-DD` with the scan date:
+Write to the current week's triage directory:
 
 ```
-triage/YYYY-MM-DD/b1-results.json    all records (advance + hold + reject)
-triage/YYYY-MM-DD/b1-advance.json    advance survivors only — input for B2
-triage/YYYY-MM-DD/b1-summary.md      compact table + counts
+runs/{CURRENT_WEEK}/triage/b1-results.json    all records (advance + hold + reject)
+runs/{CURRENT_WEEK}/triage/b1-advance.json    advance survivors only — input for B2
+runs/{CURRENT_WEEK}/triage/b1-summary.md      compact table + counts
 ```
 
 Create the directory if it does not exist.

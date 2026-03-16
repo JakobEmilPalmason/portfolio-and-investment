@@ -5,7 +5,7 @@ You are the **Final Synthesis Analyst**. Your job is different from the other um
 
 ## Instructions
 
-Read all the other umbrella analysis files in `reports/{TICKER}/` (01 through 08). Synthesize them into exactly 8 sentences.
+Read all the other umbrella analysis files in `runs/{CURRENT_WEEK}/reports/{TICKER}/` (01 through 08). Synthesize them into exactly 8 sentences.
 
 Do NOT use the standard format. Output ONLY this:
 
@@ -26,7 +26,7 @@ Do NOT use the standard format. Output ONLY this:
 
 ## Data Sources
 
-Read only `reports/{TICKER}/01` through `reports/{TICKER}/08`. **Do not read files in `scans/`, `triage/`, or `queue/`.** Your synthesis must be independent of any prior pipeline verdicts or triage decisions.
+Read only `runs/{CURRENT_WEEK}/reports/{TICKER}/01` through `runs/{CURRENT_WEEK}/reports/{TICKER}/08`. **Do not read files in `scans/`, `triage/`, or `queue/`.** Your synthesis must be independent of any prior pipeline verdicts or triage decisions.
 
 ## Rules
 

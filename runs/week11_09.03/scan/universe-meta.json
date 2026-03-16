@@ -1,0 +1,61 @@
+{
+  "stage": "A1",
+  "run_date": "2026-03-13",
+  "as_of_date": "2026-03-13",
+  "total_entries": 150,
+  "already_analyzed": 57,
+  "new_entries": 93,
+  "duplicates_found": 0,
+  "counts_by_bucket": {
+    "tracked": 57,
+    "seed": 20,
+    "large_cap_us_quality": 30,
+    "large_cap_europe_quality": 21,
+    "semis_and_infra": 16,
+    "healthcare_quality": 16,
+    "industrial_compounders": 15,
+    "financial_quality": 15,
+    "consumer_quality": 15,
+    "sector_leader": 12,
+    "52wk_low": 6,
+    "post_earnings": 5,
+    "52wk_high": 5,
+    "fcf_roic": 4
+  },
+  "counts_by_sector": {
+    "Technology": 45,
+    "Industrials": 29,
+    "Healthcare": 25,
+    "Consumer": 25,
+    "Financials": 24,
+    "Utilities": 1,
+    "Energy": 1
+  },
+  "counts_by_geography": {
+    "US": 121,
+    "Europe": 25,
+    "Canada": 3,
+    "Asia": 1
+  },
+  "counts_by_mkt_cap_tier": {
+    "mega": 87,
+    "large": 50,
+    "mid": 13
+  },
+  "concentration_warnings": [
+    "tracked + seed entries represent 43.3% of universe (65/150), above the 20% guideline. This is structural given the 57 already-analyzed tickers. All 14 source buckets are populated and sector curated lists are well-represented.",
+    "Technology sector is 30% of universe (45/150) — high but reflects pipeline focus on quality compounders with tech/software moats.",
+    "US geography is 80.7% of universe (121/150). Europe at 16.7% (25 names). Limited Asia/Canada representation."
+  ],
+  "web_searches_run": 6,
+  "web_search_queries": [
+    "notable US earnings beats misses large cap March 2026",
+    "quality large cap stocks near 52-week low March 2026",
+    "quality large cap stocks near 52-week high momentum March 2026",
+    "highest free cash flow yield large cap stocks 2026",
+    "dominant sector leader stocks by market cap 2026",
+    "quality European large cap stocks 2026 best performers"
+  ],
+  "web_discovered_tickers": ["HPE", "CASY", "ULTA", "NVS", "CNQ", "FIX", "BAM", "ROG.SW", "NEM.SW", "ONTO"],
+  "notes": "Universe assembled from tracked reports (57), seed watchlist (20, heavy overlap with tracked), 7 built-in curated sector lists, and 6 web searches. Deduplication merged source_bucket arrays. Skipped micro-caps, SPACs, pre-revenue, and pure commodity plays. NVO merged to NOVO-B.CO (tracked ticker). IQVIA merged to IQV (tracked ticker). ASML.AS merged to ASML (tracked ticker)."
+}

@@ -1,16 +1,16 @@
 # Final Report Assembler
 
 ## Your Role
-You are the **Chief Investment Analyst**. Your job is to read all 9 section files from `reports/{TICKER}/` and produce a single, cohesive final report.
+You are the **Chief Investment Analyst**. Your job is to read all 9 section files from `runs/{CURRENT_WEEK}/reports/{TICKER}/` and produce a single, cohesive final report.
 
 ## Data Sources
 
-Read only `reports/{TICKER}/` section files (01–09). **Do not read files in `scans/`, `triage/`, or `queue/` (other than to write the queue update in Step 3).** Your synthesis must be based solely on the completed umbrella analysis.
+Read only the section files (01–09) from the current week's report directory. **Do not read files in `queue/` (other than to write the queue update in Step 3).** Your synthesis must be based solely on the completed umbrella analysis.
 
 ## Instructions
 
-1. Read all files in `reports/{TICKER}/`: 01 through 08 (standard format) and 09 (compact checklist).
-2. Produce `reports/{TICKER}/FINAL-REPORT.md` with the structure below.
+1. Read all files in `runs/{CURRENT_WEEK}/reports/{TICKER}/`: 01 through 08 (standard format) and 09 (compact checklist).
+2. Produce `runs/{CURRENT_WEEK}/reports/{TICKER}/FINAL-REPORT.md` with the structure below.
 
 ## Output Structure
 
@@ -76,7 +76,7 @@ Read only `reports/{TICKER}/` section files (01–09). **Do not read files in `s
 
 ## Second Output: FINAL-REPORT.json
 
-After writing FINAL-REPORT.md, also write `reports/{TICKER}/FINAL-REPORT.json` with the following schema:
+After writing FINAL-REPORT.md, also write `runs/{CURRENT_WEEK}/reports/{TICKER}/FINAL-REPORT.json` with the following schema:
 
 ```json
 {

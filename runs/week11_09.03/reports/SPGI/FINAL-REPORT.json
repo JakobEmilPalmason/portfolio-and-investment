@@ -1,0 +1,53 @@
+{
+  "ticker": "SPGI",
+  "company": "S&P Global Inc.",
+  "analysis_date": "2026-03-13",
+  "verdict": "Watch",
+  "average_score": 7.6,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Regulatory near-monopoly in bond ratings (NRSRO framework) blocks new entrants structurally",
+    "S&P 500 benchmark network effect: $19T+ in AUM passively linked, self-reinforcing and irreplaceable",
+    "36% FCF margin on $15.3B revenue with Ratings (64%) and Indices (69%) segment operating margins",
+    "53 consecutive years of dividend growth; 85%+ of FCF returned to shareholders annually",
+    "Asset-light model: $195M capex against $5.5B FCF — essentially all earnings are owner earnings",
+    "Four overlapping moat sources: regulatory, network effect, switching costs, data history depth"
+  ],
+  "key_risks": [
+    "Ratings revenue cyclicality: high-margin segment tied to debt issuance volumes, sensitive to rate cycles",
+    "AI disruption risk to Market Intelligence subscriptions over 3–7 year horizon",
+    "Price margin of safety is thin to nonexistent at $429; conservative DCFs place fair value at $369–$435",
+    "Mobility spin-off (mid-2026) introduces execution risk and expected re-rating may not fully materialize",
+    "Regulatory pressure on 'issuer pays' ratings model: low probability but high structural impact if reformed"
+  ],
+  "red_flags": [
+    "Bear-case DCF (GuruFocus) yields ~$251 intrinsic value — cannot be dismissed even if overly conservative",
+    "2025 FCF came in below $6B guidance, signaling modest FCF conversion pressure",
+    "GAAP EPS ($14.66) vs. adjusted EPS ($17.83) gap reflects ongoing IHS Markit amortization drag",
+    "52-week low of $381 was hit one month ago — recent recovery has eroded the brief margin of safety",
+    "IHS Markit all-stock acquisition at 2021 valuations; full value proof requires more time"
+  ],
+  "buy_triggers": [
+    "Stock re-tests $380–$400 range, restoring a genuine price margin of safety (~10–15% below base-case intrinsic value)",
+    "Mobility spin-off completes cleanly mid-2026, re-rating Core SPGI as a pure-play data and benchmarking business",
+    "Debt issuance volumes inflect upward on rate declines, providing multi-year Ratings revenue recovery visibility"
+  ],
+  "sell_triggers": [
+    "Ratings segment revenue declines for 3+ consecutive quarters due to structural (not cyclical) causes",
+    "Market Intelligence organic growth falls below 3% for two consecutive years, signaling AI-driven subscription erosion",
+    "Stock re-rates to 35x+ forward earnings without commensurate earnings acceleration — take partial profits"
+  ],
+  "valuation_summary": "At ~$429, SPGI trades at ~22x 2026 adjusted EPS guidance midpoint ($19.53), well below its historical 30–37x range, but conservative DCF models place intrinsic value at $369–$435, making the base case essentially in-line with the current price and leaving no meaningful margin of safety; the stock is fairly valued, not cheap.",
+  "source_summary": "Analysis based on web search results from March 2026 including S&P Global Q4/FY2025 earnings release (February 10, 2026), investor relations materials, analyst consensus from MarketBeat/TipRanks, DCF estimates from Alpha Spread/Simply Wall St/GuruFocus, MacroTrends financial data, and Motley Fool earnings transcripts; no user-provided context files; training knowledge used for background on regulatory framework and historical market share.",
+  "confidence": "medium",
+  "change_notes": ""
+}

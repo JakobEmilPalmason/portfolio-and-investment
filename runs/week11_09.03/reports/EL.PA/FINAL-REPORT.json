@@ -1,0 +1,52 @@
+{
+  "ticker": "EL.PA",
+  "company": "EssilorLuxottica SA",
+  "analysis_date": "2026-03-16",
+  "verdict": "Own",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 8,
+    "valuation": 7,
+    "margin_of_safety": 7,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World's only vertically integrated eyewear company with ~50% global lens market share and dominant brands (Ray-Ban, Oakley, Varilux)",
+    "Non-discretionary demand base — half the world needs vision correction, creating highly recurring revenue",
+    "Record FCF of $3.8B with 163% conversion of net income; tangible ROIC of 22-33% hidden behind acquisition goodwill",
+    "Conservative balance sheet: 1.1x net debt/EBITDA, 14.4x interest coverage, €5.7B liquidity",
+    "Emerging AI smart glasses platform (7M+ units in FY2025) with decade-long Meta partnership"
+  ],
+  "key_risks": [
+    "Smart glasses platform competition from Apple, Google, Samsung could commoditize EL's manufacturing role",
+    "US tariff exposure material (43% of revenue) with 20-145% tariff rates on imports",
+    "Three-year Delfin governance crisis unresolved; CEO dual-hatting creates structural conflicts",
+    "Margin recovery from 16% to 19-20% adjusted operating margin not yet demonstrated",
+    "Gross margin declined 280bps YoY (63.4% to 60.6%) — largest drop in recent history"
+  ],
+  "red_flags": [
+    "Supreme acquisition ($1.5B) represents strategic drift from core eyewear competency",
+    "IFRS-to-adjusted operating margin gap of 410 basis points requires scrutiny",
+    "Stock-based compensation jumped 73% YoY (€162M to €280M)",
+    "Working capital turned negative (-€144M) for first time in data series",
+    "Reported ROIC of ~5% below estimated WACC of ~9% on reported capital base"
+  ],
+  "buy_triggers": [
+    "FY2026 Q1/Q2 results confirm margin progression toward 19-20% adjusted operating margin target",
+    "US tariff de-escalation or successful mitigation evidenced by stable/improving US segment margins",
+    "Stock declines below €180 without fundamental deterioration, creating deep value entry"
+  ],
+  "sell_triggers": [
+    "Apple launches smart glasses AND vertically integrates its own lens manufacturing",
+    "FY2026 adjusted operating margin comes in below 17%, suggesting structural margin impairment",
+    "Meta terminates or materially downgrades the smart glasses partnership"
+  ],
+  "valuation_summary": "At €204.70 (23.7x forward earnings), the market prices in only 4-5% annual earnings growth — well below historical 8-10% trend. Base-case discounted intrinsic value of ~€265 implies 30% upside; bear-case €162 implies 21% downside. Owner earnings of ~€7.10/share put the stock at 29x owner earnings.",
+  "source_summary": "EssilorLuxottica FY2025 press release (Feb 2026), yfinance auto-fetched financials, Moody's credit opinion (Sep 2025), Yahoo Finance, Seeking Alpha, GuruFocus, Bloomberg, CNBC, analyst consensus (22 analysts), company investor relations",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Stock near 52-week low after 37% drawdown driven by tariff escalation, smart glasses competition fears, and FY2025 margin disappointment."
+}

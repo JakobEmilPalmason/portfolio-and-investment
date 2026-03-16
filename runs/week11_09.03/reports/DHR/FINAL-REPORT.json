@@ -1,0 +1,51 @@
+{
+  "ticker": "DHR",
+  "company": "Danaher Corporation",
+  "analysis_date": "2026-03-16",
+  "verdict": "Watch",
+  "average_score": 6.9,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 6,
+    "balance_sheet": 7,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "80%+ recurring revenue from razor/blade consumables model across life sciences and diagnostics",
+    "34 consecutive years of FCF-to-net-income conversion above 100%, with $5.3B FCF at 21.4% margin",
+    "Danaher Business System (DBS) is a proven, difficult-to-replicate operating model refined over 40 years",
+    "Founding Rales family retains 13% ownership ($17B+), providing exceptional owner-operator alignment",
+    "Regulatory-driven switching costs in bioprocessing (Cytiva) and installed-base lock-in in diagnostics create a wide, durable moat"
+  ],
+  "key_risks": [
+    "ROIC at 5.8% is below the ~9% cost of capital, meaning value creation is currently negative on an economic profit basis",
+    "$9.9B Masimo acquisition adds leverage and integration risk in patient monitoring, outside Danaher's core competency",
+    "Bioprocessing recovery may disappoint — revenue has not recovered to 2022 levels three years later",
+    "Pro forma net debt could reach $20-23B post-Masimo, pushing leverage to 2.5-3.0x Net Debt/EBITDA",
+    "Adjusted EPS ($7.80) vs. GAAP EPS ($5.04) gap of 55% warrants ongoing scrutiny on earnings quality"
+  ],
+  "red_flags": [
+    "ROIC of 5.8% is well below estimated WACC of 9-10%",
+    "Forward EPS consensus ($9.11) exceeds management's own adjusted EPS guide ($8.35-$8.50)",
+    "Masimo had a turbulent pre-acquisition period including proxy fight and consumer electronics distraction",
+    "Serial acquisitions continuously reset goodwill base higher, keeping reported ROIC structurally depressed"
+  ],
+  "buy_triggers": [
+    "Stock declines to $140-$160 range, creating genuine margin of safety against bear-case intrinsic value",
+    "Two consecutive quarters of high-single-digit bioprocessing order growth confirming recovery thesis",
+    "Masimo closes cleanly with early DBS margin improvement within 2 quarters"
+  ],
+  "sell_triggers": [
+    "ROIC fails to recover above 8% within 3 years despite Masimo synergies",
+    "Another mega-acquisition (>$5B) announced before Masimo integration is proven",
+    "Debt/EBITDA exceeds 4.5x for 2 consecutive quarters"
+  ],
+  "valuation_summary": "At $187 (18.8x EV/EBITDA vs. 22x historical median, 20.6x forward P/E), Danaher is roughly fairly valued on base-case assumptions with base-case discounted value of ~$171 and bear-case discounted value of ~$116. The stock needs to fall 15-25% to $140-$160 for genuine Buffett-style margin of safety.",
+  "source_summary": "Danaher Q4 2025 earnings release (Jan 28, 2026), Danaher 10-K, Yahoo Finance, MacroTrends, StockAnalysis.com, TIKR.com, GuruFocus, Quartr, Simply Wall St, Seeking Alpha, Masimo acquisition press release (Feb 17, 2026), In Practise (Cytiva moat analysis)",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Key monitoring items: bioprocessing order recovery trajectory, Masimo acquisition close and early integration, ROIC recovery path, China VBP impact."
+}

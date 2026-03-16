@@ -1,0 +1,53 @@
+{
+  "ticker": "ADBE",
+  "company": "Adobe Inc",
+  "analysis_date": "2026-03-15",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 6,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 7,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "$25.2B ARR with 96%+ subscription mix and high switching costs embedded in professional workflows",
+    "41% FCF margin and ~33% ROIC — top-tier capital efficiency in global software",
+    "89% gross margins stable across five consecutive years, demonstrating durable pricing power",
+    "Near-net-cash balance sheet with 33x interest coverage; effectively impregnable",
+    "AI-first ARR tripling YoY validates Firefly as a credible new monetization driver",
+    "Trading at less than half 5-year median multiples (15x forward P/E vs. 33x historical)"
+  ],
+  "key_risks": [
+    "Canva's 260M MAUs and AI-native tools structurally eroding the lower end of the creative market",
+    "CEO departure with no named successor — leadership vacuum at critical AI strategy pivot",
+    "Thin price margin of safety: bear-case DCF of ~$160–$180 is only 28–36% below current ~$249",
+    "Firefly monetization opacity — AI-first ARR absolute dollar scale not yet publicly disclosed",
+    "Segment consolidation in FY2026 reduces analyst visibility into Digital Media vs. Experience Cloud performance"
+  ],
+  "red_flags": [
+    "CEO Narayen departure announced same day as Q1 FY2026 earnings with no successor named",
+    "Goldman Sachs Sell rating at $290 — sophisticated institutional money still sees downside from here",
+    "SBC at 8.2% of revenue elevated for a mature software company",
+    "Failed $20B Figma acquisition attempt signals occasional M&A discipline lapses",
+    "Segment consolidation removes external performance visibility at the worst possible time"
+  ],
+  "buy_triggers": [
+    "High-credibility CEO successor named with clear AI strategy mandate, removing leadership discount",
+    "AI-first ARR reaches disclosed scale of $2B+ or Creative Cloud ARR growth re-accelerates above 12%",
+    "Price declines to $200 or below, compressing bear-case downside to ~15–20%"
+  ],
+  "sell_triggers": [
+    "Creative Cloud ARR growth falls below 5% for two consecutive quarters with rising disclosed churn",
+    "CEO successor of low quality or poor strategic fit, or key product/AI leadership departs post-transition",
+    "Price reaches $450+ without fundamental AI metric improvement — take partial profits and reassess"
+  ],
+  "valuation_summary": "At ~$249 ADBE trades at 15x forward earnings and 11x P/FCF — less than half its 5-year median multiple — with third-party DCF models converging on intrinsic value of $313–$434 (base case ~$390); the market is pricing near-stagnation, which requires zero benefit from 10.9% ARR growth, and meaningful margin of safety exists only if AI disruption remains manageable.",
+  "source_summary": "Analysis draws on Adobe Q1 FY2026 earnings release (March 12, 2026), FY2025 annual financials, SEC 10-Q filings, third-party DCF models (GuruFocus, Alpha Spread, valueinvesting.io), analyst consensus data, and web search results through March 15, 2026; all figures are current as of report date.",
+  "confidence": "medium",
+  "change_notes": ""
+}

@@ -1,0 +1,52 @@
+{
+  "ticker": "CTAS",
+  "company": "Cintas Corporation",
+  "analysis_date": "2026-03-16",
+  "verdict": "Pass",
+  "average_score": 6.75,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 3,
+    "margin_of_safety": 3,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "Wide moat: switching costs + route-density scale advantage with ROIC expanding to 27.2% over four consecutive years",
+    "Founder-family 21% insider ownership (Scott Farmer ~$13B stake) — exceptional alignment with long-term shareholders",
+    "Near-100% FCF conversion, $1.75B annual FCF on 4% CapEx/revenue — true compounder economics with no earnings quality gap",
+    "Recurring B2B contract revenue serving 1M+ accounts with structural churn barriers and non-discretionary demand",
+    "Fortress pre-acquisition balance sheet: 0.8x net leverage, 23.4x interest coverage, A-/A3 investment grade ratings"
+  ],
+  "key_risks": [
+    "Valuation multiple contraction — trading at 10-year peak (42x trailing P/E, 28x EV/EBITDA), mean reversion alone produces 25-35% downside over 5 years",
+    "UniFirst antitrust block or forced divestitures — combined ~45-50% U.S. market share triggers FTC/DOJ scrutiny; medium-high likelihood of second request",
+    "UniFirst integration execution failure — largest acquisition in company history, 14,000+ employees, overlapping ERP systems, $5.5B capital committed",
+    "U.S. labor market cycle — revenue correlates directly to employment levels; FY2009 showed ~4% revenue decline from this mechanism",
+    "No price margin of safety at $194 — bear case $85, base case $113; 40-56% realistic downside vs 0-10% realistic upside"
+  ],
+  "red_flags": [
+    "All three DCF scenarios (bear $85, base $113, bull $160) produce intrinsic values below current $194 price — requires beyond-bull-case execution to justify entry",
+    "Asymmetric risk-reward: -40-56% realistic downside, +0-10% realistic upside at current entry price",
+    "UniFirst acquisition $5.5B — antitrust risk unpriced, integration distraction during a peak-multiple period is a dangerous combination",
+    "Owner earnings yield of 2.4% — thinner than investment-grade bonds with materially more execution risk",
+    "Margin of safety score 3/10 triggers Pass verdict under scoring rules regardless of business quality scores"
+  ],
+  "buy_triggers": [
+    "Stock declines to $105-$130 (35-45% below current), approaching base-case intrinsic value with a genuine margin of safety",
+    "FTC second request announcement or antitrust news triggers 20%+ selloff while business fundamentals remain intact — the business without UniFirst is still excellent",
+    "Broad market correction (S&P 500 down 25%+) drags CTAS below $130 regardless of company-specific news"
+  ],
+  "sell_triggers": [
+    "Operating margins compress below 20% for two consecutive years — signals structural deterioration in route-density economics or integration cost overrun",
+    "ROIC falls below 20% for two consecutive years — moat deterioration confirmed, moat premium in valuation no longer justified",
+    "UniFirst integration produces multi-year synergy write-downs or FTC divestitures eliminating more than 50% of targeted $375M synergies"
+  ],
+  "valuation_summary": "At $194 (42x trailing P/E, 28x EV/EBITDA — near or above 10-year historical peaks on both metrics), bear-case intrinsic value is ~$85 and base-case is ~$113; even the bull case of ~$160 is 18% below current price. Justifying $194 requires 11-12% annual owner earnings growth for 10 years at a 30x terminal multiple — a near-perfection scenario that assumes smooth UniFirst integration, no antitrust setbacks, and no multiple contraction from current decade-high levels.",
+  "source_summary": "Analysis based on pre-fetched Yahoo Finance financials (FY2022-FY2025), Cintas Q2 FY2026 earnings release (December 2025), S&P (A-/BBB+) and Moody's (A3) credit rating confirmations, UniFirst acquisition press release (March 11, 2026), MacroTrends 10-year P/E history, and GuruFocus EV/EBITDA history — data current as of 2026-03-16.",
+  "confidence": "high",
+  "change_notes": "Verdict revised to Pass (from prior Watch) per scoring rules: margin of safety score of 3/10 is below the 4/10 threshold required for Watch or better, and two scores (valuation 3/10, margin of safety 3/10) are below 4/10, both of which independently trigger Pass under the verdict logic."
+}

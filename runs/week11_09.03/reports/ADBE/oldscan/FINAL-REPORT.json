@@ -1,0 +1,54 @@
+{
+  "ticker": "ADBE",
+  "company": "Adobe Inc",
+  "analysis_date": "2026-03-13",
+  "verdict": "Own",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 6,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 8,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "96%+ recurring subscription revenue with $26.06B ARR growing 10%+ and minimal customer concentration",
+    "40%+ ROIC, 89% gross margins, $9.85B free cash flow on just $172M capex — one of the most capital-efficient businesses in technology",
+    "Proprietary file formats (PSD, PDF, AI, INDD) and workflow lock-in embedded across 98% of Fortune 500 companies create durable structural switching costs",
+    "Near-fortress balance sheet: net debt ~0.1x EBITDA, all fixed-rate debt, 33x interest coverage, S&P A+/Moody's A2 ratings",
+    "Stock trades at ~11.8x trailing FCF — roughly one-third of historical average multiples — pricing near-zero growth into a business growing at 12%"
+  ],
+  "key_risks": [
+    "CEO Shantanu Narayen departure announced March 12, 2026 with no named successor — material succession risk at a critical AI inflection point",
+    "AI commoditization of creative tools: Canva (260M MAUs, now with free Affinity suite) and Figma AI are eroding the prosumer segment and threatening the professional pipeline",
+    "Thin price margin of safety: bear-case intrinsic value ~$226 is only 9% below the current ~$247 price — this is a thesis-dependent investment, not a conservative cushion play",
+    "Creative Cloud ARR growth has decelerated from mid-teens to ~11.5% over three years; continued drift toward single digits would likely compress the multiple further",
+    "Stock-based compensation of $1.94B (~8.2% of revenue) annually is a significant real economic cost that inflates headline FCF conversion ratios"
+  ],
+  "red_flags": [
+    "CEO Narayen departing with no named successor — strategic continuity uncertain at the most competitive juncture in Adobe's history",
+    "Stock down ~64% from November 2021 all-time high ($699); down ~30% over trailing 12 months despite consecutive earnings beats",
+    "Stock/image licensing business in accelerating structural decline — direct AI disruption casualty and preview of what broader commoditization could look like",
+    "Adobe conceded UI/UX design entirely to Figma after shelving XD in 2023 — meaningful competitive ground lost",
+    "Canva's acquisition of Affinity (now free) eliminates the price barrier for the first time — qualitatively different from a merely cheaper competitor",
+    "Buybacks in FY2024-2025 executed at 25-40x forward earnings — timing discipline has been poor",
+    "Segment reporting consolidation in FY2026 reduces investor transparency into Digital Media vs. Experience Cloud performance"
+  ],
+  "buy_triggers": [
+    "CEO succession names an internal candidate with AI expertise (e.g., David Wadhwani), confirming strategic continuity and removing the largest near-term overhang",
+    "Q2 FY2026 results show ARR growth reaccelerating above 12% with AI-first ARR exceeding $300M annualized — confirming Firefly monetization is offsetting stock segment headwinds",
+    "Stock declines further to $190-220 range, moving the price below even the bear-case intrinsic value and providing genuine price margin of safety"
+  ],
+  "sell_triggers": [
+    "Creative Cloud ARR growth falls below 5% for two consecutive quarters — signals AI disruption has reached the professional tier, not just prosumer and stock image",
+    "Incoming CEO is an external hire with no enterprise software or AI background who explicitly de-prioritizes Firefly integration — strategic continuity broken",
+    "Non-GAAP operating margins fall below 40% on a sustained basis — indicates severe competitive pricing pressure or failure to monetize AI investments"
+  ],
+  "valuation_summary": "At ~$247/share (~11.8x trailing FCF), Adobe trades at roughly one-third of its 5-year average EV/EBITDA and at multiples consistent with a no-growth utility — despite record Q1 FY2026 revenue of $6.40B (+12% YoY) and $26.06B in ARR. Base-case DCF intrinsic value is approximately $440-460/share (~84% upside); bear case is ~$226/share (only 9% below current price); bull case is ~$720-740/share.",
+  "source_summary": "Analysis based on web searches conducted 2026-03-13 covering Adobe Q1 FY2026 earnings (reported March 12, 2026), FY2025 10-K, proxy statement, MacroTrends, GuruFocus, StockAnalysis.com, MarketBeat, PortfoliosLab, S&P and Moody's credit ratings, and competitive landscape reporting; no user-provided context files were available.",
+  "confidence": "medium",
+  "change_notes": ""
+}

@@ -14,9 +14,9 @@ The umbrella prompts (01–09) and `assembler.md` define how deep-dive analysis 
 
 ## Inputs
 
-1. **B1 survivors** — read `triage/YYYY-MM-DD/b1-advance.json`. This file has been enriched with candidates context and includes: `already_analyzed` (boolean), `source_bucket`, `thesis_tag`, `style_tag`, `short_reason`, `possible_disqualifier`, `priority`, `triage_rec`, `confidence`. Use `already_analyzed` to drive the refresh / monitor / discard logic for previously analyzed names.
-2. **Prior reports** — for each candidate where `already_analyzed=true`, read `reports/{TICKER}/FINAL-REPORT.md` before assigning refresh vs. monitor vs. discard
-3. **Scan context** — read `scans/YYYY-MM-DD/scan-meta.json` for background on how the candidates were assembled
+1. **B1 survivors** — read `runs/{CURRENT_WEEK}/triage/b1-advance.json`. This file has been enriched with candidates context and includes: `already_analyzed` (boolean), `source_bucket`, `thesis_tag`, `style_tag`, `short_reason`, `possible_disqualifier`, `priority`, `triage_rec`, `confidence`. Use `already_analyzed` to drive the refresh / monitor / discard logic for previously analyzed names.
+2. **Prior reports** — for each candidate where `already_analyzed=true`, search `runs/*/reports/{TICKER}/FINAL-REPORT.md` and read the most recent one before assigning refresh vs. monitor vs. discard
+3. **Scan context** — read `runs/{CURRENT_WEEK}/scan/scan-meta.json` for background on how the candidates were assembled
 
 ---
 
@@ -121,12 +121,12 @@ One record per candidate. All 13 fields required; `disqualifier` may be null.
 
 ## Output Files
 
-Replace `YYYY-MM-DD` with the scan date:
+Write to the current week's triage directory:
 
 ```
-triage/YYYY-MM-DD/triage.json      source of truth — one record per B2 candidate
-triage/YYYY-MM-DD/triage.md        human-readable report + shortlists
-triage/YYYY-MM-DD/deep-dive.csv    deep dive shortlist export (optional)
+runs/{CURRENT_WEEK}/triage/triage.json      source of truth — one record per B2 candidate
+runs/{CURRENT_WEEK}/triage/triage.md        human-readable report + shortlists
+runs/{CURRENT_WEEK}/triage/deep-dive.csv    deep dive shortlist export (optional)
 ```
 
 ---

@@ -14,11 +14,11 @@ The umbrella prompts (01–09) and `assembler.md` define how deep-dive analysis 
 
 ## Input
 
-Read the most recent A1 universe file:
-- `scans/YYYY-MM-DD/universe.json`
-- `scans/YYYY-MM-DD/universe-meta.json`
+Read the current week's A1 universe file:
+- `runs/{CURRENT_WEEK}/scan/universe.json`
+- `runs/{CURRENT_WEEK}/scan/universe-meta.json`
 
-Replace `YYYY-MM-DD` with the date provided (or find the most recent `scans/` subdirectory that contains `universe.json`).
+`{CURRENT_WEEK}` is provided in the invocation (e.g. `week12_16.03`). Find the most recent `runs/week*/scan/` directory that contains `universe.json` if not specified.
 
 ---
 
@@ -188,17 +188,13 @@ Sort order: priority=high first, then medium, then low; within same priority: tr
 
 ## Output Paths
 
-Replace `YYYY-MM-DD` with today's date:
-- `scans/YYYY-MM-DD/candidates.json`
-- `scans/YYYY-MM-DD/candidates.csv`
-- `scans/YYYY-MM-DD/candidates.md`
-- `scans/YYYY-MM-DD/scan-meta.json`
+Write to the current week's scan directory:
+- `runs/{CURRENT_WEEK}/scan/candidates.json`
+- `runs/{CURRENT_WEEK}/scan/candidates.csv`
+- `runs/{CURRENT_WEEK}/scan/candidates.md`
+- `runs/{CURRENT_WEEK}/scan/scan-meta.json`
 
 Create the directory if it does not exist.
-
-## Archive Convention
-
-Old scan outputs live in `scans/archive/YYYY-MM-DD/`. The active/latest run is always at `scans/YYYY-MM-DD/`.
 
 ---
 

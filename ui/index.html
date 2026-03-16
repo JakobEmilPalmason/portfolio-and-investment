@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Pipeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    /* Badges */
+    .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; font-weight:600; line-height:1.6; white-space:nowrap; }
+    .b-deep-research { background:#172554; color:#93c5fd; }
+    .b-monitor-only  { background:#14532d; color:#86efac; }
+    .b-watchlist     { background:#431407; color:#fcd34d; }
+    .b-inbox         { background:#1e293b; color:#94a3b8; border:1px solid #475569; }
+    .b-rejected      { background:#450a0a; color:#fca5a5; }
+    .b-approved      { background:#3b0764; color:#d8b4fe; }
+    .b-owned         { background:#052e16; color:#6ee7b7; }
+    .b-triage        { background:#172554; color:#93c5fd; }
+    .b-own           { background:#14532d; color:#86efac; }
+    .b-watch         { background:#431407; color:#fcd34d; }
+    .b-pass          { background:#450a0a; color:#fca5a5; }
+    .b-high          { background:#450a0a; color:#fca5a5; }
+    .b-medium        { background:#431407; color:#fcd34d; }
+    .b-low           { background:#1e293b; color:#94a3b8; border:1px solid #475569; }
+    .b-deep-dive     { background:#172554; color:#93c5fd; }
+    .b-refresh       { background:#3b0764; color:#d8b4fe; }
+    .b-monitor       { background:#14532d; color:#86efac; }
+    .b-discard       { background:#450a0a; color:#fca5a5; }
+    /* Cards */
+    .card { background:#1e293b; border:1px solid #334155; border-radius:8px; }
+    /* Tabs */
+    .tab-btn { padding:10px 16px; font-size:13px; font-weight:500; color:#94a3b8; border-bottom:2px solid transparent; cursor:pointer; transition:all 0.15s; white-space:nowrap; background:transparent; border-top:none; border-left:none; border-right:none; }
+    .tab-btn:hover { color:#e2e8f0; }
+    .tab-btn.active { color:#f8fafc; border-bottom-color:#3b82f6; }
+    /* Scrollbar */
+    ::-webkit-scrollbar { width:6px; height:6px; }
+    ::-webkit-scrollbar-track { background:#0f172a; }
+    ::-webkit-scrollbar-thumb { background:#334155; border-radius:3px; }
+    ::-webkit-scrollbar-thumb:hover { background:#475569; }
+    /* Markdown */
+    .md-content h1 { font-size:1.4rem; font-weight:700; margin:1.2rem 0 0.4rem; color:#f1f5f9; border-bottom:1px solid #334155; padding-bottom:0.4rem; }
+    .md-content h2 { font-size:1.15rem; font-weight:600; margin:1rem 0 0.3rem; color:#e2e8f0; }
+    .md-content h3 { font-size:1rem; font-weight:600; margin:0.75rem 0 0.25rem; color:#cbd5e1; }
+    .md-content p  { margin:0.5rem 0; color:#cbd5e1; line-height:1.65; }
+    .md-content ul { list-style:disc; padding-left:1.5rem; margin:0.5rem 0; }
+    .md-content ol { list-style:decimal; padding-left:1.5rem; margin:0.5rem 0; }
+    .md-content li { margin:0.25rem 0; color:#cbd5e1; line-height:1.5; }
+    .md-content table { width:100%; border-collapse:collapse; margin:0.75rem 0; font-size:0.85rem; }
+    .md-content th { background:#0f172a; padding:0.4rem 0.65rem; text-align:left; font-size:0.7rem; font-weight:700; text-transform:uppercase; color:#94a3b8; border:1px solid #334155; }
+    .md-content td { padding:0.4rem 0.65rem; border:1px solid #334155; color:#cbd5e1; }
+    .md-content tr:nth-child(even) td { background:#0a1020; }
+    .md-content code { background:#0f172a; padding:0.1rem 0.3rem; border-radius:3px; font-family:monospace; font-size:0.85em; color:#93c5fd; }
+    .md-content pre  { background:#0f172a; padding:1rem; border-radius:6px; overflow-x:auto; margin:0.75rem 0; }
+    .md-content pre code { background:none; padding:0; }
+    .md-content strong { color:#f1f5f9; font-weight:600; }
+    .md-content blockquote { border-left:3px solid #3b82f6; padding-left:1rem; margin:0.5rem 0; color:#94a3b8; }
+    .md-content hr { border:none; border-top:1px solid #334155; margin:1rem 0; }
+    .md-content a { color:#60a5fa; text-decoration:underline; }
+  </style>
+</head>
+<body class="bg-[#0f172a] text-slate-100 min-h-screen antialiased">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40" style="background:#1e293b; border-bottom:1px solid #334155;">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+          <span style="color:#3b82f6; font-size:1.25rem;">◈</span>
+          <h1 class="font-semibold tracking-tight" style="font-size:15px;">Investment Pipeline</h1>
+          <span id="header-counts" class="text-xs text-slate-500"></span>
+        </div>
+        <button id="refresh-btn" class="text-xs text-slate-400 hover:text-slate-200 transition-colors px-3 py-1.5 rounded" style="border:1px solid #334155;">
+          ↻ Refresh
+        </button>
+      </div>
+      <nav class="flex gap-1 -mb-px overflow-x-auto">
+        <button class="tab-btn active" data-tab="overview">Overview</button>
+        <button class="tab-btn" data-tab="queue">Queue</button>
+        <button class="tab-btn" data-tab="reports">Reports</button>
+        <button class="tab-btn" data-tab="pipeline">Pipeline</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div id="tab-overview"></div>
+    <div id="tab-queue"    class="hidden"></div>
+    <div id="tab-reports"  class="hidden"></div>
+    <div id="tab-pipeline" class="hidden"></div>
+  </main>
+
+  <!-- REPORT MODAL -->
+  <div id="report-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.75);">
+    <div class="card w-full flex flex-col" style="max-width:1100px; max-height:92vh; border-color:#475569;">
+      <!-- Modal header -->
+      <div id="modal-header" class="flex items-center justify-between px-6 py-4 flex-shrink-0" style="border-bottom:1px solid #334155;">
+        <div class="flex items-center gap-3">
+          <span id="modal-ticker" class="font-mono font-bold text-xl" style="color:#60a5fa;"></span>
+          <span id="modal-company" class="text-slate-300"></span>
+          <span id="modal-verdict"></span>
+        </div>
+        <button onclick="closeModal()" class="text-slate-400 hover:text-white text-2xl leading-none" style="line-height:1;">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div id="modal-body" class="flex-1 overflow-y-auto p-6"></div>
+      <!-- Modal footer -->
+      <div id="modal-footer" class="px-6 py-4 flex-shrink-0" style="border-top:1px solid #334155;"></div>
+    </div>
+  </div>
+
+  <!-- MARKDOWN MODAL -->
+  <div id="md-modal" class="hidden fixed inset-0 z-60 flex items-center justify-center p-4" style="background:rgba(0,0,0,0.85); z-index:60;">
+    <div class="flex flex-col w-full" style="max-width:960px; max-height:94vh; background:#0f172a; border:1px solid #475569; border-radius:12px;">
+      <div class="flex items-center justify-between px-6 py-4 flex-shrink-0" style="border-bottom:1px solid #334155;">
+        <span id="md-modal-title" class="font-semibold text-slate-200"></span>
+        <button onclick="closeMdModal()" class="text-slate-400 hover:text-white text-2xl" style="line-height:1;">&times;</button>
+      </div>
+      <div id="md-modal-body" class="flex-1 overflow-y-auto p-6 md-content"></div>
+    </div>
+  </div>
+
+  <script>
+  // ─── STATE ───────────────────────────────────────────────────────────────────
+  const STATE = {
+    queue:      [],
+    reports:    [],
+    pipeline:   {},
+    activeTab:  'overview',
+    filters:    { search: '', states: [], verdict: '', sort: 'last_analysis_date', dir: 'desc' },
+    reportSort: 'date',
+    radarChart: null,
+    queueInited: false,
+  }
+
+  // ─── UTILS ───────────────────────────────────────────────────────────────────
+  function esc(s) {
+    return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')
+  }
+  function scoreColor(s) {
+    if (s == null) return '#64748b'
+    if (s >= 8)   return '#22c55e'
+    if (s >= 6)   return '#f59e0b'
+    return '#ef4444'
+  }
+  function fmtDate(d) { return d ? d.replace(/-/g, '/') : '—' }
+
+  function scoreDots(score, size=8) {
+    if (score == null) return '<span style="color:#475569;font-size:11px">—</span>'
+    const c = scoreColor(score)
+    return Array.from({length:10},(_,i) =>
+      `<span style="display:inline-block;width:${size}px;height:${size}px;border-radius:50%;margin-right:2px;background:${i<score?c:'#334155'}"></span>`
+    ).join('')
+  }
+
+  function verdictBadge(v) {
+    if (!v) return '<span style="color:#475569">—</span>'
+    const cls = v==='Own' ? 'b-own' : v==='Watch' ? 'b-watch' : v==='Pass' ? 'b-pass' : 'b-inbox'
+    return `<span class="badge ${cls}">${esc(v)}</span>`
+  }
+
+  function stateBadge(s) {
+    if (!s) return '<span style="color:#475569">—</span>'
+    const clsMap = {
+      deep_research:'b-deep-research', monitor_only:'b-monitor-only',
+      watchlist:'b-watchlist', inbox:'b-inbox', rejected:'b-rejected',
+      approved:'b-approved', owned:'b-owned', triage:'b-triage',
+    }
+    return `<span class="badge ${clsMap[s]||'b-inbox'}">${esc(s.replace(/_/g,' '))}</span>`
+  }
+
+  function priorityBadge(p) {
+    if (!p) return '—'
+    const cls = p==='high' ? 'b-high' : p==='medium' ? 'b-medium' : 'b-low'
+    return `<span class="badge ${cls}">${esc(p)}</span>`
+  }
+
+  function actionBadge(a) {
+    const clsMap = { deep_dive:'b-deep-dive', refresh:'b-refresh', monitor:'b-monitor', discard:'b-discard' }
+    return `<span class="badge ${clsMap[a]||'b-inbox'}">${esc(a||'—')}</span>`
+  }
+
+  function scoreRow(label, score) {
+    if (score == null) return ''
+    return `
+      <div class="flex items-center justify-between py-1" style="border-bottom:1px solid #1e293b;">
+        <span class="text-xs text-slate-400">${esc(label)}</span>
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-mono font-bold" style="color:${scoreColor(score)};min-width:1.5rem;text-align:right;">${score}</span>
+          <div>${scoreDots(score,6)}</div>
+        </div>
+      </div>`
+  }
+
+  function listSection(title, items, icon='•', color='#94a3b8') {
+    if (!items || items.length===0) return ''
+    return `
+      <div class="mb-4">
+        <h4 class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:${color};">${esc(title)}</h4>
+        <ul class="space-y-1">
+          ${items.map(item => `<li class="text-sm text-slate-300 flex gap-2"><span style="color:${color};flex-shrink:0;">${icon}</span><span>${esc(item)}</span></li>`).join('')}
+        </ul>
+      </div>`
+  }
+
+  // ─── TAB SWITCHING ───────────────────────────────────────────────────────────
+  function switchTab(name) {
+    document.querySelectorAll('[data-tab]').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === name)
+    })
+    document.querySelectorAll('#tab-overview,#tab-queue,#tab-reports,#tab-pipeline').forEach(el => {
+      el.classList.add('hidden')
+    })
+    document.getElementById(`tab-${name}`).classList.remove('hidden')
+    STATE.activeTab = name
+    renderTab(name)
+  }
+
+  function renderTab(name) {
+    if (name === 'overview')  renderOverview()
+    if (name === 'queue')     renderQueue()
+    if (name === 'reports')   renderReports()
+    if (name === 'pipeline')  renderPipeline()
+  }
+
+  function filterByState(state) {
+    STATE.filters.states = [state]
+    STATE.filters.search  = ''
+    STATE.filters.verdict = ''
+    STATE.queueInited = false  // force re-init of filter controls
+    switchTab('queue')
+  }
+
+  // ─── TAB 1: OVERVIEW ─────────────────────────────────────────────────────────
+  function renderOverview() {
+    const container = document.getElementById('tab-overview')
+
+    const stateDefs = [
+      { key:'deep_research', label:'Deep Research', desc:'Awaiting full analysis',     color:'#60a5fa', bg:'#1d3461' },
+      { key:'monitor_only',  label:'Monitor Only',  desc:'Analysis complete',          color:'#4ade80', bg:'#14532d' },
+      { key:'watchlist',     label:'Watchlist',     desc:'Waiting on price/catalyst',  color:'#fbbf24', bg:'#431407' },
+      { key:'inbox',         label:'Inbox',         desc:'B1 hold, not yet triaged',   color:'#94a3b8', bg:'#1e293b' },
+      { key:'rejected',      label:'Rejected',      desc:'Eliminated from pipeline',   color:'#f87171', bg:'#450a0a' },
+    ]
+    const counts = {}
+    for (const q of STATE.queue) counts[q.current_state] = (counts[q.current_state]||0)+1
+
+    const statCards = stateDefs.map(d => `
+      <div onclick="filterByState('${d.key}')"
+           class="card flex-1 p-4 cursor-pointer transition-opacity hover:opacity-80"
+           style="min-width:120px; border-left:3px solid ${d.color};">
+        <div class="text-3xl font-bold mb-1" style="color:${d.color};">${counts[d.key]||0}</div>
+        <div class="text-xs font-semibold uppercase tracking-wider mb-0.5" style="color:${d.color};">${d.label}</div>
+        <div class="text-xs text-slate-500">${d.desc}</div>
+      </div>`).join('')
+
+    const totalCard = `
+      <div class="card flex-1 p-4" style="min-width:120px; border-left:3px solid #475569;">
+        <div class="text-3xl font-bold mb-1 text-slate-300">${STATE.queue.length}</div>
+        <div class="text-xs font-semibold uppercase tracking-wider mb-0.5 text-slate-400">Total</div>
+        <div class="text-xs text-slate-500">All tracked tickers</div>
+      </div>`
+
+    // Deep research queue
+    const deepResearch = STATE.queue
+      .filter(q => q.current_state === 'deep_research')
+      .sort((a,b) => ({high:0,medium:1,low:2}[a.priority]??1) - ({high:0,medium:1,low:2}[b.priority]??1))
+
+    const deepResearchBody = deepResearch.length === 0
+      ? '<p class="text-sm" style="color:#4ade80;">✓ No tickers pending analysis.</p>'
+      : `<table class="w-full text-sm">
+          <thead><tr class="text-xs text-slate-500 uppercase">
+            <th class="text-left py-1.5 pr-4">Ticker</th>
+            <th class="text-left py-1.5 pr-4">Company</th>
+            <th class="text-left py-1.5 pr-4">Priority</th>
+            <th class="text-left py-1.5">Next Action</th>
+          </tr></thead>
+          <tbody>
+          ${deepResearch.map(q => `
+            <tr style="border-top:1px solid #1e293b;">
+              <td class="py-2 pr-4 font-mono font-semibold" style="color:#60a5fa;">${esc(q.ticker)}</td>
+              <td class="py-2 pr-4 text-slate-300">${esc(q.company||'—')}</td>
+              <td class="py-2 pr-4">${priorityBadge(q.priority)}</td>
+              <td class="py-2 text-slate-400 text-xs">${esc(q.next_required_action||'—')}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>`
+
+    // Recently analyzed
+    const recent = [...STATE.reports]
+      .filter(r => r.analysis_date && r.has_json)
+      .sort((a,b) => (b.analysis_date||'').localeCompare(a.analysis_date||''))
+      .slice(0,6)
+
+    const recentCards = recent.map(r => `
+      <div onclick="openReportModal('${esc(r.ticker)}')"
+           class="card p-4 cursor-pointer hover:border-slate-500 transition-colors">
+        <div class="flex items-start justify-between mb-1.5">
+          <span class="font-mono font-bold text-sm" style="color:#60a5fa;">${esc(r.ticker)}</span>
+          ${verdictBadge(r.verdict)}
+        </div>
+        <div class="text-xs text-slate-400 mb-2 truncate">${esc(r.company||'')}</div>
+        <div class="flex items-center gap-2">
+          ${r.average_score!=null ? `<span class="text-lg font-bold font-mono" style="color:${scoreColor(r.average_score)};">${Number(r.average_score).toFixed(1)}</span>` : ''}
+          <span class="text-xs text-slate-500">${fmtDate(r.analysis_date)}</span>
+        </div>
+      </div>`).join('')
+
+    // Pipeline activity
+    const scan   = STATE.pipeline.scan
+    const triage = STATE.pipeline.triage
+    const pipelineBody = `
+      <div class="grid grid-cols-2 gap-4 text-sm">
+        <div>
+          <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Latest Scan</div>
+          ${scan
+            ? `<div class="text-slate-200 font-medium">${fmtDate(scan.scan_date)}</div>
+               <div class="text-xs text-slate-400">${scan.total_candidates||0} candidates</div>
+               <div class="text-xs text-slate-500 mt-1">${Object.keys(scan.counts_by_bucket||{}).length} buckets</div>`
+            : '<div class="text-slate-500 text-xs">Not yet run</div>'}
+        </div>
+        <div>
+          <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Latest Triage</div>
+          ${triage
+            ? `<div class="text-slate-200 font-medium">${fmtDate(triage.triage_date)}</div>
+               ${triage.b1 ? `<div class="text-xs text-slate-400">${triage.b1.advance||0} advance · ${triage.b1.hold||0} hold · ${triage.b1.reject||0} reject</div>` : ''}
+               ${triage.b2 ? `<div class="text-xs text-slate-500 mt-1">${triage.b2.deep_dive||0} deep dive · ${triage.b2.monitor||0} monitor</div>` : ''}`
+            : '<div class="text-slate-500 text-xs">Not yet run</div>'}
+        </div>
+      </div>`
+
+    container.innerHTML = `
+      <div class="space-y-6">
+        <div>
+          <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Queue Overview</h2>
+          <div class="flex flex-wrap gap-3">${statCards}${totalCard}</div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div>
+            <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Deep Research Queue</h2>
+            <div class="card p-4">${deepResearchBody}</div>
+          </div>
+          <div>
+            <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Pipeline Activity</h2>
+            <div class="card p-4">${pipelineBody}</div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Recently Analyzed</h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">${recentCards||'<p class="text-slate-500 text-sm col-span-6">No reports yet.</p>'}</div>
+        </div>
+      </div>`
+  }
+
+  // ─── TAB 2: QUEUE ────────────────────────────────────────────────────────────
+  function getFilteredQueue() {
+    let rows = [...STATE.queue]
+    const { search, states, verdict, sort, dir } = STATE.filters
+    if (search) {
+      const q = search.toLowerCase()
+      rows = rows.filter(r =>
+        (r.ticker||'').toLowerCase().includes(q) ||
+        (r.company||'').toLowerCase().includes(q)
+      )
+    }
+    if (states.length) rows = rows.filter(r => states.includes(r.current_state))
+    if (verdict)       rows = rows.filter(r => r.current_verdict === verdict)
+    rows.sort((a,b) => {
+      let av = a[sort] ?? '', bv = b[sort] ?? ''
+      if (sort === 'priority') {
+        const po = {high:0,medium:1,low:2}
+        av = po[av]??3; bv = po[bv]??3
+      }
+      if (av < bv) return dir==='asc' ? -1 : 1
+      if (av > bv) return dir==='asc' ? 1 : -1
+      return 0
+    })
+    return rows
+  }
+
+  function sortQueue(field) {
+    if (STATE.filters.sort === field) STATE.filters.dir = STATE.filters.dir==='asc' ? 'desc' : 'asc'
+    else { STATE.filters.sort = field; STATE.filters.dir = 'desc' }
+    updateQueueTable()
+  }
+
+  function updateQueueTable() {
+    const filtered  = getFilteredQueue()
+    const statsEl   = document.getElementById('q-stats')
+    const bodyEl    = document.getElementById('q-table-body')
+    const headersEl = document.getElementById('q-table-head')
+    if (!bodyEl) return
+
+    if (statsEl) statsEl.innerHTML = `Showing <strong class="text-slate-200">${filtered.length}</strong> of ${STATE.queue.length}`
+
+    function si(field) {
+      if (STATE.filters.sort !== field) return '<span style="color:#475569;font-size:10px;">⇅</span>'
+      return STATE.filters.dir==='asc'
+        ? '<span style="color:#60a5fa;font-size:10px;">↑</span>'
+        : '<span style="color:#60a5fa;font-size:10px;">↓</span>'
+    }
+
+    if (headersEl) headersEl.innerHTML = `
+      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('ticker')">Ticker ${si('ticker')}</th>
+      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('company')">Company ${si('company')}</th>
+      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('current_state')">State ${si('current_state')}</th>
+      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('priority')">Priority ${si('priority')}</th>
+      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('current_verdict')">Verdict ${si('current_verdict')}</th>
+      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('last_analysis_date')">Last Analysis ${si('last_analysis_date')}</th>
+      <th class="px-4 py-3 text-left cursor-pointer hover:text-slate-200" onclick="sortQueue('last_triage_date')">Last Triage ${si('last_triage_date')}</th>
+      <th class="px-4 py-3 text-left">Tags</th>`
+
+    if (filtered.length === 0) {
+      bodyEl.innerHTML = '<tr><td colspan="8" class="px-4 py-10 text-center text-slate-500">No results match your filters.</td></tr>'
+      return
+    }
+
+    bodyEl.innerHTML = filtered.map(q => {
+      const hasReport = STATE.reports.some(r => r.ticker === q.ticker)
+      const tags = (q.tags||[]).slice(0,3)
+      const moreTags = (q.tags||[]).length > 3 ? `<span style="color:#475569">+${(q.tags||[]).length-3}</span>` : ''
+      return `<tr class="border-b" style="border-color:#1e293b; ${hasReport?'cursor:pointer;':'opacity:0.65;'}"
+               ${hasReport?`onclick="openReportModal('${q.ticker.replace(/'/g,"\\'")}')"`:''}
+               onmouseover="this.style.background='#1e293b'" onmouseout="this.style.background=''">
+        <td class="px-4 py-2.5 font-mono font-semibold" style="color:#60a5fa;">${esc(q.ticker)}</td>
+        <td class="px-4 py-2.5 text-sm text-slate-300" style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(q.company||'—')}</td>
+        <td class="px-4 py-2.5">${stateBadge(q.current_state)}</td>
+        <td class="px-4 py-2.5">${priorityBadge(q.priority)}</td>
+        <td class="px-4 py-2.5">${verdictBadge(q.current_verdict)}</td>
+        <td class="px-4 py-2.5 text-xs text-slate-400">${fmtDate(q.last_analysis_date)}</td>
+        <td class="px-4 py-2.5 text-xs text-slate-400">${fmtDate(q.last_triage_date)}</td>
+        <td class="px-4 py-2.5 text-xs">
+          ${tags.map(t=>`<span style="background:#1e293b;border:1px solid #334155;border-radius:4px;padding:1px 6px;margin-right:3px;color:#94a3b8;">${esc(t)}</span>`).join('')}${moreTags}
+        </td>
+      </tr>`
+    }).join('')
+  }
+
+  function renderQueue() {
+    const container = document.getElementById('tab-queue')
+    if (!STATE.queueInited) {
+      STATE.queueInited = true
+      const selectOptions = ['deep_research','monitor_only','watchlist','inbox','rejected','approved','owned']
+        .map(s => `<option value="${s}">${s.replace(/_/g,' ')}</option>`).join('')
+      container.innerHTML = `
+        <div class="flex flex-wrap gap-3 mb-3 items-center">
+          <input id="q-search" type="text" placeholder="Search ticker or company…"
+            class="rounded px-3 py-1.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none"
+            style="background:#1e293b;border:1px solid #334155;width:220px;">
+          <select id="q-state" class="rounded px-3 py-1.5 text-sm text-slate-200 focus:outline-none"
+            style="background:#1e293b;border:1px solid #334155;">
+            <option value="">All States</option>${selectOptions}
+          </select>
+          <select id="q-verdict" class="rounded px-3 py-1.5 text-sm text-slate-200 focus:outline-none"
+            style="background:#1e293b;border:1px solid #334155;">
+            <option value="">All Verdicts</option>
+            <option value="Own">Own</option>
+            <option value="Watch">Watch</option>
+            <option value="Pass">Pass</option>
+          </select>
+          <span id="q-stats" class="text-sm text-slate-400 ml-auto"></span>
+        </div>
+        <div class="card overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead id="q-table-head" class="text-xs text-slate-500 uppercase tracking-wider" style="background:#0f172a;"></thead>
+              <tbody id="q-table-body"></tbody>
+            </table>
+          </div>
+        </div>`
+
+      document.getElementById('q-search').addEventListener('input', e => {
+        STATE.filters.search = e.target.value; updateQueueTable()
+      })
+      document.getElementById('q-state').addEventListener('change', e => {
+        STATE.filters.states = e.target.value ? [e.target.value] : []; updateQueueTable()
+      })
+      document.getElementById('q-verdict').addEventListener('change', e => {
+        STATE.filters.verdict = e.target.value; updateQueueTable()
+      })
+    }
+    // Sync filter controls to STATE (handles programmatic filter from stat cards)
+    const searchEl  = document.getElementById('q-search')
+    const stateEl   = document.getElementById('q-state')
+    const verdictEl = document.getElementById('q-verdict')
+    if (searchEl)  searchEl.value  = STATE.filters.search
+    if (stateEl)   stateEl.value   = STATE.filters.states[0]||''
+    if (verdictEl) verdictEl.value = STATE.filters.verdict||''
+    updateQueueTable()
+  }
+
+  // ─── TAB 3: REPORTS ──────────────────────────────────────────────────────────
+  function renderReports() {
+    const container = document.getElementById('tab-reports')
+    const sorts = [
+      { key:'date',    label:'Date' },
+      { key:'score',   label:'Score' },
+      { key:'ticker',  label:'Ticker' },
+      { key:'verdict', label:'Verdict' },
+    ]
+    const sortBtns = sorts.map(s => `
+      <button onclick="STATE.reportSort='${s.key}'; renderReports()"
+        class="px-3 py-1 text-xs rounded transition-colors"
+        style="${STATE.reportSort===s.key ? 'background:#3b82f6;color:#fff;' : 'background:#1e293b;color:#94a3b8;border:1px solid #334155;'}">
+        ${s.label}
+      </button>`).join('')
+
+    let sorted = [...STATE.reports]
+    if (STATE.reportSort === 'score')   sorted.sort((a,b) => (b.average_score||0) - (a.average_score||0))
+    if (STATE.reportSort === 'date')    sorted.sort((a,b) => (b.analysis_date||'').localeCompare(a.analysis_date||''))
+    if (STATE.reportSort === 'ticker')  sorted.sort((a,b) => (a.ticker||'').localeCompare(b.ticker||''))
+    if (STATE.reportSort === 'verdict') {
+      const vo = {Own:0,Watch:1,Pass:2}
+      sorted.sort((a,b) => (vo[a.verdict]??3) - (vo[b.verdict]??3))
+    }
+
+    const cards = sorted.map(r => {
+      const hasJson = r.has_json !== false
+      return `
+        <div onclick="openReportModal('${r.ticker.replace(/'/g,"\\'")}') "
+             class="card p-4 cursor-pointer hover:border-slate-500 transition-colors flex flex-col gap-2">
+          <div class="flex items-start justify-between">
+            <span class="font-mono font-bold" style="color:#60a5fa;">${esc(r.ticker)}</span>
+            ${hasJson ? verdictBadge(r.verdict) : '<span class="badge b-inbox" style="font-size:10px;">No JSON</span>'}
+          </div>
+          <div class="text-xs text-slate-400 truncate">${esc(r.company||'')}</div>
+          ${hasJson && r.average_score!=null ? `
+            <div class="flex items-center gap-2">
+              <span class="text-lg font-bold font-mono" style="color:${scoreColor(r.average_score)};">${Number(r.average_score).toFixed(1)}</span>
+              <div>${scoreDots(Math.round(r.average_score),7)}</div>
+            </div>` : ''}
+          <div class="flex items-center justify-between mt-auto pt-1" style="border-top:1px solid #334155;">
+            <span class="text-xs text-slate-500">${fmtDate(r.analysis_date)}</span>
+            ${r.confidence ? `<span class="text-xs text-slate-500">${esc(r.confidence)}</span>` : ''}
+          </div>
+        </div>`
+    }).join('')
+
+    container.innerHTML = `
+      <div class="flex items-center justify-between mb-4">
+        <div class="text-xs text-slate-500">${sorted.length} reports</div>
+        <div class="flex gap-2 items-center">
+          <span class="text-xs text-slate-500 mr-1">Sort:</span>
+          ${sortBtns}
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+        ${cards || '<p class="text-slate-500 text-sm col-span-5">No reports found.</p>'}
+      </div>`
+  }
+
+  // ─── TAB 4: PIPELINE ─────────────────────────────────────────────────────────
+  function renderPipeline() {
+    const container = document.getElementById('tab-pipeline')
+    const scan   = STATE.pipeline.scan
+    const triage = STATE.pipeline.triage
+    const nReports = STATE.reports.length
+
+    // Stage flow numbers
+    const stageA1 = scan ? (scan.total_candidates||'?') : '?'
+    const stageA2 = scan ? (scan.total_candidates||'?') : '?'
+    const stageB1 = triage?.b1?.advance ?? '?'
+    const stageB2 = (triage?.b2?.deep_dive||0) + (triage?.b2?.refresh||0)
+    const stageC  = nReports
+
+    function stageBox(label, sublabel, count, color='#3b82f6') {
+      return `
+        <div class="card text-center p-4" style="min-width:110px; border-top:2px solid ${color};">
+          <div class="text-xs font-bold uppercase tracking-wider mb-1" style="color:${color};">${label}</div>
+          <div class="text-2xl font-bold text-slate-200 mb-1">${count}</div>
+          <div class="text-xs text-slate-500">${sublabel}</div>
+        </div>`
+    }
+    const arrow = `<div class="flex items-center text-slate-600 text-xl px-1">→</div>`
+
+    const flowHtml = `
+      <div class="flex items-center flex-wrap gap-2">
+        ${stageBox('A1','Universe', stageA1,'#64748b')}
+        ${arrow}
+        ${stageBox('A2','Candidates', stageA2,'#64748b')}
+        ${arrow}
+        ${stageBox('B1','Advance', stageB1,'#f59e0b')}
+        ${arrow}
+        ${stageBox('B2','Deep Dive', stageB2,'#a78bfa')}
+        ${arrow}
+        ${stageBox('C','Reports', stageC,'#22c55e')}
+      </div>`
+
+    // Scan bucket mini chart
+    let bucketChartHtml = '<p class="text-slate-500 text-xs">No scan data.</p>'
+    if (scan?.counts_by_bucket) {
+      const buckets = Object.entries(scan.counts_by_bucket).sort((a,b)=>b[1]-a[1])
+      const maxB = Math.max(...buckets.map(b=>b[1]))
+      bucketChartHtml = buckets.map(([k,v]) => `
+        <div class="flex items-center gap-2 mb-1.5">
+          <div class="text-xs text-slate-400" style="width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(k)}</div>
+          <div class="flex-1 rounded-full" style="background:#334155;height:6px;">
+            <div class="rounded-full" style="background:#3b82f6;height:6px;width:${(v/maxB*100).toFixed(0)}%;"></div>
+          </div>
+          <div class="text-xs text-slate-300 text-right" style="width:24px;">${v}</div>
+        </div>`).join('')
+    }
+
+    // Sector breakdown
+    let sectorHtml = ''
+    if (scan?.counts_by_sector) {
+      sectorHtml = Object.entries(scan.counts_by_sector)
+        .sort((a,b)=>b[1]-a[1])
+        .map(([s,c]) => `<span class="badge b-inbox" style="margin:2px;">${esc(s)} ${c}</span>`)
+        .join('')
+    }
+
+    // B1 stats
+    let b1Html = '<p class="text-slate-500 text-xs">No B1 data.</p>'
+    if (triage?.b1) {
+      const { advance=0, hold=0, reject=0 } = triage.b1
+      b1Html = `
+        <div class="flex gap-4">
+          <div class="text-center">
+            <div class="text-2xl font-bold" style="color:#22c55e;">${advance}</div>
+            <div class="text-xs text-slate-500">Advance</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold" style="color:#f59e0b;">${hold}</div>
+            <div class="text-xs text-slate-500">Hold</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold" style="color:#ef4444;">${reject}</div>
+            <div class="text-xs text-slate-500">Reject</div>
+          </div>
+        </div>`
+    }
+
+    // Deep dive shortlist
+    let shortlistHtml = '<p class="text-slate-500 text-xs">No B2 data.</p>'
+    if (triage?.deep_dive_shortlist?.length) {
+      shortlistHtml = triage.deep_dive_shortlist.map((e,i) => `
+        <div class="flex gap-3 py-2" style="border-bottom:1px solid #1e293b;">
+          <span class="text-slate-600 text-sm w-5 flex-shrink-0">${i+1}.</span>
+          <span class="font-mono font-semibold text-sm" style="color:#60a5fa;min-width:80px;">${esc(e.ticker)}</span>
+          <span class="text-sm text-slate-300 flex-shrink-0">${esc(e.company||'')}</span>
+          ${actionBadge(e.next_action)}
+          <span class="text-xs text-slate-500 ml-auto truncate" title="${esc(e.reason)}" style="max-width:300px;">${esc(e.reason)}</span>
+        </div>`).join('')
+    }
+
+    // B2 counts
+    let b2Html = '<p class="text-slate-500 text-xs">No B2 data.</p>'
+    if (triage?.b2) {
+      const { deep_dive=0, refresh=0, monitor=0, discard=0 } = triage.b2
+      b2Html = `
+        <div class="flex gap-4 flex-wrap">
+          <div class="text-center"><div class="text-xl font-bold" style="color:#60a5fa;">${deep_dive}</div><div class="text-xs text-slate-500">Deep Dive</div></div>
+          <div class="text-center"><div class="text-xl font-bold" style="color:#a78bfa;">${refresh}</div><div class="text-xs text-slate-500">Refresh</div></div>
+          <div class="text-center"><div class="text-xl font-bold" style="color:#4ade80;">${monitor}</div><div class="text-xs text-slate-500">Monitor</div></div>
+          <div class="text-center"><div class="text-xl font-bold" style="color:#f87171;">${discard}</div><div class="text-xs text-slate-500">Discard</div></div>
+        </div>`
+    }
+
+    container.innerHTML = `
+      <div class="space-y-6">
+        <div>
+          <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Pipeline Flow</h2>
+          ${flowHtml}
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div>
+            <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">
+              Latest Scan ${scan ? `<span class="normal-case font-normal text-slate-600">&mdash; ${scan.scan_date}</span>` : ''}
+            </h2>
+            <div class="card p-4 space-y-4">
+              <div>
+                <div class="text-xs text-slate-500 mb-2">Buckets</div>
+                ${bucketChartHtml}
+              </div>
+              ${sectorHtml ? `<div><div class="text-xs text-slate-500 mb-2">Sectors</div><div>${sectorHtml}</div></div>` : ''}
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div>
+              <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">
+                B1 Fast Triage ${triage ? `<span class="normal-case font-normal text-slate-600">&mdash; ${triage.triage_date}</span>` : ''}
+              </h2>
+              <div class="card p-4">${b1Html}</div>
+            </div>
+            <div>
+              <h2 class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">B2 Focused Triage</h2>
+              <div class="card p-4 space-y-3">
+                ${b2Html}
+                ${triage?.deep_dive_shortlist?.length ? `<div class="pt-2" style="border-top:1px solid #334155;">${shortlistHtml}</div>` : ''}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`
+  }
+
+  // ─── REPORT MODAL ────────────────────────────────────────────────────────────
+  async function openReportModal(ticker) {
+    const modal = document.getElementById('report-modal')
+    document.getElementById('modal-ticker').textContent  = ticker
+    document.getElementById('modal-company').textContent = ''
+    document.getElementById('modal-verdict').innerHTML   = ''
+    document.getElementById('modal-body').innerHTML      = '<div class="flex items-center justify-center h-48 text-slate-500">Loading…</div>'
+    document.getElementById('modal-footer').innerHTML    = ''
+    modal.classList.remove('hidden')
+    document.body.style.overflow = 'hidden'
+
+    try {
+      const res  = await fetch(`/api/report/${encodeURIComponent(ticker)}`)
+      const data = await res.json()
+      if (data.error) {
+        document.getElementById('modal-body').innerHTML = `<p class="text-red-400">${esc(data.error)}</p>`
+        return
+      }
+      renderModalContent(ticker, data.json, data.markdown)
+    } catch(e) {
+      document.getElementById('modal-body').innerHTML = '<p class="text-red-400">Failed to load report.</p>'
+    }
+  }
+
+  function renderModalContent(ticker, rj, markdown) {
+    const cached = STATE.reports.find(r => r.ticker === ticker)
+    const company = rj?.company || cached?.company || ticker
+    document.getElementById('modal-company').textContent = company
+    document.getElementById('modal-verdict').innerHTML   = verdictBadge(rj?.verdict)
+
+    // Build body
+    let bodyHtml = ''
+    if (rj?.umbrella_scores) {
+      const s = rj.umbrella_scores
+      const scoreTableHtml = `
+        <div class="space-y-0">
+          ${scoreRow('Circle of Competence',   s.circle_of_competence)}
+          ${scoreRow('Competitive Advantage',  s.competitive_advantage)}
+          ${scoreRow('Management',             s.management)}
+          ${scoreRow('Business Economics',     s.business_economics)}
+          ${scoreRow('Balance Sheet Safety',   s.balance_sheet)}
+          ${scoreRow('Valuation',              s.valuation)}
+          ${scoreRow('Margin of Safety',       s.margin_of_safety)}
+          ${scoreRow('Temperament',            s.temperament)}
+        </div>
+        <div class="flex items-center justify-between mt-3 pt-3" style="border-top:1px solid #334155;">
+          <span class="text-xs text-slate-500">Average Score</span>
+          <span class="text-lg font-bold font-mono" style="color:${scoreColor(rj.average_score)};">${rj.average_score!=null ? Number(rj.average_score).toFixed(1) : '—'}</span>
+        </div>
+        ${rj.confidence ? `<div class="text-xs text-slate-500 mt-1">Confidence: ${esc(rj.confidence)}</div>` : ''}
+        ${rj.analysis_date ? `<div class="text-xs text-slate-500">Date: ${fmtDate(rj.analysis_date)}</div>` : ''}`
+
+      bodyHtml = `
+        <div class="grid gap-6" style="grid-template-columns:2fr 3fr;">
+          <!-- Left: chart + scores -->
+          <div>
+            <canvas id="radar-canvas" style="max-width:100%;max-height:260px;"></canvas>
+            <div class="mt-4">${scoreTableHtml}</div>
+          </div>
+          <!-- Right: strengths/risks/triggers -->
+          <div class="overflow-y-auto" style="max-height:440px;">
+            ${listSection('Key Strengths', rj.key_strengths, '✓', '#4ade80')}
+            ${listSection('Key Risks',     rj.key_risks,     '!', '#fbbf24')}
+            ${listSection('Red Flags',     rj.red_flags,     '⚑', '#f87171')}
+            ${listSection('Buy Triggers',  rj.buy_triggers,  '▲', '#60a5fa')}
+            ${listSection('Sell Triggers', rj.sell_triggers, '▼', '#f87171')}
+          </div>
+        </div>`
+    } else if (markdown) {
+      bodyHtml = '<div class="text-slate-400 text-sm">No structured JSON — use Full Report below.</div>'
+    }
+
+    document.getElementById('modal-body').innerHTML = bodyHtml
+
+    // Render radar chart
+    if (rj?.umbrella_scores) {
+      if (STATE.radarChart) { STATE.radarChart.destroy(); STATE.radarChart = null }
+      const canvas = document.getElementById('radar-canvas')
+      if (canvas) {
+        const s = rj.umbrella_scores
+        const vals = [s.circle_of_competence, s.competitive_advantage, s.management,
+                      s.business_economics, s.balance_sheet, s.valuation,
+                      s.margin_of_safety, s.temperament].map(v => v||0)
+        STATE.radarChart = new Chart(canvas, {
+          type: 'radar',
+          data: {
+            labels: ['Circle of\nComp.','Competitive\nAdv.','Management','Business\nEcon.',
+                     'Balance\nSheet','Valuation','Margin of\nSafety','Temperament'],
+            datasets: [{
+              data: vals,
+              backgroundColor: 'rgba(59,130,246,0.1)',
+              borderColor: 'rgba(59,130,246,0.65)',
+              borderWidth: 2,
+              pointBackgroundColor: vals.map(v=>scoreColor(v)),
+              pointBorderColor: '#1e293b',
+              pointRadius: 4,
+            }]
+          },
+          options: {
+            animation: { duration:350 },
+            scales: { r: {
+              min:0, max:10,
+              ticks: { stepSize:2, color:'#475569', backdropColor:'transparent', font:{size:9} },
+              grid: { color:'#1e293b' },
+              angleLines: { color:'#334155' },
+              pointLabels: { color:'#94a3b8', font:{size:9} }
+            }},
+            plugins: { legend:{display:false}, tooltip:{callbacks:{label:ctx=>` ${ctx.raw}/10`}} }
+          }
+        })
+      }
+    }
+
+    // Footer: valuation summary + full report button
+    let footerHtml = ''
+    if (rj?.valuation_summary) {
+      footerHtml += `<p class="text-xs text-slate-400 mb-3 italic leading-relaxed">${esc(rj.valuation_summary)}</p>`
+    }
+    if (markdown) {
+      footerHtml += `<button onclick="openMdModal('${esc(ticker)}', ${JSON.stringify(markdown).replace(/\\/g,'\\\\').replace(/'/g,"\\'")})"
+        class="px-4 py-2 rounded text-sm font-medium transition-colors"
+        style="background:#3b82f6;color:#fff;">
+        View Full Report →
+      </button>`
+    }
+    document.getElementById('modal-footer').innerHTML = footerHtml
+  }
+
+  function closeModal() {
+    if (STATE.radarChart) { STATE.radarChart.destroy(); STATE.radarChart = null }
+    document.getElementById('report-modal').classList.add('hidden')
+    document.body.style.overflow = ''
+  }
+
+  function openMdModal(ticker, markdown) {
+    document.getElementById('md-modal-title').textContent = ticker + ' — Full Report'
+    document.getElementById('md-modal-body').innerHTML = marked.parse(markdown)
+    document.getElementById('md-modal').classList.remove('hidden')
+  }
+
+  function closeMdModal() {
+    document.getElementById('md-modal').classList.add('hidden')
+  }
+
+  // ─── EVENT LISTENERS ─────────────────────────────────────────────────────────
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      if (!document.getElementById('md-modal').classList.contains('hidden')) closeMdModal()
+      else closeModal()
+    }
+  })
+
+  document.getElementById('report-modal').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeModal()
+  })
+
+  document.getElementById('md-modal').addEventListener('click', e => {
+    if (e.target === e.currentTarget) closeMdModal()
+  })
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab))
+  })
+
+  document.getElementById('refresh-btn').addEventListener('click', boot)
+
+  // ─── BOOT ────────────────────────────────────────────────────────────────────
+  async function boot() {
+    STATE.queueInited = false
+    try {
+      const [qRes, rRes, pRes] = await Promise.all([
+        fetch('/api/queue').then(r=>r.json()),
+        fetch('/api/reports').then(r=>r.json()),
+        fetch('/api/pipeline').then(r=>r.json()),
+      ])
+      STATE.queue    = Array.isArray(qRes) ? qRes : []
+      STATE.reports  = rRes.reports || []
+      STATE.pipeline = pRes
+
+      const qTotal = STATE.queue.length
+      const rTotal = STATE.reports.length
+      document.getElementById('header-counts').textContent = `${qTotal} tickers · ${rTotal} reports`
+      // Update tab labels
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        const labels = { queue:`Queue (${qTotal})`, reports:`Reports (${rTotal})` }
+        if (labels[btn.dataset.tab]) btn.textContent = labels[btn.dataset.tab]
+      })
+    } catch(e) {
+      console.error('Boot failed:', e)
+    }
+    renderTab(STATE.activeTab)
+  }
+
+  document.addEventListener('DOMContentLoaded', boot)
+  </script>
+</body>
+</html>

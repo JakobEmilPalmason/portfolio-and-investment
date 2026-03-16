@@ -1,0 +1,52 @@
+{
+  "ticker": "TDG",
+  "company": "TransDigm Group",
+  "analysis_date": "2026-03-13",
+  "verdict": "Watch",
+  "average_score": 7.25,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 10,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 6,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "FAA-enforced sole-source positioning on 33,000+ niche SKUs — legally enforced near-monopoly on aftermarket parts",
+    "54% EBITDA As Defined margins sustained for 20+ years — structural, not cyclical",
+    "Asset-light model: capex only 1.9% of revenue, $2.4B+ annual free cash flow",
+    "30-year founder playbook institutionalized across multiple CEOs with consistent capital allocation discipline",
+    "Diversified revenue mix (32% commercial aftermarket, 28% OEM, 40% defense) with non-discretionary demand drivers"
+  ],
+  "key_risks": [
+    "~$25B gross debt at ~5x net leverage with only 3.1–3.4x EBITDA interest coverage — amplifies any aviation downturn into an outsized equity decline",
+    "Price margin of safety near zero at $1,258 — stock trades at or above the top of the $1,050–1,200 base-case intrinsic value range",
+    "DoD regulatory pricing scrutiny on sole-source defense aftermarket parts — recurring political risk with potential structural margin impact",
+    "CEO transition (October 2025): Mike Lisman untested as CEO through a downturn",
+    "Acquisition pipeline dependency — organic growth supplemented by 1–3 deals per year; pipeline drying up or prices becoming uneconomic would impair the compounding model"
+  ],
+  "red_flags": [
+    "No price margin of safety at current levels — downside/upside asymmetry modestly negative",
+    "EBITDA-to-interest coverage of 3.1–3.4x is structurally thin; a 20% EBITDA decline pushes coverage below 2.5x",
+    "$90/share special dividend funded entirely by new debt — gross debt rose from ~$21B to ~$25B in a single step",
+    "GAAP earnings substantially below adjusted figures — intangible amortization is a real economic cost of the acquisition model",
+    "COVID-2020 demonstrated 55–60% stock drawdown even as the business remained cash flow positive — leverage amplifies stock volatility beyond business fundamentals"
+  ],
+  "buy_triggers": [
+    "Stock retreats to $950–1,050 — entering the base-case intrinsic value range with a genuine margin of safety",
+    "Aviation demand shock drives TDG below $900, creating a crisis-entry opportunity for a 5%+ position",
+    "Net leverage deleverages to below 4.5x EBITDA ahead of schedule, materially reducing tail-risk amplification"
+  ],
+  "sell_triggers": [
+    "Regulatory action mandates cost-plus pricing on sole-source defense aftermarket parts — thesis structurally broken, exit regardless of price",
+    "Net debt/EBITDA rises above 7x for reasons other than a specific large acquisition with a clear integration path",
+    "Stock re-rates to 25x+ forward EV/EBITDA without corresponding step-change in earnings power or leverage reduction — trim to starter position"
+  ],
+  "valuation_summary": "At ~$1,258/share, TDG trades at ~18x forward EV/EBITDA and ~40x owner earnings, placing it at or slightly above the top of the $1,050–1,200 base-case intrinsic value range; the stock is fairly valued on continuation of the proven playbook but offers no price margin of safety — bear-case downside is 35–45% and realistic upside is 20–25%, yielding modestly negative asymmetry at current levels.",
+  "source_summary": "Analysis based on TransDigm FY2025 10-K, Q1–Q4 FY2025 and Q1 FY2026 earnings releases and transcripts, GuruFocus ROIC and valuation data, MacroTrends historical financials, MarketBeat/TipRanks analyst consensus, and DoD public oversight reports — all sourced in March 2026 with no material staleness.",
+  "confidence": "high",
+  "change_notes": ""
+}

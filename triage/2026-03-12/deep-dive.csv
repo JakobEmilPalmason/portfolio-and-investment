@@ -1,9 +1,0 @@
-rank,ticker,company,sector,quality_score,valuation_score,balance_sheet_score,next_action,reason
-1,BRK-B,Berkshire Hathaway Inc. (Class B),Financials,9,7,10,deep_dive,Fortress balance sheet near 52wk low; best capital allocator; not yet analyzed
-2,HD,Home Depot Inc.,Consumer,9,7,6,deep_dive,Dominant home improvement franchise at housing cycle trough; not yet analyzed
-3,AMZN,Amazon.com Inc.,Technology,9,6,8,deep_dive,Three-engine compounder with dominant moats; essential infrastructure; not analyzed
-4,MCO,"Moody's Corp.",Financials,9,5,7,deep_dive,Rating agency duopoly; regulatory moat; pairs with SPGI; not analyzed
-5,SPGI,S&P Global Inc.,Financials,9,5,8,deep_dive,Ratings + indices monopoly; essential infrastructure; pairs with MCO; not analyzed
-6,TDG,TransDigm Group Inc.,Industrials,9,6,4,deep_dive,Sole-source aerospace aftermarket monopoly; rare moat type; leverage key question
-7,FICO,Fair Isaac Corp.,Technology,9,5,6,deep_dive,Regulatory-embedded credit scoring monopoly; extreme pricing power; not analyzed
-R,NOVO-B.CO,Novo Nordisk A/S,Healthcare,8,7,7,refresh,FDA warning letter post-analysis; further price decline; material thesis change

@@ -1,0 +1,248 @@
+[
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Dominant creative/document ecosystem; post-earnings catalyst; tracked"
+  },
+  {
+    "ticker": "BRK-B",
+    "company": "Berkshire Hathaway B",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52-week low; massive cash pile; succession catalyst"
+  },
+  {
+    "ticker": "BSX",
+    "company": "Boston Scientific Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Medtech leader near 52-week low; EP franchise moat"
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52-week low; dominant CRM ecosystem; FCF inflecting"
+  },
+  {
+    "ticker": "HD",
+    "company": "Home Depot Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52-week low; pro segment moat; scale advantage"
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Enterprise workflow monopoly; near 52-week low; high switching"
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "AI compute monopoly; CUDA moat; massive FCF generation"
+  },
+  {
+    "ticker": "ORCL",
+    "company": "Oracle Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Cloud inflection; database lock-in moat; post-earnings catalyst"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Payments duopoly; near 52-week low; network effect moat"
+  },
+  {
+    "ticker": "ADI",
+    "company": "Analog Devices Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Analog duopoly moat; long product lifecycles; tracked"
+  },
+  {
+    "ticker": "AMAT",
+    "company": "Applied Materials Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Wafer fab equipment leader; high FCF; China risk known"
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Custom AI silicon moat; VMware cross-sell; FCF strong"
+  },
+  {
+    "ticker": "CDNS",
+    "company": "Cadence Design Systems Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "EDA duopoly; chip complexity secular tailwind; sticky"
+  },
+  {
+    "ticker": "CPRT",
+    "company": "Copart Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Salvage auction duopoly; land/yard network moat durable"
+  },
+  {
+    "ticker": "CSU.TO",
+    "company": "Constellation Software Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Best serial VMS acquirer; proven capital allocation culture"
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Search monopoly; cloud + AI trifecta; antitrust priced in"
+  },
+  {
+    "ticker": "IDXX",
+    "company": "IDEXX Laboratories Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Vet diagnostics monopoly; recurring razor/blade model"
+  },
+  {
+    "ticker": "ISRG",
+    "company": "Intuitive Surgical Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Robotic surgery platform lock-in; installed base moat"
+  },
+  {
+    "ticker": "KLAC",
+    "company": "KLA Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Process control monopoly; essential to chip manufacturing"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Ad targeting moat; Reels monetization; massive FCF engine"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Azure + Office monopoly; Copilot AI monetization layered"
+  },
+  {
+    "ticker": "NOVO-B.CO",
+    "company": "Novo Nordisk A/S",
+    "b1_verdict": "advance",
+    "b1_reason": "GLP-1 leader; supply scaling; massive durable TAM"
+  },
+  {
+    "ticker": "SNPS",
+    "company": "Synopsys Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "EDA duopoly; Ansys deal adds simulation moat"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Healthcare vertical integration moat; scale advantage unmatched"
+  },
+  {
+    "ticker": "VEEV",
+    "company": "Veeva Systems Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Life sciences vertical SaaS monopoly; high switching costs"
+  },
+  {
+    "ticker": "ADYEN.AS",
+    "company": "Adyen NV",
+    "b1_verdict": "advance",
+    "b1_reason": "Unified payments platform; enterprise moat; Stripe competition known"
+  },
+  {
+    "ticker": "ASML",
+    "company": "ASML Holding NV",
+    "b1_verdict": "advance",
+    "b1_reason": "Sole EUV lithography supplier; true monopoly; tracked"
+  },
+  {
+    "ticker": "CTAS",
+    "company": "Cintas Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Uniform rental monopoly; route density moat; recurring revenue"
+  },
+  {
+    "ticker": "DHR",
+    "company": "Danaher Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Life sciences platform; proven DBS acquisition model; quality"
+  },
+  {
+    "ticker": "EL.PA",
+    "company": "EssilorLuxottica SA",
+    "b1_verdict": "advance",
+    "b1_reason": "Eyewear plus lens monopoly; global scale; pricing power"
+  },
+  {
+    "ticker": "ICE",
+    "company": "Intercontinental Exchange Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Exchange monopoly plus mortgage tech; recurring data revenue"
+  },
+  {
+    "ticker": "MC.PA",
+    "company": "LVMH Moet Hennessy Louis Vuitton SE",
+    "b1_verdict": "advance",
+    "b1_reason": "Global luxury conglomerate; brand portfolio moat; diversified"
+  },
+  {
+    "ticker": "MCO",
+    "company": "Moody's Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Credit rating oligopoly; durable regulatory moat; recurring"
+  },
+  {
+    "ticker": "MSCI",
+    "company": "MSCI Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Index licensing monopoly; recurring fee moat; high margins"
+  },
+  {
+    "ticker": "ODFL",
+    "company": "Old Dominion Freight Line Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Best-in-class LTL carrier; service-based pricing power moat"
+  },
+  {
+    "ticker": "ROP",
+    "company": "Roper Technologies Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Niche software acquirer; high ROIC; proven model"
+  },
+  {
+    "ticker": "SAP.DE",
+    "company": "SAP SE",
+    "b1_verdict": "advance",
+    "b1_reason": "ERP monopoly; cloud transition inflecting; deep lock-in"
+  },
+  {
+    "ticker": "SHW",
+    "company": "Sherwin-Williams Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Paint duopoly; professional channel moat; pricing power"
+  },
+  {
+    "ticker": "SPGI",
+    "company": "S&P Global Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Ratings oligopoly plus data analytics; regulatory moat"
+  },
+  {
+    "ticker": "TDG",
+    "company": "TransDigm Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Aerospace sole-source aftermarket monopoly; pricing power proven"
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Advanced node foundry monopoly; AI demand secular; essential"
+  }
+]

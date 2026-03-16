@@ -1,0 +1,52 @@
+{
+  "ticker": "MSCI",
+  "company": "MSCI Inc.",
+  "analysis_date": "2026-03-16",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 6,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Toll-road business model: ~96% recurring revenues from subscriptions and AUM-linked fees on $7T in indexed assets",
+    "Multi-source wide moat: structurally embedded switching costs, branded intangible assets (GICS, MSCI EM), network effects in derivatives, scale economics",
+    "Exceptional unit economics: 38.7% ROIC (expanding), 82% gross margins (stable 4 years), 116% average FCF conversion",
+    "Long-tenured founder-mentality CEO with $10M+ in personal open-market stock purchases in the past 12 months",
+    "Secular tailwinds: passive investing growth, international ETF expansion, private assets analytics as nascent growth engine"
+  ],
+  "key_risks": [
+    "Asset-based fees (~22% of revenue) tied directly to global equity AUM levels — a sustained 25-30% market decline compresses top-line automatically",
+    "Net debt jumped $1.6B in FY2025 to $5.7B (3.0x net debt/EBITDA); BBB- ratings leave one notch of cushion above high-yield",
+    "No price-level margin of safety at $548: bear case implies ~40% downside vs. ~16% upside in base case (0.4:1 asymmetry)",
+    "ESG/Sustainability segment faces genuine political and regulatory headwinds in US and Europe",
+    "Large ETF sponsor self-indexing risk: Vanguard has proven the concept in US equity; international extension would directly threaten MSCI's core franchise"
+  ],
+  "red_flags": [
+    "Margin of safety score of 4/10: bear-case intrinsic value ~$327 implies 40% downside from current $548",
+    "Debt up $1.7B in single year (FY2025) entirely to fund buybacks — aggressive leverage trajectory reducing financial flexibility",
+    "Buybacks at 35x earnings are not obviously value-accretive at current multiples",
+    "16 analyst buy-ratings with zero sells — uniformly bullish consensus is a contrarian warning signal",
+    "Two acquisitions (Compass, Vantager) in same week March 2026 — possible acceleration in M&A pace worth monitoring"
+  ],
+  "buy_triggers": [
+    "Stock pullback to $440-$480 range (20%+ below current), where bear-case downside shrinks to ~20-25% and base-case upside expands to 35-45%",
+    "Sustained equity market selloff of 20%+ not driven by MSCI-specific business deterioration — creates a buying opportunity in a durable franchise",
+    "Subscription retention rates hold above 92% for four consecutive quarters, confirming moat durability and double-digit organic growth trajectory"
+  ],
+  "sell_triggers": [
+    "Net subscription retention falls below 88% for two consecutive quarters — first measurable signal of switching-cost moat erosion",
+    "Net debt/EBITDA exceeds 4.5x without a clear and credible deleveraging plan",
+    "Major ETF sponsor (BlackRock/iShares or equivalent) publicly announces migration of flagship international equity ETF away from MSCI benchmarks"
+  ],
+  "valuation_summary": "At $547.90, MSCI trades at ~35x trailing P/E and ~31.7x owner earnings (3.2% yield); the base-case intrinsic value of ~$637/share implies only 16% upside while the bear case of ~$327/share implies 40% downside — a fair price for a great business, but not a great price, with no meaningful margin of safety at current levels.",
+  "source_summary": "Analysis based on auto-fetched yfinance financials (context/MSCI/financials.md, 2026-03-16), web search results from MSCI IR, Q4 2025 earnings releases and transcripts, MacroTrends, StockAnalysis, AlphaSpread, MarketBeat, TipRanks, and analyst consensus data; training knowledge used for competitive context and industry structure.",
+  "confidence": "high",
+  "change_notes": ""
+}

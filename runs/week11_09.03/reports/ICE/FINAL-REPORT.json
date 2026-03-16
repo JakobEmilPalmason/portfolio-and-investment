@@ -1,0 +1,53 @@
+{
+  "ticker": "ICE",
+  "company": "Intercontinental Exchange, Inc.",
+  "analysis_date": "2026-03-16",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 6,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Owns Brent crude benchmark — global oil price reference for ~two-thirds of world crude, near-impossible to displace",
+    "NYSE + ICE Futures Europe + ICE Clear = irreplaceable financial market infrastructure with permanent network effects",
+    "56% recurring revenues with 20 consecutive years of record revenue; stable earnings floor across market cycles",
+    "$4.1B annual owner earnings with 53% EBITDA margins and consistent 100%+ FCF conversion",
+    "Fast delevering post-Black Knight: Debt/EBITDA from 5.3x to 3.0x in 3 years on $3.9B FCF",
+    "A-/A3 credit ratings with stable outlooks; proactive maturity management with no near-term cliff risk",
+    "Black Knight synergies beating targets: $230M annualized expense synergies vs. $200M target, revenue synergies doubled to $100M"
+  ],
+  "key_risks": [
+    "Mortgage Technology duration risk: $13.1B acquisition made into a frozen market; 30-year rates forecast at 6.1% through 2026 delay recovery to 2027-2028",
+    "Thin price margin of safety: stock at ~fair value ($154-165 base case) with 25-37% downside in bear scenario ($100-119)",
+    "$18.8B net debt limits financial flexibility and M&A optionality until leverage falls to ~2x EBITDA",
+    "20 insider sales, 0 purchases by founder-CEO Sprecher over five years — one-directional pattern despite plan-based structure",
+    "FTC-mandated Empower divestiture left a viable competitor intact, limiting full mortgage platform consolidation"
+  ],
+  "red_flags": [
+    "Mortgage Technology GAAP operating margin only 1% on $2.1B revenue due to $1.6B+ annual amortization",
+    "28.5x EV/owner earnings requires ~9% annual earnings growth for 5 years — limited room for error at current price",
+    "2026 Mortgage Tech guidance: low-to-mid single digit revenue growth only — management signaling no imminent recovery",
+    "Buybacks resumed at 3.0x Debt/EBITDA — arguably premature before leverage fell further"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $130-140, creating meaningful discount to base case intrinsic value and improved asymmetry",
+    "Net debt falls below $15B (~2.0-2.2x EBITDA), reducing primary financial risk and opening enhanced buyback capacity",
+    "30-year mortgage rates fall to 5.5% or below, triggering refinancing cycle that validates Black Knight thesis at scale"
+  ],
+  "sell_triggers": [
+    "Management announces major new acquisition (>$5B) before net debt reaches ~$15B — pattern of serial overleveraging",
+    "Black Knight synergy targets materially cut or segment restructured — signals permanent impairment of strategic rationale",
+    "Credible competitor disrupts NYSE core listing franchise or regulatory action restricts exchange data pricing"
+  ],
+  "valuation_summary": "At $159.20, ICE trades at 28.5x EV/owner earnings — approximately fair value at the base case intrinsic value of $154-165/share — with a bear case floor of $100-119 and a bull case of $185-193 if mortgage recovery and debt paydown both materialize; a price in the $130-140 range would represent a genuinely attractive entry.",
+  "source_summary": "Analysis draws on pre-fetched yfinance financials, ICE FY2025 earnings release and Q4 2025 earnings call (ir.theice.com), MBA mortgage forecasts, S&P/Moody's credit rating affirmations, analyst consensus data, and peer comparisons from GuruFocus and Morningstar.",
+  "confidence": "medium",
+  "change_notes": ""
+}

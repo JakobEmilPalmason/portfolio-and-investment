@@ -1,0 +1,55 @@
+{
+  "ticker": "FICO",
+  "company": "Fair Isaac Corporation",
+  "analysis_date": "2026-03-13",
+  "verdict": "Watch",
+  "average_score": 6.4,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 6,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "Near-monopoly credit scoring toll-booth with ~88% Scores segment operating margins and ROIC of 48–54%",
+    "Asset-light royalty economics: $770M FCF on $8.9M capex, 118% FCF-to-net-income conversion",
+    "FICO Score embedded in 90%+ of US lending decisions with high institutional switching costs across auto, card, and personal loan markets",
+    "14-year CEO with proven capital allocation discipline: 48% share count reduction since 2010",
+    "FICO 10T adoption program with 40+ lenders covering $264B in originations — potential moat re-reinforcement vehicle",
+    "March 2026 refinancing extends all debt maturities to 2033–2034, eliminating near-term balance sheet risk"
+  ],
+  "key_risks": [
+    "FHFA 'Lender Choice' model (July 2025) formally ends de facto GSE mortgage monopoly — the most consequential structural change in FICO's history",
+    "Bureau-owned VantageScore priced at $0.99/score (vs. FICO's multi-dollar fees), offered free in FICO bundles — predatory pricing from a counterparty with a direct conflict of interest",
+    "Mortgage originations (55% of B2B Scores revenue) subject to triple-threat: rate cycle volume pressure, VantageScore market share gains, and regulatory pricing discipline",
+    "Net debt $2.94B (3.3x EBITDA) with leverage amplifying equity downside in any Scores revenue impairment scenario",
+    "Software platform transition slow: FICO Platform ARR 32% of total software ARR, total software ARR grew only 4% in FY2025"
+  ],
+  "red_flags": [
+    "FHFA lender choice model live — de facto government mandate that protected FICO pricing is formally removed",
+    "Fannie Mae eliminated minimum FICO score requirement (November 2025) — reduces mandatory score pulls per origination",
+    "Bureau-sponsored VantageScore 4.0 at $0.99 from same parties who supply FICO's data infrastructure — dangerous vertical conflict",
+    "FICO raised prices 1,600%+ since 2022, generating political and competitive blowback now materializing in coordinated bureau pricing action",
+    "CEO sold ~$32M in personal shares over 6 months while board authorized $1.5B in corporate buybacks during live competitive inflection",
+    "Negative shareholder equity (-$1.75B) and $2.84B gross debt; no safety cushion for sustained revenue shock",
+    "Probability-weighted intrinsic value (~$1,320) is at or below current price ($1,285); unfavorable asymmetry"
+  ],
+  "buy_triggers": [
+    "Stock declines to $950–1,050, providing genuine 25–30% discount to base-case intrinsic value ($1,350–1,500)",
+    "FICO 10T formally adopted by Fannie Mae and Freddie Mac as required/preferred standard, re-establishing regulatory embedding",
+    "Verifiable FHFA quarterly data shows minimal lender switching to VantageScore after 12+ months of lender choice availability"
+  ],
+  "sell_triggers": [
+    "Scores revenue growth turns negative for two consecutive quarters, confirming VantageScore share gains outpace pricing power",
+    "FHFA or Fannie Mae formally expands score-agnostic underwriting across all agency lending categories",
+    "VantageScore captures verifiably more than 25–30% of conforming mortgage origination volume within three years of lender choice implementation"
+  ],
+  "valuation_summary": "Base-case DCF intrinsic value of $1,350–1,500/share (using 9% discount rate, 11% FCF CAGR, 25x terminal multiple) implies only 5–17% upside from $1,285; probability-weighted value across bear ($650–750, 25% weight), base (55%), and bull ($2,200–2,500, 20% weight) scenarios is approximately $1,320 — at or slightly below current price, with clearly unfavorable asymmetry.",
+  "source_summary": "Analysis based on FICO FY2025 10-K (filed November 2025), Q4 2025 earnings release, March 2026 refinancing press releases, and web searches current to March 12–13, 2026; all financial data is fiscal year 2025 or more recent.",
+  "confidence": "medium",
+  "change_notes": ""
+}

@@ -1,0 +1,53 @@
+{
+  "ticker": "MRK",
+  "company": "Merck & Co., Inc.",
+  "analysis_date": "2026-03-15",
+  "verdict": "Watch",
+  "average_score": 6.5,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 7,
+    "management": 6,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "KEYTRUDA is the world's best-selling cancer drug at $31.7B in 2025 revenue, with clinical depth across 40+ indications making mid-treatment switching irrational",
+    "Exceptional business economics: ROIC 21-26%, gross margins ~77.7%, FCF ~$18B (2024) — asset-light model with strong operating leverage",
+    "Fortress balance sheet: interest coverage ~29x, debt/EBITDA ~1.3-1.5x, investment-grade rated — survives a 30% revenue decline without equity issuance",
+    "KEYTRUDA Qlex (subcutaneous) FDA-approved September 2025 with method-of-treatment patents to 2042 — credible strategy to ring-fence 30-40% of patient base ahead of biosimilar entry",
+    "16 consecutive years of dividend increases; 3%+ yield provides return floor during multi-year transition period",
+    "WINREVAIR (sotatercept) generated $1.4B in first full year of sales — proves Merck can build new blockbusters via M&A"
+  ],
+  "key_risks": [
+    "KEYTRUDA at ~49% of 2025 revenue faces U.S. patent expiry in 2028-2029 — the single largest known revenue cliff in large-cap pharma",
+    "IRA Medicare drug price negotiation: Januvia faces 79% price cut in 2026; KEYTRUDA negotiation begins 2026 for 2028 implementation at unknown but potentially severe reduction",
+    "Pipeline execution risk: Prometheus ($10.8B) and Harpoon ($680M) remain unproven; 20+ pipeline candidates must de-risk for post-cliff thesis to work",
+    "GARDASIL China franchise collapsed 39% in 2025 — recovery timeline and permanence of impairment remain uncertain",
+    "SC KEYTRUDA product-hop strategy faces legal and political scrutiny — courts or payers could limit its effectiveness, collapsing the 2042 patent extension thesis"
+  ],
+  "red_flags": [
+    "Near 49% single-product revenue concentration — among the highest blockbuster dependencies in large-cap pharma",
+    "Stock recovered 63% from its May 2025 low ($73); fair-value entry at $119, not a discounted one",
+    "2026 adjusted EPS guidance ($5.00-$5.15) meaningfully below prior-year levels — near-term earnings step-down before pipeline fills gap",
+    "Bear-case intrinsic value ($75-85) implies 35-40% downside — larger than typical Buffett-style margin-of-safety tolerance",
+    "Two of three recent acquisitions (Prometheus, Harpoon) remain unproven; capital allocation scorecard is incomplete"
+  ],
+  "buy_triggers": [
+    "Stock declines to $90-100, placing it at or below bear-case intrinsic value with genuine margin of safety",
+    "KEYTRUDA Qlex conversion rate exceeds 25% by end of 2026, validating the product-hop strategy ahead of schedule",
+    "One or more major Phase 3 readouts deliver positive surprises, materially de-risking post-2028 revenue gap"
+  ],
+  "sell_triggers": [
+    "KEYTRUDA Qlex patient conversion falls below 15% by end of 2027 — transition strategy is failing",
+    "IRA-negotiated KEYTRUDA Medicare price reduction announced at >60% — revenue model structurally impaired",
+    "Three or more major Phase 3 trial failures in 2026-2027, or net debt/EBITDA rises above 3.0x from acquisition activity"
+  ],
+  "valuation_summary": "At ~$119, MRK trades near the upper end of its base-case DCF range ($105-120 per share), implying minimal price margin of safety; EV/EBITDA of ~11x is near a decade low and the 3%+ dividend provides a return floor, but the stock is priced for a successful (not pessimistic) post-KEYTRUDA transition rather than at a conservative discount to intrinsic value.",
+  "source_summary": "Analysis based on Merck Q4/FY2025 earnings release (February 2026), web searches across MacroTrends, GuruFocus, StockAnalysis, Yahoo Finance, CNBC, and PharmExec; data current through early March 2026 with FY2025 actuals confirmed.",
+  "confidence": "medium",
+  "change_notes": ""
+}
