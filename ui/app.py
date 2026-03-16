@@ -1,7 +1,13 @@
 import json
 import re
+import time
+from datetime import date, datetime
 from pathlib import Path
-from flask import Flask, jsonify, send_file
+from flask import Flask, jsonify, request, send_file
+
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from search import build_index, search as fts_search, get_index_stats
 
 REPO_ROOT   = Path(__file__).resolve().parent.parent
 QUEUE_FILE  = REPO_ROOT / "queue" / "queue.json"
@@ -229,6 +235,72 @@ def api_portfolio():
         'sector_exposure': sector_exposure,
         'warnings': warnings,
     })
+
+
+@app.route('/api/search')
+def api_search():
+    q = request.args.get('q', '').strip()
+    doc_type = request.args.get('type', '').strip() or None
+    if not q:
+        return jsonify([])
+    return jsonify(fts_search(q, doc_type))
+
+
+@app.route('/api/search/rebuild', methods=['POST'])
+def api_search_rebuild():
+    t0 = time.time()
+    count = build_index(REPO_ROOT)
+    duration = int((time.time() - t0) * 1000)
+    return jsonify({'indexed': count, 'duration_ms': duration})
+
+
+@app.route('/api/search/stats')
+def api_search_stats():
+    return jsonify(get_index_stats())
+
+
+@app.route('/api/freshness')
+def api_freshness():
+    today = date.today()
+    result = {}
+    try:
+        queue_data = read_json(QUEUE_FILE)
+    except Exception:
+        queue_data = []
+    for entry in queue_data:
+        ticker = entry.get('ticker', '')
+        if not ticker:
+            continue
+        last_date = entry.get('last_analysis_date')
+        days_since = None
+        status = 'never'
+        if last_date:
+            try:
+                d = datetime.strptime(last_date, '%Y-%m-%d').date()
+                days_since = (today - d).days
+                if days_since < 7:
+                    status = 'fresh'
+                elif days_since <= 30:
+                    status = 'aging'
+                else:
+                    status = 'stale'
+            except ValueError:
+                pass
+        # Check financials
+        fin_path = REPO_ROOT / 'context' / ticker / 'financials.md'
+        has_financials = fin_path.exists()
+        financials_age_days = None
+        if has_financials:
+            mtime = fin_path.stat().st_mtime
+            financials_age_days = (today - date.fromtimestamp(mtime)).days
+        result[ticker] = {
+            'last_analysis_date': last_date,
+            'days_since': days_since,
+            'has_financials': has_financials,
+            'financials_age_days': financials_age_days,
+            'status': status,
+        }
+    return jsonify(result)
 
 
 @app.route('/api/policy')
