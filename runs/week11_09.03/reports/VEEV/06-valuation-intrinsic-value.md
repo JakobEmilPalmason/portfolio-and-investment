@@ -69,3 +69,13 @@ The market is pricing moderate pessimism. The stock is down ~39% from its 52-wee
 ## Score: 6 / 10
 
 Veeva is approximately fairly valued at current prices under a realistic base case, with limited margin of safety but meaningful upside if the Vault CRM migration succeeds; the score reflects appropriate pricing rather than a compelling valuation entry point.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 121 |
+| IV Base | 204 |
+| IV Bull | 320 |
+| Currency | USD |
+| MOS at Analysis Date | -57 |

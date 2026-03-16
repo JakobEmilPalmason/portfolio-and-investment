@@ -63,3 +63,13 @@ Neither. The stock is down ~40% from its 2024 peak, reflecting genuine near-term
 ## Score: 6 / 10
 
 AMAT is fairly valued to modestly undervalued at current prices — the stock has de-rated meaningfully from peak, multiples are at the low end of historical norms, and the business quality is high — but the base case upside is only ~18-20% and the bear case carries real 40-50% downside, leaving the risk/reward balanced rather than compelling.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 69 |
+| IV Base | 123 |
+| IV Bull | 183 |
+| Currency | USD |
+| MOS at Analysis Date | -117.40 |

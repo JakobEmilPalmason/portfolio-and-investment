@@ -52,3 +52,13 @@
 ## Score: 2 / 10
 
 At $15.02, ALMU is priced for an outcome that has less than a 20% probability of materializing on the timeline the market requires; the probability-weighted intrinsic value is approximately $7–8 per share, implying the stock is roughly 2x overvalued relative to a fair expected-value calculation.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 1 |
+| IV Base | 6.20 |
+| IV Bull | 22.80 |
+| Currency | USD |
+| MOS at Analysis Date | -1402 |

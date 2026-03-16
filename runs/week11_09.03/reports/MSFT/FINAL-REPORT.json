@@ -49,5 +49,10 @@
   "valuation_summary": "At $405, MSFT trades at 26x trailing P/E and 15-16x EV/EBITDA — both 20%+ below Microsoft's own 10-year medians — with normalized owner earnings of $110-120B implying the market requires only 8-10% annual earnings growth; base-case discounted intrinsic value of $270-290 suggests the stock is roughly fairly valued, with no price-based margin of safety but compelling relative valuation versus its own history.",
   "source_summary": "Analysis based on Microsoft FY2025 10-K (SEC filing July 30, 2025), FY2026 Q1 and Q2 earnings releases (October 2025 and January 2026), and web search for current price and multiples as of March 2026; all financial data is current within the last 2-3 months.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 147,
+  "iv_base": 270,
+  "iv_bull": 370,
+  "iv_currency": "USD",
+  "mos_at_analysis": -175.5
 }

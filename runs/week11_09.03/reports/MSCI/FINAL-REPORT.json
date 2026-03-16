@@ -48,5 +48,10 @@
   "valuation_summary": "At $547.90, MSCI trades at ~35x trailing P/E and ~31.7x owner earnings (3.2% yield); the base-case intrinsic value of ~$637/share implies only 16% upside while the bear case of ~$327/share implies 40% downside — a fair price for a great business, but not a great price, with no meaningful margin of safety at current levels.",
   "source_summary": "Analysis based on auto-fetched yfinance financials (context/MSCI/financials.md, 2026-03-16), web search results from MSCI IR, Q4 2025 earnings releases and transcripts, MacroTrends, StockAnalysis, AlphaSpread, MarketBeat, TipRanks, and analyst consensus data; training knowledge used for competitive context and industry structure.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 327,
+  "iv_base": 637,
+  "iv_bull": 912,
+  "iv_currency": "USD",
+  "mos_at_analysis": -67.5
 }

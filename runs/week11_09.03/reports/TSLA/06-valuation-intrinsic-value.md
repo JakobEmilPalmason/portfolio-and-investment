@@ -72,3 +72,13 @@ The market is unambiguously pricing in a version of perfection. The current mult
 ## Score: 2 / 10
 
 At a trailing P/E of ~380x and a Price/FCF of ~237x on a business reporting declining revenue and compressed margins, Tesla is priced for a future that has not arrived and may not arrive on schedule — conservative intrinsic value estimates range from $50 to $210, implying the stock is trading at 2–8x fair value depending on scenario.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 50 |
+| IV Base | 165 |
+| IV Bull | 540 |
+| Currency | USD |
+| MOS at Analysis Date | -710 |

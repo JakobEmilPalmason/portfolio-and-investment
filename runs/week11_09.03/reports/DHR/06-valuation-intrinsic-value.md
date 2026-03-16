@@ -52,3 +52,13 @@ The market appears to be pricing Danaher for a prolonged period of mid-single-di
 
 ## Score: 6 / 10
 Danaher appears roughly fairly valued at $187, with a modest margin of undervaluation on base-case assumptions. The EV/EBITDA discount to historical median is encouraging, but depressed ROIC, Masimo integration uncertainty, and a wide gap between consensus and management guidance prevent a higher conviction call.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 116 |
+| IV Base | 171 |
+| IV Bull | 235 |
+| Currency | USD |
+| MOS at Analysis Date | -61.20 |

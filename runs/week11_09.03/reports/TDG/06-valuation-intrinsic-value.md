@@ -67,3 +67,13 @@ The street consensus price target of $1,565 implies ~25% upside from current lev
 ## Score: 5 / 10
 
 TDG is a genuinely exceptional business priced at a fair-to-full valuation; the intrinsic value range suggests the stock is close to fair value on base-case assumptions, offering limited margin of safety without bull-case execution.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 700 |
+| IV Base | 1050 |
+| IV Bull | 1450 |
+| Currency | USD |
+| MOS at Analysis Date | -79.70 |

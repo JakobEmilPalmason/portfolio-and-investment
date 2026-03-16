@@ -74,3 +74,13 @@ The current price of ~$124 — down ~33% from the July 2024 all-time high of ~$1
 ## Score: 2 / 10
 
 At ~$124/share, ARM is priced for near-perfect bull-case execution over five years, with all credible DCF models indicating 40–80%+ overvaluation; a Buffett-style investor finds no margin of safety and no compelling entry point at this price.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 25 |
+| IV Base | 65 |
+| IV Bull | 150 |
+| Currency | USD |
+| MOS at Analysis Date | -396 |

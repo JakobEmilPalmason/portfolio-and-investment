@@ -50,5 +50,10 @@
   "valuation_summary": "At $647/share (market cap ~$1,663B), META trades at ~27.6x trailing P/E and ~21.4x forward P/E; base-case DCF analysis yields $430-560 intrinsic value (15-34% overvaluation), with the bull case at ~$818 required to justify current price — no price-based margin of safety exists, and the forward investment thesis depends on a successful $115-135B AI capex cycle generating measurable returns by 2027-2028.",
   "source_summary": "Analysis based on FY2025 official earnings release (January 2026), Q4 2024 10-K/press release, Q3 2025 10-Q, SEC filings, and web searches conducted March 2026; FY2025 year-end balance sheet figures are preliminary pending full 10-K; off-balance-sheet lease obligations from mid-2025 10-Q disclosure.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 163,
+  "iv_base": 429,
+  "iv_bull": 818,
+  "iv_currency": "USD",
+  "mos_at_analysis": -297.2
 }

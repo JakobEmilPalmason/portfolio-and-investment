@@ -53,3 +53,13 @@
 ## Score: 2 / 10
 
 By Buffett standards, RKLB is significantly overvalued: the company has no positive owner earnings today, requires a decade-plus of nearly flawless execution to justify current prices, and trades at one of the highest EV/revenue multiples in its industry — leaving no margin of safety and enormous downside if the narrative falters.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 55 |
+| IV Base | 55 |
+| IV Bull | 55 |
+| Currency | USD |
+| MOS at Analysis Date | -26.70 |

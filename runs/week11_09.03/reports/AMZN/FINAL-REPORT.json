@@ -49,5 +49,10 @@
   "valuation_summary": "At $209.73/share ($2.25T market cap), AMZN trades at ~24x normalized owner earnings and ~15.8x EV/EBITDA — near 5-year lows — and is roughly fairly valued in the base case (DCF $210-230), with a bear case of $130-145 and bull case of $310-360; there is zero price margin of safety at current levels, making this a Watch pending a 15-25% pullback.",
   "source_summary": "Analysis based on web searches for Amazon FY2025 earnings release (IR, February 2026), StockAnalysis and MacroTrends financial data, Synergy Research Group cloud market share, Alpha Spread and GuruFocus DCF estimates, and CNBC/FTC sources for management and regulatory context; all data current as of early March 2026.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 130,
+  "iv_base": 210,
+  "iv_bull": 310,
+  "iv_currency": "USD",
+  "mos_at_analysis": -61.5
 }

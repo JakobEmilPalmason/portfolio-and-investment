@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$36/share (~23x trailing P/E, ~20% below 10-year average multiple of 29x), CPRT trades near base-case intrinsic value of $32-37B; the bear case implies $18-22B (37-50% downside) and the bull case implies $50-53B (43-52% upside), making the risk/reward approximately symmetric rather than asymmetric at current levels.",
   "source_summary": "Analysis based on Copart Q1 and Q2 FY2026 earnings releases (November 2025 and March 2026), FY2025 10-K (filed September 2025), and web searches conducted March 2026; financial data current as of January 31, 2026 balance sheet date.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 18.52,
+  "iv_base": 32.92,
+  "iv_bull": 54.53,
+  "iv_currency": "USD",
+  "mos_at_analysis": -94.4
 }

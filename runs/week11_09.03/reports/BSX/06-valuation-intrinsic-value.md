@@ -57,3 +57,13 @@ Neither extreme. The post-earnings -32% decline from the peak has removed most o
 ## Score: 5 / 10
 
 BSX is fairly valued at current prices in the base case — the post-correction stock price reflects a realistic deceleration scenario without a meaningful discount from intrinsic value, leaving little margin of safety but also limited downside beyond litigation tail risk.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 45 |
+| IV Base | 68 |
+| IV Bull | 93 |
+| Currency | USD |
+| MOS at Analysis Date | -53.30 |

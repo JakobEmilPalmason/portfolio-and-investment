@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$150/share (forward P/E ~16-17x on FY2026E EPS of ~$8.80), AMAT sits above its base-case intrinsic value of ~$123-130/share and below the bull-case of ~$183; the bear-case DCF yields ~$69/share implying 54% downside, and the stock does not offer a meaningful margin of safety at current prices — a compelling entry requires a decline to $110-120.",
   "source_summary": "Analysis based on Applied Materials Q4 FY2025 and Q1 FY2026 earnings releases, SEC 10-K FY2025, GuruFocus, MacroTrends, StockAnalysis, Yahoo Finance, PortfoliosLab, Morningstar, and multiple independent research sources as of March 2026; all data current as of report date.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 69,
+  "iv_base": 123,
+  "iv_bull": 183,
+  "iv_currency": "USD",
+  "mos_at_analysis": -117.4
 }

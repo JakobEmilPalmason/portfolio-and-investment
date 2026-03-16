@@ -49,5 +49,10 @@
   "valuation_summary": "At $282/share (55% below November 2024 all-time high of $603), UNH trades at 16x forward 2026 adjusted EPS of $17.75 — historically cheap versus the 5-year average of ~22x. However, base case intrinsic value of ~$230-245 is below the current price, requiring bull case assumptions (favorable DOJ resolution, MCR normalization, Optum re-rating) to justify $282. Bear case intrinsic value of $110-130 implies 54-61% further downside if DOJ penalties are severe and MCR remains structurally elevated. EV/EBITDA of ~13.7x is near the 10-year median. Wide dispersion ($110-$400) makes a confident valuation call impossible pending regulatory clarity.",
   "source_summary": "Primary sources: UNH FY2025 earnings release (January 2026), UNH FY2024 annual results, SEC 10-K filings, AM Best and Moody's rating announcements, DOJ investigation reporting (STAT News, Bloomberg), GuruFocus financial aggregator, MacroTrends, StockAnalysis. Web searches conducted March 2026. Confidence in financial data is high; confidence in DOJ outcome and MCR trajectory is low by nature of uncertainty.",
   "confidence": "medium",
-  "change_notes": "First full analysis. Business in acute distress phase following concurrent crises: Change Healthcare cyberattack (2024), CEO murder (December 2024), MCR spike (2024-2025), guidance suspension (May 2025), CEO resignation (May 2025), DOJ investigation (ongoing). Hemsley returned as CEO May 2025. 2026 is the first year of attempted normalization. Monitor quarterly MCR prints and DOJ developments as primary thesis catalysts."
+  "change_notes": "First full analysis. Business in acute distress phase following concurrent crises: Change Healthcare cyberattack (2024), CEO murder (December 2024), MCR spike (2024-2025), guidance suspension (May 2025), CEO resignation (May 2025), DOJ investigation (ongoing). Hemsley returned as CEO May 2025. 2026 is the first year of attempted normalization. Monitor quarterly MCR prints and DOJ developments as primary thesis catalysts.",
+  "iv_conservative": 110,
+  "iv_base": 220,
+  "iv_bull": 360,
+  "iv_currency": "USD",
+  "mos_at_analysis": -156.4
 }

@@ -47,5 +47,10 @@
   "valuation_summary": "At DKK 1,669/share, DSV trades at ~16.9x EV/EBITDA (vs its own 5-year average of 19.1x) and is near fair value with base-case intrinsic value of ~DKK 1,950–2,200 (~25% upside) and bear-case intrinsic value of DKK 1,200–1,400 only 16–28% below current price, offering insufficient margin of safety at today's price.",
   "source_summary": "Analysis draws on DSV A/S 2024 and 2025 Annual Reports, DSV FY2025 investor presentation, Q3 2025 interim report, S&P and Moody's credit opinions, Yahoo Finance, AlphaSpread, MarketScreener analyst consensus, and GuruFocus ROIC data.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 1200,
+  "iv_base": 1950,
+  "iv_bull": 2700,
+  "iv_currency": "DKK",
+  "mos_at_analysis": -39.1
 }

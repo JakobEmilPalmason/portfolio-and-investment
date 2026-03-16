@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$136, QCOM trades at 12.9x forward earnings, 8.6% FCF yield, and 10.7x EV/EBITDA versus a 13-year median of 12.8x — appearing modestly undervalued in a base case (DCF present value ~$130–$149B) but fairly valued given wide outcome dispersion from Apple exit and China risk. A genuine margin of safety requires a price of $105–$115; downside in the bear case is 30–35%.",
   "source_summary": "Analysis based on Qualcomm Q4 FY2025 and Q1 FY2026 earnings releases, FY2025 10-K SEC filings, S&P and Moody's credit ratings, patent analytics sources (LexisNexis, GreyB, Lumenci), and web searches from March 2026, supplemented by training knowledge for business model context.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 99,
+  "iv_base": 119,
+  "iv_bull": 164,
+  "iv_currency": "USD",
+  "mos_at_analysis": -37.4
 }

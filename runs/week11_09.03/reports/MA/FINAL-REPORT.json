@@ -47,5 +47,10 @@
   "valuation_summary": "Base case DCF intrinsic value is ~$530–$550/share (9% discount rate, 12% FCF growth for 5 years, 25x terminal multiple), essentially coincident with the current price of ~$522; bull case at 13–15% growth reaches $650–$680 (~27% upside) while bear case at 6–7% growth implies $340–$360 (~33% downside), making the risk-reward approximately neutral at current entry.",
   "source_summary": "Data sourced from Mastercard Q4 2025 earnings release (Feb 2026), SEC 10-K filings through FY2024, MacroTrends, StockAnalysis, GuruFocus, SimplyWallSt, and Yahoo Finance as of early March 2026; all key financial figures are from company filings with minor aggregation differences across third-party sources.",
   "confidence": "high",
-  "change_notes": "Initial analysis — no prior report to compare against."
+  "change_notes": "Initial analysis — no prior report to compare against.",
+  "iv_conservative": 340,
+  "iv_base": 520,
+  "iv_bull": 660,
+  "iv_currency": "USD",
+  "mos_at_analysis": -53.5
 }

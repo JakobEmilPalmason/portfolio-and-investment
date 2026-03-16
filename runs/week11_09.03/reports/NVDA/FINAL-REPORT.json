@@ -53,5 +53,10 @@
   "valuation_summary": "At $183/share ($4.45T market cap), NVIDIA trades at ~37x trailing earnings and above most base-case DCF estimates ($124-$165/share), implying 10-32% overvaluation on base-case assumptions. The bear case ($68) implies 63% downside while the bull case ($260) implies 42% upside — unfavorable asymmetry that offers no margin of safety at current prices.",
   "source_summary": "Analysis based on web searches conducted March 2026 covering NVIDIA FY2026 earnings (reported Feb 25, 2026), SEC filings, NVIDIA investor relations, MacroTrends, StockAnalysis, GuruFocus, Yahoo Finance, CNBC, TrendForce, SemiAnalysis, and multiple financial data aggregators; no user-provided context files.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 66,
+  "iv_base": 136,
+  "iv_bull": 260,
+  "iv_currency": "USD",
+  "mos_at_analysis": -177.3
 }

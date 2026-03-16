@@ -47,5 +47,10 @@
   "valuation_summary": "Base-case DCF yields ~$213 (implying ~58% upside from ~$135), but the bear-case DCF of ~$78 sits 42% below the current price, and achieving the base case requires sustaining 40-50% revenue CAGR through 2028-2029 with EBITDA margins expanding to 38-42% — achievable but not conservative assumptions. At ~$135, there is no margin of safety; the stock becomes attractive in the $90-110 range where the bear-case downside narrows to 15-29%.",
   "source_summary": "Analysis draws on Reddit Q4 2025 earnings release (BusinessWire, Feb 5 2026), Q4 2025 earnings call transcript, full-year 2025 financials via MacroTrends, DemandSage user statistics, GuruFocus, CNBC coverage, and supplementary sources for valuation, balance sheet, and regulatory context.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 78,
+  "iv_base": 213,
+  "iv_bull": 422,
+  "iv_currency": "USD",
+  "mos_at_analysis": -73.1
 }

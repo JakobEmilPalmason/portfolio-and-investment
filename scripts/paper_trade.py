@@ -96,10 +96,15 @@ def get_reporter():
     """Build the reporting stack from the existing DB and engine."""
     from src.reporter import PerformanceReporter
 
+    snapshot_engine = get_snapshot_engine()
+    return PerformanceReporter(snapshot_engine, snapshot_engine.engine)
+
+
+def get_snapshot_engine() -> SnapshotEngine:
+    """Build the snapshot stack from the existing DB and engine."""
     engine = get_engine()
     fetcher = PriceFetcher(engine.db)
-    snapshot_engine = SnapshotEngine(engine, fetcher, engine.db)
-    return PerformanceReporter(snapshot_engine, engine)
+    return SnapshotEngine(engine, fetcher, engine.db)
 
 
 # ---------------------------------------------------------------------------
@@ -548,6 +553,45 @@ def cmd_report(args) -> None:
         sys.exit(1)
 
 
+def cmd_snapshot(args) -> None:
+    snapshot_engine = get_snapshot_engine()
+
+    if bool(args.start) != bool(args.end):
+        print(
+            "ERROR: --start and --end must be provided together for backfill.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    try:
+        if args.start and args.end:
+            written = snapshot_engine.backfill(args.start, args.end)
+            print(
+                f"Captured {written} snapshot(s) for {args.start} through {args.end}."
+            )
+            return
+
+        snapshot = snapshot_engine.capture(snapshot_date=args.date)
+    except ValueError as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        sys.exit(1)
+
+    if snapshot is None:
+        target_date = args.date or today_str()
+        print(
+            f"Snapshot skipped for {target_date}. "
+            "Check cached prices and benchmark availability.",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    print(
+        "Snapshot captured: "
+        f"{snapshot['snapshot_date']} total={fmt_money(snapshot['total_value'])} "
+        f"cash={fmt_money(snapshot['cash'])} positions={snapshot['num_positions']}"
+    )
+
+
 def cmd_refresh(args) -> None:
     try:
         import yfinance as yf
@@ -948,6 +992,12 @@ def build_parser() -> argparse.ArgumentParser:
     p_report.add_argument("--output", type=str,
                           help="Output path for HTML report")
 
+    # snapshot
+    p_snapshot = sub.add_parser("snapshot", help="Capture or backfill portfolio snapshots")
+    p_snapshot.add_argument("--date", type=str, help="Snapshot date (default: latest trading day)")
+    p_snapshot.add_argument("--start", type=str, help="Backfill start date (YYYY-MM-DD)")
+    p_snapshot.add_argument("--end", type=str, help="Backfill end date (YYYY-MM-DD)")
+
     # refresh
     p_refresh = sub.add_parser("refresh", help="Update current prices via yfinance")
     p_refresh.add_argument("tickers", nargs="*", help="Specific tickers (default: all)")
@@ -1001,6 +1051,7 @@ def main() -> None:
         "cover": cmd_cover,
         "status": cmd_status,
         "report": cmd_report,
+        "snapshot": cmd_snapshot,
         "refresh": cmd_refresh,
         "check": cmd_check,
         "history": cmd_history,

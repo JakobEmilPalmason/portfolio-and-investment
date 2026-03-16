@@ -58,3 +58,13 @@ The market is pricing the continuation of peak margins, peak growth rates, and a
 ## Score: 3 / 10
 
 CTAS is a world-class business trading at or above the top of its historical valuation range, with all reasonable DCF scenarios producing intrinsic values 15–55% below the current price, and the only path to justifying $194 requiring near-perfect multi-year execution on a large, antitrust-risky acquisition.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 85 |
+| IV Base | 113 |
+| IV Bull | 160 |
+| Currency | USD |
+| MOS at Analysis Date | -128.20 |

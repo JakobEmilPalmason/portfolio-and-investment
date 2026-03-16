@@ -72,3 +72,13 @@ The current price reflects moderate-to-fair optimism. The stock is not priced fo
 ## Score: 5 / 10
 
 CME is a high-quality business trading at approximately fair value — the current price requires continued mid-single-digit earnings growth to be justified, leaving minimal margin of safety for the value-oriented buyer.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 155 |
+| IV Base | 206 |
+| IV Bull | 272 |
+| Currency | USD |
+| MOS at Analysis Date | -102.60 |

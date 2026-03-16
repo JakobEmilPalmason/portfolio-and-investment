@@ -110,3 +110,13 @@ The market is pricing ASML as though it will execute precisely on its 2030 ambit
 ## Score: 4 / 10
 
 ASML is a world-class business being priced as one — the current valuation requires optimistic assumptions and offers thin upside relative to real downside risk, placing it firmly in "modestly overvalued" territory where a patient investor waits for a better entry.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 483 |
+| IV Base | 771 |
+| IV Bull | 1265 |
+| Currency | EUR |
+| MOS at Analysis Date | -161.10 |

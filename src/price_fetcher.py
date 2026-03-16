@@ -122,6 +122,7 @@ class PriceFetcher:
             )
 
         df = pd.DataFrame(rows)
+        del rows  # free list immediately — DataFrame owns the data now
         df = df.sort_values("date").drop_duplicates(subset="date").reset_index(drop=True)
         return df
 
@@ -195,13 +196,16 @@ class PriceFetcher:
 
         def _attempt() -> pd.DataFrame:
             ticker_obj = yf.Ticker(ticker)
-            df = ticker_obj.history(start=start, end=end_exclusive, auto_adjust=True)
-            if df.empty:
+            raw = ticker_obj.history(start=start, end=end_exclusive, auto_adjust=True)
+            if raw.empty:
                 raise ValueError(f"yfinance returned empty DataFrame for {ticker}")
-            df = df.reset_index()
-            df["date"] = df["Date"].dt.strftime("%Y-%m-%d")
-            df["close"] = df["Close"]
-            return df[["date", "close"]]
+            raw = raw.reset_index()
+            result = pd.DataFrame({
+                "date": raw["Date"].dt.strftime("%Y-%m-%d"),
+                "close": raw["Close"],
+            })
+            del raw  # free full OHLCV DataFrame immediately
+            return result
 
         return self._retry(_attempt, max_attempts=3, backoff_base=0.5)
 

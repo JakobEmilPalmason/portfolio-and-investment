@@ -105,3 +105,13 @@ The Novo Nordisk partnership is a genuine positive — it converts a legal enemy
 ## Score: 4 / 10
 
 At ~$22/share, HIMS is priced for an optimistic scenario that requires several uncertain assumptions to hold simultaneously, with no meaningful margin of safety in the base case and significant downside in the bear case.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 6.60 |
+| IV Base | 19.50 |
+| IV Bull | 36.50 |
+| Currency | USD |
+| MOS at Analysis Date | -233.33 |

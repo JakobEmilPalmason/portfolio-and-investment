@@ -46,5 +46,10 @@
   "valuation_summary": "At $351, ROP trades at 15x forward P/E and 14.5x EV/EBITDA — a 33% discount to its 13-year median. Probability-weighted fair value of ~$405 implies 15% upside. The market is pricing in permanently impaired growth and zero M&A value creation, which appears overly pessimistic for a business with 31% FCF margins and $5B+ in deployment capacity.",
   "source_summary": "Roper Technologies 2025 10-K, Q4 2025 earnings release, company investor presentations, proxy statement, Yahoo Finance, Morningstar, Seeking Alpha, StockAnalysis, GuruFocus, Simply Wall St, Alpha Spread, analyst reports (Goldman Sachs, RBC Capital, TD Cowen, Stifel, Oppenheimer, Argus)",
   "confidence": "medium",
-  "change_notes": "Initial analysis. Roper is a proven vertical software compounder at trough valuations due to Q4 2025 organic growth deceleration and FY2026 guidance miss. The 40% drawdown creates a contrarian entry point, but near-term growth uncertainty warrants scaled positioning rather than full conviction."
+  "change_notes": "Initial analysis. Roper is a proven vertical software compounder at trough valuations due to Q4 2025 organic growth deceleration and FY2026 guidance miss. The 40% drawdown creates a contrarian entry point, but near-term growth uncertainty warrants scaled positioning rather than full conviction.",
+  "iv_conservative": 223,
+  "iv_base": 393,
+  "iv_bull": 609,
+  "iv_currency": "USD",
+  "mos_at_analysis": -57.4
 }

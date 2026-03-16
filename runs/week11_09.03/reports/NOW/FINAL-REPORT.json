@@ -48,5 +48,10 @@
   "valuation_summary": "At ~$121/share (~$120B market cap), NOW trades at ~26x trailing FCF — its lowest FCF multiple in years, compressed from a historical range of 60–80x. Bear-case DCF (~10% growth, 28% FCF margin) yields ~$91B intrinsic value approximating current market cap, while base case (18% growth, 35% FCF margin) implies ~$170B; the stock represents fair-to-good value rather than a deep discount, with the multiple compression itself serving as the margin of safety.",
   "source_summary": "Analysis draws on web search results from March 2026 including ServiceNow Q4 2025 earnings press release, investor relations newsroom, Yahoo Finance, MarketBeat, StockAnalysis, GuruFocus, CNBC, Bloomberg, Motley Fool, Seeking Alpha, MacroTrends, and analyst research notes, supplemented by training knowledge on enterprise software dynamics.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 446,
+  "iv_base": 833,
+  "iv_bull": 1280,
+  "iv_currency": "USD",
+  "mos_at_analysis": 72.9
 }

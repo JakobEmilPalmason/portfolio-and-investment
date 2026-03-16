@@ -47,5 +47,10 @@
   "valuation_summary": "At ~$490 per share, ISRG trades at 62-67x trailing earnings and ~43-46x owner earnings. Probability-weighted intrinsic value is ~$530 (bear $340, base $520, bull $730), offering only ~8% upside. The market implies 16-18% annual earnings growth for 5+ years. This is a fair price for a world-class business, not a bargain.",
   "source_summary": "Q4 2025 earnings release (Jan 22, 2026), SEC filings, MacroTrends, Yahoo Finance, StockAnalysis.com, Seeking Alpha, TIKR.com, GuruFocus, Simply Wall St, MedTech Dive, PortfoliosLab, company investor relations",
   "confidence": "High on business quality (9/10 conviction); Medium on valuation (the tension between exceptional business and demanding price is the central question)",
-  "change_notes": "Initial analysis. ISRG scores exceptionally on business quality metrics (competence, moat, economics, balance sheet) but the premium valuation leaves no margin of safety for a new buyer. Watch for a meaningful pullback to $370-420 range."
+  "change_notes": "Initial analysis. ISRG scores exceptionally on business quality metrics (competence, moat, economics, balance sheet) but the premium valuation leaves no margin of safety for a new buyer. Watch for a meaningful pullback to $370-420 range.",
+  "iv_conservative": 340,
+  "iv_base": 520,
+  "iv_bull": 730,
+  "iv_currency": "USD",
+  "mos_at_analysis": -44.1
 }

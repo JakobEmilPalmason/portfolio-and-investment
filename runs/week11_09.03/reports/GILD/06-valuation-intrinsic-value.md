@@ -46,3 +46,13 @@
 ## Score: 7 / 10
 
 At ~$147, GILD appears modestly undervalued to fairly valued on core earnings power with meaningful upside optionality from lenacapavir and Trodelvy not currently priced in; base-case intrinsic value of $150–165/share implies limited downside and 5–13% near-term upside, with a path to $195+ if pipeline delivers.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 120 |
+| IV Base | 150 |
+| IV Bull | 195 |
+| Currency | USD |
+| MOS at Analysis Date | -22.10 |

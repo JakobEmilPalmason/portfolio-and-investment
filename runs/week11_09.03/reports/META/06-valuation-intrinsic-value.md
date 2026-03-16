@@ -123,3 +123,13 @@ The market is pricing in a **competent execution case** — not outright perfect
 ## Score: 5 / 10
 
 META is not clearly undervalued at $647 — base-case DCF suggests intrinsic value in the $430–560 range today, with the bull case required to justify the current price; the stock is priced for a successful AI capex cycle, making this fairly valued to modestly overvalued absent a strong conviction call on that outcome.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 163 |
+| IV Base | 429 |
+| IV Bull | 818 |
+| Currency | USD |
+| MOS at Analysis Date | -297.20 |

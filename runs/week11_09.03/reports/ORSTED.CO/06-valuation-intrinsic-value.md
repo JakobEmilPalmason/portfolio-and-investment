@@ -58,3 +58,13 @@ The market appears to be pricing in: (1) continued US political risk shutting Or
 ## Score: 5 / 10
 
 At DKK 139, Orsted is roughly fairly valued on a base-case scenario, with meaningful upside in the bull case but genuine downside in the bear case — the valuation is not cheap enough to provide a true margin of safety given the construction, regulatory, and geopolitical risks that remain.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 62 |
+| IV Base | 124 |
+| IV Bull | 202 |
+| Currency | DKK |
+| MOS at Analysis Date | -124.20 |

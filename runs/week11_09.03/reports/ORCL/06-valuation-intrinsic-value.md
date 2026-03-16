@@ -87,3 +87,13 @@ The stock is neither pricing perfection nor pessimism — it is pricing a specif
 ## Score: 4 / 10
 
 Oracle is a high-quality business undergoing a genuine transformation with extraordinary contracted demand, but at $164 per share the base case yields roughly fair value at best, the bear case implies 40–50% downside, negative FCF and extreme leverage remove the usual margin of safety, and the scoring rubric requires clear undervaluation for a higher score — which is absent here.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 75 |
+| IV Base | 145 |
+| IV Bull | 275 |
+| Currency | USD |
+| MOS at Analysis Date | -118.70 |

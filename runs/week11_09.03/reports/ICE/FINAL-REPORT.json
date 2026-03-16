@@ -49,5 +49,10 @@
   "valuation_summary": "At $159.20, ICE trades at 28.5x EV/owner earnings — approximately fair value at the base case intrinsic value of $154-165/share — with a bear case floor of $100-119 and a bull case of $185-193 if mortgage recovery and debt paydown both materialize; a price in the $130-140 range would represent a genuinely attractive entry.",
   "source_summary": "Analysis draws on pre-fetched yfinance financials, ICE FY2025 earnings release and Q4 2025 earnings call (ir.theice.com), MBA mortgage forecasts, S&P/Moody's credit rating affirmations, analyst consensus data, and peer comparisons from GuruFocus and Morningstar.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 100,
+  "iv_base": 154,
+  "iv_bull": 185,
+  "iv_currency": "USD",
+  "mos_at_analysis": -59.2
 }

@@ -47,5 +47,10 @@
   "valuation_summary": "All three DCF scenarios (bear ~$151, base ~$272, bull ~$377) produce intrinsic values materially below the current price of ~$705; the stock trades at 37-41x trailing earnings, roughly 2x its own 5-year historical average and >2x the industry median forward P/E, offering no margin of safety at any reasonable set of assumptions.",
   "source_summary": "Web search (Caterpillar Q4/FY2025 earnings releases, investor relations, MacroTrends, StockAnalysis, FinancialContent, Seeking Alpha) plus training knowledge for historical context; all 2025 full-year results confirmed, segment data may have minor rounding differences from official filings.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 151,
+  "iv_base": 272,
+  "iv_bull": 377,
+  "iv_currency": "USD",
+  "mos_at_analysis": -366.9
 }

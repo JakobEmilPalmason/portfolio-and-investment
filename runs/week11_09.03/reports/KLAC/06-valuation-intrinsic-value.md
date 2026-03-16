@@ -62,3 +62,13 @@ The market is not pricing in perfection, but it is pricing in a sustained growth
 ## Score: 4 / 10
 
 KLAC is an exceptional business but the current valuation at ~43x trailing P/E and ~34x forward P/E, representing a near-doubling of its historical average multiple, leaves no margin for error and implies downside even in the base case on a 5-year DCF, warranting a below-average valuation score despite outstanding business fundamentals.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 500 |
+| IV Base | 835 |
+| IV Bull | 1250 |
+| Currency | USD |
+| MOS at Analysis Date | -193 |

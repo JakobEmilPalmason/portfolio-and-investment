@@ -49,5 +49,10 @@
   "valuation_summary": "At DKK 139, Orsted trades roughly at base-case fair value with an EV/EBITDA of ~9x on 2026 guidance; Morningstar's fair value of DKK 160 implies only ~15% upside while the discounted bear-case intrinsic value is DKK 62-91 per share, meaning the current price already sits above the pessimistic-but-plausible scenario with no meaningful margin of safety.",
   "source_summary": "Analysis based on web search results covering Orsted annual reports 2024-2025, Q4 2025 investor presentations, S&P Global Ratings, Morningstar research, analyst price targets from multiple financial data providers, and company announcements through February 2026.",
   "confidence": "low",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 62,
+  "iv_base": 124,
+  "iv_bull": 202,
+  "iv_currency": "DKK",
+  "mos_at_analysis": -124.2
 }

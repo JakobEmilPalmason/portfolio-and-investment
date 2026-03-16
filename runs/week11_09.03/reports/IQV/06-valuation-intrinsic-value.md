@@ -67,3 +67,13 @@ These multiples sit at the low end of IQVIA's historical range (trough: ~10.75x 
 ## Score: 6 / 10
 
 IQVIA trades at historically cheap multiples (11.3x trailing EV/EBITDA vs. 18.75x median) and generates $2B+ in owner earnings, but heavy leverage and genuine CRO cycle uncertainty make this fairly valued at best on a risk-adjusted basis — closer to a 7 if cancellation trends stabilize, a 5 if they persist.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 112 |
+| IV Base | 169 |
+| IV Bull | 208 |
+| Currency | USD |
+| MOS at Analysis Date | -53.20 |

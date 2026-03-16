@@ -63,3 +63,13 @@ The market is not pricing in perfection — it is pricing in *continued strong e
 ## Score: 4 / 10
 
 At ~$1,001, LLY is modestly to materially overvalued in the bear case and only fairly valued in the base case; the bull case offers meaningful upside but requires near-perfect GLP-1 execution, yielding a score that reflects limited margin of safety and a fair-to-rich entry point.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 447 |
+| IV Base | 960 |
+| IV Bull | 1710 |
+| Currency | USD |
+| MOS at Analysis Date | -123.90 |

@@ -50,5 +50,10 @@
   "valuation_summary": "At $308.45, GOOG trades at 28x trailing P/E and 51x P/FCF. Base-case 5-year DCF (13% revenue CAGR, 30% margins, 23x terminal multiple, 10% discount rate) yields ~$258/share — 16% below current price. Bull case yields ~$391 (+27%); bear case yields ~$155 (−50%). Owner earnings yield is approximately 2.9% on FY2025 figures, falling below 2.2% on forward 2026 estimates given the capex surge. Fair value range estimated at $220–345; current price sits in the upper half.",
   "source_summary": "Primary sources: Alphabet Q4/FY 2025 earnings release (SEC filing, February 2026) for all financial figures. Market share data from StatCounter/eMarketer (August 2025). DOJ antitrust ruling (September 2025). Analyst consensus from MarketBeat/StockAnalysis. Insider ownership from GuruFocus. CEO pay package from Fortune (March 2026). DCF scenarios constructed by analysts using verified FY2025 base data.",
   "confidence": "medium",
-  "change_notes": "Initial analysis as of 2026-03-11. No prior report to compare. Key near-term watch items: Google Cloud Q1 2026 growth rate, ad tech antitrust remedies resolution, and 2026 FCF trajectory vs. capex."
+  "change_notes": "Initial analysis as of 2026-03-11. No prior report to compare. Key near-term watch items: Google Cloud Q1 2026 growth rate, ad tech antitrust remedies resolution, and 2026 FCF trajectory vs. capex.",
+  "iv_conservative": 155,
+  "iv_base": 258,
+  "iv_bull": 391,
+  "iv_currency": "USD",
+  "mos_at_analysis": -99.0
 }

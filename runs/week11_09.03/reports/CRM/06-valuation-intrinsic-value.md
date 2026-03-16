@@ -86,3 +86,13 @@ None of these scenarios is the base case. The market appears to be in a de-ratin
 ## Score: 7 / 10
 
 At ~15x FCF with double-digit revenue growth and dominant market position, CRM is reasonably valued with meaningful base/bull-case upside, though the new $25B debt load and a credible ~36% bear-case downside prevent a higher score.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 123 |
+| IV Base | 239 |
+| IV Bull | 396 |
+| Currency | USD |
+| MOS at Analysis Date | -60.98 |

@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$249 ADBE trades at 15x forward earnings and 11x P/FCF — less than half its 5-year median multiple — with third-party DCF models converging on intrinsic value of $313–$434 (base case ~$390); the market is pricing near-stagnation, which requires zero benefit from 10.9% ARR growth, and meaningful margin of safety exists only if AI disruption remains manageable.",
   "source_summary": "Analysis draws on Adobe Q1 FY2026 earnings release (March 12, 2026), FY2025 annual financials, SEC 10-Q filings, third-party DCF models (GuruFocus, Alpha Spread, valueinvesting.io), analyst consensus data, and web search results through March 15, 2026; all figures are current as of report date.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 160,
+  "iv_base": 390,
+  "iv_bull": 662,
+  "iv_currency": "USD",
+  "mos_at_analysis": -55.6
 }

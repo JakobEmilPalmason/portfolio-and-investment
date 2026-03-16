@@ -48,5 +48,10 @@
   "valuation_summary": "At ~$234/share (~$407B market cap, ~$469B EV), ABBV trades at ~16x forward adjusted EPS ($14.47 guidance midpoint) and ~22x adjusted FCF — reasonable multiples in isolation, but the DCF analysis produces a bear/base/bull intrinsic value range of $90/$119/$177, all below current price; the market is pricing in owner earnings of $25-27B by 2030 (7-9% annual growth) with no margin for error.",
   "source_summary": "Analysis based on AbbVie Q4 2025 earnings release (Feb 4, 2026), full-year 2024 and 2025 actuals from SEC filings and press releases, 2026 management guidance, analyst consensus from MarketBeat/StockAnalysis (46 analysts), patent data from DrugPatentWatch, credit ratings from S&P/Moody's, and historical volatility data from PortfoliosLab.",
   "confidence": "Medium-High — Business quality, patent runway, and near-term financials are well-documented with current data through February 2026 earnings; valuation judgment carries medium confidence as DCF outcomes depend on pipeline execution and IRA pricing impact that cannot be known with certainty; the absence of a price margin of safety is the most robust finding.",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 90,
+  "iv_base": 116,
+  "iv_bull": 177,
+  "iv_currency": "USD",
+  "mos_at_analysis": -160.0
 }

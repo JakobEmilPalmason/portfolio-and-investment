@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$429, SPGI trades at ~22x 2026 adjusted EPS guidance midpoint ($19.53), well below its historical 30–37x range, but conservative DCF models place intrinsic value at $369–$435, making the base case essentially in-line with the current price and leaving no meaningful margin of safety; the stock is fairly valued, not cheap.",
   "source_summary": "Analysis based on web search results from March 2026 including S&P Global Q4/FY2025 earnings release (February 10, 2026), investor relations materials, analyst consensus from MarketBeat/TipRanks, DCF estimates from Alpha Spread/Simply Wall St/GuruFocus, MacroTrends financial data, and Motley Fool earnings transcripts; no user-provided context files; training knowledge used for background on regulatory framework and historical market share.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 260,
+  "iv_base": 388,
+  "iv_bull": 528,
+  "iv_currency": "USD",
+  "mos_at_analysis": -65.0
 }

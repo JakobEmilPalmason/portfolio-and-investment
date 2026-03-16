@@ -67,3 +67,13 @@ At $36/share ($35B market cap), what must be true? Assuming a 10% required retur
 ## Score: 6 / 10
 
 Stock appears fairly to modestly undervalued relative to a base-case scenario, but the bear case implies meaningful downside, maintenance capex assumptions introduce uncertainty, and current earnings momentum is negative; a 6 reflects a reasonable valuation setup with significant scenario dispersion.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 18.52 |
+| IV Base | 32.92 |
+| IV Bull | 54.53 |
+| Currency | USD |
+| MOS at Analysis Date | -94.40 |

@@ -116,3 +116,13 @@ Sources:
 - [TSMC Dividend History - StockAnalysis](https://stockanalysis.com/stocks/tsm/dividend/)
 - [TSMC Forward P/E - GuruFocus](https://www.gurufocus.com/term/forward-pe-ratio/TSM)
 - [TSMC Foundry Market Share - Counterpoint Research](https://counterpointresearch.com/en/insights/global-semiconductor-foundry-market-share)
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 161 |
+| IV Base | 290 |
+| IV Bull | 494 |
+| Currency | USD |
+| MOS at Analysis Date | -119.90 |

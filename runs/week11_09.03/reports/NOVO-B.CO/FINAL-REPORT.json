@@ -48,5 +48,10 @@
   "valuation_summary": "At ~11x trough earnings and 60% below its 52-week high, the market prices Novo as ex-growth pharma with zero future value creation. Probability-weighted intrinsic value suggests ~20% upside with a 2:1 upside/downside asymmetry, but the margin of safety is thin given extreme semaglutide concentration risk.",
   "source_summary": "Analysis based on web searches conducted 2026-03-05 covering Novo Nordisk Annual Report 2025, Q4 2025 earnings, 2026 guidance, GLP-1 competitive landscape, and analyst estimates; sources include novonordisk.com, CNBC, PharmExec, BioPharma Dive, Fierce Pharma, IQVIA, MacroTrends, StockAnalysis, and rating agency data.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 115,
+  "iv_base": 235,
+  "iv_bull": 410,
+  "iv_currency": "DKK",
+  "mos_at_analysis": -113.0
 }

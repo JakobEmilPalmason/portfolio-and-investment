@@ -51,5 +51,10 @@
   "valuation_summary": "At $492/BRK-B and 1.48x book, sum-of-parts analysis ($369B cash + $264B equity portfolio + operating businesses at 13-15x ex-investment income) supports a fair-value range of $456-$501/share, placing the current price near the midpoint of intrinsic value with thin price margin of safety but exceptional business margin of safety from the fortress balance sheet; the buyback resumption in March 2026 provides a soft management-endorsed floor near $492.",
   "source_summary": "Web search results (March 2026) for current price, P/B ratio, and FY2025/Q4 2025 earnings data; Berkshire Hathaway FY2025 annual report press release (Feb 28, 2026) and Q3 2025 10-Q for balance sheet and segment data; Greg Abel's 2025 shareholder letter and CNBC coverage of Abel's personal stock purchase and buyback restart (March 5-7, 2026); GuruFocus, MacroTrends, StockAnalysis, and Morningstar for valuation multiples; training knowledge for structural analysis of the float model and historical capital allocation record.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 340,
+  "iv_base": 331,
+  "iv_bull": 479,
+  "iv_currency": "USD",
+  "mos_at_analysis": -44.7
 }

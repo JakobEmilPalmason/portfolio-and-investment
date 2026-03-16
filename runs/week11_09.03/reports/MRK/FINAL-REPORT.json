@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$119, MRK trades near the upper end of its base-case DCF range ($105-120 per share), implying minimal price margin of safety; EV/EBITDA of ~11x is near a decade low and the 3%+ dividend provides a return floor, but the stock is priced for a successful (not pessimistic) post-KEYTRUDA transition rather than at a conservative discount to intrinsic value.",
   "source_summary": "Analysis based on Merck Q4/FY2025 earnings release (February 2026), web searches across MacroTrends, GuruFocus, StockAnalysis, Yahoo Finance, CNBC, and PharmExec; data current through early March 2026 with FY2025 actuals confirmed.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 75,
+  "iv_base": 105,
+  "iv_bull": 135,
+  "iv_currency": "USD",
+  "mos_at_analysis": -58.7
 }

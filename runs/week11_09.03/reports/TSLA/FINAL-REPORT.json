@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$405/share (~$1.47T market cap), Tesla trades at ~380x trailing earnings and ~237x FCF on a business reporting its first revenue decline. Conservative probability-weighted intrinsic value across bear/base/bull scenarios is approximately $227/share — roughly 44% below current price — and even the base case implies a 50–59% loss; conservative estimates of $50–210 imply the stock trades at 2–8x fair value.",
   "source_summary": "Analysis based on web search results from multiple financial data providers (MacroTrends, StockAnalysis, Yahoo Finance, GuruFocus), Tesla IR press releases and Q4/FY 2025 earnings release (January 2026), Tesla 10-K for fiscal year 2024, and volatility/drawdown data from PortfoliosLab and MacroAxis — all sourced through early March 2026; no user-provided context files were present for TSLA.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 50,
+  "iv_base": 165,
+  "iv_bull": 540,
+  "iv_currency": "USD",
+  "mos_at_analysis": -710.0
 }

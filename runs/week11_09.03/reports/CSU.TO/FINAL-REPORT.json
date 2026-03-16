@@ -50,5 +50,10 @@
   "valuation_summary": "At CAD 2,939, CSU trades at ~37x trailing FCFA2S and ~26x forward FCFA2S (projected CAD 2.4B for 2026), representing a ~23% discount to Alpha Spread's base-case DCF of CAD 3,616 and ~30–35% below analyst consensus targets of CAD 4,200–4,365; the current price implies only 10–11% annual FCFA2S growth for 10 years — well below the 16–18% historical rate — suggesting the market is pricing in meaningful deceleration that may not materialize.",
   "source_summary": "Primary sources: GlobeNewswire Q4 2025 earnings release (March 9, 2026), Q4 2024 audited shareholder report (March 2025), Alpha Spread DCF, MarketBeat/TipRanks consensus, GuruFocus/StockAnalysis.com ratios, PortfoliosLab drawdown data; balance sheet figures are as of December 31, 2024 (latest audited), FY2025 income/FCF figures from unaudited press release.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 1320,
+  "iv_base": 2410,
+  "iv_bull": 6350,
+  "iv_currency": "CAD",
+  "mos_at_analysis": -122.7
 }

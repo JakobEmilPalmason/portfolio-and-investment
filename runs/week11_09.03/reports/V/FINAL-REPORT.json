@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$314/share (~24x forward EPS of ~$13.10), Visa is fairly valued near the midpoint of the $300–$340 base-case intrinsic value range; base-case DCF (9% discount rate, 10% earnings growth) yields ~$264–$302/share, while the bull case reaches $382+; the stock is below its 10-year average forward P/E of ~33x but the DOJ tail risk and higher discount rates justify the discount.",
   "source_summary": "Analysis based on Visa FY2025 annual results (fiscal year ending September 30, 2025) and Q1 FY2026 earnings (January 29, 2026); financial data cross-referenced across investor.visa.com, MacroTrends, GuruFocus, StockAnalysis, and MarketBeat; DOJ case status from Payments Dive and PYMNTS as of early 2026.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 182,
+  "iv_base": 264,
+  "iv_bull": 382,
+  "iv_currency": "USD",
+  "mos_at_analysis": -70.4
 }

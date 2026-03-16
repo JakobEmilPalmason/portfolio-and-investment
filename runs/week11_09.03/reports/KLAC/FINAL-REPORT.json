@@ -50,5 +50,10 @@
   "valuation_summary": "At ~$1,465/share, KLAC trades at ~43x trailing P/E and ~34x forward P/E — roughly double its 10-year historical average of ~22x; all three DCF scenarios (bear $500, base $850, bull $1,280) imply downside from the current price, with the probability-weighted intrinsic value approximately ~$860, suggesting ~41% downside; a genuine margin-of-safety entry requires a price of approximately $650–700.",
   "source_summary": "Analysis based on web search results from March 2026, KLA Corporation IR press releases (FY2025 Q4 earnings, March 2026 Investor Day), KLA Q2 FY2026 10-Q, MacroTrends, GuruFocus, StockAnalysis, and PortfoliosLab; all financial data is current as of March 12, 2026 with FY2025 figures for the fiscal year ended June 30, 2025.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 500,
+  "iv_base": 835,
+  "iv_bull": 1250,
+  "iv_currency": "USD",
+  "mos_at_analysis": -193.0
 }

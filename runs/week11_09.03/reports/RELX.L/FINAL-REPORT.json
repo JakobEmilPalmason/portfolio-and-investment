@@ -48,5 +48,10 @@
   "valuation_summary": "At 2,594p (20x adjusted 2025 EPS of 128.5p, 14x EV/EBITDA), RELX trades at decade-low multiples following a 38% drawdown from its May 2025 peak of 4,183p. Bear-case DCF (3% growth, 200bps margin compression, 8% discount rate) implies ~2,450p intrinsic value — only ~6% below today. Base-case DCF (6-7% growth, modest margin expansion) implies ~3,820p (+47%). The stock appears to price in disruption as base case despite no reported fundamental deterioration. Owner earnings per share are approximately 184p (~14x today's price), growing to ~230-270p in 3-5 years at 7-8% growth.",
   "source_summary": "Primary: RELX PLC 2025 Full Year Results press release (12 Feb 2026) and prior-year results press releases. Supporting: RELX investor relations (relx.com), credit ratings pages, debt maturity profiles. Third-party: GuruFocus ROIC data, StockAnalysis.com ratios, Macrotrends historical data, Investing.com, Research Tree, ainvest.com, Morningstar peer analysis, ShareScope AI risk analysis (March 2026). No user-provided context files were available for this analysis.",
   "confidence": "medium",
-  "change_notes": "First full analysis of RELX.L. Verdict Watch driven by strong business quality (average 7.5/10 across umbrellas 1-5) being offset by thin price margin of safety (umbrella 7: 5/10) which fails the Own threshold of MoS >= 6. The AI disruption narrative introduced in early 2026 has created a binary risk that materially widens the intrinsic value range and prevents high-conviction positioning at current prices."
+  "change_notes": "First full analysis of RELX.L. Verdict Watch driven by strong business quality (average 7.5/10 across umbrellas 1-5) being offset by thin price margin of safety (umbrella 7: 5/10) which fails the Own threshold of MoS >= 6. The AI disruption narrative introduced in early 2026 has created a binary risk that materially widens the intrinsic value range and prevents high-conviction positioning at current prices.",
+  "iv_conservative": 2450,
+  "iv_base": 3820,
+  "iv_bull": 4930,
+  "iv_currency": "GBp",
+  "mos_at_analysis": -5.9
 }

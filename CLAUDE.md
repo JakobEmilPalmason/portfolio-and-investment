@@ -431,6 +431,32 @@ The `--iv` flag on buy/short provides the user's intrinsic value estimate. Not p
 
 ---
 
+## Dashboard
+
+**Trigger phrases:** "open dashboard", "run dashboard", "show streamlit dashboard"
+**Entry point:** `dashboard/app.py`
+
+Read-only Streamlit dashboard layered alongside the Flask research browser. The dashboard never writes to `db/portfolio.db`. Portfolio and performance views read SQLite through `Database` and `PortfolioEngine`; research view reads the latest `FINAL-REPORT.json` / `FINAL-REPORT.md` plus `queue/queue.json`.
+
+### Pages
+1. **Portfolio** — current holdings, allocation pie, sector exposure, policy flags, top-level stats
+2. **Performance** — cumulative portfolio return vs SPY, QuantStats summary, monthly heatmap when enough snapshots exist
+3. **Research** — ticker selector, verdict, score table, strengths/risks, queue state, inline full report
+
+### How to run
+```bash
+./run.sh dashboard
+```
+
+### Data freshness
+- Dashboard reads are cached with a 60-second TTL.
+- If performance history is missing, take a daily snapshot with:
+```bash
+./run.sh snapshot
+```
+
+---
+
 ## Pre-Buy Checklist
 
 **Trigger phrases:** "prebuy TICKER", "pre-buy check TICKER", "check before buying TICKER"

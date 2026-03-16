@@ -48,5 +48,10 @@
   "valuation_summary": "At €166, SAP trades at 19.5x forward P/E and 17.2x EV/EBITDA — both 25-35% below 3-year averages. Base-case DCF suggests €200-220 intrinsic value (20-32% upside). Reverse-engineered expectations imply only 5-6% earnings growth vs consensus mid-teens, suggesting embedded pessimism. Bear case floor ~€110-130, bull case ~€240-260.",
   "source_summary": "Yahoo Finance auto-fetch, SAP Q4/FY2025 earnings release (Jan 2026), SAP 20-F annual report, Morningstar moat analysis, Gartner ERP market estimates, 6sense market share data, Creditreform credit rating, Alpha Spread relative valuation, analyst consensus from SAP Investor Relations, PortfoliosLab historical drawdown data",
   "confidence": "medium",
-  "change_notes": "Initial analysis. SAP is at the inflection point of its cloud transition with expanding margins and near-doubling FCF, available at a significant discount to historical multiples after a cloud backlog miss and AI disruption fears. The business quality is high but the price margin of safety is modest rather than deep."
+  "change_notes": "Initial analysis. SAP is at the inflection point of its cloud transition with expanding margins and near-doubling FCF, available at a significant discount to historical multiples after a cloud backlog miss and AI disruption fears. The business quality is high but the price margin of safety is modest rather than deep.",
+  "iv_conservative": 81,
+  "iv_base": 180,
+  "iv_bull": 240,
+  "iv_currency": "EUR",
+  "mos_at_analysis": -104.9
 }

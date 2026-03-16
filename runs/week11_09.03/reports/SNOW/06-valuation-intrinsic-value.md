@@ -60,3 +60,13 @@ The market is not pricing in perfection — that was the case when SNOW traded a
 ## Score: 5 / 10
 
 Snowflake appears roughly fairly valued at $168/share. The base case analysis yields an intrinsic value range of $165-$180, which is essentially the current price. There is no clear margin of safety for a Buffett-style investor — the stock requires optimistic (but not unreasonable) assumptions about AI-driven growth and margin expansion to justify meaningful upside, and the massive stock-based compensation makes true owner earnings elusive. This is a "watch, don't own" situation until either the price drops meaningfully or the company demonstrates sustained GAAP profitability.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 85 |
+| IV Base | 165 |
+| IV Bull | 280 |
+| Currency | USD |
+| MOS at Analysis Date | -97.60 |

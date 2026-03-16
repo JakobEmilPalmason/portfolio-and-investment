@@ -56,3 +56,13 @@ The stock's current valuation implies roughly 13-15% earnings growth for the nex
 
 ## Score: 5 / 10
 At ~$433, Synopsys trades near the midpoint of a wide fair value range; the valuation is neither compelling nor obviously stretched, but the $13.5B debt overhang and reliance on non-GAAP adjustments to show earnings growth leave insufficient margin of safety for a Buffett-style buyer.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 208 |
+| IV Base | 369 |
+| IV Bull | 580 |
+| Currency | USD |
+| MOS at Analysis Date | -108.17 |

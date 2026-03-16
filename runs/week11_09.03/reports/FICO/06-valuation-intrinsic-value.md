@@ -50,3 +50,13 @@
 ## Score: 5 / 10
 
 FICO's intrinsic value is likely $1,350–1,500 in the base case, making the current price roughly fair but with an uncomfortably narrow margin of safety given the sudden and credible competitive challenge to its Scores pricing model.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 650 |
+| IV Base | 1350 |
+| IV Bull | 2200 |
+| Currency | USD |
+| MOS at Analysis Date | -97.70 |

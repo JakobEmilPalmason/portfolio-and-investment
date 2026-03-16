@@ -47,5 +47,10 @@
   "valuation_summary": "At $187 (18.8x EV/EBITDA vs. 22x historical median, 20.6x forward P/E), Danaher is roughly fairly valued on base-case assumptions with base-case discounted value of ~$171 and bear-case discounted value of ~$116. The stock needs to fall 15-25% to $140-$160 for genuine Buffett-style margin of safety.",
   "source_summary": "Danaher Q4 2025 earnings release (Jan 28, 2026), Danaher 10-K, Yahoo Finance, MacroTrends, StockAnalysis.com, TIKR.com, GuruFocus, Quartr, Simply Wall St, Seeking Alpha, Masimo acquisition press release (Feb 17, 2026), In Practise (Cytiva moat analysis)",
   "confidence": "medium",
-  "change_notes": "Initial analysis. Key monitoring items: bioprocessing order recovery trajectory, Masimo acquisition close and early integration, ROIC recovery path, China VBP impact."
+  "change_notes": "Initial analysis. Key monitoring items: bioprocessing order recovery trajectory, Masimo acquisition close and early integration, ROIC recovery path, China VBP impact.",
+  "iv_conservative": 116,
+  "iv_base": 171,
+  "iv_bull": 235,
+  "iv_currency": "USD",
+  "mos_at_analysis": -61.2
 }

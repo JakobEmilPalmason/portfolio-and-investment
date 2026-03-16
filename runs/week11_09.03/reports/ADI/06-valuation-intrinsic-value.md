@@ -62,3 +62,13 @@ The market is pricing in an optimistic-to-perfect scenario for ADI. The Q2 FY202
 ## Score: 4 / 10
 
 ADI is an exceptional business, but the current price of ~$318 offers limited intrinsic value upside in the base case and meaningful downside in the bear case — fair-to-modestly-overvalued for a long-term buyer at today's price.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 140 |
+| IV Base | 225 |
+| IV Bull | 300 |
+| Currency | USD |
+| MOS at Analysis Date | -127.70 |

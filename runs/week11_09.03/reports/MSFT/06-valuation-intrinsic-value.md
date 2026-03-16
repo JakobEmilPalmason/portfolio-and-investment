@@ -63,3 +63,13 @@ At $405 and ~3.75B shares outstanding, market cap is ~$1.52T. With net cash/shor
 ## Score: 6 / 10
 
 Microsoft is fairly to modestly undervalued relative to its own history and normalized earnings power, but the compressed current FCF and uncertainty around AI capex payback prevent a higher score; the business deserves a premium multiple and is getting one, just a lower premium than its 2021–2024 peak.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 147 |
+| IV Base | 270 |
+| IV Bull | 370 |
+| Currency | USD |
+| MOS at Analysis Date | -175.50 |

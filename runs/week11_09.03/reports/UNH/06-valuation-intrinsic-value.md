@@ -60,3 +60,13 @@ The market is neither pricing in perfection nor outright disaster — it is pric
 ## Score: 5 / 10
 
 At $282/share, UNH is priced for substantial uncertainty and may be cheap on normalized earnings, but the wide range of intrinsic value outcomes ($110–$400) driven by unresolved DOJ liability and MCR trajectory makes a confident valuation call impossible — fair value is assigned pending regulatory clarity.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 110 |
+| IV Base | 220 |
+| IV Bull | 360 |
+| Currency | USD |
+| MOS at Analysis Date | -156.40 |

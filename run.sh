@@ -6,6 +6,7 @@
 #   ./run.sh triage [latest|WEEK]    # Fast triage (B1) then focused triage (B2), ≤8 deep_dives
 #   ./run.sh analyze TICKER          # Full 8-umbrella analysis + final report
 #   ./run.sh portfolio [CAPITAL]     # Portfolio simulator (snapshot allocation)
+#   ./run.sh dashboard               # Streamlit dashboard
 #   ./run.sh monitor TICKER          # Change detection (stub — not yet implemented)
 #   ./run.sh validate <type> <file>  # Validate a pipeline output file
 #
@@ -99,12 +100,14 @@ usage() {
     echo "  fetch TICKER [...]       Fetch financial data from Yahoo Finance"
     echo "  analyze TICKER           Full 8-umbrella analysis + final report"
     echo "  portfolio [CAPITAL]      Portfolio simulator (default capital: \$100,000)"
+    echo "  dashboard                Streamlit portfolio dashboard"
     echo "  buy TICKER [opts]        Record a long purchase"
     echo "  sell TICKER [opts]       Record a long sale"
     echo "  short TICKER [opts]      Record a short opening"
     echo "  cover TICKER [opts]      Record a short close"
     echo "  holdings                 Show current portfolio state"
     echo "  ledger <subcmd>          Ledger management (init, refresh, bootstrap, check, history)"
+    echo "  snapshot                 Capture a daily portfolio snapshot"
     echo "  prebuy TICKER [...]      Pre-buy checklist (quality, price vs IV, conviction)"
     echo "  prebuy --own             Dashboard: C1/C2 status for all Own-verdict tickers"
     echo "  monitor TICKER           Change detection (stub — not yet implemented)"
@@ -119,12 +122,15 @@ usage() {
     echo "  $0 portfolio"
     echo "  $0 portfolio 250000"
     echo "  $0 portfolio 500000 --min-verdict watch --top 15"
+    echo "  $0 dashboard"
     echo "  $0 prebuy GILD"
     echo "  $0 prebuy GILD --dry-run-buy"
     echo "  $0 prebuy --own"
     echo "  $0 buy V --price 312.50 --amount 3000 --iv 380"
     echo "  $0 sell V --price 340 --shares 5"
     echo "  $0 holdings"
+    echo "  $0 snapshot"
+    echo "  $0 snapshot --start 2026-03-01 --end 2026-03-14"
     echo "  $0 ledger init --capital 100000"
     echo "  $0 ledger refresh"
     echo "  $0 ledger history"
@@ -594,6 +600,10 @@ cmd_portfolio() {
     python3 "$SCRIPT_DIR/scripts/portfolio-sim.py" --capital "$capital" "$@"
 }
 
+cmd_dashboard() {
+    python3 -m streamlit run "$SCRIPT_DIR/dashboard/app.py" "$@"
+}
+
 cmd_ledger() {
     python3 "$SCRIPT_DIR/scripts/portfolio-ledger.py" "$@"
 }
@@ -635,11 +645,13 @@ case "$COMMAND" in
     fetch)     cmd_fetch "$@" ;;
     analyze)   cmd_analyze "$@" ;;
     portfolio) cmd_portfolio "$@" ;;
+    dashboard) cmd_dashboard "$@" ;;
     buy)       cmd_ledger buy "$@" ;;
     sell)      cmd_ledger sell "$@" ;;
     short)     cmd_ledger short "$@" ;;
     cover)     cmd_ledger cover "$@" ;;
     holdings)  cmd_ledger status "$@" ;;
+    snapshot)  python3 "$SCRIPT_DIR/scripts/paper_trade.py" snapshot "$@" ;;
     ledger)    cmd_ledger "$@" ;;
     prebuy)    cmd_prebuy "$@" ;;
     monitor)   cmd_monitor "$@" ;;

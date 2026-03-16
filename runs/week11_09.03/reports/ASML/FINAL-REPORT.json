@@ -48,5 +48,10 @@
   "valuation_summary": "Conservative intrinsic value estimates land at €500–800/share versus a current price of ~€1,260/share (~$1,368 NASDAQ); the base case barely justifies today's price and only the bull case produces meaningful upside, with bear-case downside of 55–60% and no margin of safety at current levels.",
   "source_summary": "Analysis based on web search results (January–March 2026) including ASML Q4 2025 press release, ASML investor relations, MacroTrends, StockAnalysis, Morningstar, GuruFocus, analyst price targets from MarketBeat/TipRanks, and China export control news coverage; training knowledge used for technical and governance context.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 483,
+  "iv_base": 771,
+  "iv_bull": 1265,
+  "iv_currency": "EUR",
+  "mos_at_analysis": -161.1
 }

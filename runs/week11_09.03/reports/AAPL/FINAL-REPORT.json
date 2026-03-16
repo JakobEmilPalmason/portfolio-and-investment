@@ -47,5 +47,10 @@
   "valuation_summary": "Multiple independent DCF models cluster fair value at $140–215; at $257/share the base case implies 16% downside and the bear case implies 40% downside, with no price margin of safety. The stock trades at or above base-case intrinsic value (~$215) with an upside/downside ratio of approximately 1:3 against the buyer.",
   "source_summary": "Analysis based on web search results (March 2026) drawing on Apple's FY2025 10-K and SEC filings, Q1 FY2026 earnings release, MacroTrends, GuruFocus, StockAnalysis, and multiple third-party valuation models; no user-provided context files were available.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 153,
+  "iv_base": 215,
+  "iv_bull": 290,
+  "iv_currency": "USD",
+  "mos_at_analysis": -68.0
 }

@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$22/share (~$5B market cap, ~39x trailing earnings), the base case intrinsic value is approximately $19–20/share with no margin of safety, while the bear case implies ~$6.60/share (70% downside) carrying a 25–35% probability; justifying today's price requires four independent assumptions to hold simultaneously in a business model that did not exist 30 days ago.",
   "source_summary": "Analysis draws on web search results from February–March 2026, Hims & Hers Q4/FY2025 investor press releases, SEC EDGAR filings, MacroTrends and StockAnalysis financial data, analyst estimates from MarketBeat and TipRanks, and news coverage from STAT News, Fierce Healthcare, and Bloomberg; no user-provided context files were available.",
   "confidence": "low",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 6.6,
+  "iv_base": 19.5,
+  "iv_bull": 36.5,
+  "iv_currency": "USD",
+  "mos_at_analysis": -233.3
 }

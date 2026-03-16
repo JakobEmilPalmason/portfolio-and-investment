@@ -48,5 +48,10 @@
   "valuation_summary": "At ~$198/share, CRM trades at ~15x FY2026 FCF of $14.4B — a steep discount to its own 3-year average of 30–45x and SaaS peers at 25–50x. Base-case intrinsic value is ~$239 (+21% upside); bull case ~$396 (+100%); bear case ~$125 (-37%). Probability-weighted expected value at 40/40/20 bear/base/bull weighting is approximately $192 — roughly in line with current price, meaning the market has the distribution approximately right. The $25B debt-funded ASR adds ~$800M–$1.1B in permanent annual interest expense and reduces financial flexibility but also retires ~8–10% of shares at today's price.",
   "source_summary": "Analysis based on web search results covering Salesforce Q4 FY2026 earnings (released February 25, 2026), Bloomberg/Investing.com coverage of the March 10–11 bond offering, Salesforce investor relations, MacroTrends, StockAnalysis, GuruFocus, Morningstar (Wide Moat rating), IDC CRM market share data, SEC EDGAR proxy filings, and GuruFocus insider trading data. All financial figures are from the official FY2026 Q4 earnings release unless otherwise noted. Post-bond-offering balance sheet estimates are based on Bloomberg reporting as of March 12, 2026 (offering not yet closed).",
   "confidence": "medium",
-  "change_notes": "Updated from 2026-03-10 report. Key score changes from prior run: Balance Sheet lowered from 8 to 6 (reflects March 2026 $20–25B bond offering announced after prior report date); Valuation raised from 6 to 7 (reflects more precise FCF-based scenario analysis with post-ASR share count); Temperament raised from 6 to 7 (reflects clearer thesis milestone framework and catalyst timeline). Net average score unchanged at 6.75. Verdict unchanged at Watch."
+  "change_notes": "Updated from 2026-03-10 report. Key score changes from prior run: Balance Sheet lowered from 8 to 6 (reflects March 2026 $20–25B bond offering announced after prior report date); Valuation raised from 6 to 7 (reflects more precise FCF-based scenario analysis with post-ASR share count); Temperament raised from 6 to 7 (reflects clearer thesis milestone framework and catalyst timeline). Net average score unchanged at 6.75. Verdict unchanged at Watch.",
+  "iv_conservative": 123,
+  "iv_base": 239,
+  "iv_bull": 396,
+  "iv_currency": "USD",
+  "mos_at_analysis": -61.0
 }

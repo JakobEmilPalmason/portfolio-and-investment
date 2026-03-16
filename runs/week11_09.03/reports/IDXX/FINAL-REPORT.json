@@ -52,5 +52,10 @@
   "valuation_summary": "At ~$662, IDXX trades at ~44x forward 2026 EPS with a 2.2% FCF yield; strict DCF analysis places base-case intrinsic value at $460-$480/share (absent premium multiple support) and bear-case value at $310-$320, with bull case at $900-$950 — the stock is priced at or slightly above a 'multiple-held' base case with no margin of safety and unfavorable 1.4x upside / 2.1x downside asymmetry.",
   "source_summary": "Analysis based on IDEXX Q4 2025/FY2025 earnings release (January 30, 2026), company IR press releases, MacroTrends, GuruFocus, StockAnalysis, TIKR, PortfoliosLab, and third-party research aggregators; all financial data is current through FY2025 actuals with 2026 guidance incorporated.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 310,
+  "iv_base": 460,
+  "iv_bull": 900,
+  "iv_currency": "USD",
+  "mos_at_analysis": -113.5
 }

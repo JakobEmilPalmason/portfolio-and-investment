@@ -48,5 +48,10 @@
   "valuation_summary": "At ~$78/share (~11x 2026 forward EPS of $7.00-$7.20), CVS is near a 10-year valuation low, but the $52B net debt load makes equity value highly sensitive to enterprise assumptions. A base-case DCF net of debt yields equity value of $41-62/share, suggesting the stock is fairly valued to modestly overvalued with almost no margin of safety at current prices.",
   "source_summary": "Analysis draws on CVS Health Q4 and full-year 2025 earnings releases (February 2026), SEC filings, analyst consensus from MarketBeat and StockAnalysis.com, Morningstar and Alpha Spread DCF models, MacroTrends margin history, GuruFocus ROIC and balance sheet data, FTC/House Judiciary antitrust reports, and Healthcare Dive turnaround coverage.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 0,
+  "iv_base": 41,
+  "iv_bull": 50,
+  "iv_currency": "USD",
+  "mos_at_analysis": null
 }

@@ -48,3 +48,13 @@
 ## Score: 7 / 10
 
 Adobe is trading at less than half its historical valuation median with a strong FCF-generative business still growing double-digits; the bear case is largely priced in, and base/bull scenarios offer meaningful upside — but a genuine bull call requires confidence that AI disruption remains manageable, which is not yet proven.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 160 |
+| IV Base | 390 |
+| IV Bull | 662 |
+| Currency | USD |
+| MOS at Analysis Date | -55.60 |

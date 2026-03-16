@@ -66,3 +66,13 @@ The market is NOT pricing in perfection (that would require 2021's ~75x P/E). At
 ## Score: 4 / 10
 
 IDXX is a world-class business trading at a full price: the base-case DCF supports roughly today's price only if the market continues to apply a ~40–45x forward multiple at exit, and strict intrinsic-value math suggests limited upside; a valuation score of 4 reflects modest overvaluation relative to conservative estimates, with meaningful downside if the premium compresses.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 310 |
+| IV Base | 460 |
+| IV Bull | 900 |
+| Currency | USD |
+| MOS at Analysis Date | -113.50 |

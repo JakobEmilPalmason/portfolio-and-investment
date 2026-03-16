@@ -48,3 +48,13 @@ Note: the 10-year CAGR for Hermès net income has been roughly 16-17%, so 14% is
 
 ## Score: 5 / 10
 Hermès is approximately fairly valued under base-case assumptions — not clearly overvalued, but offering no meaningful discount to intrinsic value, and requiring continued strong execution to justify the current price.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 1240 |
+| IV Base | 1710 |
+| IV Bull | 2340 |
+| Currency | EUR |
+| MOS at Analysis Date | -55.20 |

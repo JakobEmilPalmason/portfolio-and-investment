@@ -60,3 +60,13 @@ The market is not pricing in perfection — it priced in much more optimistic as
 ## Score: 5 / 10
 
 MSCI is a genuinely exceptional business priced fairly: the current $548 price approximately matches a reasonable base-case intrinsic value, leaving little cushion and requiring continued execution for the investment to generate acceptable returns.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 327 |
+| IV Base | 637 |
+| IV Bull | 912 |
+| Currency | USD |
+| MOS at Analysis Date | -67.55 |

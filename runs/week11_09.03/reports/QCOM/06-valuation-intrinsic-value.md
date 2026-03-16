@@ -57,3 +57,13 @@ The stock has declined from a 52-week high of ~$205 to ~$136 — a 34% drop. Thi
 ## Score: 6 / 10
 
 The stock appears modestly undervalued in a base case scenario, trading at a historic discount to its own multiples and well below semiconductor peers, but the wide range of plausible outcomes (from deeply undervalued to fairly valued) prevents a higher conviction score.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 99 |
+| IV Base | 119 |
+| IV Bull | 164 |
+| Currency | USD |
+| MOS at Analysis Date | -37.40 |

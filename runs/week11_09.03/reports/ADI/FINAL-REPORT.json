@@ -50,5 +50,10 @@
   "valuation_summary": "At $318.81/share (34x trailing FCF, 32x forward adjusted EPS), ADI's current price requires the bull case to be fully realized — FY2028 FCF of $6B+ on ~$15B revenue — just to return 10% annually; the base-case discounted intrinsic value is ~$225 and the conservative value is ~$140–145, creating 3:1 downside-to-upside asymmetry with no margin of safety.",
   "source_summary": "Analysis based on ADI Q1 FY2026 earnings release (Feb 2026), FY2025 Q4 press release (Nov 2025), MacroTrends/GuruFocus financial data, StockAnalysis statistics, MarketBeat/Nasdaq analyst consensus, and ADI SEC filings; all data from primary sources dated within 60 days of analysis date.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 140,
+  "iv_base": 225,
+  "iv_bull": 300,
+  "iv_currency": "USD",
+  "mos_at_analysis": -127.7
 }

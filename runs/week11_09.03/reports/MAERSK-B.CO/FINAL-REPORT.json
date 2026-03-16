@@ -49,5 +49,10 @@
   "valuation_summary": "At 16,420 DKK (~$36bn market cap), the stock trades 46% above the base-case 5-year present value of ~11,200 DKK; analyst consensus target of 12,673 DKK implies 23% downside, and bear-case intrinsic value of 4,000–7,000 DKK implies 57–76% downside. Through-cycle owner earnings of $2.5–4bn imply 9–14x normalized P/OE at current price, offering no margin of safety.",
   "source_summary": "Analysis draws on web search results from Maersk investor relations, FY2024 and FY2025 annual results press releases (February 2025 and February 2026), Moody's credit opinion (March 2025), Investing.com and MarketScreener analyst consensus data, FreightWaves, Container News, Yahoo Finance, and training knowledge on container shipping industry structure and economics.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 4200,
+  "iv_base": 11200,
+  "iv_bull": 37000,
+  "iv_currency": "DKK",
+  "mos_at_analysis": -74.4
 }

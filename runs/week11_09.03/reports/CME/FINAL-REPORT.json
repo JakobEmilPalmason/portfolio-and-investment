@@ -50,5 +50,10 @@
   "valuation_summary": "At ~$314, CME trades at ~27.7x P/owner-earnings and ~19.5x EV/EBITDA — modestly above its 10-year median of 17.9x; base-case perpetuity intrinsic value is approximately $270-$310, placing the stock at or slightly above fair value with no meaningful margin of safety; a buyer requires ~5-6% annual earnings growth in perpetuity to justify today's price, while bear-case DCF at $155 implies 51% downside if the macro environment shifts structurally toward sustained low volatility.",
   "source_summary": "Analysis is based on CME Group's FY2025 earnings press release (February 2026), Q4 2025 and Q4 2024 press releases, SEC proxy filings, Moody's and S&P credit rating affirmations (May 2025), GuruFocus ROIC/EV/EBITDA data, MacroTrends margin history, StockAnalysis.com, analyst consensus from FinancialContent/Barchart, and web searches for competitive data on FMX; all fundamental data is current as of February 2026 with stock price as of March 2026.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 155,
+  "iv_base": 206,
+  "iv_bull": 272,
+  "iv_currency": "USD",
+  "mos_at_analysis": -102.6
 }

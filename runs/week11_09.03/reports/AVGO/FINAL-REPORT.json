@@ -48,5 +48,10 @@
   "valuation_summary": "At $331/share, Broadcom trades at ~58x trailing owner earnings and 37–39x EV/EBITDA — roughly 2x the semiconductor peer median — pricing in ~19% revenue CAGR for five years. Base-case intrinsic value is approximately $415/share by FY2030 (~25% upside), bear case is ~$220 (~33% downside), and bull case is ~$650 (~95% upside), yielding roughly even downside/upside asymmetry with no meaningful margin of safety at today's price.",
   "source_summary": "Analysis based on web searches from March 2026 covering Broadcom Q1 FY2026 earnings (March 4, 2026), FY2025 annual results, SEC filings, investor relations press releases, and financial data from Yahoo Finance, StockAnalysis, MacroTrends, GuruFocus, CNBC, Seeking Alpha, and industry analysts including Gartner and HSBC; no user-provided context files.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 220,
+  "iv_base": 415,
+  "iv_bull": 650,
+  "iv_currency": "USD",
+  "mos_at_analysis": -50.5
 }

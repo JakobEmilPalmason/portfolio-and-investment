@@ -48,5 +48,10 @@
   "valuation_summary": "At €204.70 (23.7x forward earnings), the market prices in only 4-5% annual earnings growth — well below historical 8-10% trend. Base-case discounted intrinsic value of ~€265 implies 30% upside; bear-case €162 implies 21% downside. Owner earnings of ~€7.10/share put the stock at 29x owner earnings.",
   "source_summary": "EssilorLuxottica FY2025 press release (Feb 2026), yfinance auto-fetched financials, Moody's credit opinion (Sep 2025), Yahoo Finance, Seeking Alpha, GuruFocus, Bloomberg, CNBC, analyst consensus (22 analysts), company investor relations",
   "confidence": "medium",
-  "change_notes": "Initial analysis. Stock near 52-week low after 37% drawdown driven by tariff escalation, smart glasses competition fears, and FY2025 margin disappointment."
+  "change_notes": "Initial analysis. Stock near 52-week low after 37% drawdown driven by tariff escalation, smart glasses competition fears, and FY2025 margin disappointment.",
+  "iv_conservative": 162,
+  "iv_base": 265,
+  "iv_bull": 417,
+  "iv_currency": "EUR",
+  "mos_at_analysis": -26.4
 }

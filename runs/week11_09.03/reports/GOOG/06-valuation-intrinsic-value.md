@@ -59,3 +59,13 @@ The market is pricing in a reasonably optimistic but not extreme scenario. The s
 ## Score: 5 / 10
 
 At ~$308, GOOG is fairly valued to modestly overvalued: the underlying business quality is exceptional but the near-term capex surge compresses FCF, the base-case DCF implies a lower intrinsic value, and the current price requires near-flawless execution of the AI transition to justify.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 155 |
+| IV Base | 258 |
+| IV Bull | 391 |
+| Currency | USD |
+| MOS at Analysis Date | -98.97 |

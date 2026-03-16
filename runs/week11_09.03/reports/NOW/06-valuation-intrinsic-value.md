@@ -62,3 +62,13 @@ The market, by pricing NOW at $121, is implying one of: (a) revenue growth decel
 ## Score: 5 / 10
 
 ServiceNow is a high-quality business at a meaningfully compressed valuation versus its own history, but it still requires above-average growth and multiple assumptions to go right — and the AI disruption risk is non-trivial — so fair value rather than "cheap" is the most defensible characterization at current prices.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 446 |
+| IV Base | 833 |
+| IV Bull | 1280 |
+| Currency | USD |
+| MOS at Analysis Date | 72.90 |

@@ -50,3 +50,13 @@
 ## Score: 4 / 10
 
 NVIDIA is a phenomenal business trading at a price that requires continued exceptional execution with little room for disappointment. My base case suggests modest downside, the bear case implies severe downside, and only the bull case delivers meaningful upside. For a Buffett-style investor who demands a margin of safety, the current price does not offer one — you are paying roughly fair value for a base-case outcome and taking on significant risk if the AI spending cycle slows or competition intensifies faster than expected.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 66 |
+| IV Base | 136 |
+| IV Bull | 260 |
+| Currency | USD |
+| MOS at Analysis Date | -177.30 |

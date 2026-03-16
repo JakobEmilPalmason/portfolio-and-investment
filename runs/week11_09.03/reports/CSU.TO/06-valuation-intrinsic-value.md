@@ -70,3 +70,13 @@ Reverse-engineering the current price of CAD 2,939 (market cap ~CAD 62B): at a t
 ## Score: 6 / 10
 
 CSU is approaching fair-to-modestly undervalued territory after a 50% drawdown — the forward FCF multiple of ~26x is reasonable for the business quality, but the trailing multiple is still elevated and FCF growth is decelerating, preventing a higher "clearly undervalued" rating.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 1320 |
+| IV Base | 2410 |
+| IV Bull | 6350 |
+| Currency | CAD |
+| MOS at Analysis Date | -122.70 |

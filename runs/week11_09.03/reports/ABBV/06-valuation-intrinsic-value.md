@@ -150,3 +150,13 @@ The market is not pricing in perfection. It appears to be pricing in a reasonabl
 ## Score: 4 / 10
 
 The current price of ~$234 appears modestly to materially above conservative intrinsic value estimates; the forward adjusted earnings multiple is reasonable but the DCF analysis does not support a meaningful margin of safety — the market is paying a full price for a high-quality business, leaving limited upside and non-trivial downside in adverse scenarios.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 90 |
+| IV Base | 116 |
+| IV Bull | 177 |
+| Currency | USD |
+| MOS at Analysis Date | -160 |

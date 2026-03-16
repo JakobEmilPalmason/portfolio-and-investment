@@ -44,3 +44,13 @@
 
 ## Score: 7 / 10
 SAP trades at a meaningful discount to its own historical multiples and most enterprise software peers, with reverse-engineered expectations implying only ~5-6% earnings growth versus consensus mid-teens — this gap suggests the stock is modestly undervalued if the cloud transition remains on track, warranting a score at the lower end of the "reasonably undervalued" range given real AI uncertainty.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 81 |
+| IV Base | 180 |
+| IV Bull | 240 |
+| Currency | EUR |
+| MOS at Analysis Date | -104.94 |

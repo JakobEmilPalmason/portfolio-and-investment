@@ -57,3 +57,13 @@ The stock has de-rated dramatically — from pricing in perfection (30–32x ear
 ## Score: 6 / 10
 
 The business is modestly undervalued on a base-case DCF (current price near or slightly above the bear case, ~30–35% below the base case), but the genuine uncertainty around AI disruption makes it impossible to assign the high conviction warranted for a 7–8 score; the stock is reasonable value if the moat holds, and a potential value trap if it does not.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 2450 |
+| IV Base | 3820 |
+| IV Bull | 4930 |
+| Currency | GBp |
+| MOS at Analysis Date | -5.90 |

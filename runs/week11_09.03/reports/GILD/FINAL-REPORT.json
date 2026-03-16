@@ -48,5 +48,10 @@
   "valuation_summary": "At $146.52/share (16.7x forward P/E, 5.2% FCF yield, 13.9x EV/EBITDA), GILD trades at a material discount to large-cap pharma peers averaging 18–22x forward P/E. Base-case 10-year DCF (5% FCF growth, 2.5% terminal, 9% WACC) implies intrinsic value of $150–165/share — 2–13% upside. Bear case $100–120/share (18–32% downside); bull case $195–210/share (33–44% upside). Market is pricing GILD as a slow-growth cash cow with zero credit for lenacapavir PrEP or Trodelvy expansion; the required FCF growth rate to justify current price is only ~3–4%, well below management guidance.",
   "source_summary": "Primary: Gilead FY2025 earnings press release (February 10, 2026); Q3 2025 earnings press release. Secondary: MacroTrends historical margins; GuruFocus ROIC; stockanalysis.com financials; MarketBeat/TipRanks analyst consensus; Morningstar moat ratings; BioPharma Dive; Fierce Pharma; DrugPatentWatch patent data; simplywall.st balance sheet metrics. Training knowledge used for pharma comparables, competitive landscape context, and DCF framework. Confidence note: full 2025 10-K not yet indexed at time of analysis; capex and D&A are estimated from prior-year trends and press release data.",
   "confidence": "medium",
-  "change_notes": "Initial analysis. No prior report to compare against."
+  "change_notes": "Initial analysis. No prior report to compare against.",
+  "iv_conservative": 120,
+  "iv_base": 150,
+  "iv_bull": 195,
+  "iv_currency": "USD",
+  "mos_at_analysis": -22.1
 }

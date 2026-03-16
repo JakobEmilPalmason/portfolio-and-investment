@@ -49,5 +49,10 @@
   "valuation_summary": "At $171.60/share, IQV trades at 11.3x trailing EV/EBITDA (vs. 13-year median 18.75x) with a base-case DCF of ~$169 and a bear-case DCF of ~$112, implying no price margin of safety; the stock is roughly fairly valued assuming 5–6% revenue growth and stable margins, but offers no discount for the uncertainty around CRO cycle normalization and elevated 3.63x net leverage.",
   "source_summary": "Analysis draws on IQVIA Q4/FY2025 earnings press release (Feb 2026), Q4 2025 earnings call transcript, proxy filings (DEF14A Feb 2026), segment disclosures, MacroTrends/StockAnalysis/Yahoo Finance financial data, GuruFocus/Seeking Alpha analyst research, and TipRanks/WallStreetZen consensus estimates — all sourced as of March 2026.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 112,
+  "iv_base": 169,
+  "iv_bull": 208,
+  "iv_currency": "USD",
+  "mos_at_analysis": -53.2
 }

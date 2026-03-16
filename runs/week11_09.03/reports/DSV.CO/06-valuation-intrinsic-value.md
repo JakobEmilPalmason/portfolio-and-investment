@@ -90,3 +90,13 @@ This is achievable — DSV's management has guided DKK 9bn synergies, freight ma
 
 ## Score: 6 / 10
 DSV is a high-quality compounder trading near fair value with a path to meaningful upside if Schenker integration delivers as guided — not a screaming buy, but not overpriced; base case offers ~25% upside over 3–5 years.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 1200 |
+| IV Base | 1950 |
+| IV Bull | 2700 |
+| Currency | DKK |
+| MOS at Analysis Date | -39.10 |

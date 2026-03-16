@@ -111,3 +111,13 @@ At $135, the market is not pricing in perfection (that was $283 in September 202
 ## Score: 4 / 10
 
 At ~$135, Reddit is modestly overvalued when SBC is properly accounted for and growth is risk-adjusted; the base case yields ~$213 intrinsic value but the bear case is below current price, providing insufficient margin of safety for a Buffett-style investor who demands 30%+ discount to conservative estimates.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 78 |
+| IV Base | 213 |
+| IV Bull | 422 |
+| Currency | USD |
+| MOS at Analysis Date | -73.08 |

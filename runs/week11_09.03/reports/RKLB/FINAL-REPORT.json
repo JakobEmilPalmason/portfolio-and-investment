@@ -50,5 +50,10 @@
   "valuation_summary": "At $69.70/share (~$40B market cap, 66x trailing revenue), today's price requires Neutron to successfully launch, ramp to commercial cadence, and drive revenue to $10B+ over 15 years at 15%+ net margins — a conjunction of five demanding assumptions that must all hold simultaneously. Bear-case intrinsic value of $20-35/share implies 50-70% downside, while realistic bull-case upside is only 30-43%, creating a 2:1 to 3:1 downside-to-upside ratio that is the inverse of sound investment logic.",
   "source_summary": "Analysis based on web search results (Feb-Mar 2026), Rocket Lab Q4 2025 earnings release (Feb 26, 2026), Q3 2025 earnings release, SEC filings, MacroTrends/GuruFocus/StockAnalysis financial data, and insider transaction disclosures; no user-provided context files were present.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 55,
+  "iv_base": 55,
+  "iv_bull": 55,
+  "iv_currency": "USD",
+  "mos_at_analysis": -26.7
 }

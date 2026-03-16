@@ -57,3 +57,13 @@ The disconnect is stark. The company just delivered 11.2% constant-currency reve
 
 ## Score: 7 / 10
 EssilorLuxottica trades near its 52-week low at a historically low forward multiple for a dominant global franchise, with base-case intrinsic value meaningfully above the current price, though genuine competitive and macro risks prevent a higher score.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 162 |
+| IV Base | 265 |
+| IV Bull | 417 |
+| Currency | EUR |
+| MOS at Analysis Date | -26.40 |

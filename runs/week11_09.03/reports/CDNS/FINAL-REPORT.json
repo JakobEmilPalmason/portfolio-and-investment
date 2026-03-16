@@ -47,5 +47,10 @@
   "valuation_summary": "At ~$293 and ~50x owner earnings ($5.83/share), CDNS is priced for near-perfection. Base-case DCF yields ~$250 (15% overvalued), bear case ~$177 (40% downside), bull case ~$348 (19% upside). Requires 18% annual earnings growth for 5 years to deliver 10% returns. The market is pricing sustained mid-teens growth with premium multiple persistence.",
   "source_summary": "Cadence Q4/FY2025 earnings release (Feb 2026), 10-K FY2025, Q3 2025 10-Q, DEF 14A 2024 proxy, Yahoo Finance, StockAnalysis, MacroTrends, GuruFocus, Seeking Alpha, Simply Wall St, Mordor Intelligence EDA market report, BIS.gov, DOJ press releases, PortfoliosLab, MarketBeat, CNBC.",
   "confidence": "medium",
-  "change_notes": "Initial full analysis. Exceptional business quality (avg 8.6 on umbrellas 1-5) offset by premium valuation and negative price margin of safety (avg 4.7 on umbrellas 6-8). Watch for price entry at $220-240."
+  "change_notes": "Initial full analysis. Exceptional business quality (avg 8.6 on umbrellas 1-5) offset by premium valuation and negative price margin of safety (avg 4.7 on umbrellas 6-8). Watch for price entry at $220-240.",
+  "iv_conservative": 177,
+  "iv_base": 250,
+  "iv_bull": 348,
+  "iv_currency": "USD",
+  "mos_at_analysis": -65.5
 }

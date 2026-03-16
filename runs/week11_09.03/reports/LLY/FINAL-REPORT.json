@@ -52,5 +52,10 @@
   "valuation_summary": "At ~$1,001/share, LLY is roughly fairly valued in the base case (5-year DCF intrinsic value ~$960–1,025 at 10% discount rate) and materially overvalued in the bear case (~$447); the bull case (~$1,710–1,865) requires near-perfect GLP-1 execution; there is effectively no margin of safety at the current price.",
   "source_summary": "FY2021–2025 financial data sourced from stockanalysis.com and Lilly Q4 2025 earnings press release (Feb 4, 2026); product revenue breakdown from widely reported analyst data; price history and pipeline data from March 2026 web searches; interest expense and debt maturity details partially estimated from training knowledge pending 10-K confirmation.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 447,
+  "iv_base": 960,
+  "iv_bull": 1710,
+  "iv_currency": "USD",
+  "mos_at_analysis": -123.9
 }

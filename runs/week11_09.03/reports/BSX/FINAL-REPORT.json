@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$69/share (~$104B market cap), BSX trades at the base-case DCF (~$68), implying 10% organic growth decelerating to 7–8% by 2030 — fairly valued with no margin of safety; bear-case floor is ~$45 (EP share erosion + litigation costs $1B+), bull-case is ~$93 (EP leadership retained, litigation resolved favorably).",
   "source_summary": "Analysis based on Q4/FY2025 earnings release (Feb 4, 2026), Investor Day 2025 slides/transcript, GuruFocus financial metrics, MacroTrends historical data, SEC filings, S&P rating agency reports, and securities class action filings (March 2026); all data current as of March 12, 2026.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 45,
+  "iv_base": 68,
+  "iv_bull": 93,
+  "iv_currency": "USD",
+  "mos_at_analysis": -53.3
 }

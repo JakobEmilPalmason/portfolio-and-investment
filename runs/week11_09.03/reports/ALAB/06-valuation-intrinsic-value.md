@@ -52,3 +52,13 @@
 ## Score: 3 / 10
 
 Astera Labs is a genuinely impressive growth company in a real secular trend, but at ~48x forward earnings and ~69x free cash flow, the stock requires near-perfect execution and sustained AI infrastructure spending for years to justify today's price. Even my base case — which assumes 5 years of strong double-digit growth — produces an intrinsic value estimate below the current price. Only the most optimistic scenario gets you to modest upside. The valuation is pricing in a very rosy future, leaving significant downside risk if reality falls short. A Buffett-style investor would want a much wider margin of safety before committing capital here.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 22 |
+| IV Base | 70 |
+| IV Bull | 147 |
+| Currency | USD |
+| MOS at Analysis Date | -422.70 |

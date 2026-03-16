@@ -61,3 +61,13 @@ The market is clearly pricing in a significantly elevated view of CAT's earnings
 ## Score: 3 / 10
 
 By any reasonable DCF or owner-earnings framework anchored to CAT's historical business economics and cycle-adjusted multiples, the stock appears meaningfully overvalued at ~$705; all three valuation scenarios yield intrinsic value well below the current price, with the base case suggesting ~60% downside from here.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 151 |
+| IV Base | 272 |
+| IV Bull | 377 |
+| Currency | USD |
+| MOS at Analysis Date | -366.90 |

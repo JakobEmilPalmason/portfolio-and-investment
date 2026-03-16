@@ -47,5 +47,10 @@
   "valuation_summary": "At EUR 1,925/share and 45x trailing earnings, Hermès is approximately fairly valued under base-case assumptions (10% earnings growth, 35x terminal multiple = EUR 1,710 intrinsic value). Bear case (6% growth, 30x terminal) implies EUR 1,240 with 35% downside. Bull case (14% growth, 40x terminal) implies EUR 2,340 with 22% upside. Net cash of EUR 12.8B adds ~EUR 120/share. The market is pricing 10-12% annual earnings growth for the next decade with no multiple compression.",
   "source_summary": "Hermès 2025 Full-Year Results (GlobeNewswire, Feb 2026), Hermès Finance IR (finance.hermes.com), Yahoo Finance, MarketScreener, CompaniesMarketCap, Investing.com, StockAnalysis.com, PortfoliosLab, Alpha Spread, GuruFocus, Simply Wall St, Seeking Alpha, danielscrivner.com, AMW Group, The Cecily Group, Family Business Magazine, TIKR.com",
   "confidence": "high",
-  "change_notes": "Initial analysis. Business quality is exceptional (8.0 average score driven by perfect 10s in moat, economics, and balance sheet), but valuation and margin of safety scores (5 and 4 respectively) prevent an Own verdict. Watch for better entry at EUR 1,400-1,600."
+  "change_notes": "Initial analysis. Business quality is exceptional (8.0 average score driven by perfect 10s in moat, economics, and balance sheet), but valuation and margin of safety scores (5 and 4 respectively) prevent an Own verdict. Watch for better entry at EUR 1,400-1,600.",
+  "iv_conservative": 1240,
+  "iv_base": 1710,
+  "iv_bull": 2340,
+  "iv_currency": "EUR",
+  "mos_at_analysis": -55.2
 }

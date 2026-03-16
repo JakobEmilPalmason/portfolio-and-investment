@@ -49,5 +49,10 @@
   "valuation_summary": "At ~$339, HD trades at approximately 21x trailing owner earnings and near the midpoint of a $310-360 base-case intrinsic value range — fairly valued, not cheap, with a bear-case downside of 28-32% and bull-case upside of 24-33%, yielding an unfavorable 1:1 risk-reward ratio; a compelling entry requires a decline to $270-295.",
   "source_summary": "Analysis based on web search using Home Depot IR Q4 FY2025 press release (Feb 24 2026), MacroTrends, StockAnalysis.com, GuruFocus, AlphaSpread, and multiple analyst sources; data is current through February 2026 with no material staleness concerns.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 163,
+  "iv_base": 250,
+  "iv_bull": 340,
+  "iv_currency": "USD",
+  "mos_at_analysis": -107.9
 }

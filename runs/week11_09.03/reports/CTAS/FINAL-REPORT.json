@@ -48,5 +48,10 @@
   "valuation_summary": "At $194 (42x trailing P/E, 28x EV/EBITDA — near or above 10-year historical peaks on both metrics), bear-case intrinsic value is ~$85 and base-case is ~$113; even the bull case of ~$160 is 18% below current price. Justifying $194 requires 11-12% annual owner earnings growth for 10 years at a 30x terminal multiple — a near-perfection scenario that assumes smooth UniFirst integration, no antitrust setbacks, and no multiple contraction from current decade-high levels.",
   "source_summary": "Analysis based on pre-fetched Yahoo Finance financials (FY2022-FY2025), Cintas Q2 FY2026 earnings release (December 2025), S&P (A-/BBB+) and Moody's (A3) credit rating confirmations, UniFirst acquisition press release (March 11, 2026), MacroTrends 10-year P/E history, and GuruFocus EV/EBITDA history — data current as of 2026-03-16.",
   "confidence": "high",
-  "change_notes": "Verdict revised to Pass (from prior Watch) per scoring rules: margin of safety score of 3/10 is below the 4/10 threshold required for Watch or better, and two scores (valuation 3/10, margin of safety 3/10) are below 4/10, both of which independently trigger Pass under the verdict logic."
+  "change_notes": "Verdict revised to Pass (from prior Watch) per scoring rules: margin of safety score of 3/10 is below the 4/10 threshold required for Watch or better, and two scores (valuation 3/10, margin of safety 3/10) are below 4/10, both of which independently trigger Pass under the verdict logic.",
+  "iv_conservative": 85,
+  "iv_base": 113,
+  "iv_bull": 160,
+  "iv_currency": "USD",
+  "mos_at_analysis": -128.2
 }

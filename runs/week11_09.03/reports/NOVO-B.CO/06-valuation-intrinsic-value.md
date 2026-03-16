@@ -53,3 +53,13 @@
 ## Score: 7 / 10
 
 The stock is modestly undervalued at current levels, with the market pricing in a near-worst-case outcome for a business that still dominates a structurally growing therapeutic category, generates 40% operating margins, and trades at a historically deep discount to its own valuation range and its primary peer (Eli Lilly at 45x). The risks are real — 2026 will be a difficult year and competitive positioning has weakened — but the probability-weighted expected value suggests roughly 20% upside with meaningful further upside if the bear case does not materialize. This is not a screaming bargain (which would require a score of 9-10), but it is a price where patient investors are being compensated for the uncertainty.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 115 |
+| IV Base | 235 |
+| IV Bull | 410 |
+| Currency | DKK |
+| MOS at Analysis Date | -113 |

@@ -73,3 +73,13 @@ MRK's stock fell from ~$130+ in early 2024 to a 52-week low of ~$73 in May 2025 
 ## Score: 5 / 10
 
 MRK appears fairly valued to modestly undervalued versus intrinsic value: the base-case DCF (~$105–120) roughly matches the current price, the EV/EBITDA is near decade lows, and the 3%+ dividend provides a floor; however, the Keytruda cliff creates genuine uncertainty about 5-year earnings power, limiting confidence in any single intrinsic value estimate.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 75 |
+| IV Base | 105 |
+| IV Bull | 135 |
+| Currency | USD |
+| MOS at Analysis Date | -58.70 |

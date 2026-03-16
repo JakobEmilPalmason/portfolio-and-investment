@@ -49,5 +49,10 @@
   "valuation_summary": "At $168/share (12.5x EV/Revenue), Snowflake is roughly fairly valued against a base-case intrinsic value of $165-180, but requires near-perfect execution on growth, margin expansion, and SBC reduction simultaneously with no margin of safety; the stock needs to fall to $120-130 before offering a compelling entry point with 2x+ asymmetry.",
   "source_summary": "Analysis based on web searches conducted March 6, 2026 covering Snowflake's Q4 FY2026 earnings (reported February 25, 2026), public filings, investor presentations, and financial data aggregators; no user-provided context files were used.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 85,
+  "iv_base": 165,
+  "iv_bull": 280,
+  "iv_currency": "USD",
+  "mos_at_analysis": -97.6
 }

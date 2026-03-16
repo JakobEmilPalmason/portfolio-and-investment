@@ -54,3 +54,13 @@ At ~$490/share and a terminal multiple of 30x owner earnings (reasonable for a m
 
 ## Score: 4 / 10
 ISRG is a world-class business trading at a price that reflects most of its excellence — the probability-weighted intrinsic value of ~$530 vs. a ~$490 price offers only ~8% upside, meaning the stock is roughly fairly valued with limited margin of safety for a new buyer.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 340 |
+| IV Base | 520 |
+| IV Bull | 730 |
+| Currency | USD |
+| MOS at Analysis Date | -44.10 |

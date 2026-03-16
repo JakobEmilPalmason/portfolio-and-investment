@@ -51,5 +51,10 @@
   "valuation_summary": "At $164/share, Oracle trades at base-case fair value with a bear-case intrinsic value of $75-90/share (45-54% downside) and a bull-case of $275-340/share; the base case yields roughly fair value, not a margin of safety, and the stock must deliver $90B FY2027 revenue, sustained 12-15% growth, and capex normalization to $10-15B by FY2028-2029 for the current price to be justified.",
   "source_summary": "Analysis based on Oracle Q3 FY2026 earnings press release (March 10, 2026), investor relations data, web search results from stockanalysis.com, macrotrends.net, gurufocus.com, companiesmarketcap.com, Futurum Group, Morningstar, and S&P Global Ratings, with training knowledge used for structural and historical context.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 75,
+  "iv_base": 145,
+  "iv_bull": 275,
+  "iv_currency": "USD",
+  "mos_at_analysis": -118.7
 }

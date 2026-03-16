@@ -66,3 +66,13 @@ The market is not pricing in perfection (that would be $200+), nor disaster (the
 ## Score: 5 / 10
 
 At ~$153, MMM is fairly valued at best against normalized intrinsic value of $100–$165 — there is no meaningful margin of safety at current prices for a value investor, though the stock is not wildly overvalued given the clean post-Solventum industrial structure.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 65 |
+| IV Base | 99 |
+| IV Bull | 145 |
+| Currency | USD |
+| MOS at Analysis Date | -135.40 |

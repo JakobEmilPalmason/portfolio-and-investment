@@ -55,3 +55,13 @@ Conservative sum: $171 + $122 + $163 = $456/share. Reasonable sum: $171 + $122 +
 ## Score: 6 / 10
 
 BRK-B is roughly fairly valued at ~1.48x book and ~24x reported operating EPS, with sum-of-parts analysis supporting a narrow intrinsic value range of $456-$501 per share; the resumption of buybacks near $492 provides a modest upside signal, but there is limited margin of safety at current prices and the near-term earnings trend is negative.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 340 |
+| IV Base | 331 |
+| IV Bull | 479 |
+| Currency | USD |
+| MOS at Analysis Date | -44.74 |

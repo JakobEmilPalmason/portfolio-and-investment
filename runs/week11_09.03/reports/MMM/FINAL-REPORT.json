@@ -49,5 +49,10 @@
   "valuation_summary": "Conservative intrinsic value is $100–$115 (normalized owner earnings ~$9–10/share × 14–15x); at ~$153 the stock offers no margin of safety, with probability-weighted fair value ~$147 and a 1:1 upside/downside ratio that does not clear the bar for a high-conviction entry.",
   "source_summary": "Web search for current financials, settlement details, and price data (March 2026); training knowledge for historical metrics; data for 2025 fiscal year financials may carry some staleness risk.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 65,
+  "iv_base": 99,
+  "iv_bull": 145,
+  "iv_currency": "USD",
+  "mos_at_analysis": -135.4
 }

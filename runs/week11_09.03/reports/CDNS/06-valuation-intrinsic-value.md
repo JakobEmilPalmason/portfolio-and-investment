@@ -49,3 +49,13 @@
 ## Score: 4 / 10
 
 Cadence is a wonderful business priced at a premium that demands optimistic assumptions to justify — under conservative to base-case estimates, the stock appears modestly to meaningfully overvalued, offering no clear margin of safety for a value-oriented buyer.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 177 |
+| IV Base | 250 |
+| IV Bull | 348 |
+| Currency | USD |
+| MOS at Analysis Date | -65.50 |

@@ -53,3 +53,13 @@ SPGI trades at a forward P/E of approximately 22x, MSCI at EV/EBITDA ~24x. ICE's
 ## Score: 6 / 10
 
 ICE trades roughly at fair value assuming base-case recovery; the discount to peers partially reflects real risks (debt, mortgage exposure), and upside is real but requires patience and mortgage market normalization.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 100 |
+| IV Base | 154 |
+| IV Bull | 185 |
+| Currency | USD |
+| MOS at Analysis Date | -59.20 |

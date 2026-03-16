@@ -48,5 +48,10 @@
   "valuation_summary": "At ~$190/share, VEEV trades at 22–24x trailing owner earnings and a forward P/E of ~21.9x — near multi-year lows. Base-case DCF intrinsic value is ~$200–210/share (roughly at current prices); bear case is ~$120–130/share (no margin of safety); bull case is ~$300–350/share (+58–68% upside). The market is pricing in 10–12% annual FCF growth — roughly half the recent rate — implying Salesforce wins a meaningful fraction of the CRM migration. Independent DCF models cluster at $203–297. The stock is approximately fairly valued under a base case but offers no cushion against adversity.",
   "source_summary": "Analysis based on Veeva FY2026 earnings release (March 4, 2026), FY2025 10-K, SEC proxy filings, GuruFocus/Alpha Spread/Simply Wall St DCF models, PortfoliosLab drawdown data, MarketBeat analyst consensus, and IntuitionLabs/Morningstar competitive analysis. All financial figures from official Veeva press releases where available; aggregator data used for trend history. Confidence is high on business quality, financial metrics, and balance sheet; medium on forward competitive dynamics (Vault CRM migration outcome unresolved).",
   "confidence": "medium",
-  "change_notes": "Initial analysis. Vault CRM migration and Salesforce competitive response are the primary unresolved variables. Re-analyze after May 2026 CRM milestone announcement and following Q1 FY2027 earnings (expected June 2026)."
+  "change_notes": "Initial analysis. Vault CRM migration and Salesforce competitive response are the primary unresolved variables. Re-analyze after May 2026 CRM milestone announcement and following Q1 FY2027 earnings (expected June 2026).",
+  "iv_conservative": 121,
+  "iv_base": 204,
+  "iv_bull": 320,
+  "iv_currency": "USD",
+  "mos_at_analysis": -57.0
 }

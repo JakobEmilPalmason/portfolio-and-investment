@@ -48,5 +48,10 @@
   "valuation_summary": "Base-case DCF yields approximately $290/ADR versus a ~$339 market price, offering no margin of safety; at 34x trailing earnings (53% above the 10-year average of 22x), the stock requires roughly 20% annual earnings growth through 2030 just to deliver a 10% annualized return.",
   "source_summary": "Analysis based on web searches conducted 2026-03-07 covering TSMC Q4 2025 earnings, FY2025 financials, foundry market share data, technology roadmap updates, and geopolitical risk analyses from TSMC investor relations, Investing.com, CNBC, TrendForce, and other sources.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 161,
+  "iv_base": 290,
+  "iv_bull": 494,
+  "iv_currency": "USD",
+  "mos_at_analysis": -119.9
 }

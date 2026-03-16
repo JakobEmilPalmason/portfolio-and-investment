@@ -43,3 +43,13 @@
 ## Score: 6 / 10
 
 Mastercard is a high-quality business trading at a fair-to-slight-premium valuation — not cheap enough for a high-conviction deep-value entry, but defensible for long-term holders given structural growth drivers and below-average historical multiples.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 340 |
+| IV Base | 520 |
+| IV Bull | 660 |
+| Currency | USD |
+| MOS at Analysis Date | -53.50 |

@@ -65,3 +65,13 @@ At $78/share and 1.3B shares, the market cap is ~$101B. Add $52B net debt = ~$15
 ## Score: 6 / 10
 
 CVS screens as roughly fairly valued to modestly undervalued on a forward P/E basis, but the heavy debt load, wide intrinsic value uncertainty range, and enterprise-level valuation that is not particularly cheap relative to history prevent a higher score.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 0 |
+| IV Base | 41 |
+| IV Bull | 50 |
+| Currency | USD |
+| MOS at Analysis Date | N/A |

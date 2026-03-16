@@ -48,5 +48,10 @@
   "valuation_summary": "All credible DCF models cluster at $22-70/share (base case $65-85/share); at ~$124/share (~$130B market cap) the stock is priced for 25-28% revenue CAGR over five years with zero margin for error, representing 40-80% overvaluation and a loss-to-gain ratio of approximately 2-3x unfavorable.",
   "source_summary": "Analysis draws on ARM Q3 FY2026 earnings releases and transcripts, ARM FY2025 Annual Report, StockAnalysis, GuruFocus, Alpha Spread, MacroTrends, Simply Wall St, TIKR, Morningstar, and multiple analyst consensus sources; financials current through Q3 FY2026 (quarter ended December 31, 2025).",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 25,
+  "iv_base": 65,
+  "iv_bull": 150,
+  "iv_currency": "USD",
+  "mos_at_analysis": -396.0
 }

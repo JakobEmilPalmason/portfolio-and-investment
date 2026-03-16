@@ -48,5 +48,10 @@
   "valuation_summary": "Multiple DCF models place fair value at $80-93 versus the current ~$120 price; at ~86x forward P/E and ~69x FCF, the market prices in ~37% annual earnings growth for five years to reach $3.5-4.0B in revenue by 2030. The stock is 30-45% above conservative intrinsic value with no margin of safety.",
   "source_summary": "Analysis based on web searches conducted 2026-03-06 covering Astera Labs Q4/FY2025 earnings (reported 2026-02-10), SEC filings, StockAnalysis.com, MacroTrends, Yahoo Finance, MarketBeat, Seeking Alpha, CNBC, and company investor relations; no user-provided context files.",
   "confidence": "medium",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 22,
+  "iv_base": 70,
+  "iv_bull": 147,
+  "iv_currency": "USD",
+  "mos_at_analysis": -422.7
 }

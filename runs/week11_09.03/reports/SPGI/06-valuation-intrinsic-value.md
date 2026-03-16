@@ -65,3 +65,13 @@ The stock's 26% pullback from its August 2025 high looks like the market discoun
 ## Score: 5 / 10
 
 At ~$429 the stock is roughly fairly valued on a base-case analysis — no meaningful margin of safety exists, but the stock is not egregiously overpriced; the compressed multiple vs history is real but the base-case value is essentially in line with the current price.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 260 |
+| IV Base | 388 |
+| IV Bull | 528 |
+| Currency | USD |
+| MOS at Analysis Date | -65 |

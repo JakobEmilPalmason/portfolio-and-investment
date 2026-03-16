@@ -77,3 +77,13 @@ Current pricing is closer to "competent execution" than perfection. The 2021–2
 ## Score: 6 / 10
 
 Amazon is fairly valued at current prices in the base case, with meaningful upside in the bull case and significant downside if the AI capex cycle disappoints — the asymmetry is roughly balanced, earning a neutral-to-slight-positive score that would improve materially on a 15–20% price decline.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 130 |
+| IV Base | 210 |
+| IV Bull | 310 |
+| Currency | USD |
+| MOS at Analysis Date | -61.50 |

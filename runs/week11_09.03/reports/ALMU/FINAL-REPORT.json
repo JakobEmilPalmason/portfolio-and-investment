@@ -48,5 +48,10 @@
   "valuation_summary": "At $15.02/share and ~$283M market cap, ALMU trades at ~52x EV/FY2025 revenue of $4.7M with zero commercial product revenue. Probability-weighted intrinsic value is approximately $7.44/share (bear: $1.00 at 40%, base: $6.20 at 40%, bull: $22.80 at 20%), implying the stock is roughly 2x overvalued on an expected-value basis. Morningstar fair value is $22.20 but embeds optimistic base-to-bull assumptions. The market is pricing a >50% probability of the bull case when the evidence supports it at under 20%.",
   "source_summary": "Analysis based on web search results from March 2026 including Aeluma press releases (Q1-Q2 FY2026, FY2025 full year), SEC filings summaries (10-K, 10-Q via StockTitan), Morningstar, StockAnalysis, Yahoo Finance, BeyondSPX, MarketBeat, Nasdaq analyst commentary, Seeking Alpha, and investment thesis Substacks. No user-provided context files. Balance sheet data from December 31, 2025 (Q2 FY2026). Current price reference: ~$15.02 (early March 2026).",
   "confidence": "medium",
-  "change_notes": "Initial analysis. No prior report to compare against."
+  "change_notes": "Initial analysis. No prior report to compare against.",
+  "iv_conservative": 1.0,
+  "iv_base": 6.2,
+  "iv_bull": 22.8,
+  "iv_currency": "USD",
+  "mos_at_analysis": -1402.0
 }

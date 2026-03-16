@@ -48,5 +48,10 @@
   "valuation_summary": "At ~$1,258/share, TDG trades at ~18x forward EV/EBITDA and ~40x owner earnings, placing it at or slightly above the top of the $1,050–1,200 base-case intrinsic value range; the stock is fairly valued on continuation of the proven playbook but offers no price margin of safety — bear-case downside is 35–45% and realistic upside is 20–25%, yielding modestly negative asymmetry at current levels.",
   "source_summary": "Analysis based on TransDigm FY2025 10-K, Q1–Q4 FY2025 and Q1 FY2026 earnings releases and transcripts, GuruFocus ROIC and valuation data, MacroTrends historical financials, MarketBeat/TipRanks analyst consensus, and DoD public oversight reports — all sourced in March 2026 with no material staleness.",
   "confidence": "high",
-  "change_notes": ""
+  "change_notes": "",
+  "iv_conservative": 700,
+  "iv_base": 1050,
+  "iv_bull": 1450,
+  "iv_currency": "USD",
+  "mos_at_analysis": -79.7
 }

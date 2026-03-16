@@ -60,3 +60,13 @@
 ## Score: 5 / 10
 
 HD is a high-quality business priced near fair value with no meaningful margin of safety at current levels; the stock is appropriate for patient capital awaiting a pullback to the $270–$300 range, not as a buy at $339.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 163 |
+| IV Base | 250 |
+| IV Bull | 340 |
+| Currency | USD |
+| MOS at Analysis Date | -107.90 |

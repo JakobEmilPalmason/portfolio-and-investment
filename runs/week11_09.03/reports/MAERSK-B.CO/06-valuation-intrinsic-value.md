@@ -70,3 +70,13 @@ The analyst community has swung sharply negative — 12 of 18 analysts rate the 
 ## Score: 4 / 10
 
 At current price, Maersk does not offer compelling valuation — the optically low trailing multiples are misleading because earnings are in freefall, and the stock is likely above fair value on normalized through-cycle owner earnings; a 30%+ drawdown to the analyst consensus target is plausible before the investment becomes genuinely attractive.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | N/A |
+| IV Base | 11200 |
+| IV Bull | N/A |
+| Currency | DKK |
+| MOS at Analysis Date | N/A |

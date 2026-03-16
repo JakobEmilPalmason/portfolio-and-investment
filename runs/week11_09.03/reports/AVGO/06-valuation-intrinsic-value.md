@@ -51,3 +51,13 @@
 ## Score: 5 / 10
 
 Broadcom is a phenomenal business trading at a price that reflects that quality -- the current valuation roughly matches intrinsic value under base-case assumptions, offering neither a clear margin of safety nor obvious overvaluation, which makes it a "fairly valued" hold rather than a compelling buy at today's price.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 220 |
+| IV Base | 415 |
+| IV Bull | 650 |
+| Currency | USD |
+| MOS at Analysis Date | -50.50 |

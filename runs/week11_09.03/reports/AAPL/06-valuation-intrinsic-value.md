@@ -67,3 +67,13 @@ Not outright perfection, but the market is clearly pricing in execution. The cur
 ## Score: 3 / 10
 
 Apple is an exceptional business priced for near-perfection — the base case implies downside, the bull case offers only modest upside, and multiple independent DCF models show significant overvaluation; the stock warrants a Pass at current prices.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 153 |
+| IV Base | 215 |
+| IV Bull | 290 |
+| Currency | USD |
+| MOS at Analysis Date | -68 |

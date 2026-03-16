@@ -68,3 +68,13 @@ The market is clearly pricing in significant pessimism. The stock sits at just 1
 
 ## Score: 7 / 10
 Roper trades at historically cheap multiples with a probability-weighted upside of ~15%, and the market appears to price in overly pessimistic assumptions, but the guidance miss and organic growth deceleration are real concerns that prevent a higher score.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 223 |
+| IV Base | 393 |
+| IV Bull | 609 |
+| Currency | USD |
+| MOS at Analysis Date | -57.40 |

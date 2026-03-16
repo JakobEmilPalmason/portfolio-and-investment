@@ -70,3 +70,13 @@ Neither. The current valuation is in a "fair to modestly undervalued" zone. The 
 ## Score: 5 / 10
 
 Visa is fairly valued at current prices — not cheap enough for a classic margin-of-safety buy, but not egregiously overpriced; the embedded growth assumption (~9% annual EPS growth) is below historical delivery but the DOJ overhang and rate environment justify a discount to prior peak multiples.
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | 182 |
+| IV Base | 264 |
+| IV Bull | 382 |
+| Currency | USD |
+| MOS at Analysis Date | -70.40 |

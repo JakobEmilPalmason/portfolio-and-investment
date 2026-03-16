@@ -115,7 +115,11 @@ After writing FINAL-REPORT.md, also write `runs/{CURRENT_WEEK}/reports/{TICKER}/
 
 Field notes:
 - `valuation_summary`: one to two sentences — estimated intrinsic value range, current price vs. value, whether a margin of safety exists
-- `iv_conservative`, `iv_base`, `iv_bull`: numeric per-share intrinsic value estimates. Extract from the "Intrinsic Value Summary" table in section 06. Strip all non-numeric characters (whitespace, $, ~, USD, ranges) from the raw cell value, then attempt to parse as a float. If the result is not a clean number after stripping — or if the table is absent — set to null. A null with a re-assemble instruction is safer than a silently wrong number.
+- `iv_conservative`, `iv_base`, `iv_bull`: numeric per-share intrinsic value estimates (per-share, not total). **Extraction priority:**
+  1. First look for the "Intrinsic Value Summary" table in section 06. Strip all non-numeric characters (whitespace, $, ~, USD, ranges) from the raw cell value, then parse as a float.
+  2. **Fallback (if table is absent):** Scan the bear/base/bull scenario paragraphs in section 06 for discounted per-share values. Map: bear discounted → iv_conservative, base discounted → iv_base, bull discounted → iv_bull. Look for patterns like "~$X/share", "→ $X/share", "discount… ~$X". Use the **discounted** value (after "discount at X%"), not the undiscounted multiple result.
+  3. If neither approach yields a clean number, set to null. A null is safer than a wrong number.
+  **Critical:** These must always be populated if any bear/base/bull per-share valuation appears anywhere in section 06. Null is only acceptable when section 06 contains no numeric per-share estimates at all.
 - `iv_currency`: ISO currency code (USD, EUR, CAD, etc.) for the IV figures. From the Currency row of the IV Summary table. Null if absent.
 - `mos_at_analysis`: numeric percentage at time of analysis (positive = price was below iv_conservative). Null if iv_conservative is null.
 - `compact_checklist`: array of 8 strings — copy the 8 forced sentences from section 09 exactly, one string per sentence. Used by the pre-buy checklist script for the C3 interactive prompt.
