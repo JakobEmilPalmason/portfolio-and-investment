@@ -2,3 +2,4 @@ yfinance>=0.2.31
 flask>=2.3
 streamlit>=1.55
 plotly>=6.6
+streamlit-aggrid>=1.1.9

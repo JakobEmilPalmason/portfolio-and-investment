@@ -109,7 +109,8 @@ usage() {
     echo "  ledger <subcmd>          Ledger management (init, refresh, bootstrap, check, history)"
     echo "  snapshot                 Capture a daily portfolio snapshot"
     echo "  prebuy TICKER [...]      Pre-buy checklist (quality, price vs IV, conviction)"
-    echo "  prebuy --own             Dashboard: C1/C2 status for all Own-verdict tickers"
+    echo "  prebuy --own             Dashboard: C1/C2 status for all Own/Watch-verdict tickers"
+    echo "  allocate [CAPITAL]       AI portfolio allocation proposal"
     echo "  monitor TICKER           Change detection (stub — not yet implemented)"
     echo ""
     echo "Examples:"
@@ -618,6 +619,46 @@ cmd_prebuy() {
     python3 "$SCRIPT_DIR/scripts/prebuy-check.py" "${args[@]}"
 }
 
+cmd_allocate() {
+    local capital="${1:-100000}"
+
+    echo "=== Building allocation input ==="
+    python3 "$SCRIPT_DIR/scripts/allocation-input.py" \
+        --output portfolio/allocation-input.json \
+        --capital "$capital"
+
+    echo ""
+    echo "=== Running AI Allocator ==="
+    echo "Capital: \$$capital"
+    echo ""
+
+    local allocator_prompt
+    allocator_prompt=$(cat "$PROMPTS_DIR/allocator.md")
+
+    local input_data
+    input_data=$(cat "$SCRIPT_DIR/portfolio/allocation-input.json")
+
+    claude --print \
+        --allowedTools "Read,Write,Glob,Grep" \
+        "Today's date: $TODAY
+
+$allocator_prompt
+
+ALLOCATION INPUT DATA:
+$input_data
+
+Run the allocation now. Capital: \$$capital.
+Read the full red_flags, key_risks, key_strengths, buy_triggers, and sell_triggers for each candidate — do not skip them.
+Write output to portfolio/allocation-proposal.json and portfolio/allocation-proposal.md.
+Output ONLY the proposal — no preamble." \
+        2>&1
+
+    echo ""
+    echo "=== Allocation complete ==="
+    echo "Proposal: portfolio/allocation-proposal.json"
+    echo "Summary:  portfolio/allocation-proposal.md"
+}
+
 cmd_monitor() {
     local ticker="${1:-}"
     if [ -z "$ticker" ]; then
@@ -654,6 +695,7 @@ case "$COMMAND" in
     snapshot)  python3 "$SCRIPT_DIR/scripts/paper_trade.py" snapshot "$@" ;;
     ledger)    cmd_ledger "$@" ;;
     prebuy)    cmd_prebuy "$@" ;;
+    allocate)  cmd_allocate "$@" ;;
     monitor)   cmd_monitor "$@" ;;
     validate)  cmd_validate "$@" ;;
     *)

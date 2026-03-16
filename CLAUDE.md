@@ -332,6 +332,34 @@ JSON enables: queue updates, monitor/diff engine, cross-run comparisons, dashboa
 
 ---
 
+## AI Portfolio Allocator
+
+**Trigger phrases:** "allocate", "run allocation", "AI pick portfolio", "what should I own"
+**Prompt:** `prompts/allocator.md`
+**Input builder:** `scripts/allocation-input.py`
+
+AI-driven conviction-weighted portfolio construction. Merges FINAL-REPORT.json + live prices + portfolio state into a single data blob, then an AI agent applies Buffett-style allocation logic: filter → rank → construct → risk overlay.
+
+### How to run
+```bash
+./run.sh allocate                  # $100K default
+./run.sh allocate 250000           # Custom capital
+```
+
+### What it produces
+- `portfolio/allocation-input.json` — the data blob (all candidates with live prices, IV, scores, flags, triggers, risks)
+- `portfolio/allocation-proposal.json` — machine-readable target portfolio
+- `portfolio/allocation-proposal.md` — human-readable proposal with rationale per position
+
+### Key rules
+- Own verdict: 3% starter, up to 5% max. Watch verdict: 2% starter, up to 3% max.
+- Pass verdict stocks are excluded entirely.
+- 8–15 positions. Cash is a valid position.
+- Cross-holding risk correlation is checked.
+- Every position needs a rationale. Every exclusion needs a reason.
+
+---
+
 ## Portfolio Simulator
 
 **Trigger phrases:** "simulate portfolio", "portfolio sim", "what would I hold", "run portfolio", "show me the portfolio"

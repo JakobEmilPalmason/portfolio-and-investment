@@ -12,11 +12,9 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from dashboard.data import MONTH_LABELS, format_pct, format_ratio, get_performance_data
+from dashboard.theme import render_hero, render_kicker
 
-
-EMPTY_STATE_MESSAGE = (
-    "Take daily snapshots to build performance history — run: ./run.sh snapshot"
-)
+EMPTY_STATE_MESSAGE = "Take daily snapshots to build performance history - run: ./run.sh snapshot"
 
 
 def _performance_chart(data: pd.DataFrame) -> go.Figure:
@@ -27,7 +25,7 @@ def _performance_chart(data: pd.DataFrame) -> go.Figure:
             y=data["portfolio_cumulative_return"],
             mode="lines",
             name="Portfolio",
-            line=dict(color="#0f766e", width=3),
+            line=dict(color="#c15f3c", width=3),
         )
     )
     figure.add_trace(
@@ -36,13 +34,13 @@ def _performance_chart(data: pd.DataFrame) -> go.Figure:
             y=data["benchmark_cumulative_return"],
             mode="lines",
             name="SPY",
-            line=dict(color="#b45309", width=2.5),
+            line=dict(color="#93c5fd", width=2.5),
         )
     )
     figure.update_layout(
         margin=dict(l=0, r=0, t=12, b=0),
         paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(255,255,255,0.6)",
+        plot_bgcolor="rgba(0,0,0,0)",
         xaxis_title="Date",
         yaxis_title="Cumulative Return %",
         legend_title_text="Series",
@@ -58,15 +56,14 @@ def _heatmap(data: pd.DataFrame) -> go.Figure:
         for row in data.values
     ]
     figure = go.Figure(
-        data=
-        [
+        data=[
             go.Heatmap(
                 z=z_values,
                 x=MONTH_LABELS,
                 y=data.index.astype(str).tolist(),
                 colorscale=[
                     [0.0, "#7f1d1d"],
-                    [0.5, "#f8fafc"],
+                    [0.5, "#1c1917"],
                     [1.0, "#14532d"],
                 ],
                 text=text_values,
@@ -76,18 +73,28 @@ def _heatmap(data: pd.DataFrame) -> go.Figure:
             )
         ]
     )
-    figure.update_layout(
-        margin=dict(l=0, r=0, t=12, b=0),
-        paper_bgcolor="rgba(0,0,0,0)",
-    )
+    figure.update_layout(margin=dict(l=0, r=0, t=12, b=0), paper_bgcolor="rgba(0,0,0,0)")
     return figure
 
 
 def main() -> None:
-    st.markdown('<div class="dashboard-kicker">Historical Tracking</div>', unsafe_allow_html=True)
+    render_kicker("Historical Tracking")
     st.title("Performance")
 
     payload = get_performance_data()
+    summary = payload["summary"]
+
+    render_hero(
+        "Portfolio vs. benchmark",
+        "QuantStats-backed monitoring with a cumulative curve, return heatmap, and risk summary once snapshot history exists.",
+        [
+            {"label": "Snapshots", "value": str(payload["snapshot_count"]), "meta": "portfolio history points", "tone": "tone-accent"},
+            {"label": "Returns", "value": str(payload["returns_count"]), "meta": "usable daily returns", "tone": "tone-info"},
+            {"label": "CAGR", "value": format_pct(summary.get("cagr")), "meta": "annualized", "tone": "tone-positive"},
+            {"label": "Max Drawdown", "value": format_pct(summary.get("max_drawdown")), "meta": "peak to trough", "tone": "tone-danger"},
+        ],
+    )
+
     if payload["snapshot_count"] < 5:
         st.info(EMPTY_STATE_MESSAGE)
         return
@@ -95,8 +102,7 @@ def main() -> None:
     st.subheader("Portfolio vs. SPY")
     st.plotly_chart(_performance_chart(payload["equity_curve"]), use_container_width=True)
 
-    st.subheader("QuantStats Summary")
-    summary = payload["summary"]
+    st.subheader("Risk and return summary")
     summary_rows = pd.DataFrame(
         [
             {"Metric": "CAGR", "Value": format_pct(summary.get("cagr"))},
@@ -115,7 +121,7 @@ def main() -> None:
         st.caption(summary["error"])
 
     if payload["heatmap_ready"] and not payload["monthly_returns"].empty:
-        st.subheader("Monthly Returns")
+        st.subheader("Monthly return heatmap")
         st.plotly_chart(_heatmap(payload["monthly_returns"]), use_container_width=True)
 
 
