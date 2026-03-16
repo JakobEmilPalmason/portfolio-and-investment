@@ -16,7 +16,7 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "db" / "schema.sql"
 
@@ -25,6 +25,10 @@ _JSON_COLUMNS = frozenset({
     "rule_checks_json",
     "verdicts_json",
     "top_holdings_json",
+    "positions_json",
+    "sector_exposure_json",
+    "concentration_json",
+    "skipped_json",
 })
 
 
@@ -143,7 +147,64 @@ class Database:
         if current >= SCHEMA_VERSION:
             logger.debug("Schema is current (v%d)", current)
             return
-        # Future migrations would go here
+        if current < 2:
+            self.conn.executescript("""
+                CREATE TABLE IF NOT EXISTS prebuy_checks (
+                    id INTEGER PRIMARY KEY,
+                    run_at TEXT NOT NULL,
+                    ticker TEXT NOT NULL,
+                    company TEXT,
+                    mode TEXT NOT NULL,
+                    analysis_date TEXT,
+                    age_days INTEGER,
+                    report_path TEXT,
+                    verdict TEXT,
+                    average_score REAL,
+                    min_umbrella_score REAL,
+                    min_umbrella_name TEXT,
+                    mos_score REAL,
+                    c1_pass INTEGER,
+                    c1_detail TEXT,
+                    iv_conservative REAL,
+                    iv_currency TEXT,
+                    current_price REAL,
+                    price_date TEXT,
+                    mos_pct REAL,
+                    threshold_price REAL,
+                    threshold_pct REAL,
+                    c2_pass INTEGER,
+                    c2_detail TEXT,
+                    c3_pass INTEGER,
+                    thesis_text TEXT,
+                    result TEXT NOT NULL,
+                    capital_base REAL,
+                    position_size REAL,
+                    shares_at_threshold REAL,
+                    stale_flag INTEGER DEFAULT 0,
+                    created_at TEXT DEFAULT (datetime('now'))
+                );
+                CREATE TABLE IF NOT EXISTS sim_runs (
+                    id INTEGER PRIMARY KEY,
+                    run_at TEXT NOT NULL,
+                    capital REAL NOT NULL,
+                    min_verdict TEXT NOT NULL,
+                    top_n INTEGER NOT NULL,
+                    allowed_states TEXT,
+                    total_positions INTEGER,
+                    positions_json TEXT,
+                    sector_exposure_json TEXT,
+                    concentration_json TEXT,
+                    skipped_json TEXT,
+                    created_at TEXT DEFAULT (datetime('now'))
+                );
+                CREATE INDEX IF NOT EXISTS idx_prebuy_ticker ON prebuy_checks(ticker);
+                CREATE INDEX IF NOT EXISTS idx_prebuy_run_at ON prebuy_checks(run_at);
+                CREATE INDEX IF NOT EXISTS idx_sim_runs_run_at ON sim_runs(run_at);
+            """)
+            self.conn.execute(
+                "INSERT INTO schema_version (version) VALUES (?)", (2,)
+            )
+            self.conn.commit()
         logger.info("Migrated from v%d to v%d", current, SCHEMA_VERSION)
 
     # ------------------------------------------------------------------
@@ -454,3 +515,73 @@ class Database:
             "position_id": None,
         })
         logger.info("Set initial capital to %s on %s", amount, inception_date)
+
+    # ------------------------------------------------------------------
+    # Prebuy checks
+    # ------------------------------------------------------------------
+
+    def insert_prebuy_check(self, check: dict) -> int:
+        """Insert a prebuy check record. Returns the new row id."""
+        check = _decimal_fields_from_dict(check)
+        cur = self.conn.execute(
+            """INSERT INTO prebuy_checks
+               (run_at, ticker, company, mode, analysis_date, age_days,
+                report_path, verdict, average_score, min_umbrella_score,
+                min_umbrella_name, mos_score, c1_pass, c1_detail,
+                iv_conservative, iv_currency, current_price, price_date,
+                mos_pct, threshold_price, threshold_pct, c2_pass, c2_detail,
+                c3_pass, thesis_text, result, capital_base, position_size,
+                shares_at_threshold, stale_flag)
+               VALUES (:run_at, :ticker, :company, :mode, :analysis_date, :age_days,
+                       :report_path, :verdict, :average_score, :min_umbrella_score,
+                       :min_umbrella_name, :mos_score, :c1_pass, :c1_detail,
+                       :iv_conservative, :iv_currency, :current_price, :price_date,
+                       :mos_pct, :threshold_price, :threshold_pct, :c2_pass, :c2_detail,
+                       :c3_pass, :thesis_text, :result, :capital_base, :position_size,
+                       :shares_at_threshold, :stale_flag)""",
+            check,
+        )
+        self.conn.commit()
+        return cur.lastrowid
+
+    def get_prebuy_checks(self, ticker: str = None, limit: int = 50) -> list[dict]:
+        """Get prebuy check history, optionally filtered by ticker."""
+        if ticker:
+            rows = self.conn.execute(
+                "SELECT * FROM prebuy_checks WHERE ticker = ? ORDER BY run_at DESC LIMIT ?",
+                (ticker, limit),
+            ).fetchall()
+        else:
+            rows = self.conn.execute(
+                "SELECT * FROM prebuy_checks ORDER BY run_at DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        return [_row_to_dict(r) for r in rows]
+
+    # ------------------------------------------------------------------
+    # Sim runs
+    # ------------------------------------------------------------------
+
+    def insert_sim_run(self, run: dict) -> int:
+        """Insert a portfolio sim run. Returns the new row id."""
+        run = _decimal_fields_from_dict(run)
+        cur = self.conn.execute(
+            """INSERT INTO sim_runs
+               (run_at, capital, min_verdict, top_n, allowed_states,
+                total_positions, positions_json, sector_exposure_json,
+                concentration_json, skipped_json)
+               VALUES (:run_at, :capital, :min_verdict, :top_n, :allowed_states,
+                       :total_positions, :positions_json, :sector_exposure_json,
+                       :concentration_json, :skipped_json)""",
+            run,
+        )
+        self.conn.commit()
+        return cur.lastrowid
+
+    def get_sim_runs(self, limit: int = 20) -> list[dict]:
+        """Get recent sim runs."""
+        rows = self.conn.execute(
+            "SELECT * FROM sim_runs ORDER BY run_at DESC LIMIT ?",
+            (limit,),
+        ).fetchall()
+        return [_row_to_dict(r) for r in rows]

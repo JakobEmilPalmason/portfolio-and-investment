@@ -81,6 +81,8 @@ def main() -> None:
             st.Page("pages/1_Portfolio.py", title="Portfolio", icon=":material/account_balance_wallet:", default=True),
             st.Page("pages/2_Performance.py", title="Performance", icon=":material/show_chart:"),
             st.Page("pages/3_Research.py", title="Research", icon=":material/biotech:"),
+            st.Page("pages/4_PreBuy.py", title="Pre-Buy", icon=":material/verified:"),
+            st.Page("pages/5_Simulator.py", title="Simulator", icon=":material/balance:"),
         ],
         position="sidebar",
     )

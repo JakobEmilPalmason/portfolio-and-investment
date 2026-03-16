@@ -375,6 +375,42 @@ def main() -> None:
     else:
         output_table(positions, sector_exposure, concentration, capital, skipped)
 
+    # Save to SQLite
+    try:
+        sys.path.insert(0, str(REPO_ROOT))
+        from datetime import datetime
+        from src.database import Database
+        with Database() as db:
+            db.migrate()
+            db.insert_sim_run({
+                "run_at": datetime.now().isoformat(),
+                "capital": capital,
+                "min_verdict": min_verdict,
+                "top_n": top_n,
+                "allowed_states": ",".join(allowed_states),
+                "total_positions": len(positions),
+                "positions_json": [
+                    {
+                        "ticker": p["ticker"],
+                        "company": p.get("company", ""),
+                        "verdict": p.get("verdict", ""),
+                        "average_score": p.get("average_score"),
+                        "confidence": p.get("confidence", ""),
+                        "sector": p.get("sector", ""),
+                        "weight_pct": p.get("weight_pct"),
+                        "position_value": p.get("position_value"),
+                        "red_flag_count": p.get("red_flag_count", 0),
+                        "analysis_date": p.get("analysis_date", ""),
+                    }
+                    for p in positions
+                ],
+                "sector_exposure_json": sector_exposure,
+                "concentration_json": concentration,
+                "skipped_json": skipped,
+            })
+    except Exception:
+        pass
+
 
 if __name__ == "__main__":
     main()

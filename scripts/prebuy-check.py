@@ -139,8 +139,8 @@ def check_condition_1(report: dict, config: dict) -> tuple[bool | None, str]:
 
     failures = []
 
-    if verdict != "Own":
-        failures.append(f"verdict={verdict} (need Own)")
+    if verdict not in ("Own", "Watch"):
+        failures.append(f"verdict={verdict} (need Own or Watch)")
 
     if float(avg) < min_score:
         failures.append(f"avg={avg} < {min_score}")
@@ -186,23 +186,25 @@ def check_condition_2(
     config: dict,
     capital: float,
     age_days: int,
-) -> tuple[bool | None, str]:
+) -> tuple[bool | None, str, dict]:
     """
     C2 — Price vs IV.
-    Returns (pass/fail/None, detail_multiline_str).
+    Returns (pass/fail/None, detail_multiline_str, raw_values_dict).
     None = IV data not available.
     """
     iv_cons = report.get("iv_conservative")
     iv_currency = report.get("iv_currency")
     threshold = config["prebuy_mos_threshold_pct"]
+    empty_raw = {"iv_conservative": iv_cons, "current_price": current_price,
+                 "mos_pct": None, "threshold_price": None, "shares_at_threshold": None}
 
     if iv_cons is None:
         return None, (
             "IV data not available — run `./run.sh analyze TICKER assemble` to backfill"
-        )
+        ), empty_raw
 
     if current_price is None:
-        return None, "Could not fetch current price (no network or invalid ticker)"
+        return None, "Could not fetch current price (no network or invalid ticker)", empty_raw
 
     # Currency mismatch warning block
     currency_warning = ""
@@ -268,7 +270,10 @@ def check_condition_2(
     if currency_warning:
         detail = currency_warning + "\n  " + detail
 
-    return passes, detail
+    raw = {"iv_conservative": iv_cons, "current_price": current_price,
+           "mos_pct": mos_pct, "threshold_price": threshold_price,
+           "shares_at_threshold": shares_at_threshold}
+    return passes, detail, raw
 
 
 def check_condition_3(report: dict, ticker: str) -> tuple[bool | None, str, str]:
@@ -350,7 +355,7 @@ def run_check(ticker: str, config: dict, dry_run_buy: bool = False):
         print(f"  [????]  {c1_detail}")
 
     # C2
-    c2_pass, c2_detail = check_condition_2(
+    c2_pass, c2_detail, c2_raw = check_condition_2(
         report, current_price, price_date, yf_currency, config, config["capital_base"], age_days
     )
     threshold = config["prebuy_mos_threshold_pct"]
@@ -403,6 +408,50 @@ def run_check(ticker: str, config: dict, dry_run_buy: bool = False):
         result = "NO-GO"
 
     print("══════════════════════════════════════════════════════════")
+
+    # Save to SQLite
+    try:
+        sys.path.insert(0, str(REPO_ROOT))
+        from src.database import Database
+        umbrellas = report.get("umbrella_scores", {})
+        min_umb_val = min(umbrellas.values()) if umbrellas else None
+        min_umb_name = min(umbrellas, key=umbrellas.get) if umbrellas else None
+        with Database() as db:
+            db.migrate()
+            db.insert_prebuy_check({
+                "run_at": datetime.now().isoformat(),
+                "ticker": ticker,
+                "company": company,
+                "mode": "single",
+                "analysis_date": analysis_date,
+                "age_days": age_days,
+                "report_path": str(report_path.relative_to(REPO_ROOT)) if report_path else None,
+                "verdict": report.get("verdict"),
+                "average_score": report.get("average_score"),
+                "min_umbrella_score": min_umb_val,
+                "min_umbrella_name": min_umb_name,
+                "mos_score": umbrellas.get("margin_of_safety"),
+                "c1_pass": None if c1_pass is None else int(c1_pass),
+                "c1_detail": c1_detail,
+                "iv_conservative": c2_raw.get("iv_conservative"),
+                "iv_currency": report.get("iv_currency"),
+                "current_price": c2_raw.get("current_price"),
+                "price_date": price_date,
+                "mos_pct": c2_raw.get("mos_pct"),
+                "threshold_price": c2_raw.get("threshold_price"),
+                "threshold_pct": config["prebuy_mos_threshold_pct"],
+                "c2_pass": None if c2_pass is None else int(c2_pass),
+                "c2_detail": c2_detail[:500] if c2_detail else None,
+                "c3_pass": None if c3_pass is None else int(c3_pass),
+                "thesis_text": thesis_text or None,
+                "result": result,
+                "capital_base": config["capital_base"],
+                "position_size": config["capital_base"] * POSITION_PCT,
+                "shares_at_threshold": c2_raw.get("shares_at_threshold"),
+                "stale_flag": 2 if age_days > 30 else (1 if age_days > 14 else 0),
+            })
+    except Exception:
+        pass  # never break stdout on save failure
 
     # Dry-run buy record
     if dry_run_buy and result.startswith("GO") and c3_pass is True and current_price is not None:
@@ -458,24 +507,25 @@ def run_own_dashboard(config: dict):
         try:
             with open(path) as f:
                 data = json.load(f)
-            if data.get("verdict") == "Own":
+            if data.get("verdict") in ("Own", "Watch"):
                 own_tickers.append((ticker, path, data))
         except (json.JSONDecodeError, OSError):
             pass
 
     if not own_tickers:
-        print("No Own-verdict tickers found in runs/*/reports/.")
+        print("No Own/Watch-verdict tickers found in runs/*/reports/.")
         return
 
     print()
     print("══════════════════════════════════════════════════════════")
-    print("  PRE-BUY DASHBOARD — Own-verdict tickers")
+    print("  PRE-BUY DASHBOARD — Own & Watch verdict tickers")
     print(f"  Date: {date.today().isoformat()}  |  Capital: ${config['capital_base']:,.0f}")
     print("══════════════════════════════════════════════════════════")
     print()
 
     # Table header
     col_ticker = 10
+    col_verdict = 7
     col_score = 7
     col_c1 = 8
     col_c2 = 8
@@ -483,22 +533,30 @@ def run_own_dashboard(config: dict):
     col_age = 6
 
     header = (
-        f"  {'Ticker':<{col_ticker}} {'Avg':>{col_score}} {'C1':^{col_c1}} "
+        f"  {'Ticker':<{col_ticker}} {'Verdict':<{col_verdict}} {'Avg':>{col_score}} {'C1':^{col_c1}} "
         f"{'C2':^{col_c2}} {'MOS%':>{col_mos}} {'Age':>{col_age}}"
     )
     print(header)
-    print("  " + "-" * (col_ticker + col_score + col_c1 + col_c2 + col_mos + col_age + 10))
+    print("  " + "-" * (col_ticker + col_verdict + col_score + col_c1 + col_c2 + col_mos + col_age + 12))
 
     c1c2_passers = []
     iv_data_count = 0
+    save_records = []
+    run_at = datetime.now().isoformat()
 
     for ticker, report_path, report in own_tickers:
         age_days = report_age_days(report_path)
         avg = report.get("average_score", "?")
         iv_cons = report.get("iv_conservative")
+        umbrellas = report.get("umbrella_scores", {})
 
-        c1_pass, _ = check_condition_1(report, config)
+        c1_pass, c1_detail = check_condition_1(report, config)
         c1_sym = "PASS" if c1_pass is True else ("FAIL" if c1_pass is False else "N/A")
+
+        current_price = None
+        mos_pct = None
+        threshold_price = None
+        c2_pass = None
 
         if iv_cons is not None:
             iv_data_count += 1
@@ -522,10 +580,50 @@ def run_own_dashboard(config: dict):
         stale = "!" * (2 if age_days > 30 else (1 if age_days > 14 else 0))
         age_display = f"{age_days}d{stale}"
 
+        verdict_display = report.get("verdict", "?")
         print(
-            f"  {ticker:<{col_ticker}} {avg!s:>{col_score}} {c1_sym:^{col_c1}} "
+            f"  {ticker:<{col_ticker}} {verdict_display:<{col_verdict}} {avg!s:>{col_score}} {c1_sym:^{col_c1}} "
             f"{c2_sym:^{col_c2}} {mos_display:>{col_mos}} {age_display:>{col_age}}"
         )
+
+        # Build save record
+        result = "NO-GO"
+        if c1_pass is True and c2_pass is True:
+            result = "GO"
+        elif c1_pass is None or c2_pass is None:
+            result = "INCOMPLETE"
+        save_records.append({
+            "run_at": run_at,
+            "ticker": ticker,
+            "company": report.get("company", ticker),
+            "mode": "dashboard",
+            "analysis_date": report.get("analysis_date"),
+            "age_days": age_days,
+            "report_path": str(report_path.relative_to(REPO_ROOT)) if report_path else None,
+            "verdict": report.get("verdict"),
+            "average_score": report.get("average_score"),
+            "min_umbrella_score": min(umbrellas.values()) if umbrellas else None,
+            "min_umbrella_name": min(umbrellas, key=umbrellas.get) if umbrellas else None,
+            "mos_score": umbrellas.get("margin_of_safety"),
+            "c1_pass": None if c1_pass is None else int(c1_pass),
+            "c1_detail": c1_detail[:500] if c1_detail else None,
+            "iv_conservative": iv_cons,
+            "iv_currency": report.get("iv_currency"),
+            "current_price": current_price,
+            "price_date": None,
+            "mos_pct": mos_pct,
+            "threshold_price": threshold_price,
+            "threshold_pct": config["prebuy_mos_threshold_pct"],
+            "c2_pass": None if c2_pass is None else int(c2_pass),
+            "c2_detail": None,
+            "c3_pass": None,
+            "thesis_text": None,
+            "result": result,
+            "capital_base": config["capital_base"],
+            "position_size": config["capital_base"] * POSITION_PCT,
+            "shares_at_threshold": None,
+            "stale_flag": 2 if age_days > 30 else (1 if age_days > 14 else 0),
+        })
 
     print()
     print(f"  {iv_data_count} of {len(own_tickers)} tickers have IV data.", end="")
@@ -545,6 +643,17 @@ def run_own_dashboard(config: dict):
     print("  RESULT: Dashboard only — no GO possible in batch mode.")
     print("══════════════════════════════════════════════════════════")
 
+    # Save all records to SQLite
+    try:
+        sys.path.insert(0, str(REPO_ROOT))
+        from src.database import Database
+        with Database() as db:
+            db.migrate()
+            for rec in save_records:
+                db.insert_prebuy_check(rec)
+    except Exception:
+        pass
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -558,7 +667,7 @@ def main():
     parser.add_argument(
         "--own",
         action="store_true",
-        help="Dashboard mode: show C1/C2 status for all Own-verdict tickers",
+        help="Dashboard mode: show C1/C2 status for all Own and Watch verdict tickers",
     )
     parser.add_argument(
         "--capital",

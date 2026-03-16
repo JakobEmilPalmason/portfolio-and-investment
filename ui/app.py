@@ -315,6 +315,60 @@ def api_freshness():
     return jsonify(result)
 
 
+@app.route('/api/scoreboard')
+def api_scoreboard():
+    """Flat array of all FINAL-REPORT.json data for the scoreboard view."""
+    if not RUNS_DIR.exists():
+        return jsonify([])
+
+    umbrella_keys = [
+        'circle_of_competence', 'competitive_advantage', 'management',
+        'business_economics', 'balance_sheet', 'valuation',
+        'margin_of_safety', 'temperament',
+    ]
+
+    # Load queue map for state lookup
+    queue_map = {}
+    try:
+        queue_data = read_json(QUEUE_FILE)
+        queue_map = {e['ticker']: e for e in queue_data if isinstance(e, dict) and e.get('ticker')}
+    except Exception:
+        pass
+
+    best = {}
+    for json_file in RUNS_DIR.glob("*/reports/*/FINAL-REPORT.json"):
+        try:
+            data = read_json(json_file)
+        except Exception:
+            continue
+        ticker = data.get('ticker') or json_file.parent.name
+        scores = data.get('umbrella_scores') or {}
+        red_flags = data.get('red_flags') or []
+        item = {
+            'ticker': ticker,
+            'company': data.get('company') or ticker,
+            'verdict': data.get('verdict'),
+            'average_score': data.get('average_score'),
+            'confidence': data.get('confidence'),
+            'analysis_date': data.get('analysis_date'),
+            'iv_conservative': data.get('iv_conservative'),
+            'iv_base': data.get('iv_base'),
+            'iv_bull': data.get('iv_bull'),
+            'iv_currency': data.get('iv_currency'),
+            'mos_pct': data.get('mos_at_analysis'),
+            'red_flag_count': len(red_flags),
+            'queue_state': queue_map.get(ticker, {}).get('current_state'),
+        }
+        for key in umbrella_keys:
+            item[key] = scores.get(key)
+
+        existing = best.get(ticker)
+        if existing is None or (item.get('analysis_date') or '') >= (existing.get('analysis_date') or ''):
+            best[ticker] = item
+
+    return jsonify(sorted(best.values(), key=lambda r: r.get('ticker', '')))
+
+
 @app.route('/api/policy')
 def api_policy():
     policy_file = REPO_ROOT / 'INVESTMENT-POLICY.md'

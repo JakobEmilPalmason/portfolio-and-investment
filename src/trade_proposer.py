@@ -147,7 +147,7 @@ class TradeProposalGenerator:
         verdict = report.get("verdict")
 
         if require_queue_state:
-            if queue_state in BUY_STATES and verdict == "Own":
+            if queue_state in BUY_STATES and verdict in ("Own", "Watch"):
                 if not is_open_long:
                     proposal = self._build_buy_proposal(
                         ticker=ticker,
@@ -157,10 +157,12 @@ class TradeProposalGenerator:
                         price=price,
                         capital_base=capital_base,
                         current_weight=current_weight,
+                        verdict=verdict,
                     )
                     return [proposal] if proposal else []
 
-                if current_weight < D("3.0") and self._margin_of_safety_valid(report, price):
+                target = D("3.0") if verdict == "Own" else D("2.0")
+                if current_weight < target and self._margin_of_safety_valid(report, price):
                     proposal = self._build_add_proposal(
                         ticker=ticker,
                         report=report,
@@ -170,6 +172,7 @@ class TradeProposalGenerator:
                         price=price,
                         capital_base=capital_base,
                         current_weight=current_weight,
+                        verdict=verdict,
                     )
                     return [proposal] if proposal else []
 
@@ -205,7 +208,7 @@ class TradeProposalGenerator:
 
             return []
 
-        if verdict == "Own":
+        if verdict in ("Own", "Watch"):
             if not is_open_long:
                 proposal = self._build_buy_proposal(
                     ticker=ticker,
@@ -215,10 +218,12 @@ class TradeProposalGenerator:
                     price=price,
                     capital_base=capital_base,
                     current_weight=current_weight,
+                    verdict=verdict,
                 )
                 return [proposal] if proposal else []
 
-            if current_weight < D("3.0") and self._margin_of_safety_valid(report, price):
+            target = D("3.0") if verdict == "Own" else D("2.0")
+            if current_weight < target and self._margin_of_safety_valid(report, price):
                 proposal = self._build_add_proposal(
                     ticker=ticker,
                     report=report,
@@ -228,6 +233,7 @@ class TradeProposalGenerator:
                     price=price,
                     capital_base=capital_base,
                     current_weight=current_weight,
+                    verdict=verdict,
                 )
                 return [proposal] if proposal else []
 
@@ -267,8 +273,20 @@ class TradeProposalGenerator:
         price: Decimal,
         capital_base: Decimal,
         current_weight: Decimal,
+        verdict: str = "Own",
     ) -> Optional[dict]:
-        target_value = round_money(capital_base * D("0.03"))
+        if verdict == "Watch":
+            target_pct = D("0.02")
+            target_weight = D("2.0")
+            sizing_method = "initial_2pct_watch"
+            size_label = "2%"
+        else:
+            target_pct = D("0.03")
+            target_weight = D("3.0")
+            sizing_method = "initial_3pct"
+            size_label = "3%"
+
+        target_value = round_money(capital_base * target_pct)
         shares = round_shares(target_value / price)
         if shares <= 0:
             return None
@@ -282,11 +300,11 @@ class TradeProposalGenerator:
             report=report,
             report_path=report_path,
             rationale=(
-                f"{company} has an Own verdict in the latest FINAL-REPORT and is not "
-                "currently held. Suggest initiating at the 3% starter size."
+                f"{company} has a {verdict} verdict in the latest FINAL-REPORT and is not "
+                f"currently held. Suggest initiating at the {size_label} starter size."
             ),
-            sizing_method="initial_3pct",
-            target_weight_pct=D("3.0"),
+            sizing_method=sizing_method,
+            target_weight_pct=target_weight,
             current_weight=current_weight,
         )
 
@@ -300,9 +318,21 @@ class TradeProposalGenerator:
         price: Decimal,
         capital_base: Decimal,
         current_weight: Decimal,
+        verdict: str = "Own",
     ) -> Optional[dict]:
+        if verdict == "Watch":
+            target_pct = D("0.02")
+            target_weight = D("2.0")
+            sizing_method = "add_to_2pct_watch"
+            size_label = "2%"
+        else:
+            target_pct = D("0.03")
+            target_weight = D("3.0")
+            sizing_method = "add_to_3pct"
+            size_label = "3%"
+
         current_value = round_money(position.shares * price)
-        target_value = round_money(capital_base * D("0.03"))
+        target_value = round_money(capital_base * target_pct)
         add_value = round_money(target_value - current_value)
         if add_value <= 0:
             return None
@@ -320,12 +350,12 @@ class TradeProposalGenerator:
             report=report,
             report_path=report_path,
             rationale=(
-                f"{company} remains below the 3% target size and the latest report still "
+                f"{company} remains below the {size_label} target size and the latest report still "
                 "shows a valid margin of safety from numeric IV data. Suggest adding up "
-                "to the 3% target."
+                f"to the {size_label} target."
             ),
-            sizing_method="add_to_3pct",
-            target_weight_pct=D("3.0"),
+            sizing_method=sizing_method,
+            target_weight_pct=target_weight,
             current_weight=current_weight,
         )
 

@@ -416,7 +416,7 @@ Every buy/short trade runs through the policy engine before execution.
 | Gross exposure | > 130% | hard |
 | Net exposure max | > 100% | hard |
 | Net exposure min | < -30% | hard |
-| Verdict mismatch | buying Pass-verdict | hard |
+| Verdict mismatch | buying Pass-verdict (Own and Watch allowed) | hard |
 | Thesis break | weakened/changed status | hard |
 | Margin of safety | MOS < 0% (price > IV) | soft |
 | Stale analysis | report > 6 months old | soft |
