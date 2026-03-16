@@ -51,3 +51,23 @@ Use web search and `context/{TICKER}/` only. **Do not read files in `scans/`, `t
 
 ## Output
 Follow the shared format exactly. Include your bear/base/bull scenarios with explicit assumptions and resulting valuations.
+
+## Required Closing Table
+
+After your Score line, append this table with your scenario values filled in:
+
+## Intrinsic Value Summary
+
+| Field | Value |
+|-------|-------|
+| IV Conservative (Bear) | {NUMBER only — no $ symbol, no range, no text} |
+| IV Base | {NUMBER only} |
+| IV Bull | {NUMBER only} |
+| Currency | {ISO code: USD, EUR, CAD, GBP, SEK, DKK, etc.} |
+| MOS at Analysis Date | {NUMBER — percentage, positive = cheap, negative = expensive} |
+
+Rules:
+- VALUES must be plain numbers (e.g. 153, 2939, 78.50). No "$", no ranges, no "~".
+- Use the same currency as your scenario analysis.
+- MOS = (IV_conservative − current_price) / IV_conservative × 100. Positive = margin exists.
+- This table is machine-read. Exact format matters.

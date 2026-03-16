@@ -99,6 +99,14 @@ usage() {
     echo "  fetch TICKER [...]       Fetch financial data from Yahoo Finance"
     echo "  analyze TICKER           Full 8-umbrella analysis + final report"
     echo "  portfolio [CAPITAL]      Portfolio simulator (default capital: \$100,000)"
+    echo "  buy TICKER [opts]        Record a long purchase"
+    echo "  sell TICKER [opts]       Record a long sale"
+    echo "  short TICKER [opts]      Record a short opening"
+    echo "  cover TICKER [opts]      Record a short close"
+    echo "  holdings                 Show current portfolio state"
+    echo "  ledger <subcmd>          Ledger management (init, refresh, bootstrap, check, history)"
+    echo "  prebuy TICKER [...]      Pre-buy checklist (quality, price vs IV, conviction)"
+    echo "  prebuy --own             Dashboard: C1/C2 status for all Own-verdict tickers"
     echo "  monitor TICKER           Change detection (stub — not yet implemented)"
     echo ""
     echo "Examples:"
@@ -111,6 +119,15 @@ usage() {
     echo "  $0 portfolio"
     echo "  $0 portfolio 250000"
     echo "  $0 portfolio 500000 --min-verdict watch --top 15"
+    echo "  $0 prebuy GILD"
+    echo "  $0 prebuy GILD --dry-run-buy"
+    echo "  $0 prebuy --own"
+    echo "  $0 buy V --price 312.50 --amount 3000 --iv 380"
+    echo "  $0 sell V --price 340 --shares 5"
+    echo "  $0 holdings"
+    echo "  $0 ledger init --capital 100000"
+    echo "  $0 ledger refresh"
+    echo "  $0 ledger history"
     echo "  $0 monitor AAPL"
     echo ""
     echo "Current week: $CURRENT_WEEK"
@@ -577,6 +594,20 @@ cmd_portfolio() {
     python3 "$SCRIPT_DIR/scripts/portfolio-sim.py" --capital "$capital" "$@"
 }
 
+cmd_ledger() {
+    python3 "$SCRIPT_DIR/scripts/portfolio-ledger.py" "$@"
+}
+
+cmd_prebuy() {
+    local args=("$@")
+    if [ ${#args[@]} -eq 0 ]; then
+        echo "Usage: $0 prebuy TICKER [TICKER ...]"
+        echo "       $0 prebuy --own"
+        exit 1
+    fi
+    python3 "$SCRIPT_DIR/scripts/prebuy-check.py" "${args[@]}"
+}
+
 cmd_monitor() {
     local ticker="${1:-}"
     if [ -z "$ticker" ]; then
@@ -604,6 +635,13 @@ case "$COMMAND" in
     fetch)     cmd_fetch "$@" ;;
     analyze)   cmd_analyze "$@" ;;
     portfolio) cmd_portfolio "$@" ;;
+    buy)       cmd_ledger buy "$@" ;;
+    sell)      cmd_ledger sell "$@" ;;
+    short)     cmd_ledger short "$@" ;;
+    cover)     cmd_ledger cover "$@" ;;
+    holdings)  cmd_ledger status "$@" ;;
+    ledger)    cmd_ledger "$@" ;;
+    prebuy)    cmd_prebuy "$@" ;;
     monitor)   cmd_monitor "$@" ;;
     validate)  cmd_validate "$@" ;;
     *)

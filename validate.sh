@@ -265,6 +265,16 @@ validate_final_report() {
             fail "umbrella_scores missing key: $k"
         fi
     done
+    # IV fields — optional but if present must be numbers or null
+    for iv_field in iv_conservative iv_base iv_bull mos_at_analysis; do
+        local iv_val
+        iv_val=$(jq -r --arg f "$iv_field" 'if has($f) then (.[$f] | tostring) else "absent" end' "$FILE")
+        if [ "$iv_val" != "absent" ] && [ "$iv_val" != "null" ]; then
+            if ! echo "$iv_val" | grep -qE '^-?[0-9]+(\.[0-9]+)?$'; then
+                fail "field $iv_field must be a number or null; got: $iv_val"
+            fi
+        fi
+    done
     ok "final-report — verdict=$verdict, avg=$avg"
 }
 

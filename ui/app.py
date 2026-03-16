@@ -3,9 +3,10 @@ import re
 from pathlib import Path
 from flask import Flask, jsonify, send_file
 
-REPO_ROOT  = Path(__file__).resolve().parent.parent
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
-RUNS_DIR   = REPO_ROOT / "runs"
+REPO_ROOT   = Path(__file__).resolve().parent.parent
+QUEUE_FILE  = REPO_ROOT / "queue" / "queue.json"
+RUNS_DIR    = REPO_ROOT / "runs"
+LEDGER_FILE = REPO_ROOT / "portfolio" / "ledger.json"
 
 app = Flask(__name__)
 TICKER_RE = re.compile(r'^[A-Z0-9.\-]{1,20}$')
@@ -139,6 +140,106 @@ def api_pipeline():
                 pass
 
     return jsonify(result)
+
+
+@app.route('/api/portfolio')
+def api_portfolio():
+    if not LEDGER_FILE.exists():
+        return jsonify({'error': 'No ledger found'}), 404
+    try:
+        ledger = read_json(LEDGER_FILE)
+    except Exception:
+        return jsonify({'error': 'Failed to read ledger'}), 500
+
+    meta = ledger.get('metadata', {})
+    summary_raw = ledger.get('summary', {})
+    positions_raw = ledger.get('positions', [])
+
+    capital = summary_raw.get('initial_capital') or meta.get('initial_capital') or 0
+    cash = summary_raw.get('cash_position', 0)
+    deployed_long = summary_raw.get('deployed_long', 0)
+    deployed_short = summary_raw.get('deployed_short', 0)
+    gross_exp = summary_raw.get('gross_exposure', 0)
+    net_exp = summary_raw.get('net_exposure', 0)
+    gross_pct = summary_raw.get('gross_exposure_pct', 0)
+    net_pct = summary_raw.get('net_exposure_pct', 0)
+    realized = summary_raw.get('realized_pnl', 0)
+
+    positions = []
+    total_unrealized = 0
+    for p in positions_raw:
+        unrealized = p.get('unrealized_pnl') or 0
+        total_unrealized += unrealized
+        entry_price = p.get('entry_price') or p.get('cost_basis_per_share') or 0
+        cost_basis = p.get('cost_basis_total', 0)
+        current_price = p.get('current_price')
+        shares = p.get('shares', 0)
+        market_value = p.get('current_value') or (current_price * shares if current_price else cost_basis)
+        weight = (cost_basis / capital * 100) if capital else 0
+        positions.append({
+            'ticker': p.get('ticker', ''),
+            'side': p.get('side', 'long'),
+            'shares': shares,
+            'entry_price': entry_price,
+            'current_price': current_price,
+            'market_value': market_value,
+            'cost_basis': cost_basis,
+            'unrealized_pnl': unrealized,
+            'unrealized_pct': p.get('unrealized_pnl_pct') or 0,
+            'weight_pct': round(weight, 1),
+            'sector': p.get('sector', ''),
+            'thesis_tag': p.get('verdict_at_entry', ''),
+        })
+
+    total_pnl = realized + total_unrealized
+
+    sector_exposure = {}
+    for sector, data in summary_raw.get('sector_weights', {}).items():
+        long_val = (data.get('long_pct', 0) / 100) * capital
+        short_val = (data.get('short_pct', 0) / 100) * capital
+        sector_exposure[sector] = {
+            'long': round(long_val, 2),
+            'short': round(short_val, 2),
+            'net': round(long_val - short_val, 2),
+            'gross': round(long_val + short_val, 2),
+            'pct_of_capital': data.get('gross_pct', 0),
+        }
+
+    warnings = []
+    for p in positions_raw:
+        for flag in p.get('policy_flags', []):
+            warnings.append(f"{p.get('ticker','')}: {flag}")
+
+    return jsonify({
+        'summary': {
+            'capital': capital,
+            'cash': cash,
+            'long_market_value': deployed_long,
+            'short_market_value': deployed_short,
+            'gross_exposure': gross_exp,
+            'net_exposure': net_exp,
+            'gross_pct': gross_pct,
+            'net_pct': net_pct,
+            'total_pnl': total_pnl,
+            'realized_pnl': realized,
+            'unrealized_pnl': total_unrealized,
+            'last_updated': meta.get('last_updated', summary_raw.get('as_of', '')),
+        },
+        'positions': positions,
+        'sector_exposure': sector_exposure,
+        'warnings': warnings,
+    })
+
+
+@app.route('/api/policy')
+def api_policy():
+    policy_file = REPO_ROOT / 'INVESTMENT-POLICY.md'
+    if not policy_file.exists():
+        return jsonify({'error': 'Policy file not found'}), 404
+    try:
+        return jsonify({'markdown': policy_file.read_text(encoding='utf-8')})
+    except Exception:
+        return jsonify({'error': 'Failed to read policy file'}), 500
 
 
 if __name__ == '__main__':

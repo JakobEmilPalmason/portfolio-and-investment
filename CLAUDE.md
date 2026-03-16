@@ -373,6 +373,104 @@ Sector is inferred from queue `tags` using a tag→sector mapping (first matchin
 
 ---
 
+## Portfolio Ledger
+
+**Trigger phrases:** "buy TICKER", "sell TICKER", "short TICKER", "cover TICKER", "show holdings", "refresh prices", "ledger init", "ledger history"
+
+Persistent portfolio tracking with transaction history and policy compliance. Independent from the portfolio simulator (which is hypothetical). The ledger records actual paper-trade decisions.
+
+### Files
+| file | purpose |
+|------|---------|
+| `portfolio/ledger.json` | Source of truth — positions, transactions, summary |
+| `portfolio/portfolio-state.md` | Human-readable render, regenerated on every mutation |
+| `scripts/portfolio-ledger.py` | Core script with all subcommands |
+
+### How to run
+```bash
+./run.sh ledger init --capital 100000              # Initialize empty ledger
+./run.sh buy V --price 312.50 --amount 3000 --iv 380 --reason "Own verdict"
+./run.sh sell V --price 340 --shares 5 --reason "Trim to target"
+./run.sh short CAT --price 705 --shares 10 --iv 272
+./run.sh cover CAT --price 600 --shares 10
+./run.sh holdings                                  # Print portfolio state
+./run.sh holdings --output json                    # Machine-readable output
+./run.sh ledger refresh                            # Update prices via yfinance
+./run.sh ledger refresh V ADBE                     # Specific tickers only
+./run.sh ledger check buy V --price 312 --amount 5000  # Dry-run policy check
+./run.sh ledger history                            # Transaction log
+./run.sh ledger history --ticker V --last 10       # Filtered history
+./run.sh ledger bootstrap portfolios/2026-03-12/portfolio-decision.json --capital 100000 --prices portfolios/2026-03-12/entry-prices.json
+```
+
+### Policy rules
+Every buy/short trade runs through the policy engine before execution.
+
+| rule | threshold | severity |
+|------|-----------|----------|
+| Single name weight | > 7% gross | hard (refuse) |
+| Single name warning | > 5% gross | soft (warn, --force to override) |
+| Sector gross weight | > 35% gross | hard |
+| Gross exposure | > 130% | hard |
+| Net exposure max | > 100% | hard |
+| Net exposure min | < -30% | hard |
+| Verdict mismatch | buying Pass-verdict | hard |
+| Thesis break | weakened/changed status | hard |
+| Margin of safety | MOS < 0% (price > IV) | soft |
+| Stale analysis | report > 6 months old | soft |
+| No report | missing FINAL-REPORT.json | soft |
+| Minimum breadth | < 5 positions | soft |
+
+### Cash model
+`cash = total_capital - sum(long cost_basis)`. Shorts track notional exposure but don't consume cash. Short P&L: `(entry_price - current_price) * shares`.
+
+### Intrinsic value
+The `--iv` flag on buy/short provides the user's intrinsic value estimate. Not parsed from reports (valuation_summary is prose). MOS = `(IV - price) / IV` for longs.
+
+---
+
+## Pre-Buy Checklist
+
+**Trigger phrases:** "prebuy TICKER", "pre-buy check TICKER", "check before buying TICKER"
+**Script:** `scripts/prebuy-check.py`
+
+Three-condition gate before a paper-trade buy.
+
+### Conditions
+| | Condition | Automatable |
+|---|---|---|
+| C1 | Quality gate: verdict=Own, avg≥7.0, no umbrella<4, MOS score≥6 | Yes |
+| C2 | Price vs IV: current price ≤ iv_conservative × (1 − threshold%) | Yes (needs IV data) |
+| C3 | 3-sentence conviction check | Manual (interactive only) |
+
+### How to run
+```bash
+./run.sh prebuy GILD                 # Single ticker, interactive C3
+./run.sh prebuy GILD --dry-run-buy   # GO + write portfolio/pending/GILD-YYYY-MM-DD.json
+./run.sh prebuy --own                # Dashboard: C1/C2 for all Own-verdict tickers
+./run.sh prebuy GILD --capital 250000
+```
+
+### portfolio/config.json (optional, user-created)
+Override defaults by creating `portfolio/config.json`:
+```json
+{
+  "capital_base": 250000,
+  "prebuy_min_score": 7.0,
+  "prebuy_min_mos_score": 6,
+  "prebuy_mos_threshold_pct": 20
+}
+```
+`portfolio/` is the home for all portfolio-level state: ledger, transaction log, config, and pending dry-run records. Prefer `portfolio/` over `portfolios/` for all new files.
+
+### IV data requirement
+C2 requires `iv_conservative` in `FINAL-REPORT.json`. Existing reports without it show `N/A` in the dashboard and `CANNOT VERIFY` in single-ticker mode. Backfill with: `./run.sh analyze TICKER assemble`
+
+### --dry-run-buy
+When all 3 conditions pass, writes a pending record to `portfolio/pending/TICKER-YYYY-MM-DD.json` with price, shares, cost basis, MOS, and confirmed thesis. Nothing is committed to the ledger until you explicitly do so.
+
+---
+
 ## Monitor (Stub)
 
 **Trigger phrases:** "monitor TICKER"

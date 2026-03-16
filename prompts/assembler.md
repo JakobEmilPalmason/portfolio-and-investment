@@ -101,6 +101,12 @@ After writing FINAL-REPORT.md, also write `runs/{CURRENT_WEEK}/reports/{TICKER}/
   "buy_triggers": [],
   "sell_triggers": [],
   "valuation_summary": "",
+  "iv_conservative": null,
+  "iv_base": null,
+  "iv_bull": null,
+  "iv_currency": null,
+  "mos_at_analysis": null,
+  "compact_checklist": [],
   "source_summary": "",
   "confidence": "high|medium|low",
   "change_notes": ""
@@ -109,6 +115,10 @@ After writing FINAL-REPORT.md, also write `runs/{CURRENT_WEEK}/reports/{TICKER}/
 
 Field notes:
 - `valuation_summary`: one to two sentences — estimated intrinsic value range, current price vs. value, whether a margin of safety exists
+- `iv_conservative`, `iv_base`, `iv_bull`: numeric per-share intrinsic value estimates. Extract from the "Intrinsic Value Summary" table in section 06. Strip all non-numeric characters (whitespace, $, ~, USD, ranges) from the raw cell value, then attempt to parse as a float. If the result is not a clean number after stripping — or if the table is absent — set to null. A null with a re-assemble instruction is safer than a silently wrong number.
+- `iv_currency`: ISO currency code (USD, EUR, CAD, etc.) for the IV figures. From the Currency row of the IV Summary table. Null if absent.
+- `mos_at_analysis`: numeric percentage at time of analysis (positive = price was below iv_conservative). Null if iv_conservative is null.
+- `compact_checklist`: array of 8 strings — copy the 8 forced sentences from section 09 exactly, one string per sentence. Used by the pre-buy checklist script for the C3 interactive prompt.
 - `source_summary`: one sentence — what data sources were used (web search, user context files, training knowledge) and any staleness caveats
 - `key_strengths`, `key_risks`, `red_flags`, `buy_triggers`, `sell_triggers`: concise strings (one phrase each), not prose paragraphs
 - `change_notes`: leave empty string `""` on first run; populated by monitor agent on subsequent runs
