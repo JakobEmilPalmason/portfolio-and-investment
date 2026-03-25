@@ -1,6 +1,6 @@
 # Financial Data: ROP — Roper Technologies, Inc.
 
-**Generated:** 2026-03-16 00:14 UTC
+**Generated:** 2026-03-23 00:39 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Technology | **Industry:** Software - Application
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $351.00 |
-| Market Cap | $37.8B |
-| Enterprise Value | $45.4B |
+| Current Price | $353.68 |
+| Market Cap | $38.1B |
+| Enterprise Value | $45.6B |
 | 52-Week High | $594.25 |
 | 52-Week Low | $313.07 |
-| Position in 52-Week Range | 13% |
+| Position in 52-Week Range | 14% |
 | Beta | 0.93 |
 | Shares Outstanding | 102.9M |
-| Dividend Yield | 1.04% |
+| Dividend Yield | 1.03% |
 
 ---
 
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 24.7x |
-| Forward P/E | 15.0x |
-| EV/EBITDA | 14.5x |
-| EV/Revenue | 5.7x |
-| P/FCF | 17.8x |
+| Trailing P/E | 24.9x |
+| Forward P/E | 15.2x |
+| EV/EBITDA | 14.6x |
+| EV/Revenue | 5.8x |
+| P/FCF | 18.0x |
 | P/S | 4.8x |
 | P/B | 1.9x |
 
@@ -49,7 +49,7 @@
 | Target Low | $365.00 |
 | Number of Analysts | 16 |
 | Forward EPS | $23.33 |
-| Trailing EPS | $14.22 |
+| Trailing EPS | $14.18 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $351.00 | — |
-| 1 Month Ago | $319.82 | +9.7% |
-| 3 Months Ago | $444.93 | -21.1% |
-| 6 Months Ago | $510.63 | -31.3% |
+| Current | $353.68 | — |
+| 1 Month Ago | $335.79 | +5.3% |
+| 3 Months Ago | $449.59 | -21.3% |
+| 6 Months Ago | $502.75 | -29.7% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $590.35 (2025-03-27) | -40.5% from current |
-| 52-Week Low | $313.07 (2026-02-17) | +12.1% from current |
+| 52-Week High | $590.35 (2025-03-27) | -40.1% from current |
+| 52-Week Low | $313.07 (2026-02-17) | +13.0% from current |
 
 ---
 

@@ -1,0 +1,66 @@
+{
+  "ticker": "CBOE",
+  "company": "Cboe Global Markets, Inc.",
+  "analysis_date": "2026-03-18",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 5,
+    "margin_of_safety": 3,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Exclusive SPX licensing through 2032 and outright VIX ownership create a legal monopoly on the world's most important index derivatives",
+    "67-68% adjusted operating margins with 153% FCF conversion on minimal capex — textbook toll-bridge economics",
+    "Fortress balance sheet with $774M net cash, 31x interest coverage, and stress-test durability through a 50% revenue decline",
+    "Self-reinforcing liquidity network effect with SPX market share rising to 74% — moat is widening, not narrowing",
+    "Secular tailwind from 0DTE options adoption (59% of SPX volume) and structural growth in derivatives participation"
+  ],
+  "key_risks": [
+    "Stock trades 85% above bear-case IV and 30% above base-case IV — zero price margin of safety with deeply unfavorable downside/upside asymmetry",
+    "0DTE regulatory risk: SEC scrutiny is active and any volume restrictions would directly impair the fastest-growing revenue stream",
+    "SPX license concentration: exclusive rights expire 2032 and renewal terms are unknown; 40-50% of net revenue depends on S&P 500-linked products",
+    "Post-blowout normalization: FY2025 was a record year with 44% net income growth; mid-single-digit 2026 guidance creates tough comparisons",
+    "Low insider ownership (0.51%) and prior CEO governance scandal create alignment concerns under new leadership"
+  ],
+  "red_flags": [
+    "Margin of safety score of 3/10 — stock priced for bull-case perfection with no room for disappointment",
+    "Prior CEO Edward Tilly resigned in 2023 following board-led investigation into undisclosed personal relationships",
+    "FY2022 goodwill impairment of $569M on digital assets business demonstrates capital allocation risk",
+    "Analyst consensus target of $288 essentially matches current price — no contrarian edge"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $200-220 range (base-case IV), offering meaningful margin of safety on reasonable growth assumptions",
+    "Stock drops below $175, providing 25%+ discount to base-case IV for a high-conviction entry",
+    "Evidence that derivatives secular growth is accelerating beyond consensus, raising IV estimates materially"
+  ],
+  "sell_triggers": [
+    "Loss or material weakening of exclusive SPX licensing arrangement at 2032 renewal",
+    "SEC imposes restrictions on 0DTE options trading that materially impair volume growth",
+    "Stock reaches 30%+ premium to bull-case IV ($380+), indicating extreme overvaluation"
+  ],
+  "valuation_summary": "At $287, CBOE trades at 22.5x forward P/E and 25.6x owner earnings. Bear-case IV of $155 (growth stalls, margins compress), base-case IV of $222 (mid-single-digit growth, stable margins), bull-case IV of $295 (secular acceleration). The market is pricing in the bull case as the base case, leaving no margin of safety for a value-oriented buyer.",
+  "iv_conservative": 155,
+  "iv_base": 222,
+  "iv_bull": 295,
+  "iv_currency": "USD",
+  "mos_at_analysis": -85.1,
+  "compact_checklist": [
+    "CBOE runs the only exchange where SPX and VIX options trade, earning a per-contract toll on 3.9 million daily contracts at 67% operating margins with near-zero marginal cost.",
+    "Exclusive SPX licensing through 2032 and outright VIX ownership, reinforced by a self-compounding liquidity network effect that no competitor has ever successfully replicated in electronic derivatives.",
+    "ROIC of 17.3%, FCF conversion of 153% on just $71M capex, and EBITDA margins expanding to 68% confirm a capital-light toll bridge that converts almost every incremental revenue dollar to cash.",
+    "New CEO Donohue is executing a disciplined realignment — exiting failed Australian, Canadian, and digital-asset expansions — and has retired 22% of shares since 2011, though insider ownership at 0.51% is too low.",
+    "With $2.3B cash against $1.6B debt, 31x interest coverage, and the ability to remain profitable even under a 50% revenue decline, financial distress is virtually impossible.",
+    "At $287 (22.5x forward earnings), the stock requires 6-7% annual earnings growth just to deliver 10% returns — essentially pricing in the base case with no room for disappointment.",
+    "The business itself is a fortress, but the stock trades 85% above bear-case IV ($155) and 30% above base-case IV ($222), offering zero price protection for a new buyer.",
+    "Loss of the exclusive SPX license at the 2032 renewal, or SEC restrictions on 0DTE options that impair the 59%-of-volume growth engine, would break the thesis."
+  ],
+  "source_summary": "Cboe Q4 2025 & FY2025 earnings release, 10-K filing (Feb 2026), yfinance financial data, SEC EDGAR filings, Yahoo Finance, Macrotrends, Morningstar, Investing.com, Gurufocus, StockAnalysis.com, Simply Wall St, William Blair initiation, Cboe IR filings and governance page, Cboe.com product pages and insights, PRNewswire, Bloomberg, Finance Magnates, Disruption Banking",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Exceptional business quality (avg 8.5 across umbrellas 1-5) offset by poor valuation entry point (avg 4.7 across umbrellas 6-8). Watch for price pullback to $200-220 range."
+}

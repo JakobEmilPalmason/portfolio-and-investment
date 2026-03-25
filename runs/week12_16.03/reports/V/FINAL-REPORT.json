@@ -1,0 +1,69 @@
+{
+  "ticker": "V",
+  "company": "Visa Inc.",
+  "analysis_date": "2026-03-22",
+  "verdict": "Own",
+  "average_score": 8.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 9,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Two-sided network of 4+ billion cards and 100M+ merchant acceptance points — the widest moat in financial services",
+    "ROIC expanded from 29% to 36% over four years with 80% gross margins and 66% operating margins",
+    "$21.6B FCF on $1.5B capex (108% FCF-to-net-income conversion) — one of the most asset-light businesses at scale",
+    "Fortress balance sheet: 0.3x net debt/EBITDA, 42x interest coverage, survives 30% revenue decline stress test",
+    "$22.8B returned to shareholders in FY2025 with genuine 16% share count reduction in two years"
+  ],
+  "key_risks": [
+    "Credit Card Competition Act (CCCA) reintroduced January 2026 could compress interchange by 20-40% (likelihood 25-35%)",
+    "DOJ debit antitrust suit proceeding to discovery, trial likely 2027-2028 — could force changes to debit routing economics",
+    "Three concurrent regulatory/legal proceedings (CCCA, DOJ debit, merchant settlement) are correlated, raising probability of at least one adverse outcome",
+    "Client incentives growing faster than net revenue ($12.3B to $15.3B over two years) signals competitive pressure",
+    "A2A payment rails (UPI, Pix, FedNow) represent long-term structural disintermediation risk"
+  ],
+  "red_flags": [
+    "No price margin of safety against bear IV — stock trades 37% above conservative $220 bear case",
+    "CEO McInerney net sold ~166K shares over 18 months under 10b5-1 plans",
+    "$2.56B litigation provision in FY2025 (5.5x FY2024 level) signals elevated legal risk",
+    "Terminal value comprises 74-83% of enterprise value across all DCF scenarios"
+  ],
+  "buy_triggers": [
+    "CCCA fails in committee or is significantly diluted, removing largest regulatory discount",
+    "Stock drops below $280 (near MC P5 of $291), creating price MOS against base case",
+    "DOJ debit suit settles on terms preserving core network economics"
+  ],
+  "sell_triggers": [
+    "Both CCCA passes in strong form AND DOJ wins full debit remedy — either alone is manageable, both together structurally alter the business",
+    "Two consecutive quarters of declining payment volume indicating structural network erosion",
+    "P/E exceeds 40x without commensurate growth acceleration"
+  ],
+  "valuation_summary": "At $301.62, Visa trades at 28x trailing earnings (16% below 5-year average of 34.7x) and 7% below the quant base IV of $324. The analyst-adjusted base IV is $340, implying 13% upside. 22 of 25 sensitivity grid cells produce IV above current price. Monte Carlo P(IV > Price) of 88.6%. The market is pricing in the bear-case corner of the assumption space — you need growth to slow to 9% AND WACC to spike above 9.6% to lose money. Bear IV of $220 (adjusted) offers no price cushion if regulatory worst case materializes.",
+  "iv_conservative": 228.58,
+  "iv_base": 323.79,
+  "iv_bull": 431.5,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -34.4,
+  "monte_carlo_prob_above_price": 0.8865,
+  "sensitivity_iv_range": [283.11, 468.58],
+  "compact_checklist": [
+    "Visa runs a toll-booth on $15 trillion in annual global payments volume, earning fees on every swipe without taking any credit risk.",
+    "A two-sided network of 4+ billion cards and 100M+ merchant acceptance points creates a coordination problem no competitor can solve from scratch, evidenced by 80% gross margins and 36% ROIC.",
+    "ROIC expanded from 29% to 36% over four years while generating $21.6B in FCF on just $1.5B capex, converting 108% of net income to cash.",
+    "Returned $22.8B to shareholders in FY2025 and reduced share count 16% in two years through genuine buybacks, with disciplined bolt-on M&A ($887M vs $21.6B FCF).",
+    "Net debt of $8B is repayable in under 5 months of FCF, interest coverage stands at 42x, and the business would still generate $11B+ FCF under a 30% revenue decline.",
+    "At 28x trailing earnings (16% below the 5-year average of 34.7x), the market is pricing in the bear-case corner of the sensitivity grid — you need growth to slow to 9% AND WACC to spike above 9.6% to lose money.",
+    "The 80% gross margin, fortress balance sheet, and 88.6% Monte Carlo probability of undervaluation provide strong business protection, but there is no price cushion against the $220 bear IV if CCCA and DOJ both go against Visa.",
+    "Sell if both the CCCA passes in strong form AND the DOJ wins full debit remedy — either alone is manageable, but both together would structurally alter Visa's network economics."
+  ],
+  "source_summary": "Visa 10-K FY2025, Q1 FY2026 earnings call, SEC EDGAR XBRL, DEF 14A proxy statement, DOJ antitrust filings, quant DCF model (src/quant), Yahoo Finance, analyst consensus (35 analysts), Macrotrends historical data, Payments Dive, CCCA legislative tracker",
+  "confidence": "high",
+  "change_notes": "New full analysis for week12_16.03. Visa at decade-low multiples with 88.6% MC probability of undervaluation. Regulatory overhang (CCCA + DOJ debit) is the key risk preventing higher MOS score."
+}

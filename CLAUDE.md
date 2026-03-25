@@ -6,10 +6,10 @@ This project is a Buffett-style investment analysis system powered by Claude Cod
 
 | | |
 |---|---|
-| **Current week** | `week12_16.03` |
-| **Active scan** | `runs/week12_16.03/scan/` |
-| **Active triage** | `runs/week12_16.03/triage/` |
-| **Active reports** | `runs/week12_16.03/reports/` |
+| **Current week** | `week13_23.03` |
+| **Active scan** | `runs/week13_23.03/scan/` |
+| **Active triage** | `runs/week13_23.03/triage/` |
+| **Active reports** | `runs/week13_23.03/reports/` |
 
 **Update `CURRENT_WEEK` in `run.sh` (line ~27) and the table above when a new week begins.**
 
@@ -24,7 +24,7 @@ When a user asks to analyze a stock (e.g., "analyze AAPL" or "run analysis on MS
 ### Step 1: Setup
 1. Create directory `runs/{CURRENT_WEEK}/reports/{TICKER}/` if it doesn't exist.
 2. Read `prompts/_shared-format.md` — this is the output schema all agents must follow.
-3. Financial data is auto-fetched before analysis (see "Financial Data Fetch" section below). Check if `context/{TICKER}/` exists. If it does, read all files in it — this includes auto-fetched financials and any user-provided research (10-K notes, earnings transcripts, etc.). Pass this context to every agent.
+3. Financial data is auto-fetched before analysis (see "Financial Data Fetch" section below). Quantitative valuation models are then run automatically (see "Quant Valuation" section below), producing `quant-valuation.md` and `quant-valuation.json` in `context/{TICKER}/`. Check if `context/{TICKER}/` exists. If it does, read all files in it — this includes auto-fetched financials, quant model output, and any user-provided research (10-K notes, earnings transcripts, etc.). Pass this context to every agent.
 
 ### Step 2: Run Analysis Agents (3 parallel batches)
 Spawn 3 Agent subagents in parallel. Each agent gets:
@@ -84,6 +84,7 @@ Stage A2 (Candidate Filter)   →  runs/{week}/scan/    (candidates.json + csv +
 Stage B1 (Fast Triage)        →  runs/{week}/triage/  (b1-results.json, b1-advance.json, b1-summary.md)
 Stage B2 (Focused Triage)     →  runs/{week}/triage/  (triage.json, triage.md, deep-dive.csv)
 Fetch (Financial Data)        →  context/{TICKER}/financials.md
+Quant (Deterministic DCF)     →  context/{TICKER}/quant-valuation.md + .json
 Stage C  (Full Analysis)      →  runs/{week}/reports/{TICKER}/
 Queue                         →  queue/queue.json
 Portfolio Simulator           →  stdout (snapshot allocation from queue + FINAL-REPORT.json)
@@ -342,14 +343,16 @@ AI-driven conviction-weighted portfolio construction. Merges FINAL-REPORT.json +
 
 ### How to run
 ```bash
-./run.sh allocate                  # $100K default
-./run.sh allocate 250000           # Custom capital
+./run.sh allocate                                # $100K default, unique run folder
+./run.sh allocate 250000 --label claude-opus    # Custom capital + run label
+./run.sh allocate --label agent-7 --output-dir portfolio/allocations/month1/agent-7
 ```
 
 ### What it produces
-- `portfolio/allocation-input.json` — the data blob (all candidates with live prices, IV, scores, flags, triggers, risks)
-- `portfolio/allocation-proposal.json` — machine-readable target portfolio
-- `portfolio/allocation-proposal.md` — human-readable proposal with rationale per position
+- `portfolio/allocations/<run-id>/allocation-input.json` — the data blob for that run
+- `portfolio/allocations/<run-id>/allocation-proposal.json` — machine-readable target portfolio
+- `portfolio/allocations/<run-id>/allocation-proposal.md` — human-readable proposal with rationale per position
+- `portfolio/allocations/<run-id>/run-metadata.json` — run label, capital, and output paths for later comparison
 
 ### Key rules
 - Own verdict: 3% starter, up to 5% max. Watch verdict: 2% starter, up to 3% max.
@@ -357,6 +360,7 @@ AI-driven conviction-weighted portfolio construction. Merges FINAL-REPORT.json +
 - 8–15 positions. Cash is a valid position.
 - Cross-holding risk correlation is checked.
 - Every position needs a rationale. Every exclusion needs a reason.
+- Each allocator run writes to its own directory. Do not overwrite prior runs.
 
 ---
 
@@ -464,7 +468,7 @@ The `--iv` flag on buy/short provides the user's intrinsic value estimate. Not p
 **Trigger phrases:** "open dashboard", "run dashboard", "show streamlit dashboard"
 **Entry point:** `dashboard/app.py`
 
-Read-only Streamlit dashboard layered alongside the Flask research browser. The dashboard never writes to `db/portfolio.db`. Portfolio and performance views read SQLite through `Database` and `PortfolioEngine`; research view reads the latest `FINAL-REPORT.json` / `FINAL-REPORT.md` plus `queue/queue.json`.
+Read-only Streamlit dashboard. Never writes to `db/portfolio.db`. Portfolio and performance views read SQLite through `Database` and `PortfolioEngine`; research view reads the latest `FINAL-REPORT.json` / `FINAL-REPORT.md` plus `queue/queue.json`.
 
 ### Pages
 1. **Portfolio** — current holdings, allocation pie, sector exposure, policy flags, top-level stats
@@ -577,6 +581,56 @@ Skips tickers where `context/{TICKER}/financials.md` is less than 24 hours old. 
 ### Dependencies
 - `yfinance` (listed in `requirements.txt`)
 - No API keys required
+
+---
+
+## Quant Valuation
+
+**Trigger phrases:** "run quant TICKER", "quant valuation"
+**Module:** `src/quant/` — deterministic DCF engine, no LLM calls, runs in <1 second.
+
+After financial data is fetched, `run.sh analyze` automatically runs the quant valuation model. This produces `context/{TICKER}/quant-valuation.md` (human-readable) and `context/{TICKER}/quant-valuation.json` (machine-readable) containing:
+
+- **Bear/base/bull per-share IV** from a multi-stage DCF
+- **WACC derivation** from CAPM (beta, cost of equity, cost of debt)
+- **Owner earnings** with maintenance vs growth capex separation
+- **Sensitivity grid** — 5×5 matrix of IV across growth rate × WACC combinations
+- **Monte Carlo** — 10,000 simulation probability distribution of IV, including P(IV > Price)
+
+### How it integrates with analysis agents
+
+The quant output lands in `context/{TICKER}/` alongside `financials.md`. All analysis agents receive it as context. Key integration:
+
+| Agent | How it uses quant output |
+|-------|------------------------|
+| **Umbrella 06 (Valuation)** | Uses quant IV as starting anchor. Stress-tests assumptions, adjusts where judgment differs. References sensitivity grid and Monte Carlo probability. |
+| **Umbrella 07 (Margin of Safety)** | References quant bear IV for price MOS, sensitivity grid for assumption coverage, MC P(IV > Price) for probability-weighted assessment. |
+| **Umbrella 08 (Temperament)** | Uses MC probability and bear-to-bull spread to inform position sizing recommendations. |
+| **Assembler** | Prefers quant-model IV over AI-extracted IV for FINAL-REPORT.json. Sets `iv_source: "quant_model"`. Copies `monte_carlo_prob_above_price` and `sensitivity_iv_range`. |
+
+### How to run standalone
+```bash
+python3 -m src.quant AAPL                                    # basic DCF, text output
+python3 -m src.quant AAPL --auto-wacc --owner-earnings       # CAPM WACC + owner earnings
+python3 -m src.quant AAPL --sensitivity --monte-carlo        # add sensitivity + MC
+python3 -m src.quant AAPL --write --json-out                 # write .md + .json to context/
+python3 -m src.quant AAPL --write --json-out --quiet \
+    --sensitivity --monte-carlo --auto-wacc \
+    --owner-earnings --fade-growth                           # full pipeline mode (used by run.sh)
+```
+
+### FINAL-REPORT.json fields from quant model
+
+When the assembler detects `quant-valuation.json`, it populates these additional fields in FINAL-REPORT.json:
+
+| Field | Source | Description |
+|-------|--------|-------------|
+| `iv_source` | assembler | `"quant_model"` or `"ai_estimate"` — provenance of IV values |
+| `monte_carlo_prob_above_price` | `quant-valuation.json` | Probability stock is undervalued (decimal, e.g. 0.42) |
+| `sensitivity_iv_range` | `quant-valuation.json` | `[min_iv, max_iv]` across all sensitivity grid cells |
+
+### Failure handling
+If the quant model fails (missing financials, unparseable data), `run.sh` prints a warning and proceeds. Analysis agents fall back to their own estimates. The assembler uses AI-extracted IV with `iv_source: "ai_estimate"`.
 
 ---
 

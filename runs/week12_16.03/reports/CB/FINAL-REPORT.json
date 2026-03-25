@@ -1,0 +1,68 @@
+{
+  "ticker": "CB",
+  "company": "Chubb Limited",
+  "analysis_date": "2026-03-22",
+  "verdict": "Own",
+  "average_score": 8.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 8,
+    "margin_of_safety": 7,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "World's largest P&C insurer with record 85.7% combined ratio",
+    "Multi-layered moat: switching costs, global scale, regulatory barriers, AA ratings",
+    "Owner earnings of $10.6B with 20.5% return on tangible equity",
+    "21-year CEO track record with disciplined capital allocation",
+    "Fortress balance sheet: 23% debt/equity, 18x interest coverage"
+  ],
+  "key_risks": [
+    "Catastrophe clustering ($10B+ insured loss year could compress earnings 40-50%)",
+    "P&C cycle softening eroding premium growth and combined ratio",
+    "Casualty reserve deterioration from social inflation and US litigation trends",
+    "CEO succession risk after 21+ years with no public succession plan",
+    "Climate regulation constraining underwriting in exposed regions"
+  ],
+  "red_flags": [
+    "Combined Chairman/CEO role concentrates governance risk",
+    "Commercial auto combined ratio of 126.2% is a sub-segment drag",
+    "As You Sow climate lawsuit filed March 2026"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $280-$300 (near MC P5-P10, 25-30% discount to base IV)",
+    "Combined ratio sustains below 86% for another year",
+    "Hard-market pricing extends through 2027 supporting 6%+ premium growth"
+  ],
+  "sell_triggers": [
+    "Combined ratio exceeds 95% for two consecutive years",
+    "Management pivots to aggressive M&A at elevated prices",
+    "Stock exceeds bull IV ($594) or trades above 18x trailing earnings"
+  ],
+  "valuation_summary": "Base intrinsic value of $393/share implies 22% upside from $322.58; Monte Carlo simulation shows 89% probability of undervaluation across 10,000 runs, with 24 of 25 sensitivity grid cells above current price.",
+  "iv_conservative": 220.34,
+  "iv_base": 393.21,
+  "iv_bull": 593.99,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -46.4,
+  "monte_carlo_prob_above_price": 0.8906,
+  "sensitivity_iv_range": [317.37, 553.02],
+  "compact_checklist": [
+    "Chubb collects $54.8B in annual insurance premiums across 54 countries and invests the float, earning money two ways — underwriting profit (85.7% combined ratio) and $7B in investment income on $272B in assets.",
+    "Switching costs in complex commercial lines, global scale 2x the nearest competitor, AA financial strength ratings, and 54-country regulatory licenses create a multi-layered moat evidenced by a record combined ratio 9-14 points better than the industry average.",
+    "Return on tangible equity of 20.5%, owner earnings of $10.6B (up 93% in three years), and FCF conversion averaging 163% confirm Chubb generates real cash well above its 6.8% cost of capital.",
+    "CEO Greenberg has compounded value for 21 years, bought back $3.7B in shares at $283 average (below today's $323), raised dividends for 33 consecutive years, and ties 95% of his pay to book value growth and combined ratio.",
+    "With 23% debt/equity, 18x interest coverage, $73.8B in equity, and $1.13B in favorable reserve development, Chubb could retire its entire $17.2B debt stack in 16 months of operating cash flow.",
+    "At 12.6x trailing earnings with a base IV of $393, the market must believe premium growth stalls at 4%, the combined ratio reverts 2-3 points worse, and WACC stays above 7.5% — all simultaneously — to justify $323.",
+    "89% Monte Carlo probability of undervaluation, 24 of 25 sensitivity grid cells above current price, and a business that absorbed $2.4B in catastrophe losses while posting record earnings provide structural downside protection.",
+    "Sell if the combined ratio exceeds 95% for two consecutive years, signaling a permanent loss of the underwriting discipline that defines Chubb's entire competitive advantage."
+  ],
+  "source_summary": "Analysis based on Chubb Q4/FY2025 earnings, 10-K filing, Yahoo Finance financials, quant DCF model from src/quant, and web search for current data as of 2026-03-22.",
+  "confidence": "high",
+  "change_notes": ""
+}

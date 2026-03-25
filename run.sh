@@ -7,6 +7,7 @@
 #   ./run.sh analyze TICKER          # Full 8-umbrella analysis + final report
 #   ./run.sh portfolio [CAPITAL]     # Portfolio simulator (snapshot allocation)
 #   ./run.sh dashboard               # Streamlit dashboard
+#   ./run.sh diff TICKER              # Cross-period semantic diff (evidence changes)
 #   ./run.sh monitor TICKER          # Change detection (stub — not yet implemented)
 #   ./run.sh validate <type> <file>  # Validate a pipeline output file
 #
@@ -28,7 +29,7 @@ TODAY=$(date +%Y-%m-%d)
 # ---------------------------------------------------------------------------
 # CURRENT WEEK — update this at the start of each new week
 # ---------------------------------------------------------------------------
-CURRENT_WEEK="week12_16.03"
+CURRENT_WEEK="week13_23.03"
 
 # ---------------------------------------------------------------------------
 # Validation helpers
@@ -57,6 +58,13 @@ require_valid_json() {
         echo "ERROR [$label]: file is not valid JSON: $path" >&2
         exit 1
     fi
+}
+
+slugify() {
+    local value="${1:-}"
+    printf '%s' "$value" \
+        | tr '[:upper:]' '[:lower:]' \
+        | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//; s/-+/-/g'
 }
 
 # Write a stage checkpoint to pipeline-state.json in the run dir.
@@ -98,6 +106,7 @@ usage() {
     echo "  scan                     Universe assembly (A1) + candidate filter (A2)"
     echo "  triage [latest|WEEK]     Fast triage (B1) + focused triage (B2)"
     echo "  fetch TICKER [...]       Fetch financial data from Yahoo Finance"
+    echo "  extract TICKER [...]     Fetch SEC EDGAR filing data (XBRL)"
     echo "  analyze TICKER           Full 8-umbrella analysis + final report"
     echo "  portfolio [CAPITAL]      Portfolio simulator (default capital: \$100,000)"
     echo "  dashboard                Streamlit portfolio dashboard"
@@ -110,7 +119,7 @@ usage() {
     echo "  snapshot                 Capture a daily portfolio snapshot"
     echo "  prebuy TICKER [...]      Pre-buy checklist (quality, price vs IV, conviction)"
     echo "  prebuy --own             Dashboard: C1/C2 status for all Own/Watch-verdict tickers"
-    echo "  allocate [CAPITAL]       AI portfolio allocation proposal"
+    echo "  allocate [CAPITAL]       AI portfolio allocation proposal (saved per run)"
     echo "  monitor TICKER           Change detection (stub — not yet implemented)"
     echo ""
     echo "Examples:"
@@ -135,6 +144,9 @@ usage() {
     echo "  $0 ledger init --capital 100000"
     echo "  $0 ledger refresh"
     echo "  $0 ledger history"
+    echo "  $0 allocate"
+    echo "  $0 allocate 250000 --label claude-opus"
+    echo "  $0 allocate --label agent-7 --output-dir portfolio/allocations/month1/agent-7"
     echo "  $0 monitor AAPL"
     echo ""
     echo "Current week: $CURRENT_WEEK"
@@ -178,6 +190,7 @@ cmd_scan() {
     write_state "$scan_dir" "A1" "started"
     claude --print \
         --allowedTools "WebSearch,WebFetch,Read,Write,Glob,Grep" \
+        -- \
         "Today's date: $TODAY
 
 $a1_prompt
@@ -188,7 +201,7 @@ Run Stage A1 now. Today's date is $TODAY. Write all output to runs/$CURRENT_WEEK
     # --- A1 pass/fail checks ---
     echo ""
     echo "--- Validating A1 output ---"
-    "$SCRIPT_DIR/validate.sh" universe "$scan_dir/universe.json" || {
+    "$SCRIPT_DIR/scripts/validate.sh" universe "$scan_dir/universe.json" || {
         write_state "$scan_dir" "A1" "failed"
         echo "ERROR [A1]: universe.json failed validation" >&2; exit 1
     }
@@ -208,6 +221,7 @@ Run Stage A1 now. Today's date is $TODAY. Write all output to runs/$CURRENT_WEEK
     write_state "$scan_dir" "A2" "started"
     claude --print \
         --allowedTools "WebSearch,WebFetch,Read,Write,Glob,Grep" \
+        -- \
         "Today's date: $TODAY
 
 $a2_prompt
@@ -218,7 +232,7 @@ Run Stage A2 now. Read universe from runs/$CURRENT_WEEK/scan/universe.json. Writ
     # --- A2 pass/fail checks ---
     echo ""
     echo "--- Validating A2 output ---"
-    "$SCRIPT_DIR/validate.sh" candidates "$scan_dir/candidates.json" || {
+    "$SCRIPT_DIR/scripts/validate.sh" candidates "$scan_dir/candidates.json" || {
         write_state "$scan_dir" "A2" "failed"
         echo "ERROR [A2]: candidates.json failed validation" >&2; exit 1
     }
@@ -256,6 +270,7 @@ cmd_triage() {
     write_state "$triage_dir" "B1" "started"
     claude --print \
         --allowedTools "Read,Write,Glob,Grep" \
+        -- \
         "Today's date: $TODAY
 
 $b1_prompt
@@ -266,17 +281,17 @@ Run Stage B1 now. Read candidates from runs/$scan_week/scan/candidates.json. Wri
     # --- B1 pass/fail checks ---
     echo ""
     echo "--- Validating B1 output ---"
-    "$SCRIPT_DIR/validate.sh" b1-results "$triage_dir/b1-results.json" || {
+    "$SCRIPT_DIR/scripts/validate.sh" b1-results "$triage_dir/b1-results.json" || {
         write_state "$triage_dir" "B1" "failed"
         echo "ERROR [B1]: b1-results.json failed validation" >&2; exit 1
     }
-    "$SCRIPT_DIR/validate.sh" b1-advance "$triage_dir/b1-advance.json" || {
+    "$SCRIPT_DIR/scripts/validate.sh" b1-advance "$triage_dir/b1-advance.json" || {
         write_state "$triage_dir" "B1" "failed"
         echo "ERROR [B1]: b1-advance.json failed validation" >&2; exit 1
     }
     require_file "B1:b1-summary" "$triage_dir/b1-summary.md"
     echo "--- Checking B1 coverage ---"
-    "$SCRIPT_DIR/validate.sh" b1-coverage \
+    "$SCRIPT_DIR/scripts/validate.sh" b1-coverage \
         "$triage_dir/b1-results.json" \
         "$scan_dir/candidates.json" || {
         write_state "$triage_dir" "B1" "failed"
@@ -324,7 +339,7 @@ Run Stage B1 now. Read candidates from runs/$scan_week/scan/candidates.json. Wri
           echo "B1 advanced 0 candidates. B2 was not run."
           echo "All candidates were held or rejected. See b1-summary.md for details."
         } > "$triage_dir/triage.md"
-        "$SCRIPT_DIR/validate.sh" triage "$triage_dir/triage.json" || {
+        "$SCRIPT_DIR/scripts/validate.sh" triage "$triage_dir/triage.json" || {
             echo "ERROR [B2-skip]: empty triage.json failed validation" >&2; exit 1
         }
         write_state "$triage_dir" "B2" "complete" "0"
@@ -338,6 +353,7 @@ Run Stage B1 now. Read candidates from runs/$scan_week/scan/candidates.json. Wri
     write_state "$triage_dir" "B2" "started"
     claude --print \
         --allowedTools "WebSearch,WebFetch,Read,Write,Glob,Grep" \
+        -- \
         "Today's date: $TODAY
 
 $b2_prompt
@@ -348,7 +364,7 @@ Run Stage B2 now. Read B1 advance list from runs/$CURRENT_WEEK/triage/b1-advance
     # --- B2 pass/fail checks ---
     echo ""
     echo "--- Validating B2 output ---"
-    "$SCRIPT_DIR/validate.sh" triage "$triage_dir/triage.json" || {
+    "$SCRIPT_DIR/scripts/validate.sh" triage "$triage_dir/triage.json" || {
         write_state "$triage_dir" "B2" "failed"
         echo "ERROR [B2]: triage.json failed validation" >&2; exit 1
     }
@@ -375,6 +391,14 @@ cmd_fetch() {
         exit 1
     fi
     python3 "$SCRIPT_DIR/scripts/fetch-financials.py" "${args[@]}"
+}
+
+cmd_extract() {
+    python3 "$SCRIPT_DIR/scripts/fetch-edgar.py" "$@"
+}
+
+cmd_diff() {
+    python3 "$SCRIPT_DIR/scripts/semantic-diff.py" "$@"
 }
 
 cmd_analyze() {
@@ -407,6 +431,21 @@ cmd_analyze() {
     echo "Fetching financial data for $TICKER..."
     python3 "$SCRIPT_DIR/scripts/fetch-financials.py" --quiet "$TICKER" || {
         echo "WARNING: Financial data fetch failed. Continuing with web search only."
+    }
+
+    # Auto-fetch SEC filing data (non-blocking on failure)
+    echo "Fetching SEC filing data for $TICKER..."
+    python3 "$SCRIPT_DIR/scripts/fetch-edgar.py" --quiet "$TICKER" || {
+        echo "WARNING: SEC evidence fetch failed. Continuing without SEC data."
+    }
+
+    # Run quantitative valuation model (non-blocking on failure)
+    echo "Running quant valuation model for $TICKER..."
+    python3 -m src.quant "$TICKER" \
+        --write --json-out --quiet \
+        --sensitivity --monte-carlo \
+        --auto-wacc --owner-earnings --fade-growth || {
+        echo "WARNING: Quant valuation failed. Continuing without quant model output."
     }
 
     # Build context string from context/{TICKER}/ if it exists
@@ -549,6 +588,35 @@ Output ONLY the report content — no preamble." \
         echo "  -> Wrote runs/$CURRENT_WEEK/reports/$TICKER/FINAL-REPORT.json (verdict: $verdict)"
     }
 
+    run_post_verify() {
+        echo ""
+        echo "Running post-analysis verification..."
+        local verify_json
+        verify_json=$(python3 "$SCRIPT_DIR/scripts/verify_claims.py" "$TICKER" \
+            --report-dir "$report_dir" --json 2>&1 | tail -1) || true
+
+        local contradicted
+        contradicted=$(echo "$verify_json" | jq -r '.contradicted_count // 0' 2>/dev/null || echo "0")
+
+        if [ "$contradicted" -ge 3 ]; then
+            echo "VERIFICATION WARNING: $contradicted contradiction(s) found"
+            python3 -c "
+import json, re, pathlib
+qf = pathlib.Path('$SCRIPT_DIR/queue/queue.json')
+if qf.exists():
+    q = json.loads(qf.read_text())
+    for e in q:
+        if e['ticker'] == '$TICKER':
+            flag = '[VERIFICATION: $contradicted contradictions]'
+            notes = e.get('owner_notes', '')
+            notes = re.sub(r'\[VERIFICATION:.*?\]', '', notes).strip()
+            e['owner_notes'] = (notes + ' ' + flag).strip()
+            break
+    qf.write_text(json.dumps(q, indent=2) + '\n')
+" 2>/dev/null || true
+        fi
+    }
+
     local mode="${2:-full}"
     case "$mode" in
         full)
@@ -558,6 +626,7 @@ Output ONLY the report content — no preamble." \
             for i in $(seq 1 8); do run_umbrella "$i"; done
             run_umbrella 9
             run_assembler
+            run_post_verify
             echo ""
             echo "=== Analysis complete ==="
             echo "Full report: runs/$CURRENT_WEEK/reports/$TICKER/FINAL-REPORT.md"
@@ -566,6 +635,7 @@ Output ONLY the report content — no preamble." \
             echo "=== Re-assembling report for $TICKER ==="
             run_umbrella 9
             run_assembler
+            run_post_verify
             echo ""
             echo "=== Assembly complete ==="
             echo "Full report: runs/$CURRENT_WEEK/reports/$TICKER/FINAL-REPORT.md"
@@ -592,7 +662,7 @@ cmd_validate() {
         echo "Types: universe  candidates  b1-results  b1-advance  triage  final-report  b1-coverage"
         exit 1
     fi
-    exec "$SCRIPT_DIR/validate.sh" "$type" "$path"
+    exec "$SCRIPT_DIR/scripts/validate.sh" "$type" "$path"
 }
 
 cmd_portfolio() {
@@ -620,43 +690,187 @@ cmd_prebuy() {
 }
 
 cmd_allocate() {
-    local capital="${1:-100000}"
+    local capital=""
+    local label=""
+    local output_dir=""
+
+    while [ $# -gt 0 ]; do
+        case "$1" in
+            --capital)
+                shift
+                if [ $# -eq 0 ]; then
+                    echo "ERROR: --capital requires a value" >&2
+                    exit 1
+                fi
+                capital="$1"
+                ;;
+            --label)
+                shift
+                if [ $# -eq 0 ]; then
+                    echo "ERROR: --label requires a value" >&2
+                    exit 1
+                fi
+                label="$1"
+                ;;
+            --output-dir)
+                shift
+                if [ $# -eq 0 ]; then
+                    echo "ERROR: --output-dir requires a value" >&2
+                    exit 1
+                fi
+                output_dir="$1"
+                ;;
+            -h|--help)
+                echo "Usage: $0 allocate [CAPITAL] [--label NAME] [--output-dir PATH]"
+                echo ""
+                echo "Examples:"
+                echo "  $0 allocate"
+                echo "  $0 allocate 250000 --label claude-opus"
+                echo "  $0 allocate --capital 100000 --label agent-3"
+                echo "  $0 allocate --label agent-7 --output-dir portfolio/allocations/month1/agent-7"
+                return 0
+                ;;
+            *)
+                if [ -z "$capital" ]; then
+                    capital="$1"
+                else
+                    echo "ERROR: unexpected argument '$1'" >&2
+                    echo "Usage: $0 allocate [CAPITAL] [--label NAME] [--output-dir PATH]" >&2
+                    exit 1
+                fi
+                ;;
+        esac
+        shift || true
+    done
+
+    capital="${capital:-100000}"
+    local run_ts
+    local run_id
+    local label_slug=""
+    local run_dir
+    local input_path
+    local proposal_json
+    local proposal_md
+    local prompt_snapshot
+    local metadata_path
+
+    run_ts=$(date -u +"%Y%m%dT%H%M%SZ")
+    label_slug=$(slugify "$label")
+    run_id="${run_ts}-p$$"
+    if [ -n "$label_slug" ]; then
+        run_id="${run_id}-${label_slug}"
+    fi
+
+    if [ -n "$output_dir" ]; then
+        if [[ "$output_dir" = /* ]]; then
+            run_dir="$output_dir"
+        else
+            run_dir="$SCRIPT_DIR/$output_dir"
+        fi
+    else
+        run_dir="$SCRIPT_DIR/portfolio/allocations/$run_id"
+    fi
+
+    mkdir -p "$run_dir"
+    input_path="$run_dir/allocation-input.json"
+    proposal_json="$run_dir/allocation-proposal.json"
+    proposal_md="$run_dir/allocation-proposal.md"
+    prompt_snapshot="$run_dir/allocator-prompt.md"
+    metadata_path="$run_dir/run-metadata.json"
 
     echo "=== Building allocation input ==="
     python3 "$SCRIPT_DIR/scripts/allocation-input.py" \
-        --output portfolio/allocation-input.json \
+        --output "$input_path" \
         --capital "$capital"
+
+    cp "$PROMPTS_DIR/allocator.md" "$prompt_snapshot"
+
+    jq -n \
+        --arg run_id "$run_id" \
+        --arg run_label "${label:-}" \
+        --arg generated_at_utc "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
+        --arg input_path "$input_path" \
+        --arg prompt_snapshot "$prompt_snapshot" \
+        --arg proposal_json "$proposal_json" \
+        --arg proposal_md "$proposal_md" \
+        --arg run_dir "$run_dir" \
+        --arg capital "$capital" \
+        '{
+            run_id: $run_id,
+            run_label: $run_label,
+            generated_at_utc: $generated_at_utc,
+            capital: ($capital | tonumber),
+            run_dir: $run_dir,
+            input_path: $input_path,
+            prompt_snapshot: $prompt_snapshot,
+            proposal_json: $proposal_json,
+            proposal_md: $proposal_md,
+            status: "input_built"
+        }' > "$metadata_path"
 
     echo ""
     echo "=== Running AI Allocator ==="
     echo "Capital: \$$capital"
+    if [ -n "$label" ]; then
+        echo "Label:   $label"
+    fi
+    echo "Run ID:  $run_id"
+    echo "Output:  $run_dir"
     echo ""
 
     local allocator_prompt
     allocator_prompt=$(cat "$PROMPTS_DIR/allocator.md")
 
     local input_data
-    input_data=$(cat "$SCRIPT_DIR/portfolio/allocation-input.json")
+    input_data=$(cat "$input_path")
 
     claude --print \
         --allowedTools "Read,Write,Glob,Grep" \
+        -- \
         "Today's date: $TODAY
 
 $allocator_prompt
+
+ALLOCATION RUN CONTEXT:
+- run_id: $run_id
+- run_label: ${label:-unlabeled}
+- input_path: $input_path
+- output_json_path: $proposal_json
+- output_markdown_path: $proposal_md
+- prompt_snapshot_path: $prompt_snapshot
+- output_directory: $run_dir
 
 ALLOCATION INPUT DATA:
 $input_data
 
 Run the allocation now. Capital: \$$capital.
 Read the full red_flags, key_risks, key_strengths, buy_triggers, and sell_triggers for each candidate — do not skip them.
-Write output to portfolio/allocation-proposal.json and portfolio/allocation-proposal.md.
+Write the machine-readable JSON to $proposal_json.
+Write the human-readable markdown to $proposal_md.
+Do not overwrite any previous allocation runs or write to any shared global allocation file.
 Output ONLY the proposal — no preamble." \
         2>&1
 
+    jq '.status = "completed" | .completed_at_utc = "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"' \
+        "$metadata_path" > "${metadata_path}.tmp"
+    mv "${metadata_path}.tmp" "$metadata_path"
+
     echo ""
     echo "=== Allocation complete ==="
-    echo "Proposal: portfolio/allocation-proposal.json"
-    echo "Summary:  portfolio/allocation-proposal.md"
+    echo "Input:    $input_path"
+    echo "Proposal: $proposal_json"
+    echo "Summary:  $proposal_md"
+    echo "Meta:     $metadata_path"
+}
+
+cmd_verify() {
+    local ticker="${1:-}"
+    if [ -z "$ticker" ]; then
+        echo "ERROR: TICKER required. Usage: $0 verify TICKER"
+        exit 1
+    fi
+    shift
+    python3 "$SCRIPT_DIR/scripts/verify_claims.py" "$ticker" "$@"
 }
 
 cmd_monitor() {
@@ -684,6 +898,8 @@ case "$COMMAND" in
     scan)      cmd_scan "$@" ;;
     triage)    cmd_triage "$@" ;;
     fetch)     cmd_fetch "$@" ;;
+    extract)   cmd_extract "$@" ;;
+    diff)      cmd_diff "$@" ;;
     analyze)   cmd_analyze "$@" ;;
     portfolio) cmd_portfolio "$@" ;;
     dashboard) cmd_dashboard "$@" ;;
@@ -696,6 +912,7 @@ case "$COMMAND" in
     ledger)    cmd_ledger "$@" ;;
     prebuy)    cmd_prebuy "$@" ;;
     allocate)  cmd_allocate "$@" ;;
+    verify)    cmd_verify "$@" ;;
     monitor)   cmd_monitor "$@" ;;
     validate)  cmd_validate "$@" ;;
     *)

@@ -54,7 +54,13 @@ def load_queue() -> dict:
 
 
 def load_reports() -> dict:
-    """Return {TICKER: (report_dict, report_path)} for latest report per ticker."""
+    """Return {TICKER: (report_dict, report_path)} for latest report per ticker.
+
+    Deduplicates at two levels:
+    1. Per ticker — keeps the newest report file by mtime.
+    2. Per company — when multiple tickers map to the same company name
+       (e.g. NOVO-B vs NOVO-B.CO), keeps only the newest.
+    """
     all_reports = list(RUNS_DIR.glob("*/reports/*/FINAL-REPORT.json"))
     by_ticker = {}
     for p in all_reports:
@@ -69,7 +75,27 @@ def load_reports() -> dict:
                 result[ticker] = (json.load(f), path)
         except (json.JSONDecodeError, OSError):
             pass
-    return result
+
+    # Company-level dedup: group by normalized company name, keep newest
+    by_company = {}  # normalized_name -> (ticker, mtime)
+    for ticker, (report, path) in result.items():
+        company = report.get("company", "").strip()
+        if not company:
+            continue
+        norm = company.lower().rstrip(".").replace(",", "")
+        mtime = path.stat().st_mtime
+        if norm not in by_company or mtime > by_company[norm][1]:
+            by_company[norm] = (ticker, mtime)
+
+    # Build set of tickers to keep (winners of company dedup + those without a company name)
+    keep = set()
+    for norm, (ticker, _) in by_company.items():
+        keep.add(ticker)
+    for ticker, (report, _) in result.items():
+        if not report.get("company", "").strip():
+            keep.add(ticker)
+
+    return {t: v for t, v in result.items() if t in keep}
 
 
 def extract_current_price(ticker: str) -> tuple:

@@ -1,6 +1,6 @@
 # Financial Data: V — Visa Inc.
 
-**Generated:** 2026-03-15 22:34 UTC
+**Generated:** 2026-03-22 20:18 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Financial Services | **Industry:** Credit Services
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $307.14 |
-| Market Cap | $592.2B |
-| Enterprise Value | $590.8B |
+| Current Price | $301.62 |
+| Market Cap | $581.5B |
+| Enterprise Value | $580.3B |
 | 52-Week High | $375.51 |
-| 52-Week Low | $299.00 |
-| Position in 52-Week Range | 11% |
+| 52-Week Low | $297.03 |
+| Position in 52-Week Range | 6% |
 | Beta | 0.79 |
 | Shares Outstanding | 1.7B |
-| Dividend Yield | 0.87% |
+| Dividend Yield | 0.89% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 28.8x |
-| Forward P/E | 21.1x |
-| EV/EBITDA | 20.4x |
-| EV/Revenue | 14.3x |
-| P/FCF | 26.9x |
-| P/S | 14.3x |
-| P/B | 15.3x |
+| Trailing P/E | 28.3x |
+| Forward P/E | 20.7x |
+| EV/EBITDA | 20.0x |
+| EV/Revenue | 14.0x |
+| P/FCF | 26.4x |
+| P/S | 14.0x |
+| P/B | 15.1x |
 
 ---
 
@@ -48,8 +48,8 @@
 | Target High | $450.00 |
 | Target Low | $323.00 |
 | Number of Analysts | 35 |
-| Forward EPS | $14.53 |
-| Trailing EPS | $10.66 |
+| Forward EPS | $14.54 |
+| Trailing EPS | $10.65 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $307.14 | — |
-| 1 Month Ago | $324.18 | -5.3% |
-| 3 Months Ago | $344.92 | -11.0% |
-| 6 Months Ago | $338.06 | -9.1% |
+| Current | $301.62 | — |
+| 1 Month Ago | $320.95 | -6.0% |
+| 3 Months Ago | $345.30 | -12.6% |
+| 6 Months Ago | $340.23 | -11.3% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $373.34 (2025-06-11) | -17.7% from current |
-| 52-Week Low | $296.78 (2025-04-07) | +3.5% from current |
+| 52-Week High | $373.34 (2025-06-11) | -19.2% from current |
+| 52-Week Low | $296.78 (2025-04-07) | +1.6% from current |
 
 ---
 

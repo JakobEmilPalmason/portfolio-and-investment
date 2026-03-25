@@ -1,6 +1,6 @@
 # Financial Data: MA — Mastercard Incorporated
 
-**Generated:** 2026-03-15 22:33 UTC
+**Generated:** 2026-03-22 20:18 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Financial Services | **Industry:** Credit Services
@@ -13,12 +13,12 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $497.99 |
-| Market Cap | $444.4B |
-| Enterprise Value | $453.1B |
+| Current Price | $496.32 |
+| Market Cap | $442.9B |
+| Enterprise Value | $451.6B |
 | 52-Week High | $601.77 |
 | 52-Week Low | $465.59 |
-| Position in 52-Week Range | 24% |
+| Position in 52-Week Range | 23% |
 | Beta | 0.84 |
 | Shares Outstanding | 885.2M |
 | Dividend Yield | 0.70% |
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 30.1x |
-| Forward P/E | 22.0x |
-| EV/EBITDA | 22.1x |
+| Trailing P/E | 30.0x |
+| Forward P/E | 21.9x |
+| EV/EBITDA | 22.0x |
 | EV/Revenue | 13.8x |
-| P/FCF | 27.3x |
-| P/S | 13.6x |
-| P/B | 57.5x |
+| P/FCF | 27.2x |
+| P/S | 13.5x |
+| P/B | 57.4x |
 
 ---
 
@@ -48,7 +48,7 @@
 | Target High | $739.00 |
 | Target Low | $550.00 |
 | Number of Analysts | 34 |
-| Forward EPS | $22.63 |
+| Forward EPS | $22.65 |
 | Trailing EPS | $16.53 |
 
 ---
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $497.99 | — |
-| 1 Month Ago | $527.46 | -5.6% |
-| 3 Months Ago | $562.53 | -11.5% |
-| 6 Months Ago | $578.78 | -14.0% |
+| Current | $496.32 | — |
+| 1 Month Ago | $526.41 | -5.7% |
+| 3 Months Ago | $565.36 | -12.2% |
+| 6 Months Ago | $582.51 | -14.8% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $600.08 (2025-08-22) | -17.0% from current |
-| 52-Week Low | $462.92 (2025-04-07) | +7.6% from current |
+| 52-Week High | $600.08 (2025-08-22) | -17.3% from current |
+| 52-Week Low | $462.92 (2025-04-07) | +7.2% from current |
 
 ---
 

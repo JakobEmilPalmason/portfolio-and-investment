@@ -1,0 +1,12 @@
+# Compact Checklist — HLMA.L
+
+**Date:** 2026-03-18
+
+1. **Business**: Halma owns ~50 autonomous subsidiaries that make regulation-mandated safety sensors, environmental monitors, and medical instruments — products where the cost of failure (fire, contamination, misdiagnosis) dwarfs the product price, locking in repeat demand from an installed base of industrial, municipal, and healthcare customers.
+2. **Moat**: Regulatory certification requirements, extreme switching costs (no one rips out a fire detection system to save 10%), and fragmentation across 50 niches mean no single competitor can attack the portfolio, evidenced by 50% gross margins held stable for years and 22 consecutive years of record profits.
+3. **Economics**: FCF conversion hit 146% in FY2025 on just 2.6% capex intensity, ROTIC improved to 16.2% in H1 2025/26 (well above 9.7% WACC), and adjusted EBIT margins expanded to 22.3% — though ROIC of 12-16% is good rather than exceptional, partly diluted by the acquisition-heavy growth model.
+4. **Management**: Insider CEO Ronchetti has accelerated execution (15% revenue growth, 27% earnings growth in H1 2025/26), the M&A machine has delivered 5.9% acquisition profit contribution against a 5% target over five years, and capital allocation follows a disciplined hierarchy — but board insider ownership below 1% of market cap is a weakness.
+5. **Debt risk**: Net debt/EBITDA of 1.03x against a 3.5x covenant, 12.8x interest coverage, staggered maturities through 2029+, and a stress test showing the business survives a 30% two-year revenue drop while still covering dividends and debt service — this balance sheet is a strategic weapon, not a liability.
+6. **Price**: At 42x trailing earnings and 40x owner earnings, the stock requires ~12-13% annual earnings compounding for a decade with zero stumbles to justify today's price — achievable given Halma's track record, but pricing in perfection with no margin for error.
+7. **Margin of safety**: The current price of 3,834 GBp sits 44% above Base IV (2,670 GBp) and 131% above Bear IV (1,660 GBp), creating 2:1 downside-to-upside asymmetry — business quality provides a high floor against permanent capital loss, but there is zero price margin of safety.
+8. **Thesis breaker**: Sell if acquisition ROIC declines below cost of capital across two consecutive years, signalling the M&A engine that underpins the entire compounding model has broken.

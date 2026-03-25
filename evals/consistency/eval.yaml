@@ -1,0 +1,86 @@
+# Consistency eval — BKNG analyzed 3× per agent
+#
+# Measures: does each agent produce the same verdict, similar scores,
+# and overlapping key insights across independent runs?
+#
+# Prerequisites:
+#   - ANTHROPIC_API_KEY set (for Claude agent + LLM grading)
+#   - GEMINI_API_KEY set (for Gemini agent)
+#   - pip install yfinance (for fetch-financials.py)
+#
+# Usage:
+#   ./evals/consistency/run.sh claude        # 3 trials, Claude only
+#   ./evals/consistency/run.sh gemini        # 3 trials, Gemini only
+#   ./evals/consistency/run.sh both          # 3 trials each, back-to-back
+#   ./evals/consistency/run.sh preview       # Open browser results
+#
+# Results: evals/consistency/results/{claude,gemini}/trial-*.json
+
+version: "1"
+
+# Repo root — where analyze.skill, gemini-skills/, prompts/, etc. live
+skill: ../..
+
+defaults:
+  provider: local
+  trials: 3
+  timeout: 1200         # 20 min per trial — full analysis is slow
+  threshold: 0.7        # consistency is harder than pure correctness
+
+tasks:
+
+  # ─────────────────────────────────────────────────
+  # Claude — 3 independent full analyses of BKNG
+  # ─────────────────────────────────────────────────
+  - name: bkng-claude
+    agent: claude
+    instruction: |
+      /analyze BKNG
+
+    graders:
+      - type: deterministic
+        run: python3 evals/consistency/graders/check-bkng.py claude
+        weight: 0.7
+
+      - type: llm_rubric
+        rubric: |
+          You are reviewing the agent's analysis session for BKNG (Booking Holdings).
+
+          Internal Consistency (0–0.5):
+          - Are the umbrella scores justified by the narrative in each section?
+          - Does the verdict logically follow from the scores?
+          - Are there contradictions between sections (e.g., strong moat claim but low competitive advantage score)?
+
+          Analytical Quality (0–0.5):
+          - Did the agent cite specific financial data (revenue, margins, ROIC, FCF)?
+          - Are the key strengths and risks specific to BKNG, not generic?
+          - Is the intrinsic value estimate grounded in DCF or earnings-based reasoning?
+        weight: 0.3
+
+  # ─────────────────────────────────────────────────
+  # Gemini — 3 independent full analyses of BKNG
+  # ─────────────────────────────────────────────────
+  - name: bkng-gemini
+    agent: gemini
+    instruction: |
+      /analyze BKNG
+
+    graders:
+      - type: deterministic
+        run: python3 evals/consistency/graders/check-bkng.py gemini
+        weight: 0.7
+
+      - type: llm_rubric
+        rubric: |
+          You are reviewing the agent's analysis session for BKNG (Booking Holdings).
+
+          Internal Consistency (0–0.5):
+          - Are the umbrella scores justified by the narrative in each section?
+          - Does the verdict logically follow from the scores?
+          - Are there contradictions between sections (e.g., strong moat claim but low competitive advantage score)?
+
+          Analytical Quality (0–0.5):
+          - Did the agent cite specific financial data (revenue, margins, ROIC, FCF)?
+          - Are the key strengths and risks specific to BKNG, not generic?
+          - Is the intrinsic value estimate grounded in DCF or earnings-based reasoning?
+        weight: 0.3

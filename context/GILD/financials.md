@@ -1,6 +1,6 @@
 # Financial Data: GILD — Gilead Sciences, Inc.
 
-**Generated:** 2026-03-15 22:32 UTC
+**Generated:** 2026-03-22 22:58 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Healthcare | **Industry:** Drug Manufacturers - General
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $144.99 |
-| Market Cap | $180.0B |
-| Enterprise Value | $195.8B |
+| Current Price | $137.21 |
+| Market Cap | $170.3B |
+| Enterprise Value | $186.2B |
 | 52-Week High | $157.29 |
 | 52-Week Low | $93.37 |
-| Position in 52-Week Range | 81% |
+| Position in 52-Week Range | 69% |
 | Beta | 0.37 |
 | Shares Outstanding | 1.2B |
-| Dividend Yield | 2.26% |
+| Dividend Yield | 2.39% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 21.4x |
-| Forward P/E | 15.1x |
-| EV/EBITDA | 13.4x |
-| EV/Revenue | 6.7x |
-| P/FCF | 23.9x |
-| P/S | 6.1x |
-| P/B | 7.9x |
+| Trailing P/E | 20.2x |
+| Forward P/E | 14.3x |
+| EV/EBITDA | 12.8x |
+| EV/Revenue | 6.3x |
+| P/FCF | 22.6x |
+| P/S | 5.8x |
+| P/B | 7.5x |
 
 ---
 
@@ -48,8 +48,8 @@
 | Target High | $180.00 |
 | Target Low | $118.00 |
 | Number of Analysts | 28 |
-| Forward EPS | $9.62 |
-| Trailing EPS | $6.79 |
+| Forward EPS | $9.61 |
+| Trailing EPS | $6.78 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $144.99 | — |
-| 1 Month Ago | $150.95 | -4.0% |
-| 3 Months Ago | $121.71 | +19.1% |
-| 6 Months Ago | $112.38 | +29.0% |
+| Current | $137.21 | — |
+| 1 Month Ago | $150.55 | -8.9% |
+| 3 Months Ago | $120.78 | +13.6% |
+| 6 Months Ago | $112.70 | +21.7% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $156.40 (2026-02-11) | -7.3% from current |
-| 52-Week Low | $90.95 (2025-04-25) | +59.4% from current |
+| 52-Week High | $156.40 (2026-02-11) | -12.3% from current |
+| 52-Week Low | $90.95 (2025-04-25) | +50.9% from current |
 
 ---
 

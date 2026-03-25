@@ -1,0 +1,66 @@
+{
+  "ticker": "SYK",
+  "company": "Stryker Corporation",
+  "analysis_date": "2026-03-17",
+  "verdict": "Watch",
+  "average_score": 6.8,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Crystal-clear business model with only 2-3 key revenue drivers and high revenue predictability",
+    "Wide, multi-source moat anchored by surgeon switching costs and Mako robotic ecosystem lock-in with 2M+ cumulative procedures",
+    "Exceptional FCF generation of $4.3B with 132% FCF-to-net-income conversion and 64% gross margins",
+    "CEO Kevin Lobo's 14-year tenure with transformative MAKO acquisition and consistent high-single-digit organic growth",
+    "Near-zero permanent capital loss probability due to essential, procedure-driven products and diversified portfolio"
+  ],
+  "key_risks": [
+    "Negative price margin of safety: stock trades 20% above conservative IV of $295 with unfavorable risk-reward asymmetry",
+    "Declining ROIC from 12.2% to 10.0% as serial M&A loads balance sheet with goodwill",
+    "Rising competitive intensity in robotic surgery from Zimmer ROSA, J&J Velys, and Medtronic Hugo",
+    "Elevated debt of $15.9B with interest expense up 48% YoY to $607M, compressing financial flexibility",
+    "Persistent M&A integration risk with 5-10 acquisitions per year"
+  ],
+  "red_flags": [
+    "Trailing P/E of 42.2x is the highest in Stryker's recent history",
+    "ROIC declined from 12.2% to 10.0% in one year due to Inari acquisition goodwill",
+    "Interest expense nearly doubled from $363M (FY2023) to $607M (FY2025)",
+    "Insider ownership below 0.5% for all officers and directors combined"
+  ],
+  "buy_triggers": [
+    "Stock declines to $270-$300 range (at or below conservative IV) offering genuine margin of safety",
+    "Broad market correction of 20%+ that drags medtech valuations down while fundamentals remain intact",
+    "ROIC recovers to 12%+ as Inari synergies materialize, demonstrating continued M&A value creation"
+  ],
+  "sell_triggers": [
+    "ROIC declines below 8% for two consecutive years, indicating acquisition strategy is destroying capital",
+    "Demonstrated Mako market share losses to Zimmer ROSA, J&J Velys, or other competitors",
+    "Management announces another $5B+ acquisition before deleveraging below 1.5x net debt/EBITDA"
+  ],
+  "valuation_summary": "At $354.06, Stryker trades at 42.2x trailing earnings and 21x EV/EBITDA, near the upper bound of its historical range. The market prices in continued 8.5% annual owner earnings growth with no integration stumbles. Conservative IV of $295 implies 20% downside risk; base case IV of $387 offers only 9% upside. A wonderful business at a fair-to-full price.",
+  "iv_conservative": 295,
+  "iv_base": 387,
+  "iv_bull": 516,
+  "iv_currency": "USD",
+  "mos_at_analysis": -20.0,
+  "compact_checklist": [
+    "Stryker sells surgical implants, instruments, and Mako robotic systems to hospitals, with 70-75% of revenue effectively recurring through procedure-driven consumables and high surgeon switching costs.",
+    "Surgeons train for years on Stryker's instruments and Mako robots, hospitals invest $1M+ per installation, and the platform exclusively uses Stryker implants — creating a razor/blade lock-in with 2M+ cumulative procedures.",
+    "FCF of $4.3B converts at 132% of net income with 64% gross margins, but ROIC of 10% (down from 12.2%) shows the serial M&A model dilutes capital efficiency through goodwill accumulation.",
+    "CEO Kevin Lobo's 14-year tenure produced 11% revenue CAGR and the transformative MAKO acquisition, but insider ownership below 0.5% means this is professional management, not owner-operator stewardship.",
+    "Net debt/EBITDA of 1.9x with $7.1B in liquidity and well-laddered maturities through 2036 means Stryker survives a 30% revenue decline while still covering $607M in annual interest 3x over.",
+    "At $354 and 42x trailing earnings, the market requires Stryker to compound owner earnings at 8.5% annually for five years with no integration stumbles or multiple compression — achievable but not conservative.",
+    "The stock trades 20% above conservative IV of $295 with only 9% discount to base case IV of $387, offering no price cushion despite strong business durability and near-zero permanent loss probability.",
+    "ROIC falling below 8% for two consecutive years would prove the acquisition machine is destroying capital, or demonstrated Mako market share losses to Zimmer ROSA or J&J Velys would invalidate the ecosystem lock-in thesis."
+  ],
+  "source_summary": "Stryker 10-K filings (FY2022-FY2025), yfinance financial data, analyst consensus (28 analysts), medtech peer comparables (MDT, BSX, ZBH, EW, ABT), Morningstar sector analysis, Gabelli orthopedics market report, BONEZONE joint replacement market review, MarketsAndMarkets surgical robotics report, S&P Global credit disclosure",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Stryker is a high-quality medtech compounder with a wide moat, but the current price of $354 offers no margin of safety against conservative intrinsic value of $295. Watch for entry at $270-$300."
+}

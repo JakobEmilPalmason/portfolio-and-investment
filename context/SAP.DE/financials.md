@@ -1,6 +1,6 @@
 # Financial Data: SAP.DE — SAP SE
 
-**Generated:** 2026-03-16 00:04 UTC
+**Generated:** 2026-03-23 00:39 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** EUR | **Trading Currency:** EUR
 **Sector:** Technology | **Industry:** Software - Application
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | €166.44 |
-| Market Cap | €194.3B |
-| Enterprise Value | €192.8B |
+| Current Price | €153.82 |
+| Market Cap | €179.6B |
+| Enterprise Value | €178.0B |
 | 52-Week High | €273.55 |
-| 52-Week Low | €159.60 |
-| Position in 52-Week Range | 6% |
+| 52-Week Low | €151.22 |
+| Position in 52-Week Range | 2% |
 | Beta | 0.69 |
 | Shares Outstanding | 1.2B |
-| Dividend Yield | 1.50% |
+| Dividend Yield | 1.63% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 27.3x |
-| Forward P/E | 19.5x |
-| EV/EBITDA | 17.2x |
-| EV/Revenue | 5.2x |
-| P/FCF | 22.9x |
-| P/S | 5.3x |
-| P/B | 4.4x |
+| Trailing P/E | 25.2x |
+| Forward P/E | 18.1x |
+| EV/EBITDA | 15.8x |
+| EV/Revenue | 4.8x |
+| P/FCF | 21.2x |
+| P/S | 4.9x |
+| P/B | 4.0x |
 
 ---
 
@@ -43,13 +43,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | €246.27 |
+| Target Mean | €243.79 |
 | Target Median | €250.00 |
 | Target High | €315.00 |
-| Target Low | €187.00 |
+| Target Low | €178.44 |
 | Number of Analysts | 27 |
-| Forward EPS | $8.53 |
-| Trailing EPS | $6.09 |
+| Forward EPS | $8.52 |
+| Trailing EPS | $6.11 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | €166.44 | — |
-| 1 Month Ago | €171.72 | -3.1% |
-| 3 Months Ago | €210.95 | -21.1% |
-| 6 Months Ago | €220.90 | -24.7% |
-| 1 Year Ago | €240.43 | -30.8% |
-| 52-Week High | €273.55 (2025-06-05) | -39.2% from current |
-| 52-Week Low | €159.60 (2026-02-04) | +4.3% from current |
+| Current | €153.82 | — |
+| 1 Month Ago | €173.80 | -11.5% |
+| 3 Months Ago | €206.65 | -25.6% |
+| 6 Months Ago | €227.55 | -32.4% |
+| 1 Year Ago | €249.69 | -38.4% |
+| 52-Week High | €273.55 (2025-06-05) | -43.8% from current |
+| 52-Week Low | €151.22 (2026-03-20) | +1.7% from current |
 
 ---
 

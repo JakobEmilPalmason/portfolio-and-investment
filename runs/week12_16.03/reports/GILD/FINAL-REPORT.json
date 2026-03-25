@@ -1,0 +1,69 @@
+{
+  "ticker": "GILD",
+  "company": "Gilead Sciences",
+  "analysis_date": "2026-03-22",
+  "verdict": "Own",
+  "average_score": 7.6,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 8,
+    "margin_of_safety": 7,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "HIV franchise (72% of revenue) generates subscription-like recurring revenue with Biktarvy protected from generics until 2036",
+    "First-in-class twice-yearly injectable PrEP (Yeztugo) with no approved competitors and $5-8B peak sales potential",
+    "Exceptional cash generation: $9.5B FCF on 78%+ gross margins with 21.7% ROIC",
+    "Conservative balance sheet: 1.3x net debt/EBITDA, 10.6x interest coverage, $10.6B liquidity",
+    "Low beta (0.37) defensive compounder suited for 5-10 year holding period"
+  ],
+  "key_risks": [
+    "Oncology M&A track record is mixed: $21B Immunomedics/Trodelvy acquisition was value-destructive, $7.8B Arcellx deal is unproven",
+    "HIV revenue concentration (~72%) creates vulnerability to government pricing pressure (IRA/340B) or competitive disruption",
+    "Four simultaneous 2026 commercial launches concentrate execution risk in a single year",
+    "Government payer concentration (Medicaid, PEPFAR, 340B) creates political pricing risk",
+    "Thin price MOS against bear-case IV ($138 vs $137) offers zero cushion at the pessimistic floor"
+  ],
+  "red_flags": [
+    "FY2024 net income collapsed to $480M from $5.7B due to acquisition write-downs and Trodelvy impairments",
+    "Combined Chairman/CEO role with no independent lead director explicitly identified",
+    "Trodelvy failed in 3 major expansion indications (NSCLC, bladder, 1L HR+/HER2- breast cancer)",
+    "Veklury revenue in secular decline (-49% YoY to $911M)"
+  ],
+  "buy_triggers": [
+    "Stock pulls back below $125, creating meaningful cushion below bear-case IV",
+    "Q1-Q2 2026 earnings confirm lenacapavir PrEP revenue ramp on track for $800M+ annual run rate",
+    "Anito-cel receives FDA approval in myeloma, validating the Arcellx acquisition thesis"
+  ],
+  "sell_triggers": [
+    "Biktarvy faces a credible pre-2036 patent challenge or authorized generic entry",
+    "Two or more 2026 launches fail AND lenacapavir quarterly revenue stays below $500M by Q3 2026",
+    "Net debt exceeds 3x EBITDA from a large acquisition, signaling balance sheet deterioration"
+  ],
+  "valuation_summary": "Base-case IV of $190 (analyst-adjusted from quant $204) implies 38% upside from $137. All 25 sensitivity grid cells show IV above current price with floor at $163. Monte Carlo mean IV $215 with 99.9% probability above current price. Forward P/E of 14.3x at meaningful discount to large-cap pharma peers (ABBV 15.7x, JNJ 18.1x, MRK 22.6x). Bear-case IV of $138 essentially equals current price, creating asymmetric 2:1 upside-to-downside.",
+  "iv_conservative": 137.6,
+  "iv_base": 203.59,
+  "iv_bull": 278.92,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 0.3,
+  "monte_carlo_prob_above_price": 0.9991,
+  "sensitivity_iv_range": [162.99, 280.32],
+  "compact_checklist": [
+    "Gilead sells lifelong HIV treatments (Biktarvy, 72% of revenue) and twice-yearly injectable prevention (Yeztugo), creating subscription-like recurring revenue from millions of patients who cannot stop therapy.",
+    "Biktarvy's patent protection extends to 2036, physician switching costs in HIV are exceptionally high due to viral rebound risk, and Yeztugo is the only approved long-acting injectable PrEP with no competitor in sight.",
+    "ROIC of 21.7%, gross margins of 78-79%, and $9.5B in annual free cash flow on just $563M capex confirm an asset-light franchise earning well above its 6.2% cost of capital.",
+    "Capital returns are disciplined ($5.9B to shareholders in FY2025, 10-year dividend streak), but the $21B Immunomedics acquisition was value-destructive and the $7.8B Arcellx deal is unproven.",
+    "Net debt of $17.4B is covered 1.8x by annual FCF, interest coverage is 10.6x, and $10.6B in cash means Gilead could survive a 30% revenue decline for two years without accessing external capital.",
+    "At $137 and 14.3x forward earnings, the market is pricing Gilead as if none of its four 2026 launches succeed and the HIV franchise stagnates -- all 25 sensitivity grid cells and 99.9% of Monte Carlo simulations show IV above today's price.",
+    "The $138 bear-case IV sits at essentially the current price, but the business-level protection is strong -- 10 years of patent exclusivity, $9.5B FCF, and a 0.37 beta that limits drawdowns in market selloffs.",
+    "Sell if Biktarvy faces a credible pre-2036 patent challenge, or if two or more of the four 2026 launches fail AND lenacapavir quarterly revenue stays below $500M by Q3 2026."
+  ],
+  "source_summary": "Gilead FY2025 10-K and Q4 earnings release (Feb 2026), quant DCF model (bear/base/bull + sensitivity + Monte Carlo), Morningstar wide moat assessment, Gilead 2025 proxy statement, FiercePharma (Biktarvy patent settlements, Yeztugo launch), Yahoo Finance, GuruFocus, analyst consensus targets, JP Morgan Healthcare Conference Jan 2026, Barclays conference Mar 2026",
+  "confidence": "high",
+  "change_notes": ""
+}

@@ -1,0 +1,66 @@
+{
+  "ticker": "SHW",
+  "company": "The Sherwin-Williams Company",
+  "analysis_date": "2026-03-18",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 6,
+    "valuation": 5,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "4,900+ company-owned stores creating an unreplicable captive distribution network 6x larger than nearest competitor",
+    "Consistent ~20% ROIC with 670bps gross margin expansion to 48.8% over four years",
+    "Genuine professional switching costs through embedded credit lines, color-matching systems, and workflow habits",
+    "Disciplined capital allocation: 28% share count reduction over 16 years, well-executed Valspar integration, 47-year dividend streak",
+    "Non-discretionary repaint demand (75-80% of architectural volume) provides durable revenue floor"
+  ],
+  "key_risks": [
+    "Housing cycle prolongation — mortgage rates above 6% for third consecutive year suppressing primary volume driver",
+    "Estimate revision risk — company guidance of $11.50-$11.90 well below Street consensus of $13.50",
+    "Raw material cost inflation from tariffs could reverse recent gross margin expansion",
+    "Elevated leverage ($12.9B debt, 2.9x EBITDA) with minimal cash ($207M) and sub-1.0 current ratio",
+    "Consumer Brands Group weakness from declining DIY volumes and retailer bargaining power"
+  ],
+  "red_flags": [
+    "Company guidance significantly below Street consensus — potential for estimate cuts",
+    "Negative margin of safety on conservative IV: price exceeds bear IV by 35%",
+    "Current ratio below 1.0x with negative working capital and minimal cash reserves",
+    "Third consecutive year of softer-for-longer demand with no recovery signaled by management"
+  ],
+  "buy_triggers": [
+    "Price decline to $250-260 creating 15-20% margin of safety on base-case IV",
+    "Confirmed inflection in existing home sales or mortgage rates falling below 5.5%",
+    "Management raising guidance above Street consensus signaling demand recovery"
+  ],
+  "sell_triggers": [
+    "Operating margins sustained below 14% for two consecutive quarters",
+    "Dividend cut or suspension of buyback program",
+    "Debt/EBITDA rising above 3.5x without clear deleveraging path or credit rating downgrade"
+  ],
+  "valuation_summary": "At $312, SHW trades approximately at base-case IV of $313 with zero margin of safety, and 35% above conservative IV of $231. The premium 30x trailing multiple requires a housing recovery and EPS growth that management's own guidance ($11.50-$11.90) does not support.",
+  "iv_conservative": 231.0,
+  "iv_base": 313.0,
+  "iv_bull": 406.0,
+  "iv_currency": "USD",
+  "mos_at_analysis": -35.0,
+  "compact_checklist": [
+    "Sherwin-Williams manufactures paint and sells it through 4,900+ company-owned stores to professional contractors who visit multiple times per week for a consumable product driven by non-discretionary repaint cycles.",
+    "The captive store network is 6x larger than the nearest competitor (PPG at ~800 stores), creating behavioral switching costs through embedded credit lines, color-matching systems, and workflow habits that lock in fragmented professional painters.",
+    "ROIC has held at ~20% for four consecutive years, gross margins expanded 670bps to 48.8%, and FCF conversion hit 103% in FY2025 — real cash generation from a structurally advantaged distribution model.",
+    "Capital allocation is disciplined — share count reduced 28% over 16 years through consistent buybacks, Valspar synergies exceeded $320M, and the 47-year dividend streak was raised 10.5% in 2025.",
+    "Total debt of $12.9B (2.9x EBITDA) is elevated but serviceable at 8.2x interest coverage, with a $2.5B undrawn revolver and no near-term maturity wall — survivable in a recession but leaves no margin for a simultaneous housing crash and raw material spike.",
+    "At $312 and 30x trailing earnings, the market must believe housing volumes recover by 2027 and EPS reaches $13.50 — company guidance of $11.50-$11.90 does not support that assumption.",
+    "The business itself is a fortress (48.8% gross margins, recurring repaint demand, dominant distribution), but the price offers zero discount to base-case IV of $313 and sits 35% above conservative IV of $231.",
+    "Operating margins sustained below 14% for two consecutive quarters, signaling permanent loss of pricing power or a raw material cost structure the captive store model can no longer absorb."
+  ],
+  "source_summary": "Sherwin-Williams FY2025 10-K, Q4 2025 earnings release, yfinance financial data, company 2026 guidance, SEC filings, proxy statement, Jensen Investment Management research, Coatings World rankings, Alpha Spread DCF, GuruFocus, MacroTrends, analyst consensus estimates, PPG/RPM peer comparisons, housing market data",
+  "confidence": "medium",
+  "change_notes": ""
+}

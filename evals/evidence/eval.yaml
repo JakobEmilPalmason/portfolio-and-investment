@@ -1,0 +1,49 @@
+# Skillgrade eval for evidence layer (Phases 1-4, 6)
+#
+# Usage:
+#   npx skillgrade --eval=extract-syk
+#   npx skillgrade --eval=verify-syk
+#
+# Requires: SYK data in DB (run ./run.sh extract SYK first)
+
+version: "1"
+
+defaults:
+  agent: claude
+  provider: local
+  trials: 1
+  timeout: 600
+  threshold: 0.7
+
+tasks:
+
+  # ──────────────────────────────────────────────
+  # 1. EDGAR extraction — XBRL + section parsing
+  # ──────────────────────────────────────────────
+  - name: extract-syk
+    instruction: |
+      Run the SEC EDGAR extraction for SYK:
+      ./run.sh extract SYK
+      Then confirm the output exists at context/SYK/edgar-10k.md
+    timeout: 300
+
+    graders:
+      - type: deterministic
+        run: python3 evals/evidence/graders/check-evidence.py SYK extract
+        weight: 1.0
+
+  # ──────────────────────────────────────────────
+  # 2. Post-analysis verification
+  # ──────────────────────────────────────────────
+  - name: verify-syk
+    instruction: |
+      Run the post-analysis verification for SYK:
+      ./run.sh verify SYK
+      This decomposes the SYK report into assertions and verifies them
+      against extracted SEC filing evidence.
+    timeout: 600
+
+    graders:
+      - type: deterministic
+        run: python3 evals/evidence/graders/check-evidence.py SYK verify
+        weight: 1.0

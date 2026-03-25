@@ -1,0 +1,69 @@
+{
+  "ticker": "CPRT",
+  "company": "Copart, Inc.",
+  "analysis_date": "2026-03-22",
+  "verdict": "Own",
+  "average_score": 8.0,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 10,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Duopoly with IAA controlling ~80% of US salvage auctions, protected by 250+ owned yards with decades of zoning/permitting barriers",
+    "Fortress balance sheet: $5.1B net cash, zero meaningful debt, 8.4x current ratio, positive FCF through any plausible stress scenario",
+    "Adjusted ROIC on operating assets of 29-32%, with $1.6B in owner earnings on an asset-light consignment model",
+    "Founder Willis Johnson holds ~$2B in stock; CEO equity locked up 10 years; SBC at 0.8% of revenue among lowest in corporate America",
+    "Secular tailwind from rising total loss frequency (15.6% in 2015 to 24.2% in 2025) driven by increasing vehicle complexity"
+  ],
+  "key_risks": [
+    "DOJ money laundering investigation with unquantifiable financial exposure and potential operational restrictions on international buyer access",
+    "Q2 FY2026 revenue declined 3.6% YoY with operating margin compressing from 36.6% to 34.7% — near-term cyclical headwinds",
+    "IAA/RB Global competitive resurgence: unit growth +4.7% vs Copart's -2.8%, Progressive Insurance shifted volume toward IAA",
+    "Capital allocation inefficiency: $4.8B cash pile earning sub-equity returns with no dividend and modest buybacks",
+    "Growth capex at $350M+/year in land acquisition with no explicit ROI disclosure; international expansion unproven at scale"
+  ],
+  "red_flags": [
+    "DOJ money laundering investigation — unknown scope and timeline (1-3 years to resolution)",
+    "First meaningful revenue decline in years (Q2 FY2026 -3.6% YoY)",
+    "Net insider selling of 1.6M shares over 18 months with zero open-market purchases at near-52-week-low prices",
+    "Headline ROIC declining four consecutive years (24.2% to 16.6%)"
+  ],
+  "buy_triggers": [
+    "Q3/Q4 FY2026 earnings showing revenue growth resumption and operating margin stabilization",
+    "DOJ investigation resolution or settlement with manageable financial terms and no structural restrictions on international buyer access",
+    "Stock price declining to $25-27 range providing genuine price MOS against bear case IV"
+  ],
+  "sell_triggers": [
+    "DOJ outcome that restricts international buyer participation, structurally impairing network effect and ASP premium",
+    "ROIC on operating assets (excluding excess cash) falling below 15% for two consecutive years",
+    "Loss of a top-3 insurance customer to IAA, indicating switching cost moat is weaker than assessed"
+  ],
+  "valuation_summary": "At $32.87, CPRT trades at 21x trailing earnings vs a 5-year average of 35x — a 40% multiple compression. The quant model base IV of $34.33 is 4.4% above current price. Analyst-adjusted estimates: bear $23, base $36, bull $50. The market is pricing in 6% perpetual growth, roughly half Copart's 10% historical CAGR. Monte Carlo shows 77% probability of being undervalued with median IV at $35.82. Owner earnings of $1.6B imply a 19.5x P/OE multiple — reasonable for a capital-light duopoly compounder.",
+  "iv_conservative": 25.19,
+  "iv_base": 34.33,
+  "iv_bull": 44.83,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -30.5,
+  "monte_carlo_prob_above_price": 0.7689,
+  "sensitivity_iv_range": [29.55, 44.12],
+  "compact_checklist": [
+    "Copart runs online auctions for totaled vehicles on behalf of insurance companies, earning fees on both sides of a transaction that recurs because cars will always crash and modern vehicles are increasingly too expensive to repair.",
+    "A duopoly with IAA controlling ~80% of US salvage auctions, protected by 250+ owned yards that take decades of zoning and permitting to replicate, plus network effects where 1M+ global buyers drive ASPs 3x higher than competitors.",
+    "Adjusted ROIC on operating assets is 29-32% (headline 16.6% is depressed by $4.8B idle cash), the consignment model requires no inventory risk, and owner earnings hit $1.6B in FY2025 on 45% gross margins.",
+    "Founder Willis Johnson holds ~$2B in stock as Chairman, CEO Liaw's equity is locked up for 10 years, and SBC at 0.8% of revenue is among the lowest in corporate America — though the $4.8B cash pile earns below cost of equity.",
+    "With $5.1B net cash, zero meaningful debt, and an 8.4x current ratio, Copart would generate positive free cash flow even through a 30% revenue decline sustained for two years.",
+    "At 21x trailing earnings versus a 5-year average of 35x, the market is pricing in 6% perpetual growth — roughly half Copart's 10% historical revenue CAGR — meaning you need only base-case execution for the stock to work.",
+    "The business cannot go to zero (duopoly, $5.1B cash, $1.2B annual FCF), but there is no price MOS against the bear case IV of $23, so the protection is business quality rather than cheap entry.",
+    "Sell if the DOJ investigation results in structural restrictions on international buyer access, or if ROIC on operating assets falls below 15% for two consecutive years signaling the duopoly's pricing power is broken."
+  ],
+  "source_summary": "Copart FY2025 10-K, Q1/Q2 FY2026 10-Q filings, Yahoo Finance (yfinance auto-fetch), quant-valuation DCF model, Seeking Alpha, Simply Wall St, GuruFocus, StockAnalysis.com, Motley Fool, DOJ disclosure filings, web search for competitive landscape and industry analysis.",
+  "confidence": "medium",
+  "change_notes": ""
+}

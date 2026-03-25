@@ -1,0 +1,66 @@
+{
+  "ticker": "WCN",
+  "company": "Waste Connections, Inc.",
+  "analysis_date": "2026-03-17",
+  "verdict": "Watch",
+  "average_score": 6.9,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 6,
+    "balance_sheet": 7,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Wide multi-layered moat: 113 irreplaceable landfills, exclusive franchise agreements, route density monopolies",
+    "Highly predictable recurring revenue with built-in CPI price escalators across ~9M customers",
+    "Founder-CEO with 25-year track record of disciplined tuck-in M&A and shareholder returns",
+    "Industry-leading 33% adjusted EBITDA margins with consistent expansion trajectory",
+    "Essential service with near-zero obsolescence risk and 0.59 beta defensive profile"
+  ],
+  "key_risks": [
+    "No price margin of safety at $167 — trades above base-case IV of $144 with negative MOS vs conservative IV",
+    "Valuation compression risk: 17.2x EV/EBITDA premium to peers (14-15x) could narrow on any execution stumble",
+    "Environmental liability tail risk — Chiquita Canyon cost $200M+ with $100-150M more in 2026",
+    "Declining interest coverage (6.2x to 5.2x over 3 years) as $9.1B debt grows faster than earnings",
+    "Volume headwinds: C&D down 15% from 2023 peaks, Q4 total volumes down 2.7%"
+  ],
+  "red_flags": [
+    "Negative MOS of -65.6% vs conservative IV — unfavorable 0.4:1 upside/downside asymmetry",
+    "Reported ROIC of 8-9% below 15% threshold for wide-moat compounders (goodwill-distorted)",
+    "FCF flat at ~$1.2B for 4 years despite 32% revenue growth — capital intensity absorbs operating gains",
+    "Only $46M cash on hand — entirely dependent on revolving credit facility for liquidity"
+  ],
+  "buy_triggers": [
+    "Price decline to $130-145 range creating genuine 10-20% margin of safety vs base-case IV",
+    "Severe market selloff bringing WCN to 13-14x EV/EBITDA while fundamentals remain intact",
+    "FCF growth beyond 2026 guidance ($1.4-1.45B) proving earnings power inflection is durable"
+  ],
+  "sell_triggers": [
+    "EBITDA margins decline for 3+ consecutive quarters without clear temporary cause",
+    "Large dilutive acquisition pushing leverage above 3.5x debt/EBITDA",
+    "EV/EBITDA exceeds 22x indicating extreme overvaluation"
+  ],
+  "valuation_summary": "At $167 and 17.2x EV/EBITDA, WCN is roughly fairly valued. Bear-case IV of $101, base-case IV of $144, bull-case IV of $193. Owner earnings yield of 2.6% requires ~6.4% annual growth to deliver 9% returns. The 17% pullback from 52-week highs improves the setup but does not create a compelling discount.",
+  "iv_conservative": 101,
+  "iv_base": 144,
+  "iv_bull": 193,
+  "iv_currency": "USD",
+  "mos_at_analysis": -65.6,
+  "compact_checklist": [
+    "Waste Connections collects and landfills trash for ~9 million customers under recurring multi-year municipal franchise contracts with built-in price escalators, generating $9.5B in highly predictable revenue.",
+    "Ownership of 113 landfills — effectively irreplaceable since new permits are nearly impossible to obtain — combined with exclusive franchise agreements and route density economics creates a multi-layered local monopoly that competitors cannot replicate.",
+    "ROIC of 8.4% is dragged down by $12B+ in acquisition goodwill, but margins are expanding (33% adjusted EBITDA, industry-leading), and operating cash flow of $2.4B is reliable — solid but not exceptional returns on capital.",
+    "Founder-CEO Ron Mittelstaedt returned in 2023 and runs a disciplined capital allocation playbook — 19 tuck-in acquisitions, $505M in buybacks, 15 consecutive years of double-digit dividend increases, all funded from cash flow with zero equity dilution.",
+    "$9.1B of debt at 2.8x net debt/EBITDA with well-laddered maturities and investment-grade access is manageable for an essential-service business that saw only mid-single-digit volume declines in 2008-2009, though interest coverage has slipped from 6.2x to 5.2x over three years.",
+    "At $167 and 17.2x EV/EBITDA, the market requires ~6.4% annual owner earnings growth indefinitely — achievable but leaving no cushion, with the base-case discounted IV at $144 sitting below the current price.",
+    "The business itself is a fortress (essential service, 0.59 beta, contracted revenue, near-zero obsolescence risk), but there is no price margin of safety — upside/downside asymmetry is an unfavorable 0.4:1 at $167.",
+    "Sell if EBITDA margins decline for three consecutive quarters without a clear temporary cause, or if management makes a large dilutive acquisition pushing leverage above 3.5x debt/EBITDA."
+  ],
+  "source_summary": "Yahoo Finance (yfinance), WCN FY2025 10-K, Q4 2025 earnings release (Feb 2026), 2026 guidance, Morningstar moat analysis, Waste Dive industry coverage, Simply Wall St, StockAnalysis.com, MarketBeat, Seeking Alpha, peer comparisons (WM, RSG, GFL)",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Watch verdict driven by excellent business quality (9/10 moat, 9/10 competence) offset by premium valuation (5/10) and absent price margin of safety (4/10). Ideal entry at $130-145."
+}

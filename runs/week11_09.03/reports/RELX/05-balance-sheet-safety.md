@@ -1,0 +1,46 @@
+# Balance Sheet Safety — RELX
+
+**Analyst Role:** Balance Sheet Safety Analyst
+**Date:** 2026-03-12
+**Data Sources:** RELX PLC 2025 Full Year Results Press Release (12 Feb 2026); RELX 2024 Full Year Results Press Release (13 Feb 2025); RELX Maturity Profile page (relx.com/investors/debt-investors/maturity-profile); RELX Term Debt page (relx.com); RELX Credit Ratings page (relx.com); Research Tree 2025 results summary; Investing.com 2025 results coverage; S&P Global credit rating disclosure; Moody's credit rating pages
+
+## Key Findings
+
+| # | Finding | Significance (1-5) |
+|---|---------|-------------------|
+| 1 | Net debt (including pensions) to EBITDA was exactly 2.0x at 31 December 2025, at the low end of RELX's stated 2.0–2.5x target range, with EBITDA of £3,846m and net debt of £7,201m. | 4 |
+| 2 | Interest coverage is strong: adjusted net interest expense was £283m in 2025 against adjusted operating profit of £3,342m, implying EBIT/interest coverage of approximately 11.8x — well above the 5x comfort threshold. | 5 |
+| 3 | RELX holds investment-grade credit ratings of A- (Stable) from S&P, A3 (Stable) from Moody's, and A- (Stable) from Fitch — solid single-A territory with no rating pressure evident. | 4 |
+| 4 | Liquidity is robust: a $3.5bn committed bank facility maturing in 2030 was fully undrawn at year-end 2025, providing a substantial liquidity backstop against any short-term commercial paper or bond maturity pressure. | 4 |
+| 5 | Pension obligations are effectively fully funded: net pension accounting balance was a surplus of £43m at 31 December 2025 (vs. £21m surplus in 2024), with no deficit funding contributions required through 2027 following the 2024 triennial valuation. | 3 |
+| 6 | The average interest rate on gross debt fell to 3.9% in 2025 (from 4.4% in 2024), reflecting refinancing at favourable rates; in March 2025, RELX issued $750m at 4.75% (5-year) and $750m at 5.25% (10-year), extending maturities at locked-in fixed rates. | 3 |
+
+## Detailed Analysis
+
+**Debt Levels.** Net debt at 31 December 2025 was £7,201m, an increase of £638m versus 31 December 2024 (£6,563m). The increase reflects the company's deliberate capital allocation policy of returning surplus cash to shareholders while maintaining leverage within its target range. Total gross debt (excluding leases) at fair value was £7,192m. The primary financing instrument is fixed-rate public bonds with staggered maturities; in March 2025 RELX issued $1.5bn in two tranches ($750m at 4.75% due 2030, $750m at 5.25% due 2035) to pre-fund upcoming maturities and extend the duration profile. Net debt / EBITDA of 2.0x is comfortable for a business generating £2.3bn+ in FCF annually — the theoretical debt paydown period at current FCF levels is approximately 3.1 years, though RELX deliberately maintains leverage for capital efficiency rather than delevering to zero.
+
+**Interest Coverage.** Adjusted net interest expense for 2025 was £283m (down from £296m in 2024), benefiting from the lower average interest rate of 3.9% on gross debt. Adjusted profit before tax was £3,059m, implying interest coverage on an adjusted EBIT basis of approximately 10.8x (£3,059m + £283m = £3,342m adjusted EBIT / £283m interest = ~11.8x). By any measure, this is a very comfortable coverage ratio. Even on a statutory basis, coverage would remain substantially above 5x. For reference, the first half 2025 adjusted net interest was £137m, annualising to approximately £274m — consistent with the full-year £283m figure. There is no meaningful risk of interest coverage deterioration at current leverage and profitability levels.
+
+**Liquidity.** RELX's liquidity position is strong. At year-end 2025, the $3.5bn (approximately £2.8bn) committed revolving credit facility maturing in 2030 was entirely undrawn. This facility backs short-term commercial paper issuance, ensuring that even if commercial paper markets seized up, RELX could draw on committed bank lines to cover maturing paper. Cash on hand is not separately disclosed as a prominent metric (consistent with their efficient cash management), but the combination of £2.3bn annual FCF generation, the undrawn RCF, and the fixed-rate bond portfolio means near-term liquidity is not a concern. The company's current ratio is not explicitly disclosed in press releases but given the subscription billing model (cash often received in advance of service delivery) and minimal inventory, it is likely comfortably above 1x on an adjusted basis.
+
+**Refinancing Risk.** Refinancing risk is low but not zero. The March 2025 $1.5bn dual-tranche issuance demonstrates continued access to investment-grade bond markets at reasonable rates. The A3/A-/A- credit ratings ensure RELX has access to a wide institutional investor base. The maturity profile is deliberately laddered — RELX maintains bonds maturing across different years with no single concentrated maturity cliff visible from public information. Short-term commercial paper is backed by the undrawn $3.5bn RCF, effectively eliminating rollover risk on that portion. The fixed-rate structure (average coupon 3.9%) means there is no material floating-rate refinancing risk from rate movements — existing debt service costs are locked in.
+
+**Off-Balance-Sheet Obligations.** Pension obligations are RELX's most significant off-balance-sheet item historically, but as of year-end 2025 the main UK defined benefit scheme moved to a net surplus of £43m (up from £21m surplus in 2024). Notably, the 2024 triennial valuation concluded that no deficit funding contributions are required in 2025–2027 — effectively eliminating any near-term cash call from pensions. Operating leases are standard for a business with office space globally; RELX adopted IFRS 16 and these are now on-balance-sheet in reported figures but are included in the net debt / EBITDA target range calculation. There is a minor cross-currency interest rate swap mark-to-market item (£5m charge in 2025) that is excluded from adjusted figures. No material contingent liabilities are flagged in the financial results.
+
+**Stress Test: 30% Revenue Drop for 2 Years.** RELX generated £9,590m revenue in 2025. A 30% decline would bring revenue to approximately £6,713m. Adjusted operating margins currently at 34.8% would likely compress significantly under this scenario; assuming margins fell to approximately 20% (due to fixed cost deleveraging), operating profit would be approximately £1,343m. After £283m interest expense, pre-tax profit would still be positive at approximately £1,060m. FCF generation would likely be approximately £900m–£1,100m under this scenario (reduced working capital draws, minimal physical capex). With £7.2bn net debt and ~£1bn annual FCF in a severe stress, debt/FCF would rise to approximately 7x — uncomfortable but not immediately existential, especially given the undrawn $3.5bn RCF and no near-term maturity concentrations. Equity issuance would not be required in a single-year shock, though a sustained two-year scenario would require dividend reduction (dividends were approximately £770m in 2025). Critically, a 30% revenue decline is highly implausible for RELX given 84% electronic/digital revenue, 54% subscription-based revenue, embedded workflow software, and institutional customer bases — this stress scenario is theoretical rather than credible. The far more plausible downside is a single-digit revenue decline in a deep recession, which the business would navigate easily.
+
+## Signal Summary
+
+- **Bull case:** A- rated, 2.0x net debt/EBITDA, 11.8x interest coverage, fully-funded pension, undrawn $3.5bn RCF, fixed-rate debt portfolio — this balance sheet is a source of resilience, not a risk.
+- **Bear case:** Net debt has increased by £638m in 2025 as aggressive buybacks (£1,500m in 2025, £2,250m planned for 2026) offset FCF generation; if earnings or FCF disappoint, leverage will drift above the 2.0–2.5x target, potentially requiring buyback pauses.
+- **Confidence:** High — all key figures are from the 2025 annual results press release (12 February 2026) and directly from RELX investor relations; data quality is strong.
+
+## Red Flags
+
+- Net debt increased £638m in 2025 to £7,201m, driven by £1,500m buybacks exceeding retained FCF; the planned £2,250m buyback in 2026 will increase net debt further unless offset by strong FCF growth.
+- While 2.0x net debt/EBITDA is comfortable today, the buyback-driven leverage trajectory means any earnings disappointment could push leverage above 2.5x, the upper end of the stated target range.
+- The $1.5bn bond issuance in March 2025 (at 4.75–5.25%) is at higher coupons than RELX's historical borrowing costs, gradually increasing debt service costs as older lower-coupon bonds roll off.
+
+## Score: 8 / 10
+
+RELX carries a deliberately optimised balance sheet — not a net-cash fortress, but a conservative investment-grade capital structure with A- ratings, 11.8x interest coverage, 2.0x net debt/EBITDA, a fully-funded pension, and an undrawn $3.5bn backup facility; the one point deducted from a maximum rating reflects the ongoing buildup of net debt from accelerated buybacks and the absence of true net-cash safety margin.

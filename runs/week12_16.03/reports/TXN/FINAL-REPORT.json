@@ -1,0 +1,66 @@
+{
+  "ticker": "TXN",
+  "company": "Texas Instruments Incorporated",
+  "analysis_date": "2026-03-17",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "#1 analog semiconductor company globally with ~19% market share and 80,000+ products serving 100,000+ customers",
+    "300mm wafer manufacturing creates structural ~40% cost advantage per chip that no competitor can replicate within 5-7 years",
+    "10-15 year design-in lifecycles create massive switching costs and deeply embedded recurring revenue",
+    "Operating cash flow of $7.2B (41% of revenue) resilient even at cyclical trough — FCF about to inflect as capex drops from $4.6B to $2-3B",
+    "22 consecutive years of dividend increases with explicit FCF-per-share maximization framework"
+  ],
+  "key_risks": [
+    "No price margin of safety at $194 — trading 15% above base-case IV of $168 with unfavorable downside/upside asymmetry",
+    "Capex cycle execution risk: gross margins compressed 12pp and ROIC fell from 38.9% to 17.7%, recovery depends on demand materializing",
+    "China geopolitical exposure (~20% of revenue) creates tail risk from trade restrictions",
+    "Total debt doubled to $14B during fab buildout; shareholder returns ($6.5B) exceed current FCF ($2.6B)",
+    "Embedded Processing faces strong competition from Infineon, Renesas, and STMicroelectronics"
+  ],
+  "red_flags": [
+    "Harvest year narrative is Wall Street consensus — crowded trade with asymmetric downside on any disappointment",
+    "Stock has rallied 39% off 52-week low; much of the easy money has been made",
+    "Dividend payout exceeded FCF in FY2025 — sustainable only if FCF recovers as guided",
+    "Reduced end-market revenue disclosure starting FY2024 is a mild transparency step backward"
+  ],
+  "buy_triggers": [
+    "Stock price declines to $140-165, providing 15-25% discount to base-case IV with genuine margin of safety",
+    "Quarterly earnings confirm revenue recovery above $20B annualized with gross margins expanding above 60%",
+    "Broader semiconductor downturn creates cyclical buying opportunity with intact long-term fundamentals"
+  ],
+  "sell_triggers": [
+    "Gross margins remain below 58% through FY2027, indicating 300mm cost advantage failed to materialize",
+    "Revenue recovery stalls below $19B through 2027 while competitors gain analog market share",
+    "Stock reaches $250+ (>27x normalized earnings), creating opportunity to trim into strength"
+  ],
+  "valuation_summary": "At $194, TXN trades at 35.6x trailing and 24.5x forward earnings. Base-case IV of $168 (revenue recovery to $21.5B, 63% gross margins, $2.2B capex, 23x multiple). Bear-case IV $112, bull-case IV $226. The stock prices in much of the capex normalization and analog recovery — limited upside to base case, meaningful downside to bear case.",
+  "iv_conservative": 112,
+  "iv_base": 168,
+  "iv_bull": 226,
+  "iv_currency": "USD",
+  "mos_at_analysis": -73.3,
+  "compact_checklist": [
+    "TXN sells 80,000+ analog and embedded chips (avg under $1 each) to 100,000 customers across industrial and automotive end markets, where 10-15 year design lives make switching irrational.",
+    "TXN's $30B+ investment in 300mm wafer fabs delivers a ~40% cost-per-chip advantage over 200mm competitors that no rival can replicate within 5-7 years.",
+    "Operating cash flow of $7.2B (41% of revenue) persisted even at cyclical trough, and as capex drops from $4.6B to $2-3B in 2026, FCF should inflect toward $8+/share.",
+    "The team executed a decade-long counter-cyclical fab buildout on time and on budget, raised the dividend 22 consecutive years, and explicitly targets maximizing long-term FCF per share.",
+    "Net debt/EBITDA of 1.3x with $4.9B cash, A1/AA- ratings, and no concentrated maturities means TXN survives a 30% revenue decline for two years without solvency risk.",
+    "At $194 (35.6x trailing, 24.5x forward), the market requires revenue recovery to $20B+, gross margins back above 60%, and $8+ EPS by 2027 — all guided but not guaranteed.",
+    "The business is a fortress (#1 analog position, diversified customers, positive FCF since 2004), but at $194 there is zero price margin of safety since the stock trades 15% above base-case IV of $168.",
+    "Sell if gross margins remain below 58% through FY2027, which would mean the 300mm cost advantage failed to materialize and the entire capex thesis was wrong."
+  ],
+  "source_summary": "TI 2025 Annual Report, Q4 2025 earnings release, Capital Management Update (Feb 2026), TI investor relations, SEC filings, yfinance financial data, MacroTrends, Morningstar, StockAnalysis.com, TipRanks, TIKR, PortfoliosLab, CSIMarket, analyst consensus estimates, competitor financial reports, industry research",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. World-class analog franchise with wide moat entering capex harvest phase, but current price of $194 offers no margin of safety versus base-case IV of $168. Watch for entry at $140-165."
+}

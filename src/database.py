@@ -16,7 +16,7 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "db" / "schema.sql"
 
@@ -29,6 +29,11 @@ _JSON_COLUMNS = frozenset({
     "sector_exposure_json",
     "concentration_json",
     "skipped_json",
+    "computation_trace_json",
+    "verification_detail_json",
+    "run_metadata_json",
+    "detail_json",
+    "inputs_json",
 })
 
 
@@ -115,25 +120,27 @@ class Database:
         return self.connect()
 
     def init_db(self) -> None:
-        """Run schema.sql and insert initial schema_version."""
-        if self.db_path == ":memory:":
-            schema_sql = SCHEMA_PATH.read_text()
-        else:
-            schema_sql = SCHEMA_PATH.read_text()
+        """Run schema.sql and insert initial schema_version.
+
+        Inserts version 1 so that migrate() walks through all migration
+        steps (v1→v2→v3 etc.) to create tables not in schema.sql.
+        """
+        schema_sql = SCHEMA_PATH.read_text()
+        if self.db_path != ":memory:":
             Path(self.db_path).parent.mkdir(parents=True, exist_ok=True)
 
         self.conn.executescript(schema_sql)
-        # Insert version if not already present
+        # Insert version 1 — migrate() will walk through all steps
         existing = self.conn.execute(
             "SELECT version FROM schema_version ORDER BY version DESC LIMIT 1"
         ).fetchone()
         if existing is None:
             self.conn.execute(
                 "INSERT INTO schema_version (version) VALUES (?)",
-                (SCHEMA_VERSION,),
+                (1,),
             )
             self.conn.commit()
-        logger.info("Database initialized at %s (schema v%d)", self.db_path, SCHEMA_VERSION)
+        logger.info("Database initialized at %s", self.db_path)
 
     def migrate(self) -> None:
         """Check schema_version and apply migrations. No-op if current."""
@@ -142,7 +149,10 @@ class Database:
         ).fetchone()
         if row is None:
             self.init_db()
-            return
+            # Re-read version after init — fall through to migration steps
+            row = self.conn.execute(
+                "SELECT version FROM schema_version ORDER BY version DESC LIMIT 1"
+            ).fetchone()
         current = row["version"]
         if current >= SCHEMA_VERSION:
             logger.debug("Schema is current (v%d)", current)
@@ -203,6 +213,13 @@ class Database:
             """)
             self.conn.execute(
                 "INSERT INTO schema_version (version) VALUES (?)", (2,)
+            )
+            self.conn.commit()
+        if current < 3:
+            evidence_path = REPO_ROOT / "db" / "evidence_schema.sql"
+            self.conn.executescript(evidence_path.read_text())
+            self.conn.execute(
+                "INSERT INTO schema_version (version) VALUES (?)", (3,)
             )
             self.conn.commit()
         logger.info("Migrated from v%d to v%d", current, SCHEMA_VERSION)

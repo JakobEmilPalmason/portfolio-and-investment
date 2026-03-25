@@ -1,0 +1,68 @@
+{
+  "ticker": "AFRM",
+  "company": "Affirm Holdings, Inc.",
+  "analysis_date": "2026-03-17",
+  "verdict": "Pass",
+  "average_score": 4.4,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 5,
+    "management": 5,
+    "business_economics": 4,
+    "balance_sheet": 4,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "Clearly understandable business model with identifiable revenue drivers (GMV, take rate, credit quality, funding costs)",
+    "Proprietary real-time underwriting models producing 2.7% delinquency rates vs 8.8% for credit cards",
+    "Affirm Card growing explosively (3.7M users, 159% GMV growth) creating consumer switching costs",
+    "Amazon partnership locked through 2031 provides merchant-side stability",
+    "Gross margins expanding rapidly from 45% (FY2023) to 67.5% (FY2025) with emerging operating leverage"
+  ],
+  "key_risks": [
+    "Credit cycle vulnerability — business never tested through a consumer credit downturn, rising provisions (up 40% YoY)",
+    "No margin of safety at $47.69 — stock trades 64% above base-case IV ($29) with inverted risk-reward",
+    "Capital market dependency — $8.8B loan book requires continuous warehouse facility and securitization access",
+    "Competitive commoditization — Walmart defection to Klarna proves merchants treat BNPL as switchable input",
+    "SBC-masked profitability — $321M SBC dwarfs $52M net income in FY2025"
+  ],
+  "red_flags": [
+    "Interest coverage of 1.1x is dangerously thin",
+    "ROIC of 2.8% is well below cost of capital",
+    "SBC is 6.1x reported net income — equity dilution is the real cost of profitability",
+    "Provision for credit losses accelerating 40% YoY",
+    "Beta of 3.73 with 95% historical peak-to-trough drawdown",
+    "Dual-class structure gives CEO 44.4% voting control with no practical shareholder recourse"
+  ],
+  "buy_triggers": [
+    "Stock price below $20 providing genuine margin of safety near conservative IV",
+    "Sustained $500M+ annual net income for 2+ consecutive years proving durability",
+    "Affirm Card reaching 10M+ active users demonstrating consumer finance platform shift"
+  ],
+  "sell_triggers": [
+    "30+ day delinquency rates exceeding 4% for two consecutive quarters",
+    "Loss of a top-3 merchant relationship (especially Amazon)",
+    "Regulatory action structurally impairing the interest-bearing BNPL model"
+  ],
+  "valuation_summary": "At $47.69 and $15.9B market cap, AFRM trades at 4.3x sales, 34.7x FCF, and 44.6x EV/EBITDA on trailing numbers. Bear-case IV is $8/share, base-case $29, bull-case $73. The market prices in $600-800M sustainable net income within 3-5 years — a 20x jump from FY2025's $52M — requiring near-perfect execution with no credit cycle disruption.",
+  "iv_conservative": 8,
+  "iv_base": 29,
+  "iv_bull": 73,
+  "iv_currency": "USD",
+  "mos_at_analysis": -496,
+  "compact_checklist": [
+    "Affirm lends money to shoppers at checkout, earning merchant fees and consumer interest on installment loans, with 96% of transactions coming from repeat users who split purchases across 478K active merchants including Amazon (locked through 2031).",
+    "Proprietary per-transaction underwriting models (producing 2.7% delinquency rates vs 8.8% for credit cards) and the fast-growing Affirm Card (3.7M users, 159% GMV growth) are real advantages, but merchants can and do switch providers — as Walmart's defection to Klarna proved.",
+    "ROIC is a meager 2.8% after years of losses, gross margins are expanding (67.5%), but SBC of $321M dwarfs net income of $52M, and the $8.8B loan book requires continuous capital market access to fund — this is a leveraged lender, not an asset-light platform.",
+    "Levchin is a credible founder-operator with modest $538K cash compensation and SBC is declining as a share of revenue (28% to 10%), but his 44.4% voting control through dual-class shares and $113M in recent stock sales with zero purchases weaken the alignment story.",
+    "Interest coverage of 1.1x and $7.9B in securitized debt that requires constant warehouse facility renewals mean a credit market freeze or consumer downturn would simultaneously hit revenue, increase losses, and restrict funding — a survivable but painful triple threat.",
+    "At $47.69 (base-case IV of $29, bear-case IV of $8), the market must believe Affirm will reach $600-800M in sustainable net income within 3-5 years — requiring 20x the current earnings with no credit cycle disruption.",
+    "There is none — the stock trades 64% above base-case IV with inverted risk-reward (83% downside to bear case vs 53% upside to bull case), and a rational entry point is below $20.",
+    "30+ day delinquency rates exceeding 4% for two consecutive quarters, or the loss of the Amazon partnership, would confirm the credit risk and merchant fragility that the current price ignores."
+  ],
+  "source_summary": "Affirm Q2 FY2026 earnings (Feb 2026), FY2025 annual report, 10-Q filings, yfinance auto-fetched financials, Yahoo Finance, Seeking Alpha, MarketBeat, Alpha Spread, Investing.com, Simply Wall St, TipRanks, Payments Dive, CNBC, TradingView. Data current as of March 2026.",
+  "confidence": "medium",
+  "change_notes": ""
+}

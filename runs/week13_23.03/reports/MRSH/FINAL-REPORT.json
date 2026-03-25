@@ -1,0 +1,69 @@
+{
+  "ticker": "MRSH",
+  "company": "Marsh McLennan",
+  "analysis_date": "2026-03-24",
+  "verdict": "Own",
+  "average_score": 8.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 9,
+    "margin_of_safety": 8,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "World's largest insurance broker with 95% Fortune 1000 penetration and 15 years as #1 by revenue",
+    "Asset-light tollbooth model: $5B FCF on $291M capex (120% conversion), no underwriting risk",
+    "18 consecutive years of adjusted operating margin expansion with 90%+ client retention",
+    "Multi-layered moat: switching costs, scale, proprietary data, and brand trust",
+    "Trading at 15.3x forward earnings vs. historical 20-25x range — below worst-case sensitivity grid floor"
+  ],
+  "key_risks": [
+    "McGriff integration risk: $7.75B deal pushed debt to 2.9x EBITDA with $24B+ goodwill",
+    "Organic growth decelerated from 7% to 4% in FY2025 — could be structural",
+    "Interest coverage halved from 9.7x to 6.8x due to acquisition financing",
+    "Consulting segments (Mercer, Oliver Wyman) face more competitive dynamics than brokerage",
+    "Modest CEO insider ownership (~$17M) — institutional steward, not owner-operator"
+  ],
+  "red_flags": [
+    "Debt/EBITDA of 2.9x is highest in at least a decade",
+    "CEO exercised options and sold shares at $205 in September 2025",
+    "Goodwill ~$24B (~41% of total assets) creates impairment risk",
+    "Stock down 29% from 52-week high — market may see risks not in backward-looking data"
+  ],
+  "buy_triggers": [
+    "Price drops to $160 or below (near bear IV) — add to 4-5% position",
+    "McGriff accretion becomes visible in FY2026 earnings with organic growth re-accelerating to 5%+",
+    "Debt/EBITDA declines toward 2.5x confirming deleveraging glide path"
+  ],
+  "sell_triggers": [
+    "Price exceeds base IV of $256 — begin trimming",
+    "Organic growth falls below 2% for two consecutive years",
+    "Debt/EBITDA exceeds 3.5x without clear paydown path or management pursues another large acquisition before delevering"
+  ],
+  "valuation_summary": "DCF produces bear/base/bull of $156/$256/$371. At $173.87, the stock trades below every cell in the 5x5 sensitivity grid (floor $216). Forward P/E of 15.3x vs. historical 20-25x and peer average of 23.7x. Conservative IV blend of $231 implies 24.8% MOS. Market is pricing in structural growth deterioration or capital structure crisis — neither is likely for the dominant global insurance broker.",
+  "iv_conservative": 231.21,
+  "iv_base": 256.17,
+  "iv_bull": 370.65,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 24.8,
+  "monte_carlo_prob_above_price": 0.9989,
+  "sensitivity_iv_range": [216.08, 380.46],
+  "compact_checklist": [
+    "Marsh McLennan earns fees and commissions by placing insurance and advising on risk for 95% of the Fortune 1000, without bearing any underwriting risk itself.",
+    "Switching brokers means migrating decades of claims data, coverage structures, and insurer relationships — 90%+ retention rates and 18 consecutive years of margin expansion prove the switching costs are real.",
+    "$5.0B FCF on $291M capex (120% conversion), 29% ROE, and 42% gross margins confirm this is an asset-light toll collector that turns almost every dollar of profit into cash.",
+    "Capital allocation is disciplined — 15 years of dividend increases, consistent buybacks, and reliable mid-single-digit organic growth — but insider ownership is modest (~$17M for the CEO) and the $7.75B McGriff deal was funded entirely with debt.",
+    "At 2.9x Debt/EBITDA with $5B annual FCF covering $960M interest expense 5.2x, Marsh can service its debt even if revenue drops 30% for two years — the company survived 2008 with only a 5% revenue decline.",
+    "At 15.3x forward earnings versus a historical 20-25x range, the market must believe organic growth has permanently downshifted to 3% and McGriff integration will destroy value — neither is likely for the world's dominant insurance broker.",
+    "Conservative IV of $231 puts MOS at 25%, the stock trades below the worst-case cell in the sensitivity grid ($216), and Monte Carlo gives 99.9% probability of undervaluation — the downside to bear IV is only 10%.",
+    "Organic growth below 2% for two consecutive years or Debt/EBITDA exceeding 3.5x without a clear paydown path would signal the compounding engine has stalled and McGriff was a strategic error."
+  ],
+  "source_summary": "Marsh McLennan 2025 10-K, FY2025 earnings release (Jan 2026), SEC proxy statement and Form 4 filings, deterministic DCF model (src/quant), yfinance auto-fetch, Insurance Journal, Business Insurance rankings, Morningstar, MacroTrends, Simply Wall St, MarketBeat, peer comparison data (AON, WTW, AJG)",
+  "confidence": "high",
+  "change_notes": "Initial analysis. MRSH at multi-year valuation low post-McGriff acquisition. All eight umbrellas scored 7-9, with strongest marks for business clarity, moat durability, and valuation. Primary watch items: organic growth trajectory, deleveraging pace, and McGriff integration execution."
+}

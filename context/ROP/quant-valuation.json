@@ -1,0 +1,143 @@
+{
+  "bear": {
+    "enterprise_value": 51333729191,
+    "equity_value": 42330129191,
+    "per_share_value": 411.26,
+    "terminal_pct_of_value": 73.5,
+    "implied_ev_ebitda": 14.5,
+    "wacc": 0.0925,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "base": {
+    "enterprise_value": 74348405229,
+    "equity_value": 65344805229,
+    "per_share_value": 634.86,
+    "terminal_pct_of_value": 78.7,
+    "implied_ev_ebitda": 20.2,
+    "wacc": 0.0825,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "bull": {
+    "enterprise_value": 100375158630,
+    "equity_value": 91371558630,
+    "per_share_value": 887.73,
+    "terminal_pct_of_value": 82.2,
+    "implied_ev_ebitda": 26.3,
+    "wacc": 0.0775,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "iv_conservative": 411.26,
+  "iv_base": 634.86,
+  "iv_bull": 887.73,
+  "currency": "USD",
+  "current_price": 353.68,
+  "mos_at_analysis": 14.0,
+  "model_date": "2026-03-23",
+  "discount_method": "capm",
+  "capex_mode": "maintenance",
+  "growth_schedule": [
+    0.1763,
+    0.1763,
+    0.1763,
+    0.1032,
+    0.03
+  ],
+  "wacc_derivation": {
+    "wacc": 0.0825,
+    "cost_of_equity": 0.096,
+    "cost_of_debt_pretax": 0.0348,
+    "cost_of_debt_aftertax": 0.0275,
+    "effective_tax_rate": 0.2093,
+    "beta": 0.927,
+    "risk_free_rate": 0.045,
+    "market_risk_premium": 0.055,
+    "equity_weight": 0.8028,
+    "debt_weight": 0.1972,
+    "warnings": []
+  },
+  "owner_earnings": {
+    "method": "da_proxy",
+    "maintenance_capex": 104700000,
+    "growth_capex": 0,
+    "owner_earnings_adjusted": 2329800000,
+    "maintenance_pct_of_total": 1.0
+  },
+  "ticker": "ROP",
+  "model": "dcf_exit_multiple",
+  "sensitivity": {
+    "row_param": "Revenue Growth",
+    "col_param": "WACC",
+    "row_values": [
+      0.1363,
+      0.1563,
+      0.1763,
+      0.1963,
+      0.2163
+    ],
+    "col_values": [
+      0.0625,
+      0.0725,
+      0.0825,
+      0.0925,
+      0.1025
+    ],
+    "grid": [
+      [
+        707.22,
+        673.49,
+        641.55,
+        611.28,
+        582.58
+      ],
+      [
+        775.99,
+        739.24,
+        704.44,
+        671.46,
+        640.2
+      ],
+      [
+        849.5,
+        809.52,
+        771.65,
+        735.78,
+        701.77
+      ],
+      [
+        928.0,
+        884.56,
+        843.42,
+        804.44,
+        767.5
+      ],
+      [
+        1011.74,
+        964.6,
+        919.96,
+        877.68,
+        837.59
+      ]
+    ],
+    "base_row_idx": 2,
+    "base_col_idx": 2
+  },
+  "monte_carlo": {
+    "percentiles": {
+      "P5": 596.0,
+      "P10": 629.56,
+      "P25": 692.66,
+      "P50": 767.07,
+      "P75": 851.31,
+      "P90": 929.79,
+      "P95": 978.73
+    },
+    "mean": 774.97,
+    "median": 767.07,
+    "std": 115.97,
+    "prob_above_price": 1.0,
+    "n_simulations": 10000
+  }
+}

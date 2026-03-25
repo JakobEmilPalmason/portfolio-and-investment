@@ -1,6 +1,6 @@
 # Financial Data: CSU.TO — Constellation Software Inc.
 
-**Generated:** 2026-03-15 22:32 UTC
+**Generated:** 2026-03-23 00:39 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** CAD
 **Sector:** Technology | **Industry:** Software - Application
@@ -15,12 +15,12 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | C$2,524.08 |
-| Market Cap | C$53.5B |
-| Enterprise Value | C$56.8B |
+| Current Price | C$2,499.22 |
+| Market Cap | C$53.0B |
+| Enterprise Value | C$56.3B |
 | 52-Week High | C$5,300.00 |
 | 52-Week Low | C$2,196.00 |
-| Position in 52-Week Range | 11% |
+| Position in 52-Week Range | 10% |
 | Beta | 0.66 |
 | Shares Outstanding | 21.2M |
 | Dividend Yield | 0.22% |
@@ -31,11 +31,11 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 76.9x |
-| Forward P/E | 13.7x |
-| EV/EBITDA | 22.8x |
-| EV/Revenue | 4.9x |
-| P/FCF | 20.3x |
+| Trailing P/E | 75.2x |
+| Forward P/E | 13.6x |
+| EV/EBITDA | 22.6x |
+| EV/Revenue | 4.8x |
+| P/FCF | 20.1x |
 | P/S | 4.6x |
 | P/B | 10.8x |
 
@@ -45,13 +45,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | C$4,211.08 |
-| Target Median | C$4,194.35 |
-| Target High | C$5,560.04 |
-| Target Low | C$3,435.54 |
+| Target Mean | C$4,208.49 |
+| Target Median | C$4,170.86 |
+| Target High | C$5,562.14 |
+| Target Low | C$3,436.85 |
 | Number of Analysts | 12 |
-| Forward EPS | $184.13 |
-| Trailing EPS | $32.81 |
+| Forward EPS | $183.10 |
+| Trailing EPS | $33.24 |
 
 ---
 
@@ -144,13 +144,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | C$2,524.08 | — |
-| 1 Month Ago | C$2,300.49 | +9.7% |
-| 3 Months Ago | C$3,256.73 | -22.5% |
-| 6 Months Ago | C$4,389.56 | -42.5% |
-| 1 Year Ago | C$4,692.58 | -46.2% |
-| 52-Week High | C$5,294.61 (2025-05-12) | -52.3% from current |
-| 52-Week Low | C$2,196.00 (2026-02-12) | +14.9% from current |
+| Current | C$2,499.22 | — |
+| 1 Month Ago | C$2,486.52 | +0.5% |
+| 3 Months Ago | C$3,324.20 | -24.8% |
+| 6 Months Ago | C$4,415.49 | -43.4% |
+| 1 Year Ago | C$4,620.54 | -45.9% |
+| 52-Week High | C$5,294.61 (2025-05-12) | -52.8% from current |
+| 52-Week Low | C$2,196.00 (2026-02-12) | +13.8% from current |
 
 ---
 

@@ -1,0 +1,68 @@
+{
+  "ticker": "OR.PA",
+  "company": "L'Oréal S.A.",
+  "analysis_date": "2026-03-22",
+  "verdict": "Watch",
+  "average_score": 6.75,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "#1 global beauty company with 35+ brands across all price tiers in 150+ countries",
+    "74.3% gross margins with steady expansion — capital-light cash machine",
+    "117% FCF conversion on EUR 6.1B net income, EUR 7.2B FCF",
+    "Fortress balance sheet: near-zero net debt, 24x interest coverage, EUR 9.9B cash",
+    "35% founding-family ownership ensures long-term stewardship over 117 years"
+  ],
+  "key_risks": [
+    "Trades 16% above base IV (EUR 299) with only 20.6% Monte Carlo probability of undervaluation",
+    "China/North Asia (24% of sales) declined 6.5% in Q3 2025 with uncertain recovery",
+    "ROIC declined from 18.8% to 15.1% over two years due to EUR 6.5B in acquisitions",
+    "EUR 4B Kering Beauty acquisition represents newer territory with higher execution risk",
+    "Like-for-like growth decelerated to 4.0% in 2025 vs mid-to-high single digits historically"
+  ],
+  "red_flags": [
+    "ROIC compression from 18.8% to 15.1% — acquisition-driven but warrants monitoring",
+    "Gross debt doubled from EUR 5.7B to EUR 11.9B in two years",
+    "Net income declined year-over-year (EUR 6.4B to EUR 6.1B) despite revenue growth"
+  ],
+  "buy_triggers": [
+    "Price decline to EUR 300 or below (at or below base IV)",
+    "Organic growth reaccelerating to 6%+ driven by China recovery and Kering Beauty integration",
+    "Broad market selloff compressing stock to EUR 260-270 without fundamental deterioration"
+  ],
+  "sell_triggers": [
+    "Gross margins falling below 70% for two consecutive years",
+    "ROIC continuing to decline below 12% indicating permanent acquisition dilution",
+    "Management pursuing another transformative deal pushing net debt above 2x EBITDA"
+  ],
+  "valuation_summary": "Base case IV of EUR 299 vs current price of EUR 347.70 implies 16% overvaluation. Bear IV of EUR 193, bull IV of EUR 421. Only 20.6% Monte Carlo probability of undervaluation. To justify the current price, L'Oréal needs 7%+ sustained revenue growth — above its recent 4% like-for-like performance.",
+  "iv_conservative": 193.1,
+  "iv_base": 298.52,
+  "iv_bull": 420.61,
+  "iv_currency": "EUR",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -80.1,
+  "monte_carlo_prob_above_price": 0.2064,
+  "sensitivity_iv_range": [238.1, 396.72],
+  "compact_checklist": [
+    "L'Oreal sells branded beauty consumables (skincare, haircare, cosmetics, fragrances) across 35+ brands from mass to luxury, generating EUR 44B revenue with 74% gross margins from repeat purchases that 150+ countries of consumers replenish routinely.",
+    "A EUR 14.2B annual advertising budget (32% of sales), EUR 1.4B R&D spend producing 500+ patents per year, and 35+ brands spanning every price tier create a scale and brand wall that no competitor or startup can replicate — confirmed by Morningstar's Wide Moat rating and 74.3% gross margins stable over four years.",
+    "FCF conversion of 117% on EUR 6.2B net income, gross margins expanding from 72.4% to 74.3% over four years, and CapEx at just 3.4% of revenue prove this is a capital-light cash machine, though ROIC declined from 18.8% to 15.1% due to EUR 6.5B in acquisition-inflated invested capital.",
+    "The Bettencourt Meyers family's 35% stake (held for 117 years) ensures decade-long thinking, and CEO Hieronimus has delivered consistent margin expansion and 20+ years of consecutive dividend growth, though EUR 6.5B in acquisitions (Aesop + Kering Beauty) doubled debt and remain unproven at scale.",
+    "Near-zero net debt (EUR 253M) despite EUR 11.9B gross debt, 24x interest coverage, EUR 9.9B cash, and a product category that declined only 6% during COVID make bankruptcy risk effectively zero even in a severe recession.",
+    "At EUR 347.70 (27x forward earnings, 16% above base IV of EUR 299), the stock requires sustained 7%+ organic growth to justify itself — well above the 4% like-for-like growth L'Oreal actually delivered in 2025.",
+    "Business quality (74% gross margins, #1 global share, 117-year track record) provides a durable earnings floor, but zero price-based margin of safety exists — the Monte Carlo simulation gives only a 20.6% chance the stock is undervalued, with 2:1 downside-to-upside asymmetry.",
+    "Sell if gross margins fall below 70% for two consecutive years, ROIC continues declining below 12% (signaling acquisition-driven moat erosion rather than temporary dilution), or management pursues another transformative deal that pushes net debt above 2x EBITDA."
+  ],
+  "source_summary": "Yahoo Finance (yfinance) auto-fetched financials, deterministic DCF quant model (src/quant), web search for current news/analyst views/competitive dynamics, L'Oreal 2025 annual results. Data as of 2026-03-22.",
+  "confidence": "medium",
+  "change_notes": ""
+}

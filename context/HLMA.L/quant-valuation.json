@@ -1,0 +1,130 @@
+{
+  "bear": {
+    "enterprise_value": 6011006366,
+    "equity_value": 5584806366,
+    "per_share_value": 14.79,
+    "terminal_pct_of_value": 78.8,
+    "implied_ev_ebitda": 10.8,
+    "wacc": 0.11,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "base": {
+    "enterprise_value": 9301994142,
+    "equity_value": 8875794142,
+    "per_share_value": 23.5,
+    "terminal_pct_of_value": 83.9,
+    "implied_ev_ebitda": 15.8,
+    "wacc": 0.1,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "bull": {
+    "enterprise_value": 13080338525,
+    "equity_value": 12654138525,
+    "per_share_value": 33.5,
+    "terminal_pct_of_value": 87.1,
+    "implied_ev_ebitda": 21.3,
+    "wacc": 0.095,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "iv_conservative": 14.79,
+  "iv_base": 23.5,
+  "iv_bull": 33.5,
+  "currency": "GBp",
+  "current_price": 3834.0,
+  "mos_at_analysis": -25829.3,
+  "model_date": "2026-03-22",
+  "discount_method": "capm",
+  "capex_mode": "maintenance",
+  "growth_schedule": [
+    0.1307,
+    0.1307,
+    0.1307,
+    0.0804,
+    0.03
+  ],
+  "owner_earnings": {
+    "method": "da_proxy",
+    "maintenance_capex": 59400000,
+    "growth_capex": 0,
+    "owner_earnings_adjusted": 357300000,
+    "maintenance_pct_of_total": 1.0
+  },
+  "ticker": "HLMA.L",
+  "model": "dcf_exit_multiple",
+  "sensitivity": {
+    "row_param": "Revenue Growth",
+    "col_param": "WACC",
+    "row_values": [
+      0.0907,
+      0.1107,
+      0.1307,
+      0.1507,
+      0.1707
+    ],
+    "col_values": [
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12
+    ],
+    "grid": [
+      [
+        24.57,
+        23.48,
+        22.45,
+        21.47,
+        20.55
+      ],
+      [
+        26.7,
+        25.52,
+        24.4,
+        23.34,
+        22.33
+      ],
+      [
+        28.99,
+        27.71,
+        26.49,
+        25.33,
+        24.24
+      ],
+      [
+        31.44,
+        30.05,
+        28.72,
+        27.47,
+        26.28
+      ],
+      [
+        34.07,
+        32.55,
+        31.11,
+        29.75,
+        28.46
+      ]
+    ],
+    "base_row_idx": 2,
+    "base_col_idx": 2
+  },
+  "monte_carlo": {
+    "percentiles": {
+      "P5": 20.05,
+      "P10": 21.25,
+      "P25": 23.55,
+      "P50": 26.39,
+      "P75": 29.45,
+      "P90": 32.25,
+      "P95": 33.97
+    },
+    "mean": 26.62,
+    "median": 26.39,
+    "std": 4.26,
+    "prob_above_price": 0.0,
+    "n_simulations": 10000
+  }
+}

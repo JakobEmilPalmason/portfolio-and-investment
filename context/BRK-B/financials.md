@@ -1,6 +1,6 @@
 # Financial Data: BRK-B — Berkshire Hathaway Inc.
 
-**Generated:** 2026-03-15 22:31 UTC
+**Generated:** 2026-03-23 00:39 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Financial Services | **Industry:** Insurance - Diversified
@@ -13,12 +13,12 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $490.03 |
-| Market Cap | $1.1T |
+| Current Price | $480.94 |
+| Market Cap | $1.0T |
 | Enterprise Value | -$235.0B |
 | 52-Week High | $542.07 |
 | 52-Week Low | $455.19 |
-| Position in 52-Week Range | 40% |
+| Position in 52-Week Range | 30% |
 | Beta | 0.69 |
 | Shares Outstanding | 1.4B |
 | Dividend Yield | n/a |
@@ -29,11 +29,11 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 15.8x |
-| Forward P/E | 22.6x |
+| Trailing P/E | 15.5x |
+| Forward P/E | 22.1x |
 | EV/EBITDA | -2.1x |
 | EV/Revenue | -0.6x |
-| P/FCF | 28.7x |
+| P/FCF | 28.2x |
 | P/S | 2.8x |
 | P/B | 0.0x |
 
@@ -48,7 +48,7 @@
 | Target High | $578.00 |
 | Target Low | $481.00 |
 | Number of Analysts | 3 |
-| Forward EPS | $21.68 |
+| Forward EPS | $21.77 |
 | Trailing EPS | $31.02 |
 
 ---
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $490.03 | — |
-| 1 Month Ago | $500.01 | -2.0% |
-| 3 Months Ago | $495.85 | -1.2% |
-| 6 Months Ago | $493.74 | -0.8% |
+| Current | $480.94 | — |
+| 1 Month Ago | $498.20 | -3.5% |
+| 3 Months Ago | $503.39 | -4.5% |
+| 6 Months Ago | $492.85 | -2.4% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $542.07 (2025-05-02) | -9.6% from current |
-| 52-Week Low | $455.19 (2025-08-04) | +7.7% from current |
+| 52-Week High | $542.07 (2025-05-02) | -11.3% from current |
+| 52-Week Low | $455.19 (2025-08-04) | +5.7% from current |
 
 ---
 

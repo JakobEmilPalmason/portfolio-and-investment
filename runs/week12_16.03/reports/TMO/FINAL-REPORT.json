@@ -1,0 +1,70 @@
+{
+  "ticker": "TMO",
+  "company": "Thermo Fisher Scientific",
+  "analysis_date": "2026-03-22",
+  "verdict": "Watch",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 6,
+    "valuation": 6,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World's largest life sciences tools platform with 83% recurring revenue from consumables and services",
+    "Wide moat from switching costs in regulated labs (5-12 year lock-in cycles) and unmatched scale (40% larger than Danaher)",
+    "Rock-stable $8.0B annual owner earnings across a $42.9B-$44.9B revenue range over 4 years",
+    "Proven CEO with 17-year track record, 100% performance-based compensation, and disciplined capital allocation",
+    "600,000+ customers across 125+ countries with no single customer >10% of revenue"
+  ],
+  "key_risks": [
+    "No price margin of safety at $474: quant base IV of $424, Monte Carlo mean of $459, and only 43% probability of being undervalued",
+    "Elevated leverage at $39.4B total debt rising to $43-44B post-Clario, with interest coverage at 6.2x",
+    "GAAP ROIC of 8.6% equals WACC, meaning serial M&A strategy is value-neutral on total invested capital",
+    "NIH/DOGE-driven government funding cuts affect 15-20% of revenue with unclear duration",
+    "Clario integration risk on $9.4B deal adds goodwill and leverage during end-market weakness"
+  ],
+  "red_flags": [
+    "Gross margins compressed 900bps from 2021 peak (50.1%) to FY2025 (40.9%)",
+    "Combined Chairman/CEO role since 2020 with no independent board chair",
+    "$50B+ in goodwill and intangibles creates non-trivial impairment risk",
+    "FCF declined 14% YoY ($7.3B to $6.3B) despite 4% revenue growth",
+    "R&D intensity at 3.1% of revenue is below peers (Danaher ~5%, Agilent ~8%)"
+  ],
+  "buy_triggers": [
+    "Stock declines to $380-420 where Monte Carlo probability crosses above 50% and sensitivity grid shows broad IV support",
+    "NIH funding stabilizes or reverses, removing the primary near-term overhang on 15-20% of revenue",
+    "Clario synergies exceed initial guidance, demonstrating the M&A compounding model remains intact"
+  ],
+  "sell_triggers": [
+    "Organic growth turns negative for two consecutive years, signaling structural demand erosion",
+    "Debt/EBITDA exceeds 4.5x without a clear deleveraging path",
+    "ROIC falls below 7% on a sustained basis, indicating M&A strategy is destroying economic value"
+  ],
+  "valuation_summary": "At $474, TMO trades at 17.6x forward P/E (vs 5-year avg ~25x and peer avg ~30x) and 18.6x EV/EBITDA. Quant DCF produces Bear $251, Base $424, Bull $623. Analyst-adjusted range is $275-$620. Monte Carlo mean of $459 and median of $454 both sit below current price. Sensitivity grid shows only 10 of 25 cells produce IV above $474. The stock is roughly fairly valued -- not expensive, but offering no Buffett-style discount. The right entry price is closer to $380-420.",
+  "iv_conservative": 250.67,
+  "iv_base": 424.07,
+  "iv_bull": 623.32,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -87.5,
+  "monte_carlo_prob_above_price": 0.4283,
+  "sensitivity_iv_range": [339.7, 603.96],
+  "compact_checklist": [
+    "TMO is the world's largest life sciences \"picks and shovels\" supplier, where 83% of $44.6B revenue comes from recurring consumables and services that labs must rebuy once they standardize on TMO instruments.",
+    "Validated workflows in regulated pharma labs create 5-12 year switching cycles costing hundreds of thousands of dollars to break, reinforced by unmatched scale (40% larger than Danaher) and the broadest product catalog in the industry.",
+    "Owner earnings have been rock-stable at $8.0B annually across a revenue swing of $42.9B to $44.9B, but GAAP ROIC of 8.6% merely equals the WACC because $60B+ in acquisition goodwill bloats the capital base.",
+    "CEO Casper has compounded the stock from $40 to $474 over 17 years with 100% performance-based compensation, disciplined buybacks that shrank shares 6% since 2021, and $69B in acquisitions that delivered on synergy targets.",
+    "$39.4B of total debt (3.4x Debt/EBITDA, rising to ~3.2x post-Clario) is serviceable at 6.2x interest coverage with A2/A- ratings, but a 30% revenue stress would squeeze coverage to 3.0-3.5x and force suspension of buybacks and M&A.",
+    "At $474, you need ~10% revenue growth at the current 8.6% WACC to justify the price -- the Monte Carlo gives only a 42.8% probability the stock is undervalued, and the quant base IV of $424-$440 sits below market.",
+    "The business itself is resilient (stable $8B owner earnings, 600K+ customers, no single customer >3%), but at $474 there is zero price margin of safety -- the math improves decisively at $380-$420.",
+    "Sell if organic growth turns negative for two consecutive years, ROIC falls below 7%, or Debt/EBITDA exceeds 4.5x without a clear deleveraging path -- any of these signals the M&A compounding model has broken."
+  ],
+  "source_summary": "Thermo Fisher 10-K FY2025, Q4 2025 earnings release and transcript, yfinance financial data, quant-valuation DCF model, Yahoo Finance, StockAnalysis.com, Seeking Alpha, Simply Wall St, Alpha Spread, MacroTrends, Moody's/S&P credit ratings, NIH budget analysis, 24 analyst consensus estimates",
+  "confidence": "medium",
+  "change_notes": ""
+}

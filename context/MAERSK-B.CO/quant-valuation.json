@@ -1,0 +1,130 @@
+{
+  "bear": {
+    "enterprise_value": 69480074106,
+    "equity_value": 60880074106,
+    "per_share_value": 12176.01,
+    "terminal_pct_of_value": 84.2,
+    "implied_ev_ebitda": 7.6,
+    "wacc": 0.11,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "base": {
+    "enterprise_value": 89796662550,
+    "equity_value": 81196662550,
+    "per_share_value": 16239.33,
+    "terminal_pct_of_value": 87.2,
+    "implied_ev_ebitda": 9.8,
+    "wacc": 0.1,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "bull": {
+    "enterprise_value": 131830747679,
+    "equity_value": 123230747679,
+    "per_share_value": 24646.15,
+    "terminal_pct_of_value": 90.4,
+    "implied_ev_ebitda": 13.7,
+    "wacc": 0.095,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "iv_conservative": 12176.01,
+  "iv_base": 16239.33,
+  "iv_bull": 24646.15,
+  "currency": "DKK",
+  "current_price": 16820.0,
+  "mos_at_analysis": -38.1,
+  "model_date": "2026-03-22",
+  "discount_method": "capm",
+  "capex_mode": "maintenance",
+  "growth_schedule": [
+    -0.05,
+    -0.05,
+    -0.05,
+    -0.01,
+    0.03
+  ],
+  "owner_earnings": {
+    "method": "da_proxy",
+    "maintenance_capex": 4800000000,
+    "growth_capex": 0,
+    "owner_earnings_adjusted": 4600000000,
+    "maintenance_pct_of_total": 1.0
+  },
+  "ticker": "MAERSK-B.CO",
+  "model": "dcf_exit_multiple",
+  "sensitivity": {
+    "row_param": "Revenue Growth",
+    "col_param": "WACC",
+    "row_values": [
+      -0.09,
+      -0.07,
+      -0.05,
+      -0.03,
+      -0.01
+    ],
+    "col_values": [
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12
+    ],
+    "grid": [
+      [
+        13294.72,
+        12676.19,
+        12089.84,
+        11533.7,
+        11005.94
+      ],
+      [
+        14617.55,
+        13936.68,
+        13291.36,
+        12679.42,
+        12098.83
+      ],
+      [
+        16056.94,
+        15308.35,
+        14598.98,
+        13926.43,
+        13288.46
+      ],
+      [
+        17620.5,
+        16798.48,
+        16019.66,
+        15281.38,
+        14581.18
+      ],
+      [
+        19316.17,
+        18414.65,
+        17560.62,
+        16751.17,
+        15983.59
+      ]
+    ],
+    "base_row_idx": 2,
+    "base_col_idx": 2
+  },
+  "monte_carlo": {
+    "percentiles": {
+      "P5": 13556.19,
+      "P10": 14275.27,
+      "P25": 15575.97,
+      "P50": 17166.58,
+      "P75": 18926.49,
+      "P90": 20698.86,
+      "P95": 21723.98
+    },
+    "mean": 17359.35,
+    "median": 17166.57,
+    "std": 2481.17,
+    "prob_above_price": 0.5559,
+    "n_simulations": 10000
+  }
+}

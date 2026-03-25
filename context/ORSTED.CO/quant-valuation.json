@@ -1,0 +1,130 @@
+{
+  "bear": {
+    "enterprise_value": 272791564833,
+    "equity_value": 227191564833,
+    "per_share_value": 174.76,
+    "terminal_pct_of_value": 101.6,
+    "implied_ev_ebitda": 10.1,
+    "wacc": 0.11,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "base": {
+    "enterprise_value": 425845371041,
+    "equity_value": 380245371041,
+    "per_share_value": 292.5,
+    "terminal_pct_of_value": 101.4,
+    "implied_ev_ebitda": 15.2,
+    "wacc": 0.1,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "bull": {
+    "enterprise_value": 601123004796,
+    "equity_value": 555523004796,
+    "per_share_value": 427.33,
+    "terminal_pct_of_value": 101.5,
+    "implied_ev_ebitda": 20.7,
+    "wacc": 0.095,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "iv_conservative": 174.76,
+  "iv_base": 292.5,
+  "iv_bull": 427.33,
+  "currency": "DKK",
+  "current_price": 146.5,
+  "mos_at_analysis": 16.2,
+  "model_date": "2026-03-22",
+  "discount_method": "capm",
+  "capex_mode": "maintenance",
+  "growth_schedule": [
+    0.2,
+    0.2,
+    0.2,
+    0.115,
+    0.03
+  ],
+  "owner_earnings": {
+    "method": "da_proxy",
+    "maintenance_capex": 10200000000,
+    "growth_capex": 44600000000,
+    "owner_earnings_adjusted": 2400000000,
+    "maintenance_pct_of_total": 0.19
+  },
+  "ticker": "ORSTED.CO",
+  "model": "dcf_exit_multiple",
+  "sensitivity": {
+    "row_param": "Revenue Growth",
+    "col_param": "WACC",
+    "row_values": [
+      0.16,
+      0.18,
+      0.2,
+      0.22,
+      0.24
+    ],
+    "col_values": [
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12
+    ],
+    "grid": [
+      [
+        341.35,
+        324.25,
+        308.07,
+        292.75,
+        278.24
+      ],
+      [
+        370.05,
+        351.56,
+        334.07,
+        317.52,
+        301.83
+      ],
+      [
+        400.73,
+        380.77,
+        361.89,
+        344.01,
+        327.09
+      ],
+      [
+        433.52,
+        411.99,
+        391.62,
+        372.34,
+        354.08
+      ],
+      [
+        468.52,
+        445.31,
+        423.35,
+        402.57,
+        382.89
+      ]
+    ],
+    "base_row_idx": 2,
+    "base_col_idx": 2
+  },
+  "monte_carlo": {
+    "percentiles": {
+      "P5": 267.77,
+      "P10": 285.96,
+      "P25": 318.92,
+      "P50": 360.43,
+      "P75": 404.6,
+      "P90": 446.25,
+      "P95": 470.96
+    },
+    "mean": 363.56,
+    "median": 360.43,
+    "std": 61.57,
+    "prob_above_price": 1.0,
+    "n_simulations": 10000
+  }
+}

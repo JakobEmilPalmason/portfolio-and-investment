@@ -142,7 +142,7 @@
 
 64 names were held by B1 and not advanced to B2. Key categories:
 
-- **Already analyzed, no catalyst**: AAPL, AMZN, ABBV, ARM, GILD, LLY, MA, QCOM, RMS.PA, RELX.L, CME, FICO, MRK, DSV.CO, IQV — quality businesses with existing reports and intact theses but no fresh entry setup
+- **Already analyzed, no catalyst**: AAPL, AMZN, ABBV, ARM, GILD, LLY, MA, QCOM, RMS.PA, RELX, CME, FICO, MRK, DSV.CO, IQV — quality businesses with existing reports and intact theses but no fresh entry setup
 - **Quality but no urgency**: ADP, AJG, AME, BAM, BX, CB, COST, CSGP, CSX, DOCS, EMR, EXPD, FAST, FDS, GWW, ITW, JPM, KKR, KO, LRCX, LONN.SW, MCD, MKL, MKTX, MPWR, MRVL, MTD, NDAQ, NFLX, NKE, NSC, ON, OR.PA, PAYX, PEP, PG, PH, POOL, ROL, RSG, SBUX, SSNC, STE, STMN.SW, TXN, UNP, ULTA, VRSK, WCN, WKL.AS, WST, XPO, YUM, AZN, BR, CBOE, CFR.SW, CHD, DSY.PA, DXCM, EW, FIX, HSY, ICG.L, NEM.SW, NVS, ROG.SW, RLI, TPX
 - **B1 rejects (eliminated)**: ALAB, SNOW, TSLA, HIMS, RDDT, RKLB, ACLS, HPE, EL, GS, KER.PA, RKT.L, MSC, ONTO, MAERSK-B.CO, ORSTED.CO, CAT, CNQ, CVS, MMM
 

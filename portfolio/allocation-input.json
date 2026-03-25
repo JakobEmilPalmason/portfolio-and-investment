@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T18:07:27.915597",
+  "generated_at": "2026-03-16T18:40:48.755163",
   "capital": 100000.0,
   "portfolio_state": {
     "total_capital": 100000.0,
@@ -3326,7 +3326,7 @@
       "queue_tags": []
     },
     {
-      "ticker": "RELX.L",
+      "ticker": "RELX",
       "company": "RELX PLC",
       "verdict": "Watch",
       "confidence": "medium",

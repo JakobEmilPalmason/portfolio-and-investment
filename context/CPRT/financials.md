@@ -1,6 +1,6 @@
 # Financial Data: CPRT — Copart, Inc.
 
-**Generated:** 2026-03-15 22:32 UTC
+**Generated:** 2026-03-22 20:18 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Industrials | **Industry:** Specialty Business Services
@@ -13,11 +13,11 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $34.09 |
-| Market Cap | $33.0B |
-| Enterprise Value | $27.9B |
+| Current Price | $32.87 |
+| Market Cap | $31.8B |
+| Enterprise Value | $26.7B |
 | 52-Week High | $63.85 |
-| 52-Week Low | $33.52 |
+| 52-Week Low | $32.20 |
 | Position in 52-Week Range | 2% |
 | Beta | 1.11 |
 | Shares Outstanding | 963.3M |
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 21.4x |
-| Forward P/E | 20.3x |
-| EV/EBITDA | 14.3x |
-| EV/Revenue | 6.0x |
-| P/FCF | 31.9x |
-| P/S | 7.2x |
-| P/B | 3.4x |
+| Trailing P/E | 20.7x |
+| Forward P/E | 19.6x |
+| EV/EBITDA | 13.7x |
+| EV/Revenue | 5.8x |
+| P/FCF | 30.7x |
+| P/S | 6.9x |
+| P/B | 3.2x |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $34.09 | — |
-| 1 Month Ago | $36.72 | -7.2% |
-| 3 Months Ago | $38.69 | -11.9% |
-| 6 Months Ago | $48.40 | -29.6% |
+| Current | $32.87 | — |
+| 1 Month Ago | $36.48 | -9.9% |
+| 3 Months Ago | $39.22 | -16.2% |
+| 6 Months Ago | $45.85 | -28.3% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $63.85 (2025-05-16) | -46.6% from current |
-| 52-Week Low | $33.53 (2026-03-13) | +1.7% from current |
+| 52-Week High | $63.85 (2025-05-16) | -48.5% from current |
+| 52-Week Low | $32.20 (2026-03-19) | +2.1% from current |
 
 ---
 

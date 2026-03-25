@@ -1,0 +1,64 @@
+{
+  "ticker": "ODFL",
+  "company": "Old Dominion Freight Line Inc.",
+  "analysis_date": "2026-03-18",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "92% owned real estate network",
+    "16-year #1 quality ranking",
+    "Debt-free balance sheet",
+    "Best-in-class operating ratio",
+    "Owner-operator culture"
+  ],
+  "key_risks": [
+    "Extreme valuation premium",
+    "Cyclical freight exposure",
+    "Industrial production dependency",
+    "Lack of international diversification"
+  ],
+  "red_flags": [
+    "37.8x trailing P/E at cyclical trough",
+    "Negative margin of safety on price",
+    "Three consecutive years of revenue decline"
+  ],
+  "buy_triggers": [
+    "Share price below $130",
+    "Positive YoY tonnage growth inflection",
+    "Operating ratio improvement toward 70%"
+  ],
+  "sell_triggers": [
+    "Operating ratio sustained above 80%",
+    "Significant debt-funded acquisition",
+    "Departure from founding family culture"
+  ],
+  "valuation_summary": "ODFL trades at a significant premium to its historical averages and our base-case intrinsic value of $125. While the business is elite, the current price bakes in a near-perfect recovery with no margin of safety.",
+  "iv_conservative": 81.0,
+  "iv_base": 125.0,
+  "iv_bull": 184.0,
+  "iv_currency": "USD",
+  "mos_at_analysis": -124.7,
+  "compact_checklist": [
+    "ODFL operates a national less-than-truckload network of 260 service centers, consolidating partial shipments for over 50,000 industrial and retail customers with no single client exceeding 5.4% of revenue.",
+    "A structural cost advantage from 92% real estate ownership combined with 16 consecutive years as the #1 rated LTL carrier for quality (0.1% claims ratio) creates a premium service flywheel that rivals cannot match.",
+    "The company maintains a 10-year average ROIC of 26% and generated $955M in free cash flow (93% conversion) in FY2025 despite a 13% revenue decline from peak.",
+    "Led by a 30-year veteran CEO and the founding Congdon family (9.8% insider ownership), management has retired 4.6% of shares since mid-2023 while remaining virtually debt-free.",
+    "ODFL holds a net cash position of $80M and 4,600x interest coverage, ensuring it can remain profitable and self-funding even if revenue were to drop 30% for two years.",
+    "Today's 37.8x trailing P/E requires the freight cycle to inflect by late 2026 and margins to return to 29%+ just to justify the current $182 share price.",
+    "The business is an impenetrable fortress, but the stock lacks any price protection as it trades 46% above its $125 base-case intrinsic value.",
+    "A permanent deterioration of the operating ratio above 80% or a departure from the disciplined debt-free capital allocation strategy would signal a broken competitive advantage."
+  ],
+  "source_summary": "Analysis based on FY2025 10-K, Q4 2025 earnings, and live financial data as of March 2026; data is current and high-confidence.",
+  "confidence": "high",
+  "change_notes": ""
+}

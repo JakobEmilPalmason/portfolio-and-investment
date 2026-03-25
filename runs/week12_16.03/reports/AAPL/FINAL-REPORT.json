@@ -1,0 +1,66 @@
+{
+  "ticker": "AAPL",
+  "company": "Apple Inc.",
+  "analysis_date": "2026-03-21",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 9,
+    "valuation": 4,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Most understandable $3.6T business on earth — two key drivers (iPhone ASP + Services attach), 2.2B active devices, no customer concentration",
+    "ROIC of 66.8% and rising, $99B annual FCF on just $12.7B capex — one of the highest-quality asset-light economic profiles in corporate history",
+    "92% iPhone retention rate with compounding ecosystem lock-in (iCloud, App Store, iMessage, Health, Wallet) creating switching costs that deepen over time",
+    "$700B returned via buybacks (44% share count reduction in a decade), fortress balance sheet (Aaa/AA+, 0.4x net debt/EBITDA, $133B liquid assets)",
+    "Services segment at $120B annualized run rate with 76% gross margins — a structural profit engine still early in its growth arc"
+  ],
+  "key_risks": [
+    "DOJ antitrust trial (2028) and EU DMA enforcement threaten App Store 30% take rate and $20B+ Google search deal — the highest-margin revenue streams",
+    "At $248 (31x earnings), stock prices in bull-case growth with no discount for regulatory, tariff, or China risks — 4.5:1 downside-to-upside asymmetry",
+    "Greater China (~17% revenue, ~$70B) faces Huawei resurgence, local AI model adoption, and potential geopolitical disruption to TSMC supply chain",
+    "AI strategy outsources Siri backbone to Google Gemini — unusual dependency risk if proprietary AI becomes the primary value layer in consumer tech",
+    "New 15% Section 122 tariff estimated at $3.3B annual cost; 75% of supply chain remains China-dependent despite diversification"
+  ],
+  "red_flags": [
+    "FCF declined 9% YoY despite 6.4% revenue growth — capex rising as AI infrastructure spend ramps",
+    "SBC growing at 10% YoY vs revenue growth of 6.4% — consuming an increasing share of buyback spend",
+    "Google search deal ($20B+ annually, nearly pure margin) faces existential threat from DOJ antitrust case",
+    "Market pricing in bull-case growth (10-11% annual owner earnings growth) with no margin for error"
+  ],
+  "buy_triggers": [
+    "Stock declines to $170-190 range (near base IV), providing meaningful margin of safety",
+    "DOJ antitrust case resolves favorably, removing primary overhang on Services economics",
+    "AI-driven Services monetization proves out, structurally raising earnings growth trajectory above 12%"
+  ],
+  "sell_triggers": [
+    "Forced App Store interoperability or loss of Google search deal compresses Services operating margins below 65%",
+    "Ecosystem switching costs erode measurably — iPhone retention drops below 85%",
+    "Capital allocation deteriorates — large acquisitions replacing buybacks or empire-building capex ramp beyond $25B"
+  ],
+  "valuation_summary": "At $248 (31.4x trailing P/E, 34.3x P/FCF), Apple trades at a 30-100% premium to conservative-to-base intrinsic value estimates ($124-$191). The market demands ~10-11% annual owner earnings growth sustained for 5+ years with no margin compression — essentially pricing the bull case as the base case. Conservative DCF yields $124 (bear), $191 (base), $276 (bull). Expected return from current price is ~5% (3% FCF yield + 2% buyback yield), well below 10% hurdle rate.",
+  "iv_conservative": 124,
+  "iv_base": 191,
+  "iv_bull": 276,
+  "iv_currency": "USD",
+  "mos_at_analysis": -100,
+  "compact_checklist": [
+    "Apple sells premium hardware (iPhone ~52% of revenue) and high-margin ecosystem services (76% gross margin, 1B+ paid subscriptions) to 2.2B+ active devices, with two variables — iPhone ASP and Services attach rate — driving ~80% of the economics.",
+    "A 92% iPhone retention rate, compounding ecosystem lock-in (iCloud, App Store, iMessage, Health, Wallet), and 85% of global smartphone profits on 20% unit share create switching costs that strengthen with every year a customer stays.",
+    "ROIC of 66.8% in FY2025, $98.8B in FCF on just $12.7B capex, and gross margins expanding from 43.3% to 46.9% over three years confirm this is one of the highest-returning asset-light business models in corporate history.",
+    "Tim Cook has returned ~$700B via buybacks (44% share count reduction in a decade) while keeping capex at $14B versus $650B for Mag-7 peers combined, though insider ownership at <0.025% of market cap and comp tied to absolute revenue rather than per-share metrics is a weakness.",
+    "Net debt of 0.4x EBITDA, $133B in liquid assets, Aaa/AA+ credit ratings, and ~$100B annual FCF mean Apple could retire all debt in one year and survive a 50% revenue decline for multiple years without distress.",
+    "At $248 (31.4x earnings), the market requires ~10-11% annual owner earnings growth sustained for 5+ years with no margin compression from antitrust, tariffs, or China deterioration — essentially pricing the bull case as the base case.",
+    "The business fortress ($99B FCF, 2.3B device installed base, deepening ecosystem) protects against operational shocks, but the price offers zero cushion — conservative IV of $124 and base IV of $191 both sit well below the current $248, creating 4.5:1 downside-to-upside asymmetry.",
+    "Sell if forced App Store interoperability or loss of the $20B+ Google search deal structurally compresses Services operating margins below 65%, because that would break the high-margin toll-booth economics that justify the premium multiple."
+  ],
+  "source_summary": "Apple FY2025 10-K, Q1 FY2026 10-Q, yfinance financial data, Counterpoint Research, Morningstar, GuruFocus, Alpha Spread, S&P/Moody's credit ratings, DOJ antitrust filings, EU DMA enforcement updates, analyst consensus (41 analysts), Seeking Alpha, Bloomberg",
+  "confidence": "medium",
+  "change_notes": "Updated from prior Watch verdict. Business quality remains exceptional (scores 8-9 across fundamentals) but valuation has not improved — at $248 the stock still offers deeply negative margin of safety with conservative IV of $124 and base IV of $191. Verdict unchanged at Watch; re-evaluate if price approaches $170-190."
+}

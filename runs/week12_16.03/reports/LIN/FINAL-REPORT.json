@@ -1,0 +1,66 @@
+{
+  "ticker": "LIN",
+  "company": "Linde plc",
+  "analysis_date": "2026-03-17",
+  "verdict": "Watch",
+  "average_score": 7.3,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Tight oligopoly with 28-30% global market share — stable for decades with no meaningful new entrants",
+    "85% recurring revenue under 10-20 year take-or-pay contracts with 94.3% retention rate",
+    "Operating margins expanded 780bps to 27.2% over three years on just 2% revenue growth — genuine pricing power",
+    "Disciplined capital allocation: $7.4B returned to shareholders in FY25, 12.5% share count reduction since 2019",
+    "Physical switching costs from on-site pipeline infrastructure create near-permanent customer lock-in"
+  ],
+  "key_risks": [
+    "No price margin of safety — stock trades 21% above conservative IV of $410 with unfavorable 1.3:1 downside-to-upside ratio",
+    "Heavy growth capex cycle ($5.3B/year) is a bet on $10B backlog with less-proven hydrogen/clean energy returns",
+    "Organic growth stalled at 0% base volume guidance — all growth is project-driven and buyback-driven",
+    "Multiple compression risk: P/E could de-rate from 34x to 22-25x in a slower-growth or higher-rate environment",
+    "Combined CEO/Chairman role since January 2026 removes an independent governance check"
+  ],
+  "red_flags": [
+    "Stock trades 21% above conservative IV — paying full price for quality",
+    "FCF conversion declined from 137% to 74% as growth capex ramps",
+    "0% base volume guidance reflects genuine demand weakness in EMEA and China",
+    "Owner earnings declined from $6.2B (FY23) to $5.4B (FY25) during capex ramp"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $400-430 range (near or below conservative IV of $410), creating genuine price margin of safety",
+    "EMEA/APAC volume recovery materializes with 2-3% organic growth, proving business can compound beyond backlog and buybacks",
+    "Hydrogen/clean energy project economics prove out with contracted IRRs exceeding 15%, validating growth capex cycle"
+  ],
+  "sell_triggers": [
+    "Operating margins fall below 23% for two consecutive years, signaling structural deterioration in pricing power",
+    "Debt/EBITDA exceeds 3.5x without clear project justification, indicating abandonment of capital discipline",
+    "Backlog conversion consistently delivers returns below cost of capital, meaning growth investment thesis has failed"
+  ],
+  "valuation_summary": "At $497 (34x trailing, 25.5x forward), Linde is fairly valued — pricing in 8% annual EPS compounding for 5 years with a 25-27x terminal multiple. Bear case IV $410, base $480, bull $565. The stock offers no discount to intrinsic value; you are paying a fair price for a world-class business with no margin for error.",
+  "iv_conservative": 410,
+  "iv_base": 480,
+  "iv_bull": 565,
+  "iv_currency": "USD",
+  "mos_at_analysis": -21.3,
+  "compact_checklist": [
+    "Linde separates air into industrial gases and pipes them to factories under 10-20 year take-or-pay contracts, generating 85% recurring revenue with a 94.3% retention rate — customers cannot self-supply without building their own multi-hundred-million-dollar plants.",
+    "A tight oligopoly (Linde 28-30%, Air Liquide 22-24%, Air Products 12-15%) reinforced by on-site pipeline infrastructure that physically locks in customers, route density cost advantages in merchant delivery, and billions in capital required just to enter the market — no meaningful new competitor has emerged in decades.",
+    "Operating margins expanded 780bps to 27.2% over three years on just 2% revenue growth, EBITDA reached $13.1B, and SBC dilution is a negligible 2.4% of net income, though ROIC on total capital (including $48B merger goodwill) is a solid but not exceptional 11.5%.",
+    "CEO Lamba bought $999K in shares at near-highs, the company returned $7.4B to shareholders in FY25 while shrinking shares outstanding 12.5% since 2019, and compensation is 93% performance-based tied to return on capital — though the combined CEO/Chairman role since January 2026 removes a governance check.",
+    "With 20.2x interest coverage, 1.7x net Debt/EBITDA, A/A+ credit ratings, and $10.3B annual operating cash flow against well-laddered maturities, Linde could see operating income halved and still cover interest ten times over.",
+    "At $497 (34x trailing, 25.5x forward), the stock requires 8% annual EPS compounding for five years and a 25-27x terminal multiple to justify today's price — achievable given the $10B backlog but leaving no room for disappointment.",
+    "The business itself is nearly indestructible (essential products, locked-in contracts, no technology disruption risk), but the stock trades 21% above conservative IV of $410 with a 1.3:1 downside-to-upside ratio — wrong price for new money.",
+    "Sell if operating margins fall below 23% for two consecutive years, if Debt/EBITDA exceeds 3.5x without clear project justification, or if the $10B backlog conversion consistently delivers returns below cost of capital — any of these would signal the compounding engine has broken."
+  ],
+  "source_summary": "Linde 2025 10-K, Q4 2025 earnings release, SEC Form 4 filings, Linde proxy statement, company investor presentations, yfinance financial data, S&P/Scope credit ratings, analyst consensus estimates, peer comparisons (APD, Air Liquide), PortfoliosLab historical data, industry reports",
+  "confidence": "high",
+  "change_notes": "Initial analysis. Linde is a world-class industrial compounder with one of the widest moats in the sector, but current price of $497 offers no margin of safety versus conservative IV of $410. Watch for a 15-20% pullback to create an attractive entry point."
+}

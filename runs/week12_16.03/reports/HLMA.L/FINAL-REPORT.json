@@ -1,0 +1,66 @@
+{
+  "ticker": "HLMA.L",
+  "company": "Halma plc",
+  "analysis_date": "2026-03-18",
+  "verdict": "Pass",
+  "average_score": 6.4,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 8,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Portfolio of ~50 regulation-driven niche monopolies with 22 consecutive years of record profits",
+    "50% gross margins and 146% FCF conversion on just 2.6% capex intensity — genuinely asset-light cash machine",
+    "Conservative balance sheet (1.03x net debt/EBITDA, 12.8x interest coverage) provides strategic M&A optionality",
+    "Proven acquisition machine with 5.9% profit contribution vs 5% target over five years",
+    "Regulatory barriers and extreme switching costs create durable moat across all three segments"
+  ],
+  "key_risks": [
+    "At 42x trailing P/E, stock prices in perfection with 2:1 downside-to-upside asymmetry",
+    "Single hyperscaler customer contributed ~8pp of organic growth in H1 2025/26 — flagged as non-recurring",
+    "Record GBP 451M acquisition spend in FY2026 — execution risk rising with deal pace",
+    "Sterling strength expected to reduce FY2026 profit by GBP 17M",
+    "Healthcare segment showed only 0.3% organic growth in FY2025 — potential structural weakness"
+  ],
+  "red_flags": [
+    "Stock trades 131% above conservative IV and 44% above base IV — zero price margin of safety",
+    "Board insider ownership below 1% of market cap",
+    "Tangible book value negligible due to GBP 2B+ goodwill from acquisitions",
+    "Photonics tailwind contributing ~8pp of organic growth explicitly flagged as non-recurring by management"
+  ],
+  "buy_triggers": [
+    "Share price declines to ~2,700 GBp (Base IV) for a starter position",
+    "Share price declines to ~2,200 GBp or below for genuine margin of safety",
+    "Severe market-wide de-rating of quality compounders creates broad opportunity (similar to 2022)"
+  ],
+  "sell_triggers": [
+    "Acquisition ROIC falls below cost of capital for two consecutive years",
+    "Decentralised culture erodes — centralisation, key management departures, loss of subsidiary autonomy",
+    "Trailing P/E exceeds 50x in euphoric market — take profits"
+  ],
+  "valuation_summary": "At 42x trailing P/E and 40x owner earnings, Halma requires ~12-13% annual earnings compounding for a decade to justify current price. Bear IV 1,660 GBp, Base IV 2,670 GBp, Bull IV 3,770 GBp. Current price of 3,834 GBp exceeds even the Bull case. Peers Roper (25x fwd) and Danaher (24x fwd) trade at meaningful discounts.",
+  "iv_conservative": 1660,
+  "iv_base": 2670,
+  "iv_bull": 3770,
+  "iv_currency": "GBp",
+  "mos_at_analysis": -131,
+  "compact_checklist": [
+    "Halma owns ~50 autonomous subsidiaries that make regulation-mandated safety sensors, environmental monitors, and medical instruments — products where the cost of failure dwarfs the product price, locking in repeat demand from an installed base.",
+    "Regulatory certification requirements, extreme switching costs, and fragmentation across 50 niches mean no single competitor can attack the portfolio, evidenced by 50% gross margins and 22 consecutive years of record profits.",
+    "FCF conversion hit 146% in FY2025 on just 2.6% capex intensity, ROTIC improved to 16.2% in H1 2025/26, and adjusted EBIT margins expanded to 22.3% — though ROIC of 12-16% is good rather than exceptional.",
+    "Insider CEO Ronchetti has accelerated execution with 15% revenue growth and 27% earnings growth in H1 2025/26, and the M&A machine has delivered 5.9% acquisition profit contribution — but board insider ownership below 1% is a weakness.",
+    "Net debt/EBITDA of 1.03x against a 3.5x covenant, 12.8x interest coverage, staggered maturities through 2029+, and stress test survival through a 30% two-year revenue drop — this balance sheet is a strategic weapon.",
+    "At 42x trailing earnings and 40x owner earnings, the stock requires ~12-13% annual earnings compounding for a decade with zero stumbles — pricing in perfection with no margin for error.",
+    "Current price of 3,834 GBp sits 44% above Base IV and 131% above Bear IV, creating 2:1 downside-to-upside asymmetry — zero price margin of safety.",
+    "Sell if acquisition ROIC declines below cost of capital across two consecutive years, signalling the M&A engine that underpins the entire compounding model has broken."
+  ],
+  "source_summary": "Halma FY2025 full-year results, H1 2025/26 half-year results, March 2026 trading update, halma.com corporate pages, Yahoo Finance, AlphaSpread, GuruFocus, Morningstar, analyst consensus (17 analysts), Roper Technologies and Danaher public filings for peer comparison. Auto-fetched financials via yfinance.",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Outstanding business quality (scores 7-8 across fundamentals) but severe overvaluation (42x P/E, negative MOS) drives Pass verdict. Watchlist candidate at ~2,700 GBp or below."
+}

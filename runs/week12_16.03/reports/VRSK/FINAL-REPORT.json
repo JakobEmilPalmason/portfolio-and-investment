@@ -1,0 +1,69 @@
+{
+  "ticker": "VRSK",
+  "company": "Verisk Analytics",
+  "analysis_date": "2026-03-22",
+  "verdict": "Own",
+  "average_score": 7.75,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 7,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Quasi-regulatory monopoly as designated statistical agent for all U.S. P&C insurers with 50+ years of entrenchment",
+    "85% recurring subscription revenue with 92% client retention and near-zero voluntary churn",
+    "Elite business economics: 25%+ ROIC, 56% EBITDA margins, $1.2B FCF on $244M capex",
+    "Layered moat: regulatory embeddedness + extreme switching costs + 30B+ record data flywheel + scale",
+    "Disciplined capital allocation: $3.6B divestitures to focus franchise, 15% share count reduction in 5 years"
+  ],
+  "key_risks": [
+    "No price margin of safety: $204 exceeds quant conservative IV of $132 by 55% and AI bear case of $195 by 5%",
+    "Elevated debt ($4.9B, 2.9x EBITDA) from failed AccuLynx acquisition and debt-funded buybacks",
+    "80% revenue concentration in U.S. P&C insurance industry — structural shift would be hard to offset",
+    "Buybacks executed across wide price range including near all-time highs — not all value-accretive",
+    "International moat significantly narrower than domestic — growth outside U.S. may disappoint"
+  ],
+  "red_flags": [
+    "Book equity essentially zero ($309M) after $6B+ in buybacks — no tangible book value cushion",
+    "Net income declined 5% YoY despite 7% revenue growth due to higher interest expense",
+    "AccuLynx dispute unresolved — potential litigation costs or settlement",
+    "Management willing to lever up to 2.9x Debt/EBITDA for acquisitions"
+  ],
+  "buy_triggers": [
+    "Price drops below $185 (5% below AI bear-case IV) providing genuine margin of safety",
+    "FY2026 Q1 earnings confirm 20%+ EPS growth with continued margin expansion",
+    "Debt/EBITDA normalizes below 2.0x as AccuLynx-related debt is fully retired"
+  ],
+  "sell_triggers": [
+    "Organic revenue growth below 4% for two consecutive quarters",
+    "Customer retention falls below 85%",
+    "Debt/EBITDA exceeds 4.0x without clear deleveraging plan or shift to dilutive M&A"
+  ],
+  "valuation_summary": "Quant DCF model places bear/base/bull IV at $132/$198/$274 per share; AI analyst estimates $195/$270/$360. At $204 and 24x forward earnings, the stock trades near the quant base case but well below the AI base case. Monte Carlo simulation shows 62% probability of undervaluation. Market is pricing utility-like growth when business compounds EPS at mid-teens rates.",
+  "iv_conservative": 132.01,
+  "iv_base": 198.32,
+  "iv_bull": 273.98,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -54.8,
+  "monte_carlo_prob_above_price": 0.6242,
+  "sensitivity_iv_range": [163.02, 283.45],
+  "compact_checklist": [
+    "Verisk sells subscription data, standardized forms, and catastrophe models to ~90% of U.S. P&C insurers, who keep buying because the data is embedded in their regulatory filings, underwriting workflows, and claims processes.",
+    "Verisk is the legally designated statistical agent in all U.S. states with a 30B+ record contributory data flywheel and switching costs so high that migration would require insurers to rebuild years of regulatory filings, retrain staff, and risk compliance failures.",
+    "ROIC has averaged ~24% over four years, EBITDA margins hit 56%, and $1.19B in FCF was generated on just $244M of capex — a 4.9x FCF-to-capex ratio with 131% FCF conversion.",
+    "CEO Shavel divested $3.6B of non-core businesses to focus the franchise, reduced the share count 15% in five years with minimal SBC dilution ($54M), and commits 75%+ of FCF to shareholder returns.",
+    "Pro forma leverage is 1.9x EBITDA with all fixed-rate debt, $1.2B annual FCF covers interest 7x over, and even a 30% revenue decline still produces positive FCF — the business survives any plausible recession.",
+    "At $204 and 24x forward earnings, the market must believe Verisk grows like a utility at 6-7% with zero margin expansion — any re-rating toward its historical 30x+ multiple on consensus 20% EPS growth delivers 30%+ upside.",
+    "The business itself is the margin of safety — 85% recurring revenue, 92% retention, and a quasi-regulatory monopoly that has never experienced a meaningful revenue disruption in 55 years — though the price offers no discount to the $195 bear-case IV.",
+    "Organic revenue growth below 4% for two consecutive quarters or customer retention falling below 85% would signal the moat is eroding and the compounding thesis is broken."
+  ],
+  "source_summary": "Verisk 10-K FY2025, Q4 2025 earnings release, February 2026 senior notes prospectus, proxy statement 2025, Yahoo Finance, StockAnalysis.com, Seeking Alpha, Morningstar, analyst consensus (22 analysts), quant DCF model with CAPM WACC and Monte Carlo simulation",
+  "confidence": "high",
+  "change_notes": "Reassembly: updated IV values from quant DCF model (bear $132, base $198, bull $274 vs prior AI estimates of $195/$270/$360). MOS at analysis now -54.8% per quant model. Added Monte Carlo probability (62.4% undervalued) and sensitivity IV range ($163-$283). Verdict unchanged at Own — business quality scores remain strong (avg 7.75)."
+}

@@ -48,6 +48,9 @@ POLICY = {
 VERDICT_RANK = {"Own": 2, "Watch": 1, "Pass": 0}
 CONFIDENCE_RANK = {"high": 2, "medium": 1, "low": 0}
 
+# Cash-equivalent instruments — exempt from report/verdict/thesis policy checks
+CASH_EQUIVALENTS = {"BIL", "SHV", "SGOV", "TBIL"}
+
 TAG_SECTOR = {
     "healthcare": "Healthcare", "managed_care": "Healthcare",
     "glp1": "Healthcare", "pharma": "Healthcare", "medtech": "Healthcare",
@@ -207,6 +210,10 @@ class PortfolioEngine:
         The caller decides whether to block (hard always blocks,
         soft blocks unless the user forces).
         """
+        # Cash equivalents are exempt from all policy checks
+        if ticker in CASH_EQUIVALENTS:
+            return []
+
         violations: list[dict] = []
         portfolio = self.load()
         total_capital = portfolio.initial_capital + sum(
@@ -325,7 +332,7 @@ class PortfolioEngine:
             })
 
         # --- Buy/short-specific checks ---
-        if action in ("buy", "short"):
+        if action in ("buy", "short") and ticker not in CASH_EQUIVALENTS:
             report = _find_report(ticker)
             if report:
                 verdict = report.get("verdict", "")
@@ -461,7 +468,10 @@ class PortfolioEngine:
             company = qe.get("company", "")
         elif report:
             company = report.get("company", "")
-        sector = _derive_sector(qe.get("tags", [])) if qe else "Other"
+        if ticker in CASH_EQUIVALENTS:
+            sector = "Cash"
+        else:
+            sector = _derive_sector(qe.get("tags", [])) if qe else "Other"
         verdict = report.get("verdict", "") if report else ""
         score = D(str(report.get("average_score", 0))) if report else D("0")
 

@@ -27,7 +27,19 @@ from dashboard.data import (
     queue_state_color,
     rebuild_search,
 )
-from dashboard.theme import pill, render_hero, render_kicker
+from dashboard.theme import (
+    freshness_dot,
+    pill,
+    priority_badge,
+    render_hero,
+    render_kicker,
+    render_markdown_styled,
+    score_dots,
+    score_row_html,
+    state_badge,
+    verdict_badge,
+    _score_color,
+)
 
 try:
     from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
@@ -300,16 +312,21 @@ def show_report_dialog(ticker: str) -> None:
         with score_cols[0]:
             if not detail["scores"].empty:
                 st.subheader("Scoreboard")
-                st.dataframe(
-                    detail["scores"][["Category", "Score"]],
-                    use_container_width=True,
-                    hide_index=True,
+                scores_html = "".join(
+                    score_row_html(row["Category"], row["Score"])
+                    for _, row in detail["scores"].iterrows()
                 )
+                st.markdown(scores_html, unsafe_allow_html=True)
         with score_cols[1]:
             st.subheader("Queue State")
-            st.write(f"State: {queue_entry.get('current_state', 'N/A')}")
-            st.write(f"Thesis: {queue_entry.get('thesis_status', 'N/A')}")
-            st.write(f"Next action: {queue_entry.get('next_required_action', 'N/A')}")
+            queue_html = (
+                f'<div>{state_badge(queue_entry.get("current_state"))}</div>'
+                f'<div style="margin-top:0.5rem;color:var(--muted);font-size:0.9rem;">'
+                f'Thesis: {html.escape(str(queue_entry.get("thesis_status", "N/A")))}</div>'
+                f'<div style="color:var(--muted);font-size:0.9rem;">'
+                f'Next: {html.escape(str(queue_entry.get("next_required_action", "N/A")).replace("_", " "))}</div>'
+            )
+            st.markdown(queue_html, unsafe_allow_html=True)
 
         info_cols = st.columns(2)
         with info_cols[0]:
@@ -334,7 +351,7 @@ def show_report_dialog(ticker: str) -> None:
         with st.expander("Full report", expanded=False):
             if detail["md_path"] and detail["markdown"]:
                 st.caption(detail["md_path"])
-                st.markdown(detail["markdown"])
+                render_markdown_styled(detail["markdown"])
             else:
                 st.info("No markdown report was found for this ticker.")
 
@@ -514,11 +531,15 @@ def render_research_page() -> None:
 
     if not detail["scores"].empty:
         st.subheader("Scores")
-        st.dataframe(detail["scores"][["Category", "Score"]], use_container_width=True, hide_index=True)
+        scores_html = "".join(
+            score_row_html(row["Category"], row["Score"])
+            for _, row in detail["scores"].iterrows()
+        )
+        st.markdown(f'<div class="surface-card">{scores_html}</div>', unsafe_allow_html=True)
 
     st.subheader("Full Report")
     if detail["markdown"]:
-        st.markdown(detail["markdown"])
+        render_markdown_styled(detail["markdown"])
     else:
         st.info("No markdown report was found for this ticker.")
 
@@ -550,22 +571,49 @@ def render_overview_section(
     with left:
         st.subheader("What needs attention now")
         if attention.empty:
-            st.info("Queue data is empty.")
+            st.markdown('<div class="empty-panel">Nothing urgent surfaced from the queue.</div>', unsafe_allow_html=True)
         else:
-            display = attention[
-                ["ticker", "company", "current_state", "priority", "freshness_status", "days_since_analysis"]
-            ].rename(
-                columns={
-                    "ticker": "Ticker",
-                    "company": "Company",
-                    "current_state": "State",
-                    "priority": "Priority",
-                    "freshness_status": "Freshness",
-                    "days_since_analysis": "Days",
-                }
+            rows_html = []
+            for _, row in attention.iterrows():
+                why = []
+                if row.get("current_state") == "deep_research":
+                    why.append("deep research")
+                fs = row.get("freshness_status", "never")
+                ds = row.get("days_since_analysis")
+                if fs == "stale" and ds is not None:
+                    why.append(f"{int(ds)}d stale")
+                elif fs == "aging" and ds is not None:
+                    why.append(f"{int(ds)}d aging")
+                if row.get("priority") == "high":
+                    why.append("high priority")
+                nra = row.get("next_required_action")
+                if nra:
+                    why.append(nra.replace("_", " "))
+                last_date = row.get("last_analysis_date") or ""
+                date_line = f"Last analysis {last_date}" if last_date else "No report on disk yet"
+                rows_html.append(
+                    f'<tr>'
+                    f'<td><div class="table-symbol">{html.escape(str(row["ticker"]))}</div>'
+                    f'<div class="table-meta">{html.escape(str(row.get("company") or ""))}</div></td>'
+                    f'<td><div class="queue-badge-stack">{state_badge(row.get("current_state"))}'
+                    f' {priority_badge(row.get("priority"))}</div></td>'
+                    f'<td><div style="color:var(--text);font-size:13px;">{html.escape(" · ".join(why) or "Needs review")}</div>'
+                    f'<div class="table-meta">{html.escape(date_line)}</div></td>'
+                    f'</tr>'
+                )
+            table_html = (
+                '<table class="mini-table"><thead><tr>'
+                '<th>Name</th><th>Status</th><th>Why Now</th>'
+                '</tr></thead><tbody>' + "".join(rows_html) + '</tbody></table>'
             )
-            selected = _render_grid(display, key="overview-attention-grid", selection=True)
-            _handle_grid_selection(selected, "overview_grid_selection")
+            st.markdown(table_html, unsafe_allow_html=True)
+            # Interaction buttons
+            btn_cols = st.columns(min(len(attention), 6))
+            for idx, (_, row) in enumerate(attention.iterrows()):
+                if idx < len(btn_cols) and btn_cols[idx].button(
+                    row["ticker"], key=f"attn-{row['ticker']}", use_container_width=True
+                ):
+                    _select_report_ticker(row["ticker"])
     with right:
         st.subheader("Portfolio health")
         st.markdown(
@@ -587,14 +635,34 @@ def render_overview_section(
     with lower_left:
         st.subheader("Newest completed work")
         if latest_reports:
+            report_rows = []
             for item in latest_reports:
-                cols = st.columns([0.18, 0.52, 0.3])
-                cols[0].markdown(pill(item["ticker"], "accent"), unsafe_allow_html=True)
-                cols[1].write(f"{item['company']}")
-                if cols[2].button("Open", key=f"overview-report-{item['ticker']}", use_container_width=True):
+                score = item.get("average_score")
+                score_str = f"{score:.1f}" if score is not None else "\u2014"
+                score_color = _score_color(score)
+                report_rows.append(
+                    f'<tr>'
+                    f'<td><div class="table-symbol">{html.escape(item["ticker"])}</div>'
+                    f'<div class="table-meta">{html.escape(item.get("company") or "")}</div></td>'
+                    f'<td>{verdict_badge(item.get("verdict"))}</td>'
+                    f'<td style="text-align:right;"><span class="table-mono" style="color:{score_color}">{score_str}</span></td>'
+                    f'<td style="text-align:right;color:var(--muted);font-size:12px;">{html.escape(item.get("analysis_date") or "")}</td>'
+                    f'</tr>'
+                )
+            report_table = (
+                '<table class="mini-table"><thead><tr>'
+                '<th>Report</th><th>Verdict</th><th style="text-align:right">Score</th><th style="text-align:right">Date</th>'
+                '</tr></thead><tbody>' + "".join(report_rows) + '</tbody></table>'
+            )
+            st.markdown(report_table, unsafe_allow_html=True)
+            btn_cols = st.columns(min(len(latest_reports), 6))
+            for idx, item in enumerate(latest_reports):
+                if idx < len(btn_cols) and btn_cols[idx].button(
+                    item["ticker"], key=f"recent-{item['ticker']}", use_container_width=True
+                ):
                     _select_report_ticker(item["ticker"])
         else:
-            st.info("No completed reports found.")
+            st.markdown('<div class="empty-panel">No reports are available yet.</div>', unsafe_allow_html=True)
     with lower_right:
         st.subheader("Pipeline pulse")
         triage = pipeline.get("triage") or {}
@@ -637,24 +705,36 @@ def render_portfolio_section(portfolio: dict[str, Any]) -> None:
         return
 
     st.subheader("Current holdings")
-    st.dataframe(
-        positions.rename(
-            columns={
-                "ticker": "Ticker",
-                "company": "Company",
-                "side": "Side",
-                "shares": "Shares",
-                "cost_basis": "Cost Basis",
-                "current_price": "Current Price",
-                "current_value": "Current Value",
-                "unrealized_pnl": "Unrealized P&L",
-                "weight_pct": "Weight %",
-                "sector": "Sector",
-            }
-        ),
-        use_container_width=True,
-        hide_index=True,
+    holding_rows = []
+    for _, pos in positions.iterrows():
+        pnl = pos.get("unrealized_pnl", 0)
+        pnl_pct = (pnl / pos["cost_basis"] * 100) if pos.get("cost_basis") else 0
+        pnl_color = "var(--positive)" if pnl >= 0 else "var(--danger)"
+        side_badge = (
+            '<span class="badge b-pass">Short</span>'
+            if str(pos.get("side", "")).lower() == "short"
+            else '<span class="badge b-monitor-only">Long</span>'
+        )
+        holding_rows.append(
+            f'<tr>'
+            f'<td><div class="table-symbol">{html.escape(str(pos["ticker"]))}</div>'
+            f'<div class="table-meta">{html.escape(str(pos.get("sector") or ""))}</div></td>'
+            f'<td>{side_badge}</td>'
+            f'<td class="table-mono" style="text-align:right;">{pos.get("shares", 0):.0f}</td>'
+            f'<td class="table-mono" style="text-align:right;">${pos.get("current_price", 0):,.2f}</td>'
+            f'<td class="table-mono" style="text-align:right;">${pos.get("current_value", 0):,.0f}</td>'
+            f'<td class="table-mono" style="text-align:right;">{pos.get("weight_pct", 0):.1f}%</td>'
+            f'<td class="table-mono" style="text-align:right;color:{pnl_color};">${pnl:+,.0f} ({pnl_pct:+.1f}%)</td>'
+            f'</tr>'
+        )
+    holdings_html = (
+        '<div style="overflow-x:auto;"><table class="custom-table"><thead><tr>'
+        '<th>Holding</th><th>Side</th><th style="text-align:right">Shares</th>'
+        '<th style="text-align:right">Price</th><th style="text-align:right">Value</th>'
+        '<th style="text-align:right">Weight</th><th style="text-align:right">P&amp;L</th>'
+        '</tr></thead><tbody>' + "".join(holding_rows) + '</tbody></table></div>'
     )
+    st.markdown(holdings_html, unsafe_allow_html=True)
 
     charts = st.columns(2)
     with charts[0]:
@@ -666,8 +746,11 @@ def render_portfolio_section(portfolio: dict[str, Any]) -> None:
 
     if payload["policy_flags"]:
         st.subheader("Policy status")
-        st.warning("One or more positions are beyond the single-name hard limit.")
-        st.dataframe(pd.DataFrame(payload["policy_flags"]), use_container_width=True, hide_index=True)
+        warnings_html = "".join(
+            f'<div class="warning-item">{html.escape(f["ticker"])}: {html.escape(f["flag"])}</div>'
+            for f in payload["policy_flags"]
+        )
+        st.markdown(f'<div style="display:flex;flex-direction:column;gap:8px;">{warnings_html}</div>', unsafe_allow_html=True)
 
     if payload["price_fallbacks"]:
         st.caption(
@@ -794,36 +877,47 @@ def render_reports_section(reports: list[dict[str, Any]]) -> None:
                     _select_report_ticker(item["ticker"])
 
 
+def _sb_build_data_json(scoreboard: pd.DataFrame) -> str:
+    """Serialize scoreboard DataFrame to JSON for the JS-powered table."""
+    import json as _json
+
+    records = []
+    for _, row in scoreboard.iterrows():
+        rec = {}
+        for col in [
+            "ticker", "company", "verdict", "average_score",
+            "circle_of_competence", "competitive_advantage", "management", "business_economics",
+            "balance_sheet", "valuation", "margin_of_safety", "temperament",
+            "iv_conservative", "iv_base", "iv_bull", "mos_pct",
+            "confidence", "red_flag_count", "analysis_date",
+        ]:
+            v = row.get(col)
+            rec[col] = None if pd.isna(v) else v
+        records.append(rec)
+    return _json.dumps(records)
+
+
 def render_scoreboard_section(scoreboard: pd.DataFrame) -> None:
-    render_hero(
-        "Scoreboard",
-        "All analyzed tickers in one view. Filter the screener, then select a row to inspect the full report.",
-        [
-            {"label": "Analyzed", "value": str(len(scoreboard)), "meta": "latest per ticker", "tone": "tone-accent"},
-            {"label": "Own", "value": str((scoreboard["verdict"] == "Own").sum() if not scoreboard.empty else 0), "meta": "high conviction", "tone": "tone-positive"},
-            {"label": "Watch", "value": str((scoreboard["verdict"] == "Watch").sum() if not scoreboard.empty else 0), "meta": "monitoring", "tone": "tone-warning"},
-            {"label": "Pass", "value": str((scoreboard["verdict"] == "Pass").sum() if not scoreboard.empty else 0), "meta": "rejected", "tone": "tone-danger"},
-        ],
-    )
+    import streamlit.components.v1 as components
 
     if scoreboard.empty:
-        st.info("No analyzed reports found.")
+        st.markdown(
+            '<div class="empty-panel">No analyzed reports found. Run the analysis pipeline first.</div>',
+            unsafe_allow_html=True,
+        )
         return
 
-    controls = st.columns([1, 1, 1])
-    verdict = controls[0].selectbox(
-        "Verdict",
-        options=["", "Own", "Watch", "Pass"],
-        format_func=lambda value: value or "All",
-        key="scoreboard-verdict",
+    # Streamlit filters for server-side filtering
+    filter_cols = st.columns([1.2, 1.2, 1.5, 0.6])
+    verdict = filter_cols[0].selectbox(
+        "Verdict", options=["", "Own", "Watch", "Pass"],
+        format_func=lambda v: v or "All", key="sb-verdict",
     )
-    confidence = controls[1].selectbox(
-        "Confidence",
-        options=["", "high", "medium", "low"],
-        format_func=lambda value: value.title() if value else "All",
-        key="scoreboard-confidence",
+    confidence = filter_cols[1].selectbox(
+        "Confidence", options=["", "high", "medium", "low"],
+        format_func=lambda v: v.title() if v else "All", key="sb-confidence",
     )
-    min_score = controls[2].slider("Minimum average score", 0.0, 10.0, 0.0, 0.5, key="scoreboard-min")
+    min_score = filter_cols[2].slider("Min score", 0.0, 10.0, 0.0, 0.5, key="sb-min")
 
     filtered = scoreboard.copy()
     if verdict:
@@ -833,9 +927,180 @@ def render_scoreboard_section(scoreboard: pd.DataFrame) -> None:
     if min_score > 0:
         filtered = filtered[pd.to_numeric(filtered["average_score"], errors="coerce") >= min_score]
 
-    st.caption(f"{len(filtered)} of {len(scoreboard)} rows shown")
-    selected = _render_grid(filtered.reindex(columns=SCOREBOARD_ORDER), key="scoreboard-grid", selection=True)
-    _handle_grid_selection(selected, "scoreboard_grid_selection")
+    filter_cols[3].markdown(f"**{len(filtered)}** / {len(scoreboard)}")
+
+    data_json = _sb_build_data_json(filtered)
+
+    # Height: 50px per row + 60px header + 40px padding, capped
+    row_count = len(filtered)
+    height = min(60 + row_count * 50 + 40, 860)
+
+    scoreboard_html = f"""
+<!DOCTYPE html>
+<html><head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root {{
+  color-scheme: dark;
+  --bg: #0c0a09; --surface: #1c1917; --surface-strong: #292524;
+  --border: rgba(68, 64, 60, 0.82); --border-strong: rgba(120, 113, 108, 0.9);
+  --text: #fafaf9; --muted: #a8a29e; --subtle: #78716c;
+  --accent: #c15f3c; --positive: #86efac; --warning: #fbbf24; --danger: #fca5a5;
+}}
+* {{ margin:0; padding:0; box-sizing:border-box; }}
+body {{ background:transparent; font-family:'Manrope',system-ui,sans-serif; color:var(--text); overflow:hidden; }}
+.mono {{ font-family:'JetBrains Mono',monospace; }}
+.wrap {{ overflow:auto; max-height:{height - 20}px; border-radius:12px; border:1px solid var(--border); }}
+table {{ width:100%; min-width:1200px; border-collapse:separate; border-spacing:0; }}
+thead {{ position:sticky; top:0; z-index:2; }}
+th {{
+  padding:14px 14px; background:rgba(12,10,9,0.96); border-bottom:1px solid rgba(68,64,60,0.9);
+  font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase;
+  text-align:center; color:var(--subtle); white-space:nowrap; cursor:pointer; user-select:none;
+  position:relative;
+}}
+th:nth-child(1), th:nth-child(2) {{ text-align:left; }}
+th:hover {{ color:var(--text); }}
+th .tip {{
+  display:none; position:absolute; left:50%; top:100%; transform:translateX(-50%); z-index:10;
+  white-space:normal; width:max-content; max-width:260px; padding:8px 12px; border-radius:8px;
+  font-size:12px; font-weight:500; letter-spacing:0; text-transform:none; line-height:1.45;
+  color:var(--text); background:var(--surface-strong); border:1px solid var(--border-strong);
+  box-shadow:0 8px 24px rgba(0,0,0,0.5); pointer-events:none;
+}}
+th:hover .tip {{ display:block; }}
+td {{
+  padding:12px 14px; border-bottom:1px solid rgba(68,64,60,0.46);
+  font-size:14px; text-align:center; color:var(--text);
+}}
+td:first-child {{ text-align:left; }}
+td:nth-child(2) {{ text-align:left; }}
+tbody tr:last-child td {{ border-bottom:none; }}
+tbody tr:hover td {{ background:rgba(41,37,36,0.42); }}
+.sym {{ font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--accent); cursor:pointer; }}
+.co {{ max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--muted); }}
+.empty {{ padding:42px 16px; text-align:center; color:var(--muted); font-size:13px; }}
+::-webkit-scrollbar {{ width:8px; height:8px; }}
+::-webkit-scrollbar-track {{ background:transparent; }}
+::-webkit-scrollbar-thumb {{ background:rgba(148,163,184,0.18); border-radius:999px; }}
+::-webkit-scrollbar-thumb:hover {{ background:rgba(148,163,184,0.28); }}
+</style>
+</head><body>
+<div class="wrap"><table><thead><tr id="hdr"></tr></thead><tbody id="tbody"></tbody></table></div>
+<script>
+const DATA = {data_json};
+const COLS = [
+  'ticker','company','verdict','average_score',
+  'circle_of_competence','competitive_advantage','management','business_economics',
+  'balance_sheet','valuation','margin_of_safety','temperament',
+  'iv_conservative','iv_base','iv_bull','mos_pct',
+  'confidence','red_flag_count','analysis_date'
+];
+const HEADERS = {{
+  ticker:'Ticker',company:'Company',verdict:'Verdict',average_score:'Avg',
+  circle_of_competence:'CoC',competitive_advantage:'Moat',management:'Mgmt',
+  business_economics:'Econ',balance_sheet:'B/S',valuation:'Val',
+  margin_of_safety:'MoS',temperament:'Temp',
+  iv_conservative:'IV Bear',iv_base:'IV Base',iv_bull:'IV Bull',
+  mos_pct:'MOS %',confidence:'Conf',red_flag_count:'Flags',analysis_date:'Date'
+}};
+const TIPS = {{
+  ticker:'Stock ticker symbol',company:'Company name',verdict:'Investment decision: Own, Watch, or Pass',
+  average_score:'Average of all 8 umbrella scores (0-10)',
+  circle_of_competence:'Circle of Competence',competitive_advantage:'Durable Competitive Advantage',
+  management:'Management & Capital Allocation',business_economics:'Business Economics',
+  balance_sheet:'Balance Sheet Safety',valuation:'Valuation vs intrinsic value',
+  margin_of_safety:'Margin of Safety',temperament:'Temperament & Time Horizon',
+  iv_conservative:'Bear-case IV per share',iv_base:'Base-case IV per share',iv_bull:'Bull-case IV per share',
+  mos_pct:'Margin of Safety % (negative = overvalued)',confidence:'Confidence level',
+  red_flag_count:'Number of red flags',analysis_date:'Analysis completion date'
+}};
+const UMBRELLAS = new Set(['circle_of_competence','competitive_advantage','management','business_economics','balance_sheet','valuation','margin_of_safety','temperament','average_score']);
+const IVS = new Set(['iv_conservative','iv_base','iv_bull']);
+
+function esc(s) {{ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }}
+function scoreStyle(v) {{ if(v==null)return''; return v<4?'color:var(--danger);font-weight:700;':v<7?'color:var(--warning);font-weight:700;':'color:var(--positive);font-weight:700;'; }}
+function mosStyle(v) {{ if(v==null)return''; return v>=0?'color:var(--positive);font-weight:700;':'color:var(--danger);font-weight:700;'; }}
+function verdictStyle(v) {{ if(v==='Own')return'color:var(--positive);font-weight:700;'; if(v==='Watch')return'color:var(--warning);font-weight:700;'; if(v==='Pass')return'color:var(--danger);font-weight:700;'; return''; }}
+
+let sortKey='average_score', sortDir='desc';
+
+function cell(key,val) {{
+  const mono="font-family:'JetBrains Mono',monospace;";
+  if(key==='ticker') return `<td class="sym">${{esc(val||'—')}}</td>`;
+  if(key==='company') return `<td class="co">${{esc(val||'—')}}</td>`;
+  if(key==='verdict') return `<td style="text-align:center;${{verdictStyle(val)}}">${{esc(val||'—')}}</td>`;
+  if(UMBRELLAS.has(key)) {{
+    let d=val!=null?(key==='average_score'?Number(val).toFixed(1):String(val)):'—';
+    return `<td style="text-align:center;${{mono}}${{scoreStyle(val)}}">${{d}}</td>`;
+  }}
+  if(IVS.has(key)) {{
+    let d=val!=null?'$'+Number(val).toLocaleString(undefined,{{maximumFractionDigits:0}}):'—';
+    return `<td style="text-align:center;${{mono}}color:var(--text);">${{d}}</td>`;
+  }}
+  if(key==='mos_pct') {{
+    let d=val!=null?(val>=0?'+':'')+Number(val).toFixed(1)+'%':'—';
+    return `<td style="text-align:center;${{mono}}${{mosStyle(val)}}">${{d}}</td>`;
+  }}
+  if(key==='confidence') {{
+    let raw=String(val||'—'), first=raw.split(/[\\s]/)[0].toLowerCase();
+    let c=first==='high'?'var(--positive)':first==='medium'?'var(--warning)':first==='low'?'var(--danger)':'var(--subtle)';
+    let label=first.charAt(0).toUpperCase()+first.slice(1);
+    return `<td title="${{esc(raw)}}" style="text-align:center;color:${{c}};font-size:11px;font-weight:600;text-transform:uppercase;">${{esc(label)}}</td>`;
+  }}
+  if(key==='red_flag_count') {{
+    let s=val>0?'color:var(--danger);font-weight:600;':'color:var(--subtle);';
+    return `<td style="text-align:center;${{s}}">${{val!=null?val:'—'}}</td>`;
+  }}
+  if(key==='analysis_date') {{
+    let d=val?String(val).replace(/-/g,'/'):'—';
+    return `<td style="text-align:center;color:var(--muted);${{mono}}font-size:11px;">${{esc(d)}}</td>`;
+  }}
+  return `<td style="color:var(--text);">${{esc(val!=null?val:'—')}}</td>`;
+}}
+
+function render() {{
+  const hdr=document.getElementById('hdr');
+  const tbody=document.getElementById('tbody');
+  const arrow=k=>sortKey===k?(sortDir==='desc'?' ↓':' ↑'):'';
+  hdr.innerHTML=COLS.map(k=>`<th>${{esc(HEADERS[k])}}${{arrow(k)}}<span class="tip">${{esc(TIPS[k]||'')}}</span></th>`).join('');
+  hdr.querySelectorAll('th').forEach((th,i)=>th.addEventListener('click',()=>sortBy(COLS[i])));
+
+  if(!DATA.length) {{ tbody.innerHTML='<tr><td colspan="19" class="empty">No tickers match the current filters.</td></tr>'; return; }}
+  tbody.innerHTML=DATA.map(r=>'<tr>'+COLS.map(k=>cell(k,r[k])).join('')+'</tr>').join('');
+}}
+
+function sortBy(key) {{
+  if(sortKey===key) sortDir=sortDir==='desc'?'asc':'desc';
+  else {{ sortKey=key; sortDir='desc'; }}
+  const dir=sortDir==='desc'?-1:1;
+  DATA.sort((a,b)=>{{
+    let va=a[key],vb=b[key];
+    if(va==null&&vb==null)return 0;
+    if(va==null)return 1; if(vb==null)return -1;
+    if(typeof va==='string')return va.localeCompare(vb)*dir;
+    return(va-vb)*dir;
+  }});
+  render();
+}}
+
+// Initial sort
+sortBy('average_score');
+</script>
+</body></html>
+"""
+    components.html(scoreboard_html, height=height, scrolling=False)
+
+    # Ticker buttons for opening reports (JS can't trigger Streamlit callbacks)
+    tickers = filtered["ticker"].tolist() if not filtered.empty else []
+    if tickers:
+        st.caption("Click a ticker to open its report:")
+        rows_of_buttons = [tickers[i:i + 10] for i in range(0, min(len(tickers), 40), 10)]
+        for btn_row in rows_of_buttons:
+            cols = st.columns(len(btn_row))
+            for idx, ticker in enumerate(btn_row):
+                if cols[idx].button(ticker, key=f"sb-open-{ticker}", use_container_width=True):
+                    _select_report_ticker(ticker)
 
 
 def render_pipeline_section(pipeline: dict[str, Any], report_count: int) -> None:

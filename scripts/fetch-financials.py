@@ -670,24 +670,239 @@ def generate_markdown(symbol, data):
 
 
 # ---------------------------------------------------------------------------
+# JSON structured output (for quant module — bypasses markdown round-trip)
+# ---------------------------------------------------------------------------
+
+def _ts_from_df(df, key, col_indices=None):
+    """Extract a time-series dict {fiscal_year_int: float} from a DataFrame row."""
+    if df is None or df.empty or key not in df.index:
+        return {}
+    cols = df.columns if col_indices is None else [df.columns[i] for i in col_indices]
+    result = {}
+    for i, col in enumerate(cols):
+        val = safe_get(df, key, i)
+        if val is not None:
+            year = col.year if hasattr(col, "year") else int(str(col)[:4])
+            result[year] = val
+    return result
+
+
+def _ts_derived(fn, *dfs_and_len):
+    """Build a time-series dict from a compute_* function that takes (dfs..., col_idx).
+
+    Usage: _ts_derived(compute_roic, income_stmt, balance_sheet, n_cols)
+    """
+    *dfs, n_cols = dfs_and_len
+    ref_df = dfs[0]
+    result = {}
+    for i in range(n_cols):
+        val = fn(*dfs, i)
+        if val is not None:
+            col = ref_df.columns[i]
+            year = col.year if hasattr(col, "year") else int(str(col)[:4])
+            result[year] = val
+    return result
+
+
+def generate_json(symbol, data):
+    """Generate a structured JSON dict mirroring FinancialData fields exactly."""
+    info = data["info"]
+    income_stmt = data["income_stmt"]
+    balance_sheet = data["balance_sheet"]
+    cash_flow = data["cash_flow"]
+
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    name = info.get("longName") or info.get("shortName") or symbol
+
+    # P/FCF (computed, same logic as render_valuation_multiples)
+    mcap = info.get("marketCap")
+    fcf_val = info.get("freeCashflow")
+    if not fcf_val and cash_flow is not None:
+        fcf_val = safe_get(cash_flow, "Free Cash Flow", 0)
+    p_fcf = (mcap / fcf_val) if (mcap and fcf_val and fcf_val > 0) else None
+
+    # Number of income statement columns (drives time-series length)
+    n_income = len(income_stmt.columns) if income_stmt is not None and not income_stmt.empty else 0
+    n_bs = len(balance_sheet.columns) if balance_sheet is not None and not balance_sheet.empty else 0
+    n_cf = len(cash_flow.columns) if cash_flow is not None and not cash_flow.empty else 0
+
+    # --- Margins (derived, same as render_margins) ---
+    def _margin_ts(num_key, denom_key):
+        if income_stmt is None or income_stmt.empty:
+            return {}
+        result = {}
+        for i in range(n_income):
+            num = safe_get(income_stmt, num_key, i)
+            denom = safe_get(income_stmt, denom_key, i)
+            if num is not None and denom and denom != 0:
+                col = income_stmt.columns[i]
+                year = col.year if hasattr(col, "year") else int(str(col)[:4])
+                result[year] = num / denom
+        return result
+
+    def _fcf_margin_ts():
+        if cash_flow is None or cash_flow.empty or income_stmt is None or income_stmt.empty:
+            return {}
+        result = {}
+        for i in range(n_income):
+            fcf = safe_get(cash_flow, "Free Cash Flow", i) if i < n_cf else None
+            rev = safe_get(income_stmt, "Total Revenue", i)
+            if fcf is not None and rev and rev != 0:
+                col = income_stmt.columns[i]
+                year = col.year if hasattr(col, "year") else int(str(col)[:4])
+                result[year] = fcf / rev
+        return result
+
+    # --- Debt ratios (derived, same as render_debt_safety) ---
+    def _ratio_ts(bs_num_key, is_denom_key, use_bs_for_denom=False):
+        if income_stmt is None or balance_sheet is None or income_stmt.empty or balance_sheet.empty:
+            return {}
+        result = {}
+        for i in range(n_income):
+            num = safe_get(balance_sheet, bs_num_key, i) if i < n_bs else None
+            if use_bs_for_denom:
+                denom = safe_get(balance_sheet, is_denom_key, i) if i < n_bs else None
+            else:
+                denom = safe_get(income_stmt, is_denom_key, i)
+            if num is not None and denom and denom != 0:
+                col = income_stmt.columns[i]
+                year = col.year if hasattr(col, "year") else int(str(col)[:4])
+                result[year] = num / denom
+        return result
+
+    # Interest coverage needs special handling (uses abs)
+    def _interest_coverage_ts():
+        result = {}
+        for i in range(n_income):
+            val = compute_interest_coverage(income_stmt, i)
+            if val is not None:
+                col = income_stmt.columns[i]
+                year = col.year if hasattr(col, "year") else int(str(col)[:4])
+                result[year] = val
+        return result
+
+    result = {
+        # Metadata
+        "ticker": symbol,
+        "company": name,
+        "generated_date": now,
+        "reporting_currency": info.get("financialCurrency", "USD"),
+        "trading_currency": info.get("currency", info.get("financialCurrency", "USD")),
+        "sector": info.get("sector", ""),
+        "industry": info.get("industry", ""),
+
+        # Snapshot scalars
+        "current_price": info.get("currentPrice") or info.get("regularMarketPrice"),
+        "market_cap": info.get("marketCap"),
+        "enterprise_value": info.get("enterpriseValue"),
+        "shares_outstanding": info.get("sharesOutstanding"),
+        "beta": info.get("beta"),
+        "dividend_yield": info.get("dividendYield"),
+        "week52_high": info.get("fiftyTwoWeekHigh"),
+        "week52_low": info.get("fiftyTwoWeekLow"),
+
+        # Valuation multiples
+        "trailing_pe": info.get("trailingPE"),
+        "forward_pe": info.get("forwardPE"),
+        "ev_ebitda": info.get("enterpriseToEbitda"),
+        "ev_revenue": info.get("enterpriseToRevenue"),
+        "p_fcf": p_fcf,
+        "p_s": info.get("priceToSalesTrailing12Months"),
+        "p_b": info.get("priceToBook"),
+
+        # Analyst estimates
+        "forward_eps": info.get("forwardEps"),
+        "trailing_eps": info.get("trailingEps"),
+        "target_mean": info.get("targetMeanPrice"),
+        "target_median": info.get("targetMedianPrice"),
+        "target_high": info.get("targetHighPrice"),
+        "target_low": info.get("targetLowPrice"),
+        "num_analysts": info.get("numberOfAnalystOpinions"),
+
+        # Income statement time-series
+        "revenue": _ts_from_df(income_stmt, "Total Revenue"),
+        "gross_profit": _ts_from_df(income_stmt, "Gross Profit"),
+        "operating_income": _ts_from_df(income_stmt, "Operating Income"),
+        "ebitda": _ts_from_df(income_stmt, "EBITDA"),
+        "net_income": _ts_from_df(income_stmt, "Net Income"),
+        "diluted_eps": _ts_from_df(income_stmt, "Diluted EPS"),
+        "interest_expense": _ts_from_df(income_stmt, "Interest Expense"),
+        "tax_provision": _ts_from_df(income_stmt, "Tax Provision"),
+        "rnd": _ts_from_df(income_stmt, "Research And Development"),
+        "da": _ts_from_df(income_stmt, "Reconciled Depreciation"),
+
+        # Margins (derived)
+        "gross_margin": _margin_ts("Gross Profit", "Total Revenue"),
+        "operating_margin": _margin_ts("Operating Income", "Total Revenue"),
+        "net_margin": _margin_ts("Net Income", "Total Revenue"),
+        "ebitda_margin": _margin_ts("EBITDA", "Total Revenue"),
+        "fcf_margin": _fcf_margin_ts(),
+
+        # Returns on capital (derived)
+        "roic": _ts_derived(compute_roic, income_stmt, balance_sheet, n_income) if n_income and n_bs else {},
+        "roe": _ts_derived(compute_roe, income_stmt, balance_sheet, n_income) if n_income and n_bs else {},
+        "roa": _ts_derived(compute_roa, income_stmt, balance_sheet, n_income) if n_income and n_bs else {},
+
+        # Cash flow
+        "operating_cf": _ts_from_df(cash_flow, "Operating Cash Flow"),
+        "capex": _ts_from_df(cash_flow, "Capital Expenditure"),
+        "fcf": _ts_from_df(cash_flow, "Free Cash Flow"),
+        "cf_da": _ts_from_df(cash_flow, "Depreciation And Amortization"),
+        "sbc": _ts_from_df(cash_flow, "Stock Based Compensation"),
+        "buybacks": _ts_from_df(cash_flow, "Repurchase Of Capital Stock"),
+        "fcf_conversion": _ts_derived(compute_fcf_conversion, income_stmt, cash_flow, n_income) if n_income and n_cf else {},
+        "owner_earnings": _ts_derived(compute_owner_earnings, income_stmt, cash_flow, n_income) if n_income and n_cf else {},
+
+        # Balance sheet
+        "total_assets": _ts_from_df(balance_sheet, "Total Assets"),
+        "total_debt": _ts_from_df(balance_sheet, "Total Debt"),
+        "long_term_debt": _ts_from_df(balance_sheet, "Long Term Debt"),
+        "cash": _ts_from_df(balance_sheet, "Cash Cash Equivalents And Short Term Investments"),
+        "net_debt": _ts_from_df(balance_sheet, "Net Debt"),
+        "equity": _ts_from_df(balance_sheet, "Stockholders Equity"),
+        "invested_capital": _ts_from_df(balance_sheet, "Invested Capital"),
+        "current_assets": _ts_from_df(balance_sheet, "Current Assets"),
+        "current_liabilities": _ts_from_df(balance_sheet, "Current Liabilities"),
+        "working_capital": _ts_from_df(balance_sheet, "Working Capital"),
+
+        # Debt & safety ratios (derived)
+        "debt_ebitda": _ratio_ts("Total Debt", "EBITDA"),
+        "net_debt_ebitda": _ratio_ts("Net Debt", "EBITDA"),
+        "interest_coverage": _interest_coverage_ts(),
+        "current_ratio": _ratio_ts("Current Assets", "Current Liabilities", use_bs_for_denom=True),
+        "debt_equity": _ratio_ts("Total Debt", "Stockholders Equity", use_bs_for_denom=True),
+    }
+
+    return result
+
+
+# ---------------------------------------------------------------------------
 # File I/O
 # ---------------------------------------------------------------------------
 
-def write_context(symbol, markdown):
+def write_context(symbol, markdown, json_data=None):
     out_dir = CONTEXT_DIR / symbol
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / "financials.md"
     out_file.write_text(markdown, encoding="utf-8")
+    if json_data is not None:
+        json_file = out_dir / "financials.json"
+        json_file.write_text(json.dumps(json_data, indent=2, default=str) + "\n", encoding="utf-8")
     return out_file
 
 
 def is_fresh(symbol):
-    out_file = CONTEXT_DIR / symbol / "financials.md"
-    if not out_file.exists():
+    md_file = CONTEXT_DIR / symbol / "financials.md"
+    json_file = CONTEXT_DIR / symbol / "financials.json"
+    if not md_file.exists() or not json_file.exists():
         return False
-    mtime = datetime.fromtimestamp(out_file.stat().st_mtime, tz=timezone.utc)
-    age_hours = (datetime.now(timezone.utc) - mtime).total_seconds() / 3600
-    return age_hours < FRESHNESS_HOURS
+    now = datetime.now(timezone.utc)
+    for f in (md_file, json_file):
+        mtime = datetime.fromtimestamp(f.stat().st_mtime, tz=timezone.utc)
+        age_hours = (now - mtime).total_seconds() / 3600
+        if age_hours >= FRESHNESS_HOURS:
+            return False
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -736,7 +951,8 @@ def main():
         try:
             data = fetch_ticker_data(symbol)
             md = generate_markdown(symbol, data)
-            out = write_context(symbol, md)
+            jd = generate_json(symbol, data)
+            out = write_context(symbol, md, jd)
             size = out.stat().st_size
             if not args.quiet:
                 print(f"  [{i+1}/{len(tickers)}] {symbol} -> {out.relative_to(REPO_ROOT)} ({size // 1024} KB)")

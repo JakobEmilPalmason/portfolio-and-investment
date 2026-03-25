@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-and-investment",
+  "version": "1.0.0",
+  "description": "A Buffett-style investment analysis system powered by Claude Code agents. Each \"umbrella\" of analysis is handled by a specialized agent role, producing structured markdown and JSON reports.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "skillgrade": "^0.1.2"
+  }
+}

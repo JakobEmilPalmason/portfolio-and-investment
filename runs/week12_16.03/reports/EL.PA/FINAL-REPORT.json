@@ -1,0 +1,70 @@
+{
+  "ticker": "EL.PA",
+  "company": "EssilorLuxottica",
+  "analysis_date": "2026-03-23",
+  "verdict": "Own",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 9,
+    "margin_of_safety": 7,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "World's largest vertically integrated eyewear company with ~27% global market share and no comparable competitor",
+    "Non-discretionary demand driven by rising global myopia and aging demographics provides secular growth for decades",
+    "Triple moat: lens technology switching costs, iconic brand portfolio (Ray-Ban, Oakley, 20+ luxury licenses), and 18,000+ owned retail stores",
+    "FCF conversion above 140% of net income with tangible ROIC of 15-20% once merger goodwill is stripped",
+    "Trading at 22.5x forward P/E versus 5-year average of 30-35x, with 99.9% Monte Carlo probability of undervaluation"
+  ],
+  "key_risks": [
+    "Delfin succession crisis: founder's 8 heirs unable to agree on governance for 3 years, freezing dividends and creating strategic uncertainty",
+    "Smart glasses margin dilution: Ray-Ban Meta drove 280bps gross margin decline in FY2025; unclear if margins improve at scale",
+    "Tariff and FX headwinds: ~40% US revenue exposure with EUR reporting creates earnings translation risk",
+    "Apple's announced 2027 entry into smart glasses directly challenges Ray-Ban Meta growth narrative",
+    "Rising debt (+18% in 3 years) and declining interest coverage (20x to 11x) with ongoing M&A appetite"
+  ],
+  "red_flags": [
+    "Gross margin fell 280bps in a single year (60.6% vs 63.4%) -- largest annual decline in available history",
+    "CEO holds dual Chairman/CEO role with minimal direct equity ownership",
+    "Reported ROIC of 5.2% below WACC of 6.7% on GAAP basis due to EUR 30B goodwill",
+    "SBC increased 73% YoY (EUR 280M vs EUR 162M)",
+    "Price sits 10.5% above quant bear IV -- no traditional conservative margin of safety"
+  ],
+  "buy_triggers": [
+    "Price falls to EUR 175 or below (at or below bear IV), providing traditional margin of safety",
+    "Delfin succession resolved with Leonardo Maria gaining effective control, removing governance overhang",
+    "Smart glasses margins shown improving toward corporate average in FY2026 results"
+  ],
+  "sell_triggers": [
+    "Adjusted ROIC (ex-goodwill) falls below 8% for two consecutive years, indicating moat erosion",
+    "Stock reaches EUR 380-400 (bull IV territory, >20x forward EV/EBITDA)",
+    "Serial value-destroying acquisitions beyond Supreme signaling strategic drift from core optical competence"
+  ],
+  "valuation_summary": "Stock trades at EUR 194.75, a 32% discount to base IV of EUR 286 and 40% below November 2025 highs. Forward P/E of 22.5x is near a 5-year low despite record 11.2% organic revenue growth. All 25 DCF sensitivity grid cells produce IV above current price. Monte Carlo 5th percentile of EUR 247 is 27% above current price. The market is pricing in growth collapse and permanent multiple compression that contradicts FY2025 record results.",
+  "iv_conservative": 176.22,
+  "iv_base": 285.68,
+  "iv_bull": 411.34,
+  "iv_currency": "EUR",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -10.5,
+  "monte_carlo_prob_above_price": 0.9993,
+  "sensitivity_iv_range": [252.10, 428.73],
+  "compact_checklist": [
+    "EssilorLuxottica sells prescription lenses, branded eyewear frames, and smart glasses through 18,000+ owned stores and wholesale channels, driven by non-discretionary vision correction demand that grows with aging demographics and rising global myopia.",
+    "Vertical integration across lenses, frames, and retail at a scale no competitor can replicate, combined with optician switching costs on Essilor lens technology and the world's strongest eyewear brand portfolio (Ray-Ban, Oakley, 20+ luxury licenses), produces 60%+ gross margins and ~27% global market share.",
+    "Tangible ROIC is 15-20% once you strip EUR 30B of merger goodwill, FCF conversion runs above 140% of net income, and capex at 5.4% of revenue confirms asset-light compounding -- though gross margin fell 280bps in FY2025 from smart glasses mix dilution.",
+    "CEO Milleri has executed well operationally (11.2% constant-currency growth, margin expansion roadmap to 19-20%), but he holds minimal equity, serves as dual Chairman/CEO, and the Delfin controlling shareholder has been paralyzed by a three-year succession dispute among the founder's eight heirs.",
+    "Net debt/EBITDA of 1.1x, A2/A credit ratings, EUR 3.5B cash on hand, and EUR 3.8B annual FCF mean EssilorLuxottica would remain FCF-positive even in a 30% revenue decline scenario -- this balance sheet is a competitive weapon, not a liability.",
+    "At EUR 195 and a 22.5x forward P/E (versus a 5-year average of 30-35x), the market is pricing in an immediate growth collapse to low-single-digits and permanent multiple compression, which contradicts record 11.2% organic growth and Q4 acceleration to 18.4%.",
+    "The business quality moat is fortress-grade and Monte Carlo shows 99.9% probability of undervaluation, but the price sits 10% above the quant bear IV of EUR 176, so a truly conservative buyer would prefer to enter closer to EUR 175 for maximum downside protection.",
+    "Sell if adjusted ROIC (ex-goodwill) falls below 8% for two consecutive years, signaling the vertically integrated moat is eroding rather than compounding."
+  ],
+  "source_summary": "EssilorLuxottica FY2025 earnings release (Feb 2026), Yahoo Finance (yfinance auto-fetch), quant DCF model (src/quant), Moody's credit opinion (Sep 2025), S&P Global rating affirmation (Oct 2024), Bloomberg, CNBC, analyst consensus (22 analysts), company investor presentations, GlobeNewsWire press releases",
+  "confidence": "high",
+  "change_notes": ""
+}

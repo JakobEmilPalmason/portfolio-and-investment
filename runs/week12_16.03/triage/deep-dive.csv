@@ -1,0 +1,9 @@
+ticker,company,quality_score,valuation_score,reason_for_action
+SAP,SAP SE (US ADR),9,7,ERP monopoly near 52wk low at ~$176; SAP.DE Own verdict confirms thesis; full pipeline run warranted at depressed price
+JPM,JPMorgan Chase & Co.,8,6,Best-in-class bank globally at 14x PE; not yet analyzed; Buffett-compatible diversified earnings base
+AZN,AstraZeneca plc,8,5,Strongest oncology pipeline in pharma; Enhertu/ADC platform; $80B 2030 target; not yet analyzed
+UNP,Union Pacific Corp.,8,5,Western railroad duopoly; irreplaceable physical moat; textbook pricing power + PSR leverage
+CB,Chubb Ltd.,8,6,Best P&C underwriter; Buffett holds ~$7B stake; combined ratios <90%; not yet analyzed
+OR.PA,L'Oreal SA,8,5,Global beauty leader; 75%+ gross margins; 100+ year heritage; European quality diversifier
+WST,West Pharmaceutical Services,7,5,Drug containment duopoly; FDA qualification barrier; GLP-1 packaging tailwind; not yet analyzed
+EW,Edwards Lifesciences Corp.,7,5,TAVR leader in structural heart; aging population tailwind; net cash; not yet analyzed

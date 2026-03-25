@@ -1,0 +1,70 @@
+{
+  "ticker": "ROP",
+  "company": "Roper Technologies",
+  "analysis_date": "2026-03-23",
+  "verdict": "Own",
+  "average_score": 7.75,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 6,
+    "valuation": 9,
+    "margin_of_safety": 8,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Portfolio of ~28 niche vertical software businesses with 80%+ recurring revenue and 95%+ gross retention",
+    "Exceptional cash economics: 69% gross margins, 31% FCF margins, 158% FCF conversion, 1.3% capex intensity",
+    "Deep switching costs — system-of-record software in regulated verticals where migration cost dwarfs license fees",
+    "20-year track record of transformative capital allocation deploying ~$25B in acquisitions",
+    "Trading at half its 5-year average P/E with price below bear-case IV across all modeled scenarios"
+  ],
+  "key_risks": [
+    "AI-native startups targeting Roper's verticals (legal, insurance, healthcare) could gradually unbundle vertical software moats",
+    "Debt/EBITDA risen from 2.4x to 3.0x in two years with interest coverage declining from 11.6x to 7.0x",
+    "Concurrent cyclical headwinds in Deltek (GovCon), Neptune (water meters), and DAT (freight)",
+    "Acquisition execution risk at scale — $6B+ deployment capacity means a single bad deal could impair 15-20% of EV",
+    "Low insider ownership (~0.4-3%) limits management's personal downside alignment"
+  ],
+  "red_flags": [
+    "RBC downgraded ROP in early 2026 citing AI disruption uncertainty",
+    "Interest expense nearly doubled from $165M to $325M in two years",
+    "Reported ROIC of 6.4% below WACC of 8.2% (distorted by goodwill but still a metric to monitor)",
+    "Tangible book value is deeply negative — entire equity base is goodwill and intangibles",
+    "Stock bottomed only 5 weeks ago at $313; bottoming process may not be complete"
+  ],
+  "buy_triggers": [
+    "Organic growth recovers above 7% as Deltek/Neptune/DAT headwinds fade, confirming cyclical not structural deceleration",
+    "Well-executed acquisition deploys $2B+ of $6B capacity at reasonable multiples, demonstrating continued discipline",
+    "Net revenue retention holds above 105% for two consecutive quarters, disproving AI disruption narrative"
+  ],
+  "sell_triggers": [
+    "Net revenue retention drops below 100% for two consecutive years, signaling AI-driven moat erosion",
+    "Organic growth turns negative for two consecutive years, indicating structural impairment",
+    "Debt/EBITDA exceeds 4.0x with no credible deleveraging plan, or a failed large acquisition destroys credibility"
+  ],
+  "valuation_summary": "At $354 (15.2x forward P/E vs 5-year average of 32x, 14.6x EV/EBITDA vs 10-year median of 22x), the stock trades below the quant bear-case IV of $411 and below every cell in the 25-scenario sensitivity grid (floor $583). Monte Carlo P(IV > Price) = 100% across 10,000 simulations. The market is pricing in permanent 2-3% organic growth and zero accretive M&A — a structural impairment thesis that contradicts the 80% recurring revenue base and $6B deployment capacity.",
+  "iv_conservative": 411.26,
+  "iv_base": 634.86,
+  "iv_bull": 887.73,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 14.0,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [582.58, 1011.74],
+  "compact_checklist": [
+    "Roper owns ~28 niche vertical software businesses (legal, healthcare, freight, government) that serve as the operational backbone of their customers' daily workflows, producing 80%+ recurring revenue with 95%+ gross retention.",
+    "Switching costs are enormous because replacing system-of-record software (court management, healthcare compliance, freight logistics) requires 6-12 months of disruption, data migration, and retraining — confirmed by 95%+ retention and stable 69% gross margins for four consecutive years.",
+    "FCF of $2.4B on $7.9B revenue (31% margin) with only $105M capex (1.3% of sales) and 158% FCF-to-net-income conversion makes this one of the most capital-efficient large-cap businesses in the S&P 500.",
+    "A 20-year track record of deploying ~$25B in acquisitions that transformed a cyclical industrial into an 80% recurring-revenue software portfolio, with 96% at-risk CEO compensation, though insider ownership at ~0.4-3% is disappointingly low.",
+    "Debt/EBITDA of 3.0x with $9.3B total debt is serviceable given $2.4B annual FCF and well-laddered maturities, but interest coverage has deteriorated from 11.6x to 7.0x in two years due to acquisition-funded borrowing.",
+    "At $354 (15x forward earnings vs 5-year average of 32x), the market is pricing in permanent 2-3% organic growth and zero accretive M&A — a structural impairment thesis that contradicts the 80% recurring revenue base and $6B deployment capacity.",
+    "The stock trades 14% below the quant bear-case IV of $411 and below every cell in the 25-scenario sensitivity grid (floor $583), with a 4:1 upside/downside ratio and near-zero permanent capital loss risk across 28 diversified software businesses.",
+    "Sell if net revenue retention drops below 100% for two consecutive years, signaling that AI-native competitors are successfully unbundling Roper's vertical software moats and eroding the switching-cost architecture that underpins the entire thesis."
+  ],
+  "source_summary": "Roper Technologies 2025 10-K, Q4 2025 earnings release and call transcript, 2024 DEF 14A proxy, Yahoo Finance (yfinance auto-fetch), quant-valuation model (DCF/MC/sensitivity), Seeking Alpha, Investing.com, TIKR, RBC Capital research, PitchGrade Research, MatrixBCG, BeyondSPX, ropertech.com IR filings",
+  "confidence": "high",
+  "change_notes": ""
+}

@@ -1,0 +1,68 @@
+{
+  "ticker": "WKL.AS",
+  "company": "Wolters Kluwer N.V.",
+  "analysis_date": "2026-03-23",
+  "verdict": "Own",
+  "average_score": 8.4,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 9,
+    "margin_of_safety": 9,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "83% recurring revenue from mission-critical compliance software with 90%+ renewal rates",
+    "ROIC expanded from 18.1% to 24.6% over four years with >100% FCF conversion",
+    "Deeply embedded workflow tools (CCH Axcess, UpToDate, OneSumX) create high switching costs across regulated professions",
+    "Disciplined capital allocation: 51 bolt-on acquisitions, EUR 1B+ annual buybacks, growing dividend",
+    "Asset-light model with 73.5% gross margins and 27.5% operating margins, both expanding"
+  ],
+  "key_risks": [
+    "AI disruption to compliance workflows — foundation model companies (Anthropic, OpenAI) actively targeting legal, tax, and regulatory verticals",
+    "Morningstar downgraded moat from Wide to Narrow in 2026 on AI disruption risk",
+    "Prolonged multiple compression if market permanently re-rates information services sector lower",
+    "Net debt nearly doubled from EUR 2.0B to EUR 3.8B (FY2022-2025), mostly funding buybacks at higher prices",
+    "CEO transition risk — new CEO untested at group level during critical AI transformation period"
+  ],
+  "red_flags": [
+    "Morningstar Wide-to-Narrow moat downgrade specifically on AI disruption risk",
+    "EUR 1.1B in FY2025 buybacks executed at much higher prices (EUR 100-140 range) — significant capital destruction",
+    "60% peak-to-trough decline suggests institutional investors are mechanically exiting"
+  ],
+  "buy_triggers": [
+    "Continued 5-6% organic revenue growth through H1 2026, confirming AI fears are not translating into customer defection",
+    "Price at or below EUR 65 with bear-case IV of EUR 80+ providing 18%+ margin of safety",
+    "AI product launches (CCH Axcess Expert AI, UpToDate AI) showing measurable customer adoption"
+  ],
+  "sell_triggers": [
+    "Organic revenue growth turns negative for two consecutive quarters, indicating actual customer loss to AI alternatives",
+    "Stock re-rates above EUR 150, where upside/downside asymmetry becomes unfavorable",
+    "Independent benchmarks show foundation model tools reliably match Wolters Kluwer accuracy in regulated compliance tasks"
+  ],
+  "valuation_summary": "Trading at 9.7x EV/EBITDA — less than half the 5-year median of 20.1x and below every peer (RELX 14.7x, Thomson Reuters 18.1x). Current price of EUR 65.44 sits below even the bear-case IV of EUR 80-86. Owner earnings yield of 10.2% on a business with 83% recurring revenue and 24.6% ROIC. Every cell in the 25-point sensitivity grid and 100% of 10,000 Monte Carlo simulations produce IV above the current price. The market must assume 3-5% annual revenue declines or permanent margin compression to sub-15% to justify the current price — neither supported by FY2025's record results.",
+  "iv_conservative": 85.9,
+  "iv_base": 137.52,
+  "iv_bull": 192.98,
+  "iv_currency": "EUR",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 23.4,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [101.94, 187.80],
+  "compact_checklist": [
+    "Wolters Kluwer sells mission-critical compliance and workflow software on subscription (83% recurring) to tax, legal, health, and audit professionals who face regulatory mandates to use such tools.",
+    "Deeply embedded workflow tools (CCH Axcess, UpToDate, OneSumX) with 90%+ renewal rates create high switching costs, though Morningstar downgraded the moat to Narrow in 2026 on AI disruption risk.",
+    "ROIC expanded from 18.1% to 24.6% over four years with FCF conversion above 100% and operating margins rising 430bps to 27.5% — textbook compounder economics.",
+    "McKinstry delivered two decades of disciplined bolt-on M&A (51 deals, no mega-mergers), EUR 1B+ annual buybacks shrinking shares 12%, and smooth internal CEO succession to a 30-year veteran.",
+    "Net debt/EBITDA of 1.7x with 15x interest coverage and A-/A3 credit ratings means the company survives even a 50% EBIT decline with coverage still at 7.5x.",
+    "At 9.7x EV/EBITDA — half the 5-year median of 20.1x and below every peer — the market must assume revenue declines of 3-5% annually or permanent margin compression to sub-15%, neither of which is supported by FY2025's record results.",
+    "The current EUR 65.44 price sits below even the bear-case IV of EUR 80, with 100% of 10,000 Monte Carlo simulations producing IV above the current price, delivering roughly 4:1 upside/downside asymmetry.",
+    "Sell if organic revenue growth turns negative for two consecutive quarters, confirming that AI alternatives are actually displacing Wolters Kluwer's embedded workflow tools rather than just scaring investors."
+  ],
+  "source_summary": "Wolters Kluwer FY2025 Full-Year Results, yfinance auto-fetch financials, quant-valuation DCF model (CAPM WACC, owner earnings, sensitivity grid, Monte Carlo), Morningstar moat analysis, analyst consensus estimates, peer multiples (RELX, Thomson Reuters, Verisk), Anthropic Cowork legal plugin analysis, company investor relations",
+  "confidence": "high",
+  "change_notes": "Re-assembled 2026-03-23 with updated quant model IV values (iv_source: quant_model). Scores unchanged from prior analysis. Verdict remains Own with 8.4 average score."
+}

@@ -1,0 +1,70 @@
+{
+  "ticker": "NOVO-B.CO",
+  "company": "Novo Nordisk A/S",
+  "analysis_date": "2026-03-24",
+  "verdict": "Own",
+  "average_score": 7.4,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 5,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 8,
+    "margin_of_safety": 8,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "One of the most understandable businesses in global pharma — pure-play GLP-1 franchise with 90%+ revenue from semaglutide/liraglutide",
+    "81% gross margins and DKK 102B in owner earnings confirm elite economics even during a heavy capex investment year",
+    "One of only two scaled GLP-1 producers globally with massive manufacturing capacity (14 fill-finish sites) that would take competitors 3-5 years to replicate",
+    "68% international GLP-1 volume share and century-long brand trust in diabetes care provide deep institutional moat",
+    "At DKK 239 (10.4x trailing earnings), the market prices in permanent structural decline — 1:4 downside/upside asymmetry with 31.7% MOS against stress-tested bear IV"
+  ],
+  "key_risks": [
+    "Eli Lilly's tirzepatide has taken the U.S. prescription lead (58% vs 42%) with clinically superior weight loss data (~20% vs ~14%)",
+    "CagriSema failed non-inferiority to tirzepatide (23% vs 25.5% weight loss), undermining the next-generation pipeline narrative",
+    "Company-guided 5-13% revenue decline for 2026 — the first negative growth outlook in over a decade",
+    "Semaglutide patents expiring in Canada (Jan 2026), China, Brazil, and India by 2027 — major markets opening to generics",
+    "DKK 90B/year capex into manufacturing capacity may produce sub-cost-of-capital returns if GLP-1 demand disappoints"
+  ],
+  "red_flags": [
+    "CEO forced out by Foundation after 55% stock decline — not a planned succession; board chairman also departed",
+    "Zero insider ownership — no executive bought shares during the 55% drawdown",
+    "ROIC halved from 70.5% (FY2023) to 36.0% (FY2025) as invested capital more than doubled",
+    "Total debt increased 5x from DKK 27B to DKK 131B in two years",
+    "FCF conversion collapsed from 84% to 28% due to capex supercycle"
+  ],
+  "buy_triggers": [
+    "CagriSema higher-dose trials deliver 25%+ weight loss, fundamentally changing the competitive narrative",
+    "2026 actual revenue comes in at the better end of guidance (-5% vs -13%), signaling a shallower trough",
+    "Stock falls below DKK 200, widening margin of safety further on intact thesis"
+  ],
+  "sell_triggers": [
+    "GLP-1 market share drops below 25% (currently 39%), indicating permanent competitive defeat to Lilly",
+    "FDA black box warning or class-wide safety concern for GLP-1 drugs",
+    "Stock exceeds DKK 500 (base case IV) — begin trimming; sell half above DKK 650"
+  ],
+  "valuation_summary": "At DKK 239, Novo trades at 10.4x trailing earnings and 7.9x owner earnings — multiples typically reserved for businesses in secular decline. The quant model produces bear/base/bull IV of DKK 539/800/1099, but the analyst adjusts these down to DKK 350/500/750 after incorporating competitive losses to Lilly, CagriSema trial failure, 2026 revenue guidance of -5% to -13%, and a higher risk-adjusted WACC. Even the stress-tested bear case of DKK 350 implies 47% upside. The market must assume permanent revenue decline and margin compression below 30% to justify today's price — inconsistent with an 81% gross margin business in a $100B+ growing market.",
+  "iv_conservative": 538.66,
+  "iv_base": 799.8,
+  "iv_bull": 1098.7,
+  "iv_currency": "DKK",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 55.6,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [642.4, 1110.9],
+  "compact_checklist": [
+    "Novo Nordisk sells GLP-1 injectable and oral drugs (Ozempic, Wegovy) for diabetes and obesity — chronic conditions requiring lifelong treatment that drive 90%+ of revenue from a single molecule family (semaglutide).",
+    "A century of diabetes expertise, 81% gross margins, and massive biologic manufacturing scale (DKK 90B capex in FY2025 across 14 fill-finish sites) create barriers competitors need 3-5 years to replicate, though Eli Lilly has taken the U.S. prescription lead at 58% share with clinically superior tirzepatide.",
+    "ROIC of 36% and owner earnings of DKK 102B confirm elite economics even in a heavy investment year, but FCF conversion collapsed to 28% due to a capex supercycle and 2026 guidance projects the first revenue decline (-5% to -13%) in over a decade.",
+    "The Novo Nordisk Foundation forced out the CEO in August 2025 after a 55% stock decline, the board chairman also departed, insider ownership is zero, and no executive bought shares during the drawdown — this is a leadership team in transition without skin in the game.",
+    "Debt quintupled to DKK 131B but sits at just 0.8x EBITDA with 32x interest coverage, and even a 30% revenue decline for two years would leave DKK 50-60B in operating cash flow — survival is not in question.",
+    "At DKK 239 (10.4x trailing earnings), the market must believe revenue will decline permanently and margins will compress below 30% — a scenario inconsistent with an 81% gross margin business in a $100B+ market growing to $150B+ by 2030.",
+    "The stress-tested bear IV of DKK 350 provides 31.7% price MOS, the downside/upside asymmetry is roughly 1:4 (27% downside to DKK 175 vs 109% upside to DKK 500 base case), and no Monte Carlo simulation out of 10,000 produced an IV below the current price.",
+    "Sell if Novo's GLP-1 market share drops below 25% (currently 39%), signaling permanent competitive defeat to Lilly, or if an FDA black box warning emerges on the GLP-1 drug class."
+  ],
+  "source_summary": "Yahoo Finance (yfinance auto-fetch), quant-valuation model (DCF with CAPM WACC, Monte Carlo, sensitivity grid), Novo Nordisk Annual Report 2025, Novo Nordisk investor relations, CNBC, BioPharma Dive, Fierce Pharma, pharmaphorum, Pharmaceutical Technology, IQVIA patent data, analyst consensus (22 analysts), CagriSema REDEFINE 4 trial results (Feb 2026), Grand View Research GLP-1 market projections",
+  "confidence": "medium",
+  "change_notes": "Re-analysis with updated quant model and full 8-umbrella review. Verdict upgraded from prior Watch to Own driven by 55% price decline creating substantial margin of safety. Key competitive concerns (Lilly market share gains, CagriSema disappointment) persist but are now reflected in a deeply discounted valuation."
+}

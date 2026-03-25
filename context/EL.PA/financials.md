@@ -1,6 +1,6 @@
 # Financial Data: EL.PA — EssilorLuxottica Société anonyme
 
-**Generated:** 2026-03-16 00:38 UTC
+**Generated:** 2026-03-23 00:43 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** EUR | **Trading Currency:** EUR
 **Sector:** Healthcare | **Industry:** Medical Instruments & Supplies
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | €204.70 |
-| Market Cap | €94.8B |
-| Enterprise Value | €106.3B |
+| Current Price | €194.75 |
+| Market Cap | €89.7B |
+| Enterprise Value | €101.7B |
 | 52-Week High | €323.80 |
-| 52-Week Low | €204.10 |
-| Position in 52-Week Range | 1% |
+| 52-Week Low | €194.50 |
+| Position in 52-Week Range | 0% |
 | Beta | 0.55 |
-| Shares Outstanding | 463.2M |
-| Dividend Yield | 1.95% |
+| Shares Outstanding | 460.5M |
+| Dividend Yield | 2.05% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 41.2x |
-| Forward P/E | 23.7x |
-| EV/EBITDA | 19.1x |
-| EV/Revenue | 3.7x |
-| P/FCF | 28.9x |
-| P/S | 3.3x |
-| P/B | 2.4x |
+| Trailing P/E | 39.0x |
+| Forward P/E | 22.5x |
+| EV/EBITDA | 18.3x |
+| EV/Revenue | 3.6x |
+| P/FCF | 27.4x |
+| P/S | 3.1x |
+| P/B | 2.3x |
 
 ---
 
@@ -49,7 +49,7 @@
 | Target Low | €180.00 |
 | Number of Analysts | 22 |
 | Forward EPS | $8.65 |
-| Trailing EPS | $4.97 |
+| Trailing EPS | $4.99 |
 
 ---
 
@@ -60,13 +60,13 @@
 | Revenue | $28.5B | $26.5B | $25.4B | $24.5B | n/a |
 | Gross Profit | $17.3B | $16.8B | $16.0B | $15.6B | n/a |
 | Operating Income | $3.4B | $3.4B | $3.2B | $3.2B | n/a |
-| EBITDA | $6.5B | $6.6B | $6.2B | $6.1B | n/a |
+| EBITDA | $6.6B | $6.6B | $6.2B | $6.1B | n/a |
 | Net Income | $2.3B | $2.4B | $2.3B | $2.2B | n/a |
 | Diluted EPS | $4.98 | $5.13 | $5.08 | $4.83 | n/a |
-| Interest Expense | $239.0M | $165.0M | $198.0M | $156.0M | n/a |
+| Interest Expense | $314.0M | $253.0M | $198.0M | $156.0M | n/a |
 | Tax Provision | $752.0M | $800.0M | $609.0M | $751.0M | n/a |
 | R&D | $664.0M | $630.0M | $593.0M | $600.0M | n/a |
-| D&A | $3.1B | $3.1B | $2.9B | $2.9B | n/a |
+| D&A | $3.1B | $3.0B | $2.9B | $2.9B | n/a |
 
 ---
 
@@ -77,7 +77,7 @@
 | Gross Margin | 60.6% | 63.4% | 63.2% | 63.6% | n/a |
 | Operating Margin | 11.9% | 13.0% | 12.5% | 12.9% | n/a |
 | Net Margin | 8.1% | 8.9% | 9.0% | 8.8% | n/a |
-| EBITDA Margin | 23.0% | 24.7% | 24.3% | 24.9% | n/a |
+| EBITDA Margin | 23.2% | 24.9% | 24.3% | 24.9% | n/a |
 | FCF Margin | 13.2% | 12.6% | 13.1% | 13.1% | n/a |
 
 ---
@@ -101,7 +101,7 @@
 | Operating Cash Flow | $5.3B | $4.9B | $4.9B | $4.8B | n/a |
 | Capital Expenditure | -$1.5B | -$1.5B | -$1.5B | -$1.6B | n/a |
 | Free Cash Flow | $3.8B | $3.4B | $3.3B | $3.2B | n/a |
-| D&A | $3.1B | $3.1B | $2.9B | $2.9B | n/a |
+| D&A | $3.1B | $3.0B | $2.9B | $2.9B | n/a |
 | Stock-Based Compensation | $280.0M | $162.0M | $195.0M | $191.0M | n/a |
 | Buybacks | -$376.0M | -$274.0M | -$271.0M | -$431.0M | n/a |
 | FCF Conversion (FCF/NI) | 162.7% | 142.1% | 145.5% | 149.2% | n/a |
@@ -115,14 +115,14 @@
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | Total Assets | $63.9B | $64.3B | $60.5B | $60.6B | n/a |
 | Total Debt | $14.4B | $13.2B | $11.7B | $12.2B | n/a |
-| Long-Term Debt | $6.8B | $8.6B | $7.9B | $8.9B | n/a |
+| Long-Term Debt | $8.1B | $8.6B | $7.9B | $8.9B | n/a |
 | Cash & Short-Term Investments | $3.5B | $2.3B | $2.6B | $2.0B | n/a |
 | Net Debt | $7.3B | $7.3B | $5.9B | $7.1B | n/a |
 | Stockholders' Equity | $38.9B | $40.4B | $38.2B | $37.5B | n/a |
 | Invested Capital | $49.7B | $49.9B | $46.7B | $46.5B | n/a |
 | Current Assets | $12.0B | $10.0B | $9.7B | $8.6B | n/a |
-| Current Liabilities | $12.2B | $9.1B | $8.4B | $7.9B | n/a |
-| Working Capital | -$144.0M | $982.0M | $1.3B | $752.0M | n/a |
+| Current Liabilities | $10.9B | $9.1B | $8.4B | $7.9B | n/a |
+| Working Capital | $1.1B | $966.0M | $1.3B | $752.0M | n/a |
 
 ---
 
@@ -132,8 +132,8 @@
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | Debt/EBITDA | 2.2x | 2.0x | 1.9x | 2.0x | n/a |
 | Net Debt/EBITDA | 1.1x | 1.1x | 0.9x | 1.2x | n/a |
-| Interest Coverage (EBIT/Interest) | 14.4x | 20.9x | 16.3x | 20.4x | no debt |
-| Current Ratio | 1.0x | 1.1x | 1.2x | 1.1x | n/a |
+| Interest Coverage (EBIT/Interest) | 11.2x | 14.0x | 16.3x | 20.4x | no debt |
+| Current Ratio | 1.1x | 1.1x | 1.2x | 1.1x | n/a |
 | Debt/Equity | 37.0% | 32.7% | 30.5% | 32.6% | n/a |
 
 ---
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | €204.70 | — |
-| 1 Month Ago | €258.30 | -20.8% |
-| 3 Months Ago | €282.10 | -27.4% |
-| 6 Months Ago | €270.60 | -24.4% |
-| 1 Year Ago | €261.02 | -21.6% |
-| 52-Week High | €323.80 (2025-11-13) | -36.8% from current |
-| 52-Week Low | €204.10 (2026-03-13) | +0.3% from current |
+| Current | €194.75 | — |
+| 1 Month Ago | €238.20 | -18.2% |
+| 3 Months Ago | €274.80 | -29.1% |
+| 6 Months Ago | €274.40 | -29.0% |
+| 1 Year Ago | €268.90 | -27.6% |
+| 52-Week High | €323.80 (2025-11-13) | -39.9% from current |
+| 52-Week Low | €194.50 (2026-03-20) | +0.1% from current |
 
 ---
 

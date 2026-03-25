@@ -131,7 +131,7 @@
 | PH | Parker-Hannifin Corp. | Motion/control leader but cyclical end markets; hold |
 | POOL | Pool Corp. | Pool supply monopoly niche but housing cycle sensitive |
 | QCOM | Qualcomm Inc. | Already analyzed; Apple modem risk clouds moat durability |
-| RELX.L | RELX plc | Already analyzed; data monopoly but modest growth ceiling |
+| RELX | RELX plc | Already analyzed; data monopoly but modest growth ceiling |
 | RLI | RLI Corp. | Great underwriting track record but small; niche TAM |
 | RMS.PA | Hermes International SCA | Already analyzed; ultimate brand but extreme valuation |
 | ROG.SW | Roche Holding AG | Strong oncology pipeline but biosimilar erosion ongoing |

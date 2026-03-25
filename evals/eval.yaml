@@ -1,0 +1,235 @@
+# Skillgrade eval for /analyze skill
+#
+# Usage:
+#   npx skillgrade --smoke       5 trials
+#   npx skillgrade --reliable   15 trials
+#   npx skillgrade --preview     Open web UI for results
+#
+# Documentation: https://github.com/mgechev/skillgrade#readme
+
+version: "1"
+
+defaults:
+  agent: claude
+  provider: local
+  trials: 1              # single trial to start
+  timeout: 600           # analyze is slow — 10 min ceiling
+  threshold: 0.8
+
+tasks:
+
+  # ──────────────────────────────────────────────
+  # 0. Smoke test — just verify the agent can run
+  # ──────────────────────────────────────────────
+  - name: smoke-test
+    instruction: |
+      Read the file run.sh and write the value of CURRENT_WEEK to a file called /tmp/skillgrade-smoke-result.txt
+    timeout: 120
+
+    graders:
+      - type: deterministic
+        run: |
+          if [ -f /tmp/skillgrade-smoke-result.txt ] && grep -q "week12" /tmp/skillgrade-smoke-result.txt; then
+            echo '{"score": 1.0, "details": "Agent read run.sh and wrote the result", "checks": [{"name": "smoke", "passed": true, "message": "works"}]}'
+          else
+            echo '{"score": 0.0, "details": "Agent failed to produce output", "checks": [{"name": "smoke", "passed": false, "message": "no output"}]}'
+          fi
+        weight: 1.0
+
+  # ──────────────────────────────────────────────
+  # 1. Full analysis — end-to-end on a real ticker
+  # ──────────────────────────────────────────────
+  - name: analyze-full
+    instruction: |
+      /analyze GILD
+    timeout: 900          # full run can take up to 15 min
+
+    graders:
+      - type: deterministic
+        run: |
+          python3 -c "
+          import json, os, subprocess, glob
+
+          week = subprocess.check_output(['grep', '-m1', 'CURRENT_WEEK=', 'run.sh']).decode().split('\"')[1]
+          d = f'runs/{week}/reports/GILD'
+          checks = []
+
+          def check(name, passed, msg):
+              checks.append({'name': name, 'passed': passed, 'message': msg})
+
+          # 1. All 11 expected files
+          for f in ['01-circle-of-competence.md','02-durable-competitive-advantage.md','03-management-capital-allocation.md','04-business-economics.md','05-balance-sheet-safety.md','06-valuation-intrinsic-value.md','07-margin-of-safety.md','08-temperament-time-horizon.md','09-compact-checklist.md','FINAL-REPORT.md','FINAL-REPORT.json']:
+              check(f'file-{f}', os.path.isfile(f'{d}/{f}'), f'{f} exists' if os.path.isfile(f'{d}/{f}') else f'{f} missing')
+
+          # 2-8. FINAL-REPORT.json checks
+          try:
+              rpt = json.load(open(f'{d}/FINAL-REPORT.json'))
+              check('json-valid', True, 'Valid JSON')
+              req = ['ticker','company','verdict','average_score','umbrella_scores','key_strengths','key_risks','buy_triggers','sell_triggers','compact_checklist','confidence']
+              missing = [k for k in req if k not in rpt]
+              check('json-keys', len(missing)==0, 'All keys present' if not missing else f'Missing: {missing}')
+              check('ticker', rpt.get('ticker')=='GILD', f\"Ticker is {rpt.get('ticker')}\")
+              v = rpt.get('verdict','')
+              check('verdict', v in ['Own','Watch','Pass'], f'Verdict is {v}')
+              s = rpt.get('umbrella_scores',{})
+              keys = ['circle_of_competence','competitive_advantage','management','business_economics','balance_sheet','valuation','margin_of_safety','temperament']
+              sok = all(isinstance(s.get(k),int) and 1<=s[k]<=10 for k in keys) and len(s)>=8
+              check('scores', sok, '8 scores valid' if sok else 'Scores invalid')
+              avg = rpt.get('average_score',0)
+              calc = round(sum(s.values())/len(s),1) if s else 0
+              check('avg-score', abs(avg-calc)<=0.2, f'avg={avg} calc={calc}')
+              cl = rpt.get('compact_checklist',[])
+              check('checklist-8', isinstance(cl,list) and len(cl)==8, f'{len(cl)} checklist items')
+              c = rpt.get('confidence','')
+              check('confidence', c in ['high','medium','low'], f'Confidence: {c}')
+          except Exception as e:
+              check('json-valid', False, str(e))
+
+          # 9. Report length
+          md = f'{d}/FINAL-REPORT.md'
+          if os.path.isfile(md):
+              lines = len(open(md).readlines())
+              check('report-length', lines>200, f'{lines} lines')
+          else:
+              check('report-length', False, 'missing')
+
+          # 10. Queue updated
+          try:
+              q = json.load(open('queue/queue.json'))
+              entry = [e for e in q if e.get('ticker')=='GILD']
+              check('queue', bool(entry and entry[0].get('current_verdict') in ['Own','Watch','Pass']), 'Queue updated')
+          except:
+              check('queue', False, 'queue.json error')
+
+          passed = sum(1 for c in checks if c['passed'])
+          total = len(checks)
+          score = round(passed/total, 2) if total else 0
+          print(json.dumps({'score': score, 'details': f'{passed}/{total} checks passed', 'checks': checks}))
+          "
+        weight: 1.0
+
+  # ──────────────────────────────────────────────
+  # 2. Single umbrella mode — fast, focused test
+  # ──────────────────────────────────────────────
+  - name: analyze-single-umbrella
+    instruction: |
+      /analyze V 4
+    timeout: 300
+
+    graders:
+      - type: deterministic
+        run: |
+          python3 -c "
+          import json, os, subprocess, re
+
+          week = subprocess.check_output(['grep', '-m1', 'CURRENT_WEEK=', 'run.sh']).decode().split('\"')[1]
+          d = f'runs/{week}/reports/V'
+          checks = []
+
+          def check(name, passed, msg):
+              checks.append({'name': name, 'passed': passed, 'message': msg})
+
+          # 1. Section 04 exists
+          s04 = f'{d}/04-business-economics.md'
+          check('section-04-exists', os.path.isfile(s04), 'exists' if os.path.isfile(s04) else 'missing')
+
+          # 2. Section 04 is substantial
+          if os.path.isfile(s04):
+              lines = len(open(s04).readlines())
+              check('section-04-length', lines>50, f'{lines} lines')
+              # 3. Contains a score
+              content = open(s04).read()
+              has_score = bool(re.search(r'(?i)(score|rating).*\d+.*/10|out of 10', content))
+              check('section-04-score', has_score, 'Has score' if has_score else 'No score found')
+          else:
+              check('section-04-length', False, 'missing')
+              check('section-04-score', False, 'missing')
+
+          # 4. No FINAL-REPORT (single umbrella should skip assembler)
+          no_final = not os.path.isfile(f'{d}/FINAL-REPORT.md') and not os.path.isfile(f'{d}/FINAL-REPORT.json')
+          check('no-final-report', no_final, 'Correct' if no_final else 'FINAL-REPORT exists unexpectedly')
+
+          passed = sum(1 for c in checks if c['passed'])
+          total = len(checks)
+          score = round(passed/total, 2) if total else 0
+          print(json.dumps({'score': score, 'details': f'{passed}/{total} checks passed', 'checks': checks}))
+          "
+        weight: 1.0
+
+  # ──────────────────────────────────────────────
+  # 3. Assemble mode — re-assembly from existing sections
+  # ──────────────────────────────────────────────
+  - name: analyze-assemble
+    instruction: |
+      You are the Synthesis Agent for the investment analysis pipeline.
+      Today's date: Wednesday, March 18, 2026
+
+      YOUR TASK:
+      1. Determine the CURRENT_WEEK from run.sh (it is week12_16.03).
+      2. Read the existing analysis sections for ODFL in runs/week12_16.03/reports/ODFL/ (files 01 through 08).
+      3. Read the prompt for the compact checklist in prompts/09-compact-checklist.md.
+      4. Read the shared output format in prompts/_shared-format.md.
+      5. Generate the compact checklist (09-compact-checklist.md) based on sections 01-08 and the shared format.
+      6. Read the final report assembler instructions in prompts/assembler.md.
+      7. Assemble the FINAL-REPORT.md and FINAL-REPORT.json for ODFL using all sections (01-09) and following the assembler instructions.
+      8. Update queue/queue.json with the verdict and analysis date for ODFL.
+
+      Write all output files to runs/week12_16.03/reports/ODFL/.
+    timeout: 480
+
+    graders:
+      - type: deterministic
+        run: |
+          python3 -c "
+          import json, os, subprocess, glob
+
+          week = subprocess.check_output(['grep', '-m1', 'CURRENT_WEEK=', 'run.sh']).decode().split('\"')[1]
+          d = f'runs/{week}/reports/ODFL'
+          checks = []
+
+          def check(name, passed, msg):
+              checks.append({'name': name, 'passed': passed, 'message': msg})
+
+          # 1. Sections 01-08 exist
+          for i in ['01','02','03','04','05','06','07','08']:
+              files = glob.glob(f'{d}/{i}-*.md')
+              check(f'section-{i}', len(files)>0, f'Section {i} exists' if files else f'Section {i} missing')
+
+          # 2. Section 09
+          check('checklist', os.path.isfile(f'{d}/09-compact-checklist.md'), '09 exists' if os.path.isfile(f'{d}/09-compact-checklist.md') else '09 missing')
+
+          # 3. FINAL-REPORT.md
+          check('final-md', os.path.isfile(f'{d}/FINAL-REPORT.md'), 'FINAL-REPORT.md exists' if os.path.isfile(f'{d}/FINAL-REPORT.md') else 'missing')
+
+          # 4-7. FINAL-REPORT.json checks
+          try:
+              rpt = json.load(open(f'{d}/FINAL-REPORT.json'))
+              check('json-valid', True, 'Valid JSON')
+              check('ticker', rpt.get('ticker')=='ODFL', f\"Ticker is {rpt.get('ticker')}\")
+              v = rpt.get('verdict','')
+              check('verdict', v in ['Own','Watch','Pass'], f'Verdict is {v}')
+              s = rpt.get('umbrella_scores',{})
+              keys = ['circle_of_competence','competitive_advantage','management','business_economics','balance_sheet','valuation','margin_of_safety','temperament']
+              sok = all(isinstance(s.get(k),int) and 1<=s[k]<=10 for k in keys) and len(s)>=8
+              check('scores', sok, '8 scores valid' if sok else 'Scores invalid')
+              cl = rpt.get('compact_checklist',[])
+              check('checklist-8', isinstance(cl,list) and len(cl)==8, f'{len(cl)} checklist items')
+              c = rpt.get('confidence','')
+              check('confidence', c in ['high','medium','low'], f'Confidence: {c}')
+          except Exception as e:
+              check('json-valid', False, str(e))
+
+          # 8. Queue updated
+          try:
+              q = json.load(open('queue/queue.json'))
+              entry = [e for e in q if e.get('ticker')=='ODFL']
+              check('queue', bool(entry and entry[0].get('last_analysis_date')), 'Queue updated' if entry else 'Not in queue')
+          except:
+              check('queue', False, 'queue.json error')
+
+          passed = sum(1 for c in checks if c['passed'])
+          total = len(checks)
+          score = round(passed/total, 2) if total else 0
+          print(json.dumps({'score': score, 'details': f'{passed}/{total} checks passed', 'checks': checks}))
+          "
+        weight: 1.0

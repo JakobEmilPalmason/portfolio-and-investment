@@ -894,7 +894,7 @@
     "b1_reason": "Capital-intensive regulated utility; no pricing power"
   },
   {
-    "ticker": "RELX.L",
+    "ticker": "RELX",
     "company": "RELX plc",
     "b1_verdict": "hold",
     "b1_reason": "Already analyzed; data monopoly but modest growth ceiling"

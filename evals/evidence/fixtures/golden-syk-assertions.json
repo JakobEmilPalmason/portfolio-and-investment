@@ -1,0 +1,1822 @@
+[
+  {
+    "assertion_id": 1,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker sells mission-critical medical devices (implants, instruments, surgical robots, hospital equipment) to hospitals and surgeons — a straightforward B2B model with high recurring revenue characteristics",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 2,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Revenue is split across two reportable segments — MedSurg and Neurotechnology (~$15.6B) and Orthopaedics and Spine (~$9.5B) — providing diversification within a single end market (surgical procedures)",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 3,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Organic revenue growth has been remarkably consistent at 9–10% annually for the past three years, driven by procedure volume recovery, Mako robot placements, and tuck-in acquisitions",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 4,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "The business has only 2–3 key revenue drivers: elective surgical procedure volumes, new Mako robotic system placements (razor/blade model), and M&A-driven product line expansion",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 5,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "No meaningful customer concentration — thousands of hospitals globally, with the top customer likely representing low-single-digit percentage of revenue",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 6,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "None identified",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 7,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker's MedSurg and Neurotechnology segment represented roughly 62% of FY2025 revenue at approximately $15.6B",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 8,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker's Orthopaedics and Spine segment represented roughly 38% of FY2025 revenue at approximately $9.5B",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 9,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker has completed over 2 million cumulative Mako procedures",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 10,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Two-thirds of Stryker's U.S. knee implants are now placed using Mako",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 11,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker acquired Wright Medical in 2020 for its extremities portfolio",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 12,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker acquired Vocera in 2022 for hospital communications",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 13,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker revenue grew from $18.4B in FY2022 to $25.1B in FY2025",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 14,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker's revenue CAGR from FY2022 to FY2025 was approximately 11%",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 15,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker's gross margins have been stable at 63.7–64.0% over the past three years",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 16,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker sells to hospitals and surgery centers across more than 75 countries",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 17,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "No single customer represents a material percentage of Stryker's revenue",
+    "assertion_type": "qualitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 18,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "Stryker operates through two reportable segments: MedSurg and Neurotechnology, and Orthopaedics and Spine",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 19,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 1,
+    "assertion_text": "The Mako robotic platform operates as a razor/blade model where Stryker places the robot and captures implant revenue per procedure",
+    "assertion_type": "qualitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 20,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Switching costs are among the highest in medtech — surgeons train for years on Stryker instruments and Mako robots, and hospitals integrate Stryker into procurement, sterilization, and OR workflows",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 21,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Mako robotic platform creates a proprietary ecosystem: 2M+ cumulative procedures, 2/3 of U.S. Stryker knees done robotically, expanding into shoulders and spine — deepening lock-in with every installation",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 22,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Stryker holds #1 or #2 market share across most of its major product categories: ~29% U.S. knee share, leading positions in trauma, neurovascular, and surgical instruments",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 23,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Gross margins have been stable at 63.7–64.0% for three consecutive years, demonstrating sustained pricing power in a sector where GPOs aggressively negotiate",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 24,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Regulatory barriers (FDA 510(k)/PMA approvals, CE marking) create 2–5 year entry delays for competitors, and Stryker's 7,000+ patent portfolio reinforces exclusivity",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 25,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "The moat is weakest in commoditizing product lines (basic trauma hardware, some spine implants) where price competition from Zimmer Biomet, J&J DePuy, and lower-cost entrants is more intense",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 26,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Robotic competitors (ROSA, Velys) are gaining FDA clearances and hospital placements, though from a much smaller installed base",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 27,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Commoditization risk in basic trauma and spine hardware persists",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 28,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Two-thirds of Stryker's U.S. knee procedures are now Mako-assisted",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 29,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Mako robotic systems have capital costs of $1M+",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 30,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "The Mako platform has performed over 2 million cumulative procedures",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 31,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "The Mako robot exclusively uses Stryker implants with no interoperability with competitor products",
+    "assertion_type": "qualitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 32,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Mako platform is expanding into shoulder and spine applications with limited launch 2025 and broader rollout 2026",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 33,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Stryker holds approximately 29% of the U.S. knee replacement market",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 34,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Zimmer Biomet holds 33% of the U.S. knee replacement market, ranking first ahead of Stryker",
+    "assertion_type": "comparative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 35,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Stryker's revenue base is $25.1B",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 36,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Stryker spends approximately $1.8B in annual R&D",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 37,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Stryker has a global sales force of 20,000+ representatives",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 38,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Stryker's leading position in trauma and extremities was bolstered by the Wright Medical acquisition",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 39,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Medical device FDA clearance processes take 1–5 years and cost tens of millions of dollars",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 40,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Stryker has a patent portfolio of 7,000+ patents",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 41,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Lower-moat commoditizing product lines represent a declining share of Stryker's revenue mix as the company shifts toward robotic-integrated solutions",
+    "assertion_type": "qualitative",
+    "category": "risk",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 42,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 2,
+    "assertion_text": "Zimmer Biomet's ROSA and J&J's Velys are competing robotic platforms to Stryker's Mako",
+    "assertion_type": "qualitative",
+    "category": "risk",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 43,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "CEO Kevin Lobo has led Stryker since 2012 — a 14-year tenure delivering revenue growth from ~$8.7B to $25.1B (11% CAGR) with consistent organic growth in the high-single-digits",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 44,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Capital allocation is M&A-first: the MAKO Surgical acquisition ($1.65B, 2013) is one of the most value-creating medtech deals of the past decade, and Wright Medical ($4.7B, 2020) expanded the addressable market into extremities",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 45,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Insider ownership is low at ~0.5% for all directors and officers combined; CEO Lobo holds approximately $46M in stock — meaningful in absolute terms but modest relative to $135B market cap",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 46,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "CEO total compensation was $22M in FY2024 (93.4% performance-based), which is within medtech peer norms and well-aligned with shareholder returns",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 47,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "SBC of $243M on $25.1B revenue (~1.0%) is disciplined and well below tech industry norms, though share count has crept up modestly over the past decade due to acquisition-related issuance",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 48,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Dividend maintained and growing (43 consecutive years of payments), but payout ratio is low (~25–30%), reflecting management's preference for reinvestment and M&A over cash returns",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 49,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Combined Chairman/CEO role is a mild governance concern",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 50,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Insider ownership below 1% for all officers and directors combined",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 51,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Pace of acquisitions (5–10 per year) creates persistent integration risk that could eventually result in a misstep",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 52,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Kevin Lobo became CEO of Stryker in October 2012",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 53,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Under Lobo's leadership, Stryker revenue grew from $8.7B (2012) to $25.1B (2025)",
+    "assertion_type": "comparative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 54,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Stryker acquired MAKO Surgical in 2013 for $1.65B",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 55,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "MAKO robotic platform has performed 2M+ cumulative procedures",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 56,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Stryker acquired Wright Medical for $4.7B in 2020",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 57,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Stryker acquired Vocera for $2.97B in 2022",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 58,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Stryker typically completes 5–10 smaller tuck-in acquisitions per year",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 59,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Stryker has paid dividends for 43 consecutive years",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 60,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Stryker's dividend payout ratio is approximately 25–30% of earnings",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 61,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Lobo's total compensation was $22M in FY2024, with 93.4% performance-based and 6.6% base salary",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 62,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Lobo holds approximately $46M in Stryker stock, representing 0.032% of shares outstanding",
+    "assertion_type": "quantitative",
+    "category": "risk",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 63,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Stock-based compensation was $243M, representing 1.0% of revenue",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 64,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Diluted shares outstanding increased from approximately 374M (2019) to roughly 383M (2025), representing ~2.4% cumulative dilution",
+    "assertion_type": "comparative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 65,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 3,
+    "assertion_text": "Lobo holds the combined Chairman/CEO role at Stryker",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 66,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Revenue compounded at ~11% annually from $18.4B (FY22) to $25.1B (FY25), driven by both organic growth and the $4.9B Inari Medical acquisition",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 67,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Gross margins stable at 63-64% across four years, indicating durable pricing power and mix resilience despite inflationary pressures",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 68,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "FCF reached $4.3B in FY25 (17.1% margin) with exceptional 132% FCF-to-net-income conversion, demonstrating genuine cash generation superiority over reported earnings",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 69,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "ROIC of 10.0% in FY25 (down from 12.2% in FY24) reflects near-term dilution from the Inari acquisition's goodwill load rather than operational deterioration",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 70,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "R&D investment of $1.6B (6.4% of revenue) sustains innovation pipeline across MedSurg, Neurotechnology, and Orthopaedics without compressing operating margins",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 71,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Capital intensity is moderate — CapEx of $761M (3.0% of revenue) is well below depreciation of $1.2B, suggesting the business is asset-light relative to peers",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 72,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "ROIC declining from 12.2% to 10.0% due to Inari acquisition goodwill; requires monitoring to ensure returns recover as synergies materialize",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 73,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Interest expense jumped 48% YoY ($409M to $607M) reflecting acquisition-related debt; ongoing cost of the M&A strategy",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 74,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Net income growth lagged revenue growth in FY2025 ($3.2B vs $3.0B prior year, only 7% growth on 11% revenue growth), partly due to higher interest expense and integration costs",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 75,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Stryker's revenue grew from $18.4B in FY2022 to $25.1B in FY2025",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 76,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Stryker's FY2022-FY2025 revenue CAGR was approximately 10.9%",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 77,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Stryker completed the $4.9B acquisition of Inari Medical in February 2025",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 78,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "The Inari Medical acquisition added roughly $600M in annualized vascular revenue",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 79,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Stryker's gross margins held between 63% and 64% for four consecutive years",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 80,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Operating margins expanded from 19.1% in FY2023 to 20.1% in FY2025",
+    "assertion_type": "comparative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 81,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "R&D spending rose from $1.4B to $1.6B in absolute terms",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 82,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "SBC was $243M, less than 1% of revenue",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 83,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Free cash flow was $4.3B in FY2025 with net income of $3.2B, a 132% FCF conversion ratio",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 84,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "D&A was $1.2B and capex was $761M in FY2025",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 85,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Four-year FCF trajectory was $2.7B, $3.1B, $3.5B, $4.3B",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 86,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "FY2025 ROIC was 10.0%, down from 12.2% in FY2024",
+    "assertion_type": "comparative",
+    "category": "risk",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 87,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Approximately 70-75% of Stryker's revenue comes from consumable implants, instruments, and disposables",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 88,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "CapEx of $761M represents 3.0% of revenue in FY2025",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 89,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 4,
+    "assertion_text": "Revenue grew 11% in FY2025 while operating income grew faster, indicating incremental margins above average",
+    "assertion_type": "causal",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 90,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Total debt of $15.9B with net debt of $11.8B, yielding net debt/EBITDA of 1.9x — elevated but manageable for an investment-grade medtech compounder",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 91,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Interest coverage of 8.4x provides adequate headroom even after the 48% increase in interest expense from Inari-related borrowing",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 92,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "$4.1B cash on hand plus a $3.0B undrawn revolving credit facility (maturing 2030) provides $7.1B in total liquidity — a strong buffer",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 93,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Investment-grade credit rating maintained post-Inari acquisition; senior unsecured notes are well-laddered with maturities stretching from 2027 to 2036",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 94,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Current ratio of 1.9x indicates no near-term liquidity stress, with ample working capital to cover short-term obligations",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 95,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "FY2025 FCF of $4.3B covers annual interest expense 7x over and could theoretically retire all net debt in under 3 years",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 96,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Interest expense increased 48% in one year ($409M to $607M), compressing interest coverage from ~11.5x to 8.4x",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 97,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Total debt rose 22% YoY to $15.9B; if management pursues another large acquisition before deleveraging, the balance sheet could become strained",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 98,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Goodwill and intangibles likely represent a large portion of total assets ($47.8B), meaning tangible book value is substantially lower than reported equity",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 99,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's total debt stands at $15.9B against $4.1B in cash, producing net debt of $11.8B",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 100,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's debt/EBITDA ratio is 2.5x and net debt/EBITDA is 1.9x",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 101,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Long-term debt increased 21.9% year-over-year from $12.2B to $14.9B",
+    "assertion_type": "comparative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 102,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker issued $3.0B in new senior notes to fund the Inari Medical acquisition",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 103,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's debt-to-equity ratio is 70.7%",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 104,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker expanded its revolving credit facility to $3.0B with a maturity date of 2030, which was undrawn as of FY2025 year-end",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 105,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker generated $4.3B in annual free cash flow",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 106,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Interest coverage is 8.4x, calculated from operating income of $5.1B divided by interest expense of $607M",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 107,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "FY2024 interest coverage was 11.5x, from $4.7B operating income divided by $409M interest expense",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 108,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's cash balance is $4.1B, combined with $3.0B undrawn revolver providing $7.1B in total liquidity",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 109,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's current ratio is 1.9x",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 110,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's operating cash flow was $5.0B",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 111,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's gross margins are 64%",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 112,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker's annual revenue is $25.1B",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 113,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 5,
+    "assertion_text": "Stryker pays $1.1B annually in dividends",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 114,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Owner earnings of $3.7B ($9.67/share) in FY2025 represent a 131.9% FCF conversion ratio, demonstrating high earnings quality",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 115,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Trailing P/E of 42.2x vs forward P/E of 21.2x implies consensus expects near-doubling of earnings power, likely from acquisition integration and margin expansion",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 116,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "EV/EBITDA of 21.0x sits at the upper end of Stryker's historical 15-22x range and commands a significant premium to Medtronic (~14x) and Zimmer Biomet (~12x)",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 117,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Revenue CAGR of 10.9% over FY2022-2025 driven by organic growth plus M&A (notably Inari Medical acquisition) supports premium multiple but current price leaves limited margin for error",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 118,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Forward EPS of $16.73 suggests significant adjusted earnings normalization; at current price this implies a 21.2x forward multiple, reasonable for a high-quality medtech compounder but not cheap",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 119,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Analyst target mean of $424.89 (+20% upside) and median of $427.50 reflect broad Street confidence, but the low target of $316 flags downside risk if growth disappoints",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 120,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Trailing P/E of 42.2x is the highest in Stryker's recent history, reflecting both acquisition distortions and elevated expectations",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 121,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Total debt of $15.9B (up from $13.0B in FY2022) driven by M&A financing; debt/EBITDA at 2.5x is manageable but trending higher",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 122,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "ROIC of 10.0% in FY2025 is below the 12.2% in FY2024, suggesting recent acquisitions have diluted capital efficiency",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 123,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Interest expense nearly doubled from $363M (FY2023) to $607M (FY2025), reflecting higher debt load in a higher-rate environment",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 124,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker generated $3.7B in owner earnings (net income + D&A - capex) in FY2025",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 125,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's owner earnings were $9.67 per share in FY2025",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 126,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's free cash flow was $4.3B ($11.24/share) in FY2025",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 127,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's trailing GAAP EPS was $8.40",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 128,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's forward EPS estimate is $16.73",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 129,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's 5-year historical terminal multiple range is 18-24x owner earnings",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 130,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's current stock price is $354.06",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 131,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's revenue has grown at 8-9% annually over the past decade (organic ~6-7% plus bolt-on M&A)",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 132,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Medtronic trades at approximately 14x EV/EBITDA",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 133,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Zimmer Biomet trades at approximately 12x EV/EBITDA",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 134,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Boston Scientific trades at approximately 19x EV/EBITDA",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 135,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Edwards Lifesciences trades at approximately 25x EV/EBITDA",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 136,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker trades at 21x EV/EBITDA, near the upper bound of its historical premium range",
+    "assertion_type": "comparative",
+    "category": "risk",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 137,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "At $354.06 and a 20x terminal multiple with 10% discount rate, the current price implies Year 5 owner earnings of roughly $14.50/share, or ~8.5% annual owner earnings growth",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 138,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 6,
+    "assertion_text": "Stryker's operating margins are approximately 19-20%, with the base case projecting expansion to 21-22%",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 139,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Current price of $354.06 exceeds the conservative IV estimate of $295 by 20%, meaning there is a negative price margin of safety -- the stock is expensive relative to a downside scenario",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 140,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Business margin of safety is strong: 64% gross margins, diversified product portfolio across orthopedics/neurotechnology/spine/surgical, and high switching costs in Mako robotic ecosystem",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 141,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Downside-upside asymmetry is unfavorable at current price: roughly 15-20% downside to bear case vs 10-15% upside to base case, creating an asymmetric risk profile skewed against the buyer",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 142,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Debt load of $15.9B with 8.4x interest coverage provides adequate but not exceptional safety; a severe earnings recession could strain coverage",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 143,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Zero-scenario probability is extremely low -- Stryker's installed base, procedure-driven demand, and essential nature of orthopedic/surgical products make permanent capital loss near-impossible",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 144,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Negative price margin of safety (-20% vs conservative IV) is the primary concern",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 145,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "ROIC declining from 12.2% to 10.0% suggests recent acquisitions are dilutive to capital efficiency",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 146,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Debt has increased by $2.9B over three years while interest expense has risen 67%",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 147,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stock has underperformed the S&P 500 over the past 12 months (-4.9%) despite strong fundamentals, suggesting valuation compression is already underway",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 148,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker trades at $354.06 per share",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 149,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker's 52-week low is $328",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 150,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker's Mako robotic surgical platform costs $1M+ per system for hospitals to install",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 151,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker's portfolio is diversified across MedSurg (surgical equipment, instruments, endoscopy), Neurotechnology (neurovascular, CMF, ENT), and Orthopedics (knees, hips, trauma)",
+    "assertion_type": "qualitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 152,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker's gross margins are 64%",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 153,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker traded below $330 within the past year",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 154,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker touched $280-300 during the 2022 medtech selloff",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 155,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker has $4.1B in cash",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 156,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker has $7.0B in working capital",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 157,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker has acquired Inari Medical, Wright Medical, and Vocera",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 158,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker's return on invested capital is currently below 10%",
+    "assertion_type": "quantitative",
+    "category": "risk",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 159,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Stryker has $15.9B in debt",
+    "assertion_type": "quantitative",
+    "category": "risk",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 160,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Approximately 25-30% of Stryker's revenue is international",
+    "assertion_type": "quantitative",
+    "category": "risk",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 161,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 7,
+    "assertion_text": "Medtronic's Hugo platform, Intuitive Surgical, and Globus Medical are competitors to Stryker's Mako robotic surgery platform",
+    "assertion_type": "qualitative",
+    "category": "risk",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 162,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker is an exceptional 10+ year compounder with a track record of consistent double-digit revenue growth, making it highly suitable for patient long-term ownership if bought at the right price",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 163,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Beta of 0.87 and defensive healthcare characteristics suggest max drawdowns of 25-35% in severe bear markets, manageable for long-term holders but painful if purchased at premium valuations",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 164,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Near-term catalysts are limited at current valuation; the stock needs either a broad market correction or company-specific setback to create an attractive entry point",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 165,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Low portfolio overlap with most equity holdings given medtech's idiosyncratic demand drivers (procedure volumes, demographics, hospital capex cycles)",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 166,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "The primary temperament challenge is patience: Stryker is a \"wonderful company at a fair price\" situation where the disciplined move may be to wait rather than act",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 167,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Entering at $354 means accepting a negative margin of safety, which violates core value investing discipline regardless of business quality",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 168,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "The stock has been range-bound for 12 months (-4.9%), suggesting the market is already digesting the premium valuation",
+    "assertion_type": "quantitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 169,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Rising debt levels and declining ROIC could signal the M&A-driven growth engine is becoming less efficient",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 170,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "A portfolio already concentrated in quality compounders at premium multiples faces correlated de-rating risk",
+    "assertion_type": "qualitative",
+    "category": "red_flag",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 171,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker has compounded revenue at approximately 9-10% annually for over a decade",
+    "assertion_type": "quantitative",
+    "category": "strength",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 172,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker's Mako robotic surgery platform is installed in roughly 2,500+ hospitals globally",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 173,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker has a beta of 0.87",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 174,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker's historical max drawdowns have been approximately 25-35% in severe market corrections including the COVID crash of 2020 and medtech selloff of late 2022",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 175,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker's current 52-week range is $328-$405, representing a 19% peak-to-trough swing",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 1
+  },
+  {
+    "assertion_id": 176,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker's current stock price is approximately $354",
+    "assertion_type": "quantitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 177,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker has recovered to new highs after every major correction within 12-24 months",
+    "assertion_type": "comparative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 178,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker acquired Inari Medical",
+    "assertion_type": "qualitative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 179,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Medtronic is developing the Hugo robotic surgery system as a competitor to Stryker's Mako platform",
+    "assertion_type": "qualitative",
+    "category": "risk",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 180,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker has relatively low correlation with technology, financial, and consumer discretionary sectors",
+    "assertion_type": "qualitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 181,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Medtech demand is driven by demographics and procedure volumes rather than GDP growth or consumer spending cycles",
+    "assertion_type": "qualitative",
+    "category": "strength",
+    "requires_arithmetic": 0
+  },
+  {
+    "assertion_id": 182,
+    "ticker": "SYK",
+    "report_path": "/Users/jep/Desktop/portfolio-and-investment/runs/week12_16.03/reports/SYK/FINAL-REPORT.md",
+    "umbrella_number": 8,
+    "assertion_text": "Stryker has moderate correlation with other medtech names (MDT, BSX, ZBH) but low correlation with pharma, biotech, or managed care",
+    "assertion_type": "comparative",
+    "category": "finding",
+    "requires_arithmetic": 0
+  }
+]

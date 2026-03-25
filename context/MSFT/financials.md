@@ -1,6 +1,6 @@
 # Financial Data: MSFT — Microsoft Corporation
 
-**Generated:** 2026-03-15 22:31 UTC
+**Generated:** 2026-03-22 20:18 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Technology | **Industry:** Software - Infrastructure
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $395.55 |
-| Market Cap | $2.9T |
-| Enterprise Value | $3.0T |
+| Current Price | $381.85 |
+| Market Cap | $2.8T |
+| Enterprise Value | $2.9T |
 | 52-Week High | $555.45 |
 | 52-Week Low | $344.79 |
-| Position in 52-Week Range | 24% |
+| Position in 52-Week Range | 18% |
 | Beta | 1.11 |
 | Shares Outstanding | 7.4B |
-| Dividend Yield | 0.92% |
+| Dividend Yield | 0.95% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 24.8x |
-| Forward P/E | 21.0x |
-| EV/EBITDA | 17.0x |
-| EV/Revenue | 9.7x |
-| P/FCF | 54.8x |
-| P/S | 9.6x |
-| P/B | 7.5x |
+| Trailing P/E | 23.9x |
+| Forward P/E | 20.3x |
+| EV/EBITDA | 16.4x |
+| EV/Revenue | 9.4x |
+| P/FCF | 52.9x |
+| P/S | 9.3x |
+| P/B | 7.3x |
 
 ---
 
@@ -49,7 +49,7 @@
 | Target Low | $392.00 |
 | Number of Analysts | 53 |
 | Forward EPS | $18.84 |
-| Trailing EPS | $15.98 |
+| Trailing EPS | $15.96 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $395.55 | — |
-| 1 Month Ago | $400.92 | -1.3% |
-| 3 Months Ago | $482.37 | -18.0% |
-| 6 Months Ago | $507.79 | -22.1% |
+| Current | $381.85 | — |
+| 1 Month Ago | $397.23 | -3.9% |
+| 3 Months Ago | $482.88 | -20.9% |
+| 6 Months Ago | $515.79 | -26.0% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $552.24 (2025-07-31) | -28.4% from current |
-| 52-Week Low | $342.17 (2025-04-07) | +15.6% from current |
+| 52-Week High | $552.24 (2025-07-31) | -30.9% from current |
+| 52-Week Low | $342.17 (2025-04-07) | +11.6% from current |
 
 ---
 

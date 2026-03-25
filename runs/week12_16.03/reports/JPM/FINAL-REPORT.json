@@ -1,0 +1,69 @@
+{
+  "ticker": "JPM",
+  "company": "JPMorgan Chase & Co.",
+  "analysis_date": "2026-03-22",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 9,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "Widest moat in global banking: #1 in US deposits, credit cards, and investment banking revenue with 20% ROTCE vs. 12-14% peers",
+    "Fortress balance sheet with CET1 of 14.5% (300 bps above requirement) and $57B pre-provision earnings absorbing severe credit losses",
+    "Exceptional fee diversification across consumer banking, investment banking, trading, and asset management creates natural earnings hedge",
+    "Best-in-class efficiency ratio of 52-53% driven by $20B annual technology investment and unmatched scale",
+    "21-year track record under Dimon compounding tangible book value at ~10% annually through multiple crises"
+  ],
+  "key_risks": [
+    "Valuation at all-time-high P/TBV of 2.66x (10-year median 1.57x) prices in perfection with no margin of safety",
+    "CEO succession imminent within 2-3 years with likely 10-15% multiple compression during transition",
+    "ROTCE normalization from 20% toward management's 17% guide; recession could compress to 12-14%",
+    "Negative margin of safety: price exceeds base IV by 10% with asymmetric downside (32% down vs. 15% up)",
+    "Regulatory uncertainty from Basel III endgame rules could increase capital requirements and constrain buybacks"
+  ],
+  "red_flags": [
+    "Dimon sold 11%+ of holdings in early 2025 ($233M in February alone) — pace of insider selling has accelerated",
+    "Apple Card portfolio acquisition introduces $2.2B in unseasoned consumer credit risk with uncertain loss curves",
+    "2025 net income declined slightly from 2024 peak ($57.0B vs. $58.5B), suggesting cyclical earnings peak may have passed",
+    "Quant DCF model completely unreliable for bank valuation — IV outputs ($142 base) are meaningless for banks"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to 1.5-2.0x TBVPS ($160-$215) providing genuine margin of safety",
+    "Dimon succession completed smoothly with new CEO demonstrating continuity of fortress philosophy",
+    "Recession-driven banking sell-off compresses JPM to unjustified levels relative to earnings power"
+  ],
+  "sell_triggers": [
+    "P/TBV exceeds 3.0x (extreme overvaluation disconnected from fundamentals)",
+    "ROTCE falls below 12% for two consecutive quarters signaling structural deterioration",
+    "New CEO pursues large transformative acquisition at excessive price breaking capital allocation discipline"
+  ],
+  "valuation_summary": "At $286.56, JPM trades at 2.66x tangible book value ($107.56 TBVPS) — the all-time high of its historical P/TBV range (10-year median 1.57x). Bank-appropriate valuation methods (P/TBV, normalized earnings power, residual income) yield a base IV of ~$260, meaning the stock trades at a ~10% premium to fair value. Forward P/E of 12.2x on consensus $23.49 EPS is reasonable but fully prices in above-trend earnings. The DCF model is unreliable for banks. This is a world-class franchise fairly valued to modestly overvalued.",
+  "iv_conservative": 195,
+  "iv_base": 260,
+  "iv_bull": 330,
+  "iv_currency": "USD",
+  "iv_source": "ai_estimate",
+  "mos_at_analysis": -10.0,
+  "monte_carlo_prob_above_price": 0.0003,
+  "sensitivity_iv_range": [110.02, 216.51],
+  "compact_checklist": [
+    "JPM collects the spread between $1T+ in cheap deposits and higher-rate loans, plus fees on every capital markets, payments, and wealth management transaction across 82M+ households and global institutional clients — customers stay because switching treasury and custody integrations takes months and carries operational risk.",
+    "A $20B/year technology budget, #1 positions in US deposits, credit cards, and investment banking, and 20% ROTCE vs. 12-14% for peers create a scale and switching-cost advantage that no competitor or fintech can replicate across all three segments simultaneously.",
+    "20% ROTCE in FY2025 is roughly double the 10-12% cost of equity, the efficiency ratio of 52-53% is best-in-class among universal banks, and tangible book value per share has compounded at ~10% annually since 2006.",
+    "Dimon's 21-year tenure produced ~10% annual book value compounding, a perfectly timed First Republic acquisition, and $34.6B in buybacks in FY2025 alone — but he sold 11%+ of his shares in early 2025 and his exit within 2-3 years is the biggest open question.",
+    "CET1 of 14.5% sits 300 bps above the regulatory minimum, the Fed just cut JPM's stress capital buffer to 2.5%, and $57B in pre-provision earnings can absorb a doubling of credit losses before capital is even threatened.",
+    "At 2.66x tangible book (vs. 10-year median of 1.57x), the stock requires JPM to sustain 18-20% ROTCE indefinitely, execute a flawless CEO succession, and avoid any meaningful credit cycle — all simultaneously.",
+    "There is none — the price exceeds our base IV of $260 by 10%, with 32% downside to the bear case ($195) versus only 15% upside to the bull case ($330).",
+    "ROTCE falling below 12% for two consecutive quarters, a new CEO making a large dilutive acquisition, or Basel III endgame rules materially increasing capital requirements would each break the investment case."
+  ],
+  "source_summary": "JPM Q4 2025 earnings release and presentation, SEC filings, JPM 2025 Investor Day, Yahoo Finance (yfinance auto-fetch), FDIC deposit data, Dealogic league tables, GuruFocus TBVPS data, MacroTrends historical P/B, Federal Reserve DFAST 2025 results, CNBC/Bloomberg reporting, Seeking Alpha, Investing.com",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. JPM is a world-class banking franchise with the widest moat in global banking, but at 2.66x TBVPS (all-time high) with negative margin of safety, imminent CEO succession, and ROTCE normalization ahead, the stock prices in perfection. Watch verdict — wait for 1.5-2.0x TBVPS entry ($160-$215)."
+}

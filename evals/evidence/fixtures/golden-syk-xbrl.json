@@ -1,0 +1,53 @@
+{
+  "ticker": "SYK",
+  "period": "FY2025",
+  "source": "context/SYK/edgar-10k.md (XBRL via edgartools)",
+  "metrics": {
+    "revenue": 25120000000,
+    "operating_income": 4890000000,
+    "net_income": 3250000000,
+    "total_assets": 47840000000,
+    "total_liabilities": 25420000000,
+    "stockholders_equity": 22420000000,
+    "current_assets": 14760000000,
+    "current_liabilities": 7790000000,
+    "operating_cash_flow": 5040000000,
+    "capex": 761000000,
+    "free_cash_flow": 4280000000,
+    "gross_profit": 16070000000,
+    "cost_of_sales": 9050000000,
+    "interest_expense": 607000000
+  },
+  "derived": {
+    "gross_margin": {
+      "formula": "gross_profit / revenue",
+      "expected": 0.6397,
+      "tolerance": 0.005
+    },
+    "operating_margin": {
+      "formula": "operating_income / revenue",
+      "expected": 0.1947,
+      "tolerance": 0.005
+    },
+    "fcf_margin": {
+      "formula": "free_cash_flow / revenue",
+      "expected": 0.1704,
+      "tolerance": 0.005
+    },
+    "interest_coverage": {
+      "formula": "operating_income / interest_expense",
+      "expected": 8.057,
+      "tolerance": 0.1
+    },
+    "current_ratio": {
+      "formula": "current_assets / current_liabilities",
+      "expected": 1.894,
+      "tolerance": 0.02
+    },
+    "debt_to_assets": {
+      "formula": "total_liabilities / total_assets",
+      "expected": 0.5314,
+      "tolerance": 0.005
+    }
+  }
+}

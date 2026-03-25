@@ -1,0 +1,68 @@
+{
+  "ticker": "EW",
+  "company": "Edwards Lifesciences Corporation",
+  "analysis_date": "2026-03-22",
+  "verdict": "Watch",
+  "average_score": 6.9,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Dominant 60%+ US TAVR market share sustained for over a decade with high physician switching costs and FDA PMA regulatory barriers",
+    "Fortress balance sheet: $3.5B net cash, 0.5x debt/EBITDA, 63x interest coverage — survives 30% revenue decline for 2 years",
+    "Elite 78% gross margins and $1.3B FY2025 FCF (22% margin, 124% conversion) from an asset-light model",
+    "TMTT growing 40%+ YoY ($551M in FY2025) provides a credible second growth vector targeting $2B by 2030",
+    "Essential, non-discretionary products in an aging population — recession-resistant demand driven by demographics"
+  ],
+  "key_risks": [
+    "Medtronic Evolut 5-year durability data challenges Edwards' clinical leadership in the fastest-growing younger patient cohort",
+    "ROIC declined from 21% to 13% over four years; operating margins compressed 750bps from 34.5% to 27.0%",
+    "74% revenue concentration in TAVR — any product-specific setback is near-existential",
+    "CMS coverage decision for asymptomatic TAVR (expected Q4 2026) is binary risk that could double or stall addressable market",
+    "No price margin of safety at $82.50 — unfavorable 1.2:1 downside-to-upside asymmetry"
+  ],
+  "red_flags": [
+    "FTC-blocked JenaValve acquisition reveals management willingness to push antitrust boundaries",
+    "Compensation committee removed FCF metric from 2025 incentive plan",
+    "Only 5 of 25 sensitivity grid cells produce IV above current price of $82.50"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $65-70 range (near quant base IV), creating genuine margin of safety",
+    "CMS grants broad asymptomatic TAVR coverage, roughly doubling addressable patient population",
+    "Operating margins inflect above 29% with TMTT approaching profitability, demonstrating ROIC recovery"
+  ],
+  "sell_triggers": [
+    "TAVR US market share drops below 50% on a sustained basis, indicating moat erosion from Evolut durability advantage",
+    "Operating margins fall below 22% without a clear path to recovery",
+    "Management pivots toward large, dilutive acquisitions that change the focused structural heart thesis"
+  ],
+  "valuation_summary": "Edwards trades at $82.50 (25x forward P/E), approximately fair value on adjusted estimates. Quant base IV $69.29, analyst-adjusted base $78, adjusted bear $55, adjusted bull $105. The market prices in successful execution of 8-10% revenue growth guidance with margin recovery — reasonable but leaving no cushion for disappointment. Monte Carlo gives 42.9% probability of being undervalued.",
+  "iv_conservative": 47.46,
+  "iv_base": 69.29,
+  "iv_bull": 94.16,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -73.8,
+  "monte_carlo_prob_above_price": 0.4288,
+  "sensitivity_iv_range": [65.42, 100.49],
+  "compact_checklist": [
+    "Edwards sells transcatheter heart valves (74% TAVR, ~$30K per procedure) to hospitals, with revenue driven by countable procedure volumes in an aging population where only ~50% of eligible patients currently receive treatment.",
+    "Physician switching costs (retraining risks patient lives), FDA PMA barriers requiring $100M+ multi-year trials, and 60%+ US market share held for over a decade against well-funded Medtronic limit competitive entry to three approved platforms.",
+    "Gross margins of 78% and FY2025 FCF of $1.3B (22% margin, 124% conversion) confirm strong cash generation, but ROIC has declined from 21% to 13% over four years and operating margins compressed 750bps to 27%.",
+    "The team returned $4.7B in buybacks over four years and executed a disciplined $4.2B Critical Care divestiture, but the FTC-blocked $945M JenaValve deal and removal of FCF from incentive metrics are capital allocation blemishes.",
+    "With $3.5B net cash, 0.5x debt/EBITDA, and 63x interest coverage, Edwards would generate positive free cash flow even with a 30% revenue decline sustained for two years.",
+    "At $82.50 (25x forward earnings), the market requires Edwards to deliver 8-10% revenue growth with margin recovery to 29%+ -- roughly management's guidance executed without disruption from Medtronic's improving Evolut durability data.",
+    "The business quality (dominant share, fortress balance sheet, essential products) provides a strong floor, but the price offers zero cushion -- only 5 of 25 sensitivity grid cells produce IV above $82.50, and Monte Carlo gives just 43% probability of being undervalued.",
+    "Sell if TAVR US market share drops below 50% on a sustained basis, signaling that Medtronic's superior durability data is converting physician preference and eroding the switching-cost moat."
+  ],
+  "source_summary": "Edwards Lifesciences FY2022-FY2025 financials (yfinance), Q4 2025 earnings release, December 2025 Investor Conference, quant DCF model with Monte Carlo simulation, MedTech Dive competitive analysis, FTC vs Edwards/JenaValve ruling, analyst consensus estimates, CMS coverage guidance, company 10-K filings",
+  "confidence": "medium",
+  "change_notes": ""
+}

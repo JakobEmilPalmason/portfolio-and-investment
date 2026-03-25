@@ -1,0 +1,130 @@
+{
+  "bear": {
+    "enterprise_value": 371807234591,
+    "equity_value": 315307234591,
+    "per_share_value": 1332.1,
+    "terminal_pct_of_value": 73.2,
+    "implied_ev_ebitda": 11.9,
+    "wacc": 0.11,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "base": {
+    "enterprise_value": 652093054605,
+    "equity_value": 595593054605,
+    "per_share_value": 2516.24,
+    "terminal_pct_of_value": 80.0,
+    "implied_ev_ebitda": 19.2,
+    "wacc": 0.1,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "bull": {
+    "enterprise_value": 978860262004,
+    "equity_value": 922360262004,
+    "per_share_value": 3896.75,
+    "terminal_pct_of_value": 84.0,
+    "implied_ev_ebitda": 27.2,
+    "wacc": 0.095,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "iv_conservative": 1332.1,
+  "iv_base": 2516.24,
+  "iv_bull": 3896.75,
+  "currency": "DKK",
+  "current_price": 1590.5,
+  "mos_at_analysis": -19.4,
+  "model_date": "2026-03-22",
+  "discount_method": "capm",
+  "capex_mode": "maintenance",
+  "growth_schedule": [
+    0.2,
+    0.2,
+    0.2,
+    0.115,
+    0.03
+  ],
+  "owner_earnings": {
+    "method": "da_proxy",
+    "maintenance_capex": 2600000000,
+    "growth_capex": 0,
+    "owner_earnings_adjusted": 14200000000,
+    "maintenance_pct_of_total": 1.0
+  },
+  "ticker": "DSV.CO",
+  "model": "dcf_exit_multiple",
+  "sensitivity": {
+    "row_param": "Revenue Growth",
+    "col_param": "WACC",
+    "row_values": [
+      0.16,
+      0.18,
+      0.2,
+      0.22,
+      0.24
+    ],
+    "col_values": [
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12
+    ],
+    "grid": [
+      [
+        2879.45,
+        2748.3,
+        2624.0,
+        2506.14,
+        2394.32
+      ],
+      [
+        3140.45,
+        2997.91,
+        2862.82,
+        2734.73,
+        2613.21
+      ],
+      [
+        3419.09,
+        3264.38,
+        3117.76,
+        2978.74,
+        2846.86
+      ],
+      [
+        3716.28,
+        3548.56,
+        3389.63,
+        3238.94,
+        3096.0
+      ],
+      [
+        4032.93,
+        3851.34,
+        3679.27,
+        3516.14,
+        3361.4
+      ]
+    ],
+    "base_row_idx": 2,
+    "base_col_idx": 2
+  },
+  "monte_carlo": {
+    "percentiles": {
+      "P5": 2362.18,
+      "P10": 2531.16,
+      "P25": 2859.81,
+      "P50": 3259.08,
+      "P75": 3721.2,
+      "P90": 4157.34,
+      "P95": 4443.94
+    },
+    "mean": 3313.03,
+    "median": 3259.01,
+    "std": 633.37,
+    "prob_above_price": 1.0,
+    "n_simulations": 10000
+  }
+}

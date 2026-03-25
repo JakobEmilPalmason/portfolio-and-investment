@@ -210,7 +210,7 @@ ADBE, BAM, BRK-B, BSX, CASY, CRM, FIX, HD, HPE, NOW, NVDA, NVS, ORCL, ULTA, V
 | CVS | CVS Health Corp. | Healthcare | recovery | tracked | Healthcare vertical integration play | Managed care losses; heavy debt load | mega | low | no | medium |
 | MMM | 3M Co. | Industrials | recovery | tracked | Post-split; focused industrial portfolio | Legacy liabilities; execution uncertain | large | low | no | medium |
 | ORSTED.CO | Orsted A/S | Utilities | recovery | tracked|large_cap_europe_quality | Offshore wind leader but regulated utility | Capital-intensive; regulated returns; execution | large | low | no | low |
-| RELX.L | RELX plc | Technology | compounder | tracked | Data analytics monopoly in legal/science | Modest growth ceiling; currency risk | mega | low | no | high |
+| RELX | RELX plc | Technology | compounder | tracked | Data analytics monopoly in legal/science | Modest growth ceiling; currency risk | mega | low | no | high |
 
 ---
 

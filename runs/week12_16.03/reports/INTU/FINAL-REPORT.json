@@ -1,0 +1,65 @@
+{
+  "ticker": "INTU",
+  "company": "Intuit Inc.",
+  "analysis_date": "2026-03-18",
+  "verdict": "Watch",
+  "average_score": 7.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "QuickBooks holds ~80% US SMB accounting market share with structural switching costs and accountant network effects — one of the widest moats in software",
+    "Fortress balance sheet: 0.5x net debt/EBITDA, 20x interest coverage, $4.6B cash, zero survival risk in any scenario",
+    "Expanding operating leverage: margins grew from 20.1% to 26.2% over four years with revenue compounding at ~14% CAGR",
+    "Highly recurring revenue (~75-80% subscription) with predictable tax-cycle seasonality and diversified customer base of millions"
+  ],
+  "key_risks": [
+    "SBC of $2.0B (51% of net income, 10.6% of revenue) materially overstates real shareholder economics vs headline metrics",
+    "Current price requires ~18% annual SBC-adjusted owner earnings growth for a decade — demanding and unproven",
+    "AI is both opportunity and threat: could widen moat or commoditize tax prep and lower barriers for competitors",
+    "Revenue growth decelerating from 17% to 10% guided for Q3 FY2026",
+    "IRS Direct File and vertical SaaS competitors pose long-term threats to TurboTax and QuickBooks respectively"
+  ],
+  "red_flags": [
+    "CEO has made zero open-market share purchases in 5 years while selling $26.6M in January 2026",
+    "Mailchimp ($12B acquisition) showing revenue stagnation — largest capital allocation decision has underperformed",
+    "Negative margin of safety on SBC-adjusted conservative IV (-141%)",
+    "Buyback program partly offsets dilution rather than returning genuine capital — net share reduction only ~2% over 3 years despite $6.7B in buybacks"
+  ],
+  "buy_triggers": [
+    "Price declines to $250-300 range, bringing SBC-adjusted owner earnings yield above 4%",
+    "SBC/revenue ratio drops below 8%, demonstrating real per-share economics improvement",
+    "AI monetization shows up in measurable ARPU expansion and accelerating growth above 15%"
+  ],
+  "sell_triggers": [
+    "SBC/revenue rises above 13% with no plan to moderate",
+    "Revenue growth drops below 5% for two consecutive quarters",
+    "Major competitive threat materializes (government free filing revival, tech platform entry) and TurboTax ARPU declines"
+  ],
+  "valuation_summary": "At $447, INTU is fairly valued on non-GAAP metrics (16.9x forward P/E) but expensive on SBC-adjusted owner earnings (2.1% yield, ~48x P/OE). Conservative IV of $185, base $265, bull $353 — all below current price. The 45% drawdown from highs brought the stock from overvalued to roughly fair, not yet to bargain territory.",
+  "iv_conservative": 185,
+  "iv_base": 265,
+  "iv_bull": 353,
+  "iv_currency": "USD",
+  "mos_at_analysis": -141,
+  "compact_checklist": [
+    "Intuit sells subscription accounting software (QuickBooks, ~80% market share) and tax prep (TurboTax) to millions of small businesses and consumers, with ~80% gross margins and 75-80% recurring revenue.",
+    "QuickBooks' 80% US market share is protected by years of embedded financial data, 700+ third-party integrations, and a self-reinforcing accountant-client network effect that has held for two decades.",
+    "ROIC improved from 8.9% to 15.8% over four years, but $2.0B in annual SBC (51% of net income) drops SBC-adjusted ROIC to ~10-11% and real owner earnings yield to just 2.1%.",
+    "Competent operators who expanded operating margins from 20.1% to 26.2% in three years, but CEO Goodarzi has made zero open-market share purchases in five years while selling $26.6M in January 2026.",
+    "Net debt/EBITDA of 0.5x with 20x interest coverage and $4.6B cash means Intuit could service all debt for years even in a 30% revenue decline scenario.",
+    "At $447, the market requires ~18% annual growth in SBC-adjusted owner earnings for a decade — achievable only if AI monetization succeeds and SBC discipline emerges, neither of which is yet proven.",
+    "The business moat is genuine protection, but at 141% above conservative SBC-adjusted IV of $185, there is no price margin of safety — you are paying $2.42 for every $1 of conservative value.",
+    "Sell if SBC/revenue rises above 13% with no plan to moderate, or if revenue growth drops below 5% for two consecutive quarters signaling the compounding engine has stalled."
+  ],
+  "source_summary": "Intuit FY2025 10-K, Q2 FY2026 earnings release (Feb 2026), SEC Form 4 filings, proxy statement, yfinance financial data, Morningstar moat analysis, QuickBooks market share data, IRS Direct File reports, Alpha Spread DCF, GuruFocus, Simply Wall St, analyst consensus estimates, Trefis, competitive landscape research",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Watch verdict driven by high business quality (avg 7.1) offset by insufficient margin of safety (score 5) at current $447 price. SBC-adjusted valuation is the key differentiator vs consensus."
+}

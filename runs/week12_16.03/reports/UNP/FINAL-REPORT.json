@@ -1,0 +1,70 @@
+{
+  "ticker": "UNP",
+  "company": "Union Pacific Corporation",
+  "analysis_date": "2026-03-22",
+  "verdict": "Watch",
+  "average_score": 6.9,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 5,
+    "margin_of_safety": 4,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Irreplaceable 32,000-mile rail network forming a natural duopoly with BNSF — physically impossible to replicate",
+    "Structural 3-4x fuel efficiency advantage over trucking that is widening, not narrowing",
+    "Best-in-class 40.2% operating margins and 15-17% ROIC consistently above 8.5% cost of capital",
+    "Stable $5.1-5.8B annual owner earnings converting at 77-87% of net income to real cash",
+    "Essential infrastructure business that has survived 150+ years of economic cycles without permanent impairment"
+  ],
+  "key_risks": [
+    "No price margin of safety — stock at $235 vs conservative IV of $160, Monte Carlo gives only 41% probability of undervaluation",
+    "Norfolk Southern $85B merger pursuit introduces binary execution risk — STB already rejected initial application",
+    "Revenue flat at $24.1-24.9B for four years with no volume growth catalyst in sight",
+    "Procyclical buyback timing ($6.3B at 2022 highs, $705M at 2023 lows) raises capital allocation concerns",
+    "Secular coal decline (~8-10% of revenue) and intermodal exposure to trade policy uncertainty"
+  ],
+  "red_flags": [
+    "MOS of -46.8% — price exceeds conservative IV by a wide margin",
+    "Only 8 of 25 sensitivity grid cells produce IV above the current price",
+    "Norfolk Southern merger could add $25-30B combined debt to balance sheet",
+    "Buyback spending was inverse to value creation opportunity (heavy at highs, light at lows)",
+    "Current ratio below 1.0x — dependent on continuous cash flow for short-term obligations"
+  ],
+  "buy_triggers": [
+    "Price pullback to $200-210, pushing Monte Carlo P(IV > Price) above 55-60%",
+    "Norfolk Southern merger receives STB approval, de-risking the bull case",
+    "Freight volume recovery confirmed by ISM manufacturing above 52 and carload growth of 3%+"
+  ],
+  "sell_triggers": [
+    "Operating margins decline below 35% for two consecutive years without macro excuse",
+    "Norfolk Southern merger destroys shareholder value through overpayment or integration failure",
+    "STB implements forced reciprocal switching that structurally erodes geographic pricing power"
+  ],
+  "valuation_summary": "At $235 vs base IV of $230, UNP is approximately fairly valued. The quant model's Monte Carlo mean of $228 and P(IV > Price) of 41.1% confirm the stock is priced for base-case execution with no margin for error. Owner earnings yield of ~4.2% and 19.6x trailing P/E are in line with historical averages. The Norfolk Southern merger introduces binary optionality not captured in the DCF.",
+  "iv_conservative": 141.69,
+  "iv_base": 230.48,
+  "iv_bull": 332.79,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -65.8,
+  "monte_carlo_prob_above_price": 0.4112,
+  "sensitivity_iv_range": [161.51, 311.80],
+  "compact_checklist": [
+    "Union Pacific moves freight on 32,000 miles of irreplaceable western U.S. rail, charging per carload across ~10,000 customers in bulk, industrial, and intermodal segments, generating $24-25B in stable annual revenue because rail moves a ton of freight 500 miles on one gallon of fuel — 3-4x cheaper than trucking.",
+    "A natural duopoly with BNSF, built on physically irreplicable infrastructure that would cost $20-30B+ and decades of impossible permitting to reproduce, plus geographic exclusivity where many shippers have access to only one railroad.",
+    "ROIC of 15-17% consistently exceeds the ~8.5% cost of capital, operating margins hit 40.2% in FY2025 (59.3% operating ratio), and owner earnings of $5.1-5.8B annually convert at 77-87% of net income to real cash.",
+    "Capital allocation is competent but not exceptional — 20 years of dividend growth and 9% share count reduction are offset by procyclical buyback timing ($6.3B at 2022 highs, only $705M at 2023 lows) and an ambitious $85B Norfolk Southern merger pursuit that carries serious execution risk.",
+    "With 8.0x interest coverage, 2.5x Debt/EBITDA, an A credit rating, and stress-tested ability to generate $2-2.5B in FCF even in a 30% revenue decline, UNP survives a severe recession without equity issuance — though the pending Norfolk Southern merger could add $25-30B in combined debt.",
+    "At $235 versus a base IV of $230, the market requires exactly base-case execution — 2% revenue growth, 40%+ margins, 15x exit multiple — with zero margin for error, and only 8 of 25 sensitivity grid cells produce IV above the current price.",
+    "The business moat is a fortress (duopoly, essential infrastructure, 150-year track record), but there is no price margin of safety — conservative IV of $160 sits 32% below the current price, and Monte Carlo gives only 41% probability of undervaluation.",
+    "Sell if operating margins fall below 35% for two consecutive years without a macro excuse, if the Norfolk Southern merger destroys shareholder value through overpayment or integration failure, or if the STB implements forced reciprocal switching that structurally erodes geographic pricing power."
+  ],
+  "source_summary": "Deterministic DCF model (src/quant), Monte Carlo simulation (10,000 runs), sensitivity grid, yfinance financials (FY2022-FY2025), Union Pacific Q4 2025 earnings call, Yahoo Finance, Morningstar, analyst consensus estimates, SEC filings, STB regulatory filings",
+  "confidence": "medium",
+  "change_notes": ""
+}

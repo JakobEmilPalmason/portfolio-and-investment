@@ -1,0 +1,71 @@
+{
+  "ticker": "CSU.TO",
+  "company": "Constellation Software Inc.",
+  "analysis_date": "2026-03-22",
+  "verdict": "Own",
+  "average_score": 8.375,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 9,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 9,
+    "margin_of_safety": 8,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Portfolio of hundreds of switching-cost-protected VMS mini-monopolies across 150+ verticals with near-zero customer concentration",
+    "25-year proprietary acquisition pipeline moat — CSI's reputation as the preferred permanent acquirer gives it deal flow competitors cannot replicate",
+    "FCF margins expanding to 22.9% on $2.7B real FCF against only $68M maintenance capex — among the most capital-light large-cap compounders globally",
+    "Zero dilutive compensation across 25 years; 75% of executive bonuses recycled into open-market share purchases held 4 years — true owner alignment",
+    "Current price below all 25 sensitivity grid cells and the model's bear-case IV; Monte Carlo assigns 100% probability of undervaluation",
+    "75%+ recurring revenue from mission-critical software customers who almost never churn, creating structural revenue floor in any downturn"
+  ],
+  "key_risks": [
+    "Mark Leonard's September 2025 health-related departure is the most important governance event in the company's history; Mark Miller is unproven as sole capital allocation decision-maker",
+    "ROIC declining trend: 23.5% (FY2023) to 16.5% (FY2025) — if this continues toward WACC (~7.7%), the acquisition engine begins destroying rather than creating value",
+    "AI disruption risk in Vela and adjacent verticals (~15–30% of revenues); not imminent in the regulated 70% but timeline is 5–10 years for exposed segments",
+    "Acquisition multiple inflation from PE and serial acquirer competition thinning the pipeline of attractively-priced VMS targets",
+    "EBIT-based interest coverage declining to 4.7x from 9.2x; revolving credit facility matures November 2026 and requires proactive renewal"
+  ],
+  "red_flags": [
+    "Mark Leonard health-related resignation September 2025 — key-man transition risk with no precedent in the company's history",
+    "ROIC compression from 23.5% to 16.5% in two years — accounting-driven but the trend requires monitoring for inflection below 12%",
+    "Thin absolute price MOS of 9.5% to bear IV — model errors in WACC or exit multiple could erode the arithmetic cushion",
+    "PEMS (minority stake) strategy is unproven at Constellation; governance dynamics with third-party companies differ materially from wholly-owned VMS subsidiaries",
+    "Q4 2025 FCFA2S down 12% vs prior year Q4 — heavy acquisition activity creating near-term FCF lumpiness"
+  ],
+  "buy_triggers": [
+    "Q1 2026 earnings show FCF growth resuming cleanly under Miller with acquisition discipline intact and no inflated multiples",
+    "Price weakness below C$2,300, widening bear-case MOS to approximately 20%+",
+    "PEMS strategy generates an observable early return on the Sabre investment, validating capital allocation pivot at scale"
+  ],
+  "sell_triggers": [
+    "ROIC on incremental acquisitions demonstrably falls below 12% for two or more consecutive years — acquisition engine is destroying value",
+    "Price exceeds base IV of C$4,148 by 20–30% (approximately C$5,000+) with no fundamental change, eliminating the margin of safety",
+    "Evidence of Miller departing from Leonard's philosophy: dilutive compensation, buybacks above IV, or acquisitions outside VMS/software circle of competence at inflated prices"
+  ],
+  "valuation_summary": "At C$2,499, the stock trades below the quant model's bear-case IV of C$2,762 and below all 25 cells of the sensitivity grid (range: C$3,950–C$6,493); the base IV of C$4,148 implies 66% upside and the reward-to-risk ratio is approximately 6:1 to 12:1. Monte Carlo assigns 100% probability that intrinsic value exceeds today's price.",
+  "iv_conservative": 2761.97,
+  "iv_base": 4147.92,
+  "iv_bull": 5717.14,
+  "iv_currency": "CAD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 9.5,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [3950.42, 6493.25],
+  "compact_checklist": [
+    "Constellation Software buys hundreds of mission-critical vertical market software (VMS) businesses across 150+ niche industries, collects 75% recurring maintenance fees from captive customers who almost never switch, and redeploys $2.7B in annual FCF into the next batch of acquisitions.",
+    "Customers face switching costs — data migration risk, staff retraining, and operational disruption — that far outweigh the annual license fee (often <0.1% of operating costs), locking them in permanently while CSI's 25-year reputation as the preferred permanent acquirer gives it proprietary deal flow no competitor can replicate.",
+    "FCF margins expanded from 19.0% (FY2022) to 22.9% (FY2025) on $2.7B of real FCF against maintenance capex of only $68M (0.6% of $11.6B revenue), while ROIC on FCFA2S basis held 22–24% — a self-funding acquisition machine converting nearly every recurring dollar to deployable cash.",
+    "Mark Leonard's compensation structure required executives to buy shares with 75% of after-tax bonuses and hold four years, issued zero stock options across 25 years, kept share count flat at 21.2M, and deployed capital at 20–23% ROIC — though Leonard's health-related departure in late 2025 leaves CEO Mark Miller unproven in the sole decision-maker role.",
+    "Net Debt/EBITDA of 0.9x, $3.1B cash on hand, and $2.7B annual FCF cover $256M in annual interest at 10.5x on a cash basis — even a 30% revenue decline would leave roughly $1.4B in annual FCF after interest, and 75%+ recurring revenue makes a sudden 30% revenue drop structurally implausible.",
+    "At C$2,499, the stock trades below the quant model's bear-case IV of C$2,762 (using 17% growth and a 12x exit multiple) and below all 25 cells of the sensitivity grid, implying the current price requires a worse outcome than the model's most pessimistic parameterization — achievable only if acquisition returns collapse to below WACC and AI disrupts material revenue simultaneously.",
+    "Even the deepest stress test (10x EV/EBITDA trough multiple applied to FY2025 EBITDA) implies a floor of C$2,000–2,200, while base IV of C$4,148 and bull IV of C$5,717 produce a 6:1 to 12:1 reward-to-risk ratio with Monte Carlo assigning 100% probability that intrinsic value exceeds today's price.",
+    "Sell if CSU deploys capital at demonstrably sub-WACC returns (ROIC falling below 12%) for two or more consecutive years, signaling the acquisition engine is destroying value rather than compounding it."
+  ],
+  "source_summary": "Analysis based on yfinance auto-fetched financials (FY2022–2025), deterministic quant DCF model with Monte Carlo and sensitivity grid, GlobeNewswire Q4 2025 earnings release, CSI Q4 2025 Shareholder Report, and web search for competitive landscape, AI risk, and management commentary.",
+  "confidence": "high",
+  "change_notes": ""
+}

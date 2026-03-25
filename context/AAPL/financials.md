@@ -1,6 +1,6 @@
 # Financial Data: AAPL — Apple Inc.
 
-**Generated:** 2026-03-15 22:31 UTC
+**Generated:** 2026-03-21 18:36 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Technology | **Industry:** Consumer Electronics
@@ -13,12 +13,12 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $250.12 |
-| Market Cap | $3.7T |
+| Current Price | $247.99 |
+| Market Cap | $3.6T |
 | Enterprise Value | $3.7T |
 | 52-Week High | $288.62 |
 | 52-Week Low | $169.21 |
-| Position in 52-Week Range | 68% |
+| Position in 52-Week Range | 66% |
 | Beta | 1.12 |
 | Shares Outstanding | 14.7B |
 | Dividend Yield | 0.42% |
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 31.7x |
-| Forward P/E | 26.9x |
-| EV/EBITDA | 24.2x |
-| EV/Revenue | 8.5x |
-| P/FCF | 34.6x |
+| Trailing P/E | 31.4x |
+| Forward P/E | 26.6x |
+| EV/EBITDA | 24.0x |
+| EV/Revenue | 8.4x |
+| P/FCF | 34.3x |
 | P/S | 8.4x |
-| P/B | 41.7x |
+| P/B | 41.3x |
 
 ---
 
@@ -48,8 +48,8 @@
 | Target High | $350.00 |
 | Target Low | $205.00 |
 | Number of Analysts | 41 |
-| Forward EPS | $9.30 |
-| Trailing EPS | $7.90 |
+| Forward EPS | $9.32 |
+| Trailing EPS | $7.91 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $250.12 | — |
-| 1 Month Ago | $261.73 | -4.4% |
-| 3 Months Ago | $277.77 | -10.0% |
-| 6 Months Ago | $233.62 | +7.1% |
+| Current | $247.99 | — |
+| 1 Month Ago | $264.58 | -6.3% |
+| 3 Months Ago | $271.94 | -8.8% |
+| 6 Months Ago | $245.03 | +1.2% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $288.35 (2025-12-03) | -13.3% from current |
-| 52-Week Low | $168.48 (2025-04-08) | +48.5% from current |
+| 52-Week High | $288.35 (2025-12-03) | -14.0% from current |
+| 52-Week Low | $168.48 (2025-04-08) | +47.2% from current |
 
 ---
 

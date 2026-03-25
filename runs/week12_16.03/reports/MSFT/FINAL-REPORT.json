@@ -1,0 +1,70 @@
+{
+  "ticker": "MSFT",
+  "company": "Microsoft Corporation",
+  "analysis_date": "2026-03-22",
+  "verdict": "Watch",
+  "average_score": 7.6,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "One of the widest moats in technology: deep switching costs across 400M+ M365 users, self-reinforcing ecosystem spanning productivity/cloud/developer/AI",
+    "Elite business economics: 30%+ ROIC sustained for 4+ years on a growing $387B capital base, 69% gross margins, 46% operating margins",
+    "Fortress balance sheet: AAA-rated, 0.1x net debt/EBITDA, 53x interest coverage, $95B cash — survives any reasonable stress scenario",
+    "Exceptional revenue quality: $368B commercial RPO, 80%+ recurring/subscription revenue, Microsoft Cloud at $168B annually",
+    "Generational CEO in Nadella who tripled revenue and expanded margins from 32% to 46% over a decade"
+  ],
+  "key_risks": [
+    "Unprecedented $120-130B annual AI capex cycle may overshoot demand, compressing ROIC from 30%+ toward infrastructure-grade returns",
+    "OpenAI partnership fragility: 45% of Azure cloud backlog tied to a single unprofitable partner under legal and strategic strain",
+    "FCF structural compression: D&A tripled to $34B, FCF conversion fell from 84% to 70%, P/FCF at 53x signals real cash generation under pressure",
+    "No price margin of safety at $382 — stock sits 45-53% above conservative IV estimates, requiring base-case execution to break even",
+    "FTC antitrust investigation and EU bundling scrutiny could force ecosystem unbundling"
+  ],
+  "red_flags": [
+    "P/FCF of 53x vs P/E of 20x — earnings multiples overstate cheapness due to capex masking",
+    "CEO sold $75M in stock in 2025; insider ownership at 0.04% is negligible",
+    "45% of Azure cloud backlog tied to unprofitable OpenAI",
+    "AI monetization at enterprise scale remains largely unproven; Copilot revenue disclosures vague",
+    "Off-balance-sheet data center lease commitments growing rapidly with limited transparency"
+  ],
+  "buy_triggers": [
+    "Stock declines to $300-330 range providing genuine price margin of safety with 1:2+ downside/upside asymmetry",
+    "Clear inflection in AI revenue monetization with FCF conversion trending back above 80%",
+    "Capex stabilization or plateau signal from management relieving FCF compression concern"
+  ],
+  "sell_triggers": [
+    "ROIC falls below 20% sustainably, indicating capex cycle permanently impaired return profile",
+    "Operating margins compress below 35% without offsetting revenue growth acceleration",
+    "OpenAI partnership fractures with no credible in-house AI alternative, stranding infrastructure investment"
+  ],
+  "valuation_summary": "At $382, MSFT trades approximately at base-case intrinsic value ($365-381) with no price margin of safety. The stock is cheap on forward P/E (20x vs 5-year avg 30x) but expensive on P/FCF (53x) due to massive capex compressing free cash flow. Bear IV of $250-264 implies 35% downside; bull IV of $510-513 implies 34% upside — roughly 1:1 asymmetry, insufficient for a concentrated position. The market prices ~10-11% growth, which is modestly below base case. Monte Carlo gives 70% probability IV exceeds price, but input distributions may understate AI capex and OpenAI risks.",
+  "iv_conservative": 263.87,
+  "iv_base": 380.65,
+  "iv_bull": 513.38,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -49.9,
+  "monte_carlo_prob_above_price": 0.7029,
+  "sensitivity_iv_range": [333.23, 550.12],
+  "compact_checklist": [
+    "Microsoft sells recurring enterprise software (M365, 400M+ users) and cloud infrastructure (Azure, $75B+ revenue growing 34-40%) to millions of organizations, with AI copilots as the next upsell layer — customers stay because rip-and-replace costs years and millions of dollars.",
+    "Deep switching costs from enterprise-wide identity, workflow, and data lock-in across M365/Azure/Dynamics, reinforced by an ecosystem network effect no competitor can replicate across productivity, cloud, developer tools, and professional networking simultaneously.",
+    "ROIC has held at 30-34% for four consecutive years on a growing $387B capital base, with 69% gross margins and 46% operating margins, though the $120B FY2026 capex cycle is compressing FCF conversion from 84% to 70% and the true payback remains unproven.",
+    "Nadella tripled revenue to $282B and expanded operating margins from 32% to 46% over a decade, but insider ownership is negligible at 0.04% and the $130B+ annual capex bet on AI infrastructure is the largest unproven capital allocation decision in tech history.",
+    "AAA-rated with 0.1x net debt/EBITDA, $95B cash, and 53x interest coverage — Microsoft could lose 98% of operating income and still service its debt, though growing off-balance-sheet data center lease commitments deserve monitoring.",
+    "At $382 and 20x forward earnings, the market prices roughly 10-11% sustained growth — base-case execution breaks even, and you need Azure AI monetization to re-accelerate above 12% for the stock to be genuinely cheap.",
+    "The business fortress (30% ROIC, $95B cash, $60-70B owner earnings even if AI fails entirely) protects against permanent capital loss, but the price sits 45-53% above conservative IV of $250-264, offering zero price cushion.",
+    "Sell if ROIC falls below 20% sustainably, operating margins compress below 35% without offsetting revenue growth, or the OpenAI partnership fractures with no credible in-house AI alternative — any of these signals the capex cycle destroyed value rather than created it."
+  ],
+  "source_summary": "Yahoo Finance (yfinance auto-fetch), Microsoft FY2025 Annual Report, Q1/Q2 FY2026 earnings releases, SEC 10-K/10-Q/DEF 14A filings, quant-valuation DCF model, Synergy Research, Canalys, Benzinga, Seeking Alpha, TipRanks, Motley Fool, Nasdaq",
+  "confidence": "medium-high",
+  "change_notes": "Initial full 8-umbrella analysis. Business quality scores elite (8-9 across quality umbrellas). Valuation and margin of safety are the constraining factors at current price — Watch verdict reflects absence of price margin of safety despite exceptional business quality. Key monitoring items: AI capex payback trajectory, OpenAI partnership stability, FCF conversion recovery."
+}

@@ -1,4 +1,10 @@
 .DS_Store
 __pycache__/
 *.pyc
-ui/search.db
+node_modules/
+cache/
+db/*.db-shm
+db/*.db-wal
+portfolio/allocations/
+portfolio/allocation-proposal.json
+portfolio/allocation-proposal.md

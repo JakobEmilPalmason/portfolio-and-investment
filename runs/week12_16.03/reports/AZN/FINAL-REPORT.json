@@ -1,0 +1,69 @@
+{
+  "ticker": "AZN",
+  "company": "AstraZeneca PLC",
+  "analysis_date": "2026-03-22",
+  "verdict": "Watch",
+  "average_score": 6.75,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 8,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World-class oncology franchise (44% of $58.7B revenue) with deep late-stage pipeline (197 projects, 100+ Phase III)",
+    "Fortress balance sheet: A1/A+ rated, 1.1x net debt/EBITDA, $10.6B liquidity",
+    "Improving returns on capital: ROIC rising from 11.4% to 15.1%, 82% gross margins",
+    "Low-volatility defensive compounder (beta 0.23) suited to patient holders",
+    "CEO Soriot's 13-year transformation track record — doubled revenue since 2012"
+  ],
+  "key_risks": [
+    "Farxiga patent cliff: $7.7B revenue faces generic entry starting late 2026/2027",
+    "China investigation: criminal charges, customs dispute, US class action — ~13% of revenue at risk",
+    "Pipeline execution risk: $80B 2030 target requires near-flawless execution across 25+ blockbusters",
+    "Terminal value dominance: 81-87% of DCF from terminal assumptions, IV swings $40-60 on small changes",
+    "Rising capital intensity: $50B US commitment through 2030, CapEx guided up ~50%"
+  ],
+  "red_flags": [
+    "China executive indictments and ongoing criminal investigation",
+    "UK patent invalidation on Farxiga accelerates generic timeline",
+    "Zero price-based margin of safety — trades 41% above bear IV",
+    "No share buybacks since 2012 despite growing cash flows"
+  ],
+  "buy_triggers": [
+    "Price declines to $150-160 range providing 20-25% cushion to base IV",
+    "Farxiga generic erosion proves slower than feared (only 20-30% in first 2 years) while pipeline demonstrates revenue replacement",
+    "China investigation resolves with manageable fine and no market access restrictions"
+  ],
+  "sell_triggers": [
+    "Farxiga generics erode >50% within 2 years AND major pipeline asset fails pivotal Phase III",
+    "China investigation escalates to market exclusion or multi-billion-dollar settlement",
+    "Management abandons $80B 2030 revenue target without credible replacement narrative"
+  ],
+  "valuation_summary": "At $183.60, AZN trades near the quant model's base IV of $193 with zero price-based margin of safety vs the bear case ($121). Monte Carlo gives 67.4% probability of undervaluation, but after risk adjustments for patent cliff and China, the effective probability narrows to ~58-63%.",
+  "iv_conservative": 121.3,
+  "iv_base": 192.52,
+  "iv_bull": 274.68,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -51.4,
+  "monte_carlo_prob_above_price": 0.6738,
+  "sensitivity_iv_range": [149.27, 265.11],
+  "compact_checklist": [
+    "AstraZeneca sells patented prescription drugs across oncology (44% of revenue), cardiovascular/renal, respiratory, and rare disease to hospitals and health systems worldwide, with recurring demand from chronic conditions and cancer treatment cycles.",
+    "Patent protection on blockbusters like Tagrisso (through ~2032) and Imfinzi (through ~2031), combined with the industry's deepest late-stage pipeline (197 projects, 100+ Phase III trials), creates barriers that competitors cannot replicate quickly — but each drug's moat expires with its patent.",
+    "ROIC improved from 11.4% to 15.1% over two years with 82% gross margins and $8.7B in free cash flow, confirming strong returns on capital, though rising CapEx ($50B US commitment through 2030) and 24%-of-revenue R&D spend consume a large share of that cash.",
+    "CEO Pascal Soriot has doubled revenue since 2012 through disciplined R&D reinvestment and strategic M&A, but modest insider ownership and the absence of buybacks since 2012 mean shareholders depend entirely on pipeline execution for returns.",
+    "With net debt/EBITDA of just 1.1x, A1/A+ credit ratings, $10.6B in available liquidity, and $14.6B annual operating cash flow, AstraZeneca would survive a 30% revenue decline without issuing equity.",
+    "At $183.60, the market requires successful replacement of Farxiga's $7.7B in revenue as generics enter starting 2026, continued Enhertu and Imfinzi growth, no material fallout from the China investigation, and at least 3-4% perpetual growth — a 'things go mostly right' scenario priced at fair value.",
+    "The stock trades 41% above bear-case intrinsic value ($130) with zero price-based cushion; the only protection comes from business diversification across 25+ drugs and four therapeutic areas, which limits permanent capital loss but does not prevent a 25-30% drawdown.",
+    "Farxiga generics eroding faster than 50% within two years combined with a major pipeline failure (Enhertu or datopotamab missing a pivotal readout) would destroy the revenue replacement thesis and justify selling."
+  ],
+  "source_summary": "Analysis based on yfinance financial data (2026-03-22), quant DCF model output, and web search for current AstraZeneca pipeline, competitive position, China investigation, and patent cliff details.",
+  "confidence": "medium",
+  "change_notes": ""
+}

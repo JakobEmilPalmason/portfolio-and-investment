@@ -1,0 +1,66 @@
+{
+  "ticker": "MC.PA",
+  "company": "LVMH Moet Hennessy - Louis Vuitton",
+  "analysis_date": "2026-03-18",
+  "verdict": "Watch",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 7,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Irreplicable heritage brands (Louis Vuitton 1854, Hennessy 1765, Dior 1946) with centuries of cultural cachet that no competitor can manufacture",
+    "Fortress balance sheet: net debt/EBITDA 0.4x, AA-/Aa3 ratings, EUR 13.5B cash, 15.5x interest coverage",
+    "Generational capital allocator in Bernard Arnault, who crossed 50% ownership with USD 440M in open-market purchases at cyclical lows",
+    "EUR 14.2B FCF in FY25 — the highest ever — despite two years of revenue decline, demonstrating resilient cash generation",
+    "Vertically controlled distribution across 6,280+ stores prevents discounting and protects brand equity"
+  ],
+  "key_risks": [
+    "China structural de-consumption: 25-30% revenue exposure to Asian luxury demand in a deteriorating macro environment",
+    "Succession risk: Bernard Arnault (age 77) with no tested group-level successor; family-dynasty governance concentrates decision-making",
+    "Cyclical margin compression: operating margins down 450bps and ROIC halved over two years with 3.5x operating leverage",
+    "Wines & Spirits structural decline: segment down 8.6% with profit down 33% from changing consumption patterns and trade tensions",
+    "Inadequate price margin of safety: stock trades 67% above conservative IV with 1:1.3 downside/upside ratio"
+  ],
+  "red_flags": [
+    "ROIC contracted 800bps in two years (21.3% to 13.3%), the steepest decline since the GFC",
+    "Revenue declined for two consecutive years with no confirmed trough",
+    "Hermes surpassed LVMH as most valuable luxury company, signaling market re-rating of breadth vs exclusivity",
+    "CEO age limit potentially being raised to 85, suggesting undefined succession timeline"
+  ],
+  "buy_triggers": [
+    "Price decline to EUR 380-400 range, improving downside/upside ratio to approximately 2:1",
+    "Two consecutive quarters of positive Asia ex-Japan organic growth confirming China luxury demand recovery",
+    "Margin stabilization or expansion at Fashion & Leather Goods confirming pricing power through the cycle"
+  ],
+  "sell_triggers": [
+    "Louis Vuitton and Dior lose pricing power — same-store sales decline alongside price cuts for 2+ consecutive quarters",
+    "Leverage rises above 3x Debt/EBITDA from leveraged mega-acquisition or sustained earnings collapse",
+    "Succession crisis that fragments strategic direction or triggers family disputes over control"
+  ],
+  "valuation_summary": "At EUR 468.55, LVMH trades at 21.4x trailing P/E vs 10-year average of 27x and 16.4x owner earnings. Bear IV EUR 280, Base IV EUR 540, Bull IV EUR 720. Market implies only 2% annual owner earnings growth — an unreasonably low bar for a franchise with mid-single-digit pricing power. The stock sits at the 15th percentile of its 52-week range.",
+  "iv_conservative": 280,
+  "iv_base": 540,
+  "iv_bull": 720,
+  "iv_currency": "EUR",
+  "mos_at_analysis": -67,
+  "compact_checklist": [
+    "LVMH sells luxury goods through 75 heritage brands (led by Louis Vuitton, Dior, and Tiffany) across 6,280+ owned stores, and customers keep buying because these brands carry centuries of cultural cachet and social signaling value that makes them Veblen goods.",
+    "Irreplicable brand heritage (Louis Vuitton founded 1854, Hennessy 1765), vertically controlled distribution that prevents any discounting, and EUR 10B annual marketing spend create a compounding moat no competitor can replicate — evidenced by 66%+ gross margins sustained through a two-year revenue decline.",
+    "ROIC of 13.3% at cyclical trough (down from 21.3% peak) still exceeds cost of capital, and FCF expanded to EUR 14.2B in FY25 despite revenue falling 6.3% from peak, confirming the cash engine holds even in tough conditions.",
+    "Bernard Arnault is a generational capital allocator who crossed 50% ownership in February 2026 with USD 440M in open-market purchases at depressed prices, backed by a 30-year track record that includes doubling Tiffany's operating profit since the $15.8B acquisition.",
+    "Net debt/EBITDA of 0.4x, EUR 13.5B cash covering all financial debt, 15.5x interest coverage, and AA-/Aa3 credit ratings mean LVMH could survive a 30% revenue decline for two years without raising equity or cutting the dividend.",
+    "At EUR 468 (21.4x trailing P/E vs 10-year average of 27x), the market must believe LVMH's owner earnings grow at only 2% annually for the next five years — an unreasonably low bar for a franchise with demonstrated mid-single-digit pricing power.",
+    "The business itself is the margin of safety — fortress balance sheet, EUR 14.2B FCF, and diversified brand portfolio — but the stock trades 67% above conservative IV of EUR 280, so a 15-20% price decline to the EUR 380-400 range is needed for true asymmetric risk-reward.",
+    "Sell if Louis Vuitton and Dior lose pricing power (same-store sales decline alongside price cuts for two consecutive quarters), leverage exceeds 3x Debt/EBITDA, or a succession crisis fragments strategic direction."
+  ],
+  "source_summary": "LVMH FY2025 annual results, yfinance financial data (FY22-FY25), S&P Global Ratings (AA-/Aa3), Bloomberg insider buying reports, Morningstar moat analysis, Alpha Spread DCF models, MarketScreener historical multiples, CNBC/Investing.com earnings coverage, Bernstein luxury sector research, Jing Daily China luxury analysis",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. LVMH scores 7.5/10 average with exceptional quality marks (moat 9, balance sheet 9, management 8) but Watch verdict due to margin of safety score of 5 — the business is outstanding but the price needs to fall 15-20% for conviction entry."
+}

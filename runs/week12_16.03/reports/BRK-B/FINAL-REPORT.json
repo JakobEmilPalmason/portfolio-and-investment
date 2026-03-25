@@ -1,0 +1,69 @@
+{
+  "ticker": "BRK-B",
+  "company": "Berkshire Hathaway",
+  "analysis_date": "2026-03-23",
+  "verdict": "Own",
+  "average_score": 8.2,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 9,
+    "management": 9,
+    "business_economics": 7,
+    "balance_sheet": 10,
+    "valuation": 7.5,
+    "margin_of_safety": 7,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "$176B costless insurance float growing at ~5% CAGR — the largest source of free permanent capital in public markets",
+    "BNSF rail duopoly and regulated utility returns provide irreplaceable, physically non-replicable moats",
+    "Strongest balance sheet in public markets: $373B cash, 18% D/E, 17x+ interest coverage, ring-fenced subsidiaries",
+    "Best capital allocation track record in corporate history with new CEO showing immediate owner-operator alignment",
+    "Diversified $44.5B operating earnings across insurance, rail, energy, and manufacturing — no single-point-of-failure"
+  ],
+  "key_risks": [
+    "Greg Abel unproven in capital allocation at Buffett's scale — first $10B+ deal is a critical test",
+    "$373B cash earning 4-5% Treasury yields compresses ROE from 18.6% to 9.8%; every year of inaction reduces compounding",
+    "Insurance underwriting cycle may turn: Q4 2025 profits fell ~50% on higher claims and ad spend",
+    "Revenue declined two consecutive years (FY2024 and FY2025), suggesting operating headwinds",
+    "No absolute margin of safety vs bear-case IV of $371 — price is 29.6% above worst-case valuation"
+  ],
+  "red_flags": [
+    "ROE declined from 18.6% to 9.8% over two years as cash accumulates with no clear deployment plan",
+    "Zero share buybacks in FY2025 despite stock trading at 1.3-1.6x book value range",
+    "BHE subsidiary faces ongoing PacifiCorp wildfire litigation risk (ring-fenced but material)",
+    "Forward P/E of 22.1x looks expensive if investment gains normalize downward"
+  ],
+  "buy_triggers": [
+    "Price pulls back to $440-460 range near Monte Carlo P10, improving margin of safety",
+    "Abel deploys $50B+ in clearly accretive acquisitions or materially accelerates buybacks",
+    "Insurance underwriting cycle turns hard, boosting float returns and re-accelerating ROE"
+  ],
+  "sell_triggers": [
+    "Price exceeds 1.8x book value (~$600) without corresponding earnings growth",
+    "Abel makes a visibly value-destructive acquisition exceeding $50B",
+    "Insurance reserve adequacy questioned after mega-catastrophe, or 3+ years of cash hoarding with no deployment"
+  ],
+  "valuation_summary": "Berkshire trades at $481 (1.45x book, 10x owner earnings) vs base DCF IV of $641 (33% upside). P/B near historical lows. 89% Monte Carlo probability of undervaluation. Market prices in flat revenues, no cash deployment, and permanent succession discount — only the most pessimistic sensitivity cell (-4.2% growth / 8.7% WACC) justifies current price. Judgment-adjusted base IV of $580-620.",
+  "iv_conservative": 371,
+  "iv_base": 641.16,
+  "iv_bull": 957.61,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -29.6,
+  "monte_carlo_prob_above_price": 0.8903,
+  "sensitivity_iv_range": [458.67, 816.42],
+  "compact_checklist": [
+    "Berkshire collects $176B in insurance float at negative cost, invests it alongside $44.5B in operating earnings from rail, energy, manufacturing, and consumer businesses — customers stay because GEICO is cheapest, BNSF is the only western railroad, and BHE rates are regulated.",
+    "A self-reinforcing system of $176B costless insurance float, a physically irreplaceable rail duopoly (BNSF), regulated utility returns, and $373B in crisis-deployment cash that no competitor can replicate at any price.",
+    "Owner earnings of $59–67B on $717B equity confirm real cash generation, but ROE has fallen from 18.6% to 9.8% in two years as $373B in cash earns 4–5% Treasury yields instead of the 15%+ returns the operating businesses produce.",
+    "Abel bought $15.3M in personal shares his first week, resumed buybacks after a 6-quarter pause, and takes $25M total comp with zero stock options — early signals are textbook owner-operator alignment.",
+    "With $373B cash against $129B debt, 17x interest coverage, ring-fenced subsidiary obligations, and $46B annual operating cash flow, Berkshire could service all debt for 7+ years with zero revenue.",
+    "At $481 (1.45x book, 10x owner earnings), the market assumes flat revenues, no accretive deployment of the $373B cash pile, and a permanent post-Buffett discount — the quant model's bear case requires -4.2% growth at 8.7% WACC to justify this price.",
+    "The $268/share cash floor caps permanent loss at ~44%, 89% Monte Carlo probability shows IV above current price, and 20 of 25 sensitivity grid cells produce IV above $481.",
+    "Abel deploying $50B+ on a value-destructive acquisition, insurance reserves proving inadequate after a mega-catastrophe, or 3+ years of cash hoarding with no meaningful buybacks or deals."
+  ],
+  "source_summary": "Berkshire Hathaway 2025 Annual Report, BRK 10-K, Yahoo Finance (yfinance auto-fetch), quant DCF model (src/quant), Morningstar, GuruFocus, Simply Wall St, CNBC, Motley Fool, SEC filings, StockAnalysis.com, MacroTrends, Stansberry Research",
+  "confidence": "high",
+  "change_notes": "Fresh analysis under Greg Abel's first quarter as CEO. Key developments: Abel became CEO Jan 1 2026, resumed buybacks March 4 2026 after 6-quarter pause, personally purchased $15.3M in BRK shares. FY2025 operating earnings $44.5B, cash reached record $373B. ROE declined to 9.8% on cash drag. Quant model shows 89% probability of undervaluation."
+}

@@ -1,0 +1,74 @@
+{
+  "stage": "A1",
+  "description": "Universe Assembly — raw stock universe from tracked, seed, curated, and web-signal sources",
+  "run_date": "2026-03-22",
+  "week": "week12_16.03",
+  "total_candidates": 160,
+  "buckets_used": [
+    "tracked",
+    "seed",
+    "large_cap_us_quality",
+    "large_cap_europe_quality",
+    "semis_and_infra",
+    "healthcare_quality",
+    "industrial_compounders",
+    "financial_quality",
+    "consumer_quality",
+    "post_earnings",
+    "52wk_low",
+    "52wk_high",
+    "fcf_roic",
+    "sector_leader"
+  ],
+  "counts_by_bucket": {
+    "tracked": 82,
+    "seed": 20,
+    "large_cap_us_quality": 30,
+    "large_cap_europe_quality": 22,
+    "semis_and_infra": 15,
+    "healthcare_quality": 13,
+    "industrial_compounders": 14,
+    "financial_quality": 16,
+    "consumer_quality": 14,
+    "post_earnings": 6,
+    "52wk_low": 10,
+    "52wk_high": 6,
+    "fcf_roic": 5,
+    "sector_leader": 8
+  },
+  "counts_by_sector": {
+    "Technology": 46,
+    "Healthcare": 30,
+    "Industrials": 28,
+    "Financials": 25,
+    "Consumer": 23,
+    "Communication Services": 3,
+    "Materials": 3,
+    "Energy": 1,
+    "Utilities": 1
+  },
+  "counts_by_geography": {
+    "US": 130,
+    "Europe": 29,
+    "Asia": 1
+  },
+  "mkt_cap_distribution": {
+    "mega": 85,
+    "large": 66,
+    "mid": 9
+  },
+  "already_analyzed_count": 82,
+  "tracked_plus_seed_pct": 53.8,
+  "web_queries_run": [
+    "notable US earnings beats misses large cap March 2026",
+    "quality large cap stocks near 52-week low March 2026",
+    "quality large cap stocks near 52-week high momentum March 2026",
+    "highest free cash flow yield large cap stocks 2026",
+    "dominant sector leader stocks by market cap 2026",
+    "quality European large cap stocks 2026 best performers"
+  ],
+  "concentration_warnings": [
+    "tracked_plus_seed_pct 53.8% exceeds 20% threshold — expected given 82 tracked tickers from prior pipeline runs; all 7 curated sector buckets are fully populated",
+    "Technology sector at 28.8% (46/160) exceeds 25% single-sector threshold — driven by semis_and_infra and tracked software names"
+  ]
+}
