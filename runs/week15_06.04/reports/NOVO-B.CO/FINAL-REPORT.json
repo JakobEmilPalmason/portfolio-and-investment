@@ -1,0 +1,70 @@
+{
+  "ticker": "NOVO-B.CO",
+  "company": "Novo Nordisk A/S",
+  "analysis_date": "2026-04-14",
+  "verdict": "Own",
+  "average_score": 7.8,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 9,
+    "margin_of_safety": 9,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Crystal-clear business model with only 2-3 key drivers — GLP-1 prescription volume, net pricing, and pipeline execution",
+    "Manufacturing scale moat: 14 fill-finish sites globally creating a 5-7 year replication barrier no competitor can match",
+    "81% gross margins and 36% ROIC even after massive capex cycle — elite economics by any industry standard",
+    "Owner earnings of DKK 102B intact despite reported FCF collapse — the cash engine is undistorted by growth capex",
+    "100% Monte Carlo probability of undervaluation across 10,000 simulations with P5 percentile at DKK 661"
+  ],
+  "key_risks": [
+    "GLP-1 pricing collapse: IRA/MFN agreements cutting US prices 65-70%, with 2026 guidance for 5-13% revenue decline",
+    "Eli Lilly competitive dominance: 60% obesity market share, superior head-to-head efficacy (50 lbs vs 33 lbs), and oral Foundayo FDA approval",
+    "Semaglutide product concentration: single-molecule story until CagriSema and amycretin prove out commercially",
+    "Capex cycle execution risk: DKK 90B in FY2025 (6x FY2022) must be filled by demand under dramatically lower pricing",
+    "CEO transition: new management 8 months in, replacing prior CEO after 75% stock decline, with unproven capital allocation"
+  ],
+  "red_flags": [
+    "FY2026 guided for first revenue decline in over a decade (5-13% at CER)",
+    "Total debt quintupled from DKK 27B to DKK 131B in two years",
+    "Obesity market share eroded to 40% vs Lilly's 60%",
+    "CagriSema missed its 25% weight loss target in Phase 3 (achieved 20.4%)",
+    "FCF conversion collapsed to 28.3% from 69% year-over-year"
+  ],
+  "buy_triggers": [
+    "CagriSema FDA approval (expected late 2026) validating next-generation pipeline",
+    "Oral Wegovy prescription data showing sustained new patient starts and total market expansion",
+    "Evidence of US pricing stabilization — quarterly net price realizations leveling off after MFN reset"
+  ],
+  "sell_triggers": [
+    "Semaglutide safety signal leading to market withdrawal or severe label restriction",
+    "ROIC falling below 20% for two consecutive years confirming capex cycle permanently impaired returns",
+    "Competing therapy demonstrating clearly superior efficacy at structurally lower cost, commoditizing the GLP-1 class"
+  ],
+  "valuation_summary": "At DKK 246, Novo trades at 10.7x trailing earnings and 7.6x EV/EBITDA — the lowest multiples in over a decade. The quant model's bear/base/bull IVs of DKK 539/800/1,099 all far exceed the current price. Every cell in the 25-cell sensitivity grid (min DKK 642) exceeds the price by at least 161%. Analyst-adjusted estimates: Bear DKK 500, Base DKK 720, Bull DKK 1,000. Reverse-engineering the current price requires assuming 8-10% annual revenue declines for 5 years or permanent margin compression of 20+ percentage points — neither supported by fundamentals.",
+  "iv_conservative": 538.66,
+  "iv_base": 799.8,
+  "iv_bull": 1098.7,
+  "iv_currency": "DKK",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 55.6,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [642.4, 1110.9],
+  "compact_checklist": [
+    "Novo Nordisk sells semaglutide-based injectable and oral drugs for chronic diabetes and obesity — conditions requiring lifelong treatment — generating DKK 309B in revenue at 81% gross margins with only 2-3 key drivers to track (GLP-1 prescription volume, net pricing, pipeline approvals).",
+    "Manufacturing scale (14 fill-finish sites, DKK 90B annual capex creating a 5-7 year replication barrier), 154 semaglutide patents extending to 2042, and a century of metabolic disease expertise protect profits, though Lilly's superior efficacy (50 lbs vs 33 lbs weight loss) is eroding Novo's obesity share from leadership to 40%.",
+    "ROIC of 36% and owner earnings of DKK 102B confirm a powerful economic engine, but the reported FCF collapse to DKK 29B is a temporary distortion from DKK 68B in growth capex — not operating deterioration.",
+    "The Novo Nordisk Foundation's 77% voting control provides genuine long-term stewardship and replaced the CEO after a 75% stock decline, but the 6x capex surge to DKK 90B funded by a 5x debt increase to DKK 131B is an unproven capital allocation bet.",
+    "With 0.8x debt/EBITDA, 32x interest coverage, and Aa3/AA credit ratings, Novo survives a 30% revenue stress test at 12x interest coverage and 1.5x net debt/EBITDA without needing equity.",
+    "At 10.7x trailing earnings, the market prices in permanent revenue decline of 8-10% annually for five years — every cell in the 25-scenario sensitivity grid (minimum DKK 642) exceeds the DKK 246 stock price by at least 161%.",
+    "The 55.6% discount to the bear-case IV of DKK 539, 100% Monte Carlo probability of undervaluation, 81% gross margins, and a 6.7% dividend yield provide an unusually wide buffer against being wrong on growth, margins, or competitive outcomes.",
+    "Sell if semaglutide faces a safety-related market withdrawal, ROIC falls below 20% for two consecutive years confirming the capex cycle permanently impaired returns, or a competing therapy demonstrates clearly superior efficacy at lower cost, commoditizing the GLP-1 class."
+  ],
+  "source_summary": "Novo Nordisk Annual Report 2025, Yahoo Finance financials (auto-fetched 2026-04-14), quant DCF model (2026-03-24), Novo Nordisk investor relations and governance filings, Novo Nordisk Remuneration Report 2025, analyst consensus estimates (22 analysts), ClinicalTrials.gov, CNBC, Fierce Pharma, BioSpace, PharmExec, PharmaVoice, TipRanks, Moody's and S&P credit ratings, IRA/Medicare pricing announcements, Eli Lilly competitive data",
+  "confidence": "high",
+  "change_notes": "Updated from prior Watch verdict (avg 6.9, 2026-03-24). Score increased to 7.8 driven by: (1) stock price decline from ~DKK 355 to DKK 246 widening margin of safety dramatically, (2) valuation score increased to 9 as multiples compressed to decade lows, (3) MOS score increased to 9 reflecting 55.6% discount to bear IV and 100% MC probability, (4) oral Wegovy launch showing early market expansion, (5) CagriSema NDA filed with FDA decision expected late 2026. Management score held at 6 reflecting unproven capex cycle. Verdict upgraded from Watch to Own."
+}

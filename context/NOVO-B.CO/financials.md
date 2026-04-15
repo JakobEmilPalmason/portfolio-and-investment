@@ -1,6 +1,6 @@
 # Financial Data: NOVO-B.CO — Novo Nordisk A/S
 
-**Generated:** 2026-03-24 11:50 UTC
+**Generated:** 2026-04-14 15:40 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** DKK | **Trading Currency:** DKK
 **Sector:** Healthcare | **Industry:** Drug Manufacturers - General
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | DKK 238.90 |
+| Current Price | DKK 246.15 |
 | Market Cap | DKK 1.1T |
-| Enterprise Value | DKK 1.1T |
+| Enterprise Value | DKK 1.2T |
 | 52-Week High | DKK 533.40 |
 | 52-Week Low | DKK 224.25 |
-| Position in 52-Week Range | 5% |
+| Position in 52-Week Range | 7% |
 | Beta | 0.27 |
 | Shares Outstanding | 3.4B |
-| Dividend Yield | 6.70% |
+| Dividend Yield | 6.67% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 10.4x |
-| Forward P/E | 11.2x |
-| EV/EBITDA | 7.5x |
-| EV/Revenue | 3.7x |
-| P/FCF | 2815.9x |
-| P/S | 3.4x |
-| P/B | 5.5x |
+| Trailing P/E | 10.7x |
+| Forward P/E | 11.5x |
+| EV/EBITDA | 7.6x |
+| EV/Revenue | 3.8x |
+| P/FCF | 2898.4x |
+| P/S | 3.5x |
+| P/B | 5.6x |
 
 ---
 
@@ -43,13 +43,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | DKK 309.63 |
+| Target Mean | DKK 309.77 |
 | Target Median | DKK 301.00 |
 | Target High | DKK 444.00 |
 | Target Low | DKK 175.00 |
 | Number of Analysts | 22 |
-| Forward EPS | $21.34 |
-| Trailing EPS | $23.03 |
+| Forward EPS | $21.40 |
+| Trailing EPS | $23.04 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | DKK 238.90 | — |
-| 1 Month Ago | DKK 251.40 | -5.0% |
-| 3 Months Ago | DKK 304.30 | -21.5% |
-| 6 Months Ago | DKK 383.20 | -37.7% |
+| Current | DKK 246.15 | — |
+| 1 Month Ago | DKK 241.47 | +1.9% |
+| 3 Months Ago | DKK 366.46 | -32.8% |
+| 6 Months Ago | DKK 371.58 | -33.8% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | DKK 527.24 (2025-06-13) | -54.7% from current |
-| 52-Week Low | DKK 224.25 (2026-03-02) | +6.5% from current |
+| 52-Week High | DKK 509.66 (2025-06-13) | -51.7% from current |
+| 52-Week Low | DKK 216.77 (2026-03-02) | +13.6% from current |
 
 ---
 
