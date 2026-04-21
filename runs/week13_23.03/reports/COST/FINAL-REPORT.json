@@ -1,0 +1,70 @@
+{
+  "ticker": "COST",
+  "company": "Costco Wholesale Corporation",
+  "analysis_date": "2026-03-29",
+  "verdict": "Watch",
+  "average_score": 6.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 9,
+    "valuation": 2,
+    "margin_of_safety": 2,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "92% membership renewal rate with 147M cardholders — quasi-subscription model",
+    "ROIC consistently 20-24% with 97% FCF conversion",
+    "Fortress balance sheet: net cash $7.1B, AA/Aa3 rated, 71x interest coverage",
+    "$90B Kirkland Signature private label is an unreplicable moat asset",
+    "40-year flywheel of shared scale economics with 55% US warehouse club share"
+  ],
+  "key_risks": [
+    "Multiple compression from 51x to historical 37x average would cause 28% decline with no business deterioration",
+    "Tariff pass-through pressures could compress already-thin 12.8% gross margin",
+    "Membership growth deceleration would undermine the premium multiple thesis",
+    "E-commerce disruption from Amazon/Walmart+ on convenience dimension",
+    "No near-term positive catalyst — market already fully prices quality"
+  ],
+  "red_flags": [
+    "P/E of 51.3x is top decile of Costco's own historical range",
+    "Only 3% of 10,000 Monte Carlo simulations show stock is undervalued",
+    "Zero of 25 sensitivity grid cells produce IV above $621 vs $984 price",
+    "Net buybacks are zero after offsetting $860M annual SBC",
+    "Insider ownership under 1% of shares"
+  ],
+  "buy_triggers": [
+    "Price correction to $600-700 range (near Monte Carlo median IV of $692)",
+    "Structural operating margin expansion to 5%+ from new revenue streams (advertising, e-commerce)",
+    "Broad market selloff creating an entry point near or below base IV of $456"
+  ],
+  "sell_triggers": [
+    "U.S./Canada membership renewal rates declining below 88% for two consecutive quarters",
+    "Negative comparable sales growth for any quarter",
+    "Management abandoning low-price philosophy for margin expansion"
+  ],
+  "valuation_summary": "Quant DCF values Costco at $417 (bear) to $834 (bull) per share, with a base case of $456. At $984, the stock trades well above all scenarios with a -136% margin of safety versus the conservative estimate.",
+  "iv_conservative": 417.12,
+  "iv_base": 456.02,
+  "iv_bull": 834.44,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -135.9,
+  "monte_carlo_prob_above_price": 0.0301,
+  "sensitivity_iv_range": [376.68, 620.61],
+  "compact_checklist": [
+    "Costco charges 147 million cardholders an annual fee ($65/$130) to shop in warehouse stores selling ~3,800 curated SKUs at near cost, with membership fees (92% renewal) generating the vast majority of operating profit.",
+    "A 40-year flywheel of shared scale economics — massive buying power passed to members as the lowest prices in retail — reinforced by the $90B Kirkland Signature private label and 55% U.S. warehouse club market share that no competitor has been able to erode.",
+    "ROIC has been consistently 20-24% with 97% FCF conversion and $8.1B in adjusted owner earnings, driven by a membership revenue stream that grows at 10%+ annually at near-100% margins.",
+    "Leadership has been exclusively promoted from within for four decades (current CEO started as a forklift driver), with 87% of CEO pay in long-term equity, though net buybacks barely offset $860M in annual stock-based compensation.",
+    "Net cash of $7.1B, AA/Aa3 credit ratings, 71x interest coverage, and $15.3B in cash mean Costco could survive a multi-year depression without accessing capital markets.",
+    "At 51x trailing earnings ($984/share), the market must believe Costco will sustain 12-13% annual earnings growth for a decade with no multiple compression — the quant DCF produces a base IV of $456 and even the bull case ($834) falls 15% short of today's price.",
+    "The business margin of safety is world-class (fortress balance sheet, essential products, 90%+ recurring membership revenue), but the price margin of safety is deeply negative at -136% versus the bear IV, with only 3% of Monte Carlo simulations showing undervaluation.",
+    "A sustained decline in U.S./Canada membership renewal rates below 88%, or any quarter showing negative comparable sales growth, would signal the flywheel is weakening and the premium multiple is unjustified."
+  ],
+  "source_summary": "Analysis based on Costco FY2025 10-K, Q1/Q2 FY2026 earnings, yfinance financials (March 2026), quant DCF model with Monte Carlo simulation, S&P/Moody's credit ratings, and web search for current analyst estimates and competitive dynamics.",
+  "confidence": "high",
+  "change_notes": ""
+}

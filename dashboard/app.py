@@ -16,7 +16,7 @@ from dashboard.workspace import maybe_open_pending_dialog, render_sidebar_contro
 def main() -> None:
     st.set_page_config(
         page_title="Portfolio",
-        page_icon=str(Path(__file__).parent / "favicon.png"),
+        page_icon="🟠",
         layout="wide",
         initial_sidebar_state="expanded",
     )
@@ -30,6 +30,8 @@ def main() -> None:
             st.Page("pages/4_PreBuy.py", title="Pre-Buy", icon=":material/verified:"),
             st.Page("pages/5_Simulator.py", title="Simulator", icon=":material/balance:"),
             st.Page("pages/6_Agents.py", title="Agents", icon=":material/smart_toy:"),
+            st.Page("pages/7_Flags.py", title="Own Verdict", icon=":material/flag:"),
+            st.Page("pages/8_Pass_Flags.py", title="Pass Verdict", icon=":material/block:"),
         ],
         position="sidebar",
     )

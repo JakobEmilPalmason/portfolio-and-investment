@@ -1,0 +1,12 @@
+# Compact Checklist — DSV.CO
+
+**Date:** 2026-04-18
+
+1. **Business**: DSV is the world's #1 global freight forwarder (post-Schenker, ~DKK 310bn pro-forma revenue across ~90 countries), arranging air, sea, and road movement of industrial cargo for enterprise shippers and earning the spread between wholesale carrier capacity and retail shipping rates plus warehousing/customs fees.
+2. **Moat**: Scale-based cost advantage — only DSV, Kuehne+Nagel, and DHL Global Forwarding bring enough volume to extract procurement leverage from carriers, and a 90-country network built over 30+ years via 60+ acquisitions is functionally unreplicable by a new entrant.
+3. **Economics**: Legacy DSV earned 20.5% ROIC (FY2022) on a 1.1%-of-revenue capex base with 120%+ FCF conversion; FY2025's 7.6% ROIC is trough-of-integration distortion (Schenker goodwill in the denominator plus integration charges in the numerator), and DKK 18.9B FY2025 FCF proves the cash engine is intact.
+4. **Management**: Management has integrated UTi, Panalpina, Agility GIL, and now Schenker on or ahead of plan over 20 years, funded Schenker with DKK 37.5bn of equity rather than pure debt, paused buybacks to prioritize deleveraging, and pulled the Schenker integration completion date forward by two years to end-2026.
+5. **Debt risk**: Net Debt/EBITDA 2.3x and interest coverage 4.3x are elevated but investment-grade (Moody's A3 stable, S&P A- negative); a stress test at a 30% revenue drop still produces positive FCF and covered debt service, so DSV survives a bad two-year cycle without equity raises.
+6. **Price**: At DKK 1,712.50 the market is paying roughly for management's DKK 23–25.5B FY2026 EBIT guidance to land on plan with no credit for synergy upside — the thesis requires the DKK 9B run-rate synergies to flow through by 2027 and operating margin to rebuild toward 10%+.
+7. **Margin of safety**: Price sits ~18% above my adjusted bear IV (DKK 1,450) and ~24% below my adjusted base IV (DKK 2,250), yielding thin price MOS but a 4:1 upside-to-downside asymmetry backed by a #1 global franchise with four consecutive successful integrations.
+8. **Thesis breaker**: Sell if Q3 2026 or later EBIT run-rate implies FY2026 EBIT below DKK 22B, operating margin stays below 8.5% into 2027, Net Debt/EBITDA rises above 3.0x for non-cyclical reasons, or management announces new transformational M&A before Schenker is fully digested.

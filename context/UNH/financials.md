@@ -1,6 +1,6 @@
 # Financial Data: UNH — UnitedHealth Group Incorporated
 
-**Generated:** 2026-03-15 22:34 UTC
+**Generated:** 2026-04-18 15:06 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Healthcare | **Industry:** Healthcare Plans
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $282.09 |
-| Market Cap | $256.0B |
-| Enterprise Value | $318.5B |
-| 52-Week High | $606.36 |
+| Current Price | $324.63 |
+| Market Cap | $294.7B |
+| Enterprise Value | $357.1B |
+| 52-Week High | $453.50 |
 | 52-Week Low | $234.60 |
-| Position in 52-Week Range | 13% |
-| Beta | 0.38 |
+| Position in 52-Week Range | 41% |
+| Beta | 0.41 |
 | Shares Outstanding | 907.7M |
-| Dividend Yield | 3.13% |
+| Dividend Yield | 2.72% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 21.3x |
-| Forward P/E | 14.1x |
-| EV/EBITDA | 14.7x |
-| EV/Revenue | 0.7x |
-| P/FCF | 18.5x |
-| P/S | 0.6x |
-| P/B | 2.7x |
+| Trailing P/E | 24.5x |
+| Forward P/E | 16.1x |
+| EV/EBITDA | 16.5x |
+| EV/Revenue | 0.8x |
+| P/FCF | 21.3x |
+| P/S | 0.7x |
+| P/B | 3.1x |
 
 ---
 
@@ -43,13 +43,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | $362.54 |
-| Target Median | $365.50 |
+| Target Mean | $360.46 |
+| Target Median | $355.50 |
 | Target High | $440.00 |
-| Target Low | $255.00 |
-| Number of Analysts | 24 |
-| Forward EPS | $19.96 |
-| Trailing EPS | $13.23 |
+| Target Low | $278.00 |
+| Number of Analysts | 26 |
+| Forward EPS | $20.12 |
+| Trailing EPS | $13.24 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $282.09 | — |
-| 1 Month Ago | $282.18 | -0.0% |
-| 3 Months Ago | $334.13 | -15.6% |
-| 6 Months Ago | $345.28 | -18.3% |
+| Current | $324.63 | — |
+| 1 Month Ago | $280.44 | +15.8% |
+| 3 Months Ago | $328.47 | -1.2% |
+| 6 Months Ago | $351.55 | -7.7% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $589.73 (2025-04-11) | -52.2% from current |
-| 52-Week Low | $229.79 (2025-08-01) | +22.8% from current |
+| 52-Week High | $441.06 (2025-04-21) | -26.4% from current |
+| 52-Week Low | $229.79 (2025-08-01) | +41.3% from current |
 
 ---
 

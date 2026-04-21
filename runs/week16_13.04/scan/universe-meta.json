@@ -1,0 +1,74 @@
+{
+  "run_date": "2026-04-16",
+  "total_candidates": 171,
+  "buckets_used": [
+    "tracked",
+    "seed",
+    "large_cap_us_quality",
+    "large_cap_europe_quality",
+    "semis_and_infra",
+    "healthcare_quality",
+    "industrial_compounders",
+    "financial_quality",
+    "consumer_quality",
+    "post_earnings",
+    "52wk_low",
+    "52wk_high",
+    "fcf_roic",
+    "sector_leader"
+  ],
+  "counts_by_bucket": {
+    "tracked": 104,
+    "seed": 20,
+    "large_cap_us_quality": 30,
+    "large_cap_europe_quality": 25,
+    "semis_and_infra": 15,
+    "healthcare_quality": 14,
+    "industrial_compounders": 15,
+    "financial_quality": 16,
+    "consumer_quality": 15,
+    "post_earnings": 6,
+    "52wk_low": 6,
+    "52wk_high": 6,
+    "fcf_roic": 8,
+    "sector_leader": 10
+  },
+  "counts_by_sector": {
+    "Technology": 46,
+    "Industrials": 31,
+    "Consumer": 30,
+    "Financials": 29,
+    "Healthcare": 28,
+    "Communication Services": 3,
+    "Materials": 2,
+    "Energy": 1,
+    "Utilities": 1
+  },
+  "counts_by_geography": {
+    "US": 134,
+    "Europe": 35,
+    "Asia": 1,
+    "Other": 1
+  },
+  "mkt_cap_distribution": {
+    "mega": 62,
+    "large": 101,
+    "mid": 8
+  },
+  "already_analyzed_count": 104,
+  "tracked_plus_seed_pct": 62.0,
+  "web_queries_run": [
+    "notable US earnings beats misses large cap April 2026",
+    "quality large cap stocks near 52-week low April 2026",
+    "quality large cap stocks near 52-week high momentum April 2026",
+    "highest free cash flow yield large cap stocks 2026",
+    "dominant sector leader stocks by market cap 2026",
+    "quality European large cap stocks 2026"
+  ],
+  "concentration_warnings": [
+    "tracked+seed = 62.0% of universe (>20% threshold) — expected given 104 tracked names from prior analysis cycles",
+    "tracked bucket = 104/171 (60.8%, >25%) — dominated by existing coverage"
+  ],
+  "stage": "A1",
+  "notes": "171 unique tickers assembled from 14 source buckets. 104 already analyzed. Web searches surfaced Q1 2026 earnings movers (TSMC, Citigroup, BAC, PNC, PepsiCo, LVMH), 52wk-low names (Nike, Estee Lauder, Microsoft, Visa, HD), 52wk-high momentum (TSMC, AZN, MRVL, NVDA, SNDK, WDC), high FCF yield (ABBV, NVS, ASML, CRM, GILD, AMAT, MA, V), and European quality supplements (Siemens, ABB, Sanofi, Shell). Tracked+seed concentration is elevated but acceptable given the mature coverage universe."
+}

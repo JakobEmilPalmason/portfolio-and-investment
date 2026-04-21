@@ -6,10 +6,10 @@ This project is a Buffett-style investment analysis system powered by Claude Cod
 
 | | |
 |---|---|
-| **Current week** | `week13_23.03` |
-| **Active scan** | `runs/week13_23.03/scan/` |
-| **Active triage** | `runs/week13_23.03/triage/` |
-| **Active reports** | `runs/week13_23.03/reports/` |
+| **Current week** | `week16_13.04` |
+| **Active scan** | `runs/week16_13.04/scan/` |
+| **Active triage** | `runs/week16_13.04/triage/` |
+| **Active reports** | `runs/week16_13.04/reports/` |
 
 **Update `CURRENT_WEEK` in `run.sh` (line ~27) and the table above when a new week begins.**
 

@@ -1,0 +1,218 @@
+[
+  {
+    "ticker": "ABNB",
+    "company": "Airbnb Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Network-effect travel platform with pricing power"
+  },
+  {
+    "ticker": "AMGN",
+    "company": "Amgen Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Durable biotech FCF; obesity pipeline adds optionality"
+  },
+  {
+    "ticker": "ASML",
+    "company": "ASML Holding NV",
+    "b1_verdict": "advance",
+    "b1_reason": "EUV lithography monopoly; irreplaceable in semiconductor fab"
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "AI networking dominance plus VMware integration upside"
+  },
+  {
+    "ticker": "BSX",
+    "company": "Boston Scientific Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "MedTech secular growth; 52wk low potential entry point"
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "CRM dominance plus FCF; 52wk low entry opportunity"
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Search monopoly plus cloud plus AI; antitrust manageable"
+  },
+  {
+    "ticker": "HD",
+    "company": "Home Depot Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Home improvement duopoly; 52wk low cyclical entry"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Social ad duopoly; AI optimization widening moat"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Enterprise platform dominance; cloud plus AI integration"
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "IT workflow monopoly; near 52wk low entry"
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "AI accelerator monopoly; CUDA ecosystem lock-in"
+  },
+  {
+    "ticker": "PANW",
+    "company": "Palo Alto Networks Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Cybersecurity platform leader; consolidation winner"
+  },
+  {
+    "ticker": "REGN",
+    "company": "Regeneron Pharmaceuticals Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Dupixent franchise durable; pipeline breadth unusual for biotech"
+  },
+  {
+    "ticker": "TTD",
+    "company": "Trade Desk Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Programmatic DSP leader; CTV secular shift intact"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Payment network duopoly; near 52wk low entry"
+  },
+  {
+    "ticker": "VRTX",
+    "company": "Vertex Pharmaceuticals Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "CF franchise monopoly; pain pipeline adds optionality"
+  },
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Creative monopoly; AI upside underappreciated"
+  },
+  {
+    "ticker": "AMZN",
+    "company": "Amazon.com Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Retail flywheel plus AWS plus advertising; rare moat breadth"
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Membership model moat pristine; compounding machine"
+  },
+  {
+    "ticker": "CPRT",
+    "company": "Copart Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Salvage duopoly; asset-light compounder; high ROIC"
+  },
+  {
+    "ticker": "DHR",
+    "company": "Danaher Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Life sciences platform; DBS system; bioprocessing recovery play"
+  },
+  {
+    "ticker": "INTU",
+    "company": "Intuit Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Tax plus SMB accounting monopoly; AI enhancement"
+  },
+  {
+    "ticker": "LLY",
+    "company": "Eli Lilly and Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "GLP-1 franchise dominance; secular obesity megatrend"
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Foundry monopoly; irreplaceable AI supply chain node"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Managed care plus Optum dominance; scale moat widening"
+  },
+  {
+    "ticker": "BX",
+    "company": "Blackstone Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Alt asset compounder; AUM flywheel; fee-related earnings durable"
+  },
+  {
+    "ticker": "DE",
+    "company": "Deere & Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Ag equipment leader; precision agriculture durable moat"
+  },
+  {
+    "ticker": "FICO",
+    "company": "Fair Isaac Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Credit scoring monopoly; proven pricing power"
+  },
+  {
+    "ticker": "GE",
+    "company": "GE Aerospace",
+    "b1_verdict": "advance",
+    "b1_reason": "Aero engine monopoly; LEAP aftermarket revenue stream durable"
+  },
+  {
+    "ticker": "IDXX",
+    "company": "IDEXX Laboratories Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Veterinary diagnostics monopoly; recurring razor/blade revenue"
+  },
+  {
+    "ticker": "ISRG",
+    "company": "Intuitive Surgical Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Robotic surgery monopoly; razor/blade installed base growing"
+  },
+  {
+    "ticker": "LONN.SW",
+    "company": "Lonza Group AG",
+    "b1_verdict": "advance",
+    "b1_reason": "Biologics CDMO capacity-constrained moat; secular tailwind"
+  },
+  {
+    "ticker": "MCO",
+    "company": "Moody's Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Credit rating duopoly; irreplaceable regulatory position"
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Global streaming scale monopoly; pricing power proven"
+  },
+  {
+    "ticker": "SPGI",
+    "company": "S&P Global Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Credit rating plus index platform; regulatory moat"
+  }
+]

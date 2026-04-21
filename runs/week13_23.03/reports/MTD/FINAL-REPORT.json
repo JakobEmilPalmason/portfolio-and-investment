@@ -1,0 +1,69 @@
+{
+  "ticker": "MTD",
+  "company": "Mettler-Toledo International Inc.",
+  "analysis_date": "2026-03-29",
+  "verdict": "Pass",
+  "average_score": 6.1,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 7,
+    "valuation": 3,
+    "margin_of_safety": 3,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "Regulation-enforced switching costs with 50%+ share in lab balances and top share in 75% of served markets",
+    "Elite business economics: 46% ROIC, 59% gross margins, near-100% FCF conversion on 2.7% capex intensity",
+    "$1B+ growing service annuity on a $16B installed base with only one-third penetrated",
+    "One of the best buyback machines in corporate America: $800M-$1.1B annually with only $22M SBC offset",
+    "Highly understandable business model with diversified end markets across pharma, food, chemicals, and academia"
+  ],
+  "key_risks": [
+    "Price exceeds all 25 DCF sensitivity grid cells and all 10,000 Monte Carlo simulations — zero margin of safety at $1,232",
+    "China concentration: 16% of revenue but 29% of segment profit and 29% of production, creating compounding tariff/geopolitical risk",
+    "Multiple compression risk at 29x trailing P/E with only 4% guided organic growth — any earnings miss triggers rapid de-rating",
+    "Negative stockholders' equity from aggressive buybacks eliminates tangible book value floor",
+    "Owner-earnings yield of 3.3% is below the 4.5% risk-free rate"
+  ],
+  "red_flags": [
+    "Monte Carlo P(IV > Price) = 0.03% — statistically zero probability the stock is undervalued under standard DCF assumptions",
+    "Insider ownership of 0.27% with 14 sales and 0 purchases in the last 6 months",
+    "Tariff headwinds of 5-7% on EPS with 29% of global production in China",
+    "Revenue essentially flat in real terms ($3.8-4.0B) over FY2022-2025"
+  ],
+  "buy_triggers": [
+    "Price declines to $800-850 range (near MC P50-P75), providing ~15% margin of safety vs. base IV of $742",
+    "Organic revenue growth accelerates above 6% for two consecutive quarters, validating the premium multiple",
+    "China demand recovery combined with tariff resolution, removing the two largest near-term earnings headwinds"
+  ],
+  "sell_triggers": [
+    "ROIC declines below 30% for two consecutive years, signaling structural moat erosion",
+    "China revenue drops 50%+ without offsetting growth elsewhere",
+    "Management suspends buybacks to fund a large dilutive acquisition, breaking capital allocation discipline"
+  ],
+  "valuation_summary": "At $1,232, MTD trades 66% above base-case IV ($742) and 16% above bull IV ($1,058). The quant DCF sensitivity grid (25 cells, growth 0.9-8.9%, WACC 9.6-13.6%) produces a max IV of $1,010. Monte Carlo mean is $762 with P95 at $972. Owner-earnings yield of 3.3% is below the 4.5% risk-free rate. To justify the current price, the market must assume sustained 8-9% revenue growth plus a 20x+ terminal EV/EBITDA multiple — roughly double management's 4% 2026 growth guide.",
+  "iv_conservative": 467.7,
+  "iv_base": 742.16,
+  "iv_bull": 1057.65,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -163.4,
+  "monte_carlo_prob_above_price": 0.0003,
+  "sensitivity_iv_range": [568.31, 1009.92],
+  "compact_checklist": [
+    "Mettler-Toledo sells precision weighing, analytical, and inspection instruments to pharma labs and food factories, then locks in a $1B+ recurring service annuity on the installed base.",
+    "FDA/GMP validation requirements make switching instruments so costly that pharma customers stay with MTD's 50%+ share in lab balances rather than re-validate a competitor's equipment.",
+    "46% ROIC, 59% gross margins, and $849M FCF at near-100% conversion on only 2.7% capex intensity confirm elite capital efficiency with real cash behind the earnings.",
+    "Capital allocation is mechanically excellent — $800M+ annual buybacks with only $22M SBC genuinely retire shares — but insider ownership of 0.27% means management has minimal personal capital at risk.",
+    "At 1.7x net debt/EBITDA and 16x interest coverage, MTD could pause buybacks and retire its entire $2.2B debt stack in under three years from FCF alone, surviving a 30% revenue decline without covenant breach.",
+    "At $1,232, the stock exceeds all 25 cells in the DCF sensitivity grid (max $1,010) and requires sustained 8-9% revenue growth plus a 20x+ terminal multiple — roughly double management's 4% 2026 growth guide.",
+    "The business quality is genuine (dominant share, regulatory lock-in, recurring revenue), but at 66% above base IV with a 3.3% owner-earnings yield below the 4.5% risk-free rate, there is zero price-based protection.",
+    "Sell if ROIC falls below 30% for two consecutive years, if China revenue (16% of sales but 29% of segment profit) drops 50%+ without offset, or if management suspends buybacks to fund a large dilutive acquisition."
+  ],
+  "source_summary": "MTD FY2025 10-K, Q4 2025 earnings release, SEC EDGAR filings, yfinance auto-fetch financials, quant DCF model (src/quant), mt.com, MacroTrends, TIKR, AInvest, Seeking Alpha, sell-side consensus (BofA, Morgan Stanley, Jefferies), GuruFocus insider data, Simply Wall St, Yahoo Finance",
+  "confidence": "high",
+  "change_notes": "Initial analysis. Exceptional business quality (umbrellas 1-5 average 8.0) offset by extreme overvaluation (umbrellas 6-8 all score 3). Pass verdict driven by three scores below 4 and margin of safety below 4. Watchlist with entry targets at $800-850."
+}

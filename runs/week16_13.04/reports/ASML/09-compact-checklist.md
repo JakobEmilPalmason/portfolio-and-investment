@@ -1,0 +1,12 @@
+# Compact Checklist — ASML
+
+**Date:** 2026-04-18
+
+1. **Business**: ASML is the sole-source supplier of EUV and High-NA lithography systems (plus a growing €2B+ installed-base service annuity on 6,000+ fielded tools), and TSMC, Samsung, and Intel keep buying because no one else on Earth can print sub-3nm transistors.
+2. **Moat**: A 100% EUV share locked in by the Zeiss SMT optics partnership (25% owned), the Cymer light source (acquired), ~800 specialist suppliers, 2,000+ EUV patents, and 40 years of co-developed know-how that widens (not resets) with every node — a 10-year-plus structural monopoly.
+3. **Economics**: ROIC has averaged 41.6% over FY2022–FY2025 against a ~12% WACC, gross margin stepped from 50.5% to 52.8%, FY2025 delivered €11B FCF on €32.7B revenue, and the €38.8B backlog gives two years of forward revenue visibility — textbook economic machine.
+4. **Management**: Fouquet succeeded Wennink in an orderly internal handover, SBC is only 0.6% of revenue, ~€12B of cumulative buybacks since FY2022 have net-reduced share count, and M&A has been limited to vertical tucks (Cymer, Zeiss SMT stake, HMI) — though dropping quarterly order-intake disclosure in Q1 2026 is a minor transparency regression.
+5. **Debt risk**: Net cash of €8.9B (€13.3B cash vs €4.4B debt), 97× interest coverage, 0.35× debt/EBITDA, and a customer-prepaid backlog mean ASML could absorb a 30% revenue decline for two years while still funding €4.7B of R&D and never touching the capital markets.
+6. **Price**: To justify $1,459.80, you must believe ASML sustains 22%+ revenue growth beyond 2030, operating margin expands toward 40%, WACC is sub-10%, and the multiple stays at 22–25× EV/EBITDA — three aggressive priors stacked simultaneously, and Monte Carlo puts P(IV > Price) at 0.0%.
+7. **Margin of safety**: There is no price MOS — the stock trades 95% above my $750 base IV and 46% above my $1,000 bull IV — so the only cushion is the business itself (monopoly + fortress balance sheet), which protects permanence of capital but not against a repeat of the ~50% drawdowns seen in 2022 and late-2024/early-2025.
+8. **Thesis breaker**: Sell if High-NA ramp slips 2+ years and customer yields disappoint, if the MATCH Act (or equivalent) passes and cuts China DUV revenue while TSMC publicly defers High-NA beyond 1.4nm, or if gross margin fails to re-expand above 53% by FY2027 as the High-NA learning curve promised.

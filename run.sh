@@ -29,7 +29,7 @@ TODAY=$(date +%Y-%m-%d)
 # ---------------------------------------------------------------------------
 # CURRENT WEEK — update this at the start of each new week
 # ---------------------------------------------------------------------------
-CURRENT_WEEK="week13_23.03"
+CURRENT_WEEK="week16_13.04"
 
 # ---------------------------------------------------------------------------
 # Validation helpers
@@ -914,6 +914,7 @@ case "$COMMAND" in
     allocate)  cmd_allocate "$@" ;;
     verify)    cmd_verify "$@" ;;
     monitor)   cmd_monitor "$@" ;;
+    eunl)      python3 "$SCRIPT_DIR/scripts/eunl-comparison.py" "$@" ;;
     validate)  cmd_validate "$@" ;;
     *)
         echo "ERROR: Unknown command '$COMMAND'"

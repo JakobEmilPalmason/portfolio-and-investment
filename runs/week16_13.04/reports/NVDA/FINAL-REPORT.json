@@ -1,0 +1,78 @@
+{
+  "ticker": "NVDA",
+  "company": "NVIDIA Corporation",
+  "analysis_date": "2026-04-18",
+  "verdict": "Watch",
+  "average_score": 6.75,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 3,
+    "margin_of_safety": 3,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "Founder-CEO Jensen Huang owns ~854M shares (~$172B) with 33 years at the helm",
+    "CUDA moat: ~4M developers and 40,000+ organizations on the stack",
+    "87.3% ROIC, 60.4% operating margin, 44.8% FCF margin in FY2026",
+    "Fortress balance sheet: $51.5B net cash, 547x interest coverage, 3.9x current ratio",
+    "$96.7B FCF on $215.9B revenue and ~$120B owner earnings",
+    "Multi-year product roadmap (Blackwell Ultra, Rubin, Rubin Ultra, Feynman) through 2028",
+    "Full-stack rack integration (NVLink + InfiniBand + Spectrum-X) raises switching cost",
+    "Disciplined SBC at 3.0% of revenue fully offset by buybacks; share count declining"
+  ],
+  "key_risks": [
+    "Price is ~114% above quant base IV and above every sensitivity-grid cell",
+    "0% Monte Carlo probability that IV exceeds current price",
+    "Customer concentration: top 4 hyperscalers ~61% of revenue, all building custom silicon",
+    "Hyperscaler capex air-pocket risk as 3-year GPU obsolescence pressures ROIC",
+    "Google TPU v7 out-shipped merchant GPUs in 2025; AMD MI400 and ROCm 7 closing the gap",
+    "China Data Center compute revenue excluded from forward guidance",
+    "Founder-CEO key-person risk at 63 with no public succession plan",
+    "Beta 2.33 and 123% 52-week range implies 30-50% drawdowns are normal"
+  ],
+  "red_flags": [
+    "0 of 25 sensitivity-grid cells support current price",
+    "0 of 10,000 Monte Carlo simulations produced IV above price; P95 is $138.89",
+    "Buyback pace accelerated from $10B (FY23) to $40B (FY26) as the stock rose",
+    "Customer concentration worsened from top-6 ~50% to ~63% of revenue in one year",
+    "Gross margin dipped from 75.0% to 71.1% on Blackwell transition (Q4 recovered to 75%)",
+    "Purchase commitments for Blackwell/Rubin capacity create off-balance-sheet conditional liability",
+    "$20B Groq acquisition is large enough to warrant active monitoring"
+  ],
+  "buy_triggers": [
+    "Price pullback to $140 or below (near quant bull IV) with Monte Carlo P(IV>Price) rising above 20%",
+    "Price below $110 (within quant base range) with Data Center growth >20% YoY and gross margin holding above 70%",
+    "Hyperscaler FY27 capex guidance sustained at $700B+ with Rubin pricing holding current ASP trajectory"
+  ],
+  "sell_triggers": [
+    "Two consecutive quarters of Data Center revenue growth below 20% YoY combined with a top-2 hyperscaler publicly shifting a large training workload to custom silicon or ROCm",
+    "Gross margin falls below 65% outside a product-cycle transition",
+    "Jensen Huang departs without a named successor, or a material accounting/audit disclosure emerges"
+  ],
+  "valuation_summary": "Quant DCF intrinsic value range is $68 (bear) / $94 (base) / $124 (bull) vs current price $201.68 — market is ~114% above base case and above every cell of the 5x5 sensitivity grid (max $142). No margin of safety exists on price; the only cushion is business quality.",
+  "iv_conservative": 67.97,
+  "iv_base": 94.39,
+  "iv_bull": 124.1,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -196.7,
+  "monte_carlo_prob_above_price": 0.0,
+  "sensitivity_iv_range": [90.54, 142.12],
+  "compact_checklist": [
+    "Business: NVIDIA sells GPU-plus-CUDA \"AI factory\" systems — 91% of FY2026's $215.9B revenue came from Data Center hardware bought by roughly a dozen hyperscalers and sovereign AI labs who keep buying because Blackwell/Rubin racks are the fastest way to turn electricity into trained model weights and inference tokens.",
+    "Moat: CUDA's ~4M developers and 40,000+ organizations running production code on NVIDIA's stack, combined with full-rack integration (NVLink + InfiniBand + Spectrum-X + reference designs) that makes the unit of competition a rack-scale system rather than a chip — proven in 71% gross margin and 87% ROIC that neither AMD nor hyperscaler ASICs have yet forced down.",
+    "Economics: FY2026 delivered 87.3% ROIC, 60.4% operating margin, $96.7B of free cash flow on $215.9B revenue (44.8% FCF margin), and ~$117B of owner earnings on only ~$2.8B of maintenance capex — this is as capital-light a cash engine as exists at mega-cap scale.",
+    "Management: Founder-CEO Jensen Huang (33 years in the seat) directly owns ~854M shares worth ~$172B, runs a 3.0%-of-revenue SBC program that buybacks of $40.1B in FY2026 more than offset, and has one proven mega-deal (Mellanox at $6.9B) plus one still-unproven one (Groq at ~$20B) — the meaningful blemish is that buybacks accelerated from $10B (FY23) to $40B (FY26) as the stock rose, i.e. buying more at higher multiples.",
+    "Debt risk: $62.6B cash against $11.0B debt (net cash $51.5B), 547x interest coverage, 3.9x current ratio, zero refinancing wall, and enough liquidity to run 2-3 years with zero revenue — a 30-50% revenue drawdown would hurt earnings but cannot threaten solvency.",
+    "Price: At $201.68 you must believe NVDA grows revenue ~28% CAGR for five years (to ~$745B by FY31) with no margin compression and an 18x+ terminal EV/EBITDA, because the quant DCF's base IV is $94, bull IV $124, the full 5x5 sensitivity grid tops out at $142.12, and 0 of 10,000 Monte Carlo runs produced an IV above today's price.",
+    "Margin of safety: There is none on price (-197% vs bear IV, -114% vs base IV, -63% vs bull IV) — the only cushion is the business itself: a fortress balance sheet, 87% ROIC, and a franchise that can absorb a 40-50% drawdown without permanent capital impairment, but you are carrying all the valuation risk.",
+    "Thesis breaker: Sell if two consecutive quarters of Data Center revenue growth below 20% YoY coincide with a top-2 hyperscaler publicly shifting a large training workload to custom silicon or ROCm, OR gross margin falls below 65% outside a product-cycle transition, OR Jensen Huang departs without a named successor."
+  ],
+  "source_summary": "Auto-fetched context/NVDA/financials.md and financials.json (Yahoo Finance, 2026-04-18); deterministic DCF via context/NVDA/quant-valuation.json (src/quant, 2026-04-18); WebSearch for NVIDIA Q4 FY2026 earnings release, GTC 2026 roadmap, hyperscaler capex coverage (Fortune, CNBC, SemiAnalysis, Futuriom), analyst targets (MarketBeat, TipRanks), and SEC Form 4 insider data. No user-provided primary research in context folder.",
+  "confidence": "medium",
+  "change_notes": ""
+}

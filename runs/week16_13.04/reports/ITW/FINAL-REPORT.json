@@ -1,0 +1,80 @@
+{
+  "ticker": "ITW",
+  "company": "Illinois Tool Works Inc.",
+  "analysis_date": "2026-04-19",
+  "verdict": "Pass",
+  "average_score": 6.4,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 3,
+    "margin_of_safety": 3,
+    "temperament": 4
+  },
+  "key_strengths": [
+    "27.9% ROIC sustained across full cycle (18pt spread over 9.9% WACC)",
+    "26.3% operating margin, 44.1% gross margin — double diversified-industrial peers",
+    "63 consecutive years of dividend increases, Dividend King status",
+    "80/20 Front-to-Back operating system delivers ~100bp annual margin uplift",
+    "17,000+ patents and switching-cost lock-in on specified components",
+    "A1/A+ rated, 1.7x net debt/EBITDA, 14.6x interest coverage, $3B fresh revolver",
+    "Seven decentralized segments, no customer >5% of revenue, ~45% international",
+    "$1.5B/yr buybacks reduced share count ~17% since 2015",
+    "PSU comp tied to Operating Margin, After-Tax ROIC, EPS Growth, and CBI Yield",
+    "~$2.7B FCF on $420M capex (95% maintenance) — asset-light industrial"
+  ],
+  "key_risks": [
+    "Price above every one of 25 sensitivity cells; MC P(IV>Price) = 0.65%",
+    "Realistic downside 25-30% vs upside 0-6% + dividend — unfavorable asymmetry",
+    "Revenue flat at ~$16B for four consecutive years — EPS growth relies on margin + buybacks",
+    "Cyclical exposure: beta 1.15, auto OEM + food equipment + welding sensitive to industrial downturn",
+    "Automotive OEM (~9% revenue) faces real 10-year EV-transition content and qualification risk",
+    "FY25 buybacks+dividends ($3.3B) exceeded FCF ($2.7B) by ~$600M — first meaningful debt step-up",
+    "$998M 2026 debt maturity to refinance, likely at wider spreads"
+  ],
+  "red_flags": [
+    "Monte Carlo P(IV > Price) = 0.65% — probabilistic framework gives near-zero undervaluation odds",
+    "Zero of 25 sensitivity-grid cells produce IV above current price of $272.26",
+    "Trailing P/E 26.0x and EV/EBITDA 18.7x both ~13% above 10-year averages",
+    "Analyst consensus target of $275.88 implies ~1% upside — Street not underwriting expansion",
+    "Insider ownership under 1%; buybacks run on fixed cadence regardless of valuation",
+    "FCF dividend payout ratio at 66% leaves limited cushion in cyclical downturn",
+    "Current ratio at 4-year low of 1.2x; working capital down from $1.8B to $1.1B"
+  ],
+  "buy_triggers": [
+    "Price drops to ~$210 or below (approaches adjusted-base IV range of $185-$200)",
+    "Cyclical drawdown of 15-20% without thesis break — starter entry near $230",
+    "Sustained operating margin above 27% for 4 consecutive quarters plus positive organic growth across 5+ of 7 segments"
+  ],
+  "sell_triggers": [
+    "Operating margin falls below 24% for two consecutive years with no cyclical recovery signs",
+    "ROIC drifts sustainably below 20% or debt/EBITDA exceeds 3x without deleveraging plan",
+    "Failed large acquisition that impairs the ~$6B of goodwill",
+    "Valuation sell at P/E sustainably above 30x (peak-of-cycle setup)"
+  ],
+  "valuation_summary": "Quant DCF produces bear/base/bull IV of $115/$187/$270 vs current price $272.26 — stock trades above all three scenarios. There is no margin of safety: 25/25 sensitivity cells and Monte Carlo (0.65% P(IV>Price)) converge on overvaluation.",
+  "iv_conservative": 115.16,
+  "iv_base": 187.04,
+  "iv_bull": 270.15,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -136.4,
+  "monte_carlo_prob_above_price": 0.0065,
+  "sensitivity_iv_range": [137.01, 248.46],
+  "compact_checklist": [
+    "Business: ITW sells ~87,000 niche engineered products (auto fasteners, commercial food equipment, welding gear, test & measurement instruments, adhesives, construction fastening, specialty packaging) across seven decentralized segments, and customers keep buying because the components are specified into their platforms and workflows with high re-validation cost.",
+    "Moat: Switching costs on specified components plus the 80/20 operating system, a 17,000+ patent portfolio, premium brands (Miller, Hobart, Instron), and niche scale — together producing a 27.9% ROIC sustained across a full cycle, ~18 points above WACC — keep competitors out of the profit pool.",
+    "Economics: ROIC 27.9%, operating margin 26.3%, gross margin 44.1%, ~$2.7B FCF on ~$420M capex (2.6% of revenue, ~95% maintenance), and 88% FCF-to-net-income conversion — textbook asset-light industrial cash generation.",
+    "Management: Disciplined institutional allocators running the right pecking order — lean maintenance capex, 63 consecutive annual dividend increases, $1.5B/yr buybacks shrinking share count ~17% since 2015, only small bolt-on M&A ($236M across three Test & Measurement deals), with 2025-2027 PSU comp tied to Operating Margin, After-Tax ROIC, EPS Growth, and CBI Yield — though insider ownership is under 1% and buybacks run on fixed cadence rather than valuation.",
+    "Debt risk: A1/A+ rated with 1.7x net debt/EBITDA, 14.6x interest coverage, $851M cash plus a fresh $3B undrawn revolver, and a stress test (30% revenue decline, margin to 18%) still leaves ~7x coverage and enough FCF to protect the dividend — survivable through any realistic industrial recession.",
+    "Price: For $272 to make sense the market must be right that ITW deserves ~4% revenue CAGR through 2030 (vs 0% realized 2022-2025), a sustained 27%+ operating margin, and a permanent 17-18x exit EV/EBITDA — the quant's 25-cell sensitivity grid produces zero cells above $272 and Monte Carlo puts P(IV > Price) at 0.65%.",
+    "Margin of safety: There isn't one on price — MOS vs bear IV is -94% and against base IV -46% — the only safety is business quality (no credible path to permanent capital impairment), which cushions losses but not the 25-30% drawdown and 2-3 years of flat returns that a multiple re-rating to the 24x 10-year mean would deliver.",
+    "Thesis breaker: Two consecutive years of operating margin falling below 24%, ROIC drifting below 20%, debt/EBITDA above 3x without a clear deleveraging plan, or a failed large acquisition that impairs goodwill — any one of these would break the compounder thesis and trigger a sell."
+  ],
+  "source_summary": "yfinance financials (2026-04-19), deterministic DCF from src/quant (CAPM WACC, 10k Monte Carlo, 5x5 sensitivity), WebSearch across ITW investor relations, Q4 2025 press release, 2025/2026 proxy statements, 24/7 Wall St., Moody's/S&P rating affirmations, MacroTrends/Fullratio for historical multiples, and analyst target data from Public.com/TipRanks/MarketBeat/WallStreetZen. No material staleness.",
+  "confidence": "high",
+  "change_notes": ""
+}

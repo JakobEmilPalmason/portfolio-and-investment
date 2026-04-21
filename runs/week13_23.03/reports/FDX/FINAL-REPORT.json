@@ -1,0 +1,71 @@
+{
+  "ticker": "FDX",
+  "company": "FedEx Corporation",
+  "analysis_date": "2026-03-26",
+  "verdict": "Watch",
+  "average_score": 6.25,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 6,
+    "management": 6,
+    "business_economics": 5,
+    "balance_sheet": 6,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Global hub-and-spoke air express network (Memphis SuperHub, 220+ countries) built over 50 years is economically unreplicable — a genuine structural barrier to entry",
+    "DRIVE program delivered $4B in cumulative cost savings on schedule; owner earnings quadrupled from $1.0B to $4.3B in four years through CapEx discipline",
+    "FedEx Freight spin-off (June 2026) is a confirmed catalyst that should unlock $30–35B in standalone LTL value currently embedded in a discounted conglomerate multiple",
+    "Stock trades below every cell in the quant sensitivity grid with 97.8% Monte Carlo probability that intrinsic value exceeds current price — compelling probability-weighted upside",
+    "B2B and healthcare verticals provide durable, sticky demand that is structurally insulated from Amazon's domestic B2C buildout"
+  ],
+  "key_risks": [
+    "Amazon structural disintermediation: 6.7B packages in 2025, >70% of own U.S. volume, permanently narrowing the domestic B2C addressable market for FedEx",
+    "Revenue has contracted $5.6B from FY2022 peak; a macro recession layered onto secular volume pressure could push bear-case IV ($277) or below, delivering 30–38% drawdown",
+    "Express segment operating at ~1.7% margin — barely above breakeven; if Network 2.0 cannot recover Express to 5%+, the entire margin re-rating thesis fails",
+    "Network 2.0 is only 25% complete; 75% of the $2B targeted annual savings are unproven and subject to 2–3 year execution risk",
+    "5,000+ FedEx pilots issued a public no-confidence vote in September 2025 after 5+ years without a contract — latent operational and labor relations risk"
+  ],
+  "red_flags": [
+    "Price exceeds bear IV ($277) by 29% — no classical margin of safety at current entry",
+    "ROIC of 9.3% barely clears estimated cost of capital — marginal value creation, insufficient to confirm wide moat",
+    "Revenue declined ~6% from FY2023 peak ($93.5B to $87.9B); three consecutive years of contraction",
+    "Express segment operating margin ~1.7% despite years of DRIVE savings — structural impairment risk",
+    "Pilot labor dispute unresolved: expired contract since 2021, no-confidence vote September 2025",
+    "P/FCF ~95x on trailing FCF — thin free cash yield until Network 2.0 CapEx normalizes post-FY2027"
+  ],
+  "buy_triggers": [
+    "Price pulls back to $300–$320, providing a meaningfully better probability-weighted entry relative to bear IV",
+    "Network 2.0 crosses 50%+ completion and Q1 FY2027 operating margins exceed 8.5%, confirming the margin expansion trajectory",
+    "FedEx Freight spin-off completes in June 2026 and RemainCo re-rates upward on a cleaner capital structure"
+  ],
+  "sell_triggers": [
+    "Operating margins fail to exceed 9% by end of FY2027 despite full DRIVE delivery — signals Express is structurally impaired beyond what integration can cure",
+    "Revenue declines resume post-spin for two consecutive fiscal quarters, disproving the Q3 FY2026 re-acceleration thesis",
+    "DRIVE cumulative savings revised materially below $6B total target, or FY2027 margin guidance issued below current-year levels after substantial Network 2.0 completion"
+  ],
+  "valuation_summary": "At $357.52, FDX trades below every cell in the quant sensitivity grid — the lowest cell ($358) requires -2% revenue growth at 10.5% WACC to match current price. The quant base IV of $495 uses conservative 2% revenue growth and a 15x EV/EBITDA exit, both of which look modest against FY2026 guidance of +6–6.5% revenue growth. The FedEx Freight spin-off could unlock $30–35B in standalone LTL value not yet reflected in the blended multiple. The bear IV of $277 represents a genuine recession scenario and sits 29% below current price — the absence of a classical price buffer to bear IV is the key constraint preventing a higher margin-of-safety score.",
+  "iv_conservative": 276.9,
+  "iv_base": 495.23,
+  "iv_bull": 800.44,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -29.1,
+  "monte_carlo_prob_above_price": 0.978,
+  "sensitivity_iv_range": [358.4, 656.41],
+  "compact_checklist": [
+    "FedEx moves time-sensitive parcels, freight, and documents for businesses in 220+ countries, charging per-shipment yield on top of a largely fixed infrastructure base that customers — particularly B2B healthcare, industrial, and premium e-commerce shippers — rely on because alternatives cannot match the network's reach, reliability, or compliance credentials.",
+    "The global hub-and-spoke air express network anchored by the Memphis SuperHub — built over 50 years at a cost of hundreds of billions — cannot be replicated by any new entrant, though Amazon's 6.7B-package domestic logistics operation has permanently narrowed the domestic B2C segment of that moat.",
+    "Owner earnings quadrupled from $1.0B to $4.3B in four years purely through CapEx discipline, but ROIC of 9.3% still barely clears cost of capital and operating margins of 6.8% trail UPS by ~160 basis points — the cash generation story is real, the returns-on-capital story is not yet.",
+    "Subramaniam delivered $4B in DRIVE savings on schedule, cut CapEx to a historic low of 4.6% of revenue, and is executing the Freight spin-off — but 5,000+ pilots issued a public no-confidence vote after five years without a pay raise, and revenue has contracted $5.6B on his watch while buybacks accelerated, which is not the combination of a capital allocator firing on all cylinders.",
+    "Net financial debt of 1.4x EBITDA and 7.9x interest coverage mean FedEx can survive a standard recession without a credit event, but the $16.8B in non-cancellable operating lease liabilities create semi-fixed cost rigidity that compresses covenant headroom in a severe multi-year revenue decline.",
+    "At $357.52, the market is pricing in economics worse than the quant model's most pessimistic cell — sub-bear-case revenue contraction combined with WACC above 10.5% — which is only justified if you believe Network 2.0 fails, DRIVE savings erode, and Amazon continues to structurally compress FedEx's addressable volume for the remainder of the decade.",
+    "The safety comes from the asymmetry of the probability distribution — 97.8% Monte Carlo probability that intrinsic value exceeds the current price, with base IV of $495 and a 5:1 upside-to-downside ratio — not from a classical price-to-bear-IV buffer, which does not exist at $357 since bear IV is $277.",
+    "Sell if operating margins fail to cross 9% by end of FY2027 despite full DRIVE delivery, signaling that the Express segment is structurally impaired beyond what Network 2.0 can fix and the margin re-rating thesis is permanently off the table."
+  ],
+  "source_summary": "Pre-fetched financials FY2022–FY2025 (yfinance), FedEx Q3/Q4 FY2025–FY2026 earnings releases, FedEx Freight spin-off Form 10 and senior notes filings (February 2026), analyst consensus data (28 analysts), DRIVE program savings reports, Network 2.0 rollout analysis (TD Cowen / Supply Chain Dive), S&P/Moody's credit ratings, ShipMatrix 2026 parcel market report, historical drawdown analysis (Trefis 15-crisis study), web searches March 2026.",
+  "confidence": "medium",
+  "change_notes": "Initial analysis — no prior FDX report in this pipeline."
+}

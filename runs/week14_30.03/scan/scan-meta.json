@@ -1,0 +1,81 @@
+{
+  "scan_date": "2026-04-01",
+  "universe_date": "2026-04-01",
+  "total_candidates": 235,
+  "buckets_used": [
+    "post_earnings",
+    "fcf_roic",
+    "52wk_high",
+    "tracked",
+    "large_cap_europe_quality",
+    "semis_and_infra",
+    "healthcare_quality",
+    "52wk_low",
+    "seed",
+    "sector_leader",
+    "financial_quality",
+    "large_cap_us_quality",
+    "consumer_quality",
+    "industrial_compounders"
+  ],
+  "counts_by_bucket": {
+    "post_earnings": 11,
+    "fcf_roic": 11,
+    "52wk_high": 14,
+    "tracked": 98,
+    "large_cap_europe_quality": 26,
+    "semis_and_infra": 15,
+    "healthcare_quality": 15,
+    "52wk_low": 11,
+    "seed": 21,
+    "sector_leader": 36,
+    "financial_quality": 22,
+    "large_cap_us_quality": 31,
+    "consumer_quality": 20,
+    "industrial_compounders": 21
+  },
+  "counts_by_sector": {
+    "Consumer": 37,
+    "Healthcare": 32,
+    "Technology": 67,
+    "Communication Services": 5,
+    "Financials": 32,
+    "Industrials": 45,
+    "Materials": 4,
+    "Real Estate": 3,
+    "Utilities": 4,
+    "Energy": 6
+  },
+  "counts_by_priority": {
+    "high": 108,
+    "medium": 102,
+    "low": 25
+  },
+  "triage_yes_count": 40,
+  "triage_maybe_count": 60,
+  "triage_no_count": 135,
+  "concentration_warnings": [
+    "tracked_plus_seed_pct at 42.6% exceeds 20% threshold \u2014 expected given 98 already-analyzed tickers in the portfolio system; all 14 source buckets were populated to offset",
+    "Technology sector at 28.5% (67/235) \u2014 approaching 35% threshold; reflects natural weight of semis_and_infra + tracked tech names",
+    "tracked bucket at 41.7% (98/235) exceeds 25% single-bucket threshold \u2014 structural: this is the existing analysis universe being carried forward"
+  ],
+  "ranking_rules_version": "v2",
+  "ranking_rules": {
+    "priority_high": [
+      "post_earnings|52wk_low|52wk_high|fcf_roic in source_bucket AND mkt_cap_tier in {mega,large}",
+      "already_analyzed=true AND thesis_tag in {dominant_ecosystem,quality_compounder,secular_growth}"
+    ],
+    "priority_medium": [
+      "any curated sector bucket in source_bucket (no high trigger)",
+      "seed|sector_leader in source_bucket (no high trigger)"
+    ],
+    "triage_yes": [
+      "already_analyzed=false AND priority=high AND confidence in {high,medium}",
+      "already_analyzed=true AND post_earnings|52wk_low|52wk_high in source_bucket"
+    ],
+    "triage_maybe": [
+      "priority=high but no fresh event catalyst"
+    ]
+  },
+  "stage": "A2"
+}

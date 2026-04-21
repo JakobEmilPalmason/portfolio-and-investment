@@ -1,0 +1,70 @@
+{
+  "ticker": "AMD",
+  "company": "Advanced Micro Devices, Inc.",
+  "analysis_date": "2026-03-25",
+  "verdict": "Pass",
+  "average_score": 5.5,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 5,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 3,
+    "margin_of_safety": 2,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "Exceptional CEO: Lisa Su transformed AMD from near-bankruptcy to a $360B semiconductor leader with proven strategic execution",
+    "Fortress balance sheet: $10.6B cash vs $3.8B debt, 0.5x leverage, 32.6x interest coverage — financial distress essentially impossible",
+    "Exceptional FCF conversion: 155% (FCF $6.7B vs net income $4.3B) reflects capital-light fabless model efficiency",
+    "Server CPU dominance: EPYC reached 36-39% server market share, up from <5% in 2017, with continued momentum",
+    "Only credible NVIDIA alternative: sole second-source for AI accelerator GPUs in a $1T+ compute TAM"
+  ],
+  "key_risks": [
+    "NVIDIA's CUDA moat may be insurmountable — 86-92% AI GPU market share with deep software ecosystem lock-in",
+    "Valuation demands perfection: at $220 (84x trailing P/E), any growth deceleration triggers severe multiple compression",
+    "Single-thesis concentration: $200B+ market cap premium rests entirely on AI GPU expectations",
+    "Semiconductor cyclicality with 2.02 beta — historical 50-70% drawdowns in every major cycle downturn",
+    "TSMC single-supplier dependency creates binary geopolitical risk"
+  ],
+  "red_flags": [
+    "Quant DCF model shows 0% probability of undervaluation at $220 — all 25 sensitivity grid cells produce IV below current price",
+    "GAAP operating margin of 10.7% vs non-GAAP of 28% is an unusually large gap driven by $5B in SBC and amortization",
+    "Stock tripled in 12 months ($76 to $267) — momentum moves of this magnitude often partially reverse",
+    "$5B annual SBC represents ~37% of net income and ~7.5% of market cap",
+    "Xilinx goodwill of $24B has never been impaired despite sluggish Embedded segment recovery"
+  ],
+  "buy_triggers": [
+    "Price declines to $130-150 range (~20x forward FY2026 EPS), creating genuine margin of safety against base case IV of $185",
+    "MI400/MI450 launch demonstrates clear competitive parity with NVIDIA on software ecosystem (ROCm adoption milestones)",
+    "NVIDIA stumbles on product transition (Blackwell/Rubin yield issues), creating window for AMD structural share gains"
+  ],
+  "sell_triggers": [
+    "AMD AI GPU market share stalls below 5% by end of 2027 — thesis break confirming CUDA moat is insurmountable",
+    "Hyperscaler capex guidance turns negative across multiple customers — signals AI capex cycle contraction",
+    "Stock exceeds $300 with forward P/E above 35x on FY2027 estimates — valuation extreme"
+  ],
+  "valuation_summary": "Quant DCF produces bear/base/bull IV of $42/$67/$96 using GAAP margins (10.7%), which structurally understates cash economics due to $5B in SBC and Xilinx amortization. Adjusted for non-GAAP margins (28%) and consensus growth, the AI-adjusted bear/base/bull IV is $110/$185/$350. At $220, the stock is modestly overvalued vs adjusted base case and severely overvalued vs quant model. Forward P/E of 33x on FY2026 consensus EPS of $6.72 requires flawless AI GPU execution to justify.",
+  "iv_conservative": 41.83,
+  "iv_base": 67.11,
+  "iv_bull": 96.10,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -427.9,
+  "monte_carlo_prob_above_price": 0.0,
+  "sensitivity_iv_range": [64.6, 99.8],
+  "compact_checklist": [
+    "AMD designs CPUs and GPUs sold to cloud hyperscalers, PC OEMs, and console makers, with customers locked in by x86 software compatibility and multi-year server design wins.",
+    "The x86 duopoly and AMD's role as the only credible second-source to NVIDIA in AI GPUs provide a real but execution-dependent advantage that resets every product generation.",
+    "Tangible ROIC is 25-30% (GAAP's 4.7% is distorted by $24B Xilinx goodwill), FCF conversion hits 155%, and margins are expanding as data center grows toward 60% of revenue.",
+    "Lisa Su is a generational CEO who took AMD from $2/share near-bankruptcy to a $360B company, with 96% variable pay and buybacks fully offsetting SBC dilution.",
+    "AMD carries $10.6B cash against $3.8B debt with 32.6x interest coverage and a fabless model that lets it slash costs in a downturn — survival is not in question.",
+    "At $220, you must believe AMD captures 10-15% AI GPU share against NVIDIA's CUDA moat, sustains 30%+ revenue growth for three years, and expands non-GAAP operating margins to 33%+ simultaneously.",
+    "None — the quant model shows 0% probability of undervaluation at $220, the adjusted base-case IV is $185, and even the bear IV of $110 offers no cushion at today's price.",
+    "Sell if AMD's AI GPU market share stalls below 5% by end of 2027, confirming that NVIDIA's CUDA ecosystem is an insurmountable moat and the $200B+ AI growth premium is unjustified."
+  ],
+  "source_summary": "AMD Q4 FY2025 earnings release (Feb 3, 2026), AMD 10-K/10-Q SEC filings, AMD IR press releases, quant DCF model (src/quant), context/AMD/financials.md, context/AMD/quant-valuation.json, Yahoo Finance, Mercury Research CPU market share data, S&P Global Market Intelligence, Visible Alpha consensus, analyst consensus via StockAnalysis.com, PortfoliosLab historical volatility data",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. AMD is a high-quality semiconductor business with exceptional management and fortress balance sheet, but the stock at $220 is priced for near-flawless AI GPU execution against NVIDIA's dominant CUDA ecosystem. Pass verdict reflects valuation disconnect, not business quality. Set price alert at $130-150 for re-evaluation."
+}

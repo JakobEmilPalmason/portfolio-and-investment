@@ -1,0 +1,69 @@
+{
+  "ticker": "LSEG.L",
+  "company": "London Stock Exchange Group plc",
+  "analysis_date": "2026-03-29",
+  "verdict": "Own",
+  "average_score": 7.3,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 7,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "~70% recurring/subscription revenue with 90%+ retention rates and deep switching costs",
+    "LCH clears >90% of global interest rate swaps -- regulatory-mandated near-monopoly",
+    "88% gross margins, 50.3% EBITDA margins expanding 150bps/year with 2x operating leverage",
+    "33+ petabytes of proprietary financial data positioned as input layer for AI workflows",
+    "FTSE Russell indices embedded in trillions of passive AUM with ecosystem lock-in"
+  ],
+  "key_risks": [
+    "Q4 FY2026 revenue warning (24 March 2026) -- magnitude undisclosed, could signal structural deceleration",
+    "AI disintermediation could erode value of traditional terminal/data feed business",
+    "Rising net debt (GBP 6.2B to GBP 8.3B, FY2022-2025) funding buybacks under activist pressure",
+    "FCA investigation into low-latency connectivity pricing could set precedent for broader data pricing scrutiny",
+    "Bloomberg remains dominant terminal franchise; Workspace has not proven it can take meaningful front-office share"
+  ],
+  "red_flags": [
+    "CEO compensation up 46% triggering shareholder revolt at AGM",
+    "Total shareholder returns (GBP 2.8B) exceeded equity FCF (GBP 2.4B) in FY2025 -- partly debt-funded",
+    "CEO ownership of only 0.019% -- incentives are compensation-driven, not ownership-driven",
+    "Elliott Management activist pressure may drive short-term capital allocation decisions"
+  ],
+  "buy_triggers": [
+    "Q4 revenue shortfall explained as transitory with Q1 FY2027 confirming 6%+ organic growth",
+    "Stock pulls back toward 7,500 GBp or below, increasing MOS to 20%+",
+    "EBITDA margin expansion continues on track toward 52-53% in FY2027"
+  ],
+  "sell_triggers": [
+    "Organic revenue growth turns negative for two consecutive quarters",
+    "EBITDA margin contracts below 45%, signaling moat erosion",
+    "EV/EBITDA exceeds 22x or stock surpasses 12,000 GBp (approaching bull-case IV)"
+  ],
+  "valuation_summary": "At 8,246 GBp, LSEG trades at 15.5x forward P/E vs peers at ~28x and 15.2x EV/EBITDA. Bear/base/bull IV of 7,200/9,800/12,500 GBp implies asymmetric risk/reward with 13% downside vs 19-52% upside. The market is pricing in sustained growth deceleration and no margin expansion, which contradicts FY2025 delivery of 7.1% organic growth and 50.3% EBITDA margins.",
+  "iv_conservative": 7200,
+  "iv_base": 9800,
+  "iv_bull": 12500,
+  "iv_currency": "GBp",
+  "iv_source": "ai_estimate",
+  "mos_at_analysis": -14.5,
+  "monte_carlo_prob_above_price": null,
+  "sensitivity_iv_range": null,
+  "compact_checklist": [
+    "LSEG sells financial data subscriptions, index licensing, and clearing/trading infrastructure to thousands of global financial institutions, with ~70% recurring revenue and 90%+ retention rates that make cancellation operationally painful.",
+    "LCH clears >90% of global interest rate swaps (a regulatory-mandated near-monopoly), FTSE Russell indices are embedded in trillions of passive AUM, and 33+ petabytes of proprietary data create switching costs that no competitor can replicate quickly.",
+    "88% gross margins, 50.3% EBITDA margins expanding 150bps/year, and 2x operating leverage (7.1% revenue growth converting to 15.7% EPS growth) confirm this is a capital-light compounder generating GBP 2.4B in equity free cash flow.",
+    "Schwimmer delivered Refinitiv synergies ahead of target and compounded EPS at 15%+, but owns only 0.019% of shares, took a 46% pay raise that triggered a shareholder revolt, and accelerated buybacks to GBP 3B under Elliott activist pressure.",
+    "At 1.8x net debt/EBITDA with A3 credit rating and 9.6x adjusted interest coverage, LSEG would remain solvent and FCF-positive even in a 30% revenue decline scenario, though rising absolute debt (GBP 8.3B net) funding buybacks deserves monitoring.",
+    "At 8,246 GBp (15.5x forward P/E vs peers at ~28x), the market must believe organic growth permanently stalls below 5% and margins stop expanding -- assumptions contradicted by every segment growing and EBITDA margins hitting record highs.",
+    "The 13% price discount to bear-case IV of 7,200 GBp is thin by Buffett standards, but the business-level protection is exceptional -- 70% recurring revenue, deep switching costs, and 88% gross margins mean earnings hold up even in severe downturns.",
+    "Sell if organic revenue growth turns negative for two consecutive quarters, signaling that AI disintermediation or structural data commoditization is destroying the franchise rather than the temporary Q4 2026 revenue warning."
+  ],
+  "source_summary": "LSEG 2025 Preliminary Results (26 Feb 2026), LSEG Q3 2025 Trading Update, Yahoo Finance (yfinance auto-fetch), Morningstar wide moat analysis, LSEG/Microsoft partnership materials, MarketBeat consensus, Seeking Alpha, AlphaSpread DCF, GuruFocus, AInvest regulatory analysis, Semafor CEO interview (27 Mar 2026)",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Quant model unreliable due to USD/GBp currency mismatch; AI estimates used for IV. Q4 FY2026 revenue warning issued 5 days before analysis creates near-term uncertainty."
+}

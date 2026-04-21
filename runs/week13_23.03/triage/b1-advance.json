@@ -1,0 +1,218 @@
+[
+  {
+    "ticker": "BSX",
+    "company": "Boston Scientific Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; medtech moat at cheaper price"
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; CRM monopoly with AI pivot"
+  },
+  {
+    "ticker": "HD",
+    "company": "The Home Depot Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; home improvement duopoly repricing"
+  },
+  {
+    "ticker": "LSEG.L",
+    "company": "London Stock Exchange Group plc",
+    "b1_verdict": "advance",
+    "b1_reason": "Financial data monopoly near 52wk low; not analyzed"
+  },
+  {
+    "ticker": "MC.PA",
+    "company": "LVMH Moet Hennessy Louis Vuitton SE",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; deepest luxury moat at discount"
+  },
+  {
+    "ticker": "NOVO-B.CO",
+    "company": "Novo Nordisk A/S",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; GLP-1 franchise at depressed price"
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; workflow platform moat repricing"
+  },
+  {
+    "ticker": "SAP.DE",
+    "company": "SAP SE",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; ERP monopoly at discounted price"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Near 52wk low; payment network monopoly at discount"
+  },
+  {
+    "ticker": "ABT",
+    "company": "Abbott Laboratories",
+    "b1_verdict": "advance",
+    "b1_reason": "Diversified medtech; CGM growth via FreeStyle Libre"
+  },
+  {
+    "ticker": "ADYEN.AS",
+    "company": "Adyen NV",
+    "b1_verdict": "advance",
+    "b1_reason": "Unified payments platform; enterprise moat building"
+  },
+  {
+    "ticker": "AMGN",
+    "company": "Amgen Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Mature biotech FCF; obesity pipeline optionality"
+  },
+  {
+    "ticker": "BX",
+    "company": "Blackstone Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Largest alt-asset manager; fee-based earnings growing"
+  },
+  {
+    "ticker": "CFR.SW",
+    "company": "Compagnie Financiere Richemont SA",
+    "b1_verdict": "advance",
+    "b1_reason": "Cartier owner; luxury pricing power, Arnault quality"
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Membership moat 90%+ renewal; not yet analyzed"
+  },
+  {
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Cybersecurity platform leader; 97%+ retention"
+  },
+  {
+    "ticker": "EL",
+    "company": "Estee Lauder Companies Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Prestige beauty at depressed valuation; brand portfolio deep"
+  },
+  {
+    "ticker": "FAST",
+    "company": "Fastenal Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Onsite vending model; high retention, distribution moat"
+  },
+  {
+    "ticker": "LONN.SW",
+    "company": "Lonza Group AG",
+    "b1_verdict": "advance",
+    "b1_reason": "CDMO leader; biologics outsourcing secular trend"
+  },
+  {
+    "ticker": "LRCX",
+    "company": "Lam Research Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Semi equipment duopoly; etch monopoly position"
+  },
+  {
+    "ticker": "MKL",
+    "company": "Markel Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Mini-Berkshire insurer; proven capital allocation"
+  },
+  {
+    "ticker": "MKTX",
+    "company": "MarketAxess Holdings Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Bond trading platform; first-mover liquidity moat"
+  },
+  {
+    "ticker": "MPWR",
+    "company": "Monolithic Power Systems Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "AI power delivery leader; secular demand tailwind"
+  },
+  {
+    "ticker": "MTD",
+    "company": "Mettler-Toledo International Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Precision instruments monopoly; high ROIC compounder"
+  },
+  {
+    "ticker": "NDAQ",
+    "company": "Nasdaq Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Exchange and data monopoly; fintech platform growth"
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Streaming scale moat; ad tier growth inflecting margins"
+  },
+  {
+    "ticker": "NKE",
+    "company": "Nike Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Global athletic brand; turnaround under new leadership"
+  },
+  {
+    "ticker": "PANW",
+    "company": "Palo Alto Networks Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Cybersecurity platform; billings momentum, scale moat"
+  },
+  {
+    "ticker": "POOL",
+    "company": "Pool Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Pool distribution monopoly; recurring maintenance base"
+  },
+  {
+    "ticker": "RACE",
+    "company": "Ferrari NV",
+    "b1_verdict": "advance",
+    "b1_reason": "Ultra-luxury scarcity model; pricing power unmatched"
+  },
+  {
+    "ticker": "ROL",
+    "company": "Rollins Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Pest control duopoly; recurring revenue model"
+  },
+  {
+    "ticker": "SBUX",
+    "company": "Starbucks Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Global coffee brand; loyalty moat, turnaround potential"
+  },
+  {
+    "ticker": "STE",
+    "company": "STERIS plc",
+    "b1_verdict": "advance",
+    "b1_reason": "Sterilization niche monopoly; mandatory demand"
+  },
+  {
+    "ticker": "STMN.SW",
+    "company": "Straumann Holding AG",
+    "b1_verdict": "advance",
+    "b1_reason": "Dental implant leader; premium positioning moat"
+  },
+  {
+    "ticker": "TJX",
+    "company": "TJX Companies Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Off-price leader; gains share in any economy"
+  },
+  {
+    "ticker": "ZTS",
+    "company": "Zoetis Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "Animal health monopoly; recurring companion + livestock"
+  }
+]

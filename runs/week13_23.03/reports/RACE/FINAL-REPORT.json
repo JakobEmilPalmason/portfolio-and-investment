@@ -1,0 +1,69 @@
+{
+  "ticker": "RACE",
+  "company": "Ferrari N.V.",
+  "analysis_date": "2026-03-29",
+  "verdict": "Watch",
+  "average_score": 7.0,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 9,
+    "valuation": 4,
+    "margin_of_safety": 3,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "76-year heritage brand with pricing power that strengthens through deliberate scarcity",
+    "52% gross margins, 24% ROIC, and expanding profitability on flat unit volumes",
+    "Fortress balance sheet: net industrial debt EUR 32M, interest coverage 51x, trajectory to net cash by 2027",
+    "2+ year order backlog provides exceptional revenue visibility",
+    "Agnelli family ownership ensures patient long-term capital allocation"
+  ],
+  "key_risks": [
+    "US tariff escalation: 30%+ revenue exposure with all production in Italy and no relocation option",
+    "EV launch execution: Ferrari Luce in 2026 is a brand-defining binary event",
+    "Valuation compression: still priced at 30.7x trailing P/E with thin margin for error",
+    "Elevated capex intensity (13.2% of revenue) during EV transition may compress near-term returns",
+    "China and global luxury demand softening could pressure sentiment"
+  ],
+  "red_flags": [
+    "Negative margin of safety: stock trades 82% above bear-case IV",
+    "Monte Carlo shows 80% probability of overvaluation at current price",
+    "P/FCF of 67x is extreme even for a luxury compounder",
+    "2026 revenue guidance of 5% growth does not support the 10%+ CAGR needed to justify current price"
+  ],
+  "buy_triggers": [
+    "Stock declines to $240-270 range providing meaningful margin of safety against base-case IV",
+    "US-EU tariff resolution or reduction below 15% removing the largest overhang",
+    "Successful Ferrari Luce launch with strong order intake validating EV strategy"
+  ],
+  "sell_triggers": [
+    "Ferrari expands annual production above 15,000 units, dismantling the scarcity model",
+    "Brand moat demonstrably impaired through scandal, sustained F1 irrelevance, or volume dilution",
+    "Stock re-rates above 40x forward P/E without corresponding earnings acceleration"
+  ],
+  "valuation_summary": "Quant base-case IV of $283 vs current price of $317 (12% premium). Monte Carlo gives only 20% probability of undervaluation. At 30.7x trailing P/E, the stock has derated 39% from its 2025 peak but remains above fair value in most scenarios. Reverse-engineering $317 requires ~11% revenue CAGR with 39%+ EBITDA margins sustained for 5+ years. Third-party DCF estimates range from $150 to $510. The business quality is exceptional but the price demands near-perfect execution.",
+  "iv_conservative": 173.92,
+  "iv_base": 262.64,
+  "iv_bull": 364.57,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -82.5,
+  "monte_carlo_prob_above_price": 0.2021,
+  "sensitivity_iv_range": [217.95, 365.11],
+  "compact_checklist": [
+    "Ferrari sells ~14,000 ultra-luxury sports cars per year at average prices above EUR 350k, with a 2+ year order backlog and revenue growth driven by personalization and mix — not volume — making it one of the most predictable businesses in public markets.",
+    "76 years of Formula 1 heritage and deliberate production scarcity create a self-reinforcing flywheel where waiting lists preserve resale values, which deepens aspiration and demand, producing 52% gross margins that no competitor can approach because the brand cannot be replicated with capital.",
+    "ROIC of 24.3% on rising trajectory, gross margins expanding to 52% on flat unit volumes, and EUR 1.4B in free cash flow confirm Ferrari converts pricing power into real, growing cash returns well above cost of capital.",
+    "The Agnelli family (Exor, 36.5% voting power) provides patient long-term stewardship, returning EUR 1.3B to shareholders in FY2025 via buybacks and dividends while reducing net industrial debt to EUR 32M — though programmatic buybacks at 30x earnings may not always be the best use of capital.",
+    "With net industrial debt of EUR 32M, interest coverage of 51x, and EUR 1.5B annual free cash flow, Ferrari could survive a multi-year revenue collapse without external financing and is on track for a net cash position by 2027.",
+    "At $317, the stock requires ~11% revenue CAGR with 39%+ EBITDA margins sustained for 5+ years — the quant model's Monte Carlo gives only a 20% probability of undervaluation, meaning you must believe Ferrari executes near-perfectly on the EV transition and tariff pass-through to justify today's price.",
+    "The business itself provides a thick buffer (2-year backlog, 39% EBITDA margins, near-zero debt), but there is zero price margin of safety — the stock trades 12% above base-case IV and 82% above bear-case IV, so your protection comes entirely from franchise durability, not from what you paid.",
+    "Sell if Ferrari expands annual production above 15,000 units to chase volume growth, because that would dismantle the scarcity model that underpins the entire pricing power and brand premium."
+  ],
+  "source_summary": "Ferrari FY2025 annual results (Feb 2026), Ferrari Capital Markets Day 2025, Ferrari corporate filings, quant DCF model (src/quant), yfinance financial data, Yahoo Finance, analyst consensus via MarketBeat, Alpha Spread DCF, GuruFocus, Morningstar, Motley Fool, MIT Sloan case study, Bloomberg, CRIF Ratings, MacroTrends",
+  "confidence": "medium",
+  "change_notes": ""
+}

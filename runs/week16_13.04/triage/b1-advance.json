@@ -1,0 +1,296 @@
+[
+  {
+    "ticker": "AZN",
+    "company": "AstraZeneca plc",
+    "b1_verdict": "advance",
+    "b1_reason": "diversified pharma, oncology franchise, 52wk high momentum"
+  },
+  {
+    "ticker": "BRK-B",
+    "company": "Berkshire Hathaway B",
+    "b1_verdict": "advance",
+    "b1_reason": "fortress balance sheet, 52wk low, flagship position"
+  },
+  {
+    "ticker": "HD",
+    "company": "Home Depot Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "duopoly, 52wk low, housing-cycle setup worth examining"
+  },
+  {
+    "ticker": "MC.PA",
+    "company": "LVMH Moet Hennessy Louis Vuitton SE",
+    "b1_verdict": "advance",
+    "b1_reason": "irreplaceable luxury, post-earnings mover, durable moat"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "dominant ecosystem, 52wk low creates re-examination opportunity"
+  },
+  {
+    "ticker": "NKE",
+    "company": "Nike Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "iconic brand, 52wk low, turnaround worth examining"
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "AI compute monopoly, CUDA moat, not yet analyzed"
+  },
+  {
+    "ticker": "PEP",
+    "company": "PepsiCo Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "beverage-snack duopoly economics, post-earnings, pricing power"
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "foundry monopoly, post-earnings, geopolitical setup evolving"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "payments monopoly, 52wk low, extreme ROIC"
+  },
+  {
+    "ticker": "ASML",
+    "company": "ASML Holding N.V.",
+    "b1_verdict": "advance",
+    "b1_reason": "EUV monopoly, Watch-tier price moved, worth refresh"
+  },
+  {
+    "ticker": "BKNG",
+    "company": "Booking Holdings Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "OTA network effect, not recently analyzed, compounder"
+  },
+  {
+    "ticker": "DSV.CO",
+    "company": "DSV A/S",
+    "b1_verdict": "advance",
+    "b1_reason": "Schenker integration material catalyst, worth refresh"
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "antitrust and AI catalysts evolving, refresh warranted"
+  },
+  {
+    "ticker": "HLMA.L",
+    "company": "Halma plc",
+    "b1_verdict": "advance",
+    "b1_reason": "niche-safety compounder, not recently analyzed at depth"
+  },
+  {
+    "ticker": "LULU",
+    "company": "Lululemon Athletica Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "premium athleisure, growth reset, potential mispricing"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "AI capex cycle catalyst, refresh vs prior thesis"
+  },
+  {
+    "ticker": "MRSH",
+    "company": "Marsh & McLennan Cos. Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "insurance brokerage compounder, not yet analyzed"
+  },
+  {
+    "ticker": "SYK",
+    "company": "Stryker Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "medtech compounder, Mako moat, not yet analyzed"
+  },
+  {
+    "ticker": "TJX",
+    "company": "TJX Companies Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "off-price scale moat, not yet analyzed, consistent compounder"
+  },
+  {
+    "ticker": "TMO",
+    "company": "Thermo Fisher Scientific Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "life-sciences tools leader, not yet analyzed, scale moat"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "recent weakness, Medicare overhang, thesis needs refresh"
+  },
+  {
+    "ticker": "VEEV",
+    "company": "Veeva Systems Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "life-sciences SaaS monopoly, not yet analyzed at depth"
+  },
+  {
+    "ticker": "ADP",
+    "company": "Automatic Data Processing Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "payroll scale moat, not yet analyzed, durable compounder"
+  },
+  {
+    "ticker": "BR",
+    "company": "Broadridge Financial Solutions Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "proxy services monopoly, regulatory moat, not yet analyzed"
+  },
+  {
+    "ticker": "CHD",
+    "company": "Church & Dwight Co. Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "power-brand CPG compounder, disciplined allocator, not analyzed"
+  },
+  {
+    "ticker": "CSGP",
+    "company": "CoStar Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "CRE data monopoly, subscription moat, not yet analyzed"
+  },
+  {
+    "ticker": "CSX",
+    "company": "CSX Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Class I rail duopoly, regulatory moat, not yet analyzed"
+  },
+  {
+    "ticker": "DSY.PA",
+    "company": "Dassault Systemes SE",
+    "b1_verdict": "advance",
+    "b1_reason": "engineering software leader, PLM moat, not yet analyzed"
+  },
+  {
+    "ticker": "EXPD",
+    "company": "Expeditors International of Washington Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "asset-light freight-forwarder, durable culture, not yet analyzed"
+  },
+  {
+    "ticker": "FAST",
+    "company": "Fastenal Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "industrial distribution network, onsite moat, not yet analyzed"
+  },
+  {
+    "ticker": "GWW",
+    "company": "W.W. Grainger Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "MRO distribution scale, Keepstock moat, not yet analyzed"
+  },
+  {
+    "ticker": "ITW",
+    "company": "Illinois Tool Works Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "80/20 operating model, durable compounder, not yet analyzed"
+  },
+  {
+    "ticker": "KO",
+    "company": "Coca-Cola Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "iconic brand-distribution moat, not yet analyzed, pricing power"
+  },
+  {
+    "ticker": "LLY",
+    "company": "Eli Lilly & Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "GLP-1 leader, pipeline breadth, needs fresh analysis"
+  },
+  {
+    "ticker": "LRCX",
+    "company": "Lam Research Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "etch-deposition semi equipment oligopoly, not yet analyzed"
+  },
+  {
+    "ticker": "MCD",
+    "company": "McDonald's Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "global QSR brand-real estate moat, not yet analyzed"
+  },
+  {
+    "ticker": "MCO",
+    "company": "Moody's Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "ratings duopoly, regulatory moat, not yet analyzed"
+  },
+  {
+    "ticker": "NDAQ",
+    "company": "Nasdaq Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "exchange-data mix, listing network, not yet analyzed"
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "streaming scale leader, content moat, queue deep_research"
+  },
+  {
+    "ticker": "PAYX",
+    "company": "Paychex Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "SMB payroll moat, durable recurring revenue, not analyzed"
+  },
+  {
+    "ticker": "PG",
+    "company": "Procter & Gamble Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "CPG brand portfolio, distribution moat, not yet analyzed"
+  },
+  {
+    "ticker": "RLI",
+    "company": "RLI Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "specialty P&C underwriter, long combined-ratio record, not analyzed"
+  },
+  {
+    "ticker": "RSG",
+    "company": "Republic Services Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "waste oligopoly, pricing power, not yet analyzed"
+  },
+  {
+    "ticker": "SIE.DE",
+    "company": "Siemens AG",
+    "b1_verdict": "advance",
+    "b1_reason": "industrial automation leader, digital-industries moat, not analyzed"
+  },
+  {
+    "ticker": "STE",
+    "company": "STERIS plc",
+    "b1_verdict": "advance",
+    "b1_reason": "sterilization moat, recurring-revenue mix, not yet analyzed"
+  },
+  {
+    "ticker": "TDG",
+    "company": "TransDigm Group Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "aerospace aftermarket monopolist, extreme pricing power, not analyzed"
+  },
+  {
+    "ticker": "LIN",
+    "company": "Linde plc",
+    "b1_verdict": "advance",
+    "b1_reason": "industrial-gas oligopoly, contracted revenue, not yet analyzed"
+  },
+  {
+    "ticker": "ZTS",
+    "company": "Zoetis Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "animal-health leader, R&D moat, not yet analyzed"
+  }
+]

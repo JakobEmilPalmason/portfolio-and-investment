@@ -1,0 +1,67 @@
+{
+  "stage": "A1",
+  "week": "week13_23.03",
+  "run_date": "2026-03-29",
+  "run_timestamp": "2026-03-29T12:00:00.000000",
+  "total_tickers": 195,
+  "already_analyzed": 88,
+  "new_names": 107,
+  "counts_by_bucket": {
+    "tracked": 88,
+    "sector_leader": 33,
+    "large_cap_us_quality": 31,
+    "large_cap_europe_quality": 21,
+    "seed": 20,
+    "52wk_low": 17,
+    "semis_and_infra": 16,
+    "financial_quality": 16,
+    "industrial_compounders": 15,
+    "consumer_quality": 15,
+    "healthcare_quality": 13,
+    "52wk_high": 8,
+    "post_earnings": 6,
+    "fcf_roic": 5
+  },
+  "counts_by_sector": {
+    "Technology": 49,
+    "Healthcare": 36,
+    "Consumer": 33,
+    "Industrials": 32,
+    "Financials": 25,
+    "Communication Services": 8,
+    "Materials": 5,
+    "Real Estate": 3,
+    "Energy": 2,
+    "Utilities": 2
+  },
+  "counts_by_geography": {
+    "US": 154,
+    "Europe": 37,
+    "Canada": 3,
+    "Asia": 1
+  },
+  "counts_by_mkt_cap_tier": {
+    "mega": 127,
+    "large": 63,
+    "mid": 5
+  },
+  "tracked_plus_seed_count": 91,
+  "tracked_plus_seed_pct": 46.7,
+  "concentration_warnings": [
+    "tracked_plus_seed_pct=46.7% exceeds 20% threshold \u2014 expected given 88 tracked tickers; all curated sector lists fully populated",
+    "bucket \"tracked\" has 88 entries (45.1%) \u2014 exceeds 25% single-bucket threshold"
+  ],
+  "web_searches_run": [
+    "notable US earnings beats misses large cap March 2026",
+    "quality large cap stocks near 52-week low March 2026",
+    "quality large cap stocks near 52-week high momentum March 2026",
+    "highest free cash flow yield large cap stocks 2026",
+    "dominant sector leader stocks by market cap 2026",
+    "quality European large cap stocks undervalued 2026"
+  ],
+  "dedup_notes": [
+    "NOVO-B.CO is canonical for Novo Nordisk (merged NVO ADR kept as separate ADR entry)",
+    "ASML used as canonical (tracked ticker) over ASML.AS",
+    "Added LNG, VZ, ABB, NVO from web search refresh on 2026-03-29"
+  ]
+}

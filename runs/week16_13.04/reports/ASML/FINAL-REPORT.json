@@ -1,0 +1,72 @@
+{
+  "ticker": "ASML",
+  "company": "ASML Holding N.V.",
+  "analysis_date": "2026-04-18",
+  "verdict": "Watch",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 10,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 10,
+    "valuation": 2,
+    "margin_of_safety": 2,
+    "temperament": 3
+  },
+  "key_strengths": [
+    "100% EUV monopoly with Zeiss optics and Cymer light source lock-in",
+    "ROIC averaged 41.6% FY2022-FY2025 vs ~12% WACC",
+    "Fortress balance sheet: EUR 8.9B net cash, 97x interest coverage",
+    "EUR 38.8B backlog gives ~2 years revenue visibility",
+    "FY2025 FCF EUR 11B on EUR 32.7B revenue; EUR 6B buybacks executed",
+    "Disciplined vertical M&A (Cymer, Zeiss stake, HMI); 0.6% SBC"
+  ],
+  "key_risks": [
+    "No price margin of safety - trades 2.2x base IV and 2.1x quant bear IV",
+    "Semi-capex cyclicality: 45-50% drawdowns in 2022 and 2024-25",
+    "Customer concentration: TSMC, Samsung, Intel drive most bookings",
+    "MATCH Act / US-China export controls compressing China mix (36% to 19%)",
+    "Multiple compression risk at 30.5x fwd P/E, 43.8x EV/EBITDA, 69.5x P/FCF",
+    "High-NA gross margin learning curve must bend to hit 2030 guide"
+  ],
+  "red_flags": [
+    "Monte Carlo P(IV > Price) = 0.0% over 10,000 simulations",
+    "Entire 25-cell sensitivity grid sits below current price",
+    "Stock at 91% of 52-week range, +139.8% from April 2025 low",
+    "ASML stopped disclosing quarterly order intake in Q1 2026",
+    "Terminal value is 76-84% of EV in DCF - highly sensitive to assumptions"
+  ],
+  "buy_triggers": [
+    "Price drops to $850-950 range (near bull IV, approaches quant bull $893)",
+    "Cyclical capex trough combined with MATCH Act resolution clears overhang",
+    "Evidence High-NA gross margin learning curve has bent while 2030 guide holds"
+  ],
+  "sell_triggers": [
+    "Price reaches $1,800+ with no 2030 guide raise - trim on valuation extreme",
+    "High-NA ramp slips 2+ years with customer yield disappointments",
+    "MATCH Act passes and China DUV falls below 10% while TSMC defers High-NA beyond 1.4nm"
+  ],
+  "valuation_summary": "Quant DCF yields bear/base/bull IV of $463.57/$665.09/$893.14 (USD) vs current price of $1,459.80; no reasonable assumption set brings IV above current price, with Monte Carlo P(IV > Price) at 0.0%. The stock is materially overvalued despite elite business quality.",
+  "iv_conservative": 463.57,
+  "iv_base": 665.09,
+  "iv_bull": 893.14,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -214.9,
+  "monte_carlo_prob_above_price": 0.0,
+  "sensitivity_iv_range": [628.27, 997.46],
+  "compact_checklist": [
+    "Business: ASML is the sole-source supplier of EUV and High-NA lithography systems (plus a growing EUR 2B+ installed-base service annuity on 6,000+ fielded tools), and TSMC, Samsung, and Intel keep buying because no one else on Earth can print sub-3nm transistors.",
+    "Moat: A 100% EUV share locked in by the Zeiss SMT optics partnership (25% owned), the Cymer light source (acquired), ~800 specialist suppliers, 2,000+ EUV patents, and 40 years of co-developed know-how that widens (not resets) with every node - a 10-year-plus structural monopoly.",
+    "Economics: ROIC has averaged 41.6% over FY2022-FY2025 against a ~12% WACC, gross margin stepped from 50.5% to 52.8%, FY2025 delivered EUR 11B FCF on EUR 32.7B revenue, and the EUR 38.8B backlog gives two years of forward revenue visibility - textbook economic machine.",
+    "Management: Fouquet succeeded Wennink in an orderly internal handover, SBC is only 0.6% of revenue, ~EUR 12B of cumulative buybacks since FY2022 have net-reduced share count, and M&A has been limited to vertical tucks (Cymer, Zeiss SMT stake, HMI) - though dropping quarterly order-intake disclosure in Q1 2026 is a minor transparency regression.",
+    "Debt risk: Net cash of EUR 8.9B (EUR 13.3B cash vs EUR 4.4B debt), 97x interest coverage, 0.35x debt/EBITDA, and a customer-prepaid backlog mean ASML could absorb a 30% revenue decline for two years while still funding EUR 4.7B of R&D and never touching the capital markets.",
+    "Price: To justify $1,459.80, you must believe ASML sustains 22%+ revenue growth beyond 2030, operating margin expands toward 40%, WACC is sub-10%, and the multiple stays at 22-25x EV/EBITDA - three aggressive priors stacked simultaneously, and Monte Carlo puts P(IV > Price) at 0.0%.",
+    "Margin of safety: There is no price MOS - the stock trades 95% above my $750 base IV and 46% above my $1,000 bull IV - so the only cushion is the business itself (monopoly + fortress balance sheet), which protects permanence of capital but not against a repeat of the ~50% drawdowns seen in 2022 and late-2024/early-2025.",
+    "Thesis breaker: Sell if High-NA ramp slips 2+ years and customer yields disappoint, if the MATCH Act (or equivalent) passes and cuts China DUV revenue while TSMC publicly defers High-NA beyond 1.4nm, or if gross margin fails to re-expand above 53% by FY2027 as the High-NA learning curve promised."
+  ],
+  "source_summary": "Auto-fetched financials from yfinance (2026-04-18), deterministic DCF from src/quant module, web search of ASML Q1 2026 earnings release, ASML 2030 financial strategy, analyst consensus trackers (MarketBeat, Public.com, Simply Wall St, GuruFocus, StockUnlock), TrendForce High-NA coverage, and training knowledge. Current price snapshot $1,459.80 is 2026-04-18 close.",
+  "confidence": "high",
+  "change_notes": ""
+}

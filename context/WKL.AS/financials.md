@@ -1,6 +1,6 @@
 # Financial Data: WKL.AS — Wolters Kluwer N.V.
 
-**Generated:** 2026-03-23 00:39 UTC
+**Generated:** 2026-04-15 15:19 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** EUR | **Trading Currency:** EUR
 **Sector:** Industrials | **Industry:** Specialty Business Services
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | €65.44 |
-| Market Cap | €14.7B |
-| Enterprise Value | €18.8B |
+| Current Price | €66.98 |
+| Market Cap | €15.0B |
+| Enterprise Value | €18.7B |
 | 52-Week High | €163.65 |
 | 52-Week Low | €59.00 |
-| Position in 52-Week Range | 6% |
-| Beta | 0.13 |
-| Shares Outstanding | 224.9M |
-| Dividend Yield | 3.85% |
+| Position in 52-Week Range | 8% |
+| Beta | 0.16 |
+| Shares Outstanding | 224.5M |
+| Dividend Yield | 3.88% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 11.6x |
-| Forward P/E | 10.5x |
+| Trailing P/E | 11.9x |
+| Forward P/E | 10.7x |
 | EV/EBITDA | 9.7x |
 | EV/Revenue | 3.1x |
-| P/FCF | 14.9x |
-| P/S | 2.4x |
-| P/B | 18.5x |
+| P/FCF | 15.3x |
+| P/S | 2.5x |
+| P/B | 19.0x |
 
 ---
 
@@ -43,8 +43,8 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | €112.89 |
-| Target Median | €102.00 |
+| Target Mean | €111.04 |
+| Target Median | €100.00 |
 | Target High | €160.00 |
 | Target Low | €73.00 |
 | Number of Analysts | 14 |
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | €65.44 | — |
-| 1 Month Ago | €62.36 | +4.9% |
-| 3 Months Ago | €89.52 | -26.9% |
-| 6 Months Ago | €113.70 | -42.4% |
-| 1 Year Ago | €141.38 | -53.7% |
-| 52-Week High | €162.30 (2025-05-27) | -59.7% from current |
-| 52-Week Low | €59.00 (2026-02-24) | +10.9% from current |
+| Current | €66.98 | — |
+| 1 Month Ago | €66.58 | +0.6% |
+| 3 Months Ago | €88.00 | -23.9% |
+| 6 Months Ago | €109.75 | -39.0% |
+| 1 Year Ago | €147.52 | -54.6% |
+| 52-Week High | €162.30 (2025-05-27) | -58.7% from current |
+| 52-Week Low | €59.00 (2026-02-24) | +13.5% from current |
 
 ---
 

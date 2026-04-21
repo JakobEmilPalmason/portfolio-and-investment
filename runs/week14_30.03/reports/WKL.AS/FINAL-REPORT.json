@@ -1,0 +1,66 @@
+{
+  "ticker": "WKL.AS",
+  "company": "Wolters Kluwer N.V.",
+  "analysis_date": "2026-04-07",
+  "verdict": "Own",
+  "average_score": 8.4,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 8,
+    "business_economics": 9,
+    "balance_sheet": 8,
+    "valuation": 9,
+    "margin_of_safety": 9,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "83% recurring revenue from mission-critical compliance software embedded in professional workflows with 90%+ retention",
+    "ROIC expanded from 18.1% to 24.6% over four years with FCF conversion consistently above 100% of net income",
+    "Exemplary capital allocation: EUR 1.1B annual buybacks with only EUR 26M SBC, growing dividends, disciplined bolt-on M&A",
+    "Trading at 9.7x EV/EBITDA — half its 5-year average and below every scenario in the 25-point sensitivity grid"
+  ],
+  "key_risks": [
+    "AI disruption could commoditize ~30-40% of revenue tied to curated information products (UpToDate, legal research, tax guidance)",
+    "CEO transition: Stacey Caywood replaced 23-year veteran Nancy McKinstry in February 2026, untested as group CEO",
+    "Net debt nearly doubled to EUR 3.8B funding buybacks; if organic growth stalls, leverage could approach upper comfort limits",
+    "52% price decline in 12 months is unusual for a stable compounder — market may be pricing in undisclosed information"
+  ],
+  "red_flags": [
+    "Morningstar downgraded moat from Wide to Narrow in 2026 citing AI disruption risk",
+    "Debt/equity at 618% from buyback-driven equity erosion to EUR 798M",
+    "2026 buyback program halved to EUR 500M from EUR 1B in 2025"
+  ],
+  "buy_triggers": [
+    "Stock remains below EUR 86 (bear IV) while FY2026 H1 results confirm continued organic growth and margin expansion",
+    "New CEO demonstrates strategic competence with successful AI product launches or capital markets day",
+    "Further weakness below EUR 60 with fundamentals intact — add to full position"
+  ],
+  "sell_triggers": [
+    "Organic revenue growth turns negative for two consecutive years, indicating structural decline from AI commoditization",
+    "Stock exceeds EUR 190-200 (bull IV) and trades above 22-25x EV/EBITDA",
+    "Debt/EBITDA exceeds 3.5x without a credible deleveraging plan"
+  ],
+  "valuation_summary": "At EUR 66.24, WKL trades at 9.7x EV/EBITDA (half its 5-year average), 23% below bear IV of EUR 85.90, and 52% below base IV of EUR 137.52. All 25 sensitivity grid cells produce IVs above current price. Owner earnings yield of 10% on a 24.6% ROIC business with 83% recurring revenue is deeply anomalous. 100% Monte Carlo probability of undervaluation across 10,000 simulations.",
+  "iv_conservative": 85.9,
+  "iv_base": 137.52,
+  "iv_bull": 192.98,
+  "iv_currency": "EUR",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 23.4,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [101.94, 187.80],
+  "compact_checklist": [
+    "Wolters Kluwer sells subscription compliance software and clinical decision tools to doctors, accountants, lawyers, and banks — 83% recurring revenue from products professionals cannot operate without.",
+    "Deeply embedded workflows with 90%+ retention and high switching costs protect pricing power, though Morningstar downgraded to Narrow in 2026 because generative AI could erode the ~30-40% of revenue tied to curated information products like UpToDate.",
+    "ROIC expanded from 18.1% to 24.6% over four years, gross margins hit 73.5%, and FCF conversion exceeds 100% of net income every year — this is an elite asset-light compounder.",
+    "McKinstry delivered a 10x market cap over 23 years through disciplined bolt-on M&A, EUR 1.1B annual buybacks with only EUR 26M in SBC, and a print-to-digital transformation, but she retired in February 2026 and successor Caywood is untested.",
+    "Net debt/EBITDA of 1.7x with 15x interest coverage and an S&P A- rating means even a 50% EBIT decline would leave coverage above 7x — financial distress is nearly impossible.",
+    "At 9.7x EV/EBITDA (half its 5-year average and below every cell in the 25-point sensitivity grid), the market must believe either margins permanently collapse to ~15% or revenues structurally decline — neither is supported by 6% organic growth and expanding margins in FY2025.",
+    "The stock trades 22% below bear-case IV of EUR 86 with a 10% owner earnings yield, 3.86% dividend, and 100% Monte Carlo probability of undervaluation across 10,000 simulations.",
+    "Organic revenue growth turns negative for two consecutive years, signaling AI-driven commoditization has overcome switching costs and regulatory tailwinds."
+  ],
+  "source_summary": "Wolters Kluwer 2025 Full-Year Report, yfinance financial data (FY2022-FY2025), quant-valuation.json DCF model, Morningstar moat analysis (2026 downgrade), S&P Global Ratings, analyst consensus (14 analysts), peer multiples (RELX, Thomson Reuters), Wolters Kluwer investor relations and remuneration policy.",
+  "confidence": "high",
+  "change_notes": "Updated analysis with FY2025 full-year results, post-CEO transition assessment, Morningstar moat downgrade to Narrow, and quant model IV using CAPM WACC. Price declined 52% in 12 months creating substantial margin of safety. Verdict upgraded from Watch to Own on valuation grounds."
+}

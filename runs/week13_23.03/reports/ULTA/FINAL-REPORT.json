@@ -1,0 +1,69 @@
+{
+  "ticker": "ULTA",
+  "company": "Ulta Beauty, Inc.",
+  "analysis_date": "2026-03-25",
+  "verdict": "Own",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "45-million-member Ultamate Rewards loyalty program drives 95%+ of sales, creating powerful switching costs and near-subscription economics",
+    "Unique mass-to-prestige positioning under one roof that no competitor replicates at scale",
+    "50%+ ROIC and $1.2B in durable owner earnings on a completely debt-free balance sheet",
+    "Fortress balance sheet: zero financial debt, $1.7B liquidity, positive FCF even under 30% revenue decline for two years",
+    "$5.8B in disciplined share buybacks since 2014, reducing share count by 26%"
+  ],
+  "key_risks": [
+    "Operating margin compressed 220 bps over two years (16.2% to 14.0%) with Q4 dipping to 12.2% — each 100bp decline erodes $40-50/share of IV",
+    "Competitive intensification from Sephora at Kohl's (1,200+ stores), Amazon beauty, and TikTok Shop social commerce",
+    "CEO transition (14 months) and simultaneous strategic pivots: Space NK acquisition, Target partnership wind-down, digital marketplace launch",
+    "100% US geographic concentration with no international diversification",
+    "No price margin of safety on conservative basis — stock at $525 sits 31% above bear IV of $400"
+  ],
+  "red_flags": [
+    "SG&A expenses spiked 23% in Q4 FY2025 — unclear whether investment-driven or structural cost inflation",
+    "ROIC declining from 71% to 50% over three years signals competitive returns are compressing",
+    "Target partnership (600 shop-in-shops) ending August 2026 removes a customer acquisition channel",
+    "Aggressive buybacks at $700+ per share in recent months may have destroyed value above intrinsic value"
+  ],
+  "buy_triggers": [
+    "Operating margin stabilizes at 13.5%+ for two consecutive quarters, confirming compression was investment-driven",
+    "Stock price falls to $450 or below, creating genuine price margin of safety against bear IV",
+    "TikTok Shop or international expansion provides quantified incremental revenue demonstrating growth optionality"
+  ],
+  "sell_triggers": [
+    "Operating margins fall below 11% for two consecutive quarters without clear investment rationale",
+    "Same-store transactions decline for four consecutive quarters, signaling loyalty moat erosion",
+    "Stock re-rates above $800 (25x+ forward earnings) — trim to lock in gains"
+  ],
+  "valuation_summary": "Quant base IV of $602 implies 15% upside from $525; forward P/E of 16.7x is well below 5-year average of 23x and beauty peer average of 31x. Monte Carlo gives 79.6% probability IV exceeds current price. Market is pricing ~1.6% growth at base WACC — far below guided 6-7%. Moderately undervalued with margin trajectory as the key swing factor.",
+  "iv_conservative": 354.49,
+  "iv_base": 601.98,
+  "iv_bull": 890.1,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -48.0,
+  "monte_carlo_prob_above_price": 0.7957,
+  "sensitivity_iv_range": [476.01, 809.41],
+  "compact_checklist": [
+    "Ulta is the only US retailer selling mass-to-prestige beauty under one roof, with 95% of $12.4B in revenue driven by its 45-million-member loyalty program.",
+    "The Ultamate Rewards program locks in 95% of sales through accumulated points and personalized data, creating switching costs no competitor — not Sephora, not Amazon — replicates at scale.",
+    "ROIC of 50% and $1.2B in annual owner earnings on a debt-free balance sheet confirm real cash generation, though operating margins have compressed 220 bps over two years to 14%.",
+    "$5.8B in buybacks since 2014 reduced shares by 26% with zero debt, but the Space NK acquisition and simultaneous Target partnership wind-down mark a strategic pivot under a CEO with only 14 months in the role.",
+    "Zero financial debt, $1.7B in liquidity, and a stress test showing positive FCF even under a 30% revenue decline for two years make bankruptcy risk effectively zero.",
+    "At 16.7x forward earnings, the market must believe operating margins will keep falling below 14% and growth will stall at 1-2% — well below the guided 6-7% and the beauty category's 3-5% structural growth.",
+    "The business itself (50%+ ROIC, loyalty moat, no debt) provides strong protection, but the stock at $525 sits 31% above the conservative bear IV of $400, so there is no price-based margin of safety.",
+    "Operating margins falling below 11% for two consecutive quarters or same-store transactions declining for four straight quarters would signal the moat is permanently impaired."
+  ],
+  "source_summary": "Ulta Beauty FY2025 10-K, Q4 FY2025 earnings release (March 12, 2026), SEC filings (DEF 14A, 10-Q), yfinance auto-fetch, quant DCF model (src/quant), Yahoo Finance, CNBC, Circana beauty market data, Retail Dive, Glossy, BeautyMatter, Chain Store Age, CX Dive, MacroTrends, Simply Wall St, analyst consensus (24 analysts)",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Ulta scores well on business quality (9/10 competence, 9/10 balance sheet, 8/10 economics) but margin compression trend and absence of price margin of safety on conservative basis temper overall conviction. Own verdict supported by 7.5 average, no score below 4, and MOS score of 6."
+}

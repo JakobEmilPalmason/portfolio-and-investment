@@ -2,6 +2,9 @@
 port = 5050
 headless = true
 
+[client]
+toolbarMode = "minimal"
+
 [theme]
 base = "dark"
 primaryColor = "#c15f3c"

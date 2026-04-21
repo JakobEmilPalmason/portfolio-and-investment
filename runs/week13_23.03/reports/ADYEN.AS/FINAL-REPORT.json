@@ -1,0 +1,72 @@
+{
+  "ticker": "ADYEN.AS",
+  "company": "Adyen N.V.",
+  "analysis_date": "2026-03-29",
+  "verdict": "Watch",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 4,
+    "margin_of_safety": 4,
+    "temperament": 5
+  },
+  "key_strengths": [
+    "Toll-road payments business processing EUR 1.4T volume with sub-1% churn and 80% organic revenue expansion from existing customers",
+    "Fortress balance sheet: effectively debt-free with EUR 3-4B discretionary cash, would remain profitable through 30% two-year revenue decline",
+    "Asset-light compounder: 41% operating margins expanding, 22% ROE, EUR 1.1B owner earnings growing 25% annually on 5% capex intensity",
+    "Single proprietary tech stack built from scratch with zero acquisitions over 20 years — rare discipline in payments industry",
+    "Founder-led with 1.5% SBC-to-revenue and modest EUR 807K CEO compensation"
+  ],
+  "key_risks": [
+    "Stock trades above DCF-derived IV across all but the most optimistic scenarios; Monte Carlo gives only 10.7% probability of being undervalued",
+    "Stripe holds 25% market share vs Adyen's 9% and is growing faster, creating genuine competitive pressure in enterprise payments",
+    "2026 revenue growth guidance (20-22% CC) below prior ambitions signals deceleration; further downgrades possible",
+    "1.9 beta and history of 40-60% drawdowns without price margin of safety to anchor conviction",
+    "EUR 3-4B excess cash with no buyback or dividend program despite stock near 52-week lows"
+  ],
+  "red_flags": [
+    "Negative MOS of -35% versus bear IV — price embeds optimistic assumptions",
+    "10.7% Monte Carlo probability of being undervalued is in the bottom decile of attractiveness",
+    "FY2025 reported processed volume growth of only 8% (distorted by one large customer departing)",
+    "SBC trending higher as US expansion accelerates (new CTO at 100% of salary vs predecessor at 46%)",
+    "Potential Stripe-PayPal combination would create significantly larger direct competitor"
+  ],
+  "buy_triggers": [
+    "Stock falls to EUR 650-700 range, providing genuine margin of safety near Monte Carlo P25 / bear IV",
+    "Management announces meaningful share buyback program",
+    "Revenue growth re-accelerates above 22% with take rate stability",
+    "Multiple re-rates toward Visa/Mastercard levels (25-30x forward earnings)"
+  ],
+  "sell_triggers": [
+    "Net revenue growth falls below 15% for two consecutive reporting periods",
+    "Take rate compresses below 15 basis points, indicating pricing power erosion",
+    "Stripe or hyperscaler builds materially superior unified commerce stack eroding enterprise churn",
+    "Management makes a large, value-destroying acquisition breaking 20-year organic-only track record"
+  ],
+  "valuation_summary": "Quant DCF base-case IV of EUR 763 sits 11% below current price of EUR 855. Bear case EUR 632, bull case EUR 915. Monte Carlo gives only 10.7% probability stock is undervalued. Forward P/E of ~18x is optically cheap vs Visa/Mastercard but appropriate for a payment processor with competitive and execution risk. The stock is priced for flawless execution at the optimistic end of guidance.",
+  "iv_conservative": 631.83,
+  "iv_base": 763.07,
+  "iv_bull": 914.56,
+  "iv_currency": "EUR",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -35.4,
+  "monte_carlo_prob_above_price": 0.1065,
+  "sensitivity_iv_range": [692.36, 887.15],
+  "compact_checklist": [
+    "Adyen charges merchants ~17 basis points on every payment transaction it processes across EUR 1.4 trillion in annual volume — a toll road on global digital commerce with 80% of growth from existing customers expanding usage.",
+    "Deep enterprise switching costs (sub-1% volume churn) and a single proprietary tech stack built from scratch with direct acquiring in 40+ countries, though Stripe holds 25% market share versus Adyen's 9% and is closing the gap.",
+    "41% operating margins expanding, 22% ROE, EUR 1.1B in owner earnings growing 25% annually, and maintenance capex at just 5% of revenue confirm this is a genuinely asset-light, high-return compounder.",
+    "Founder-led for 20 years with zero acquisitions, 1.5% SBC-to-revenue, and modest CEO pay of EUR 807K, but the refusal to return any of the EUR 3-4B in excess cash via buybacks at depressed prices is a real capital allocation flaw.",
+    "Effectively debt-free with EUR 252M in leases against EUR 10.5B in cash, and the business would remain profitable and self-funding even through a 30% revenue decline sustained for two years.",
+    "At EUR 855 the market requires 8-9% sustained revenue growth with flawless execution — the quant DCF base case is EUR 763 and Monte Carlo gives only 10.7% probability the stock is undervalued.",
+    "The business itself is a fortress (high margins, net cash, sticky customers), but there is zero price margin of safety — bear IV of EUR 632 implies 26% downside versus only 7% upside to bull IV.",
+    "Net revenue growth falling below 15% for two consecutive halves, or take rate compressing below 15 basis points, would signal the competitive moat is eroding and the growth premium is unjustified."
+  ],
+  "source_summary": "Yahoo Finance (yfinance auto-fetch), Adyen H2 2025 earnings release, quant DCF model (deterministic + Monte Carlo), Morningstar, Simply Wall St, Investing.com, CNBC, Motley Fool, 6sense market share data, FortyTwo Capital activist letter, Adyen investor relations, analyst consensus estimates.",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. High-quality payments compounder but current price offers no margin of safety. Watch for entry at EUR 650-700."
+}

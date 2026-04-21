@@ -1,0 +1,143 @@
+{
+  "bear": {
+    "enterprise_value": 9723047771,
+    "equity_value": 19925795771,
+    "per_share_value": 631.83,
+    "terminal_pct_of_value": 80.0,
+    "implied_ev_ebitda": 7.7,
+    "wacc": 0.1587,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "base": {
+    "enterprise_value": 13861892466,
+    "equity_value": 24064640466,
+    "per_share_value": 763.07,
+    "terminal_pct_of_value": 86.5,
+    "implied_ev_ebitda": 10.6,
+    "wacc": 0.1487,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "bull": {
+    "enterprise_value": 18639546930,
+    "equity_value": 28842294930,
+    "per_share_value": 914.56,
+    "terminal_pct_of_value": 90.8,
+    "implied_ev_ebitda": 13.7,
+    "wacc": 0.1437,
+    "terminal_growth": 0.03,
+    "projection_years": 5
+  },
+  "iv_conservative": 631.83,
+  "iv_base": 763.07,
+  "iv_bull": 914.56,
+  "currency": "EUR",
+  "current_price": 855.5,
+  "mos_at_analysis": -35.4,
+  "model_date": "2026-03-29",
+  "discount_method": "capm",
+  "capex_mode": "maintenance",
+  "growth_schedule": [
+    0.0637,
+    0.0637,
+    0.0637,
+    0.0469,
+    0.03
+  ],
+  "wacc_derivation": {
+    "wacc": 0.1487,
+    "cost_of_equity": 0.1496,
+    "cost_of_debt_pretax": 0.0781,
+    "cost_of_debt_aftertax": 0.054,
+    "effective_tax_rate": 0.3079,
+    "beta": 1.901,
+    "risk_free_rate": 0.045,
+    "market_risk_premium": 0.055,
+    "equity_weight": 0.9907,
+    "debt_weight": 0.0093,
+    "warnings": []
+  },
+  "owner_earnings": {
+    "method": "da_proxy",
+    "maintenance_capex": 125793000,
+    "growth_capex": 0,
+    "owner_earnings_adjusted": 1072581000,
+    "maintenance_pct_of_total": 1.0
+  },
+  "ticker": "ADYEN.AS",
+  "model": "dcf_exit_multiple",
+  "sensitivity": {
+    "row_param": "Revenue Growth",
+    "col_param": "WACC",
+    "row_values": [
+      0.0237,
+      0.0437,
+      0.0637,
+      0.0837,
+      0.1037
+    ],
+    "col_values": [
+      0.1287,
+      0.1387,
+      0.1487,
+      0.1587,
+      0.1687
+    ],
+    "grid": [
+      [
+        756.59,
+        739.28,
+        722.84,
+        707.22,
+        692.36
+      ],
+      [
+        785.67,
+        766.95,
+        749.17,
+        732.27,
+        716.21
+      ],
+      [
+        817.04,
+        796.79,
+        777.57,
+        759.31,
+        741.96
+      ],
+      [
+        850.82,
+        828.94,
+        808.18,
+        788.45,
+        769.71
+      ],
+      [
+        887.15,
+        863.53,
+        841.11,
+        819.81,
+        799.58
+      ]
+    ],
+    "base_row_idx": 2,
+    "base_col_idx": 2
+  },
+  "monte_carlo": {
+    "percentiles": {
+      "P5": 687.13,
+      "P10": 703.99,
+      "P25": 735.65,
+      "P50": 775.28,
+      "P75": 817.97,
+      "P90": 858.13,
+      "P95": 881.62
+    },
+    "mean": 778.57,
+    "median": 775.27,
+    "std": 59.47,
+    "prob_above_price": 0.1065,
+    "n_simulations": 10000
+  }
+}

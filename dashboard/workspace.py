@@ -939,23 +939,28 @@ def render_scoreboard_section(scoreboard: pd.DataFrame) -> None:
 <!DOCTYPE html>
 <html><head>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap');
 :root {{
   color-scheme: dark;
+  --font-display: 'General Sans', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --bg: #0c0a09; --surface: #1c1917; --surface-strong: #292524;
   --border: rgba(68, 64, 60, 0.82); --border-strong: rgba(120, 113, 108, 0.9);
   --text: #fafaf9; --muted: #a8a29e; --subtle: #78716c;
   --accent: #c15f3c; --positive: #86efac; --warning: #fbbf24; --danger: #fca5a5;
 }}
 * {{ margin:0; padding:0; box-sizing:border-box; }}
-body {{ background:transparent; font-family:'Manrope',system-ui,sans-serif; color:var(--text); overflow:hidden; }}
-.mono {{ font-family:'JetBrains Mono',monospace; }}
+body {{ background:transparent; font-family:var(--font-body); font-weight:400; color:var(--text); overflow:hidden; }}
+.mono {{ font-family:var(--font-mono); }}
 .wrap {{ overflow:auto; max-height:{height - 20}px; border-radius:12px; border:1px solid var(--border); }}
 table {{ width:100%; min-width:1200px; border-collapse:separate; border-spacing:0; }}
 thead {{ position:sticky; top:0; z-index:2; }}
 th {{
+  font-family:var(--font-display);
   padding:14px 14px; background:rgba(12,10,9,0.96); border-bottom:1px solid rgba(68,64,60,0.9);
-  font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase;
+  font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase;
   text-align:center; color:var(--subtle); white-space:nowrap; cursor:pointer; user-select:none;
   position:relative;
 }}
@@ -977,7 +982,7 @@ td:first-child {{ text-align:left; }}
 td:nth-child(2) {{ text-align:left; }}
 tbody tr:last-child td {{ border-bottom:none; }}
 tbody tr:hover td {{ background:rgba(41,37,36,0.42); }}
-.sym {{ font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; color:var(--accent); cursor:pointer; }}
+.sym {{ font-family:var(--font-mono); font-size:13px; font-weight:700; color:var(--accent); cursor:pointer; }}
 .co {{ max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--muted); }}
 .empty {{ padding:42px 16px; text-align:center; color:var(--muted); font-size:13px; }}
 ::-webkit-scrollbar {{ width:8px; height:8px; }}
@@ -1026,7 +1031,7 @@ function verdictStyle(v) {{ if(v==='Own')return'color:var(--positive);font-weigh
 let sortKey='average_score', sortDir='desc';
 
 function cell(key,val) {{
-  const mono="font-family:'JetBrains Mono',monospace;";
+  const mono="font-family:var(--font-mono);";
   if(key==='ticker') return `<td class="sym">${{esc(val||'—')}}</td>`;
   if(key==='company') return `<td class="co">${{esc(val||'—')}}</td>`;
   if(key==='verdict') return `<td style="text-align:center;${{verdictStyle(val)}}">${{esc(val||'—')}}</td>`;
@@ -1046,10 +1051,10 @@ function cell(key,val) {{
     let raw=String(val||'—'), first=raw.split(/[\\s]/)[0].toLowerCase();
     let c=first==='high'?'var(--positive)':first==='medium'?'var(--warning)':first==='low'?'var(--danger)':'var(--subtle)';
     let label=first.charAt(0).toUpperCase()+first.slice(1);
-    return `<td title="${{esc(raw)}}" style="text-align:center;color:${{c}};font-size:11px;font-weight:600;text-transform:uppercase;">${{esc(label)}}</td>`;
+    return `<td title="${{esc(raw)}}" style="text-align:center;color:${{c}};font-size:11px;font-weight:500;text-transform:uppercase;">${{esc(label)}}</td>`;
   }}
   if(key==='red_flag_count') {{
-    let s=val>0?'color:var(--danger);font-weight:600;':'color:var(--subtle);';
+    let s=val>0?'color:var(--danger);font-weight:700;':'color:var(--subtle);';
     return `<td style="text-align:center;${{s}}">${{val!=null?val:'—'}}</td>`;
   }}
   if(key==='analysis_date') {{

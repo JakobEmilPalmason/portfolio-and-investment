@@ -7,10 +7,14 @@ import streamlit as st
 
 APP_STYLE = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap');
 
 :root {
   color-scheme: dark;
+  --font-display: 'General Sans', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --bg: #0c0a09;
   --bg-strong: #1c1917;
   --surface: #1c1917;
@@ -34,11 +38,17 @@ APP_STYLE = """
 }
 
 html, body, .stApp, [class*="css"] {
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
 }
 
 code, pre, kbd, .dashboard-mono {
-  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+  font-family: var(--font-mono) !important;
 }
 
 [data-testid="stAppViewContainer"] {
@@ -75,21 +85,25 @@ code, pre, kbd, .dashboard-mono {
 }
 
 [data-testid="stMetricLabel"] {
+  font-family: var(--font-display);
   color: var(--subtle);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 [data-testid="stMetricValue"] {
+  font-family: var(--font-display);
+  font-weight: 500;
   color: var(--text);
 }
 
 .dashboard-kicker {
+  font-family: var(--font-display);
   margin-bottom: 0.4rem;
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--subtle);
@@ -128,8 +142,9 @@ code, pre, kbd, .dashboard-mono {
 }
 
 .section-title {
+  font-family: var(--font-display);
   font-size: 1.35rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -0.03em;
   color: var(--text);
 }
@@ -157,17 +172,19 @@ code, pre, kbd, .dashboard-mono {
 }
 
 .metric-card .metric-label {
+  font-family: var(--font-display);
   font-size: 0.68rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--subtle);
 }
 
 .metric-card .metric-value {
+  font-family: var(--font-display);
   margin-top: 0.45rem;
   font-size: 1.45rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -0.04em;
   color: var(--text);
 }
@@ -191,7 +208,7 @@ code, pre, kbd, .dashboard-mono {
   padding: 0.26rem 0.72rem;
   border-radius: 999px;
   font-size: 0.74rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 1px solid var(--border);
@@ -299,7 +316,7 @@ code, pre, kbd, .dashboard-mono {
 
 .stat-line .stat-value {
   color: var(--text);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* ── Custom HTML Tables ── */
@@ -313,10 +330,11 @@ code, pre, kbd, .dashboard-mono {
   background: rgba(12, 10, 9, 0.94);
 }
 .custom-table th {
+  font-family: var(--font-display);
   padding: 12px 16px;
   border-bottom: 1px solid rgba(68, 64, 60, 0.9);
   font-size: 10px;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-align: left;
@@ -338,9 +356,10 @@ code, pre, kbd, .dashboard-mono {
   border-collapse: collapse;
 }
 .mini-table th {
+  font-family: var(--font-display);
   padding: 0 0 10px;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--subtle);
@@ -354,7 +373,7 @@ code, pre, kbd, .dashboard-mono {
 }
 
 .table-symbol {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: var(--font-mono);
   font-size: 13px;
   font-weight: 700;
   color: var(--accent);
@@ -366,9 +385,10 @@ code, pre, kbd, .dashboard-mono {
   color: var(--muted);
 }
 .table-mono {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: var(--font-mono);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--text);
 }
 
 /* ── Freshness Dots ── */
@@ -406,7 +426,7 @@ code, pre, kbd, .dashboard-mono {
   padding: 3px 10px;
   border-radius: 999px;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -502,7 +522,7 @@ code, pre, kbd, .dashboard-mono {
   --ag-header-foreground-color: var(--subtle);
   --ag-selected-row-background-color: rgba(193, 95, 60, 0.12);
   --ag-row-hover-color: rgba(41, 37, 36, 0.5);
-  --ag-font-family: 'Manrope', system-ui, sans-serif;
+  --ag-font-family: var(--font-body);
   --ag-font-size: 13px;
   --ag-cell-horizontal-padding: 14px;
   --ag-row-height: 50px;
@@ -511,21 +531,21 @@ code, pre, kbd, .dashboard-mono {
 }
 
 /* ── Markdown Content Styling ── */
-.md-content h1 { font-size: 1.4rem; font-weight: 700; margin: 1.2rem 0 0.4rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
-.md-content h2 { font-size: 1.15rem; font-weight: 600; margin: 1rem 0 0.3rem; color: var(--text); }
-.md-content h3 { font-size: 1rem; font-weight: 600; margin: 0.75rem 0 0.25rem; color: var(--muted); }
+.md-content h1 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 500; margin: 1.2rem 0 0.4rem; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+.md-content h2 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; margin: 1rem 0 0.3rem; color: var(--text); }
+.md-content h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 500; margin: 0.75rem 0 0.25rem; color: var(--muted); }
 .md-content p  { margin: 0.5rem 0; color: #cbd5e1; line-height: 1.7; }
 .md-content ul { list-style: disc; padding-left: 1.5rem; margin: 0.5rem 0; }
 .md-content ol { list-style: decimal; padding-left: 1.5rem; margin: 0.5rem 0; }
 .md-content li { margin: 0.25rem 0; color: #cbd5e1; line-height: 1.55; }
 .md-content table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.85rem; }
-.md-content th { background: rgba(12, 10, 9, 0.9); padding: 0.4rem 0.65rem; text-align: left; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); }
+.md-content th { font-family: var(--font-display); background: rgba(12, 10, 9, 0.9); padding: 0.4rem 0.65rem; text-align: left; font-size: 0.7rem; font-weight: 500; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); }
 .md-content td { padding: 0.4rem 0.65rem; border: 1px solid var(--border); color: #cbd5e1; }
 .md-content tr:nth-child(even) td { background: rgba(12, 10, 9, 0.36); }
 .md-content code { background: rgba(12, 10, 9, 0.7); padding: 0.1rem 0.3rem; border-radius: 5px; font-size: 0.85em; color: var(--warning); }
 .md-content pre  { background: rgba(12, 10, 9, 0.8); padding: 1rem; border-radius: 12px; overflow-x: auto; margin: 0.75rem 0; }
 .md-content pre code { background: none; padding: 0; }
-.md-content strong { color: var(--text); font-weight: 600; }
+.md-content strong { color: var(--text); font-weight: 500; }
 .md-content blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; margin: 0.5rem 0; color: var(--muted); }
 .md-content hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
 .md-content a { color: var(--accent); text-decoration: underline; }
@@ -540,8 +560,9 @@ code, pre, kbd, .dashboard-mono {
   margin-bottom: 1.5rem;
 }
 .agent-chart-title {
+  font-family: var(--font-display);
   font-size: 1.1rem;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--text);
   margin-bottom: 0.15rem;
@@ -568,14 +589,15 @@ code, pre, kbd, .dashboard-mono {
   border-bottom: 1px solid var(--border);
 }
 .agent-panel-name {
+  font-family: var(--font-display);
   font-size: 1.05rem;
-  font-weight: 800;
+  font-weight: 500;
   color: var(--text);
 }
 .agent-panel-date {
   font-size: 0.78rem;
   color: var(--muted);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .agent-legend-dot {
@@ -623,11 +645,12 @@ code, pre, kbd, .dashboard-mono {
   z-index: 2;
 }
 .sb-table th {
+  font-family: var(--font-display);
   padding: 14px 14px;
   background: rgba(12, 10, 9, 0.96);
   border-bottom: 1px solid rgba(68, 64, 60, 0.9);
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-align: center;
@@ -661,8 +684,9 @@ code, pre, kbd, .dashboard-mono {
   flex-wrap: wrap;
 }
 .sb-filter-label {
+  font-family: var(--font-display);
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--subtle);
@@ -670,7 +694,7 @@ code, pre, kbd, .dashboard-mono {
 .sb-filter-btn {
   padding: 4px 12px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -706,7 +730,7 @@ code, pre, kbd, .dashboard-mono {
   color: var(--muted);
 }
 .score-row .score-value {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: var(--font-mono);
   font-size: 0.88rem;
   font-weight: 700;
   min-width: 1.5rem;
@@ -726,8 +750,30 @@ code, pre, kbd, .dashboard-mono {
 """
 
 
+_FAVICON_JS = """
+<script>
+(function() {
+    var ico32 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAsElEQVR4nO2XwRWAIAxDpcswkqM4A6MwktPoSZ9CofRBWw7kiJB8Agd0G1PnsV+17z5Ex/FrmkyF9sCAVHjr2iJhTzCmUhtoA6PDa54ZgER4zRuoCdIQ5CWU1gugsXssC7TDU4h5jsBKzqL+r8wbWAALYAEA9w03Uj5EZ9/AFAAWx/BkQjqgGf4DsNIPQKOFNCNrQBIC80aPQAKi5EkG9T5YqM2Ql7CnjZa1bPPRv+c3UMNJlZemu1sAAAAASUVORK5CYII=";
+    var ico180 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAEp0lEQVR4nO3Y23XTQABFUSfNpCRKoQZKSUlUAx8ssRTHD8ma59XeBYA1OlzGfrtw2O+fP/6U+HM+fn2+lfhzzswBblQq2leJfRuHdEPveLcS+XcO5DJPwM8I/MRBp0R8z1njPtVDp0d8z5niPsWDnjXka2cIO/YBRfxYatxxDyXkfdLCjnkYIR+TEvb0DyHksmYPe9oPL+S6Zg17ug8t5LZmC/u99wfYQ8ztzXbmU/zrm+1QU82w1sMvtJjHMcO7GPZf3AyHd2ajrvWQCy3m8Y36joYLetSD4rsR39Uw/22MeDhsN8oVZIiFFvP8RnmH3YMe5SA4boR32TXoEQ6Asnq/025B935w6un5bptf5IV8Lq2/LDZdaDGfT+t33ixoMZ9Xy3ffJGgx06qB6kGLmUWLFrr/Dg0lVQ3aOnOtdhPVghYz99Rso0rQYuaZWo0UD1rMbFWjlaJBi5m9SjfjVw6iFAvaOvOqku0UCVrMHFWqocNBi5lSSrTkDk2UQ0FbZ0o72tTLQYuZWo605cpBlJeCts7U9mpju4MWM6280porB1F2BW2daW1vcxaaKJuDts70sqc9C02UTUFbZ3rb2qCFJsrToK0zo9jSooUmysOgrTOjedakhSaKoIlyN2jXDUb1qE0LTZSbQVtnRnevUQtNFEET5VvQrhvM4larFpoogibKl6BdN5jNdbMWmiiCJoqgiSJoorz5yY4kFpoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJImiiCJoogiaKoIkiaKIImijvH78+33p/CCjh49fnm4UmiqCJImiiCJoogiaKoInyfrn8+7mj9weBI5aGLTRRBE0UQRNF0ET5H7Qvhsxq3a6FJoqgiSJoonwJ2j2a2Vw3a6GJImiifAvatYNZ3GrVQhNF0ES5GbRrB6O716iFJsrdoK00o3rUpoUmiqCJ8jBo1w5G86xJC02Up0FbaUaxpUULTZRNQVtpetvaoIUmyuagrTS97GnPQhNlV9BWmtb2NmehibI7aCtNK6+09tJCi5raXm3MlYMoLwdtpanlSFuHFlrUlHa0KVcOohwO2kpTSomWiiy0qDmqVEPFrhyi5lUl23GHJkrRoK00e5VupvhCi5qtarRS5cohap6p1Ui1O7SouadmG1W/FIqaa7Wb8CsHUaoHbaVZtGihyUKLmlYNNLtyiPq8Wr77pndoUZ9P63feLbDfP3/86fV3U1+v8er2K4e1ztXz3Xb92U7UeXq/0+6/Q/c+AMoZ4V12D/pyGeMgOGaUdzjEh1jzZXEuo4S8GGKh10Y7IO4b8V0NF/TlMuZB8dWo72jID7XmCjKWUUNeDLnQa6Mf4JnM8C6G/4Br1rqPGUJeDL/QazMdbIrZznyqD7tmreuaLeTFlB96TdhlzRryYuoPvybsY2YPeRHxEGvC3icl5EXUw6wJ+7G0kBeRD3VN3P+kRrwW/4BrZw37DCEvTvOg19LjPlPEa6d86GspcZ814rXTH8AtswQu4O8cyEa9IxfvNg6pgFKxi/a4v/g3orByx+a4AAAAAElFTkSuQmCC";
+    // Replace existing favicon
+    var links = document.querySelectorAll("link[rel*='icon']");
+    links.forEach(function(l) { l.parentNode.removeChild(l); });
+    // Standard favicon
+    var link = document.createElement('link');
+    link.rel = 'icon'; link.type = 'image/png'; link.href = ico32;
+    document.head.appendChild(link);
+    // Apple touch icon
+    var apple = document.createElement('link');
+    apple.rel = 'apple-touch-icon'; apple.href = ico180;
+    document.head.appendChild(apple);
+})();
+</script>
+"""
+
+
 def apply_dashboard_theme() -> None:
     st.markdown(APP_STYLE, unsafe_allow_html=True)
+    st.markdown(_FAVICON_JS, unsafe_allow_html=True)
 
 
 def render_kicker(text: str) -> None:
@@ -902,7 +948,7 @@ def render_agent_color_dot(color: str, label: str) -> str:
     """Small inline colored circle + label for agent legend."""
     return (
         f'<span class="agent-legend-dot" style="background:{html.escape(color)};"></span>'
-        f'<span style="font-weight:700;color:var(--text);">{html.escape(label)}</span>'
+        f'<span style="font-weight:500;color:var(--text);">{html.escape(label)}</span>'
     )
 
 
@@ -941,5 +987,5 @@ def sb_confidence_html(v: str | None) -> str:
     label = first.capitalize() if first in color_map else raw
     return (
         f'<span title="{html.escape(raw)}" style="color:{color};font-size:11px;'
-        f'font-weight:600;text-transform:uppercase;">{html.escape(label)}</span>'
+        f'font-weight:500;text-transform:uppercase;">{html.escape(label)}</span>'
     )

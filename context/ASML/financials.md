@@ -1,6 +1,6 @@
 # Financial Data: ASML — ASML Holding N.V.
 
-**Generated:** 2026-03-15 22:32 UTC
+**Generated:** 2026-04-18 15:06 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** EUR | **Trading Currency:** USD
 **Sector:** Technology | **Industry:** Semiconductor Equipment & Materials
@@ -15,15 +15,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $1,345.69 |
-| Market Cap | $528.4B |
-| Enterprise Value | $510.0B |
+| Current Price | $1,459.80 |
+| Market Cap | $573.2B |
+| Enterprise Value | $556.9B |
 | 52-Week High | $1,547.22 |
-| 52-Week Low | $578.51 |
-| Position in 52-Week Range | 79% |
-| Beta | 1.43 |
+| 52-Week Low | $614.06 |
+| Position in 52-Week Range | 91% |
+| Beta | 1.38 |
 | Shares Outstanding | 385.4M |
-| Dividend Yield | 0.65% |
+| Dividend Yield | 0.60% |
 
 ---
 
@@ -31,13 +31,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 47.2x |
-| Forward P/E | 31.3x |
-| EV/EBITDA | 41.6x |
-| EV/Revenue | 15.6x |
-| P/FCF | 48.7x |
-| P/S | 16.2x |
-| P/B | 23.1x |
+| Trailing P/E | 47.8x |
+| Forward P/E | 30.5x |
+| EV/EBITDA | 43.8x |
+| EV/Revenue | 16.5x |
+| P/FCF | 69.5x |
+| P/S | 17.0x |
+| P/B | 1271.0x |
 
 ---
 
@@ -45,13 +45,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | $1,448.51 |
-| Target Median | $1,556.29 |
-| Target High | $1,853.24 |
-| Target Low | $884.06 |
+| Target Mean | $1,645.25 |
+| Target Median | $1,744.44 |
+| Target High | $1,994.59 |
+| Target Low | $910.38 |
 | Number of Analysts | 15 |
-| Forward EPS | $43.01 |
-| Trailing EPS | $28.53 |
+| Forward EPS | $47.86 |
+| Trailing EPS | $30.51 |
 
 ---
 
@@ -64,7 +64,7 @@
 | Operating Income | $11.3B | $9.0B | $9.0B | $6.5B | n/a |
 | EBITDA | $12.6B | $10.1B | $10.0B | $7.1B | n/a |
 | Net Income | $9.6B | $7.6B | $7.8B | $5.6B | n/a |
-| Diluted EPS | $26.26 | $19.24 | $20.59 | $16.07 | n/a |
+| Diluted EPS | $24.71 | $19.24 | $20.59 | $16.07 | n/a |
 | Interest Expense | $118.3M | $162.6M | $152.7M | $60.8M | n/a |
 | Tax Provision | $2.0B | $1.7B | $1.4B | $969.9M | n/a |
 | R&D | $4.7B | $4.3B | $4.0B | $3.3B | n/a |
@@ -100,7 +100,7 @@
 
 | Metric | FY2025 | FY2024 | FY2023 | FY2022 | FY2021 |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| Operating Cash Flow | $12.7B | $11.2B | $5.4B | $8.5B | n/a |
+| Operating Cash Flow | n/a | n/a | n/a | n/a | n/a |
 | Capital Expenditure | -$1.6B | -$2.1B | -$2.2B | -$1.3B | n/a |
 | Free Cash Flow | $11.0B | $9.1B | $3.2B | $7.2B | n/a |
 | D&A | $1.0B | $918.6M | $739.8M | $583.6M | n/a |
@@ -144,13 +144,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $1,345.69 | — |
-| 1 Month Ago | $1,406.87 | -4.3% |
-| 3 Months Ago | $1,121.36 | +20.0% |
-| 6 Months Ago | $811.36 | +65.9% |
+| Current | $1,459.80 | — |
+| 1 Month Ago | $1,366.39 | +6.8% |
+| 3 Months Ago | $1,356.78 | +7.6% |
+| 6 Months Ago | $1,016.44 | +43.6% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $1,547.22 (2026-02-25) | -13.0% from current |
-| 52-Week Low | $573.49 (2025-04-07) | +134.6% from current |
+| 52-Week High | $1,547.22 (2026-02-25) | -5.7% from current |
+| 52-Week Low | $608.73 (2025-04-21) | +139.8% from current |
 
 ---
 

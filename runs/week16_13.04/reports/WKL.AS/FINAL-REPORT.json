@@ -1,0 +1,68 @@
+{
+  "ticker": "WKL.AS",
+  "company": "Wolters Kluwer N.V.",
+  "analysis_date": "2026-04-15",
+  "verdict": "Own",
+  "average_score": 7.6,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 7,
+    "valuation": 8,
+    "margin_of_safety": 7,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "83% recurring revenue from mission-critical subscription software in regulated professions with 90%+ renewal rates",
+    "ROIC expanded from 18.1% to 24.6% over four years with 104-125% FCF conversion",
+    "Deeply embedded workflow tools (CCH Axcess, UpToDate, OneSumX) create high switching costs across tax, health, legal, and compliance",
+    "Asset-light model with 73.5% gross margins and 27.5% operating margins, both expanding structurally",
+    "Disciplined capital allocation: EUR 1B+ annual buybacks with 0.4% SBC, bolt-on M&A, 20 consecutive years of dividend growth"
+  ],
+  "key_risks": [
+    "AI disruption to professional information services -- LLMs from Anthropic, OpenAI, Google targeting legal, tax, clinical verticals",
+    "Morningstar downgraded moat from Wide to Narrow on AI disruption risk",
+    "Net debt nearly doubled from EUR 2.0B to EUR 3.8B (FY2022-2025), driven by aggressive buybacks at prices well above current levels",
+    "CEO transition risk -- new CEO Stacey Caywood untested at group level during worst stock decline in company history",
+    "Multiple may never re-rate if AI disruption fear becomes permanent sector overhang"
+  ],
+  "red_flags": [
+    "Morningstar Wide-to-Narrow moat downgrade specifically citing AI disruption risk",
+    "EUR 4B+ in buybacks over FY2022-2025 executed at EUR 90-160, now materially underwater at EUR 67",
+    "59% stock decline in twelve months suggests institutional investors are repricing structural risk, not just sentiment"
+  ],
+  "buy_triggers": [
+    "H1 2026 results show organic growth above 5% and margins stable at 25%+, confirming AI fears are not translating into customer defection",
+    "AI product launches (CCH Axcess Expert AI, UpToDate Expert AI) demonstrate measurable customer adoption and retention improvement",
+    "Peer re-rating -- RELX or Thomson Reuters begin trading back toward 15x+ EV/EBITDA"
+  ],
+  "sell_triggers": [
+    "Customer churn rates rise above 5% for two consecutive quarters, proving AI substitution is real and accelerating",
+    "Organic revenue growth turns negative for a full fiscal year, indicating the business model is structurally impaired",
+    "Net debt/EBITDA exceeds 3.0x, signaling capital allocation discipline has broken down"
+  ],
+  "valuation_summary": "At 9.7x EV/EBITDA (vs 20.1x 5-year median and 13.9x peer RELX), the market prices in near-disaster. Analyst-adjusted bear/base/bull IV of EUR 58/100/140 using a realistic 8% WACC (vs quant model's 4.5%) gives roughly 3:1 upside-to-downside asymmetry against the current EUR 66.98 price. At 10x owner earnings for a 24.6% ROIC business with 83% recurring revenue, the risk/reward is clearly skewed in the investor's favor.",
+  "iv_conservative": 58,
+  "iv_base": 100,
+  "iv_bull": 140,
+  "iv_currency": "EUR",
+  "iv_source": "ai_estimate",
+  "mos_at_analysis": 15.5,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [115.44, 211.29],
+  "compact_checklist": [
+    "Wolters Kluwer sells subscription software and databases that doctors, accountants, lawyers, and compliance officers cannot do their jobs without -- 83% of EUR 6.1B revenue is recurring, customers number in the hundreds of thousands across 180+ countries, and the business grew 6% organically in FY2025 despite the stock crashing 59%.",
+    "Switching costs are the core moat -- a hospital running UpToDate or a tax firm on CCH Axcess has its entire workflow embedded in that platform, and retraining staff mid-cycle while risking compliance errors is a cost no rational customer accepts for a 10% savings.",
+    "ROIC climbed from 18.1% to 24.6% in three years while FCF conversion ran at 104-125% of net income, driven by a structural mix shift toward cloud software (15% organic growth) that delivers near-zero incremental delivery cost on a 73.5% gross margin base.",
+    "Capital allocation is disciplined -- EUR 1B+ annual buybacks that genuinely shrink the share count (SBC is only 0.4% of revenue), 20 consecutive years of dividend growth, and bolt-on M&A averaging EUR 37-415M per deal -- though insider ownership under 1% and poorly timed buybacks at EUR 130-160 in 2025 are real blemishes.",
+    "S&P upgraded WKL to A- in 2025, interest coverage is 15x, and debt maturities are laddered to 2032, but net debt nearly doubled from EUR 2.0B to EUR 3.8B in three years as buybacks exceeded free cash flow -- manageable today, less buffer than three years ago.",
+    "At 9.7x EV/EBITDA (vs its own 5-year median of 20.1x and peer RELX at 13.9x), the market is pricing in organic growth stalling near 0-1% and margins compressing 400-500bps -- essentially betting that AI will structurally impair a business that just posted its best margins in history.",
+    "The business itself is the safety net -- 83% recurring revenue, A- credit rating, EUR 1.4B annual FCF, and four diversified divisions mean realistic downside is EUR 55-60 (10-15% loss), while the base case offers EUR 95-105 (40-55% upside), a roughly 3:1 asymmetry.",
+    "Sell if customer churn rates rise above 5% for two consecutive quarters (proving AI substitution is real), organic growth turns negative for a full fiscal year (the model is broken), or net debt/EBITDA exceeds 3.0x (capital allocation has become reckless)."
+  ],
+  "source_summary": "Wolters Kluwer FY2025 Full-Year Results, yfinance auto-fetch financials (2026-04-15), quant-valuation DCF model (CAPM WACC, sensitivity grid, Monte Carlo), Morningstar moat analysis, analyst consensus estimates, peer multiples (RELX, Thomson Reuters), Anthropic legal plug-in impact analysis, Frost Radar 2025, Journal of Accountancy survey, S&P/Moody's credit ratings, company investor relations",
+  "confidence": "medium",
+  "change_notes": ""
+}

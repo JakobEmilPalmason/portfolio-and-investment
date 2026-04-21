@@ -1,0 +1,70 @@
+{
+  "ticker": "UMG.AS",
+  "company": "Universal Music Group N.V.",
+  "analysis_date": "2026-03-25",
+  "verdict": "Own",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 6,
+    "business_economics": 7,
+    "balance_sheet": 7,
+    "valuation": 8,
+    "margin_of_safety": 7,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "36% global recorded music market share in stable three-player oligopoly with irreplaceable catalog IP",
+    "Extreme switching costs — no streaming platform can operate without UMG's catalog",
+    "ROIC consistently 22-31%, well above ~8.5% cost of capital",
+    "78% subscription-driven recurring revenue with secular streaming growth tailwinds",
+    "99.5% Monte Carlo probability of undervaluation at EUR 15.66"
+  ],
+  "key_risks": [
+    "AI-generated music could structurally impair catalog value if copyright law evolves unfavorably",
+    "Governance overhang: EUR 138M CEO comp, Bollore family 40% voting control on 18.5% economic interest",
+    "Gross margin compression of 190bps over four years with artist advance costs doubling",
+    "Thin cash reserves (EUR 114M) against EUR 7.6B current liabilities",
+    "Negative MOS versus bear IV — stock sits 12.6% above worst-case DCF value"
+  ],
+  "red_flags": [
+    "CEO compensation of EUR 138M+ drew ISS and Glass Lewis opposition two consecutive years",
+    "Bollore family disproportionate voting control creates minority shareholder risk",
+    "FCF conversion dropped from 126% to 78% over two years",
+    "Cancelled U.S. listing in March 2026 triggered 8% stock drop",
+    "Terminal value represents 81-88% of enterprise value across all DCF scenarios"
+  ],
+  "buy_triggers": [
+    "Stock declines to EUR 13-14, at or below bear IV, providing absolute downside protection",
+    "Next 2-3 quarterly earnings confirm streaming revenue growth above 8% with stable margins",
+    "AI regulatory framework solidifies in UMG's favor with licensing mandates and copyright enforcement"
+  ],
+  "sell_triggers": [
+    "AI-generated music captures >10% of organic streaming consumption",
+    "Streaming revenue growth falls below 5% for two consecutive quarters with no pricing offset",
+    "Bollore family takes actions clearly disadvantaging minority shareholders"
+  ],
+  "valuation_summary": "Base-case IV of EUR 22.50 implies 44% upside from EUR 15.66. Forward P/E of 13.3x is deeply below UMG's 3-year average of ~25x and peer Warner Music at ~21x. All 25 sensitivity grid cells (EUR 18.91-31.50) exceed current price. Bear IV of EUR 13.91 sits 11% below current price. Analyst consensus target EUR 26.29 (68% upside). Market is pricing simultaneous growth stall, margin erosion, and permanent AI impairment.",
+  "iv_conservative": 13.91,
+  "iv_base": 22.50,
+  "iv_bull": 32.44,
+  "iv_currency": "EUR",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -12.6,
+  "monte_carlo_prob_above_price": 0.9951,
+  "sensitivity_iv_range": [18.91, 31.50],
+  "compact_checklist": [
+    "UMG owns the world's largest music catalog and licenses it to streaming platforms, radio, film, and advertisers, generating EUR 12.5B in revenue that is ~78% subscription-driven and recurring.",
+    "UMG's 36% global recorded music share in a stable three-player oligopoly means no streaming platform can operate without its catalog, giving it structural pricing power demonstrated by the 2024 TikTok standoff and 2025 Streaming 2.0 deals.",
+    "ROIC of 22-31% over four years on genuinely low maintenance capex (3.6% of revenue), though gross margins have compressed 190bps and FCF dropped from EUR 1.6B to EUR 1.2B as artist advance costs doubled to EUR 402M.",
+    "Lucian Grainge is an operationally excellent CEO whose capital allocation (rising dividends, EUR 1.5B buyback, selective catalog M&A) is disciplined, but his EUR 138M compensation package and the Bollore family's 40% voting control on 18.5% economic ownership are real governance blemishes.",
+    "Net debt/EBITDA of 0.9x with BBB+/Baa1 ratings and 10x interest coverage means UMG survives any plausible downturn, though the EUR 114M cash balance against EUR 7.6B in current liabilities leaves zero buffer for a sudden cash flow interruption.",
+    "At EUR 15.66 (13.3x forward P/E vs. its own 3-year average of ~25x), the market is pricing in streaming growth stalling, no margin expansion, and permanent AI impairment — all of which must go wrong simultaneously to justify the current valuation.",
+    "A 99.5% Monte Carlo probability of undervaluation, all 25 sensitivity grid cells above the current price, a ~EUR 3B off-DCF Spotify stake, and a 4:1 base-case reward/risk ratio protect you, though the bear IV of EUR 13.91 sits only 11% below the current price.",
+    "Sell if AI-generated music captures more than 10% of organic streaming consumption or if streaming revenue growth falls below 5% for two consecutive quarters with no pricing offset."
+  ],
+  "source_summary": "UMG FY2025 earnings release (PR Newswire), Yahoo Finance (yfinance), quant DCF model, Morningstar, Billboard, Hollywood Reporter, Music Business Worldwide, Digital Music News, Variety, Seeking Alpha, S&P/Moody's credit ratings, analyst consensus (21 analysts)",
+  "confidence": "high",
+  "change_notes": "Initial analysis. UMG trades at trough multiples following cancelled U.S. listing and non-cash profit decline. Wide moat business with strong probabilistic undervaluation signal, tempered by governance concerns and AI tail risk."
+}

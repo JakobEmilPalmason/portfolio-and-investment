@@ -1,0 +1,70 @@
+{
+  "ticker": "ZTS",
+  "company": "Zoetis Inc.",
+  "analysis_date": "2026-04-04",
+  "verdict": "Own",
+  "average_score": 7.6,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 9,
+    "balance_sheet": 7,
+    "valuation": 7.5,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World's largest pure-play animal health company with 17% global market share and 72% gross margins sustained over a decade",
+    "ROIC expanding from 18.9% to 24.1% over four years on an asset-light model requiring only 5% of revenue in maintenance capex",
+    "Recession-resistant recurring revenue from companion animal medicines and livestock treatments — closer to consumer staples than healthcare in predictability",
+    "Multi-layered moat from regulatory barriers (5-10 year FDA/EMA approvals), vet switching costs, scale economics, and brand trust",
+    "Trading at deepest discount to historical multiples since IPO (15x EV/EBITDA vs 13-year median of 24x)"
+  ],
+  "key_risks": [
+    "Librela franchise impairment from FDA adverse event reports (neurological effects, deaths in dogs) — Q4 2025 revenue declined 32%, tail risk of recall or litigation not priced in",
+    "Growth deceleration to commodity pharma rates — 2026 guidance of 3-5% organic growth vs historic 7-9% may be the new normal",
+    "Debt-funded buybacks at elevated prices — $3.2B in FY2025 buybacks at $140-170, partly funded by $1.75B convertible notes, was value-destructive at today's $118",
+    "Competitive disruption from Elanco's Zenrelia and Credelio Quattro gaining traction in companion animal market",
+    "FX headwinds on ~50% international revenue exposure"
+  ],
+  "red_flags": [
+    "Librela adverse event reports include neurological effects and deaths in dogs — not a minor label update",
+    "FY2025 total shareholder returns ($4B) exceeded FCF ($2.3B) by $1.7B, funded by convertible debt",
+    "No meaningful insider buying at current prices near 52-week lows",
+    "Stock is 53% off ATH in sustained downtrend — falling knife risk",
+    "Net debt of 2.9x EBITDA above comfort threshold for pharma companies"
+  ],
+  "buy_triggers": [
+    "Librela quarterly revenue stabilizes or shows sequential improvement for 2+ consecutive quarters",
+    "Stock declines to $105-110 approaching Monte Carlo P5, providing genuine price margin of safety",
+    "CYTOPOINT long-acting approval creates a new growth lever in late 2026"
+  ],
+  "sell_triggers": [
+    "FDA recalls or materially restricts Librela prescribing",
+    "Organic revenue growth falls below 2% for two consecutive years",
+    "Net debt exceeds 4x EBITDA without a credible deleveraging plan"
+  ],
+  "valuation_summary": "Zoetis trades at 15x EV/EBITDA vs a 13-year median of 24x, the deepest relative discount since its 2013 IPO. The quant DCF base case of $133 implies 13% upside from $118, with Monte Carlo showing 83.5% probability the stock is undervalued. Forward P/E of ~16x vs IDEXX at ~44x and Zoetis's own 5-year average of ~36x represents a massive de-rating. The market is pricing in permanent growth deceleration to 2-3% and an elevated Librela risk premium — both of which must persist for the current price to be fair. Bear case IV of $87 requires sustained revenue stagnation plus margin compression, plausible only under severe Librela failure combined with macro headwinds.",
+  "iv_conservative": 86.92,
+  "iv_base": 133.35,
+  "iv_bull": 186.65,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -35.7,
+  "monte_carlo_prob_above_price": 0.8353,
+  "sensitivity_iv_range": [104.20, 181.70],
+  "compact_checklist": [
+    "Zoetis sells medicines, vaccines, and diagnostics for companion animals (~65% of $9.5B revenue) and livestock (~35%), with repeat purchases driven by pet populations and herd health rather than discretionary spending.",
+    "Regulatory barriers requiring 5-10 year species-specific FDA/EMA approvals, deep vet switching costs, and 17% global market share built over 60+ years deliver 72% gross margins — 10+ points above industry average.",
+    "ROIC expanded from 18.9% to 24.1% over four years, owner earnings reached $2.5B, and revenue grew 17% while EPS grew 34% on an asset-light model requiring only 5% of revenue in maintenance capex.",
+    "Compensation is 92% incentive-based with PSUs that vested at 0% when TSR lagged, M&A has been disciplined bolt-ons, but $3.2B in buybacks at $140-170 funded partly by $1.75B in convertible debt looks expensive with shares now at $118.",
+    "Interest coverage of 16x, Debt/EBITDA of 2.3x, and $2.3B in cash against well-laddered maturities (nothing due in 2026) mean Zoetis survives even a 30% revenue decline — though the 37% one-year debt increase for buybacks deserves monitoring.",
+    "At 15x EV/EBITDA versus a 13-year median of 24x, the market is pricing in permanent growth deceleration to 2-3% and an elevated risk premium from Librela safety concerns — both of which must persist for the current price to be fair.",
+    "The 72% gross margins, 24% ROIC, and diversified $9B+ non-Librela revenue base protect earnings power, but the stock sits 35.6% above the $87 bear-case IV, so there is business protection but no price cushion against the worst scenario.",
+    "Sell if the FDA recalls or materially restricts Librela prescribing, organic revenue growth falls below 2% for two consecutive years, or net debt exceeds 4x EBITDA without a credible deleveraging plan."
+  ],
+  "source_summary": "Zoetis FY2025 10-K and Q4 2025 earnings release (Feb 2026), yfinance financials (FY2022-FY2025), quant DCF model with Monte Carlo (10,000 simulations), Yahoo Finance, Morningstar, StockAnalysis.com, GuruFocus, YCharts, Seeking Alpha, TIKR, Simply Wall St, Fintel, MacroTrends, Zoetis investor presentations and proxy statement, FDA adverse event reports, Grand View Research, MarketsAndMarkets",
+  "confidence": "medium",
+  "change_notes": "Initial analysis. Zoetis is a high-quality compounder trading at historically depressed multiples due to Librela safety concerns and growth deceleration fears. The business fundamentals are strong (72% gross margins, 24% ROIC, recession-resistant revenue), but the absence of price margin of safety vs bear IV and the unresolved Librela overhang warrant a starter position with staged scaling rather than full conviction sizing."
+}

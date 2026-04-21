@@ -1,0 +1,602 @@
+"""Pass Flag History page — one row per Pass-verdict analysis with live comparison."""
+from __future__ import annotations
+
+import sys
+from collections import Counter
+from pathlib import Path
+
+import pandas as pd
+import streamlit as st
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from dashboard.data import (  # noqa: E402
+    get_benchmark_returns_since,
+    get_live_prices,
+    get_next_earnings,
+    load_all_reports,
+)
+from dashboard.theme import render_hero, render_kicker  # noqa: E402
+
+
+def _row_pcts(
+    record: dict,
+    live_prices: dict[str, float],
+    spy_returns: dict[str, float],
+) -> tuple[float | None, float | None]:
+    """(stock Δ %, SPY Δ % over same window) for one record — either may be None."""
+    flag = record.get("price_at_analysis")
+    live = live_prices.get(record.get("ticker") or "")
+    stock_pct: float | None = None
+    if flag is not None and live is not None:
+        try:
+            flag_f = float(flag)
+            live_f = float(live)
+            if flag_f > 0:
+                stock_pct = (live_f / flag_f - 1) * 100
+        except (TypeError, ValueError):
+            stock_pct = None
+    spy_pct = spy_returns.get(record.get("analysis_date") or "")
+    return stock_pct, spy_pct
+
+
+def _equal_weight_stats(
+    records: list[dict],
+    live_prices: dict[str, float],
+    spy_returns: dict[str, float],
+    max_score: float | None = None,
+) -> dict[str, float | int | None]:
+    """Compute equal-weight raw Δ, SPY-relative alpha, and miss rate for a slice.
+
+    For Pass flags, positive alpha = stock beat SPY = missed opportunity.
+    Miss rate = % of Pass names where the stock beat SPY.
+    """
+    stock_pcts: list[float] = []
+    alphas: list[float] = []
+    misses = 0
+    for record in records:
+        score = record.get("average_score")
+        if max_score is not None and (score is None or float(score) > max_score):
+            continue
+        stock_pct, spy_pct = _row_pcts(record, live_prices, spy_returns)
+        if stock_pct is None:
+            continue
+        stock_pcts.append(stock_pct)
+        if spy_pct is not None:
+            alpha = stock_pct - spy_pct
+            alphas.append(alpha)
+            if alpha > 0:
+                misses += 1
+    return {
+        "raw_avg": (sum(stock_pcts) / len(stock_pcts)) if stock_pcts else None,
+        "raw_n": len(stock_pcts),
+        "alpha_avg": (sum(alphas) / len(alphas)) if alphas else None,
+        "alpha_n": len(alphas),
+        "miss_rate": (misses / len(alphas) * 100) if alphas else None,
+        "miss_count": misses,
+    }
+
+
+def _best_per_ticker(records: list[dict]) -> list[dict]:
+    """Deduplicate records by ticker, keeping the highest average_score per ticker."""
+    best: dict[str, dict] = {}
+    for r in records:
+        ticker = r.get("ticker") or ""
+        score = r.get("average_score")
+        score_f = float(score) if score is not None else -1.0
+        prev = best.get(ticker)
+        if prev is None:
+            best[ticker] = r
+        else:
+            prev_score = float(prev.get("average_score") or -1)
+            if score_f > prev_score:
+                best[ticker] = r
+    return list(best.values())
+
+
+def _alpha_metric(
+    label: str,
+    stats: dict[str, float | int | None],
+    meta_suffix: str,
+) -> dict[str, str]:
+    """Card that leads with α vs SPY and shows the raw Δ in the meta line.
+
+    Tone is flipped vs the Own page: positive alpha on a Pass flag means
+    the stock beat SPY — a missed opportunity, which is bad for the
+    framework. Negative alpha = bullet dodged = good.
+    """
+    alpha = stats.get("alpha_avg")
+    raw = stats.get("raw_avg")
+    alpha_n = stats.get("alpha_n") or 0
+    raw_n = stats.get("raw_n") or 0
+    if alpha is None:
+        if raw is None:
+            return {"label": label, "value": "\u2014",
+                    "meta": f"no rows {meta_suffix}", "tone": "tone-info"}
+        return {
+            "label": label,
+            "value": "\u2014",
+            "meta": (
+                f"raw \u0394 {raw:+.2f}% \u00b7 SPY baseline unavailable \u00b7 "
+                f"{raw_n} rows {meta_suffix}"
+            ),
+            "tone": "tone-info",
+        }
+    tone = "tone-warning" if alpha > 0 else "tone-positive"
+    raw_part = f"raw \u0394 {raw:+.2f}% \u00b7 " if raw is not None else ""
+    return {
+        "label": label,
+        "value": f"{alpha:+.2f}%",
+        "meta": f"{raw_part}{alpha_n} rows {meta_suffix}",
+        "tone": tone,
+    }
+
+
+def _miss_rate_metric(
+    label: str,
+    stats: dict[str, float | int | None],
+    meta_suffix: str,
+) -> dict[str, str]:
+    miss_rate = stats.get("miss_rate")
+    misses = stats.get("miss_count") or 0
+    alpha_n = stats.get("alpha_n") or 0
+    if miss_rate is None or alpha_n == 0:
+        return {"label": label, "value": "\u2014",
+                "meta": f"no SPY baseline {meta_suffix}", "tone": "tone-info"}
+    tone = "tone-warning" if miss_rate > 50 else "tone-positive"
+    return {
+        "label": label,
+        "value": f"{miss_rate:.0f}%",
+        "meta": f"{misses}/{alpha_n} beat SPY {meta_suffix}",
+        "tone": tone,
+    }
+
+
+def _build_flag_frame(
+    records: list[dict],
+    live_prices: dict[str, float],
+    earnings_dates: dict[str, str | None],
+    spy_returns: dict[str, float],
+) -> pd.DataFrame:
+    """Flatten Pass-verdict records into a DataFrame optimized for st.dataframe."""
+    rows = []
+    for r in records:
+        ticker = r.get("ticker") or ""
+        flag = r.get("price_at_analysis")
+        live = live_prices.get(ticker)
+        pct_change: float | None = None
+        if flag is not None and live is not None:
+            try:
+                flag_f = float(flag)
+                live_f = float(live)
+                if flag_f > 0:
+                    pct_change = (live_f / flag_f - 1) * 100
+            except (TypeError, ValueError):
+                pct_change = None
+
+        spy_pct = spy_returns.get(r.get("analysis_date") or "")
+        vs_spy: float | None = None
+        if pct_change is not None and spy_pct is not None:
+            vs_spy = pct_change - spy_pct
+
+        rows.append(
+            {
+                "Ticker": ticker,
+                "Company": r.get("company") or "",
+                "Analyzed": r.get("analysis_date") or "",
+                "Score": (
+                    float(r["average_score"])
+                    if r.get("average_score") is not None
+                    else None
+                ),
+                "Confidence": r.get("confidence") or "",
+                "Currency": r.get("iv_currency") or "",
+                "Flag": (
+                    float(flag) if isinstance(flag, (int, float)) else None
+                ),
+                "Live": (
+                    float(live) if isinstance(live, (int, float)) else None
+                ),
+                "\u0394 %": pct_change,
+                "vs SPY": vs_spy,
+                "MOS %": (
+                    float(r["mos_at_analysis"])
+                    if r.get("mos_at_analysis") is not None
+                    else None
+                ),
+                "IV cons": (
+                    float(r["iv_conservative"])
+                    if r.get("iv_conservative") is not None
+                    else None
+                ),
+                "IV base": (
+                    float(r["iv_base"])
+                    if r.get("iv_base") is not None
+                    else None
+                ),
+                "IV bull": (
+                    float(r["iv_bull"])
+                    if r.get("iv_bull") is not None
+                    else None
+                ),
+                "Next earnings": earnings_dates.get(ticker) or "",
+                "Comments": r.get("comments") or "",
+                "Week": r.get("week") or "",
+            }
+        )
+
+    df = pd.DataFrame(rows)
+    if df.empty:
+        return df
+    df["Analyzed"] = pd.to_datetime(df["Analyzed"], errors="coerce").dt.date
+    df["Next earnings"] = pd.to_datetime(
+        df["Next earnings"], errors="coerce"
+    ).dt.date
+    return df
+
+
+_FLAG_COL_KEYS = {
+    "Ticker": "ticker",
+    "Company": "company",
+    "Analyzed": "analyzed",
+    "Score": "score",
+    "Confidence": "confidence",
+    "Currency": "currency",
+    "Flag": "flag",
+    "Live": "live",
+    "\u0394 %": "pct_change",
+    "vs SPY": "vs_spy",
+    "MOS %": "mos_pct",
+    "IV cons": "iv_cons",
+    "IV base": "iv_base",
+    "IV bull": "iv_bull",
+    "Next earnings": "next_earnings",
+    "Comments": "comments",
+    "Week": "week",
+}
+
+
+def _flag_jsonify(value):
+    """Serialize a DataFrame cell to a JSON-safe primitive."""
+    try:
+        if pd.isna(value):
+            return None
+    except (TypeError, ValueError):
+        pass
+    if hasattr(value, "isoformat"):
+        return value.isoformat()
+    return value
+
+
+def _render_flag_table(df: pd.DataFrame) -> None:
+    """Scoreboard-style HTML/JS table — sortable, color-coded, sticky header."""
+    import json as _json
+
+    import streamlit.components.v1 as components
+
+    renamed = df.rename(columns=_FLAG_COL_KEYS)
+    records = [
+        {key: _flag_jsonify(row.get(key)) for key in _FLAG_COL_KEYS.values()}
+        for _, row in renamed.iterrows()
+    ]
+    data_json = _json.dumps(records, default=str)
+
+    row_count = len(df)
+    height = min(60 + row_count * 50 + 40, 860)
+
+    flag_html = f"""
+<!DOCTYPE html>
+<html><head>
+<style>
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500;700&display=swap');
+:root {{
+  color-scheme: dark;
+  --font-display: 'General Sans', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --bg: #0c0a09; --surface: #1c1917; --surface-strong: #292524;
+  --border: rgba(68, 64, 60, 0.82); --border-strong: rgba(120, 113, 108, 0.9);
+  --text: #fafaf9; --muted: #a8a29e; --subtle: #78716c;
+  --accent: #c15f3c; --positive: #86efac; --warning: #fbbf24; --danger: #fca5a5;
+}}
+* {{ margin:0; padding:0; box-sizing:border-box; }}
+body {{ background:transparent; font-family:var(--font-body); font-weight:400; color:var(--text); overflow:hidden; }}
+.mono {{ font-family:var(--font-mono); }}
+.wrap {{ overflow:auto; max-height:{height - 20}px; border-radius:12px; border:1px solid var(--border); }}
+table {{ width:100%; min-width:1600px; border-collapse:separate; border-spacing:0; }}
+thead {{ position:sticky; top:0; z-index:2; }}
+th {{
+  font-family:var(--font-display);
+  padding:14px 14px; background:rgba(12,10,9,0.96); border-bottom:1px solid rgba(68,64,60,0.9);
+  font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase;
+  text-align:center; color:var(--subtle); white-space:nowrap; cursor:pointer; user-select:none;
+  position:relative;
+}}
+th:nth-child(1), th:nth-child(2), th:nth-child(16) {{ text-align:left; }}
+th:hover {{ color:var(--text); }}
+th .tip {{
+  display:none; position:absolute; left:50%; top:100%; transform:translateX(-50%); z-index:10;
+  white-space:normal; width:max-content; max-width:260px; padding:8px 12px; border-radius:8px;
+  font-size:12px; font-weight:500; letter-spacing:0; text-transform:none; line-height:1.45;
+  color:var(--text); background:var(--surface-strong); border:1px solid var(--border-strong);
+  box-shadow:0 8px 24px rgba(0,0,0,0.5); pointer-events:none;
+}}
+th:hover .tip {{ display:block; }}
+td {{
+  padding:12px 14px; border-bottom:1px solid rgba(68,64,60,0.46);
+  font-size:14px; text-align:center; color:var(--text);
+}}
+td:first-child {{ text-align:left; }}
+td:nth-child(2) {{ text-align:left; }}
+td:nth-child(16) {{ text-align:left; }}
+tbody tr:last-child td {{ border-bottom:none; }}
+tbody tr:hover td {{ background:rgba(41,37,36,0.42); }}
+.sym {{ font-family:var(--font-mono); font-size:13px; font-weight:700; color:var(--accent); }}
+.co {{ max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--muted); }}
+.comment {{ max-width:320px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--muted); font-size:13px; }}
+.empty {{ padding:42px 16px; text-align:center; color:var(--muted); font-size:13px; }}
+::-webkit-scrollbar {{ width:8px; height:8px; }}
+::-webkit-scrollbar-track {{ background:transparent; }}
+::-webkit-scrollbar-thumb {{ background:rgba(148,163,184,0.18); border-radius:999px; }}
+::-webkit-scrollbar-thumb:hover {{ background:rgba(148,163,184,0.28); }}
+</style>
+</head><body>
+<div class="wrap"><table><thead><tr id="hdr"></tr></thead><tbody id="tbody"></tbody></table></div>
+<script>
+const DATA = {data_json};
+const COLS = [
+  'ticker','company','analyzed','score','confidence','currency',
+  'flag','live','pct_change','vs_spy','mos_pct',
+  'iv_cons','iv_base','iv_bull',
+  'next_earnings','comments','week'
+];
+const HEADERS = {{
+  ticker:'Ticker', company:'Company', analyzed:'Analyzed', score:'Score',
+  confidence:'Confidence', currency:'Ccy',
+  flag:'Flag', live:'Live', pct_change:'\u0394 %', vs_spy:'vs SPY', mos_pct:'MOS %',
+  iv_cons:'IV Bear', iv_base:'IV Base', iv_bull:'IV Bull',
+  next_earnings:'Next ER', comments:'Comments', week:'Week'
+}};
+const TIPS = {{
+  ticker:'Stock ticker symbol',
+  company:'Company name',
+  analyzed:'Analysis completion date',
+  score:'Average of the 8 umbrella scores (0-10)',
+  confidence:'Agent-assigned confidence in the analysis (high / medium-high / medium / medium-low / low)',
+  currency:'Reporting currency of IVs and prices',
+  flag:'Price at analysis (native currency)',
+  live:'Latest close from yfinance (native currency)',
+  pct_change:'% change since Pass flag. Negative = bullet dodged. Positive = missed opportunity.',
+  vs_spy:'Alpha vs SPY: stock \u0394 \u2212 SPY \u0394 over the same window. Positive = stock beat SPY (missed opportunity). Negative = stock lagged SPY (Pass justified).',
+  mos_pct:'Margin of safety at analysis (positive = price below IV)',
+  iv_cons:'Bear-case intrinsic value per share',
+  iv_base:'Base-case intrinsic value per share',
+  iv_bull:'Bull-case intrinsic value per share',
+  next_earnings:'Next earnings date (best-effort yfinance)',
+  comments:'Change notes or first sentence of the valuation summary',
+  week:'Run week folder (runs/<week>/\u2026)'
+}};
+const PRICE_COLS = new Set(['flag','live','iv_cons','iv_base','iv_bull']);
+const PCT_COLS = new Set(['pct_change','vs_spy']);
+
+function esc(s) {{ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }}
+function scoreStyle(v) {{ if(v==null)return''; return v<4?'color:var(--danger);font-weight:700;':v<7?'color:var(--warning);font-weight:700;':'color:var(--positive);font-weight:700;'; }}
+function confStyle(v) {{
+  if(!v) return 'color:var(--muted);';
+  const s=String(v).toLowerCase();
+  if(s==='high'||s==='medium-high') return 'color:var(--positive);font-weight:600;';
+  if(s==='low'||s==='medium-low') return 'color:var(--danger);font-weight:600;';
+  return 'color:var(--warning);font-weight:600;';
+}}
+function fmtConf(v) {{ return v?String(v).charAt(0).toUpperCase()+String(v).slice(1):'\u2014'; }}
+function deltaStyle(v) {{ if(v==null)return''; return v>=0?'color:var(--positive);font-weight:700;':'color:var(--danger);font-weight:700;'; }}
+function fmtNum(v, d) {{ return Number(v).toLocaleString(undefined,{{minimumFractionDigits:d,maximumFractionDigits:d}}); }}
+function fmtDate(v) {{ return v?String(v).slice(0,10).replace(/-/g,'/'):'\u2014'; }}
+
+let sortKey='analyzed', sortDir='desc';
+
+function cell(key,val) {{
+  const mono='font-family:var(--font-mono);';
+  if(key==='ticker') return `<td class="sym">${{esc(val||'\u2014')}}</td>`;
+  if(key==='company') return `<td class="co" title="${{esc(val||'')}}">${{esc(val||'\u2014')}}</td>`;
+  if(key==='analyzed') return `<td style="${{mono}}color:var(--muted);font-size:12px;">${{fmtDate(val)}}</td>`;
+  if(key==='score') {{
+    let d=val!=null?Number(val).toFixed(1):'\u2014';
+    return `<td style="${{mono}}${{scoreStyle(val)}}">${{d}}</td>`;
+  }}
+  if(key==='confidence') {{
+    return `<td style="${{confStyle(val)}}font-size:12px;letter-spacing:0.02em;">${{esc(fmtConf(val))}}</td>`;
+  }}
+  if(key==='currency') return `<td style="color:var(--muted);font-size:12px;letter-spacing:0.05em;">${{esc(val||'\u2014')}}</td>`;
+  if(PRICE_COLS.has(key)) {{
+    let d=val!=null?fmtNum(val,2):'\u2014';
+    return `<td style="${{mono}}color:var(--text);">${{d}}</td>`;
+  }}
+  if(PCT_COLS.has(key)) {{
+    let d=val!=null?(val>=0?'+':'')+fmtNum(val,2)+'%':'\u2014';
+    return `<td style="${{mono}}${{deltaStyle(val)}}">${{d}}</td>`;
+  }}
+  if(key==='mos_pct') {{
+    let d=val!=null?(val>=0?'+':'')+fmtNum(val,1)+'%':'\u2014';
+    return `<td style="${{mono}}${{deltaStyle(val)}}">${{d}}</td>`;
+  }}
+  if(key==='next_earnings') return `<td style="${{mono}}color:var(--muted);font-size:12px;">${{fmtDate(val)}}</td>`;
+  if(key==='comments') return `<td class="comment" title="${{esc(val||'')}}">${{esc(val||'\u2014')}}</td>`;
+  if(key==='week') return `<td style="${{mono}}color:var(--subtle);font-size:11px;">${{esc(val||'\u2014')}}</td>`;
+  return `<td>${{esc(val!=null?val:'\u2014')}}</td>`;
+}}
+
+function render() {{
+  const hdr=document.getElementById('hdr');
+  const tbody=document.getElementById('tbody');
+  const arrow=k=>sortKey===k?(sortDir==='desc'?' \u2193':' \u2191'):'';
+  hdr.innerHTML=COLS.map(k=>`<th>${{esc(HEADERS[k])}}${{arrow(k)}}<span class="tip">${{esc(TIPS[k]||'')}}</span></th>`).join('');
+  hdr.querySelectorAll('th').forEach((th,i)=>th.addEventListener('click',()=>sortBy(COLS[i])));
+
+  if(!DATA.length) {{ tbody.innerHTML=`<tr><td colspan="${{COLS.length}}" class="empty">No rows match the current filters.</td></tr>`; return; }}
+  tbody.innerHTML=DATA.map(r=>'<tr>'+COLS.map(k=>cell(k,r[k])).join('')+'</tr>').join('');
+}}
+
+function sortBy(key) {{
+  if(sortKey===key) sortDir=sortDir==='desc'?'asc':'desc';
+  else {{ sortKey=key; sortDir='desc'; }}
+  const dir=sortDir==='desc'?-1:1;
+  DATA.sort((a,b)=>{{
+    let va=a[key],vb=b[key];
+    if(va==null&&vb==null)return 0;
+    if(va==null)return 1; if(vb==null)return -1;
+    if(typeof va==='string')return va.localeCompare(vb)*dir;
+    return(va-vb)*dir;
+  }});
+  render();
+}}
+
+sortBy('analyzed');
+</script>
+</body></html>
+"""
+    components.html(flag_html, height=height, scrolling=False)
+
+
+def main() -> None:
+    render_kicker("Pass Flags")
+
+    records = load_all_reports()
+    pass_records = [r for r in records if r.get("verdict") == "Pass"]
+
+    if not pass_records:
+        st.info(
+            "No Pass-verdict reports found. Run analyses to populate this page."
+        )
+        return
+
+    ticker_counts = Counter(r["ticker"] for r in pass_records)
+    unique_tickers = sorted(ticker_counts.keys())
+    multi_tickers = {t for t, c in ticker_counts.items() if c > 1}
+
+    tickers_tuple = tuple(unique_tickers)
+    live_prices = get_live_prices(tickers_tuple)
+    earnings_dates = get_next_earnings(tickers_tuple)
+    spy_returns = get_benchmark_returns_since(
+        tuple(r.get("analysis_date") or "" for r in pass_records)
+    )
+
+    all_stats = _equal_weight_stats(pass_records, live_prices, spy_returns)
+    low_score_stats = _equal_weight_stats(
+        pass_records, live_prices, spy_returns, max_score=5.0,
+    )
+    best_stats = _equal_weight_stats(
+        _best_per_ticker(pass_records), live_prices, spy_returns,
+    )
+
+    render_hero(
+        "Pass-verdict flag history",
+        f"Every Claude analysis where the verdict landed on Pass \u2014 "
+        f"{len(pass_records)} rows across {len(unique_tickers)} tickers "
+        f"({len(multi_tickers)} re-analyzed). Headline values are \u03b1 vs "
+        f"SPY (stock \u0394 \u2212 SPY \u0394). For Pass flags, positive "
+        f"\u03b1 = stock beat SPY = missed opportunity; negative \u03b1 = "
+        f"stock lagged SPY = bullet dodged. Raw \u0394 sits in each tile's "
+        f"meta line.",
+        [
+            _alpha_metric("\u03b1 vs SPY", all_stats, "\u00b7 all Pass"),
+            _alpha_metric(
+                "Score \u2264 5 \u03b1", low_score_stats,
+                "\u00b7 confident passes",
+            ),
+            _alpha_metric(
+                "Best per ticker \u03b1", best_stats,
+                "\u00b7 top score each",
+            ),
+            _miss_rate_metric(
+                "Missed rate vs SPY", all_stats, "\u00b7 all Pass",
+            ),
+        ],
+    )
+
+    st.markdown("")
+
+    df = _build_flag_frame(
+        pass_records, live_prices, earnings_dates, spy_returns,
+    )
+
+    controls = st.columns([3, 3, 3, 1])
+    with controls[0]:
+        search = st.text_input(
+            "Search ticker or company",
+            "",
+            placeholder="e.g. NOVO, Visa, \u2026",
+            key="pass_search",
+        )
+    with controls[1]:
+        available_currencies = sorted(
+            {c for c in df["Currency"].dropna().unique() if c}
+        )
+        selected_currencies = st.multiselect(
+            "Currency",
+            available_currencies,
+            default=[],
+            placeholder="All currencies",
+            key="pass_currency_filter",
+        )
+    with controls[2]:
+        max_score = st.slider(
+            "Max score",
+            min_value=0.0,
+            max_value=10.0,
+            value=10.0,
+            step=0.5,
+            key="pass_max_score",
+        )
+    with controls[3]:
+        st.markdown("<div style='height:28px'></div>", unsafe_allow_html=True)
+        if st.button("\u21bb Refresh", use_container_width=True, type="secondary"):
+            get_live_prices.clear()
+            get_next_earnings.clear()
+            st.rerun()
+
+    filtered = df
+    if search:
+        needle = search.strip().lower()
+        filtered = filtered[
+            filtered["Ticker"].str.lower().str.contains(needle, na=False)
+            | filtered["Company"].str.lower().str.contains(needle, na=False)
+        ]
+    if selected_currencies:
+        filtered = filtered[filtered["Currency"].isin(selected_currencies)]
+    if max_score < 10.0:
+        filtered = filtered[filtered["Score"].fillna(10) <= max_score]
+
+    if filtered.empty:
+        st.info("No rows match the current filters.")
+        return
+
+    _render_flag_table(filtered)
+
+    missing_live = sorted(
+        {r["ticker"] for r in pass_records if r["ticker"] not in live_prices}
+    )
+    if missing_live:
+        st.caption(
+            f"Live price unavailable from yfinance for: "
+            f"{', '.join(missing_live)}. Hit \u21bb Refresh to retry."
+        )
+
+    st.caption(
+        "Click any column header to sort. Flag price is the yfinance close on "
+        "`analysis_date`, falling back to IV \u00d7 (1 \u2212 MOS). \u0394 % "
+        "is in the report's native currency \u2014 no FX normalization. "
+        "vs SPY is `stock \u0394 \u2212 SPY \u0394` over the same window "
+        "(SPY is USD), so the alpha carries FX noise for non-USD names and "
+        "should be read as directional. On a Pass flag, positive \u03b1 "
+        "means the stock beat SPY (missed opportunity). Rows without a "
+        "resolvable SPY close on the flag date are excluded from the alpha "
+        "column and headline tiles."
+    )
+
+
+if __name__ == "__main__":
+    main()

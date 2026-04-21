@@ -704,6 +704,306 @@ def get_scoreboard_data(repo_root: str = DEFAULT_REPO_ROOT) -> pd.DataFrame:
     return pd.DataFrame(best.values()).reindex(columns=SCOREBOARD_ORDER).sort_values("ticker").reset_index(drop=True)
 
 
+# ---------------------------------------------------------------------------
+# Flag History — per-analysis records (no dedup) for Own-verdict picks.
+# Powers dashboard/pages/7_Flags.py.
+# ---------------------------------------------------------------------------
+
+_PRICE_AT_ANALYSIS_PATTERNS = [
+    # Highest-confidence: "At $1,899", "At ~$314", "At €153.82", "At DKK 246", "At 2,156 GBp"
+    r"\bAt\s+~?\s*[$€£¥]\s*~?\s*([\d,]+(?:\.\d+)?)",
+    r"\bAt\s+~?\s*(?:USD|EUR|GBP|GBp|DKK|SEK|NOK|CHF|CAD|JPY)\s+~?\s*([\d,]+(?:\.\d+)?)",
+    r"\bAt\s+~?\s*([\d,]+(?:\.\d+)?)\s*(?:USD|EUR|GBP|GBp|DKK|SEK|NOK|CHF|CAD|JPY|kr)\b",
+    # Medium-confidence: "NVS trades at $151", "trading at €66"
+    r"\btrades?\s+at\s+~?\s*[$€£¥]\s*~?\s*([\d,]+(?:\.\d+)?)",
+    r"\btrades?\s+at\s+~?\s*(?:USD|EUR|GBP|GBp|DKK|SEK|NOK|CHF|CAD|JPY)\s+~?\s*([\d,]+(?:\.\d+)?)",
+    r"\btrading\s+(?:near|at|around)\s+~?\s*[$€£¥]\s*~?\s*([\d,]+(?:\.\d+)?)",
+    # Lower-confidence: "13% upside from $118", "currently $382" — price often the second number
+    r"\bfrom\s+~?\s*[$€£¥]\s*~?\s*([\d,]+(?:\.\d+)?)",
+    r"\bcurrent(?:ly)?\s+(?:price\s+of\s+)?~?\s*[$€£¥]\s*~?\s*([\d,]+(?:\.\d+)?)",
+]
+
+
+@st.cache_data(ttl=60 * 60 * 24 * 30, show_spinner=False)
+def _historical_close(ticker: str, date_str: str) -> float | None:
+    """Close price for `ticker` on `date_str` (YYYY-MM-DD), or the most recent
+    trading day on or before that date.
+
+    Keeps the dashboard read-only by not touching `db/portfolio.db`. The
+    streamlit cache is long-lived (30 days) because historical prices are
+    immutable. Returns None on any failure — callers fall back.
+    """
+    if not ticker or not date_str:
+        return None
+    try:
+        import yfinance as yf
+    except ImportError:
+        return None
+    try:
+        from datetime import datetime, timedelta
+        target = datetime.strptime(date_str, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return None
+
+    # Window back 7 days (weekends/holidays) and forward 1 day (end is exclusive).
+    start = (target - timedelta(days=7)).isoformat()
+    end = (target + timedelta(days=1)).isoformat()
+    try:
+        hist = yf.Ticker(ticker).history(
+            start=start, end=end, auto_adjust=False,
+        )
+    except Exception:
+        return None
+
+    if hist is None or hist.empty or "Close" not in hist.columns:
+        return None
+
+    try:
+        index_dates = hist.index.date
+    except AttributeError:
+        return None
+    mask = index_dates <= target
+    filtered = hist[mask]
+    if filtered.empty:
+        return None
+    try:
+        return float(filtered["Close"].iloc[-1])
+    except (TypeError, ValueError, IndexError):
+        return None
+
+
+def extract_price_at_analysis(report: dict[str, Any]) -> float | None:
+    """Derive price at analysis from the report.
+
+    FINAL-REPORT.json does not store this as a structured field, so we try
+    three sources in order:
+      1. yfinance historical close on `analysis_date` — authoritative, rolls
+         back to the nearest prior trading day for weekend/holiday dates.
+      2. `iv_conservative × (1 − mos_at_analysis/100)` — MOS is measured
+         against bear IV in the assembler, so this reconstructs the analyst's
+         flag price. Used when yfinance fails (offline, delisted ticker).
+      3. Regex over `valuation_summary` — last-resort. Kept because some
+         future summary might encode the price in a shape the other two miss,
+         but prose-parsing is fragile (e.g. "At $132/$198/$274" matches the
+         bear IV, not the price).
+    Returns None when all three paths fail.
+    """
+    ticker = report.get("ticker")
+    analysis_date = report.get("analysis_date")
+    if ticker and analysis_date:
+        price = _historical_close(str(ticker), str(analysis_date))
+        if price is not None and price > 0:
+            return price
+
+    iv_cons = report.get("iv_conservative")
+    mos = report.get("mos_at_analysis")
+    if iv_cons is not None and mos is not None:
+        try:
+            return float(iv_cons) * (1 - float(mos) / 100)
+        except (TypeError, ValueError):
+            pass
+
+    summary = report.get("valuation_summary") or ""
+    if summary:
+        for pattern in _PRICE_AT_ANALYSIS_PATTERNS:
+            match = re.search(pattern, summary, re.IGNORECASE)
+            if not match:
+                continue
+            try:
+                return float(match.group(1).replace(",", ""))
+            except (ValueError, IndexError):
+                continue
+    return None
+
+
+def _extract_flag_comments(report: dict[str, Any]) -> str:
+    """Comments column content.
+
+    Prefer `change_notes` (populated on re-analyses). Fall back to the first
+    sentence of `valuation_summary` so first-time analyses still carry signal.
+    Truncated to ~180 chars to fit a table cell.
+    """
+    change_notes = (report.get("change_notes") or "").strip()
+    if change_notes:
+        return change_notes[:180] + ("…" if len(change_notes) > 180 else "")
+    summary = (report.get("valuation_summary") or "").strip()
+    if not summary:
+        return ""
+    first_sentence = re.split(r"(?<=[.!?])\s+", summary, maxsplit=1)[0]
+    return first_sentence[:180] + ("…" if len(first_sentence) > 180 else "")
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def load_all_reports(repo_root: str = DEFAULT_REPO_ROOT) -> list[dict[str, Any]]:
+    """Every FINAL-REPORT.json as a flat list — one record per (ticker, analysis_date).
+
+    Unlike `get_scoreboard_data` and `get_research_catalog`, this does NOT dedupe
+    to latest-per-ticker — the Flags page needs the full history.
+    """
+    root = Path(repo_root)
+    runs_dir = root / "runs"
+    if not runs_dir.exists():
+        return []
+
+    records: list[dict[str, Any]] = []
+    for report_path in runs_dir.glob("*/reports/*/FINAL-REPORT.json"):
+        report = _read_json(report_path, None)
+        if not isinstance(report, dict):
+            continue
+
+        ticker = report.get("ticker") or report_path.parent.name
+        # path is runs/<week>/reports/<ticker>/FINAL-REPORT.json → parts[-4] is <week>
+        try:
+            week = report_path.parts[-4]
+        except IndexError:
+            week = ""
+
+        md_path = report_path.parent / "FINAL-REPORT.md"
+        records.append(
+            {
+                "ticker": ticker,
+                "company": report.get("company") or ticker,
+                "week": week,
+                "analysis_date": report.get("analysis_date"),
+                "verdict": report.get("verdict"),
+                "average_score": report.get("average_score"),
+                "confidence": report.get("confidence"),
+                "iv_conservative": report.get("iv_conservative"),
+                "iv_base": report.get("iv_base"),
+                "iv_bull": report.get("iv_bull"),
+                "iv_currency": report.get("iv_currency"),
+                "mos_at_analysis": report.get("mos_at_analysis"),
+                "price_at_analysis": extract_price_at_analysis(report),
+                "comments": _extract_flag_comments(report),
+                "json_path": str(report_path),
+                "md_path": str(md_path) if md_path.exists() else None,
+            }
+        )
+
+    records.sort(
+        key=lambda r: (r.get("analysis_date") or "", r.get("ticker") or ""),
+        reverse=True,
+    )
+    return records
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def get_benchmark_returns_since(
+    flag_dates: tuple[str, ...],
+    benchmark: str = "SPY",
+) -> dict[str, float]:
+    """Map each flag date to the benchmark's % change from that date to today.
+
+    Used by the Flag History pages to compute per-row alpha. Returns only
+    dates where both the historical close and the live close resolve — bad
+    dates are silently dropped so downstream code can treat missing keys as
+    "no benchmark data for this row" rather than erroring.
+    """
+    if not flag_dates:
+        return {}
+    live_prices = get_live_prices((benchmark,))
+    benchmark_now = live_prices.get(benchmark)
+    if benchmark_now is None or benchmark_now <= 0:
+        return {}
+    result: dict[str, float] = {}
+    for flag_date in set(flag_dates):
+        if not flag_date:
+            continue
+        then = _historical_close(benchmark, flag_date)
+        if then and then > 0:
+            result[flag_date] = (benchmark_now / then - 1) * 100
+    return result
+
+
+@st.cache_data(ttl=300, show_spinner="Fetching live prices…")
+def get_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
+    """Batch-fetch latest close via yfinance. Returns {ticker: close_price}.
+
+    Uses a 5-day window and takes the most recent non-null bar per ticker so
+    weekend/holiday calls still resolve. Does not persist to the DB price cache
+    — callers that need persistence should use `PriceFetcher` directly.
+    """
+    if not tickers:
+        return {}
+    try:
+        import yfinance as yf
+    except ImportError:
+        return {}
+
+    try:
+        raw = yf.download(
+            tickers=list(tickers),
+            period="5d",
+            progress=False,
+            auto_adjust=True,
+        )
+    except Exception:
+        return {}
+
+    close_frame = _extract_price_frame(raw, list(tickers))
+    if close_frame.empty:
+        return {}
+
+    result: dict[str, float] = {}
+    if isinstance(close_frame, pd.DataFrame):
+        for ticker in close_frame.columns:
+            series = close_frame[ticker].dropna()
+            if series.empty:
+                continue
+            try:
+                result[str(ticker)] = float(series.iloc[-1])
+            except (TypeError, ValueError):
+                continue
+    return result
+
+
+@st.cache_data(ttl=3600, show_spinner="Fetching earnings dates…")
+def get_next_earnings(tickers: tuple[str, ...]) -> dict[str, str | None]:
+    """Best-effort next-earnings lookup via yfinance `Ticker.calendar`.
+
+    Returns {ticker: ISO YYYY-MM-DD or None}. Errors are swallowed per ticker
+    so one bad symbol doesn't nuke the rest of the page.
+    """
+    if not tickers:
+        return {}
+    try:
+        import yfinance as yf
+    except ImportError:
+        return dict.fromkeys(tickers, None)
+
+    result: dict[str, str | None] = {}
+    for ticker in tickers:
+        result[ticker] = None
+        try:
+            cal = yf.Ticker(ticker).calendar
+        except Exception:
+            continue
+
+        earnings_value: Any = None
+        if isinstance(cal, dict):
+            raw_value = cal.get("Earnings Date") or cal.get("earnings_date")
+            if isinstance(raw_value, list) and raw_value:
+                earnings_value = raw_value[0]
+            elif raw_value:
+                earnings_value = raw_value
+        elif hasattr(cal, "empty") and not cal.empty:
+            try:
+                earnings_value = cal.iloc[0, 0]
+            except Exception:
+                earnings_value = None
+
+        if earnings_value is None:
+            continue
+        try:
+            if hasattr(earnings_value, "strftime"):
+                result[ticker] = earnings_value.strftime("%Y-%m-%d")
+            else:
+                result[ticker] = str(earnings_value)[:10]
+        except Exception:
+            result[ticker] = None
+    return result
+
+
 @st.cache_data(ttl=60, show_spinner=False)
 def get_policy_markdown(repo_root: str = DEFAULT_REPO_ROOT) -> str | None:
     policy_path = Path(repo_root) / "INVESTMENT-POLICY.md"
@@ -1039,7 +1339,7 @@ def get_agent_prices(tickers: tuple[str, ...], start_date: str, interval: str = 
             "interval": interval,
         }
         if interval.endswith("m"):
-            request["period"] = "5d"
+            request["period"] = "1mo"
         else:
             request["start"] = start_date
         raw = yf.download(**request)
@@ -1070,7 +1370,11 @@ def _market_open_timestamp(prices_df: pd.DataFrame, proposal_date: str) -> pd.Ti
 
     same_day_index = prices_df.index[prices_df.index.normalize() == target_day]
     if len(same_day_index) == 0:
-        return None
+        # Proposal date fell outside yfinance window — use earliest available bar
+        after = prices_df.index[prices_df.index >= target_day]
+        if len(after) == 0:
+            return prices_df.index.min() if len(prices_df.index) > 0 else None
+        return after.min()
     return same_day_index.min()
 
 
@@ -1232,10 +1536,14 @@ __all__ = [
     "format_money",
     "format_pct",
     "format_ratio",
+    "extract_price_at_analysis",
     "get_agent_prices",
     "get_agent_runs",
+    "get_benchmark_returns_since",
     "get_freshness_data",
     "get_latest_sim",
+    "get_live_prices",
+    "get_next_earnings",
     "get_performance_data",
     "get_policy_markdown",
     "get_portfolio_data",
@@ -1249,6 +1557,7 @@ __all__ = [
     "get_search_results",
     "get_search_stats",
     "get_sim_runs_data",
+    "load_all_reports",
     "queue_state_color",
     "rebuild_search",
 ]

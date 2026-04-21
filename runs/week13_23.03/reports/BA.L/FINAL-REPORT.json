@@ -1,0 +1,70 @@
+{
+  "ticker": "BA.L",
+  "company": "BAE Systems plc",
+  "analysis_date": "2026-03-25",
+  "verdict": "Own",
+  "average_score": 7.4,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 8,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "£83.6B sovereign-backed order backlog providing 2.7 years of pre-sold revenue with near-zero customer credit risk",
+    "Near-monopoly on UK nuclear submarine and complex warship construction with regulatory barriers that take decades to replicate",
+    "Stable 13%+ ROIC with FCF conversion consistently above 100% of net income",
+    "Structural NATO spending ramp from 2% to 3% GDP provides decade-long demand visibility",
+    "Conservatively leveraged balance sheet (net debt/EBITDA 0.2x) with A- credit ratings and £1.1B pension surplus"
+  ],
+  "key_risks": [
+    "Quant model WACC of 4.5% (from near-zero beta) is artificially low; normalizing to 7-8% compresses base IV to ~2,000-2,200 GBp, eliminating most price discount",
+    "No margin of safety vs conservative IV — stock trades 49% above bear IV of 1,446 GBp",
+    "Three governments (US, UK, Saudi Arabia) account for ~75% of revenue — synchronized austerity or policy change is a concentrated risk",
+    "FY2026 FCF guidance >£1.3B is 40% below FY2025's £2.16B due to prepayment timing",
+    "Terminal value represents 81-87% of enterprise value — extreme sensitivity to long-run assumptions"
+  ],
+  "red_flags": [
+    "Quant model beta of 0.01 produces artificially low WACC; true cost of equity likely 7-9%",
+    "Saudi Arabia (~11% revenue) carries ongoing reputational and export-license risk",
+    "CEO insider ownership at 0.031% of market cap is well below Buffett-standard alignment",
+    "Stock up 36% YoY and near 52-week highs — entry timing is suboptimal",
+    "Operating margins capped at 9-10% by cost-plus government contract structures"
+  ],
+  "buy_triggers": [
+    "Price pullback to 1,850-1,950 GBp range providing 27-31% discount to base IV",
+    "NATO countries formally legislating 3% GDP defense spending floors confirming structural thesis",
+    "Operating margins expanding above 11% for two consecutive quarters validating mix shift"
+  ],
+  "sell_triggers": [
+    "NATO or UK government reversing defense spending commitments below 2% GDP trajectory",
+    "Operating margins compressing below 9% for two consecutive years",
+    "Order backlog declining below £70B without revenue absorbing the drawdown"
+  ],
+  "valuation_summary": "At 2,156 GBp (forward P/E ~23x), BAE trades modestly below corrected base IV of 2,688 GBp with the entire sensitivity grid above current price. However, the quant model's 4.5% WACC is artificially low; normalizing to 7-8% compresses base IV to ~2,000-2,200 GBp, making the stock closer to fairly valued. Business quality is exceptional but the price is not obviously cheap.",
+  "iv_conservative": 1446,
+  "iv_base": 2688,
+  "iv_bull": 3941,
+  "iv_currency": "GBp",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -49.1,
+  "monte_carlo_prob_above_price": 0.95,
+  "sensitivity_iv_range": [2369, 4086],
+  "compact_checklist": [
+    "BAE builds and sustains complex military platforms (submarines, fighters, electronic warfare systems) for Western governments under multi-decade contracts, with an £83.6B backlog providing 2.7 years of pre-sold revenue that sovereign customers cannot walk away from.",
+    "Near-monopoly on UK nuclear submarine construction, decades-deep security clearances, and 30-40 year platform lock-in (Dreadnought, F-35, Typhoon) create barriers no competitor can replicate in less than a generation.",
+    "ROIC stable at 13%+ for five years with FCF conversion consistently above 100% of net income, though operating margins are capped at 9-10% by cost-plus government contract structures.",
+    "CEO Woodburn has delivered 10% revenue CAGR and 20 consecutive years of dividend growth with disciplined buybacks (9% share reduction since 2021), but insider ownership at 0.031% of market cap is well below Buffett-standard alignment.",
+    "Net debt/EBITDA of 0.2x, A- credit ratings, £1.1B pension surplus, and sovereign-contracted revenue make this one of the safest balance sheets in the industrial sector — a 30% revenue drop is nearly impossible given the backlog but survivable even if it occurred.",
+    "At 2,156 GBp (forward P/E ~23x), the market must believe defense spending growth is temporary and margins won't expand — contradicted by NATO's legislated move from 2% to 3% GDP targets and £83.6B in contracted work.",
+    "Business-level safety is exceptional (sovereign customers, massive backlog, minimal leverage), but price-level safety is thin — the stock trades 49% above bear IV and the favorable base-case valuation hinges on a 4.5% WACC that likely understates true cost of capital.",
+    "NATO defense spending commitments reversing below 2% of GDP, operating margins compressing below 9% for two consecutive years, or order backlog declining below £70B would each independently break the structural growth thesis."
+  ],
+  "source_summary": "BAE Systems FY2024 Annual Report, FY2025 full-year results (Feb 2026), S&P Global Ratings, Fitch Ratings, Yahoo Finance, quant DCF model (corrected GBp), CNBC, Bloomberg, Morningstar, TIKR, BAE Systems investor relations, company guidance",
+  "confidence": "medium-high",
+  "change_notes": "Initial analysis. Quant model IV values corrected from GBP to GBp (×100). WACC of 4.5% flagged as artificially low due to near-zero beta; true cost of capital likely 7-8%. FY2025 actuals (£30.7B revenue, £3.32B EBIT) materially exceed the quant model's FY2024 base inputs."
+}

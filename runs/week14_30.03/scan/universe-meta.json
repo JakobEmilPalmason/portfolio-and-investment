@@ -1,0 +1,75 @@
+{
+  "run_date": "2026-04-01",
+  "total_candidates": 235,
+  "buckets_used": [
+    "tracked",
+    "seed",
+    "large_cap_us_quality",
+    "large_cap_europe_quality",
+    "semis_and_infra",
+    "healthcare_quality",
+    "industrial_compounders",
+    "financial_quality",
+    "consumer_quality",
+    "post_earnings",
+    "52wk_low",
+    "52wk_high",
+    "fcf_roic",
+    "sector_leader"
+  ],
+  "counts_by_bucket": {
+    "tracked": 98,
+    "seed": 21,
+    "large_cap_us_quality": 31,
+    "large_cap_europe_quality": 26,
+    "semis_and_infra": 15,
+    "healthcare_quality": 15,
+    "industrial_compounders": 21,
+    "financial_quality": 22,
+    "consumer_quality": 20,
+    "post_earnings": 11,
+    "52wk_low": 11,
+    "52wk_high": 14,
+    "fcf_roic": 11,
+    "sector_leader": 36
+  },
+  "counts_by_sector": {
+    "Technology": 67,
+    "Industrials": 45,
+    "Consumer": 37,
+    "Healthcare": 32,
+    "Financials": 32,
+    "Energy": 6,
+    "Communication Services": 5,
+    "Materials": 4,
+    "Utilities": 4,
+    "Real Estate": 3
+  },
+  "counts_by_geography": {
+    "US": 195,
+    "Europe": 36,
+    "Asia": 2,
+    "Other": 2
+  },
+  "mkt_cap_distribution": {
+    "mega": 90,
+    "large": 140,
+    "mid": 5
+  },
+  "already_analyzed_count": 98,
+  "tracked_plus_seed_pct": 42.6,
+  "web_queries_run": [
+    "notable US earnings beats misses large cap April 2026",
+    "quality large cap stocks near 52-week low April 2026",
+    "quality large cap stocks near 52-week high momentum April 2026",
+    "highest free cash flow yield large cap stocks 2026",
+    "dominant sector leader stocks by market cap 2026 top companies",
+    "best European quality stocks large cap 2026 compounders"
+  ],
+  "concentration_warnings": [
+    "tracked_plus_seed_pct at 42.6% exceeds 20% threshold — expected given 98 already-analyzed tickers in the portfolio system; all 14 source buckets were populated to offset",
+    "Technology sector at 28.5% (67/235) — approaching 35% threshold; reflects natural weight of semis_and_infra + tracked tech names",
+    "tracked bucket at 41.7% (98/235) exceeds 25% single-bucket threshold — structural: this is the existing analysis universe being carried forward"
+  ],
+  "stage": "A1"
+}

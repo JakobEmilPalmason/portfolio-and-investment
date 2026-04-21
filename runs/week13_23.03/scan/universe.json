@@ -1,0 +1,2646 @@
+[
+  {
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "sector": "Technology",
+    "industry": "Consumer Electronics",
+    "source_bucket": [
+      "tracked",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ABB",
+    "company": "ABB Ltd",
+    "sector": "Industrials",
+    "industry": "Electrification / Automation",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ABBV",
+    "company": "AbbVie Inc.",
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ABNB",
+    "company": "Airbnb Inc.",
+    "sector": "Consumer",
+    "industry": "Online Travel & Accommodation",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ABT",
+    "company": "Abbott Laboratories",
+    "sector": "Healthcare",
+    "industry": "Medical Devices & Diagnostics",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ACLS",
+    "company": "Axcelis Technologies Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment",
+    "source_bucket": [
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mid",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ACN",
+    "company": "Accenture plc",
+    "sector": "Technology",
+    "industry": "IT Consulting & Services",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ADBE",
+    "company": "Adobe Inc.",
+    "sector": "Technology",
+    "industry": "Application Software",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ADI",
+    "company": "Analog Devices Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "source_bucket": [
+      "tracked",
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ADP",
+    "company": "Automatic Data Processing Inc.",
+    "sector": "Technology",
+    "industry": "Payroll & HR Software",
+    "source_bucket": [
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ADYEN.AS",
+    "company": "Adyen NV",
+    "sector": "Financials",
+    "industry": "Payment Processing",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AFL",
+    "company": "Aflac Inc.",
+    "sector": "Financials",
+    "industry": "Supplemental Insurance",
+    "source_bucket": [
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AFRM",
+    "company": "Affirm Holdings Inc.",
+    "sector": "Financials",
+    "industry": "Fintech / BNPL",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AJG",
+    "company": "Arthur J. Gallagher & Co.",
+    "sector": "Financials",
+    "industry": "Insurance Brokerage",
+    "source_bucket": [
+      "tracked",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ALAB",
+    "company": "Astera Labs Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ALMU",
+    "company": "Alumis Inc.",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mid",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AMAT",
+    "company": "Applied Materials Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment",
+    "source_bucket": [
+      "fcf_roic",
+      "semis_and_infra",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AMD",
+    "company": "Advanced Micro Devices Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "source_bucket": [
+      "52wk_high"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AME",
+    "company": "AMETEK Inc.",
+    "sector": "Industrials",
+    "industry": "Electronic Instruments",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AMGN",
+    "company": "Amgen Inc.",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AMT",
+    "company": "American Tower Corp.",
+    "sector": "Real Estate",
+    "industry": "Cell Tower REITs",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AMZN",
+    "company": "Amazon.com Inc.",
+    "sector": "Consumer",
+    "industry": "E-Commerce & Cloud",
+    "source_bucket": [
+      "tracked",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "APD",
+    "company": "Air Products and Chemicals Inc.",
+    "sector": "Materials",
+    "industry": "Industrial Gases",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ARM",
+    "company": "Arm Holdings plc",
+    "sector": "Technology",
+    "industry": "Semiconductor IP",
+    "source_bucket": [
+      "tracked",
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ASML",
+    "company": "ASML Holding NV",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment",
+    "source_bucket": [
+      "fcf_roic",
+      "large_cap_europe_quality",
+      "semis_and_infra",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AVGO",
+    "company": "Broadcom Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "source_bucket": [
+      "tracked",
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "AZN",
+    "company": "AstraZeneca plc",
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "source_bucket": [
+      "tracked",
+      "healthcare_quality",
+      "52wk_high"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "BA.L",
+    "company": "BAE Systems plc",
+    "sector": "Industrials",
+    "industry": "Defense & Aerospace",
+    "source_bucket": [
+      "52wk_low",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "BKNG",
+    "company": "Booking Holdings Inc.",
+    "sector": "Consumer",
+    "industry": "Online Travel",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "BMW.DE",
+    "company": "Bayerische Motoren Werke AG",
+    "sector": "Consumer",
+    "industry": "Automobile Manufacturers",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "BR",
+    "company": "Broadridge Financial Solutions Inc.",
+    "sector": "Technology",
+    "industry": "Financial Technology",
+    "source_bucket": [
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "BRK-B",
+    "company": "Berkshire Hathaway Inc.",
+    "sector": "Financials",
+    "industry": "Diversified Holding",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "BSX",
+    "company": "Boston Scientific Corp.",
+    "sector": "Healthcare",
+    "industry": "Medical Devices",
+    "source_bucket": [
+      "tracked",
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "BX",
+    "company": "Blackstone Inc.",
+    "sector": "Financials",
+    "industry": "Alternative Asset Management",
+    "source_bucket": [
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CAT",
+    "company": "Caterpillar Inc.",
+    "sector": "Industrials",
+    "industry": "Construction & Mining Equipment",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CB",
+    "company": "Chubb Limited",
+    "sector": "Financials",
+    "industry": "Property & Casualty Insurance",
+    "source_bucket": [
+      "tracked",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CBOE",
+    "company": "Cboe Global Markets Inc.",
+    "sector": "Financials",
+    "industry": "Financial Exchanges",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CDNS",
+    "company": "Cadence Design Systems Inc.",
+    "sector": "Technology",
+    "industry": "EDA Software",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CFR.SW",
+    "company": "Compagnie Financiere Richemont SA",
+    "sector": "Consumer",
+    "industry": "Luxury Goods",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CHD",
+    "company": "Church & Dwight Co. Inc.",
+    "sector": "Consumer",
+    "industry": "Household Products",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CME",
+    "company": "CME Group Inc.",
+    "sector": "Financials",
+    "industry": "Financial Exchanges",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CNQ",
+    "company": "Canadian Natural Resources Ltd.",
+    "sector": "Energy",
+    "industry": "Oil & Gas E&P",
+    "source_bucket": [
+      "52wk_high"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Canada",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "COR",
+    "company": "Cencora Inc.",
+    "sector": "Healthcare",
+    "industry": "Pharmaceutical Distribution",
+    "source_bucket": [
+      "post_earnings"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "COST",
+    "company": "Costco Wholesale Corp.",
+    "sector": "Consumer",
+    "industry": "Warehouse Clubs",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CPRT",
+    "company": "Copart Inc.",
+    "sector": "Industrials",
+    "industry": "Auto Auctions",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CRH",
+    "company": "CRH plc",
+    "sector": "Materials",
+    "industry": "Building Materials",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CRM",
+    "company": "Salesforce Inc.",
+    "sector": "Technology",
+    "industry": "CRM Software",
+    "source_bucket": [
+      "52wk_low",
+      "fcf_roic",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings Inc.",
+    "sector": "Technology",
+    "industry": "Cybersecurity",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CSGP",
+    "company": "CoStar Group Inc.",
+    "sector": "Real Estate",
+    "industry": "Real Estate Information",
+    "source_bucket": [
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CSU.TO",
+    "company": "Constellation Software Inc.",
+    "sector": "Technology",
+    "industry": "Vertical Market Software",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Canada",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CSX",
+    "company": "CSX Corp.",
+    "sector": "Industrials",
+    "industry": "Railroads",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CTAS",
+    "company": "Cintas Corp.",
+    "sector": "Industrials",
+    "industry": "Uniform & Facility Services",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "CVS",
+    "company": "CVS Health Corp.",
+    "sector": "Healthcare",
+    "industry": "Healthcare Services",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "DE",
+    "company": "Deere & Co.",
+    "sector": "Industrials",
+    "industry": "Farm & Construction Equipment",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "DHR",
+    "company": "Danaher Corp.",
+    "sector": "Healthcare",
+    "industry": "Life Sciences Tools",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "DIS",
+    "company": "The Walt Disney Co.",
+    "sector": "Communication Services",
+    "industry": "Entertainment & Media",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "DOCS",
+    "company": "Doximity Inc.",
+    "sector": "Healthcare",
+    "industry": "Physician Network / Telehealth",
+    "source_bucket": [
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "DSV.CO",
+    "company": "DSV A/S",
+    "sector": "Industrials",
+    "industry": "Freight & Logistics",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "DSY.PA",
+    "company": "Dassault Systemes SE",
+    "sector": "Technology",
+    "industry": "3D Design & PLM Software",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "DXCM",
+    "company": "DexCom Inc.",
+    "sector": "Healthcare",
+    "industry": "Medical Devices / CGM",
+    "source_bucket": [
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ECL",
+    "company": "Ecolab Inc.",
+    "sector": "Materials",
+    "industry": "Specialty Chemicals",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "EL",
+    "company": "Estee Lauder Companies Inc.",
+    "sector": "Consumer",
+    "industry": "Beauty & Personal Care",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "EL.PA",
+    "company": "EssilorLuxottica SA",
+    "sector": "Healthcare",
+    "industry": "Optical & Eyewear",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "EMR",
+    "company": "Emerson Electric Co.",
+    "sector": "Industrials",
+    "industry": "Automation & Controls",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "EW",
+    "company": "Edwards Lifesciences Corp.",
+    "sector": "Healthcare",
+    "industry": "Medical Devices",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "EXPD",
+    "company": "Expeditors International of Washington Inc.",
+    "sector": "Industrials",
+    "industry": "Freight & Logistics",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "FAST",
+    "company": "Fastenal Co.",
+    "sector": "Industrials",
+    "industry": "Industrial Distribution",
+    "source_bucket": [
+      "seed"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "FDS",
+    "company": "FactSet Research Systems Inc.",
+    "sector": "Financials",
+    "industry": "Financial Data",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "FDX",
+    "company": "FedEx Corp.",
+    "sector": "Industrials",
+    "industry": "Express Delivery & Logistics",
+    "source_bucket": [
+      "post_earnings"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "FICO",
+    "company": "Fair Isaac Corp.",
+    "sector": "Technology",
+    "industry": "Analytics & Decision Software",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "GILD",
+    "company": "Gilead Sciences Inc.",
+    "sector": "Healthcare",
+    "industry": "Biotechnology",
+    "source_bucket": [
+      "fcf_roic",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "sector": "Communication Services",
+    "industry": "Internet & Search",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "GS",
+    "company": "Goldman Sachs Group Inc.",
+    "sector": "Financials",
+    "industry": "Investment Banking",
+    "source_bucket": [
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "GWW",
+    "company": "W.W. Grainger Inc.",
+    "sector": "Industrials",
+    "industry": "Industrial Distribution",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "HD",
+    "company": "The Home Depot Inc.",
+    "sector": "Consumer",
+    "industry": "Home Improvement Retail",
+    "source_bucket": [
+      "52wk_low",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "HIMS",
+    "company": "Hims & Hers Health Inc.",
+    "sector": "Healthcare",
+    "industry": "Telehealth & DTC Health",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "HLMA.L",
+    "company": "Halma plc",
+    "sector": "Technology",
+    "industry": "Safety & Environmental Tech",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "HON",
+    "company": "Honeywell International Inc.",
+    "sector": "Industrials",
+    "industry": "Diversified Industrial",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "HSY",
+    "company": "The Hershey Co.",
+    "sector": "Consumer",
+    "industry": "Confectionery",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ICE",
+    "company": "Intercontinental Exchange Inc.",
+    "sector": "Financials",
+    "industry": "Financial Exchanges",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ICG.L",
+    "company": "InterContinental Hotels Group plc",
+    "sector": "Consumer",
+    "industry": "Hotels & Hospitality",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "IDXX",
+    "company": "IDEXX Laboratories Inc.",
+    "sector": "Healthcare",
+    "industry": "Veterinary Diagnostics",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "large_cap_us_quality",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "INTU",
+    "company": "Intuit Inc.",
+    "sector": "Technology",
+    "industry": "Financial Software",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "IQV",
+    "company": "IQVIA Holdings Inc.",
+    "sector": "Healthcare",
+    "industry": "CRO & Health Analytics",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ISRG",
+    "company": "Intuitive Surgical Inc.",
+    "sector": "Healthcare",
+    "industry": "Surgical Robotics",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ITW",
+    "company": "Illinois Tool Works Inc.",
+    "sector": "Industrials",
+    "industry": "Diversified Industrial",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "JPM",
+    "company": "JPMorgan Chase & Co.",
+    "sector": "Financials",
+    "industry": "Diversified Banking",
+    "source_bucket": [
+      "tracked",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "KER.PA",
+    "company": "Kering SA",
+    "sector": "Consumer",
+    "industry": "Luxury Goods",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "KKR",
+    "company": "KKR & Co. Inc.",
+    "sector": "Financials",
+    "industry": "Alternative Asset Management",
+    "source_bucket": [
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "KLAC",
+    "company": "KLA Corp.",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment",
+    "source_bucket": [
+      "tracked",
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "KO",
+    "company": "The Coca-Cola Co.",
+    "sector": "Consumer",
+    "industry": "Beverages",
+    "source_bucket": [
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LDO.MI",
+    "company": "Leonardo SpA",
+    "sector": "Industrials",
+    "industry": "Defense & Aerospace",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LIN",
+    "company": "Linde plc",
+    "sector": "Materials",
+    "industry": "Industrial Gases",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LLY",
+    "company": "Eli Lilly and Co.",
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "source_bucket": [
+      "tracked",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LNG",
+    "company": "Cheniere Energy Inc.",
+    "sector": "Energy",
+    "industry": "LNG Export",
+    "source_bucket": [
+      "post_earnings",
+      "52wk_high",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LONN.SW",
+    "company": "Lonza Group AG",
+    "sector": "Healthcare",
+    "industry": "CDMO / Life Sciences",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LOW",
+    "company": "Lowe's Companies Inc.",
+    "sector": "Consumer",
+    "industry": "Home Improvement Retail",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LRCX",
+    "company": "Lam Research Corp.",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment",
+    "source_bucket": [
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LSEG.L",
+    "company": "London Stock Exchange Group plc",
+    "sector": "Financials",
+    "industry": "Financial Exchanges & Data",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "LULU",
+    "company": "Lululemon Athletica Inc.",
+    "sector": "Consumer",
+    "industry": "Athletic Apparel",
+    "source_bucket": [
+      "post_earnings"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MA",
+    "company": "Mastercard Inc.",
+    "sector": "Financials",
+    "industry": "Payment Networks",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MAERSK-B.CO",
+    "company": "A.P. Moller-Maersk A/S",
+    "sector": "Industrials",
+    "industry": "Shipping & Logistics",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MBG.DE",
+    "company": "Mercedes-Benz Group AG",
+    "sector": "Consumer",
+    "industry": "Automobile Manufacturers",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MC.PA",
+    "company": "LVMH Moet Hennessy Louis Vuitton SE",
+    "sector": "Consumer",
+    "industry": "Luxury Goods",
+    "source_bucket": [
+      "52wk_low",
+      "large_cap_europe_quality",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MCD",
+    "company": "McDonald's Corp.",
+    "sector": "Consumer",
+    "industry": "Fast Food Restaurants",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MCK",
+    "company": "McKesson Corp.",
+    "sector": "Healthcare",
+    "industry": "Pharmaceutical Distribution",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MCO",
+    "company": "Moody's Corp.",
+    "sector": "Financials",
+    "industry": "Credit Ratings & Analytics",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MDT",
+    "company": "Medtronic plc",
+    "sector": "Healthcare",
+    "industry": "Medical Devices",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "sector": "Communication Services",
+    "industry": "Social Media & Advertising",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MKL",
+    "company": "Markel Group Inc.",
+    "sector": "Financials",
+    "industry": "Specialty Insurance",
+    "source_bucket": [
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MKTX",
+    "company": "MarketAxess Holdings Inc.",
+    "sector": "Financials",
+    "industry": "Electronic Bond Trading",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MMM",
+    "company": "3M Co.",
+    "sector": "Industrials",
+    "industry": "Diversified Industrial",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MPWR",
+    "company": "Monolithic Power Systems Inc.",
+    "sector": "Technology",
+    "industry": "Power Semiconductors",
+    "source_bucket": [
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MRK",
+    "company": "Merck & Co. Inc.",
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MRSH",
+    "company": "Marsh McLennan Inc.",
+    "sector": "Financials",
+    "industry": "Insurance Brokerage",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MRVL",
+    "company": "Marvell Technology Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "source_bucket": [
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MSC",
+    "company": "MSC Industrial Direct Co. Inc.",
+    "sector": "Industrials",
+    "industry": "Industrial Distribution",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mid",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MSCI",
+    "company": "MSCI Inc.",
+    "sector": "Financials",
+    "industry": "Index & Analytics",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MSFT",
+    "company": "Microsoft Corp.",
+    "sector": "Technology",
+    "industry": "Software & Cloud",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MTD",
+    "company": "Mettler-Toledo International Inc.",
+    "sector": "Healthcare",
+    "industry": "Precision Instruments",
+    "source_bucket": [
+      "seed",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "MU",
+    "company": "Micron Technology Inc.",
+    "sector": "Technology",
+    "industry": "Memory Semiconductors",
+    "source_bucket": [
+      "52wk_high",
+      "post_earnings"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NDAQ",
+    "company": "Nasdaq Inc.",
+    "sector": "Financials",
+    "industry": "Financial Exchanges",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NEE",
+    "company": "NextEra Energy Inc.",
+    "sector": "Utilities",
+    "industry": "Electric Utilities / Renewables",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "sector": "Communication Services",
+    "industry": "Streaming Entertainment",
+    "source_bucket": [
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NKE",
+    "company": "Nike Inc.",
+    "sector": "Consumer",
+    "industry": "Athletic Apparel & Footwear",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NOVO-B.CO",
+    "company": "Novo Nordisk A/S",
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "source_bucket": [
+      "52wk_low",
+      "healthcare_quality",
+      "large_cap_europe_quality",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NOW",
+    "company": "ServiceNow Inc.",
+    "sector": "Technology",
+    "industry": "Enterprise Software",
+    "source_bucket": [
+      "52wk_low",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NSC",
+    "company": "Norfolk Southern Corp.",
+    "sector": "Industrials",
+    "industry": "Railroads",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NVDA",
+    "company": "NVIDIA Corp.",
+    "sector": "Technology",
+    "industry": "Semiconductors & AI",
+    "source_bucket": [
+      "52wk_high",
+      "sector_leader",
+      "semis_and_infra",
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NVO",
+    "company": "Novo Nordisk A/S (ADR)",
+    "sector": "Healthcare",
+    "industry": "Diabetes / Obesity Pharma",
+    "source_bucket": [
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "NVS",
+    "company": "Novartis AG",
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "source_bucket": [
+      "fcf_roic"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ODFL",
+    "company": "Old Dominion Freight Line Inc.",
+    "sector": "Industrials",
+    "industry": "Trucking / LTL Freight",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ON",
+    "company": "ON Semiconductor Corp.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "source_bucket": [
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ONTO",
+    "company": "Onto Innovation Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductor Equipment",
+    "source_bucket": [
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mid",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "OR.PA",
+    "company": "L'Oreal SA",
+    "sector": "Consumer",
+    "industry": "Beauty & Personal Care",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ORCL",
+    "company": "Oracle Corp.",
+    "sector": "Technology",
+    "industry": "Database & Cloud",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ORSTED.CO",
+    "company": "Orsted A/S",
+    "sector": "Utilities",
+    "industry": "Renewable Energy",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "PANW",
+    "company": "Palo Alto Networks Inc.",
+    "sector": "Technology",
+    "industry": "Cybersecurity",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "PAYX",
+    "company": "Paychex Inc.",
+    "sector": "Technology",
+    "industry": "Payroll & HR Software",
+    "source_bucket": [
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "PEP",
+    "company": "PepsiCo Inc.",
+    "sector": "Consumer",
+    "industry": "Beverages & Snacks",
+    "source_bucket": [
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "PG",
+    "company": "Procter & Gamble Co.",
+    "sector": "Consumer",
+    "industry": "Household Products",
+    "source_bucket": [
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "PH",
+    "company": "Parker-Hannifin Corp.",
+    "sector": "Industrials",
+    "industry": "Motion & Control",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "PLD",
+    "company": "Prologis Inc.",
+    "sector": "Real Estate",
+    "industry": "Industrial REITs",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "POOL",
+    "company": "Pool Corp.",
+    "sector": "Consumer",
+    "industry": "Pool Supplies Distribution",
+    "source_bucket": [
+      "seed",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "PRX.AS",
+    "company": "Prosus NV",
+    "sector": "Technology",
+    "industry": "Internet & E-Commerce",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm Inc.",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "source_bucket": [
+      "tracked",
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RACE",
+    "company": "Ferrari NV",
+    "sector": "Consumer",
+    "industry": "Luxury Automobiles",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RDDT",
+    "company": "Reddit Inc.",
+    "sector": "Communication Services",
+    "industry": "Social Media",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RELX",
+    "company": "RELX plc",
+    "sector": "Communication Services",
+    "industry": "Information Services",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RKLB",
+    "company": "Rocket Lab USA Inc.",
+    "sector": "Industrials",
+    "industry": "Space & Launch Services",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RKT.L",
+    "company": "Reckitt Benckiser Group plc",
+    "sector": "Consumer",
+    "industry": "Household & Health Products",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RLI",
+    "company": "RLI Corp.",
+    "sector": "Financials",
+    "industry": "Specialty Insurance",
+    "source_bucket": [
+      "financial_quality"
+    ],
+    "mkt_cap_tier": "mid",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RMS.PA",
+    "company": "Hermes International SCA",
+    "sector": "Consumer",
+    "industry": "Luxury Goods",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ROL",
+    "company": "Rollins Inc.",
+    "sector": "Consumer",
+    "industry": "Pest Control Services",
+    "source_bucket": [
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ROP",
+    "company": "Roper Technologies Inc.",
+    "sector": "Technology",
+    "industry": "Vertical Market Software",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "RSG",
+    "company": "Republic Services Inc.",
+    "sector": "Industrials",
+    "industry": "Waste Management",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SAP.DE",
+    "company": "SAP SE",
+    "sector": "Technology",
+    "industry": "Enterprise Software",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality",
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SBUX",
+    "company": "Starbucks Corp.",
+    "sector": "Consumer",
+    "industry": "Coffee & Quick Service",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SHL.DE",
+    "company": "Siemens Healthineers AG",
+    "sector": "Healthcare",
+    "industry": "Medical Equipment",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SHOP",
+    "company": "Shopify Inc.",
+    "sector": "Technology",
+    "industry": "E-Commerce Platform",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Canada",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SHW",
+    "company": "Sherwin-Williams Co.",
+    "sector": "Materials",
+    "industry": "Paints & Coatings",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SIE.DE",
+    "company": "Siemens AG",
+    "sector": "Industrials",
+    "industry": "Diversified Industrial & Digital",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SNDK",
+    "company": "Sandisk Corp.",
+    "sector": "Technology",
+    "industry": "Data Storage",
+    "source_bucket": [
+      "52wk_high"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "sector": "Technology",
+    "industry": "Cloud Data Platform",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SNPS",
+    "company": "Synopsys Inc.",
+    "sector": "Technology",
+    "industry": "EDA Software",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SPGI",
+    "company": "S&P Global Inc.",
+    "sector": "Financials",
+    "industry": "Financial Data & Ratings",
+    "source_bucket": [
+      "tracked",
+      "seed"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SSNC",
+    "company": "SS&C Technologies Holdings Inc.",
+    "sector": "Technology",
+    "industry": "Financial Software",
+    "source_bucket": [
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "STE",
+    "company": "STERIS plc",
+    "sector": "Healthcare",
+    "industry": "Sterilization & Infection Prevention",
+    "source_bucket": [
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "STMN.SW",
+    "company": "Straumann Holding AG",
+    "sector": "Healthcare",
+    "industry": "Dental Implants",
+    "source_bucket": [
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "SYK",
+    "company": "Stryker Corp.",
+    "sector": "Healthcare",
+    "industry": "Medical Devices",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "TDG",
+    "company": "TransDigm Group Inc.",
+    "sector": "Industrials",
+    "industry": "Aerospace Components",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "TJX",
+    "company": "TJX Companies Inc.",
+    "sector": "Consumer",
+    "industry": "Off-Price Retail",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "TMO",
+    "company": "Thermo Fisher Scientific Inc.",
+    "sector": "Healthcare",
+    "industry": "Life Sciences Tools",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "TPX",
+    "company": "Tempur Sealy International Inc.",
+    "sector": "Consumer",
+    "industry": "Mattresses & Bedding",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla Inc.",
+    "sector": "Consumer",
+    "industry": "Electric Vehicles & Energy",
+    "source_bucket": [
+      "tracked"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing Co.",
+    "sector": "Technology",
+    "industry": "Semiconductor Foundry",
+    "source_bucket": [
+      "tracked",
+      "semis_and_infra",
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Asia",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "TXN",
+    "company": "Texas Instruments Inc.",
+    "sector": "Technology",
+    "industry": "Analog Semiconductors",
+    "source_bucket": [
+      "tracked",
+      "semis_and_infra"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "UBER",
+    "company": "Uber Technologies Inc.",
+    "sector": "Technology",
+    "industry": "Ride-Hailing & Delivery",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ULTA",
+    "company": "Ulta Beauty Inc.",
+    "sector": "Consumer",
+    "industry": "Beauty Retail",
+    "source_bucket": [
+      "post_earnings"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "UMG.AS",
+    "company": "Universal Music Group NV",
+    "sector": "Communication Services",
+    "industry": "Music & Entertainment",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "Europe",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group Inc.",
+    "sector": "Healthcare",
+    "industry": "Managed Care",
+    "source_bucket": [
+      "tracked",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "UNP",
+    "company": "Union Pacific Corp.",
+    "sector": "Industrials",
+    "industry": "Railroads",
+    "source_bucket": [
+      "tracked",
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "UPS",
+    "company": "United Parcel Service Inc.",
+    "sector": "Industrials",
+    "industry": "Express Delivery & Logistics",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "sector": "Financials",
+    "industry": "Payment Networks",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "VEEV",
+    "company": "Veeva Systems Inc.",
+    "sector": "Healthcare",
+    "industry": "Life Sciences Software",
+    "source_bucket": [
+      "tracked",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "VRSK",
+    "company": "Verisk Analytics Inc.",
+    "sector": "Technology",
+    "industry": "Data Analytics",
+    "source_bucket": [
+      "tracked",
+      "large_cap_us_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "VZ",
+    "company": "Verizon Communications Inc.",
+    "sector": "Communication Services",
+    "industry": "Telecommunications",
+    "source_bucket": [
+      "52wk_low"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "WCN",
+    "company": "Waste Connections Inc.",
+    "sector": "Industrials",
+    "industry": "Waste Management",
+    "source_bucket": [
+      "tracked",
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "WDC",
+    "company": "Western Digital Corp.",
+    "sector": "Technology",
+    "industry": "Data Storage",
+    "source_bucket": [
+      "52wk_high"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "WKL.AS",
+    "company": "Wolters Kluwer NV",
+    "sector": "Technology",
+    "industry": "Professional Information",
+    "source_bucket": [
+      "tracked",
+      "large_cap_europe_quality"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "Europe",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "WM",
+    "company": "Waste Management Inc.",
+    "sector": "Industrials",
+    "industry": "Waste Management",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "WST",
+    "company": "West Pharmaceutical Services Inc.",
+    "sector": "Healthcare",
+    "industry": "Drug Delivery Systems",
+    "source_bucket": [
+      "tracked",
+      "seed",
+      "healthcare_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": true,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "XPO",
+    "company": "XPO Inc.",
+    "sector": "Industrials",
+    "industry": "Trucking / LTL Freight",
+    "source_bucket": [
+      "industrial_compounders"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "YUM",
+    "company": "Yum! Brands Inc.",
+    "sector": "Consumer",
+    "industry": "Quick Service Restaurants",
+    "source_bucket": [
+      "large_cap_us_quality",
+      "consumer_quality"
+    ],
+    "mkt_cap_tier": "large",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  },
+  {
+    "ticker": "ZTS",
+    "company": "Zoetis Inc.",
+    "sector": "Healthcare",
+    "industry": "Animal Health",
+    "source_bucket": [
+      "sector_leader"
+    ],
+    "mkt_cap_tier": "mega",
+    "geography": "US",
+    "already_analyzed": false,
+    "as_of_date": "2026-03-29"
+  }
+]

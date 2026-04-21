@@ -1,41 +1,41 @@
 {
   "bear": {
-    "enterprise_value": 1585469765201,
-    "equity_value": 1637069765201,
-    "per_share_value": 67.37,
-    "terminal_pct_of_value": 74.3,
-    "implied_ev_ebitda": 10.3,
-    "wacc": 0.1855,
+    "enterprise_value": 1600170303320,
+    "equity_value": 1651686303320,
+    "per_share_value": 67.97,
+    "terminal_pct_of_value": 74.4,
+    "implied_ev_ebitda": 10.4,
+    "wacc": 0.1831,
     "terminal_growth": 0.03,
     "projection_years": 5
   },
   "base": {
-    "enterprise_value": 2220707979324,
-    "equity_value": 2272307979324,
-    "per_share_value": 93.51,
+    "enterprise_value": 2242054412510,
+    "equity_value": 2293570412510,
+    "per_share_value": 94.39,
     "terminal_pct_of_value": 79.6,
-    "implied_ev_ebitda": 13.9,
-    "wacc": 0.1755,
+    "implied_ev_ebitda": 14.0,
+    "wacc": 0.1731,
     "terminal_growth": 0.03,
     "projection_years": 5
   },
   "bull": {
-    "enterprise_value": 2935212579279,
-    "equity_value": 2986812579279,
-    "per_share_value": 122.91,
-    "terminal_pct_of_value": 83.1,
-    "implied_ev_ebitda": 17.8,
-    "wacc": 0.17049999999999998,
+    "enterprise_value": 2964053676819,
+    "equity_value": 3015569676819,
+    "per_share_value": 124.1,
+    "terminal_pct_of_value": 83.2,
+    "implied_ev_ebitda": 18.0,
+    "wacc": 0.1681,
     "terminal_growth": 0.03,
     "projection_years": 5
   },
-  "iv_conservative": 67.37,
-  "iv_base": 93.51,
-  "iv_bull": 122.91,
+  "iv_conservative": 67.97,
+  "iv_base": 94.39,
+  "iv_bull": 124.1,
   "currency": "USD",
-  "current_price": 180.25,
-  "mos_at_analysis": -167.6,
-  "model_date": "2026-03-22",
+  "current_price": 201.68,
+  "mos_at_analysis": -196.7,
+  "model_date": "2026-04-18",
   "discount_method": "capm",
   "capex_mode": "maintenance",
   "growth_schedule": [
@@ -46,23 +46,23 @@
     0.03
   ],
   "wacc_derivation": {
-    "wacc": 0.1755,
-    "cost_of_equity": 0.1759,
+    "wacc": 0.1731,
+    "cost_of_equity": 0.1734,
     "cost_of_debt_pretax": 0.0235,
-    "cost_of_debt_aftertax": 0.0197,
-    "effective_tax_rate": 0.1644,
-    "beta": 2.38,
+    "cost_of_debt_aftertax": 0.0196,
+    "effective_tax_rate": 0.1643,
+    "beta": 2.335,
     "risk_free_rate": 0.045,
     "market_risk_premium": 0.055,
-    "equity_weight": 0.9975,
-    "debt_weight": 0.0025,
+    "equity_weight": 0.9978,
+    "debt_weight": 0.0022,
     "warnings": []
   },
   "owner_earnings": {
     "method": "da_proxy",
-    "maintenance_capex": 2800000000,
-    "growth_capex": 3200000000,
-    "owner_earnings_adjusted": 120100000000,
+    "maintenance_capex": 2843000000,
+    "growth_capex": 3199000000,
+    "owner_earnings_adjusted": 120067000000,
     "maintenance_pct_of_total": 0.47
   },
   "ticker": "NVDA",
@@ -78,47 +78,47 @@
       0.24
     ],
     "col_values": [
-      0.1555,
-      0.1655,
-      0.1755,
-      0.1855,
-      0.1955
+      0.1531,
+      0.1631,
+      0.1731,
+      0.1831,
+      0.1931
     ],
     "grid": [
       [
-        104.63,
-        100.62,
-        96.8,
-        93.17,
-        89.72
+        105.64,
+        101.58,
+        97.72,
+        94.04,
+        90.54
       ],
       [
-        112.8,
-        108.45,
-        104.31,
-        100.38,
-        96.63
+        113.9,
+        109.49,
+        105.3,
+        101.32,
+        97.53
       ],
       [
-        121.53,
-        116.81,
-        112.33,
-        108.07,
-        104.01
+        122.71,
+        117.94,
+        113.4,
+        109.09,
+        104.98
       ],
       [
-        130.83,
-        125.73,
-        120.88,
-        116.27,
-        111.88
+        132.11,
+        126.95,
+        122.04,
+        117.37,
+        112.93
       ],
       [
-        140.73,
-        135.22,
-        129.98,
-        125.0,
-        120.26
+        142.12,
+        136.54,
+        131.24,
+        126.19,
+        121.39
       ]
     ],
     "base_row_idx": 2,
@@ -126,17 +126,17 @@
   },
   "monte_carlo": {
     "percentiles": {
-      "P5": 91.27,
-      "P10": 95.09,
-      "P25": 102.63,
-      "P50": 112.05,
-      "P75": 122.03,
-      "P90": 131.4,
-      "P95": 137.01
+      "P5": 92.01,
+      "P10": 96.06,
+      "P25": 103.87,
+      "P50": 113.08,
+      "P75": 123.15,
+      "P90": 132.94,
+      "P95": 138.89
     },
-    "mean": 112.78,
-    "median": 112.05,
-    "std": 14.02,
+    "mean": 113.9,
+    "median": 113.07,
+    "std": 14.19,
     "prob_above_price": 0.0,
     "n_simulations": 10000
   }

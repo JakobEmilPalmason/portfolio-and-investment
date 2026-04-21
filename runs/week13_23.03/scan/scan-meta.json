@@ -1,0 +1,80 @@
+{
+  "scan_date": "2026-03-29",
+  "universe_date": "2026-03-29",
+  "total_candidates": 195,
+  "buckets_used": [
+    "52wk_high",
+    "52wk_low",
+    "consumer_quality",
+    "fcf_roic",
+    "financial_quality",
+    "healthcare_quality",
+    "industrial_compounders",
+    "large_cap_europe_quality",
+    "large_cap_us_quality",
+    "post_earnings",
+    "sector_leader",
+    "seed",
+    "semis_and_infra",
+    "tracked"
+  ],
+  "counts_by_bucket": {
+    "tracked": 88,
+    "sector_leader": 33,
+    "large_cap_us_quality": 31,
+    "large_cap_europe_quality": 21,
+    "seed": 20,
+    "52wk_low": 17,
+    "semis_and_infra": 16,
+    "financial_quality": 16,
+    "industrial_compounders": 15,
+    "consumer_quality": 15,
+    "healthcare_quality": 13,
+    "52wk_high": 8,
+    "post_earnings": 6,
+    "fcf_roic": 5
+  },
+  "counts_by_sector": {
+    "Technology": 49,
+    "Healthcare": 36,
+    "Consumer": 33,
+    "Industrials": 32,
+    "Financials": 25,
+    "Communication Services": 8,
+    "Materials": 5,
+    "Real Estate": 3,
+    "Energy": 2,
+    "Utilities": 2
+  },
+  "counts_by_priority": {
+    "high": 100,
+    "medium": 90,
+    "low": 5
+  },
+  "triage_yes_count": 29,
+  "triage_maybe_count": 157,
+  "triage_no_count": 9,
+  "concentration_warnings": [
+    "tracked_plus_seed_pct=46.7% exceeds 20% threshold \u2014 expected given 88 tracked tickers; all curated sector lists fully populated",
+    "bucket \"tracked\" has 88 entries (45.1%) \u2014 exceeds 25% single-bucket threshold"
+  ],
+  "ranking_rules_version": "v2",
+  "ranking_rules": {
+    "priority_high": [
+      "post_earnings|52wk_low|52wk_high|fcf_roic in source_bucket AND mkt_cap_tier in {mega,large}",
+      "already_analyzed=true AND thesis_tag in {dominant_ecosystem,quality_compounder,secular_growth,monopoly_power}"
+    ],
+    "priority_medium": [
+      "any curated sector bucket in source_bucket (no high trigger)",
+      "seed|sector_leader in source_bucket (no high trigger)"
+    ],
+    "triage_yes": [
+      "already_analyzed=false AND priority=high AND confidence in {high,medium}",
+      "already_analyzed=true AND post_earnings|52wk_low|52wk_high in source_bucket"
+    ],
+    "triage_maybe": [
+      "priority=high but no fresh event catalyst"
+    ]
+  },
+  "stage": "A2"
+}

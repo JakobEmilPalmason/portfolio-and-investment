@@ -1,0 +1,68 @@
+{
+  "ticker": "MKL",
+  "company": "Markel Group Inc.",
+  "analysis_date": "2026-04-04",
+  "verdict": "Own",
+  "average_score": 7.6,
+  "umbrella_scores": {
+    "circle_of_competence": 8,
+    "competitive_advantage": 7,
+    "management": 8,
+    "business_economics": 7,
+    "balance_sheet": 9,
+    "valuation": 8,
+    "margin_of_safety": 7,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "Three-engine compounder (specialty insurance + $37B investment portfolio + $5B Ventures) generating $2.8B operating cash flow with 111% FCF conversion",
+    "Fortress balance sheet: $339M net debt, 14x interest coverage, 21 consecutive years of favorable reserve development",
+    "Owner-operator CEO with $110M skin in the game, zero insider selling, accelerating buybacks ($1B over 2023-2025)",
+    "97% Monte Carlo probability of undervaluation at 1.3x book value with 31% discount to base IV"
+  ],
+  "key_risks": [
+    "Legacy reserve deterioration in IP CPI runoff ($64M losses in 2025) and inherent opacity of insurance reserves",
+    "Climate-driven catastrophe exposure increasing structurally despite reinsurance exit",
+    "JANA Partners activist pressure could force value-destructive breakup of three-engine model",
+    "Key-person risk on CEO Tom Gayner (age ~63) with succession untested",
+    "Near-term earnings air pocket from reinsurance exit (~$2B premium reduction) depressing 2026 EPS to ~$126"
+  ],
+  "red_flags": [
+    "Stock trades above bear-case IV ($1,680), offering only 11% downside cushion in worst-case DCF",
+    "ROE compressed from 17.2% to 11.9% as retained-earnings equity base grows",
+    "Ventures/Industrial segment margins declining despite revenue growth",
+    "2022 net loss of -$216M demonstrates investment portfolio can overwhelm operating earnings"
+  ],
+  "buy_triggers": [
+    "Stock approaches Monte Carlo P5 ($1,984) or bear IV ($1,680) for wider margin of safety",
+    "Q1-Q2 2026 results demonstrate specialty premium growth offsetting reinsurance runoff",
+    "Buyback acceleration signaling management conviction in undervaluation"
+  ],
+  "sell_triggers": [
+    "Combined ratio sustained above 100% for two consecutive years",
+    "Material reserve charge in IP CPI runoff or legacy lines impairing book value",
+    "JANA-driven breakup separating Ventures and destroying three-engine compounding model"
+  ],
+  "valuation_summary": "At $1,899 (1.3x book, 11x trailing earnings), Markel trades 31% below base IV of $2,754 with 97% Monte Carlo probability of undervaluation. The sensitivity grid shows IV above current price in 23 of 25 scenarios. Forward P/E rises to ~15x on depressed 2026 estimates from reinsurance exit, but this is transitional. Bear IV of $1,680 offers only 11% downside cushion.",
+  "iv_conservative": 1680.0,
+  "iv_base": 2754.39,
+  "iv_bull": 4014.7,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": 31.0,
+  "monte_carlo_prob_above_price": 0.9711,
+  "sensitivity_iv_range": [1999.32, 3390.51],
+  "compact_checklist": [
+    "Markel is a three-engine compounder (specialty insurance at 94.6% combined ratio + $37.4B investment portfolio + $5B Ventures revenue) that generates $2.8B operating cash flow by investing cost-free insurance float — a model I can explain in two minutes.",
+    "Specialty underwriting expertise built over 90+ years produces cost-free float (18 of 20 years profitable), reinforced by broker switching costs and permanent-capital appeal to Ventures sellers, though no single moat element is unassailable.",
+    "FCF conversion of 111% and $2.2B owner earnings on minimal capex ($207M vs $348M D&A) are excellent, but ROE has compressed to 11.9% as the retained-earnings equity base grows and Ventures margins slip to ~9%.",
+    "CEO Tom Gayner owns $110M in stock with zero sales, has accelerated buybacks to $1B over 2023-2025 reducing shares 9%, and runs a 75% performance-linked compensation structure — textbook owner-operator alignment.",
+    "Net debt of $339M against $18.6B equity, 14.3x interest coverage, and $11B cash make the balance sheet a fortress, backed by 21 consecutive years of favorable reserve development totaling $484M in 2025 alone.",
+    "At $1,899 (1.3x book, 11x trailing earnings), the quant DCF base IV of $2,754 implies 45% upside with 97% Monte Carlo probability of undervaluation, though forward P/E rises to ~15x on depressed 2026 estimates from the reinsurance exit.",
+    "The 31% discount to base IV and three-engine diversification provide genuine safety, but bear IV of $1,680 sits only 11% below current price, meaning the worst-case DCF offers a thin cushion.",
+    "Combined ratio sustained above 100% for two consecutive years, material reserve deterioration in the IP CPI runoff book, or a forced JANA Partners-driven breakup that destroys the three-engine compounding flywheel."
+  ],
+  "source_summary": "Markel Group 2025 annual results, 10-K FY2025, proxy statement DEF 14A, SEC Form 4 insider filings, Yahoo Finance, GuruFocus, Seeking Alpha, Insurance Business Magazine, Carrier Management, Simply Wall St, StockTitan, MarketBeat, quant DCF model with Monte Carlo (10K simulations)",
+  "confidence": "high",
+  "change_notes": "Initial analysis. Three-engine Berkshire-style compounder trading at 1.3x book with 97% Monte Carlo probability of undervaluation. Reinsurance exit creates transitional earnings dip but improves long-term combined ratio trajectory. JANA activist involvement and Gayner succession are key monitoring items."
+}

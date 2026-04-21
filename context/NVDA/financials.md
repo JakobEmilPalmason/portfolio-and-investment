@@ -1,6 +1,6 @@
 # Financial Data: NVDA — NVIDIA Corporation
 
-**Generated:** 2026-03-15 22:33 UTC
+**Generated:** 2026-04-18 15:06 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** USD | **Trading Currency:** USD
 **Sector:** Technology | **Industry:** Semiconductors
@@ -13,13 +13,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | $180.25 |
-| Market Cap | $4.4T |
-| Enterprise Value | $4.3T |
+| Current Price | $201.68 |
+| Market Cap | $4.9T |
+| Enterprise Value | $4.8T |
 | 52-Week High | $212.19 |
-| 52-Week Low | $86.62 |
-| Position in 52-Week Range | 75% |
-| Beta | 2.38 |
+| 52-Week Low | $95.04 |
+| Position in 52-Week Range | 91% |
+| Beta | 2.33 |
 | Shares Outstanding | 24.3B |
 | Dividend Yield | 0.02% |
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 36.8x |
-| Forward P/E | 16.7x |
-| EV/EBITDA | 32.5x |
-| EV/Revenue | 20.0x |
-| P/FCF | 75.4x |
-| P/S | 20.3x |
-| P/B | 27.9x |
+| Trailing P/E | 41.2x |
+| Forward P/E | 17.9x |
+| EV/EBITDA | 36.4x |
+| EV/Revenue | 22.5x |
+| P/FCF | 84.3x |
+| P/S | 22.7x |
+| P/B | 31.2x |
 
 ---
 
@@ -43,12 +43,12 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | $267.54 |
+| Target Mean | $268.61 |
 | Target Median | $265.00 |
 | Target High | $380.00 |
 | Target Low | $140.00 |
-| Number of Analysts | 55 |
-| Forward EPS | $10.80 |
+| Number of Analysts | 56 |
+| Forward EPS | $11.24 |
 | Trailing EPS | $4.90 |
 
 ---
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | $180.25 | — |
-| 1 Month Ago | $186.93 | -3.6% |
-| 3 Months Ago | $180.92 | -0.4% |
-| 6 Months Ago | $177.80 | +1.4% |
+| Current | $201.68 | — |
+| 1 Month Ago | $178.56 | +12.9% |
+| 3 Months Ago | $186.22 | +8.3% |
+| 6 Months Ago | $181.79 | +10.9% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | $212.17 (2025-10-29) | -15.0% from current |
-| 52-Week Low | $86.60 (2025-04-07) | +108.1% from current |
+| 52-Week High | $212.17 (2025-10-29) | -4.9% from current |
+| 52-Week Low | $95.02 (2025-04-21) | +112.3% from current |
 
 ---
 

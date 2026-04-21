@@ -1,0 +1,81 @@
+{
+  "ticker": "DSV.CO",
+  "company": "DSV A/S",
+  "analysis_date": "2026-04-18",
+  "verdict": "Watch",
+  "average_score": 6.6,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 6,
+    "management": 8,
+    "business_economics": 6,
+    "balance_sheet": 6,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "World's #1 global freight forwarder post-Schenker (~DKK 310bn pro-forma revenue, ~90 countries)",
+    "Scale-based procurement moat widened vs Kuehne+Nagel and DHL Global Forwarding",
+    "Management's 4-for-4 track record integrating transformational M&A (UTi, Panalpina, GIL, Schenker)",
+    "Schenker integration running two years ahead of original schedule (end-2026 vs end-2028)",
+    "Asset-light model with 1.1% capex/revenue and 120%+ historical FCF conversion",
+    "Schenker partially equity-funded (DKK 37.5bn) — disciplined balance-sheet management",
+    "Strong liquidity (DKK 10.5B cash + DKK 8.4B undrawn RCF) and investment-grade ratings (Moody's A3 stable, S&P A-)",
+    "DKK-denominated DK listing — tax-optimised for Danish ASK investor (17% lagerbeskatning)"
+  ],
+  "key_risks": [
+    "Margin recovery short of 10% — if post-integration margin stalls at 8.5–9%, IV resets toward DKK 1,800–2,000",
+    "Logistics down-cycle during integration compounds Schenker drag",
+    "Leverage elevated (Debt/EBITDA 4.0x, interest coverage 4.3x) and S&P on Negative outlook",
+    "Thin price MOS vs conservative IV — negative -18% to -29% vs bear scenarios",
+    "German union constraints (two-year no-layoff pledge) limit early cost-take",
+    "Concentrated change: new CEO + largest deal ever within 7 months",
+    "Trailing ROIC 7.6% below estimated WACC ~10% — technically destroying value on trailing basis",
+    "Wide scenario dispersion (bear-to-bull ~2.2x) increases outcome uncertainty"
+  ],
+  "red_flags": [
+    "FY2025 ROIC of 7.6% is lowest since 2016 and below WACC",
+    "Operating margin 7.9% is the lowest DSV has reported in a decade",
+    "S&P A- on Negative outlook — downgrade to BBB+ plausible under stress",
+    "Current ratio 1.0x is tightest in visible history",
+    "Integration special items of DKK 6.5B expected for 2026 — roughly a quarter of EBIT guidance",
+    "Share count rose ~30% from Oct 2024 rights issue; buybacks paused FY2025",
+    "Negative MOS vs bear IV under both quant (-28.6%) and analyst-adjusted (-18.1%) definitions",
+    "Monte Carlo P(IV > Price) = 100% is suspiciously clean — input distributions don't stress margin failure"
+  ],
+  "buy_triggers": [
+    "Drawdown to DKK 1,450–1,550 with Q2 2026 integration update confirming synergy pace",
+    "Q2/Q3 2026 operating margin above 9% on trailing-4Q basis",
+    "Second add on further drawdown to DKK 1,400 with thesis intact (capped at 5% total)"
+  ],
+  "sell_triggers": [
+    "Q3 2026+ EBIT run-rate implies FY2026 EBIT below DKK 22B",
+    "Operating margin stuck below 8.5% into 2027",
+    "New transformational M&A before Schenker is fully digested",
+    "Net Debt/EBITDA rising above 3.0x for non-cyclical reasons",
+    "Price reaches DKK 3,000+ (upper bound of adjusted base IV)"
+  ],
+  "valuation_summary": "Quant DCF yields Bear/Base/Bull IV of DKK 1,332 / 2,516 / 3,897 with MC P(IV>Price)=100% and sensitivity grid IV range DKK 2,394–4,033; Valuation Analyst adjusts to DKK 1,450 / 2,250 / 3,200 to reflect DKK 800M synergies already captured, integration risk vs static-margin assumption, and a 15–16x exit multiple. At DKK 1,712.50 price sits 18% above adjusted bear and 24% below adjusted base — thin price MOS with ~24% upside to adjusted base and ~65–75% upside to bull if synergies fully land.",
+  "iv_conservative": 1332.1,
+  "iv_base": 2516.24,
+  "iv_bull": 3896.75,
+  "iv_currency": "DKK",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -22.2,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [2394.32, 4032.93],
+  "compact_checklist": [
+    "Business: DSV is the world's #1 global freight forwarder (post-Schenker, ~DKK 310bn pro-forma revenue across ~90 countries), arranging air, sea, and road movement of industrial cargo for enterprise shippers and earning the spread between wholesale carrier capacity and retail shipping rates plus warehousing/customs fees.",
+    "Moat: Scale-based cost advantage — only DSV, Kuehne+Nagel, and DHL Global Forwarding bring enough volume to extract procurement leverage from carriers, and a 90-country network built over 30+ years via 60+ acquisitions is functionally unreplicable by a new entrant.",
+    "Economics: Legacy DSV earned 20.5% ROIC (FY2022) on a 1.1%-of-revenue capex base with 120%+ FCF conversion; FY2025's 7.6% ROIC is trough-of-integration distortion (Schenker goodwill in the denominator plus integration charges in the numerator), and DKK 18.9B FY2025 FCF proves the cash engine is intact.",
+    "Management: Management has integrated UTi, Panalpina, Agility GIL, and now Schenker on or ahead of plan over 20 years, funded Schenker with DKK 37.5bn of equity rather than pure debt, paused buybacks to prioritize deleveraging, and pulled the Schenker integration completion date forward by two years to end-2026.",
+    "Debt risk: Net Debt/EBITDA 2.3x and interest coverage 4.3x are elevated but investment-grade (Moody's A3 stable, S&P A- negative); a stress test at a 30% revenue drop still produces positive FCF and covered debt service, so DSV survives a bad two-year cycle without equity raises.",
+    "Price: At DKK 1,712.50 the market is paying roughly for management's DKK 23–25.5B FY2026 EBIT guidance to land on plan with no credit for synergy upside — the thesis requires the DKK 9B run-rate synergies to flow through by 2027 and operating margin to rebuild toward 10%+.",
+    "Margin of safety: Price sits ~18% above my adjusted bear IV (DKK 1,450) and ~24% below my adjusted base IV (DKK 2,250), yielding thin price MOS but a 4:1 upside-to-downside asymmetry backed by a #1 global franchise with four consecutive successful integrations.",
+    "Thesis breaker: Sell if Q3 2026 or later EBIT run-rate implies FY2026 EBIT below DKK 22B, operating margin stays below 8.5% into 2027, Net Debt/EBITDA rises above 3.0x for non-cyclical reasons, or management announces new transformational M&A before Schenker is fully digested."
+  ],
+  "source_summary": "Based on yfinance-fetched financials (2026-04-18), deterministic src/quant DCF model output (2026-03-22), DSV 2025 Annual Report announcement (2026-02-04) and FY2025 investor presentation, Moody's (2025-11-13) and S&P (2025-12-03) credit commentary, and web searches covering Schenker integration progress, 2026 freight-market outlook, and analyst price targets. No material staleness — all key data points within six weeks of analysis date.",
+  "confidence": "medium",
+  "change_notes": ""
+}

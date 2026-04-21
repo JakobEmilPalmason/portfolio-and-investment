@@ -1,6 +1,6 @@
 # Financial Data: DSV.CO — DSV A/S
 
-**Generated:** 2026-03-15 22:32 UTC
+**Generated:** 2026-04-18 15:06 UTC
 **Source:** Yahoo Finance (yfinance)
 **Reporting Currency:** DKK | **Trading Currency:** DKK
 **Sector:** Industrials | **Industry:** Integrated Freight & Logistics
@@ -13,15 +13,15 @@
 
 | Metric | Value |
 |--------|-------|
-| Current Price | DKK 1,590.50 |
-| Market Cap | DKK 376.5B |
-| Enterprise Value | DKK 462.8B |
+| Current Price | DKK 1,712.50 |
+| Market Cap | DKK 405.4B |
+| Enterprise Value | DKK 491.8B |
 | 52-Week High | DKK 1,913.50 |
-| 52-Week Low | DKK 1,053.50 |
-| Position in 52-Week Range | 62% |
-| Beta | 1.07 |
+| 52-Week Low | DKK 1,189.50 |
+| Position in 52-Week Range | 72% |
+| Beta | 1.02 |
 | Shares Outstanding | 236.7M |
-| Dividend Yield | 0.44% |
+| Dividend Yield | 0.41% |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Trailing P/E | 44.8x |
-| Forward P/E | 18.1x |
-| EV/EBITDA | 21.5x |
-| EV/Revenue | 1.9x |
-| P/FCF | 15.0x |
-| P/S | 1.5x |
-| P/B | 3.2x |
+| Trailing P/E | 48.3x |
+| Forward P/E | 19.6x |
+| EV/EBITDA | 22.8x |
+| EV/Revenue | 2.0x |
+| P/FCF | 16.1x |
+| P/S | 1.6x |
+| P/B | 3.5x |
 
 ---
 
@@ -43,13 +43,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Target Mean | DKK 2,055.16 |
-| Target Median | DKK 2,094.00 |
+| Target Mean | DKK 2,038.53 |
+| Target Median | DKK 2,050.00 |
 | Target High | DKK 2,300.00 |
 | Target Low | DKK 1,580.00 |
 | Number of Analysts | 19 |
-| Forward EPS | $88.04 |
-| Trailing EPS | $35.47 |
+| Forward EPS | $87.46 |
+| Trailing EPS | $35.45 |
 
 ---
 
@@ -142,13 +142,13 @@
 
 | Period | Price | Change |
 |--------|-------|--------|
-| Current | DKK 1,590.50 | — |
-| 1 Month Ago | DKK 1,690.00 | -5.9% |
-| 3 Months Ago | DKK 1,576.00 | +0.9% |
-| 6 Months Ago | DKK 1,364.50 | +16.6% |
+| Current | DKK 1,712.50 | — |
+| 1 Month Ago | DKK 1,621.81 | +5.6% |
+| 3 Months Ago | DKK 1,770.16 | -3.3% |
+| 6 Months Ago | DKK 1,274.35 | +34.4% |
 | 1 Year Ago | n/a | n/a |
-| 52-Week High | DKK 1,913.50 (2026-02-09) | -16.9% from current |
-| 52-Week Low | DKK 1,053.50 (2025-04-09) | +51.0% from current |
+| 52-Week High | DKK 1,905.06 (2026-02-12) | -10.1% from current |
+| 52-Week Low | DKK 1,184.25 (2025-04-22) | +44.6% from current |
 
 ---
 

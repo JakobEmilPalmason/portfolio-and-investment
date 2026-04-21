@@ -1,0 +1,81 @@
+{
+  "ticker": "UNH",
+  "company": "UnitedHealth Group Incorporated",
+  "analysis_date": "2026-04-18",
+  "verdict": "Watch",
+  "average_score": 6.25,
+  "umbrella_scores": {
+    "circle_of_competence": 6,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 5,
+    "balance_sheet": 6,
+    "valuation": 7,
+    "margin_of_safety": 6,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Scale moat in national provider networks — largest US health insurer by members",
+    "Hemsley returned as CEO with $25M personal open-market purchase at ~$288",
+    "Low SBC (~0.2% of revenue) and 15-year dividend growth streak",
+    "Optum vertical integration (#1 MA, top-3 PBM, largest US physician employer)",
+    "FCF conversion remained above 100% of net income even in down year (133% in FY25)",
+    "Asset-light, float-funded insurance model with low capex (~0.8% of revenue)",
+    "Historically 17-18% ROIC and 8.7% operating margin through FY23",
+    "Low beta (0.41) and durable recurring premium revenue"
+  ],
+  "key_risks": [
+    "Live DOJ criminal probe into MA billing — scope expanded to OptumRx physician comp Feb 2026",
+    "Medicare Advantage margin compression — FY25 MCR 88.9%, FY26 guide 88.8% (no reversion)",
+    "OptumHealth swung from $7.8B profit (FY24) to $278M operating loss (FY25)",
+    "Balance sheet trajectory negative — debt/EBITDA 3.4x, coverage 4.7x, three agencies acted negative",
+    "Tangible book negative — $100B+ goodwill on $94B equity; second impairment would flow through",
+    "CEO succession unresolved — Hemsley is 73 and came back unplanned",
+    "Revenue likely to shrink in 2026 — first time as public company",
+    "Wide IV dispersion ($300–$520) and no clean near-term catalyst"
+  ],
+  "red_flags": [
+    "DOJ criminal probe scope widening (Feb 2026 OptumRx expansion)",
+    "Three credit agencies acted negative within three months of 2025 (Moody's, S&P, AM Best)",
+    "Gross margin compressed 610 bps over three years (24.6% → 18.5%)",
+    "Buyback cut from $9.0B (FY24) to $5.5B (FY25) in the same year stock hit $234",
+    "OptumHealth GAAP operating loss — first in modern era for strategic differentiator segment",
+    "Management guidance withdrawn mid-2025; shareholder lawsuits allege delayed disclosure",
+    "Hemsley personal investments via Cloverfields Capital raise conflict-of-interest flag (WSJ Feb 2026)",
+    "$8.3B LATAM divestiture losses in FY25 plus Change Healthcare cyberattack costs ($2.45B+)"
+  ],
+  "buy_triggers": [
+    "Price falls below $290 (improves MOS to 3-5% against stressed bear IV of $300)",
+    "Two consecutive quarters of MCR improvement data — 2027 Q2-Q3 MCR trending below 88%",
+    "DOJ probe resolved or materially narrowed (civil settlement with fines only, no structural remedy)"
+  ],
+  "sell_triggers": [
+    "MCR guidance stays above 88% for 2027 after a full year of repricing effort",
+    "DOJ settlement forces structural change (Optum divestiture, MA coding restrictions, criminal findings)",
+    "OptumHealth or OptumRx revenue growth falls below 5% for two consecutive quarters",
+    "Third major guidance cut or accounting restatement",
+    "Stock trades above base IV of $380 with no underlying business change — trim"
+  ],
+  "valuation_summary": "Bear/Base/Bull IV $300/$380/$520 (USD) vs. current $324.63 — modestly undervalued on normalized earnings but trading 8% above stressed bear, so price MOS is thin; the protection is business durability, not entry price.",
+  "iv_conservative": 300,
+  "iv_base": 380,
+  "iv_bull": 520,
+  "iv_currency": "USD",
+  "iv_source": "ai_estimate",
+  "mos_at_analysis": -8.21,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [494.39, 864.69],
+  "compact_checklist": [
+    "Business: UnitedHealth sells health insurance to employers, seniors (Medicare Advantage), and Medicaid members through UnitedHealthcare, and sells healthcare services (PBM via OptumRx, physician/clinic delivery via OptumHealth, data/analytics via OptumInsight) through Optum — a $447B revenue payor-plus-services combination where customers keep buying because employer networks are sticky, MA enrollment auto-renews at 90%+ retention, and CMS payments are formulaic.",
+    "Moat: A genuine scale moat in national provider networks that smaller payors cannot replicate, reinforced by 20+ years of Medicare Advantage regulatory/data infrastructure and Optum's vertical integration — but meaningful slices of historical excess return came from MA diagnosis-coding practices and PBM economics that are now specifically under DOJ criminal probe and FTC/Congressional attack.",
+    "Economics: Historically strong (17.9% ROIC and 8.7% operating margin in FY2023 on an asset-light float-funded model with 110%+ FCF conversion), but FY2025 reset the engine to 9.7% ROIC, 4.2% operating margin, and $16.1B FCF as MA medical cost ratio jumped to 88.9% and OptumHealth swung from $7.8B profit to a $278M operating loss.",
+    "Management: Stephen Hemsley returned as CEO in May 2025 after running UNH 2006–2017 and personally bought $25M of shares at ~$288 with his own money, SBC is a genuinely low 0.2% of revenue, and the dividend has grown ~15 straight years — but the Witty-era Change Healthcare breach ($2.45B+ and 193M records), the 2025 guidance withdrawal, and a buyback cut from $9.0B to $5.5B in a year the stock hit $234 are real stains on capital allocation.",
+    "Debt risk: Investment-grade and survivable — $54B net debt against ~$23B depressed EBITDA (3.4x) with 4.7x interest coverage, laddered maturities, and $28B in cash/short-term investments — but every trend arrow is negative (Moody's, S&P, and AM Best all acted negative within three months of 2025), tangible book is already negative from $100B+ of goodwill, and a second OptumHealth impairment would flow straight through equity.",
+    "Price: At $325, the market is pricing in a slow, messy recovery — roughly 16.1x forward $20 EPS and implying MCR normalizes toward ~86% by 2027–28 with no catastrophic DOJ outcome and Optum stabilizing — which is a reasonable base case, not a pessimistic one, and does not price in the full 8.5% historical margin returning.",
+    "Margin of safety: Thin on price (current $325 sits ~8% above my stressed bear IV of $300, and the quant model's \"100% P(IV > Price)\" is unreliable because it holds depressed margin constant) but strong on business (#1 MA franchise, top-3 PBM, largest US physician employer, probability-weighted EV around $385 for ~18% expected return) — so the protection comes from business durability and optionality to add below $290, not from today's entry price.",
+    "Thesis breaker: I sell if any one of these lands — MCR guidance stays above 88% for 2027 after a full year of repricing effort, a DOJ settlement forces material structural remedies (forced Optum divestiture, MA coding restrictions, or criminal findings at scale), Optum Health or Optum Rx revenue growth falls below 5% for two consecutive quarters, or management delivers a third major guidance cut or an accounting restatement."
+  ],
+  "source_summary": "Yahoo Finance auto-fetched financials.md (2026-04-18), deterministic quant DCF model (context/UNH/quant-valuation.json — anchor rejected by valuation analyst due to depressed-margin input), WebSearch covering UnitedHealth FY2025 results (Jan 27, 2026), Q4 2025 prepared remarks, DOJ probe coverage (WSJ via Becker's, TechTarget), CEO transition (UNH PR 5/13/2025), credit agency actions (Moody's/S&P June 2025, AM Best Aug 2025), CMS 2027 MA rate (24/7 Wall St), peer multiples (stockanalysis.com), and training knowledge on US managed care. FY2026 Q1 releases 2026-04-21 (after this report).",
+  "confidence": "medium",
+  "change_notes": ""
+}
