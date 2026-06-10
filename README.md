@@ -1,8 +1,10 @@
 # Investment Analysis Workbench
 
-A Buffett-style equity research pipeline powered by Claude Code agents, paired with a deterministic DCF engine, a paper-trading ledger with a policy engine, and a Streamlit dashboard. Each week the system scans a few hundred names, triages them down to a handful of deep dives, runs a structured 8-part analysis on each, and tracks every decision in a persistent research queue.
+An attempt to split investment research between AI and humans according to what each side is good at. The AI does the reading: a few hundred tickers scanned every week, triaged down to a handful of deep dives, each run through the same 8-question Buffett-style analysis. Real financial data (yfinance, SEC EDGAR) and a deterministic DCF model anchor the numbers, so the agents reason around verified figures instead of inventing their own. The human keeps the judgment calls: what to buy, when, and how much.
 
-To date: 100+ companies fully analyzed across weekly pipeline cycles, each producing a narrative report and a machine-readable JSON summary.
+The aim is a reproducible quick scan for businesses worth a closer look. The process doesn't change from week to week, and every verdict is written down, so when it gets something wrong you can go back and see where.
+
+To date: 100+ companies fully analyzed across weekly pipeline cycles, each with a narrative report and a machine-readable JSON summary. Under the hood: Claude Code agents, a quant DCF engine, a paper-trading ledger with a policy engine, and a Streamlit dashboard.
 
 ## Philosophy
 
