@@ -473,7 +473,7 @@ function sortBy(key) {{
 function tsvCell(v) {{
   if (v == null) return '';
   if (typeof v === 'number') return Number.isFinite(v) ? String(v) : '';
-  return String(v).replace(/[\t\r\n]+/g, ' ');
+  return String(v).replace(/[\\t\\r\\n]+/g, ' ');
 }}
 
 function buildTSV() {{
