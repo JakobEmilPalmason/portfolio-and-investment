@@ -1,155 +1,139 @@
 # Investment Analysis Workbench
 
-A Buffett-style investment analysis system powered by Claude Code agents. Each "umbrella" of analysis is handled by a specialized agent role, producing structured markdown and JSON reports.
+A Buffett-style equity research pipeline powered by Claude Code agents, paired with a deterministic DCF engine, a paper-trading ledger with a policy engine, and a Streamlit dashboard. Each week the system scans a few hundred names, triages them down to a handful of deep dives, runs a structured 8-part analysis on each, and tracks every decision in a persistent research queue.
+
+To date: 100+ companies fully analyzed across weekly pipeline cycles, each producing a narrative report and a machine-readable JSON summary.
 
 ## Philosophy
 
-This framework is built around a simple idea: **buy a wonderful business at a sensible price, with high confidence you understand it.** If you don't have that confidence, the right move is to do nothing.
+The framework is built around one idea: **buy a wonderful business at a sensible price, with high confidence you understand it.** If you don't have that confidence, the right move is to do nothing.
 
-The analysis is organized into 8 umbrellas, each answering a core question:
+Every full analysis answers 8 questions, each handled by a specialized agent:
 
 | # | Umbrella | Core Question |
 |---|----------|---------------|
 | 1 | Circle of Competence | Can you explain how this business makes money in plain language? |
 | 2 | Durable Competitive Advantage | Why will this company still be strong in 10 years? |
 | 3 | Management & Capital Allocation | Do they act like owners? |
-| 4 | Business Economics | High, stable returns on capital -- not just growth? |
-| 5 | Balance Sheet Safety | Can it survive a bad 2-3 years without raising money? |
+| 4 | Business Economics | High, stable returns on capital — not just growth? |
+| 5 | Balance Sheet Safety | Can it survive a bad 2–3 years without raising money? |
 | 6 | Valuation vs Intrinsic Value | What is it worth based on owner earnings? |
 | 7 | Margin of Safety | Is there a gap between price and conservative value? |
 | 8 | Temperament & Time Horizon | If it drops 30% but the business is intact, do you panic? |
 
-Plus a **compact checklist** -- 8 forced sentences every investor should be able to recite about any position they own.
-
-## Commands
-
-### Option 1: Inside Claude Code (Primary)
-
-Open this project in Claude Code and say natural phrases. Claude Code dispatches the correct pipeline stage automatically.
-
-```
-# Full pipeline: universe → candidates → triage → analyze
-run scan
-triage latest
-analyze AAPL
-
-# Individual stages
-run A1
-run A2
-run B1
-run B2
-triage 2026-03-11
-analyze MSFT
-```
-
-### Option 2: Shell Script (Batch/CI)
-
-```bash
-# Build universe and filter candidates (A1 + A2)
-./run.sh scan
-
-# Triage candidates (B1 + B2, ≤8 deep_dives)
-./run.sh triage latest
-./run.sh triage 2026-03-11
-
-# Full 8-umbrella analysis for a ticker
-./run.sh analyze AAPL
-
-# Change detection — not yet implemented
-./run.sh monitor AAPL
-```
-
-Requires `claude` CLI installed and authenticated.
+Plus a **compact checklist** — 8 forced sentences every investor should be able to recite about any position they own.
 
 ## Pipeline
 
 ```
-scan         →  scans/YYYY-MM-DD/universe.json          (A1: raw universe)
-             →  scans/YYYY-MM-DD/candidates.json         (A2: filtered + ranked)
-
-triage       →  triage/YYYY-MM-DD/b1-advance.json        (B1: advance set)
-             →  triage/YYYY-MM-DD/triage.json             (B2: ≤8 deep_dives + monitor)
-
-analyze      →  reports/TICKER/FINAL-REPORT.md            (narrative report)
-             →  reports/TICKER/FINAL-REPORT.json           (structured summary)
-
-queue        →  queue/queue.json                          (living state — updated by triage + analyze)
+Stage A1  Universe Assembly   →  runs/{week}/scan/      150–400 raw names from curated lists,
+                                                        watchlist, tracked tickers, web signals
+Stage A2  Candidate Filter    →  runs/{week}/scan/      ranked candidate set (80–150 names)
+Stage B1  Fast Triage         →  runs/{week}/triage/    mechanical advance/hold/reject pass
+Stage B2  Focused Triage      →  runs/{week}/triage/    ≤8 deep dives per cycle, with reasons
+Fetch     Financial Data      →  context/{TICKER}/      yfinance + SEC EDGAR (XBRL)
+Quant     Deterministic DCF   →  context/{TICKER}/      bear/base/bull IV, sensitivity, Monte Carlo
+Stage C   Full Analysis       →  runs/{week}/reports/   8 umbrellas + checklist + final report
+Queue     Living State        →  queue/queue.json       every ticker the pipeline has touched
 ```
 
-## Adding Context
+Each week's output lives in one folder: `runs/weekNN_DD.MM/{scan,triage,reports}/`. Global state (`context/`, `queue/`, `seeds/`) lives at the repo root.
 
-Place supporting documents in `context/{TICKER}/` before running:
+### Multi-agent analysis
+
+A full analysis spawns agents in parallel batches — a business analyst (umbrellas 1–3), a financial analyst (4–5), and a valuation analyst (6–8) — followed by a checklist agent and a synthesis agent that assembles `FINAL-REPORT.md` and `FINAL-REPORT.json` and updates the queue. All agents follow the same output schema (`prompts/_shared-format.md`): key findings, detailed analysis, bull/bear signal summary, red flags, and a 1–10 score.
+
+### Quant valuation engine (`src/quant/`)
+
+A deterministic multi-stage DCF that runs in under a second with no LLM calls:
+
+- Bear / base / bull per-share intrinsic value
+- WACC derived from CAPM (beta, cost of equity, cost of debt)
+- Owner earnings with maintenance vs growth capex separation
+- 5×5 sensitivity grid across growth rate × WACC
+- Monte Carlo (10,000 simulations) producing P(IV > price)
+
+The valuation agents use the quant output as an anchor and stress-test its assumptions; the assembler prefers model IV over AI-estimated IV and records the provenance in the report JSON.
+
+## Portfolio layer
+
+**Paper-trading ledger** (`scripts/paper_trade.py`, SQLite) records buys, sells, shorts, and covers with full transaction history. Every trade passes through a policy engine first: single-name weight caps, sector concentration limits, gross/net exposure bounds, verdict gates (no buying Pass-verdict names), thesis-break blocks, and margin-of-safety warnings.
+
+**Pre-buy checklist** (`scripts/prebuy-check.py`) is a three-condition gate before any buy: quality (verdict, scores), price vs conservative IV, and a written conviction check.
+
+**AI allocator** (`prompts/allocator.md`) produces conviction-weighted portfolio proposals from the report JSONs and live prices. Multiple agent runs are stored side by side and compared on the dashboard.
+
+**Portfolio simulator** (`scripts/portfolio-sim.py`) shows what a snapshot allocation would look like from the current queue — ranked by verdict, score, and confidence.
+
+**Dashboard** (`dashboard/`, Streamlit) — read-only views over the ledger, performance vs SPY, research reports, pre-buy status, the simulator, agent allocation comparisons, and flag tracking.
+
+```bash
+./run.sh dashboard    # http://localhost:5050
+```
+
+## Commands
+
+Inside Claude Code, natural phrases dispatch the right stage: `run scan`, `triage latest`, `analyze AAPL`, `prebuy GILD`, `buy V`, `show holdings`. The same stages run from the shell:
+
+```bash
+./run.sh scan                       # A1 + A2: universe → ranked candidates
+./run.sh triage latest              # B1 + B2: candidates → ≤8 deep dives
+./run.sh fetch AAPL MSFT            # financial data via yfinance
+./run.sh analyze AAPL               # full 8-umbrella analysis + final report
+./run.sh prebuy GILD                # three-condition pre-buy gate
+./run.sh buy V --price 312.50 --amount 3000 --iv 380
+./run.sh holdings                   # current portfolio state
+./run.sh ledger refresh             # update prices
+./run.sh allocate 250000 --label claude-opus
+./run.sh portfolio 250000           # snapshot simulator
+./run.sh dashboard                  # Streamlit dashboard
+./run.sh snapshot                   # daily performance snapshot
+```
+
+The quant engine also runs standalone:
+
+```bash
+python3 -m src.quant AAPL --auto-wacc --owner-earnings --sensitivity --monte-carlo
+```
+
+## Repository layout
 
 ```
-context/AAPL/
-  10k-notes.md
-  q4-earnings-transcript.md
-  financials.md
-  competitor-analysis.md
+prompts/      agent prompts: 8 umbrellas, scan/triage stages, assembler, allocator
+src/          portfolio engine, database, snapshots + src/quant/ DCF engine
+scripts/      fetch, prebuy, ledger, simulator, allocation tooling
+dashboard/    Streamlit app (8 pages)
+runs/         weekly pipeline output: scan, triage, reports per week
+context/      per-ticker financials, quant valuations, user research
+queue/        living research queue (state machine per ticker)
+portfolio/    ledger state, allocations, pending trades, config
+db/           SQLite database + schema
+evals/        evidence verification: claim decomposition + accuracy evals
+tests/        pytest suite
 ```
 
-Agents will read these files and incorporate them into the analysis. More context = better analysis. Without context, agents use web search and training knowledge.
+## Research queue
 
-## Output Structure
+`queue/queue.json` tracks the state of every ticker the pipeline has touched:
 
-```
-reports/AAPL/
-  01-circle-of-competence.md
-  02-durable-competitive-advantage.md
-  03-management-capital-allocation.md
-  04-business-economics.md
-  05-balance-sheet-safety.md
-  06-valuation-intrinsic-value.md
-  07-margin-of-safety.md
-  08-temperament-time-horizon.md
-  09-compact-checklist.md
-  FINAL-REPORT.md              <- narrative report
-  FINAL-REPORT.json            <- structured summary (verdict, scores, flags, triggers)
-```
+`inbox` → `triage` → `watchlist` / `deep_research` → `monitor_only` / `approved` / `owned` / `rejected`
 
-Every section (01-08) follows the same format:
-- **Key Findings** table with significance ratings
-- **Detailed Analysis** (3-6 paragraphs, plain language)
-- **Signal Summary** (bull/bear case, confidence level)
-- **Red Flags**
-- **Score** (1-10)
-
-The **FINAL-REPORT.md** includes:
-- Verdict: **Own / Watch / Pass**
-- Score dashboard (all 8 umbrella scores)
-- Compact checklist (8 forced sentences)
-- Full analysis sections
-- Buy/sell triggers
-
-The **FINAL-REPORT.json** includes the same data in structured form: umbrella scores, key strengths, key risks, red flags, buy/sell triggers, valuation summary. Used by the queue and future monitor/diff engine.
-
-## Research Queue
-
-`queue/queue.json` tracks the state of every ticker the pipeline has touched.
-
-States: `inbox` / `triage` / `watchlist` / `deep_research` / `approved` / `owned` / `monitor_only` / `rejected`
-
-The queue is updated automatically after triage (B2) and after analyze (assembler). `approved` and `owned` states require manual update.
-
-Human-readable view: `queue/queue.md`
+Triage (B2) and analysis (assembler) update it automatically; `approved` and `owned` are manual decisions.
 
 ## Verdicts
 
-- **Own** -- Average score >= 7, no individual score below 4, margin of safety >= 6. A business you'd own for 5+ years.
-- **Watch** -- Average score 5-7 or one critical weakness. Interesting but needs a better price or more conviction.
-- **Pass** -- Average score < 5, multiple weak scores, or thin margin of safety. Don't understand it, not good enough, or too expensive.
+- **Own** — average score ≥ 7, no umbrella below 4, margin of safety ≥ 6. A business you'd hold for 5+ years.
+- **Watch** — average 5–7 or one critical weakness. Interesting, but needs a better price or more conviction.
+- **Pass** — average < 5, multiple weak scores, or no margin of safety.
 
-## Customization
+## Setup
 
-- Edit `prompts/_shared-format.md` to change the output format for all agents
-- Edit individual prompt files to adjust sub-questions or scoring rubrics
-- Add domain-specific prompts for sectors you analyze frequently
+```bash
+pip install -r requirements.txt     # yfinance, streamlit, plotly, edgartools, pydantic
+```
 
-## Prerequisites
+The analysis stages require the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated. The quant engine, ledger, simulator, and dashboard run without it.
 
-- [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and authenticated
-- For shell script mode: `claude` available in PATH
+## Disclaimer
 
-## Important Disclaimer
-
-This is an analysis framework, not financial advice. The system helps you think through investments systematically -- it does not tell you what to buy or sell. All analysis is generated by AI and may contain errors. Always do your own research and consult qualified professionals before making investment decisions.
+This is an analysis framework and a paper-trading system, not financial advice. All positions are simulated. Analysis is generated by AI and may contain errors. Do your own research and consult qualified professionals before making investment decisions.
