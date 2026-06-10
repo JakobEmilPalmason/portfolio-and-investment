@@ -8,11 +8,13 @@ To date: 100+ companies fully analyzed across weekly pipeline cycles, each with 
 
 ## Dashboard
 
-| Portfolio workspace | Research lab |
+| Report browser | Research lab |
 |:--:|:--:|
-| ![Portfolio workspace](docs/screenshots/portfolio.png) | ![Research lab](docs/screenshots/research.png) |
-| **Portfolio simulator** | **Agent comparison** |
-| ![Portfolio simulator](docs/screenshots/simulator.png) | ![Agent comparison](docs/screenshots/agents.png) |
+| ![Report browser](docs/screenshots/workspace-reports.png) | ![Research lab](docs/screenshots/research.png) |
+| **Own-verdict scoreboard** | **Pass-verdict scoreboard** |
+| ![Own-verdict scoreboard](docs/screenshots/own-verdict.png) | ![Pass-verdict scoreboard](docs/screenshots/pass-verdict.png) |
+
+A note on those bottom two panels, because right now they're hilarious: the system grades its own picks against the S&P, and so far the stocks it rejected are winning. Own verdicts have lagged SPY by about 12 points. Pass verdicts beat it by 30, led by Astera Labs, up nearly 200% after the system dismissed it. That's what Buffett-style discipline looks like in an AI melt-up: you pass on every rocket, on purpose, and the scoreboard makes you watch them fly. Keeping that score visible is the point.
 
 ## Philosophy
 
