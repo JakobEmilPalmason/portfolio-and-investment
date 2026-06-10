@@ -28,7 +28,7 @@ from src.price_fetcher import PriceFetcher  # noqa: E402
 from src.reporter import PerformanceReporter  # noqa: E402
 from src.snapshot import SnapshotEngine  # noqa: E402
 
-DEFAULT_DB_PATH = str(REPO_ROOT / "db" / "portfolio.db")
+DEFAULT_DB_PATH = str(REPO_ROOT / "data" / "db" / "portfolio.db")
 DEFAULT_REPO_ROOT = str(REPO_ROOT)
 DEFAULT_AGENT_ALLOCATIONS_SUBDIR = "week13_23.03"
 MONTH_LABELS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -729,7 +729,7 @@ def _historical_close(ticker: str, date_str: str) -> float | None:
     """Close price for `ticker` on `date_str` (YYYY-MM-DD), or the most recent
     trading day on or before that date.
 
-    Keeps the dashboard read-only by not touching `db/portfolio.db`. The
+    Keeps the dashboard read-only by not touching `data/db/portfolio.db`. The
     streamlit cache is long-lived (30 days) because historical prices are
     immutable. Returns None on any failure — callers fall back.
     """

@@ -23,7 +23,7 @@
 16. prompts/07-margin-of-safety.md
 17. prompts/08-temperament-time-horizon.md
 18. prompts/09-compact-checklist.md
-19. seeds/watchlist.json — Seed watchlist
+19. data/seeds/watchlist.json — Seed watchlist
 20. run.sh — Main command dispatcher
 21. run-analysis.sh — Analyze-only script (deprecated, still used internally)
 22. validate.sh — Pipeline output validator
@@ -44,7 +44,7 @@ When a user asks to analyze a stock (e.g., "analyze AAPL" or "run analysis on MS
 ### Step 1: Setup
 1. Create directory `reports/{TICKER}/` if it doesn't exist.
 2. Read `prompts/_shared-format.md` — this is the output schema all agents must follow.
-3. Check if `context/{TICKER}/` exists. If it does, read all files in it — this is user-provided research (10-K notes, earnings transcripts, financials). Pass this context to every agent.
+3. Check if `data/context/{TICKER}/` exists. If it does, read all files in it — this is user-provided research (10-K notes, earnings transcripts, financials). Pass this context to every agent.
 
 ### Step 2: Run Analysis Agents (3 parallel batches)
 Spawn 3 Agent subagents in parallel. Each agent gets:
@@ -87,7 +87,7 @@ Spawn one final agent:
 - Read prompt: `assembler.md`
 - Read ALL section files from `reports/{TICKER}/` (01-09)
 - Write output to: `reports/{TICKER}/FINAL-REPORT.md` AND `reports/{TICKER}/FINAL-REPORT.json`
-- After writing both files, update `queue/queue.json`: set `current_state = monitor_only`, `last_analysis_date = today`, `current_verdict` from FINAL-REPORT.json, `thesis_status = intact`, `next_required_action = monitor`
+- After writing both files, update `data/queue/queue.json`: set `current_state = monitor_only`, `last_analysis_date = today`, `current_verdict` from FINAL-REPORT.json, `thesis_status = intact`, `next_required_action = monitor`
 
 ### Step 5: Present Results
 After the final report is written, show the user:
@@ -104,7 +104,7 @@ Stage A2 (Candidate Filter)   →  scans/YYYY-MM-DD/   (candidates.json + csv + 
 Stage B1 (Fast Triage)        →  triage/YYYY-MM-DD/b1-*
 Stage B2 (Focused Triage)     →  triage/YYYY-MM-DD/triage.*
 Stage C  (Full Analysis)      →  reports/{TICKER}/
-Queue                         →  queue/queue.json
+Queue                         →  data/queue/queue.json
 ```
 
 ---
@@ -121,7 +121,7 @@ Merge candidates from multiple sources into a single raw universe JSON. Tag each
 
 ### Inputs
 1. **Tracked** — `reports/` directories → `source_bucket: tracked`
-2. **Seed** — `seeds/watchlist.json` → `source_bucket: seed`
+2. **Seed** — `data/seeds/watchlist.json` → `source_bucket: seed`
 3. **Built-in curated lists** (embedded in prompt, agent prior knowledge) → sector bucket names
 4. **Web searches** — up to 6 queries for event/signal buckets
 
@@ -129,7 +129,7 @@ Merge candidates from multiple sources into a single raw universe JSON. Tag each
 | bucket | how to populate |
 |--------|----------------|
 | `tracked` | existing `reports/` directories |
-| `seed` | `seeds/watchlist.json` |
+| `seed` | `data/seeds/watchlist.json` |
 | `large_cap_us_quality` | built-in list: ~30 US quality compounders |
 | `large_cap_europe_quality` | built-in list: ~20 European quality names |
 | `semis_and_infra` | built-in list: ~15 semiconductor + tech infra names |
@@ -264,7 +264,7 @@ Read `prompts/triage-stage-b2.md` — full execution template. Spawn one general
 Hard cap: **8 deep_dives per batch.** Additional high-conviction names become `monitor` with reason prefixed "Above-budget:". See `prompts/triage-stage-b2.md` for full rules.
 
 ### Queue update (after B2 completes)
-After writing triage output files, update `queue/queue.json`:
+After writing triage output files, update `data/queue/queue.json`:
 - B2 `deep_dive` → `current_state = deep_research`
 - B2 `monitor` → `current_state = watchlist`
 - B2 `discard` → `current_state = rejected`
@@ -294,7 +294,7 @@ After writing triage output files, update `queue/queue.json`:
 
 The queue is a living state file that tracks every ticker the pipeline has touched.
 
-### File: `queue/queue.json`
+### File: `data/queue/queue.json`
 
 One entry per ticker. Schema:
 ```json
@@ -335,7 +335,7 @@ Two pipeline steps update the queue automatically:
 
 **Manual updates:** `approved` and `owned` states require manual update. Owner notes and tags are always manual.
 
-### Human-readable view: `queue/queue.md`
+### Human-readable view: `data/queue/queue.md`
 Sections: Summary / Deep Research Pipeline / Watchlist / Monitor / Rejected.
 
 ---
@@ -371,7 +371,7 @@ If the user asks to run just one umbrella (e.g., "run umbrella 3 on AAPL" or "ju
 If the user asks to reassemble a report (e.g., "reassemble AAPL report"), run only Steps 3-4 using existing section files. Also write FINAL-REPORT.json and update queue.
 
 ## Adding Context
-Users can place supporting documents in `context/{TICKER}/` before running analysis:
+Users can place supporting documents in `data/context/{TICKER}/` before running analysis:
 - 10-K excerpts or notes
 - Earnings call transcripts
 - Custom financial spreadsheet exports
@@ -453,7 +453,7 @@ triage  →  triage/YYYY-MM-DD/b1-advance.json (B1)
 analyze →  reports/TICKER/FINAL-REPORT.md
         →  reports/TICKER/FINAL-REPORT.json
 
-queue   →  queue/queue.json  (updated by triage + analyze automatically)
+queue   →  data/queue/queue.json  (updated by triage + analyze automatically)
 ```
 
 ## Verdicts
@@ -561,7 +561,7 @@ List all directories under `reports/` to get currently tracked tickers. Each bec
 
 ## Step 2: Read seed list
 
-Read `seeds/watchlist.json`. Each seed entry becomes a candidate with `source_bucket: ["seed"]`. If a seed ticker is also tracked, merge: `source_bucket: ["tracked", "seed"]`.
+Read `data/seeds/watchlist.json`. Each seed entry becomes a candidate with `source_bucket: ["seed"]`. If a seed ticker is also tracked, merge: `source_bucket: ["tracked", "seed"]`.
 
 ---
 
@@ -961,7 +961,7 @@ The verdict is a framework, not a formula. End with: "If you don't have high con
 
 ---
 
-## Third Step: Update queue/queue.json
+## Third Step: Update data/queue/queue.json
 
 After writing both files, update the queue entry for this ticker:
 - current_state → "monitor_only" (unless already "approved" or "owned" — preserve those)
@@ -1281,7 +1281,7 @@ Final Synthesis Analyst. Produce exactly 8 forced sentences — one per core que
 
 ---
 
-# 19. seeds/watchlist.json
+# 19. data/seeds/watchlist.json
 
 ```json
 {
@@ -1369,7 +1369,7 @@ TODAY=$(date +%Y-%m-%d)
 # For umbrella 9 (checklist): includes all 8 section files as input
 # For assembler: includes all 9 section files, produces FINAL-REPORT.md and FINAL-REPORT.json
 # Pass/fail checks: every output must be non-empty; FINAL-REPORT.json must be valid JSON with verdict field
-# Context: if context/{TICKER}/ exists, all files are appended to every agent prompt
+# Context: if data/context/{TICKER}/ exists, all files are appended to every agent prompt
 ```
 
 ---
@@ -1432,9 +1432,9 @@ TODAY=$(date +%Y-%m-%d)
 │   ├── triage-stage-b1.md       ← Stage B1 execution template
 │   ├── triage-stage-b2.md       ← Stage B2 execution template
 │   └── monitor.md               ← monitor spec (not yet implemented)
-├── seeds/
+├── data/seeds/
 │   └── watchlist.json           ← manually curated seed tickers (20 names)
-├── context/
+├── data/context/
 │   └── {TICKER}/                ← user-provided research files (optional, per ticker)
 ├── scans/
 │   └── YYYY-MM-DD/              ← Stage A outputs (universe.json, candidates.json, etc.)
@@ -1442,6 +1442,6 @@ TODAY=$(date +%Y-%m-%d)
 │   └── YYYY-MM-DD/              ← Stage B outputs (b1-*.json, triage.json, etc.)
 ├── reports/
 │   └── {TICKER}/                ← Stage C outputs (01-09 sections + FINAL-REPORT.md/.json)
-└── queue/
+└── data/queue/
     └── queue.json               ← living state file, updated by triage (B2) and analyze (assembler)
 ```

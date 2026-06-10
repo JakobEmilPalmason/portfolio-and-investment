@@ -76,7 +76,7 @@ class TestSourceDocuments(unittest.TestCase):
             "period_end": "2025-09-30",
             "accession_number": "0000320193-25-000001",
             "source_url": "https://sec.gov/...",
-            "local_path": "context/AAPL/10-K-2025.html",
+            "local_path": "data/context/AAPL/10-K-2025.html",
             "content_hash": "abc123",
             "section_count": 12,
             "fetched_at": "2026-03-19T10:00:00",

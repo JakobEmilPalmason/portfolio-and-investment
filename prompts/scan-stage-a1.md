@@ -18,7 +18,7 @@ List all directories under `runs/*/reports/` to get currently tracked tickers. E
 
 ## Step 2: Read seed list
 
-Read `seeds/watchlist.json`. Each seed entry becomes a candidate with `source_bucket: ["seed"]`. If a seed ticker is also tracked, merge: `source_bucket: ["tracked", "seed"]`.
+Read `data/seeds/watchlist.json`. Each seed entry becomes a candidate with `source_bucket: ["seed"]`. If a seed ticker is also tracked, merge: `source_bucket: ["tracked", "seed"]`.
 
 ---
 

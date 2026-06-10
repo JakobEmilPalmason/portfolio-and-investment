@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """One-time golden fixture generator for evidence eval tests.
 
-Reads live DB (db/portfolio.db) and serializes SYK evidence data
+Reads live DB (data/db/portfolio.db) and serializes SYK evidence data
 into JSON fixtures for deterministic testing.
 
 Usage:

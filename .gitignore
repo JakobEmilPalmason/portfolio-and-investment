@@ -6,8 +6,8 @@ node_modules/
 cache/
 .claude/worktrees/
 .conductor/
-db/*.db-shm
-db/*.db-wal
+data/db/*.db-shm
+data/db/*.db-wal
 portfolio/allocations/
 portfolio/allocation-proposal.json
 portfolio/allocation-proposal.md

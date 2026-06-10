@@ -2,7 +2,7 @@
 
 Deterministic DCF, sensitivity analysis, and Monte Carlo simulation.
 Replaces AI-guessed valuations with auditable, reproducible models.
-Data source: fetch-financials.py (yfinance) -> context/{TICKER}/financials.md
+Data source: fetch-financials.py (yfinance) -> data/context/{TICKER}/financials.md
 """
 
 from .dcf import build_growth_schedule, build_inputs_from_financials, run_dcf, run_three_scenarios

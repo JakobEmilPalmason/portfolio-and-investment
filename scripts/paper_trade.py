@@ -38,7 +38,7 @@ from src.trade_executor import TradeExecutor
 from src.trade_proposer import TradeProposalGenerator
 
 STATE_MD = REPO_ROOT / "portfolio" / "portfolio-state.md"
-DB_PATH = "db/portfolio.db"
+DB_PATH = "data/db/portfolio.db"
 
 
 # ---------------------------------------------------------------------------

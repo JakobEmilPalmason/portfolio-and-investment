@@ -2,7 +2,7 @@
 Trade proposal generation from pipeline outputs.
 
 This module bridges the research pipeline and the portfolio ledger. It reads
-FINAL-REPORT.json files plus queue/queue.json, surfaces suggested actions, and
+FINAL-REPORT.json files plus data/queue/queue.json, surfaces suggested actions, and
 stores them as PENDING rows in trade_proposals. It never executes trades.
 """
 from __future__ import annotations
@@ -20,7 +20,7 @@ from src.price_fetcher import PriceFetcher, PriceNotAvailableError
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 RUNS_DIR = REPO_ROOT / "runs"
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
+QUEUE_FILE = REPO_ROOT / "data" / "queue" / "queue.json"
 
 BUY_STATES = frozenset({"deep_research", "monitor_only", "approved"})
 __all__ = ["TradeProposalGenerator"]

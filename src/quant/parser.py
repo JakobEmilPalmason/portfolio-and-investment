@@ -1,4 +1,4 @@
-"""Parse context/{TICKER}/financials.md (or .json) into FinancialData."""
+"""Parse data/context/{TICKER}/financials.md (or .json) into FinancialData."""
 
 from __future__ import annotations
 
@@ -215,9 +215,9 @@ def _load_from_json(path: Path) -> FinancialData:
 
 
 def parse_financials(ticker: str, context_dir: Path | None = None) -> FinancialData:
-    """Parse context/{TICKER}/financials.json (preferred) or financials.md into FinancialData."""
+    """Parse data/context/{TICKER}/financials.json (preferred) or financials.md into FinancialData."""
     if context_dir is None:
-        context_dir = REPO_ROOT / "context"
+        context_dir = REPO_ROOT / "data" / "context"
 
     # Try JSON first — structured, no parsing loss
     json_path = context_dir / ticker / "financials.json"

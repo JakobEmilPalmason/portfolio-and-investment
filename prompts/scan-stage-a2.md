@@ -140,7 +140,7 @@ Sort order: priority=high first, then medium, then low; within same priority: tr
 
 ### candidates.md
 - Open with this note verbatim:
-  > **Note on seed-origin names:** Tickers tagged `source_bucket=seed` are curated inputs from `seeds/watchlist.json`, not discovered names. They reflect prior knowledge or personal watchlist intent rather than fresh market signals.
+  > **Note on seed-origin names:** Tickers tagged `source_bucket=seed` are curated inputs from `data/seeds/watchlist.json`, not discovered names. They reflect prior knowledge or personal watchlist intent rather than fresh market signals.
 - Summary section: total count, counts by bucket, counts by sector, counts by priority, list of triage_rec=yes tickers
 - Full flat table: `ticker | company | sector | style_tag | source_bucket | short_reason | possible_disqualifier | mkt_cap_tier | priority | triage_rec | confidence`
 - Close with: "Next step: Run Stage B1 triage. B1 reads the full candidates.json and assigns a verdict (advance / hold / reject) to every name independently."

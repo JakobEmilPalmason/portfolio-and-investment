@@ -13,7 +13,7 @@ This prompt drives a Stage A universe scan. Stage A is shallow broad discovery o
 ## Inputs
 
 1. **Tracked tickers** — list all directories under `reports/` to get currently tracked names (`already_analyzed=true`)
-2. **Seed list** — read `seeds/watchlist.json` for curated inputs (`source_bucket=seed`, `already_analyzed=false` unless also in tracked)
+2. **Seed list** — read `data/seeds/watchlist.json` for curated inputs (`source_bucket=seed`, `already_analyzed=false` unless also in tracked)
 3. **Web search** — use WebSearch for the 4 queries below; max 4 searches total
 
 ---
@@ -108,7 +108,7 @@ If a ticker appears in multiple buckets, create ONE entry with all applicable bu
 
 ### candidates.md
 - Open with this note verbatim:
-  > **Note on seed-origin names:** Tickers tagged `source_bucket=seed` are curated inputs from `seeds/watchlist.json`, not discovered names. They reflect prior knowledge or personal watchlist intent rather than fresh market signals.
+  > **Note on seed-origin names:** Tickers tagged `source_bucket=seed` are curated inputs from `data/seeds/watchlist.json`, not discovered names. They reflect prior knowledge or personal watchlist intent rather than fresh market signals.
 - Summary section: total count, counts by bucket, counts by sector, counts by priority, list of triage_rec=yes tickers
 - Full flat table: `ticker | company | sector | style_tag | source_bucket | short_reason | possible_disqualifier | mkt_cap_tier | priority | triage_rec | confidence`
 - Close with: "Next step: Run Stage B triage on all triage_rec=yes names."

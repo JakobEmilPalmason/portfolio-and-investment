@@ -17,7 +17,7 @@ flowchart TD
     %% ===== INPUT SOURCES =====
     subgraph SOURCES["INPUT SOURCES"]
         direction LR
-        S1["seeds/watchlist.json"]:::source
+        S1["data/seeds/watchlist.json"]:::source
         S2["Tracked Reports<br/>runs/*/reports/"]:::source
         S3["8 Curated Sector Lists"]:::source
         S4["Web Searches<br/>6 event/signal queries"]:::source
@@ -58,7 +58,7 @@ flowchart TD
     A2_META --> B2
 
     %% ===== QUEUE =====
-    QUEUE["QUEUE<br/>queue/queue.json<br/>inbox | watchlist | deep_research<br/>monitor_only | approved | owned | rejected"]:::queuecls
+    QUEUE["QUEUE<br/>data/queue/queue.json<br/>inbox | watchlist | deep_research<br/>monitor_only | approved | owned | rejected"]:::queuecls
 
     B2 -->|"state updates"| QUEUE
     B1_HOLD -->|"inbox + rejected"| QUEUE
@@ -68,7 +68,7 @@ flowchart TD
         FETCH_FIN["fetch-financials.py<br/>yfinance &bull; 24h cache"]:::fetch
         FETCH_EDGAR["fetch-edgar.py<br/>SEC EDGAR XBRL"]:::fetch
         USER_CTX["User Context Files<br/>10-K notes, transcripts"]:::fetch
-        CTX["context/TICKER/<br/>financials.md + extras +<br/>quant-valuation.md/.json"]:::fetch
+        CTX["data/context/TICKER/<br/>financials.md + extras +<br/>quant-valuation.md/.json"]:::fetch
         FETCH_FIN --> CTX
         FETCH_EDGAR -->|"optional .md"| CTX
         USER_CTX --> CTX
@@ -139,7 +139,7 @@ flowchart TD
     CTX -->|"quant-valuation.json"| ASM
 
     %% ===== EVIDENCE SYSTEM =====
-    subgraph EV["EVIDENCE SYSTEM &mdash; db/portfolio.db"]
+    subgraph EV["EVIDENCE SYSTEM &mdash; data/db/portfolio.db"]
         SRC_D["source_documents"]:::evidence
         EXT_F["extracted_facts"]:::evidence
         VER["verify_claims.py<br/>fact-check"]:::evidence
@@ -154,7 +154,7 @@ flowchart TD
     REPORT_MD -->|"claims to check"| VER
 
     %% ===== DATABASE =====
-    subgraph DB["SQLite &mdash; db/portfolio.db"]
+    subgraph DB["SQLite &mdash; data/db/portfolio.db"]
         direction LR
         POS["positions"]:::dbcls
         LOTS["lots"]:::dbcls
@@ -254,7 +254,7 @@ flowchart TD
 
 1. **Main pipeline** flows top-to-bottom: Sources &rarr; A1 &rarr; A2 &rarr; B1 &rarr; B2 &rarr; Fetch &rarr; Quant &rarr; Stage C &rarr; Queue
 2. **Stage C parallelism**: 3 agent batches run concurrently (Business, Financial, Valuation), then Checklist and Assembler run sequentially
-3. **Quant models run before agents**: `src/quant` parses `financials.md`, runs DCF + WACC + Monte Carlo + sensitivity + owner earnings, and writes `quant-valuation.md` + `.json` to `context/{TICKER}/`. All analysis agents receive this as context. The Valuation Agent (06) uses it as its starting anchor. The Assembler prefers quant-model IV over AI-extracted IV when populating FINAL-REPORT.json.
+3. **Quant models run before agents**: `src/quant` parses `financials.md`, runs DCF + WACC + Monte Carlo + sensitivity + owner earnings, and writes `quant-valuation.md` + `.json` to `data/context/{TICKER}/`. All analysis agents receive this as context. The Valuation Agent (06) uses it as its starting anchor. The Assembler prefers quant-model IV over AI-extracted IV when populating FINAL-REPORT.json.
 4. **Queue is the central hub**: written by B2 and the Assembler; read by Allocator, Pre-Buy, Portfolio Sim, Policy Engine, and all Dashboard pages
 5. **FINAL-REPORT.json is the key artifact**: consumed by Allocator, Pre-Buy, Policy Engine, Simulator, and 3 Dashboard pages. Now includes `iv_source` (quant_model vs ai_estimate), `monte_carlo_prob_above_price`, and `sensitivity_iv_range`.
 6. **Two feedback loops** (dashed): reports feed back into B2 for refresh checks, and into the next scan cycle as tracked tickers

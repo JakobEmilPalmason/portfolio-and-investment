@@ -1,7 +1,7 @@
 {
   "ticker": "SYK",
   "period": "FY2025",
-  "source": "context/SYK/edgar-10k.md (XBRL via edgartools)",
+  "source": "data/context/SYK/edgar-10k.md (XBRL via edgartools)",
   "metrics": {
     "revenue": 25120000000,
     "operating_income": 4890000000,

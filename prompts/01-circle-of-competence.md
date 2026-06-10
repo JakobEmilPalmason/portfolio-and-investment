@@ -32,10 +32,10 @@ Answer each of these directly:
 
 ## Data Sources
 
-1. Check `context/{TICKER}/` for user-provided files first.
+1. Check `data/context/{TICKER}/` for user-provided files first.
 2. Use web search to find: company overview, latest annual report summary, revenue breakdown by segment.
 3. Flag any areas where you had to rely on potentially stale training data.
-4. **Do not read files in `scans/`, `triage/`, or `queue/`.** Your analysis must be independent of any prior pipeline verdicts or triage decisions.
+4. **Do not read files in `scans/`, `triage/`, or `data/queue/`.** Your analysis must be independent of any prior pipeline verdicts or triage decisions.
 
 ## Output
 

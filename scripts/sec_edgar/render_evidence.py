@@ -61,7 +61,7 @@ def render_evidence_markdown(
         warnings: List of warning strings from section parsing.
 
     Returns:
-        Markdown string for context/{TICKER}/evidence-10K-FY{YYYY}.md.
+        Markdown string for data/context/{TICKER}/evidence-10K-FY{YYYY}.md.
     """
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     period = filing_metadata.get("period_of_report", "unknown")

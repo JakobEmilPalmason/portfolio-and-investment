@@ -26,7 +26,7 @@ Do NOT use the standard format. Output ONLY this:
 
 ## Data Sources
 
-Read only `runs/{CURRENT_WEEK}/reports/{TICKER}/01` through `runs/{CURRENT_WEEK}/reports/{TICKER}/08`. **Do not read files in `scans/`, `triage/`, or `queue/`.** Your synthesis must be independent of any prior pipeline verdicts or triage decisions.
+Read only `runs/{CURRENT_WEEK}/reports/{TICKER}/01` through `runs/{CURRENT_WEEK}/reports/{TICKER}/08`. **Do not read files in `scans/`, `triage/`, or `data/queue/`.** Your synthesis must be independent of any prior pipeline verdicts or triage decisions.
 
 ## Rules
 

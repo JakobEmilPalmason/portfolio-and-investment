@@ -40,7 +40,7 @@ You are a **Moat Analyst**. Your job is to determine whether this company has a 
 
 ## Data Sources
 
-Use web search and `context/{TICKER}/` only. **Do not read files in `scans/`, `triage/`, or `queue/`.** Your analysis must be independent of any prior pipeline verdicts or triage decisions.
+Use web search and `data/context/{TICKER}/` only. **Do not read files in `scans/`, `triage/`, or `data/queue/`.** Your analysis must be independent of any prior pipeline verdicts or triage decisions.
 
 ## Output
 Follow the shared format exactly.

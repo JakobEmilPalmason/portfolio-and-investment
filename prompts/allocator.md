@@ -29,7 +29,7 @@ For every analyzed ticker with a FINAL-REPORT.json:
 ticker, company, verdict, confidence, average_score
 umbrella_scores (all 8)
 iv_conservative, iv_base, iv_bull, iv_currency
-current_price (live from context/TICKER/financials.md)
+current_price (live from data/context/TICKER/financials.md)
 mos_pct (live: (iv_conservative - current_price) / iv_conservative * 100)
 upside_downside_ratio ((iv_base - current_price) / (current_price - iv_conservative))
 key_strengths (full text, all bullets)

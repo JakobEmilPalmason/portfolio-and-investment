@@ -6,7 +6,7 @@ from pathlib import Path
 from src.quant.parser import parse_financials, parse_fmt_number, parse_pct, parse_ratio, parse_price
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-CONTEXT_DIR = REPO_ROOT / "context"
+CONTEXT_DIR = REPO_ROOT / "data" / "context"
 
 
 # ---------------------------------------------------------------------------

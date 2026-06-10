@@ -28,7 +28,7 @@ from sec_edgar.semantic_differ import diff_numeric_facts, diff_narrative_section
 
 logger = logging.getLogger(__name__)
 
-CONTEXT_DIR = REPO_ROOT / "context"
+CONTEXT_DIR = REPO_ROOT / "data" / "context"
 
 
 # ---------------------------------------------------------------------------
@@ -77,7 +77,7 @@ def _render_changes_markdown(
     numeric_diffs: list[dict],
     narrative_diffs: list[dict],
 ) -> str:
-    """Render diff results as markdown for context/{TICKER}/evidence-changes.md."""
+    """Render diff results as markdown for data/context/{TICKER}/evidence-changes.md."""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     all_diffs = sorted(
         numeric_diffs + narrative_diffs,

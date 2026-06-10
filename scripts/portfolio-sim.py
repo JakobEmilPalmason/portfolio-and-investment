@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
+QUEUE_FILE = REPO_ROOT / "data" / "queue" / "queue.json"
 RUNS_DIR = REPO_ROOT / "runs"
 
 VERDICT_RANK = {"Own": 2, "Watch": 1, "Pass": 0}

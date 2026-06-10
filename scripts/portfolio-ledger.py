@@ -29,7 +29,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 LEDGER_FILE = REPO_ROOT / "portfolio" / "ledger.json"
 STATE_MD = REPO_ROOT / "portfolio" / "portfolio-state.md"
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
+QUEUE_FILE = REPO_ROOT / "data" / "queue" / "queue.json"
 RUNS_DIR = REPO_ROOT / "runs"
 
 # ---------------------------------------------------------------------------

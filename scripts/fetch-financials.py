@@ -2,7 +2,7 @@
 """
 fetch-financials.py — Fetch financial data from Yahoo Finance for analysis agents.
 
-Writes context/{TICKER}/financials.md with verified financial data that the
+Writes data/context/{TICKER}/financials.md with verified financial data that the
 8-umbrella analysis agents consume alongside web search results.
 
 Usage:
@@ -23,9 +23,9 @@ import pandas as pd
 import yfinance as yf
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-CONTEXT_DIR = REPO_ROOT / "context"
+CONTEXT_DIR = REPO_ROOT / "data" / "context"
 RUNS_DIR = REPO_ROOT / "runs"
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
+QUEUE_FILE = REPO_ROOT / "data" / "queue" / "queue.json"
 FRESHNESS_HOURS = 24
 
 CURRENCY_SYMBOLS = {
@@ -915,7 +915,7 @@ def resolve_tickers(args):
         return sorted(tickers)
     if args.all_queue:
         if not QUEUE_FILE.exists():
-            print("ERROR: queue/queue.json not found", file=sys.stderr)
+            print("ERROR: data/queue/queue.json not found", file=sys.stderr)
             sys.exit(2)
         queue = json.loads(QUEUE_FILE.read_text())
         return [e["ticker"] for e in queue if e.get("current_state") == args.all_queue]

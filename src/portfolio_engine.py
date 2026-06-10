@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 RUNS_DIR = REPO_ROOT / "runs"
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
+QUEUE_FILE = REPO_ROOT / "data" / "queue" / "queue.json"
 
 # ---------------------------------------------------------------------------
 # Policy thresholds — ported verbatim from portfolio-ledger.py

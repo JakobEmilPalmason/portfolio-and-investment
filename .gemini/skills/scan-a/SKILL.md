@@ -20,7 +20,7 @@ mkdir -p "runs/$CURRENT_WEEK/scan"
 
 1. Read `prompts/scan-stage-a1.md` for the full execution template
 2. Spawn one general-purpose Agent with WebSearch access
-3. Agent reads seed files from `seeds/watchlist.json` and tracked tickers from `runs/*/reports/`
+3. Agent reads seed files from `data/seeds/watchlist.json` and tracked tickers from `runs/*/reports/`
 4. Agent uses up to 6 web searches for event/signal buckets
 5. Agent writes output to `runs/$CURRENT_WEEK/scan/`:
    - `universe.json` — source of truth (150–400 tickers)

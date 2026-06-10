@@ -95,7 +95,7 @@ tasks:
 
           # 10. Queue updated
           try:
-              q = json.load(open('queue/queue.json'))
+              q = json.load(open('data/queue/queue.json'))
               entry = [e for e in q if e.get('ticker')=='GILD']
               check('queue', bool(entry and entry[0].get('current_verdict') in ['Own','Watch','Pass']), 'Queue updated')
           except:
@@ -172,7 +172,7 @@ tasks:
       5. Generate the compact checklist (09-compact-checklist.md) based on sections 01-08 and the shared format.
       6. Read the final report assembler instructions in prompts/assembler.md.
       7. Assemble the FINAL-REPORT.md and FINAL-REPORT.json for ODFL using all sections (01-09) and following the assembler instructions.
-      8. Update queue/queue.json with the verdict and analysis date for ODFL.
+      8. Update data/queue/queue.json with the verdict and analysis date for ODFL.
 
       Write all output files to runs/week12_16.03/reports/ODFL/.
     timeout: 480
@@ -221,7 +221,7 @@ tasks:
 
           # 8. Queue updated
           try:
-              q = json.load(open('queue/queue.json'))
+              q = json.load(open('data/queue/queue.json'))
               entry = [e for e in q if e.get('ticker')=='ODFL']
               check('queue', bool(entry and entry[0].get('last_analysis_date')), 'Queue updated' if entry else 'Not in queue')
           except:

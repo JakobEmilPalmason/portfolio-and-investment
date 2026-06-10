@@ -96,7 +96,7 @@ def build_index(repo_root: str | Path) -> int:
             )
             count += 1
 
-        for md_file in sorted(root.glob("context/*/financials.md")):
+        for md_file in sorted(root.glob("data/context/*/financials.md")):
             ticker = md_file.parent.name
             try:
                 content = md_file.read_text(encoding="utf-8")
@@ -117,7 +117,7 @@ def build_index(repo_root: str | Path) -> int:
             )
             count += 1
 
-        queue_file = root / "queue" / "queue.json"
+        queue_file = root / "data" / "queue" / "queue.json"
         if queue_file.exists():
             try:
                 queue_entries = json.loads(queue_file.read_text(encoding="utf-8"))
@@ -148,7 +148,7 @@ def build_index(repo_root: str | Path) -> int:
                         ticker,
                         f"{ticker} - Queue",
                         content,
-                        "queue/queue.json",
+                        "data/queue/queue.json",
                         "queue",
                         entry.get("last_analysis_date", ""),
                     ),

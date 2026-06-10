@@ -224,10 +224,10 @@ def write_quant_valuation_md(
     wacc_result: WACCResult | None = None,
     owner_earnings: list[OwnerEarningsResult] | None = None,
 ) -> Path:
-    """Write context/{TICKER}/quant-valuation.md."""
+    """Write data/context/{TICKER}/quant-valuation.md."""
     if output_dir is None:
         repo_root = Path(__file__).resolve().parent.parent.parent
-        output_dir = repo_root / "context" / ticker
+        output_dir = repo_root / "data" / "context" / ticker
 
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / "quant-valuation.md"
@@ -421,10 +421,10 @@ def write_quant_valuation_json(
     wacc_result: WACCResult | None = None,
     owner_earnings: list[OwnerEarningsResult] | None = None,
 ) -> Path:
-    """Write context/{TICKER}/quant-valuation.json — machine-readable valuation."""
+    """Write data/context/{TICKER}/quant-valuation.json — machine-readable valuation."""
     if output_dir is None:
         repo_root = Path(__file__).resolve().parent.parent.parent
-        output_dir = repo_root / "context" / ticker
+        output_dir = repo_root / "data" / "context" / ticker
 
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / "quant-valuation.json"

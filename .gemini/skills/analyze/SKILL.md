@@ -31,7 +31,7 @@ If it fails, proceed anyway — agents will use web search.
 ## Step 3: Gather Context
 
 1. Read `prompts/_shared-format.md` — output schema for all agents
-2. Read all files in `context/$TICKER/` if the directory exists (financials.md + any user-provided docs)
+2. Read all files in `data/context/$TICKER/` if the directory exists (financials.md + any user-provided docs)
 
 ## Step 4: Run Analysis (mode-dependent)
 
@@ -53,7 +53,7 @@ Each agent gets: shared format, its prompts, ticker, today's date, context files
 
 **Batch 3 — after checklist:**
 
-- **Synthesis Agent**: Read `assembler.md`. Read all sections 01–09. Write `FINAL-REPORT.md` and `FINAL-REPORT.json`. Update `queue/queue.json`.
+- **Synthesis Agent**: Read `assembler.md`. Read all sections 01–09. Write `FINAL-REPORT.md` and `FINAL-REPORT.json`. Update `data/queue/queue.json`.
 
 ### Assemble mode
 

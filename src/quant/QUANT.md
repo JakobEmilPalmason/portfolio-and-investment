@@ -6,7 +6,7 @@
 
 1. **Search** — Find repos with >500 stars that solve the same problem (DCF engines, Monte Carlo valuation, sensitivity analysis, owner earnings, portfolio optimization).
 2. **Evaluate** — Check license (MIT/Apache/BSD preferred), code quality, test coverage, and whether the API fits our data flow.
-3. **Integrate** — Fork or vendor the relevant code. Adapt it to consume our `context/{TICKER}/financials.md` data and output to our `FINAL-REPORT.json` schema.
+3. **Integrate** — Fork or vendor the relevant code. Adapt it to consume our `data/context/{TICKER}/financials.md` data and output to our `FINAL-REPORT.json` schema.
 4. **Only build from scratch** if no credible open-source solution exists or if integration cost exceeds writing it.
 
 This rule applies to every module below. The goal is auditable, deterministic valuations — not NIH syndrome.
@@ -15,7 +15,7 @@ This rule applies to every module below. The goal is auditable, deterministic va
 
 ## Data We Already Have
 
-Every ticker with a `context/{TICKER}/financials.md` file has 4-5 years of:
+Every ticker with a `data/context/{TICKER}/financials.md` file has 4-5 years of:
 
 | Category | Fields |
 |----------|--------|
@@ -190,7 +190,7 @@ CREATE TABLE valuation_history (
 ## Integration Plan
 
 ### Phase 1: Parse financials into structured data — DONE
-Parser reads `context/{TICKER}/financials.md` and returns a `FinancialData` dataclass. This is the glue between fetch-financials.py output and the quant layer.
+Parser reads `data/context/{TICKER}/financials.md` and returns a `FinancialData` dataclass. This is the glue between fetch-financials.py output and the quant layer.
 
 ```python
 from src.quant.parser import parse_financials
@@ -198,7 +198,7 @@ data = parse_financials("AAPL")
 ```
 
 ### Phase 2: DCF + sensitivity + owner earnings — DONE
-Core valuation. `run.sh analyze TICKER` auto-runs the quant layer before spawning analysis agents. Output writes to `context/{TICKER}/quant-valuation.md` + `.json`.
+Core valuation. `run.sh analyze TICKER` auto-runs the quant layer before spawning analysis agents. Output writes to `data/context/{TICKER}/quant-valuation.md` + `.json`.
 
 ### Phase 3: Monte Carlo — DONE
 10,000-simulation probabilistic overlay. Produces P(IV > Price) and percentile distribution.

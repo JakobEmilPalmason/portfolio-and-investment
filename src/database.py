@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 SCHEMA_VERSION = 3
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SCHEMA_PATH = REPO_ROOT / "db" / "schema.sql"
+SCHEMA_PATH = REPO_ROOT / "data" / "db" / "schema.sql"
 
 # JSON columns that get auto-serialized/deserialized
 _JSON_COLUMNS = frozenset({
@@ -91,7 +91,7 @@ def _decimal_fields_from_dict(d: dict) -> dict:
 class Database:
     """SQLite wrapper for the paper trading portfolio system."""
 
-    def __init__(self, db_path: str = "db/portfolio.db"):
+    def __init__(self, db_path: str = "data/db/portfolio.db"):
         if db_path == ":memory:":
             self.db_path = db_path
         else:
@@ -216,7 +216,7 @@ class Database:
             )
             self.conn.commit()
         if current < 3:
-            evidence_path = REPO_ROOT / "db" / "evidence_schema.sql"
+            evidence_path = REPO_ROOT / "data" / "db" / "evidence_schema.sql"
             self.conn.executescript(evidence_path.read_text())
             self.conn.execute(
                 "INSERT INTO schema_version (version) VALUES (?)", (3,)

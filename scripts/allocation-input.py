@@ -2,7 +2,7 @@
 """
 allocation-input.py — Build the data blob that the AI allocator consumes.
 
-Merges FINAL-REPORT.json + live prices from context/TICKER/financials.md +
+Merges FINAL-REPORT.json + live prices from data/context/TICKER/financials.md +
 portfolio state from SQLite into a single JSON written to stdout or a file.
 
 Usage:
@@ -20,9 +20,9 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 RUNS_DIR = REPO_ROOT / "runs"
-CONTEXT_DIR = REPO_ROOT / "context"
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
-DB_PATH = REPO_ROOT / "db" / "portfolio.db"
+CONTEXT_DIR = REPO_ROOT / "data" / "context"
+QUEUE_FILE = REPO_ROOT / "data" / "queue" / "queue.json"
+DB_PATH = REPO_ROOT / "data" / "db" / "portfolio.db"
 
 TAG_SECTOR = {
     "healthcare": "Healthcare", "managed_care": "Healthcare", "glp1": "Healthcare",
@@ -99,7 +99,7 @@ def load_reports() -> dict:
 
 
 def extract_current_price(ticker: str) -> tuple:
-    """Extract current price and date from context/TICKER/financials.md.
+    """Extract current price and date from data/context/TICKER/financials.md.
     Returns (price, price_date, currency) or (None, None, None)."""
     fin_path = CONTEXT_DIR / ticker / "financials.md"
     if not fin_path.exists():

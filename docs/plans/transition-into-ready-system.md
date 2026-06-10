@@ -201,7 +201,7 @@ The goal is: after Phase 1, you can say "I paper-traded this week" and have a le
 
 **Deliverables**: SQLite database with all six tables. Portfolio engine with Position/Portfolio classes enforcing sizing rules. Trade proposal generator that reads FINAL-REPORT.json verdicts. CLI for reviewing/approving/executing proposals. Daily snapshot mechanism. Basic stdout reporting of portfolio state.
 
-**Files to create**: `src/models.py` (Position, Portfolio, Transaction, Snapshot dataclasses), `src/database.py` (SQLite CRUD with schema migration), `src/portfolio_engine.py` (Portfolio class with sizing enforcement), `src/trade_proposer.py` (verdict → proposal logic), `src/trade_executor.py` (proposal → transaction + position update), `src/snapshot.py` (daily price fetch + snapshot recording), `scripts/paper_trade.py` (CLI entry point using argparse or click), `db/portfolio.db` (auto-created on first run), `db/schema.sql` (reference DDL).
+**Files to create**: `src/models.py` (Position, Portfolio, Transaction, Snapshot dataclasses), `src/database.py` (SQLite CRUD with schema migration), `src/portfolio_engine.py` (Portfolio class with sizing enforcement), `src/trade_proposer.py` (verdict → proposal logic), `src/trade_executor.py` (proposal → transaction + position update), `src/snapshot.py` (daily price fetch + snapshot recording), `scripts/paper_trade.py` (CLI entry point using argparse or click), `data/db/portfolio.db` (auto-created on first run), `data/db/schema.sql` (reference DDL).
 
 **Dependencies to add**: `click` (CLI framework, pip install click). No other new deps — sqlite3 is built-in, dataclasses are built-in. Use existing yfinance for prices with retry logic.
 
@@ -275,7 +275,7 @@ repo-root/
 │   └── test_snapshot.py          # Snapshot capture and return calculation
 ├── runs/                         # EXISTING — unchanged
 │   └── {week}/
-├── queue/                        # EXISTING — unchanged
+├── data/queue/                        # EXISTING — unchanged
 │   └── queue.json
 ├── portfolios/                   # EXISTING — unchanged
 │   └── {date}/
@@ -287,7 +287,7 @@ repo-root/
 
 **Task 1: Create the SQLite schema and database module**
 Why first: Everything depends on persistent storage. Without this, nothing else works.
-Files: `db/schema.sql`, `src/database.py`
+Files: `data/db/schema.sql`, `src/database.py`
 Structure: `schema.sql` contains CREATE TABLE statements for all six tables (positions, transactions, portfolio_snapshots, benchmark_prices, trade_proposals, research_runs) with indexes. `database.py` provides a `Database` class wrapping `sqlite3.connect()` with WAL mode enabled, context manager for transactions, and methods: `init_db()`, `execute()`, `fetch_one()`, `fetch_all()`, `insert_transaction()`, `update_position()`, `insert_snapshot()`, `get_open_positions()`, `get_portfolio_state()`. Include a `migrate()` method that checks schema version and applies migrations — this prevents painful manual ALTER TABLE work later.
 Dependencies: None (sqlite3 is built-in).
 

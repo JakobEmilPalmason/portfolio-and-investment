@@ -5,7 +5,7 @@ You are the **Chief Investment Analyst**. Your job is to read all 9 section file
 
 ## Data Sources
 
-Read the section files (01–09) from the current week's report directory. Also read `context/{TICKER}/quant-valuation.json` if it exists — this contains deterministic DCF-derived IV estimates, sensitivity grid, and Monte Carlo probability from the `src/quant` engine. **Do not read files in `queue/` (other than to write the queue update in Step 3).** Your synthesis must be based primarily on the completed umbrella analysis, with quant model data used for IV extraction (see below).
+Read the section files (01–09) from the current week's report directory. Also read `data/context/{TICKER}/quant-valuation.json` if it exists — this contains deterministic DCF-derived IV estimates, sensitivity grid, and Monte Carlo probability from the `src/quant` engine. **Do not read files in `data/queue/` (other than to write the queue update in Step 3).** Your synthesis must be based primarily on the completed umbrella analysis, with quant model data used for IV extraction (see below).
 
 ## Instructions
 
@@ -119,7 +119,7 @@ After writing FINAL-REPORT.md, also write `runs/{CURRENT_WEEK}/reports/{TICKER}/
 Field notes:
 - `valuation_summary`: one to two sentences — estimated intrinsic value range, current price vs. value, whether a margin of safety exists
 - `iv_conservative`, `iv_base`, `iv_bull`: numeric per-share intrinsic value estimates (per-share, not total). **Extraction priority:**
-  1. **Preferred: quant model.** If `context/{TICKER}/quant-valuation.json` exists, use its `iv_conservative`, `iv_base`, `iv_bull` values directly. These are deterministic DCF outputs from real financial data and are more reliable than AI-extracted numbers. Set `iv_source` to `"quant_model"`.
+  1. **Preferred: quant model.** If `data/context/{TICKER}/quant-valuation.json` exists, use its `iv_conservative`, `iv_base`, `iv_bull` values directly. These are deterministic DCF outputs from real financial data and are more reliable than AI-extracted numbers. Set `iv_source` to `"quant_model"`.
   2. **Fallback 1: section 06 table.** Look for the "Intrinsic Value Summary" table in section 06. Strip all non-numeric characters (whitespace, $, ~, USD, ranges) from the raw cell value, then parse as a float. Set `iv_source` to `"ai_estimate"`.
   3. **Fallback 2: section 06 prose.** Scan the bear/base/bull scenario paragraphs in section 06 for discounted per-share values. Map: bear discounted → iv_conservative, base discounted → iv_base, bull discounted → iv_bull. Set `iv_source` to `"ai_estimate"`.
   4. If no approach yields a clean number, set to null. A null is safer than a wrong number.
@@ -140,7 +140,7 @@ Rule: JSON is written alongside markdown in every analyze run. Both files are re
 
 ## Third Step: Update Queue
 
-After writing both FINAL-REPORT.md and FINAL-REPORT.json, update `queue/queue.json`:
+After writing both FINAL-REPORT.md and FINAL-REPORT.json, update `data/queue/queue.json`:
 
 1. Find the entry for this ticker (by `ticker` field).
 2. If the entry does not exist, create a new one with the ticker and company name.
@@ -151,6 +151,6 @@ After writing both FINAL-REPORT.md and FINAL-REPORT.json, update `queue/queue.js
    - `thesis_status` → `"intact"`
    - `next_required_action` → `"monitor"`
 4. Do NOT modify: `owner_notes`, `tags`, `priority`, `source_batch`, `last_triage_date`.
-5. Write the updated `queue/queue.json` back to disk.
+5. Write the updated `data/queue/queue.json` back to disk.
 
-If `queue/queue.json` does not exist, create it as a valid JSON array containing just this entry.
+If `data/queue/queue.json` does not exist, create it as a valid JSON array containing just this entry.

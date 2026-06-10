@@ -30,7 +30,7 @@ def check(name, passed, msg):
 
 if mode == "extract":
     # -- Check XBRL extraction output --
-    edgar_file = REPO_ROOT / "context" / ticker / "edgar-10k.md"
+    edgar_file = REPO_ROOT / "data" / "context" / ticker / "edgar-10k.md"
     check("edgar-file-exists", edgar_file.exists(),
           f"edgar-10k.md exists" if edgar_file.exists() else "edgar-10k.md missing")
 

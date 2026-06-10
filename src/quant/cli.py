@@ -70,8 +70,8 @@ def main(argv: list[str] | None = None) -> int:
         default="da_proxy", help="Maintenance capex estimation method")
 
     parser.add_argument("--json", action="store_true", help="Output JSON instead of text")
-    parser.add_argument("--write", action="store_true", help="Write quant-valuation.md to context/")
-    parser.add_argument("--json-out", action="store_true", help="Write quant-valuation.json to context/")
+    parser.add_argument("--write", action="store_true", help="Write quant-valuation.md to data/context/")
+    parser.add_argument("--json-out", action="store_true", help="Write quant-valuation.json to data/context/")
     parser.add_argument("--context-dir", type=str, default=None, help="Override context directory")
     parser.add_argument("--quiet", action="store_true", help="Suppress stdout output (still writes files)")
 
@@ -197,7 +197,7 @@ def main(argv: list[str] | None = None) -> int:
                 print()
                 print(format_montecarlo_text(mc, data.current_price))
 
-    # Write to context/
+    # Write to data/context/
     out_dir = (context_dir / ticker) if context_dir else None
     if args.write:
         path = write_quant_valuation_md(

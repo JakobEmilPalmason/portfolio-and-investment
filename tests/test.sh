@@ -40,7 +40,7 @@ except Exception as e:
 
 # 8. Queue updated
 try:
-    q = json.load(open('queue/queue.json'))
+    q = json.load(open('data/queue/queue.json'))
     entry = [e for e in q if e.get('ticker')=='ODFL']
     check('queue', bool(entry and entry[0].get('last_analysis_date')), 'Queue updated' if entry else 'Not in queue')
 except:

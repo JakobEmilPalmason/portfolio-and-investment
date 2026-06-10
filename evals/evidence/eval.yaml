@@ -24,7 +24,7 @@ tasks:
     instruction: |
       Run the SEC EDGAR extraction for SYK:
       ./run.sh extract SYK
-      Then confirm the output exists at context/SYK/edgar-10k.md
+      Then confirm the output exists at data/context/SYK/edgar-10k.md
     timeout: 300
 
     graders:

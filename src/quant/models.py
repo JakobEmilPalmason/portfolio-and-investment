@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 
 @dataclass
 class FinancialData:
-    """Parsed financial data from context/{TICKER}/financials.md."""
+    """Parsed financial data from data/context/{TICKER}/financials.md."""
 
     ticker: str = ""
     company: str = ""

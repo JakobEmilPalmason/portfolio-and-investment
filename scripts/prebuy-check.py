@@ -21,7 +21,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-QUEUE_FILE = REPO_ROOT / "queue" / "queue.json"
+QUEUE_FILE = REPO_ROOT / "data" / "queue" / "queue.json"
 RUNS_DIR = REPO_ROOT / "runs"
 CONFIG_FILE = REPO_ROOT / "portfolio" / "config.json"
 PENDING_DIR = REPO_ROOT / "portfolio" / "pending"

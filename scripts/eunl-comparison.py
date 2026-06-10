@@ -733,7 +733,7 @@ def main():
     parser.add_argument("--start", type=str, default=None,
                         help="Start month YYYY-MM (default: earliest available)")
     parser.add_argument("--output", type=str, default=None,
-                        help="Output Excel path (default: output/eunl-comparison.xlsx)")
+                        help="Output Excel path (default: research-material/eunl-comparison.xlsx)")
     args = parser.parse_args()
 
     # Output path

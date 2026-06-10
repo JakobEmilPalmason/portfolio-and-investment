@@ -52,7 +52,7 @@ Wait for B1 to complete before proceeding.
 
 ## Step 4: Update Queue
 
-After B2 completes, update `queue/queue.json` per CLAUDE.md rules:
+After B2 completes, update `data/queue/queue.json` per CLAUDE.md rules:
 - B2 `deep_dive` → `current_state = deep_research`
 - B2 `monitor` → `current_state = watchlist`
 - B2 `discard` → `current_state = rejected`

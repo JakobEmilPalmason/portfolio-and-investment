@@ -21,13 +21,13 @@ Buffett-style investment analysis pipeline powered by AI agents. Stocks flow thr
 │   ├── triage/               #   B1 + B2 output (b1-results.json, triage.json)
 │   └── reports/{TICKER}/     #   Stage C output (01-09.md, FINAL-REPORT.md/.json)
 │
-├── context/{TICKER}/         # Input context per ticker
+├── data/context/{TICKER}/         # Input context per ticker
 │   ├── financials.md         #   Auto-fetched from yfinance (24h cache)
 │   ├── quant-valuation.md    #   Auto-generated DCF, sensitivity, Monte Carlo (human-readable)
 │   ├── quant-valuation.json  #   Auto-generated structured valuation (machine-readable)
 │   └── *.md                  #   User-provided: 10-K notes, transcripts, research
 │
-├── queue/                    # Central state
+├── data/queue/                    # Central state
 │   └── queue.json            #   One entry per ticker, all pipeline states
 │
 ├── prompts/                  # Agent instruction files
@@ -45,7 +45,7 @@ Buffett-style investment analysis pipeline powered by AI agents. Stocks flow thr
 │
 ├── scripts/                  # CLI tools (entry points)
 │   ├── paper_trade.py        #   Portfolio ledger: buy/sell/short/cover/holdings
-│   ├── fetch-financials.py   #   yfinance → context/{TICKER}/financials.md
+│   ├── fetch-financials.py   #   yfinance → data/context/{TICKER}/financials.md
 │   ├── fetch-edgar.py        #   SEC EDGAR → evidence tables + optional context .md
 │   ├── portfolio-sim.py      #   Snapshot allocator (hypothetical, read-only)
 │   ├── prebuy-check.py       #   C1/C2/C3 gate before trades
@@ -82,7 +82,7 @@ Buffett-style investment analysis pipeline powered by AI agents. Stocks flow thr
 │   ├── portfolio.db          #   Source of truth (SQLite)
 │   └── evidence_schema.sql   #   Evidence table definitions
 │
-├── seeds/                    # Manual inputs
+├── data/seeds/                    # Manual inputs
 │   └── watchlist.json        #   Curated seed list for A1
 │
 ├── portfolio/                # Portfolio-level state
@@ -114,9 +114,9 @@ Buffett-style investment analysis pipeline powered by AI agents. Stocks flow thr
 | **A2** Candidate Filter | `run A2`, `run scan` | 1 general | `universe.json` | `candidates.json`, `.csv`, `.md`, `scan-meta.json` | `runs/{week}/scan/` |
 | **B1** Fast Triage | `run B1`, `run triage` | 1 general | `candidates.json` | `b1-results.json`, `b1-advance.json`, `b1-summary.md` | `runs/{week}/triage/` |
 | **B2** Focused Triage | `run B2`, `run triage` | 1 general | `b1-advance.json` + existing reports | `triage.json`, `triage.md`, `deep-dive.csv` | `runs/{week}/triage/` |
-| **Fetch** | `fetch TICKER`, auto before analyze | 1 script | yfinance API | `context/{TICKER}/financials.md` | `context/` |
-| **Quant** | auto before analyze (after fetch) | `src/quant` CLI | `context/{TICKER}/financials.md` | `quant-valuation.md` + `.json` | `context/{TICKER}/` |
-| **C** Full Analysis | `analyze TICKER` | 3 parallel + 2 sequential | context/ + prompts/ | 01-09.md + FINAL-REPORT.md/.json | `runs/{week}/reports/{TICKER}/` |
+| **Fetch** | `fetch TICKER`, auto before analyze | 1 script | yfinance API | `data/context/{TICKER}/financials.md` | `data/context/` |
+| **Quant** | auto before analyze (after fetch) | `src/quant` CLI | `data/context/{TICKER}/financials.md` | `quant-valuation.md` + `.json` | `data/context/{TICKER}/` |
+| **C** Full Analysis | `analyze TICKER` | 3 parallel + 2 sequential | data/context/ + prompts/ | 01-09.md + FINAL-REPORT.md/.json | `runs/{week}/reports/{TICKER}/` |
 | **Allocate** | `allocate` | 1 general | queue + reports + prices + portfolio | `allocation-proposal.json/.md` | `portfolio/allocations/{run-id}/` |
 
 ### Stage C Detail
@@ -134,7 +134,7 @@ Buffett-style investment analysis pipeline powered by AI agents. Stocks flow thr
                     │   Quant Valuation   │  (auto, non-blocking)
                     │   DCF + WACC +      │  writes quant-valuation.md
                     │   Monte Carlo +     │  + quant-valuation.json
-                    │   Sensitivity +     │  to context/{TICKER}/
+                    │   Sensitivity +     │  to data/context/{TICKER}/
                     │   Owner Earnings    │
                     └──────────┬──────────┘
                                │
@@ -173,7 +173,7 @@ Buffett-style investment analysis pipeline powered by AI agents. Stocks flow thr
 Each analysis agent reads:
 - Its prompt file(s) from `prompts/`
 - `prompts/_shared-format.md` (output schema)
-- All files in `context/{TICKER}/` (including `quant-valuation.md` and `quant-valuation.json` — deterministic DCF output)
+- All files in `data/context/{TICKER}/` (including `quant-valuation.md` and `quant-valuation.json` — deterministic DCF output)
 - Uses WebSearch for current data
 
 The Valuation Agent (umbrella 06) uses the quant model as its **starting anchor** — stress-testing and adjusting the deterministic IV rather than computing from scratch. The Assembler **prefers quant-model IV** over AI-extracted IV when populating FINAL-REPORT.json.
@@ -232,16 +232,16 @@ B1 hold ▶│ inbox  │ │rejected │ │deep_     │◀ B2 deep_dive
 |------|------|
 | `run.sh` | Central dispatcher — all pipeline commands route through here |
 | `CLAUDE.md` | Full pipeline specification (canonical reference) |
-| `queue/queue.json` | Central state — every ticker the pipeline has touched |
+| `data/queue/queue.json` | Central state — every ticker the pipeline has touched |
 | `prompts/_shared-format.md` | Output schema for all 8 umbrella analysis sections |
 | `prompts/assembler.md` | Defines FINAL-REPORT.md + FINAL-REPORT.json structure |
 | `runs/{week}/reports/{TICKER}/FINAL-REPORT.json` | Key artifact: verdict, scores, IV, triggers |
-| `context/{TICKER}/financials.md` | Auto-fetched financial data (yfinance) |
-| `db/portfolio.db` | SQLite: positions, lots, transactions, snapshots, prebuy_checks |
+| `data/context/{TICKER}/financials.md` | Auto-fetched financial data (yfinance) |
+| `data/db/portfolio.db` | SQLite: positions, lots, transactions, snapshots, prebuy_checks |
 | `src/portfolio_engine.py` | Trade execution, policy enforcement, FIFO lot tracking |
 | `src/database.py` | SQLite schema, migrations, all CRUD operations |
 | `src/price_fetcher.py` | Price fetching with cache (yfinance primary, Tiingo fallback) |
-| `seeds/watchlist.json` | Curated seed list for A1 universe assembly |
+| `data/seeds/watchlist.json` | Curated seed list for A1 universe assembly |
 | `portfolio/config.json` | Optional: capital_base, prebuy thresholds |
 | `INVESTMENT-POLICY.md` | Position sizing rules, sector limits, sell triggers |
 
@@ -255,7 +255,7 @@ All commands via `./run.sh <command>`:
 |---------|-------------|
 | `scan` | Run A1 + A2 (universe assembly + candidate filter) |
 | `triage [week]` | Run B1 + B2 (fast triage + focused triage) |
-| `fetch TICKER [...]` | Fetch financials from yfinance → context/{TICKER}/financials.md |
+| `fetch TICKER [...]` | Fetch financials from yfinance → data/context/{TICKER}/financials.md |
 | `fetch --all-reports` | Fetch financials for all tickers with existing reports |
 | `analyze TICKER` | Auto-fetch + run full 8-umbrella analysis + assemble |
 | `allocate [CAPITAL]` | AI portfolio construction from queue + reports |
@@ -297,7 +297,7 @@ seeds + tracked + curated + web
     deep-dive.csv (max 8)
          │
          ▼
-    context/{TICKER}/ ◀── fetch-financials.py + fetch-edgar.py
+    data/context/{TICKER}/ ◀── fetch-financials.py + fetch-edgar.py
          │
          ▼
     quant-valuation.md + .json ◀── src/quant (DCF, WACC, MC, sensitivity)
@@ -315,7 +315,7 @@ seeds + tracked + curated + web
                                                       paper_trade.py
                                                             │
                                                             ▼
-                                                      db/portfolio.db
+                                                      data/db/portfolio.db
                                                       (positions, lots,
                                                        transactions)
                                                             │
@@ -349,7 +349,7 @@ seeds + tracked + curated + web
 
 ---
 
-## Database Tables (db/portfolio.db)
+## Database Tables (data/db/portfolio.db)
 
 **Core:**
 | Table | Purpose |

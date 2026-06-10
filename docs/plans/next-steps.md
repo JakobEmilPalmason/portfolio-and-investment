@@ -7,7 +7,7 @@
 - **B1 (Fast Triage)** → `triage/YYYY-MM-DD/b1-results.json` + `b1-advance.json` + `b1-summary.md`
 - **B2 (Focused Triage)** → `triage/YYYY-MM-DD/triage.json` + `triage.md` (≤8 deep_dives per batch)
 - **C (Full Analysis)** → `reports/{TICKER}/01-09` + `FINAL-REPORT.md` + `FINAL-REPORT.json`
-- **Queue** → `queue/queue.json` + `queue/queue.md` (living state file updated by triage and analyze)
+- **Queue** → `data/queue/queue.json` + `data/queue/queue.md` (living state file updated by triage and analyze)
 - **run.sh** → dispatcher for all four commands: `scan`, `triage`, `analyze`, `monitor`
 
 ## What's Next (in order)

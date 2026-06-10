@@ -29,7 +29,7 @@ python3 scripts/allocation-input.py > portfolio/allocations/{run-id}/allocation-
 
 Create the run directory first: `portfolio/allocations/{run-id}/`
 
-If the script fails, build the input manually by reading `queue/queue.json` and all `FINAL-REPORT.json` files for eligible tickers.
+If the script fails, build the input manually by reading `data/queue/queue.json` and all `FINAL-REPORT.json` files for eligible tickers.
 
 ## Step 3: Run Allocator Agent
 

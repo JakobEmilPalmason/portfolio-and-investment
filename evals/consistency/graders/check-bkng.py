@@ -130,7 +130,7 @@ else:
 
 # 1d. Queue updated
 try:
-    q = json.load(open("queue/queue.json"))
+    q = json.load(open("data/queue/queue.json"))
     entry = [e for e in q if e.get("ticker") == TICKER]
     check("queue", bool(entry and entry[0].get("current_verdict") in ["Own", "Watch", "Pass"]),
           "Queue updated" if entry else "Not in queue")

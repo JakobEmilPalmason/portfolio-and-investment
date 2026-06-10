@@ -3,7 +3,7 @@ EDGAR client — fetch 10-K/20-F financials for a ticker.
 
 Identity: set via EDGAR_IDENTITY env var.
 Rate limiting: handled by edgartools (pyrate-limiter, 9 req/sec).
-Freshness: skips if context/{TICKER}/edgar-10k.md < 24h old unless --force.
+Freshness: skips if data/context/{TICKER}/edgar-10k.md < 24h old unless --force.
 """
 
 import os
@@ -18,7 +18,7 @@ from .xbrl import extract_financials
 from .render import render_markdown
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-CONTEXT_DIR = REPO_ROOT / "context"
+CONTEXT_DIR = REPO_ROOT / "data" / "context"
 FRESHNESS_HOURS = 24
 
 FORM_TYPES = ["10-K", "10-K/A", "20-F", "20-F/A", "40-F", "40-F/A"]

@@ -23,7 +23,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROMPTS_DIR="$SCRIPT_DIR/prompts"
 RUNS_DIR="$SCRIPT_DIR/runs"
-CONTEXT_DIR="$SCRIPT_DIR/context"
+CONTEXT_DIR="$SCRIPT_DIR/data/context"
 TODAY=$(date +%Y-%m-%d)
 
 # ---------------------------------------------------------------------------
@@ -448,10 +448,10 @@ cmd_analyze() {
         echo "WARNING: Quant valuation failed. Continuing without quant model output."
     }
 
-    # Build context string from context/{TICKER}/ if it exists
+    # Build context string from data/context/{TICKER}/ if it exists
     local CONTEXT=""
     if [ -d "$CONTEXT_DIR/$TICKER" ]; then
-        echo "Found context in context/$TICKER/"
+        echo "Found context in data/context/$TICKER/"
         for f in "$CONTEXT_DIR/$TICKER"/*; do
             if [ -f "$f" ]; then
                 CONTEXT="$CONTEXT
@@ -602,7 +602,7 @@ Output ONLY the report content — no preamble." \
             echo "VERIFICATION WARNING: $contradicted contradiction(s) found"
             python3 -c "
 import json, re, pathlib
-qf = pathlib.Path('$SCRIPT_DIR/queue/queue.json')
+qf = pathlib.Path('$SCRIPT_DIR/data/queue/queue.json')
 if qf.exists():
     q = json.loads(qf.read_text())
     for e in q:

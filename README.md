@@ -31,13 +31,13 @@ Stage A1  Universe Assembly   →  runs/{week}/scan/      150–400 raw names fr
 Stage A2  Candidate Filter    →  runs/{week}/scan/      ranked candidate set (80–150 names)
 Stage B1  Fast Triage         →  runs/{week}/triage/    mechanical advance/hold/reject pass
 Stage B2  Focused Triage      →  runs/{week}/triage/    ≤8 deep dives per cycle, with reasons
-Fetch     Financial Data      →  context/{TICKER}/      yfinance + SEC EDGAR (XBRL)
-Quant     Deterministic DCF   →  context/{TICKER}/      bear/base/bull IV, sensitivity, Monte Carlo
+Fetch     Financial Data      →  data/context/{TICKER}/      yfinance + SEC EDGAR (XBRL)
+Quant     Deterministic DCF   →  data/context/{TICKER}/      bear/base/bull IV, sensitivity, Monte Carlo
 Stage C   Full Analysis       →  runs/{week}/reports/   8 umbrellas + checklist + final report
-Queue     Living State        →  queue/queue.json       every ticker the pipeline has touched
+Queue     Living State        →  data/queue/queue.json       every ticker the pipeline has touched
 ```
 
-Each week's output lives in one folder: `runs/weekNN_DD.MM/{scan,triage,reports}/`. Global state (`context/`, `queue/`, `seeds/`) lives at the repo root.
+Each week's output lives in one folder: `runs/weekNN_DD.MM/{scan,triage,reports}/`. Global state (context, queue, seeds, the SQLite ledger) lives under `data/`.
 
 ### Multi-agent analysis
 
@@ -99,22 +99,26 @@ python3 -m src.quant AAPL --auto-wacc --owner-earnings --sensitivity --monte-car
 ## Repository layout
 
 ```
-prompts/      agent prompts: 8 umbrellas, scan/triage stages, assembler, allocator
-src/          portfolio engine, database, snapshots + src/quant/ DCF engine
-scripts/      fetch, prebuy, ledger, simulator, allocation tooling
-dashboard/    Streamlit app (8 pages)
-runs/         weekly pipeline output: scan, triage, reports per week
-context/      per-ticker financials, quant valuations, user research
-queue/        living research queue (state machine per ticker)
-portfolio/    ledger state, allocations, pending trades, config
-db/           SQLite database + schema
-evals/        evidence verification: claim decomposition + accuracy evals
-tests/        pytest suite
+prompts/            agent prompts: 8 umbrellas, scan/triage stages, assembler, allocator
+src/                portfolio engine, database, snapshots + src/quant/ DCF engine
+scripts/            fetch, prebuy, ledger, simulator, allocation tooling
+dashboard/          Streamlit app (8 pages)
+runs/               weekly pipeline output: scan, triage, reports per week
+data/
+  context/          per-ticker financials, quant valuations, user research
+  queue/            living research queue (state machine per ticker)
+  seeds/            watchlist seeds for universe assembly
+  db/               SQLite database + schema
+portfolio/          ledger state, allocations, pending trades, config
+evals/              evidence verification: claim decomposition + accuracy evals
+tests/              pytest suite
+docs/               architecture notes, plans, analysis notebooks
+research-material/  investing research and reference notes
 ```
 
 ## Research queue
 
-`queue/queue.json` tracks the state of every ticker the pipeline has touched:
+`data/queue/queue.json` tracks the state of every ticker the pipeline has touched:
 
 `inbox` → `triage` → `watchlist` / `deep_research` → `monitor_only` / `approved` / `owned` / `rejected`
 

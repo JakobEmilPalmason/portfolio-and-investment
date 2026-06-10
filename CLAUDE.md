@@ -13,7 +13,7 @@ This project is a Buffett-style investment analysis system powered by Claude Cod
 
 **Update `CURRENT_WEEK` in `run.sh` (line ~27) and the table above when a new week begins.**
 
-All pipeline output lives under `runs/`. Each week folder contains `scan/`, `triage/`, and `reports/` — one complete cycle in one place. Global state (`context/`, `queue/`, `seeds/`) lives at repo root.
+All pipeline output lives under `runs/`. Each week folder contains `scan/`, `triage/`, and `reports/` — one complete cycle in one place. Global state (`data/context/`, `data/queue/`, `data/seeds/`, `data/db/`) lives under `data/`.
 
 ---
 
@@ -24,7 +24,7 @@ When a user asks to analyze a stock (e.g., "analyze AAPL" or "run analysis on MS
 ### Step 1: Setup
 1. Create directory `runs/{CURRENT_WEEK}/reports/{TICKER}/` if it doesn't exist.
 2. Read `prompts/_shared-format.md` — this is the output schema all agents must follow.
-3. Financial data is auto-fetched before analysis (see "Financial Data Fetch" section below). Quantitative valuation models are then run automatically (see "Quant Valuation" section below), producing `quant-valuation.md` and `quant-valuation.json` in `context/{TICKER}/`. Check if `context/{TICKER}/` exists. If it does, read all files in it — this includes auto-fetched financials, quant model output, and any user-provided research (10-K notes, earnings transcripts, etc.). Pass this context to every agent.
+3. Financial data is auto-fetched before analysis (see "Financial Data Fetch" section below). Quantitative valuation models are then run automatically (see "Quant Valuation" section below), producing `quant-valuation.md` and `quant-valuation.json` in `data/context/{TICKER}/`. Check if `data/context/{TICKER}/` exists. If it does, read all files in it — this includes auto-fetched financials, quant model output, and any user-provided research (10-K notes, earnings transcripts, etc.). Pass this context to every agent.
 
 ### Step 2: Run Analysis Agents (3 parallel batches)
 Spawn 3 Agent subagents in parallel. Each agent gets:
@@ -67,7 +67,7 @@ Spawn one final agent:
 - Read prompt: `assembler.md`
 - Read ALL section files from `runs/{CURRENT_WEEK}/reports/{TICKER}/` (01-09)
 - Write output to: `runs/{CURRENT_WEEK}/reports/{TICKER}/FINAL-REPORT.md` AND `runs/{CURRENT_WEEK}/reports/{TICKER}/FINAL-REPORT.json`
-- After writing both files, update `queue/queue.json`: set `current_state = monitor_only`, `last_analysis_date = today`, `current_verdict` from FINAL-REPORT.json, `thesis_status = intact`, `next_required_action = monitor`
+- After writing both files, update `data/queue/queue.json`: set `current_state = monitor_only`, `last_analysis_date = today`, `current_verdict` from FINAL-REPORT.json, `thesis_status = intact`, `next_required_action = monitor`
 
 ### Step 5: Present Results
 After the final report is written, show the user:
@@ -83,10 +83,10 @@ Stage A1 (Universe Assembly)  →  runs/{week}/scan/    (universe.json + univers
 Stage A2 (Candidate Filter)   →  runs/{week}/scan/    (candidates.json + csv + md + scan-meta.json)
 Stage B1 (Fast Triage)        →  runs/{week}/triage/  (b1-results.json, b1-advance.json, b1-summary.md)
 Stage B2 (Focused Triage)     →  runs/{week}/triage/  (triage.json, triage.md, deep-dive.csv)
-Fetch (Financial Data)        →  context/{TICKER}/financials.md
-Quant (Deterministic DCF)     →  context/{TICKER}/quant-valuation.md + .json
+Fetch (Financial Data)        →  data/context/{TICKER}/financials.md
+Quant (Deterministic DCF)     →  data/context/{TICKER}/quant-valuation.md + .json
 Stage C  (Full Analysis)      →  runs/{week}/reports/{TICKER}/
-Queue                         →  queue/queue.json
+Queue                         →  data/queue/queue.json
 Portfolio Simulator           →  stdout (snapshot allocation from queue + FINAL-REPORT.json)
 ```
 
@@ -104,7 +104,7 @@ Merge candidates from multiple sources into a single raw universe JSON. Tag each
 
 ### Inputs
 1. **Tracked** — `runs/*/reports/` directories → `source_bucket: tracked`
-2. **Seed** — `seeds/watchlist.json` → `source_bucket: seed`
+2. **Seed** — `data/seeds/watchlist.json` → `source_bucket: seed`
 3. **Built-in curated lists** (embedded in prompt, agent prior knowledge) → sector bucket names
 4. **Web searches** — up to 6 queries for event/signal buckets
 
@@ -112,7 +112,7 @@ Merge candidates from multiple sources into a single raw universe JSON. Tag each
 | bucket | how to populate |
 |--------|----------------|
 | `tracked` | existing `runs/*/reports/` directories |
-| `seed` | `seeds/watchlist.json` |
+| `seed` | `data/seeds/watchlist.json` |
 | `large_cap_us_quality` | built-in list: ~30 US quality compounders |
 | `large_cap_europe_quality` | built-in list: ~20 European quality names |
 | `semis_and_infra` | built-in list: ~15 semiconductor + tech infra names |
@@ -244,7 +244,7 @@ Read `prompts/triage-stage-b2.md` — full execution template. Spawn one general
 Hard cap: **8 deep_dives per batch.** Additional high-conviction names become `monitor` with reason prefixed "Above-budget:". See `prompts/triage-stage-b2.md` for full rules.
 
 ### Queue update (after B2 completes)
-After writing triage output files, update `queue/queue.json`:
+After writing triage output files, update `data/queue/queue.json`:
 - B2 `deep_dive` → `current_state = deep_research`
 - B2 `monitor` → `current_state = watchlist`
 - B2 `discard` → `current_state = rejected`
@@ -274,7 +274,7 @@ After writing triage output files, update `queue/queue.json`:
 
 The queue is a living state file that tracks every ticker the pipeline has touched.
 
-### File: `queue/queue.json`
+### File: `data/queue/queue.json`
 
 One entry per ticker. Schema:
 ```json
@@ -315,7 +315,7 @@ Two pipeline steps update the queue automatically:
 
 **Manual updates:** `approved` and `owned` states require manual update. Owner notes and tags are always manual.
 
-### Human-readable view: `queue/queue.md`
+### Human-readable view: `data/queue/queue.md`
 Sections: Summary / Deep Research Pipeline / Watchlist / Monitor / Rejected.
 
 ---
@@ -414,7 +414,7 @@ Persistent portfolio tracking with transaction history and policy compliance. In
 ### Files
 | file | purpose |
 |------|---------|
-| `db/portfolio.db` | Source of truth — SQLite database (positions, lots, transactions) |
+| `data/db/portfolio.db` | Source of truth — SQLite database (positions, lots, transactions) |
 | `portfolio/portfolio-state.md` | Human-readable render, regenerated on every mutation |
 | `scripts/paper_trade.py` | Core script with all subcommands (SQLite-backed) |
 | `scripts/portfolio-ledger.py` | Legacy JSON-backed script (retained as fallback during transition) |
@@ -468,7 +468,7 @@ The `--iv` flag on buy/short provides the user's intrinsic value estimate. Not p
 **Trigger phrases:** "open dashboard", "run dashboard", "show streamlit dashboard"
 **Entry point:** `dashboard/app.py`
 
-Read-only Streamlit dashboard. Never writes to `db/portfolio.db`. Portfolio and performance views read SQLite through `Database` and `PortfolioEngine`; research view reads the latest `FINAL-REPORT.json` / `FINAL-REPORT.md` plus `queue/queue.json`.
+Read-only Streamlit dashboard. Never writes to `data/db/portfolio.db`. Portfolio and performance views read SQLite through `Database` and `PortfolioEngine`; research view reads the latest `FINAL-REPORT.json` / `FINAL-REPORT.md` plus `data/queue/queue.json`.
 
 ### Pages
 1. **Portfolio** — current holdings, allocation pie, sector exposure, policy flags, top-level stats
@@ -552,7 +552,7 @@ If the user asks to reassemble a report (e.g., "reassemble AAPL report"), run on
 
 **Trigger phrases:** "fetch TICKER", "fetch financials", "fetch --all-reports"
 
-`scripts/fetch-financials.py` uses yfinance (Yahoo Finance) to pull verified financial data and write it to `context/{TICKER}/financials.md`. This runs automatically before every `analyze` command.
+`scripts/fetch-financials.py` uses yfinance (Yahoo Finance) to pull verified financial data and write it to `data/context/{TICKER}/financials.md`. This runs automatically before every `analyze` command.
 
 ### What it provides
 - Current price, market cap, 52-week range, valuation multiples
@@ -573,7 +573,7 @@ If the user asks to reassemble a report (e.g., "reassemble AAPL report"), run on
 Or directly: `python3 scripts/fetch-financials.py [OPTIONS] TICKER [TICKER ...]`
 
 ### Freshness
-Skips tickers where `context/{TICKER}/financials.md` is less than 24 hours old. Override with `--force`.
+Skips tickers where `data/context/{TICKER}/financials.md` is less than 24 hours old. Override with `--force`.
 
 ### Integration with analyze
 `./run.sh analyze TICKER` auto-fetches before running analysis. If the fetch fails (no internet, invalid ticker), analysis proceeds with web search only.
@@ -589,7 +589,7 @@ Skips tickers where `context/{TICKER}/financials.md` is less than 24 hours old. 
 **Trigger phrases:** "run quant TICKER", "quant valuation"
 **Module:** `src/quant/` — deterministic DCF engine, no LLM calls, runs in <1 second.
 
-After financial data is fetched, `run.sh analyze` automatically runs the quant valuation model. This produces `context/{TICKER}/quant-valuation.md` (human-readable) and `context/{TICKER}/quant-valuation.json` (machine-readable) containing:
+After financial data is fetched, `run.sh analyze` automatically runs the quant valuation model. This produces `data/context/{TICKER}/quant-valuation.md` (human-readable) and `data/context/{TICKER}/quant-valuation.json` (machine-readable) containing:
 
 - **Bear/base/bull per-share IV** from a multi-stage DCF
 - **WACC derivation** from CAPM (beta, cost of equity, cost of debt)
@@ -599,7 +599,7 @@ After financial data is fetched, `run.sh analyze` automatically runs the quant v
 
 ### How it integrates with analysis agents
 
-The quant output lands in `context/{TICKER}/` alongside `financials.md`. All analysis agents receive it as context. Key integration:
+The quant output lands in `data/context/{TICKER}/` alongside `financials.md`. All analysis agents receive it as context. Key integration:
 
 | Agent | How it uses quant output |
 |-------|------------------------|
@@ -613,7 +613,7 @@ The quant output lands in `context/{TICKER}/` alongside `financials.md`. All ana
 python3 -m src.quant AAPL                                    # basic DCF, text output
 python3 -m src.quant AAPL --auto-wacc --owner-earnings       # CAPM WACC + owner earnings
 python3 -m src.quant AAPL --sensitivity --monte-carlo        # add sensitivity + MC
-python3 -m src.quant AAPL --write --json-out                 # write .md + .json to context/
+python3 -m src.quant AAPL --write --json-out                 # write .md + .json to data/context/
 python3 -m src.quant AAPL --write --json-out --quiet \
     --sensitivity --monte-carlo --auto-wacc \
     --owner-earnings --fade-growth                           # full pipeline mode (used by run.sh)
@@ -635,7 +635,7 @@ If the quant model fails (missing financials, unparseable data), `run.sh` prints
 ---
 
 ## Adding Context
-Users can place additional supporting documents in `context/{TICKER}/` alongside the auto-fetched `financials.md`:
+Users can place additional supporting documents in `data/context/{TICKER}/` alongside the auto-fetched `financials.md`:
 - 10-K excerpts or notes
 - Earnings call transcripts
 - Custom financial spreadsheet exports
