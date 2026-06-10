@@ -1,0 +1,77 @@
+{
+  "ticker": "FIX",
+  "company": "Comfort Systems USA, Inc.",
+  "analysis_date": "2026-05-06",
+  "verdict": "Pass",
+  "average_score": 5.25,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 6,
+    "management": 7,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 2,
+    "margin_of_safety": 2,
+    "temperament": 2
+  },
+  "key_strengths": [
+    "47.5% ROIC and 14.4% operating margin — best-in-class specialty contractor returns",
+    "$499M net cash, 0.3x debt/EBITDA, 186x interest coverage — fortress balance sheet",
+    "$12.5B backlog (Q1 2026) provides 12-15 months of forward revenue visibility",
+    "16-year CEO tenure with disciplined M&A track record (21+ deals, no material write-downs)",
+    "Modular pre-fab capacity (3-4M sqft) and ~50-subsidiary labor pool create narrow execution moat",
+    "100%+ FCF conversion for four consecutive years; capex intensity only 1.7% of revenue"
+  ],
+  "key_risks": [
+    "Stock 71-300% above quant IV in every scenario (bear/base/bull $497/$805/$1,156 vs $1,991)",
+    "~42-45% of revenue from hyperscale data centers, concentrated in handful of customers",
+    "Operating margin tripled from 6.1% to 14.4% — significant share is cyclical operating leverage",
+    "Multiple compression risk: 41x EV/EBITDA vs EME ~18x, WSO ~20x peer levels",
+    "Beta 1.71 with stock +362% in 12 months — late-cycle pricing behavior",
+    "FCF conversion above 130% partly from customer-funded billings advances; reverses if backlog flattens"
+  ],
+  "red_flags": [
+    "Negative MOS in every IV scenario (-72% to -301%)",
+    "0 of 25 sensitivity grid cells support current price",
+    "Monte Carlo P(IV > Price) = 0.0% across 10,000 simulations",
+    "Insiders sold ~$106M over 18 months; CEO sold at ~$1,453, well below today's $1,991",
+    "Sell-side mean target ($1,991) equals current price — no analyst upside left",
+    "Customer concentration in hyperscalers undisclosed at named-customer level",
+    "Peak everything: peak margin, peak ROIC, peak FCF margin, peak multiple, peak backlog"
+  ],
+  "buy_triggers": [
+    "Price below ~$1,156 (bull IV) for starter-only conversation",
+    "Price below ~$805 (base IV) for real position sizing",
+    "Price below ~$497 (bear IV) for high-conviction buy",
+    "Operating margin holds above 13% through a cycle slowdown",
+    "Service/recurring revenue grows above 20% of total"
+  ],
+  "sell_triggers": [
+    "Operating margin compresses below 11% for two consecutive quarters",
+    "Data-center exposure exceeds 55% of revenue",
+    "Backlog declines for two consecutive quarters",
+    "Material insider selling acceleration without offsetting purchases"
+  ],
+  "valuation_summary": "Quant DCF intrinsic value range $497 (bear) / $805 (base) / $1,156 (bull) USD vs current price $1,991.50 — overvalued in every scenario by 71% to 301%, with zero of 25 sensitivity cells and 0.0% Monte Carlo probability supporting the price. No margin of safety at any defensible IV.",
+  "iv_conservative": 497,
+  "iv_base": 805,
+  "iv_bull": 1156,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -300.9,
+  "monte_carlo_prob_above_price": 0.0,
+  "sensitivity_iv_range": [770.94, 1227.29],
+  "compact_checklist": [
+    "Business: Comfort Systems is a roll-up of ~50 US specialty mechanical and electrical contractors that install and service HVAC, plumbing, piping, controls, and electrical systems in large buildings, with ~42% of FY2025 revenue now coming from hyperscale data centers and a $12.5B backlog providing roughly 12-15 months of forward visibility.",
+    "Moat: A narrow execution moat from ~3-4M sqft of modular pre-fabrication capacity, a labor pool across ~50 subsidiaries that takes years to replicate, and hyperscaler prequalification — real but partly cyclical, since roughly half of today's 14.4% operating margin is project-mix premium that reverts when the data-center cycle cools.",
+    "Economics: ROIC has tripled from 15.9% (FY22) to 47.5% (FY25) on 24.1% gross margin, 1.7%-of-revenue capex, and FCF conversion averaging ~128% of net income — extraordinary numbers, but mid-cycle ROIC is more plausibly 25-30% once operating leverage and working-capital tailwinds normalize.",
+    "Management: 16-year CEO Brian Lane has compounded revenue from $1.4B to $9.1B via 21+ disciplined bolt-on acquisitions with no material write-downs, a 14-year dividend-raise streak, and price-disciplined buybacks (only $2.5M YTD 2026), partially offset by ~$106M of insider net selling at prices below today's quote.",
+    "Debt risk: Fortress-grade — $499M net cash, 0.3x debt/EBITDA, 186x interest coverage, and a stress test (-30% revenue x 2 years at compressed margins) that the company survives with multiple years of liquidity runway, with the only real complexity being contractor billings dynamics and ~$2.3-3.2B of off-balance-sheet surety bonds.",
+    "Price: Today's $1,991 only makes sense if revenue keeps growing at 18-20%+ for 7+ more years AND operating margin expands from 14.4% to ~18% AND the exit multiple holds at 20-22x EV/EBITDA — three optimistic levers stacked simultaneously, outside the entire 5x5 sensitivity grid and Monte Carlo distribution (P(IV>Price) = 0.0%).",
+    "Margin of safety: None — bear/base/bull IV is $497/$805/$1,156 against a $1,991 price (MOS of -301%/-147%/-72%), zero of 25 sensitivity cells support the price, and a defensible starter entry only opens near $1,156 with real conviction not until $800 or below.",
+    "Thesis breaker: Sell or refuse to buy if operating margin compresses below 11% for two consecutive quarters, if data-center exposure exceeds 55% of revenue, or if backlog declines for two consecutive quarters — any one signals the hyperscaler-capex cycle has rolled over."
+  ],
+  "source_summary": "Auto-fetched yfinance financials (2026-05-06), deterministic DCF quant model output (context/FIX/quant-valuation.{md,json}), web searches across SEC filings (10-K, 10-Q), Q4 2025 / Q1 2026 earnings releases and transcripts (BusinessWire, Stocktitan, Benzinga), peer multiple references (TIKR, stockanalysis.com, GuruFocus), and hyperscaler capex commentary (Tom's Hardware, Futurum, CreditSights).",
+  "confidence": "high",
+  "change_notes": ""
+}

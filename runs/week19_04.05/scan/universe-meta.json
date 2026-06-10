@@ -1,0 +1,75 @@
+{
+  "run_date": "2026-05-06",
+  "total_candidates": 180,
+  "buckets_used": [
+    "tracked",
+    "seed",
+    "large_cap_us_quality",
+    "large_cap_europe_quality",
+    "semis_and_infra",
+    "healthcare_quality",
+    "industrial_compounders",
+    "financial_quality",
+    "consumer_quality",
+    "post_earnings",
+    "52wk_low",
+    "52wk_high",
+    "fcf_roic",
+    "sector_leader"
+  ],
+  "counts_by_bucket": {
+    "tracked": 106,
+    "seed": 20,
+    "large_cap_us_quality": 30,
+    "large_cap_europe_quality": 25,
+    "semis_and_infra": 15,
+    "healthcare_quality": 15,
+    "industrial_compounders": 15,
+    "financial_quality": 15,
+    "consumer_quality": 15,
+    "post_earnings": 11,
+    "52wk_low": 5,
+    "52wk_high": 10,
+    "fcf_roic": 8,
+    "sector_leader": 15
+  },
+  "counts_by_sector": {
+    "Technology": 37,
+    "Industrials": 38,
+    "Consumer": 32,
+    "Healthcare": 29,
+    "Financials": 27,
+    "Communication Services": 9,
+    "Materials": 5,
+    "Energy": 1,
+    "Real Estate": 1,
+    "Utilities": 1
+  },
+  "counts_by_geography": {
+    "US": 140,
+    "Europe": 36,
+    "Asia": 1,
+    "Other": 3
+  },
+  "mkt_cap_distribution": {
+    "mega": 59,
+    "large": 112,
+    "mid": 9
+  },
+  "already_analyzed_count": 106,
+  "tracked_plus_seed_pct": 60.0,
+  "web_queries_run": [
+    "notable US earnings beats misses large cap May 2026",
+    "quality large cap stocks near 52-week low May 2026",
+    "quality large cap stocks near 52-week high momentum May 2026",
+    "highest free cash flow yield large cap stocks 2026",
+    "dominant sector leader stocks by market cap 2026",
+    "quality European large cap stocks 2026"
+  ],
+  "concentration_warnings": [
+    "tracked_plus_seed_pct > 20%: actual 60.0%",
+    "bucket tracked exceeds 25%: actual 58.9%",
+    "Note: high tracked share reflects 106 already-analyzed tickers from prior weeks; all 7 curated sector lists were fully populated per spec sizes (30/25/15/15/15/15/15)."
+  ],
+  "stage": "A1"
+}

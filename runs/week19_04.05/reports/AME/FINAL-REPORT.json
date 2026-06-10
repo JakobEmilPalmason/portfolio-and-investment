@@ -1,0 +1,78 @@
+{
+  "ticker": "AME",
+  "company": "AMETEK, Inc.",
+  "analysis_date": "2026-05-06",
+  "verdict": "Watch",
+  "average_score": 6.25,
+  "umbrella_scores": {
+    "circle_of_competence": 7,
+    "competitive_advantage": 7,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 8,
+    "valuation": 3,
+    "margin_of_safety": 3,
+    "temperament": 6
+  },
+  "key_strengths": [
+    "Aggregated portfolio of niche switching-cost monopolies across ~40 business units",
+    "Operating margin expanding (24.4% FY22 to 26.7% Q1 2026) with both segments leveraging",
+    "FCF/NI conversion 113-124% over last three years; ~$1.8B owner earnings FY25",
+    "Disciplined 35-year insider CEO with low SBC (~0.65% of sales)",
+    "Pre-Indicor fortress balance sheet (Net Debt/EBITDA 0.8x, interest coverage 23x)",
+    "Q1 2026 record $3.87B backlog and +23% organic order growth",
+    "Capex only 1.8% of sales — asset-light specialty industrial"
+  ],
+  "key_risks": [
+    "Multiple compression to peer median (16-18x EV/EBITDA) for 25-30% drawdown",
+    "Defense/aerospace cycle peak being extrapolated as steady-state",
+    "Indicor ~$5B deal steps pro-forma leverage to 2.0-2.3x; recession at close stresses ratings",
+    "Goodwill + intangibles at 72% of total assets — recession impairment risk",
+    "GAAP ROIC stuck at 12-13% for four years; rising deal multiples threaten further drift",
+    "Acquisition treadmill at scale increasingly expensive (Paragon 15x EBITDA, FARO 40% premium)"
+  ],
+  "red_flags": [
+    "Price above quant bull IV; Monte Carlo P(IV > Price) only 1.3%",
+    "0 of 25 sensitivity cells produce IV at or above current price",
+    "Risk/reward asymmetry ~3:1 against the buyer at today's price",
+    "Trading at 96% of 52-week range",
+    "23x EV/EBITDA is software-grade multiple on a 12.8%-ROIC hardware compounder",
+    "CEO Form 4 history: six open-market sells, zero buys in last five years",
+    "Two-segment reporting hides individual business-unit performance"
+  ],
+  "buy_triggers": [
+    "Stock pulls back to $185-$190 for a starter position",
+    "Stock reaches $165-$170 (base IV) for a full position",
+    "Indicor closes smoothly with leverage trending below 2.0x within 12-18 months",
+    "Multiple normalizes toward 17-18x EV/EBITDA while business compounds at 8-10%"
+  ],
+  "sell_triggers": [
+    "FCF/NI conversion below 90% for 4+ quarters (working-capital deterioration)",
+    "GAAP ROIC below 10% for 2+ years (M&A discipline broken)",
+    "Net Debt/EBITDA above 2.5x and stays there beyond 18 months post-Indicor",
+    "Organic book-to-bill below 1.0x for two consecutive quarters",
+    "Price exceeds $300 with no underlying margin or growth surprise (pure multiple-expansion exit)"
+  ],
+  "valuation_summary": "Quant DCF yields bear/base/bull IV of $109/$165/$229 against current price $238.83 — the price sits above the bull case. Monte Carlo P(IV > Price) is 1.3% across 10,000 simulations and 0/25 sensitivity cells produce IV at today's price; there is no margin of safety, with realistic ~30% downside to base IV vs ~5% upside to bull.",
+  "iv_conservative": 109.07,
+  "iv_base": 164.87,
+  "iv_bull": 228.7,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -119.0,
+  "monte_carlo_prob_above_price": 0.0129,
+  "sensitivity_iv_range": [136.43, 230.43],
+  "compact_checklist": [
+    "Business: AMETEK is a holding company for ~40 niche-leading specialty engineering brands that sell highly engineered electronic instruments, sensors, and electromechanical devices into aerospace/defense (~30% of revenue), process & analytical, life sciences, semiconductors, and factory automation, generating $7.4B revenue at 26% operating margins through one-time hardware sales plus a sticky aftermarket/consumables/service tail.",
+    "Moat: The moat is an aggregated portfolio of switching-cost monopolies — instruments specified into validated workflows (pharma QC, semiconductor fabs, surgical robots, jet-engine vibration monitoring) that customers cannot easily swap without re-validating multi-year regulatory or design processes — proven by gross margins steady at 35-36% and operating margins steady at 24-26% through 2022-2025 inflation.",
+    "Economics: Operating margin expanded from 24.4% (FY22) to 25.8% (FY25) and Q1 2026 hit 26.7%, FCF/NI conversion has run 113-124% over the last three years (FY25 owner earnings ~$1.8B), capex is just 1.8% of sales, and Q1 2026 organic orders were +23% with a record $3.87B backlog — though GAAP ROIC is stuck at 12-13% because $11B of acquisition goodwill inflates the denominator.",
+    "Management: David Zapico (35-year insider, CEO since 2016) runs a disciplined Roper-style M&A engine with ~0.65% SBC-to-revenue (well below peers), opportunistic buybacks ($434M in FY25 under a new $1.25B authorization), an 11% dividend hike in 2025, and a multi-decade track record of integrating bolt-ons at preserved margins — though recent deal multiples (Paragon ~15x EBITDA, FARO at a 40% premium, the just-announced $5B Indicor) have crept higher and his open-market trading record is six sells, zero buys.",
+    "Debt risk: Pre-Indicor leverage is fortress-grade (Net Debt/EBITDA 0.7-0.8x, interest coverage 23x, only $100M of Series K notes due Sept 2026), and even after the ~$5B Indicor deal closes in H2 2026 pro-forma leverage rises only to ~2.0-2.3x with stress-test coverage still ~3.4x in a 30%-revenue-drop scenario — survival is not in question.",
+    "Price: For today's $238.83 to make sense, AMETEK must deliver ~13% revenue growth fading to 3% terminal AND hold a 18x EV/EBITDA exit multiple AND see WACC compress to 9.4% — i.e., the full bull case as the expected outcome, with Q1 2026's defense/aerospace order surge extrapolated as the new run-rate rather than a cyclical peak.",
+    "Margin of safety: There is none on price — current $238.83 is above the bull IV ($229), 0 of 25 sensitivity-grid cells produce IV at today's price, Monte Carlo P(IV > Price) is 1.3%, and the asymmetry is ~3:1 against the buyer (30%+ downside to base IV $165 vs. ~5% upside to bull) — only the business margin of safety (clean balance sheet, diversified niches, 25%+ margins) prevents catastrophic loss.",
+    "Thesis breaker: Sell if FCF/NI conversion drops below 90% for 4+ quarters, GAAP ROIC drops below 10% for 2+ years (M&A discipline broken), Net Debt/EBITDA exceeds 2.5x post-Indicor and stays there beyond 18 months, or organic book-to-bill drops below 1.0x for two consecutive quarters signaling defense/aerospace cycle rollover."
+  ],
+  "source_summary": "Auto-fetched yfinance financials (FY2022-FY2025, dated 2026-05-06), deterministic quant DCF/Monte Carlo (context/AME/quant-valuation.json, 2026-05-06), AMETEK 10-K (filed 2025-02-20), Q1 2026 earnings release/transcript, growth-model materials, and web sources (PR Newswire, StockTitan, Motley Fool, Benzinga, MarketBeat, TipRanks, Damodaran peer multiples); Indicor announcement coverage from May 6, 2026.",
+  "confidence": "high",
+  "change_notes": ""
+}

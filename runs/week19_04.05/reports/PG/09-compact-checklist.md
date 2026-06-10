@@ -1,0 +1,12 @@
+# Compact Checklist — PG
+
+**Date:** 2026-05-06
+
+1. **Business**: P&G sells ~65 repeat-purchase household and personal-care brands (Tide, Pampers, Gillette, Crest, Pantene, Olay, SK-II) to ~5 billion consumers across 180 countries through mass retailers, generating $84.3B FY2025 revenue with no single-customer concentration.
+2. **Moat**: Three reinforcing pillars — category-leading brand trust (Tide ~40% U.S. laundry share, top-1 in baby, oral, hair, shave), $84B-revenue scale economics in media/manufacturing/R&D, and indispensable retail shelf access — proven by 19% ROIC and 24% operating margin sustained for two decades.
+3. **Economics**: ROIC has held in a tight 18.5%–19.5% band for four years on $80–86B of capital, gross margin expanded ~400bps to 51.2% through the 2022–23 inflation cycle, and FY2025 produced $14.0B of free cash flow at 88–111% conversion of net income — clean cash, not accruals.
+4. **Management**: Lifer operators (Moeller 38 years, Jejurikar 36 years) returned ~$50B+ via dividends and buybacks over FY2022–FY2025 at ~85% of FCF, slowed buybacks as the multiple expanded, declared the 70th consecutive dividend raise in 2026, and avoided every transformational mega-deal — disciplined, owner-friendly stewardship despite low insider ownership.
+5. **Debt risk**: Net Debt/EBITDA of 1.0x, interest coverage of 23x, Aa3/AA- ratings affirmed January 2025, $9.6B cash plus $14B/year FCF, and a 130+ year unbroken dividend record through the Great Depression and two World Wars — fortress-grade and built to survive any plausible recession.
+6. **Price**: At $146.68 the market is pricing roughly 2% real organic growth at a 6.2% WACC and 15x exit EV/EBITDA — slightly above the quant base IV of $138.88 and right at my adjusted base of ~$150, with Monte Carlo P(IV > Price) of only 30%.
+7. **Margin of safety**: Essentially none on price (stock is -33% MOS to my conservative bear of $110, risk/reward ~1:1, only 11 of 25 sensitivity cells clear today's price), but the business margin of safety is exceptional — fortress balance sheet, 19% ROIC, dominant share, and zero realistic path to permanent capital impairment.
+8. **Thesis breaker**: Two consecutive quarters of negative organic growth absent a one-time factor, OR sustained operating margin compression below 22%, OR a dividend cut (would be the first in 70+ years and signal something profoundly wrong) — any one of these breaks the compounder narrative.

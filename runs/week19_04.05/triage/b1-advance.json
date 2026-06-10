@@ -1,0 +1,242 @@
+[
+  {
+    "ticker": "BRK-B",
+    "company": "Berkshire Hathaway B",
+    "b1_verdict": "advance",
+    "b1_reason": "near 52wk-low; cash optionality; refresh worthwhile"
+  },
+  {
+    "ticker": "CAT",
+    "company": "Caterpillar Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "fresh earnings catalyst; cyclical setup shifted"
+  },
+  {
+    "ticker": "FIX",
+    "company": "Comfort Systems USA",
+    "b1_verdict": "advance",
+    "b1_reason": "data center HVAC moat; not yet analyzed"
+  },
+  {
+    "ticker": "GOOG",
+    "company": "Alphabet Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "search moat; fresh earnings; refresh worthwhile"
+  },
+  {
+    "ticker": "HD",
+    "company": "The Home Depot",
+    "b1_verdict": "advance",
+    "b1_reason": "near 52wk-low; durable moat; refresh worthwhile"
+  },
+  {
+    "ticker": "MA",
+    "company": "Mastercard Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "near 52wk-low; payment duopoly; refresh worthwhile"
+  },
+  {
+    "ticker": "NFLX",
+    "company": "Netflix Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "streaming leader; not yet analyzed"
+  },
+  {
+    "ticker": "NTRS",
+    "company": "Northern Trust Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "custody franchise moat; not yet analyzed"
+  },
+  {
+    "ticker": "PG",
+    "company": "Procter & Gamble",
+    "b1_verdict": "advance",
+    "b1_reason": "near 52wk-low; brand moat; not yet analyzed"
+  },
+  {
+    "ticker": "SNY",
+    "company": "Sanofi SA",
+    "b1_verdict": "advance",
+    "b1_reason": "Dupixent franchise; not yet analyzed"
+  },
+  {
+    "ticker": "V",
+    "company": "Visa Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "near 52wk-low; payment duopoly; refresh worthwhile"
+  },
+  {
+    "ticker": "DHR",
+    "company": "Danaher Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "bioprocessing recovery thesis; refresh worthwhile"
+  },
+  {
+    "ticker": "DSV.CO",
+    "company": "DSV A/S",
+    "b1_verdict": "advance",
+    "b1_reason": "Schenker integration material change; refresh"
+  },
+  {
+    "ticker": "TMO",
+    "company": "Thermo Fisher Scientific",
+    "b1_verdict": "advance",
+    "b1_reason": "biotech recovery setup; refresh worthwhile"
+  },
+  {
+    "ticker": "UNH",
+    "company": "UnitedHealth Group",
+    "b1_verdict": "advance",
+    "b1_reason": "regulatory and DOJ overhang material; refresh"
+  },
+  {
+    "ticker": "ABBN.SW",
+    "company": "ABB Ltd",
+    "b1_verdict": "advance",
+    "b1_reason": "electrification tailwind; not yet analyzed"
+  },
+  {
+    "ticker": "AME",
+    "company": "AMETEK Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "decentralized compounder; not yet analyzed"
+  },
+  {
+    "ticker": "CHD",
+    "company": "Church & Dwight",
+    "b1_verdict": "advance",
+    "b1_reason": "capital-light brand moat; not yet analyzed"
+  },
+  {
+    "ticker": "CSGP",
+    "company": "CoStar Group",
+    "b1_verdict": "advance",
+    "b1_reason": "real estate data monopoly; not yet analyzed"
+  },
+  {
+    "ticker": "DSY.PA",
+    "company": "Dassault Systemes",
+    "b1_verdict": "advance",
+    "b1_reason": "PLM software franchise; not yet analyzed"
+  },
+  {
+    "ticker": "EMR",
+    "company": "Emerson Electric",
+    "b1_verdict": "advance",
+    "b1_reason": "post-restructuring focus; not yet analyzed"
+  },
+  {
+    "ticker": "EXPD",
+    "company": "Expeditors International",
+    "b1_verdict": "advance",
+    "b1_reason": "asset-light FCF compounder; not yet analyzed"
+  },
+  {
+    "ticker": "FAST",
+    "company": "Fastenal Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "Onsite distribution flywheel; not yet analyzed"
+  },
+  {
+    "ticker": "FDS",
+    "company": "FactSet Research Systems",
+    "b1_verdict": "advance",
+    "b1_reason": "recurring data terminal moat; not yet analyzed"
+  },
+  {
+    "ticker": "GWW",
+    "company": "W.W. Grainger",
+    "b1_verdict": "advance",
+    "b1_reason": "MRO distribution moat; not yet analyzed"
+  },
+  {
+    "ticker": "JNJ",
+    "company": "Johnson & Johnson",
+    "b1_verdict": "advance",
+    "b1_reason": "AAA balance sheet, diversified; not yet analyzed"
+  },
+  {
+    "ticker": "KO",
+    "company": "Coca-Cola Co.",
+    "b1_verdict": "advance",
+    "b1_reason": "iconic brand moat; not yet analyzed"
+  },
+  {
+    "ticker": "LONN.SW",
+    "company": "Lonza Group",
+    "b1_verdict": "advance",
+    "b1_reason": "biologics CDMO scale; not yet analyzed"
+  },
+  {
+    "ticker": "MCD",
+    "company": "McDonald's Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "QSR franchise model; not yet analyzed"
+  },
+  {
+    "ticker": "MPWR",
+    "company": "Monolithic Power Systems",
+    "b1_verdict": "advance",
+    "b1_reason": "high-ROIC power semis; not yet analyzed"
+  },
+  {
+    "ticker": "NESN.SW",
+    "company": "Nestle SA",
+    "b1_verdict": "advance",
+    "b1_reason": "global brand portfolio; not yet analyzed"
+  },
+  {
+    "ticker": "PAYX",
+    "company": "Paychex Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "SMB payroll moat; not yet analyzed"
+  },
+  {
+    "ticker": "PEP",
+    "company": "PepsiCo Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "snacks plus beverage scale; not yet analyzed"
+  },
+  {
+    "ticker": "PH",
+    "company": "Parker-Hannifin Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "Meggitt integration; aerospace tailwind"
+  },
+  {
+    "ticker": "RLI",
+    "company": "RLI Corp.",
+    "b1_verdict": "advance",
+    "b1_reason": "specialty P&C underwriting record; not yet analyzed"
+  },
+  {
+    "ticker": "ROG.SW",
+    "company": "Roche Holding AG",
+    "b1_verdict": "advance",
+    "b1_reason": "pharma plus diagnostics; not yet analyzed"
+  },
+  {
+    "ticker": "ROL",
+    "company": "Rollins Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "pest control recurring revenue; not yet analyzed"
+  },
+  {
+    "ticker": "SIE.DE",
+    "company": "Siemens AG",
+    "b1_verdict": "advance",
+    "b1_reason": "industrial automation; not yet analyzed"
+  },
+  {
+    "ticker": "STE",
+    "company": "Steris plc",
+    "b1_verdict": "advance",
+    "b1_reason": "sterilization moat recurring; not yet analyzed"
+  },
+  {
+    "ticker": "WMT",
+    "company": "Walmart Inc.",
+    "b1_verdict": "advance",
+    "b1_reason": "discount retail scale plus e-com; not analyzed"
+  }
+]

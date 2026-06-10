@@ -1,0 +1,78 @@
+{
+  "ticker": "PG",
+  "company": "Procter & Gamble Co.",
+  "analysis_date": "2026-05-06",
+  "verdict": "Watch",
+  "average_score": 7.5,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 8,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "70 consecutive years of dividend increases",
+    "ROIC 18.5-19.5% sustained for four straight years",
+    "Aa3/AA- credit ratings with 1.0x net debt/EBITDA",
+    "Wide multi-source moat: brand trust, scale, retail shelf",
+    "$14B annual FCF at 88-111% conversion of net income",
+    "Dominant category share (Tide ~40%, Pampers/Gillette/Crest top-1)",
+    "Beta 0.40 - among the lowest-volatility S&P 500 names",
+    "Disciplined capital allocation: ~$50B+ returned FY22-25, no value-destroying M&A"
+  ],
+  "key_risks": [
+    "No price margin of safety - stock above quant base IV",
+    "Monte Carlo P(IV > Price) of only 30%",
+    "Multiple compression risk in higher-rate environment",
+    "Tariff and FX exposure ~$700M FY2026 EPS volatility",
+    "DTC and AI-personalization eroding beauty/grooming share",
+    "China execution risk (~10% of revenue, recovering but fragile)",
+    "Restructuring execution risk (7,000 layoffs over 24 months)",
+    "GLP-1 second-order effects on grocery/snack-adjacent volumes"
+  ],
+  "red_flags": [
+    "Price exceeds quant base IV by ~$8 - no MOS on conservative case",
+    "Risk/reward asymmetry roughly 1:1 vs Buffett-style 2:1+ bar",
+    "Q3 FY2026 core operating margin compressed 80bps to 22.2% on tariffs",
+    "Insider ownership institutional rather than entrepreneurial",
+    "Negative working capital -$10.7B (structural but credit-shock sensitive)"
+  ],
+  "buy_triggers": [
+    "Price drops below $130 (closer to adjusted base IV with real MOS)",
+    "Two consecutive quarters of organic growth >=4% with op margin re-expansion to 24%+",
+    "Fed cutting cycle that lowers appropriate discount rate",
+    "Aggressive accumulation if price reaches $115"
+  ],
+  "sell_triggers": [
+    "Two consecutive quarters of negative organic growth absent one-time factor",
+    "Sustained operating margin compression below 22%",
+    "Stock exceeds $185 with no fundamental change (trim - well above bull IV)",
+    "Dividend cut (first in 70+ years - near-instant exit signal)"
+  ],
+  "valuation_summary": "Quant DCF gives bear/base/bull IV of $87.16 / $138.88 / $198.84 against current price of $146.68 - stock trades $7.80 above base IV with -68.3% MOS to bear case and Monte Carlo P(IV > Price) of just 30%. Great business at a full price; no margin of safety for a Buffett-style entry today.",
+  "iv_conservative": 87.16,
+  "iv_base": 138.88,
+  "iv_bull": 198.84,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -68.3,
+  "monte_carlo_prob_above_price": 0.2996,
+  "sensitivity_iv_range": [100.10, 180.53],
+  "compact_checklist": [
+    "Business: P&G sells ~65 repeat-purchase household and personal-care brands (Tide, Pampers, Gillette, Crest, Pantene, Olay, SK-II) to ~5 billion consumers across 180 countries through mass retailers, generating $84.3B FY2025 revenue with no single-customer concentration.",
+    "Moat: Three reinforcing pillars - category-leading brand trust (Tide ~40% U.S. laundry share, top-1 in baby, oral, hair, shave), $84B-revenue scale economics in media/manufacturing/R&D, and indispensable retail shelf access - proven by 19% ROIC and 24% operating margin sustained for two decades.",
+    "Economics: ROIC has held in a tight 18.5%-19.5% band for four years on $80-86B of capital, gross margin expanded ~400bps to 51.2% through the 2022-23 inflation cycle, and FY2025 produced $14.0B of free cash flow at 88-111% conversion of net income - clean cash, not accruals.",
+    "Management: Lifer operators (Moeller 38 years, Jejurikar 36 years) returned ~$50B+ via dividends and buybacks over FY2022-FY2025 at ~85% of FCF, slowed buybacks as the multiple expanded, declared the 70th consecutive dividend raise in 2026, and avoided every transformational mega-deal - disciplined, owner-friendly stewardship despite low insider ownership.",
+    "Debt risk: Net Debt/EBITDA of 1.0x, interest coverage of 23x, Aa3/AA- ratings affirmed January 2025, $9.6B cash plus $14B/year FCF, and a 130+ year unbroken dividend record through the Great Depression and two World Wars - fortress-grade and built to survive any plausible recession.",
+    "Price: At $146.68 the market is pricing roughly 2% real organic growth at a 6.2% WACC and 15x exit EV/EBITDA - slightly above the quant base IV of $138.88 and right at my adjusted base of ~$150, with Monte Carlo P(IV > Price) of only 30%.",
+    "Margin of safety: Essentially none on price (stock is -33% MOS to my conservative bear of $110, risk/reward ~1:1, only 11 of 25 sensitivity cells clear today's price), but the business margin of safety is exceptional - fortress balance sheet, 19% ROIC, dominant share, and zero realistic path to permanent capital impairment.",
+    "Thesis breaker: Two consecutive quarters of negative organic growth absent a one-time factor, OR sustained operating margin compression below 22%, OR a dividend cut (would be the first in 70+ years and signal something profoundly wrong) - any one of these breaks the compounder narrative."
+  ],
+  "source_summary": "Auto-fetched yfinance financials (FY2022-FY2025 + current snapshot, 2026-05-06), deterministic DCF from src/quant (CAPM WACC, Monte Carlo, sensitivity grid), web search across Q3 FY2026 earnings transcripts and IR releases, peer multiples (KO/CL/KMB), credit rating agency commentary (Moody's Aa3, S&P AA- affirmed Jan 2025), and analyst training knowledge of CPG industry. Annual figures through June 2025; quarter color through April 2026 print.",
+  "confidence": "high",
+  "change_notes": ""
+}

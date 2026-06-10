@@ -1,0 +1,75 @@
+{
+  "ticker": "MSFT",
+  "company": "Microsoft Corporation",
+  "analysis_date": "2026-05-11",
+  "verdict": "Watch",
+  "average_score": 7.6,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 9,
+    "management": 8,
+    "business_economics": 8,
+    "balance_sheet": 9,
+    "valuation": 6,
+    "margin_of_safety": 5,
+    "temperament": 7
+  },
+  "key_strengths": [
+    "30%+ ROIC sustained for four consecutive years",
+    "45.6% operating margin with continued expansion despite capex surge",
+    "Extreme M365 switching costs across 64% of Fortune 500",
+    "AAA balance sheet — 0.4x debt/EBITDA, 52.8x interest coverage, $94.6B cash",
+    "Best-in-class management — 100% performance equity, 12-year Nadella track record",
+    "Azure growing 40% YoY with $80B undeliverable backlog",
+    "Multiple independent moats: scale, switching costs, LinkedIn/GitHub network effects"
+  ],
+  "key_risks": [
+    "Unprecedented ~$190B CY2026 capex bet with unproven returns",
+    "FCF conversion fell from 89.6% (FY22) to 70.3% (FY25)",
+    "Zero price margin of safety vs conservative IV",
+    "Massive passive overlap (~7% of S&P 500) dilutes effective allocation",
+    "OpenAI cloud exclusivity ended; IP rights bounded at 2032",
+    "Depreciation drag — D&A 2.4x in three years, pressuring gross margin"
+  ],
+  "red_flags": [
+    "Capex tripled in three years ($23.9B → $64.6B), guided to ~$190B CY2026",
+    "$25B of CY2026 capex is component-price inflation, not added capacity",
+    "FCF margin compressed from 32.9% to 25.4% over FY22-FY25",
+    "BoA notes hyperscaler capex now consumes ~94% of OCF after dividends/buybacks",
+    "SBC of $12B/year (up from $7.5B FY22) — real dilution masked by buybacks",
+    "52-week low ($356) was still above quant Bear IV ($261)"
+  ],
+  "buy_triggers": [
+    "Stock falls to $320 or below, restoring positive MOS vs adjusted Base IV",
+    "Two consecutive quarters of FCF margin recovery above 28% with Azure 30%+",
+    "Capex guidance flattens or steps down for CY2027/2028 past peak intensity"
+  ],
+  "sell_triggers": [
+    "Azure constant-currency growth below 20% for two consecutive quarters",
+    "Operating margin compresses below 38% on trailing four-quarter basis",
+    "Management materially walks back AI monetization claims or $37B run-rate disclosure",
+    "Single acquisition exceeds 10% of market cap or CY2027 capex raised above $230B"
+  ],
+  "valuation_summary": "Quant DCF anchors at Bear $261 / Base $377 / Bull $509 per share; analyst-adjusted scenarios are $280/$420/$540. At $409.58 the stock sits between Base and Bull with no meaningful price margin of safety (-57% vs quant Bear, +2.5% vs adjusted Base). Monte Carlo P(IV > Price) = 58%.",
+  "iv_conservative": 261.42,
+  "iv_base": 377.16,
+  "iv_bull": 508.73,
+  "iv_currency": "USD",
+  "iv_source": "quant_model",
+  "mos_at_analysis": -56.7,
+  "monte_carlo_prob_above_price": 0.58,
+  "sensitivity_iv_range": [328.82, 543.27],
+  "compact_checklist": [
+    "Business: Microsoft rents productivity software (M365, Dynamics, LinkedIn) and cloud infrastructure (Azure) to enterprises on recurring subscription and consumption contracts, plus sells Windows and gaming to consumers — FY25 revenue was $281.7B with the commercial cloud now exceeding $54B per quarter and Azure growing 40% YoY.",
+    "Moat: Extreme M365 switching costs (identity, email, documents, Teams, and tenant-trained Copilot data are embedded in 64% of the Fortune 500), reinforced by hyperscaler scale economics no challenger can match at $190B/yr capex, LinkedIn/GitHub network effects, and a 30%+ ROIC sustained for four consecutive years.",
+    "Economics: ROIC has held at 30%+ for four straight years, operating margin expanded to 45.6% in FY25, and gross margin stayed in the 68-70% band despite Azure mix — though FCF conversion has fallen from 89.6% (FY22) to 70.3% (FY25) as $64.6B of capex (heading to ~$190B in CY26) absorbs cash that the underlying engine still earns.",
+    "Management: Nadella and Hood have a twelve-year track record of 26% annual stock compounding, best-in-class compensation design (100% performance equity, >95% performance-based, no employment contracts, robust clawback), disciplined buybacks (more when cheap, less at $400+), and a successful M&A book (LinkedIn, GitHub, Activision) with no Ballmer-style writedowns.",
+    "Debt risk: Fortress balance sheet — $60.6B total debt against $160.2B EBITDA (0.4x leverage), 52.8x interest coverage, AAA credit rating, $94.6B cash, and long-term debt actually shrinking even as capex tripled, so survival under any plausible downturn is not a question.",
+    "Price: At $409.58 the market is pricing roughly 12% revenue growth for five years fading to 3% terminal at a ~10.4% WACC, with stable 45% operating margins and the $190B AI capex bet earning at least its cost of capital — essentially the adjusted Base IV of $420.",
+    "Margin of safety: There is no price MOS — current price is -46% versus adjusted Bear IV ($280) and only +2.5% versus Base IV ($420); the saving grace is the business margin of safety from the AAA balance sheet, recurring revenue mix, multi-franchise diversification, and Monte Carlo P(IV > Price) of 58%.",
+    "Thesis breaker: Sell if Azure growth falls below 20% for two consecutive quarters with no offsetting mix story, or if operating margin compresses below 38%, or if management materially walks back AI monetization claims, or if a single acquisition exceeds 10% of market cap — these signal that the $190B capex bet is failing on returns."
+  ],
+  "source_summary": "yfinance auto-fetched financials (FY2022-FY2025), deterministic quant DCF with CAPM WACC, owner earnings, sensitivity grid and 10,000-run Monte Carlo, plus WebSearch on Q3 FY26 earnings (CNBC, Microsoft IR, Futurum), Copilot enterprise adoption, hyperscaler share, Nadella compensation/holdings, OpenAI deal revision, and BoA hyperscaler capex analysis. Latest reported quarter is FY26 Q3 (March 2026); CY2026 capex guidance is current as of late April 2026.",
+  "confidence": "high",
+  "change_notes": ""
+}

@@ -124,7 +124,7 @@ def _alpha_metric(
             ),
             "tone": "tone-info",
         }
-    tone = "tone-warning" if alpha > 0 else "tone-positive"
+    tone = "tone-positive" if alpha >= 0 else "tone-danger"
     raw_part = f"raw \u0394 {raw:+.2f}% \u00b7 " if raw is not None else ""
     return {
         "label": label,
@@ -145,7 +145,7 @@ def _miss_rate_metric(
     if miss_rate is None or alpha_n == 0:
         return {"label": label, "value": "\u2014",
                 "meta": f"no SPY baseline {meta_suffix}", "tone": "tone-info"}
-    tone = "tone-warning" if miss_rate > 50 else "tone-positive"
+    tone = "tone-positive" if miss_rate >= 50 else "tone-danger"
     return {
         "label": label,
         "value": f"{miss_rate:.0f}%",
@@ -284,7 +284,8 @@ def _render_flag_table(df: pd.DataFrame) -> None:
     data_json = _json.dumps(records, default=str)
 
     row_count = len(df)
-    height = min(60 + row_count * 50 + 40, 860)
+    table_height = min(60 + row_count * 50 + 40, 860)
+    height = table_height + 50  # toolbar above the table
 
     flag_html = f"""
 <!DOCTYPE html>
@@ -305,7 +306,18 @@ def _render_flag_table(df: pd.DataFrame) -> None:
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 body {{ background:transparent; font-family:var(--font-body); font-weight:400; color:var(--text); overflow:hidden; }}
 .mono {{ font-family:var(--font-mono); }}
-.wrap {{ overflow:auto; max-height:{height - 20}px; border-radius:12px; border:1px solid var(--border); }}
+.toolbar {{ display:flex; justify-content:space-between; align-items:center; padding:2px 4px 10px; gap:12px; }}
+.rowcount {{ color:var(--muted); font-family:var(--font-mono); font-size:12px; letter-spacing:0.04em; }}
+.copybtn {{
+  background:var(--surface-strong); color:var(--text); border:1px solid var(--border-strong);
+  border-radius:8px; padding:7px 14px; font-family:var(--font-display); font-size:11px; font-weight:500;
+  letter-spacing:0.08em; text-transform:uppercase; cursor:pointer;
+  transition:background 120ms ease, color 120ms ease, border-color 120ms ease;
+}}
+.copybtn:hover {{ background:var(--accent); color:var(--bg); border-color:var(--accent); }}
+.copybtn.copied {{ background:var(--positive); color:var(--bg); border-color:var(--positive); }}
+.copybtn.failed {{ background:var(--danger); color:var(--bg); border-color:var(--danger); }}
+.wrap {{ overflow:auto; max-height:{table_height - 20}px; border-radius:12px; border:1px solid var(--border); }}
 table {{ width:100%; min-width:1600px; border-collapse:separate; border-spacing:0; }}
 thead {{ position:sticky; top:0; z-index:2; }}
 th {{
@@ -344,6 +356,10 @@ tbody tr:hover td {{ background:rgba(41,37,36,0.42); }}
 ::-webkit-scrollbar-thumb:hover {{ background:rgba(148,163,184,0.28); }}
 </style>
 </head><body>
+<div class="toolbar">
+  <span class="rowcount" id="rowcount"></span>
+  <button class="copybtn" id="copybtn" title="Copy table as TSV — paste directly into Excel or Sheets">⧉ Copy table</button>
+</div>
 <div class="wrap"><table><thead><tr id="hdr"></tr></thead><tbody id="tbody"></tbody></table></div>
 <script>
 const DATA = {data_json};
@@ -453,6 +469,61 @@ function sortBy(key) {{
   }});
   render();
 }}
+
+function tsvCell(v) {{
+  if (v == null) return '';
+  if (typeof v === 'number') return Number.isFinite(v) ? String(v) : '';
+  return String(v).replace(/[\t\r\n]+/g, ' ');
+}}
+
+function buildTSV() {{
+  const headerLine = COLS.map(k => HEADERS[k]).join('\\t');
+  const dataLines = DATA.map(r => COLS.map(k => tsvCell(r[k])).join('\\t'));
+  return [headerLine, ...dataLines].join('\\n');
+}}
+
+function flashCopied(ok) {{
+  const btn = document.getElementById('copybtn');
+  if (!btn) return;
+  const original = btn.textContent;
+  btn.textContent = ok ? '✓ Copied' : '✗ Copy failed';
+  btn.classList.add(ok ? 'copied' : 'failed');
+  setTimeout(() => {{
+    btn.textContent = original;
+    btn.classList.remove('copied');
+    btn.classList.remove('failed');
+  }}, 1500);
+}}
+
+function copyTable() {{
+  const tsv = buildTSV();
+  // execCommand fallback first — works inside Streamlit's sandboxed iframe.
+  try {{
+    const ta = document.createElement('textarea');
+    ta.value = tsv;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    const ok = document.execCommand('copy');
+    document.body.removeChild(ta);
+    if (ok) {{ flashCopied(true); return; }}
+  }} catch (e) {{ /* fall through */ }}
+  if (navigator.clipboard && navigator.clipboard.writeText) {{
+    navigator.clipboard.writeText(tsv).then(
+      () => flashCopied(true),
+      () => flashCopied(false),
+    );
+  }} else {{
+    flashCopied(false);
+  }}
+}}
+
+document.getElementById('rowcount').textContent = `${{DATA.length}} ${{DATA.length === 1 ? 'row' : 'rows'}}`;
+document.getElementById('copybtn').addEventListener('click', copyTable);
 
 sortBy('analyzed');
 </script>

@@ -1,0 +1,79 @@
+{
+  "ticker": "NOVO-B.CO",
+  "company": "Novo Nordisk A/S",
+  "analysis_date": "2026-05-11",
+  "verdict": "Own",
+  "average_score": 7.75,
+  "umbrella_scores": {
+    "circle_of_competence": 9,
+    "competitive_advantage": 7,
+    "management": 7,
+    "business_economics": 7,
+    "balance_sheet": 8,
+    "valuation": 8,
+    "margin_of_safety": 8,
+    "temperament": 8
+  },
+  "key_strengths": [
+    "Two-molecule, two-disease franchise — among the most understandable in global pharma",
+    "Unrivaled peptide manufacturing scale (14 sites, DKK 90B FY2025 capex) — 5–7 year replication barrier",
+    "Elite economics: 81% gross margin, 41% operating margin, 36% ROIC, DKK 102B owner earnings",
+    "Aa3/AA balance sheet — 0.6x Net Debt/EBITDA, 32x interest coverage, DKK 15B buyback restarted",
+    "Foundation governance with 77% voting control and multi-century horizon",
+    "Q1 2026 oral Wegovy at 2× consensus, Wegovy 65% of US new prescriptions — first inflection evidence",
+    "FDA April 30 2026 proposal closes 503B compounded-GLP-1 leakage channel",
+    "5.5% dividend yield pays you to wait through the capex cycle"
+  ],
+  "key_risks": [
+    "Lilly retatrutide 2026 filing may land with breakout efficacy (>26% weight loss)",
+    "US net pricing structurally reset — IRA $274 (2027) and MFN $245/month locked in",
+    "Single-mechanism (GLP-1 + amylin) concentration — pipeline extends, doesn't diversify",
+    "Lilly tirzepatide holds ~60% US total GLP-1 share; efficacy crown lost until amycretin reads out",
+    "Capex cycle wisdom unresolved until 2027–2029; reported FCF will look weak in interim",
+    "Composition-of-matter patents on semaglutide expire early 2030s",
+    "25–30% drawdown risk plausible on retatrutide data or CagriSema CRL"
+  ],
+  "red_flags": [
+    "FY2026 guidance still implies revenue decline of −4% to −12% — first down year in nearly a decade",
+    "Gross margin compressed 370bp in a single year (84.7% → 81.0%) — structural, not mix",
+    "Total debt rose 5× (DKK 25.8B → DKK 131B) in two fiscal years at peak earnings",
+    "Buybacks collapsed from DKK 30B (FY2023) to DKK 1.4B (FY2025) at exactly the moment shares became cheap",
+    "Executive direct ownership effectively zero; 2025 insider transactions were net sales",
+    "Dual-class voting permanently disenfranchises minority B-shareholders",
+    "CagriSema underperformed Zepbound in Novo's own head-to-head study"
+  ],
+  "buy_triggers": [
+    "Pullback to DKK 230–260 on retatrutide noise without thesis change — scale starter to 4–5%",
+    "Q2/Q3 2026 oral Wegovy script trend stays >65% US new prescriptions with pill revenue ≥ DKK 2B/quarter",
+    "CagriSema FDA approval (expected late 2026) with clean label"
+  ],
+  "sell_triggers": [
+    "Lilly retatrutide ships best-in-class (>26% weight loss + clean safety) AND amycretin Phase 3 disappoints",
+    "Class-wide semaglutide safety signal forcing label restriction or withdrawal",
+    "ROIC below 15% for two consecutive years — permanent capex impairment",
+    "Re-rate above DKK 600 (~20x P/E on flat earnings) without commensurate fundamental improvement — trim",
+    "Foundation governance changes materially (dual-class collapse or hostile board change)"
+  ],
+  "valuation_summary": "Analyst-adjusted IV range DKK 460 / 690 / 950 (bear/base/bull) with probability-weighted central estimate DKK 525 vs current price DKK 300, giving a 35% MOS to conservative and ~75% upside to probability-weighted central. Adjustments lift WACC to 7%, fade margins to 36–38%, and place 30% weight on a decline scenario that the quant model does not sample.",
+  "iv_conservative": 460,
+  "iv_base": 690,
+  "iv_bull": 950,
+  "iv_currency": "DKK",
+  "iv_source": "ai_estimate",
+  "mos_at_analysis": 34.78,
+  "monte_carlo_prob_above_price": 1.0,
+  "sensitivity_iv_range": [576.55, 1002.9],
+  "compact_checklist": [
+    "Business: Novo Nordisk sells semaglutide-based GLP-1 drugs (Ozempic, Wegovy injectable and oral) plus a legacy insulin franchise to chronic diabetes and obesity patients globally, with Q1 2026 revenue of DKK 96.8B (+32% CER) and oral Wegovy already at 65% of US new prescriptions in its first full quarter.",
+    "Moat: A peptide manufacturing footprint of 14 sites built with DKK 90B of FY2025 capex (Catalent, Kalundborg, Clayton, Chartres) plus 154 granted semaglutide patents extending to 2042 — a barrier that would cost a competitor $15–25B and 5–7 years to replicate, even though Eli Lilly's tirzepatide currently holds ~60% of US total GLP-1 share.",
+    "Economics: FY2025 produced 81% gross margin, 41% operating margin, 36% ROIC and DKK 102B of owner earnings (reported FCF of DKK 29B is a capex-cycle artifact, not an earnings problem) — elite by any pharma standard, even after a structural reset from the freakish 70% ROIC of FY2023.",
+    "Management: New CEO Maziar Mike Doustdar (in role since August 2025) cut 9,000 jobs for DKK 8B in run-rate savings, restarted a DKK 15B buyback, and delivered a Q1 2026 beat plus guidance raise — all under the permanent stewardship of the Novo Nordisk Foundation, which controls 28% of equity and 77% of votes on a multi-century time horizon.",
+    "Debt risk: With Net Debt/EBITDA of 0.6x, interest coverage of 32x, Aa3/AA credit ratings (among the highest in global pharma), and DKK 119B of annual operating cash flow, Novo would survive a 30% revenue decline with coverage still above 12x — financial distress is not a realistic scenario.",
+    "Price: At DKK 300 the market is pricing roughly the \"decline scenario\" (IV ~DKK 240 — flat-to-negative revenue for 5 years, margins compressing to 30%, exit multiple below 10x EV/EBITDA), so today's price only makes sense if you believe Lilly's retatrutide takes another 10+ points of share AND US MFN pricing keeps ratcheting down AND oral generics arrive before 2030.",
+    "Margin of safety: 35% discount to my conservative IV of DKK 460 (43% to my probability-weighted DKK 525) plus a 5.5% dividend yield that pays you to wait, on top of a business with 81% gross margins and a balance sheet that can't be broken — even a re-test to the 52-week low of DKK 220 leaves an upside-to-downside ratio of roughly 2.8x.",
+    "Thesis breaker: Sell if Lilly's retatrutide ships with clearly best-in-class efficacy (>26% weight loss with clean safety) AND Novo's amycretin disappoints in Phase 3 (2027–2028), OR if semaglutide faces a class-wide safety signal forcing label restriction, OR if ROIC falls below 15% for two consecutive years signaling permanent capex impairment."
+  ],
+  "source_summary": "Auto-fetched yfinance financials (2026-05-11), src/quant DCF model output, Novo Nordisk Q1 2026 release (May 6, 2026) and investor materials, Annual Report 2025, Moody's Aa3 and S&P AA credit opinions, FDA April 30 2026 503B bulks-list proposal, CNBC/Reuters/GlobeNewswire/BioPharma Dive/FiercePharma coverage, prior week15 NOVO-B.CO continuity report. Data is current as of analysis date; primary staleness caveat is that retatrutide Phase 3 obesity readout and CagriSema FDA decision (both late-2026 expected) will materially update the competitive picture.",
+  "confidence": "medium",
+  "change_notes": ""
+}
