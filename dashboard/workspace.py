@@ -195,16 +195,15 @@ def _bar_stack_html(items: list[dict[str, Any]]) -> str:
     maximum = max(item["value"] for item in items) or 1
     rows = []
     for item in items:
+        # Keep this on one line: indented HTML inside st.markdown renders as a code block.
         rows.append(
-            f"""
-            <div class="bar-row">
-              <div class="bar-label">{html.escape(item['label'])}</div>
-              <div class="bar-track">
-                <div class="bar-fill" style="width:{(item['value'] / maximum) * 100:.0f}%;background:{item['color']};"></div>
-              </div>
-              <div class="bar-value">{item['value']}</div>
-            </div>
-            """
+            f'<div class="bar-row">'
+            f'<div class="bar-label">{html.escape(item["label"])}</div>'
+            f'<div class="bar-track">'
+            f'<div class="bar-fill" style="width:{(item["value"] / maximum) * 100:.0f}%;background:{item["color"]};"></div>'
+            f"</div>"
+            f'<div class="bar-value">{item["value"]}</div>'
+            f"</div>"
         )
     return "<div class='bar-stack'>" + "".join(rows) + "</div>"
 

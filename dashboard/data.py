@@ -211,7 +211,7 @@ def _iter_week_dirs(repo_root: str | Path) -> list[Path]:
 
 
 def _load_queue_entries(repo_root: str | Path) -> list[dict[str, Any]]:
-    queue_file = Path(repo_root) / "queue" / "queue.json"
+    queue_file = Path(repo_root) / "data" / "queue" / "queue.json"
     entries = _read_json(queue_file, [])
     return [entry for entry in entries if isinstance(entry, dict) and entry.get("ticker")]
 
@@ -548,7 +548,7 @@ def get_freshness_data(repo_root: str = DEFAULT_REPO_ROOT) -> dict[str, dict[str
     for entry in _load_queue_entries(repo_root):
         ticker = entry["ticker"]
         status, days_since = _compute_freshness(entry.get("last_analysis_date"), today)
-        financials_path = Path(repo_root) / "context" / ticker / "financials.md"
+        financials_path = Path(repo_root) / "data" / "context" / ticker / "financials.md"
         financials_age_days = None
         if financials_path.exists():
             financials_age_days = (today - date.fromtimestamp(financials_path.stat().st_mtime)).days
