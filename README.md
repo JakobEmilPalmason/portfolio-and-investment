@@ -6,6 +6,14 @@ The aim is a reproducible quick scan for businesses worth a closer look. The pro
 
 To date: 100+ companies fully analyzed across weekly pipeline cycles, each with a narrative report and a machine-readable JSON summary. Under the hood: Claude Code agents, a quant DCF engine, a paper-trading ledger with a policy engine, and a Streamlit dashboard.
 
+## Dashboard
+
+| Portfolio workspace | Research lab |
+|:--:|:--:|
+| ![Portfolio workspace](docs/screenshots/portfolio.png) | ![Research lab](docs/screenshots/research.png) |
+| **Portfolio simulator** | **Agent comparison** |
+| ![Portfolio simulator](docs/screenshots/simulator.png) | ![Agent comparison](docs/screenshots/agents.png) |
+
 ## Philosophy
 
 The framework is built around one idea: **buy a wonderful business at a sensible price, with high confidence you understand it.** If you don't have that confidence, the right move is to do nothing.
